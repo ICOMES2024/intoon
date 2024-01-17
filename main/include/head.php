@@ -119,5 +119,5 @@
 	$current_date->format('Y-m-d');
 
 	$intvl = $current_date->diff($d_day);
-	$d_days = $intvl->days + 1;
+	$d_days = $intvl->days ;
 ?>
