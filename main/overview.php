@@ -71,7 +71,7 @@ $floor = get_data($sql_floor);
                  <th>Title</th>
                  <td>
                      <!--<?= htmlspecialchars_decode($info['title']) ?>-->
-                     <b>ICOMES 2023</b>(2023 International Congress on Obesity and MEtabolic Syndrome)
+                     <b>ICOMES 2024</b>(2024 International Congress on Obesity and MEtabolic Syndrome)
                  </td>
              </tr>
              <tr>
@@ -79,7 +79,7 @@ $floor = get_data($sql_floor);
                  <td>
                      <!-- <?= date_format(date_create($info['period_event_start']), "M, j(D)") ?> ~
                      <?= date_format(date_create($info['period_event_end']), "M, j(D)  Y") ?> -->
-                     September 7(Thu) ~ 9(Sat), 2023
+                     September 5(Thu) ~ 7(Sat), 2024
                  </td>
              </tr>
              <tr>
@@ -92,20 +92,16 @@ $floor = get_data($sql_floor);
              <tr>
                  <th>Organized By</th>
                  <td>
-                     <?= htmlspecialchars_decode($info['overview_organized']) ?> (KSSO)
-                     <!--Korean Society for the Study of Obesity-->
+				 Korean Society for the Study of Obesity (KSSO)
                  </td>
              </tr>
-             <tr>
+			 <!-- [240117] sujeong 테마 미정으로 주석 -->
+             <!-- <tr>
                  <th>Theme</th>
                  <td>
                      Now is the Time to Conquer Obesity
-
-                     <!-- <?= htmlspecialchars_decode($info['overview_theme']) ?> -->
-
-                     <!--The Next Normal: The Future of Obesity Care	-->
                  </td>
-             </tr>
+             </tr> -->
              <tr>
                  <th>Official Language</th>
                  <td>
@@ -118,8 +114,7 @@ $floor = get_data($sql_floor);
                  <td>
                      <!--<?= htmlspecialchars_decode($info['overview_secretariat']) ?>-->
                      A-Block Richensia 4F, 341 Baekbeom-ro, Yongsan-gu, Seoul 04315, Korea
-                     <br>Tel : +82-2-2285-2582 / Email : icomes@into-on.com
-
+                     <br>Tel : +82-2-2285-2582 / Email : <a class="link" href="mailto:icomes@into-on.com">icomes@into-on.com</a>
                  </td>
              </tr>
          </table>
