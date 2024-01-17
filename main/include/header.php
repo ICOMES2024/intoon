@@ -68,7 +68,7 @@ $locale = locale($language);
             <div class="nav_wrap pc_only">
                 <ul class="depth01 clearfix">
                     <li>
-                        <a href="/main/welcome.php">ICOMES 2023</a>
+                        <a href="/main/welcome.php">ICOMES 2024</a>
                         <ul class="sub_nav">
                             <li><a href="/main/welcome.php">Welcome Message</a></li>
                             <li><a href="/main/organizing_committee.php">Organization</a></li>
@@ -207,7 +207,7 @@ $(document).ready(function() {
         <ul class="m_nav_ul">
             <li class="m_nav_li">
                 <a href="javascript:;" class="<?= (in_array($_page, $_page_config["m1"]) ? "show" : "") ?>"><span>ICOMES
-                        2023</span></a>
+                        2024</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m1"]) ? "block" : "none") ?>">
                     <li><a href="/main/welcome.php">Welcome Message</a></li>
                     <li><a href="/main/organizing_committee.php">Organization</a></li>

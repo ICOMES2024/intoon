@@ -35,8 +35,9 @@ $info = sql_fetch($sql_info);
             <div>
                 <div class="text_box">
                     <ul>
-                        <li>The ICOMES 2023 organizing committee cordially invites you to submit abstracts for oral presentations, poster exhibitions, and guided poster presentations. </li>
-                        <li>All abstracts must be submitted via the online submission system. <br/>Please read the guidelines before submitting your abstract(s).</li>
+                        <li>The ICOMES 2024 organizing committee cordially invites you to submit abstracts for oral presentations, guided poster presentations and poster exhibitions.</li>
+                        <li>All abstracts must be submitted via the online submission system.
+<br/>Please read the guidelines before submitting your abstract(s).</li>
                         <!--
 						<li class="f_bold">• If you are selected by submitting an abstract, 100% of the registration fee can be reduced.</li>
 						<li>• The reduction is based on the payment of the pre-registration fee, and only the submitter will receive a refund within 2 weeks after the congress.</li>
@@ -70,19 +71,19 @@ $info = sql_fetch($sql_info);
 							</colgroup>
 							<tr>
 								<th>Abstract Submission<br class="br_mb_only"> System Open</th>
-								<td class="f_bold">Mid-May</td>
+								<td class="f_bold">Mid-February</td>
 							</tr>
 							<tr>
-								<th class="close_th">Abstract Submission<br class="br_mb_only"> Deadline</th>
-								<td><span class="font_inherit f_bold red_t">August 10 (Thu)</span></td>
+								<th>Abstract Submission<br class="br_mb_only"> Deadline</th>
+								<td><span class="font_inherit f_bold red_t">May 30 (Thu)</span></td>
 							</tr>
 							<tr>
 								<th>Notification of<br class="br_mb_only"> Abstract Acceptance</th>
-								<td class="f_bold">August 14 (Mon)</td>
+								<td class="f_bold">June 11 (Tue)</td>
 							</tr>
 							<tr>
 								<th>Registration Deadline for<br class="br_mb_only"> Approved Abstract Presenters</th>
-								<td class="f_bold">August 24 (Thu)</td>
+								<td class="f_bold">August 1 (Sun)</td>
 							</tr>
 						</table>
 						<!--
@@ -107,7 +108,7 @@ $info = sql_fetch($sql_info);
                                 <th>August 24(Thu)</th>
                                 <td>Registration deadline for approved abstract presenters</td>
                             </tr>
-                            <!--<tr>
+                            <tr>
                                 <th>Sep 7(Thu) ~ 9 (Sat), 2023</th>
                                 <td>ICOMES 2023</td>
                             </tr>
@@ -144,7 +145,7 @@ $info = sql_fetch($sql_info);
 					<ul class="clearfix">
 						<li>
 							<p>Step 1</p>
-							<p class="sm_txt">Sign up and log in to the ICOMES 2023 website.</p>
+							<p class="sm_txt">Sign up and log in to the ICOMES 2024 website.</p>
 						</li>
 						<li>
 							<p>Step 2</p>
@@ -209,9 +210,9 @@ $info = sql_fetch($sql_info);
                             <th>Presentation Type </th>
                             <td>
                                 <p>1) Oral Presentation</p>
-                                <p>2) Poster Exhibition</p>
-                                <p>3) Guided Poster Presentation <br />
-                                    (*Scientific committee may change the presentation type by review.)
+                                <p>2) Guided Poster Presentation</p>
+                                <p>3) Poster Exhibition <br />
+                                    (*Scientific Committee may change the presentation type by review.)
                                 </p>
                             </td>
                         </tr>
@@ -230,8 +231,7 @@ $info = sql_fetch($sql_info);
                         <tr>
                             <th>Format</th>
                             <td>
-                                <p>Download and use the official abstract form. <br />Contain 4 sections: background,
-                                    methods & materials, results, and conclusions. <br />(keywords are optional)</p>
+                                <p>Download and use the official abstract form.<br />Contain 4 sections: background, methods & materials, results, and conclusions.<br />(Keywords are optional.)</p>
                             </td>
                         </tr>
                         <tr>
@@ -250,11 +250,11 @@ $info = sql_fetch($sql_info);
                         </tr>
                         <tr>
                             <th>Modification</th>
-                            <td>Abstract review or modification will be available until the deadline.</td>
+                            <td>Abstract review or modification will be available until the abstract submission deadline.</td>
                         </tr>
                         <tr>
                             <th>Withdrawal</th>
-                            <td>Request to the secretariat via email (icomes_abstracts@into-on.com)</td>
+                            <td>Request to the secretariat via email (<a href="mailto:icomes_abstracts@into-on.com" class="link">icomes_abstracts@into-on.com</a>)</td>
                         </tr>
                     </table>
                 </div>
@@ -267,9 +267,9 @@ $info = sql_fetch($sql_info);
                 </div>
                 <div class="text_box indent">
                     <ul>
-                        <li>• If the submission does not comply with the prescribed format or deviates from the basic purpose of this congress, it may be rejected at the discretion of the scientific program committee.</li>
+                        <li>• If the submission does not comply with the prescribed format or deviates from the basic purpose of this congress, it may be rejected at the discretion of the Scientific Committee.</li>
                         <li>• The subject of the abstract is limited to unpublished research results, and editing of content previously presented at other conferences is not accepted for submission.</li>
-                        <li>• The submitted and accepted abstracts may be published on the website, application, abstract book, and other printed materials of the Korean Society for the Study of Obesity.</li>
+                        <li>• The submitted and accepted abstracts may be published on the website, application, abstract book(PDF), and other printed materials of the Korean Society for the Study of Obesity.</li>
 						<li>• If any related issue arises, please contact the congress secretariat at <a href="mailto:icomes@into-on.com" class="link">icomes@into-on.com.</a></li>
                     </ul>
                 </div>
@@ -281,14 +281,10 @@ $info = sql_fetch($sql_info);
                 </div>
                 <div class="text_box indent">
                     <ul>
-                        <li>• Following the evaluation of all abstract submissions by the scientific committee, the
-                            presenting author and the corresponding author will receive an email notification regarding
-                            the acceptance of their submission.</li>
-                        <li>• It is mandatory for all presenters to complete the registration process and pay the full
-                            registration fee by the registration deadline of <span class="bold">August 24, 2023</span>.
-                            The registration fee will be fully refunded after the conference.</li>
-                        <li>• If the submission deadline changes, the acceptance notification also changes. The
-                            secretariat will be notified via ICOMES website or newsletter.</li>
+                        <li>• Following the evaluation of all abstract submissions by the Scientific Committee, the presenting author and the corresponding author will receive an email notification regarding the acceptance of their submission.</li>
+                        <li>• It is mandatory for all presenters to complete the registration process and pay the full registration fee by the registration deadline of <span class="bold">August 1, 2024</span>.
+                        The registration fee will be fully refunded after the conference.</li>
+                        <li>• If the submission deadline changes, the acceptance notification will also change. The secretariat will be notified via ICOMES website or newsletter.</li>
                     </ul>
                 </div>
             </div>
@@ -301,7 +297,7 @@ $info = sql_fetch($sql_info);
                 <div class="text_box indent">
                     <ul>
                         <li>• Failure to register by the presenter registration deadline will result in the automatic withdrawal of the accepted abstract from the final program.</li>
-                        <li>• To request the withdrawal of an abstract, send an email to the ICOMES 2023 secretariat(<a href="mailto:icomes_abstracts@into-on.com" class="link font_inherit">icomes_abstracts@into-on.com</a>) at your earliest convenience.</li>
+                        <li>• To request the withdrawal of an abstract, send an email to the ICOMES 2024 secretariat(<a href="mailto:icomes_abstracts@into-on.com" class="link font_inherit">icomes_abstracts@into-on.com</a>) at your earliest convenience.</li>
                     </ul>
                 </div>
             </div>
