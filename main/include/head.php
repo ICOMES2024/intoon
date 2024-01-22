@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-    <title>IMCVP 2024</title>
+    <title>ICOMES 2024</title>
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="IMCVP 2024">
+    <meta property="og:title" content="ICOMES 2024">
     <meta property="og:image" content="/main/img/poster2023.jpg" />
-    <meta property="og:description" content="2024 IMCVP">
-    <meta name="description" content="2024 IMCVP">
+    <meta property="og:description" content="2024 ICOMES hosted by KSSO">
+    <meta name="description" content="2024 ICOMES hosted by KSSO">
 
     <!-- datepicker -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
@@ -112,7 +112,7 @@
 	$during_yn = sql_fetch($sql_during)['yn'];
 
 	//오늘 날짜 구하기 d_day 구하기
-	$today = date("Y. m. d");
+	$today = date("Y. m. d.");
 	$d_day = new DateTime("2024-11-29");
 
 	$current_date = new DateTime();

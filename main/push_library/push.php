@@ -1,47 +1,39 @@
 <?php
-
+require_once ('/var/www/icomes.or.kr/main/plugin/google-api-php-client-main/vendor/autoload.php');
 class Push
 {
 
     static function fcmMultiPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){
 
-        $url    = 'https://fcm.googleapis.com/fcm/send';
+        $url    = 'https://fcm.googleapis.com/v1/projects/icomes2024/messages:send';
 
-        //Release
-        $apiKey = 'AAAAOFisJcs:APA91bFNWr79zZanpCGByw0p6eLWXc-anZK_WitbuM1nZ4k8gcXm3JLfxXQQBg5LNpyyivQlrg1fOzQ_vduwQi0L5xkRPuZsGOVLuTw1auqc6uTe9U2Ha6rqXiJ-uO3QVjAfp9dlmSq0';
+        putenv('GOOGLE_APPLICATION_CREDENTIALS=/var/www/icomes.or.kr/main/push_library/icomes2024_key.json');
+        
+        $scope = 'https://www.googleapis.com/auth/firebase.messaging';
+        
+        $client = new Google_Client();
+        
+        $client->useApplicationDefaultCredentials();
+        
+        $client->setScopes($scope);
+        
+        $auth_key = $client->fetchAccessTokenWithAssertion();
+        //echo $auth_key['access_token'];
+        $token = $auth_key['access_token'];
 
         $headers = array(
-            'Authorization: key='.$apiKey,
+            'Authorization: Bearer '.  $token,
             'Content-Type: application/json'
-        );
-
-        if($device === 'android'){
-            $data['title'] = $title;
-            $data['body']  = $message;
-            $data['sound'] = 'default';
-
-            $fields = array(
-                'registration_ids'  => $to_list,
-                'data' => $data,
-                'notification'      => array('title'=> $title,'body'=> $message,'sound'=>'default')
-            );
-
-            self::sendAsync($url, $headers, $fields);
-
-        } else {
+        );     
             for($a = 0; $a < count($to_list); $a++) {
                 $fields = array(
-                    "to"                => $to_list[$a],
-                    "content-available" => true,
-                    "mutable_content"   => true,
-                    "priority"          => "high",
-                    "data"              => array('data'=>$data,"media_type"=>"image"),
-                    "notification"      => array('title'=>$title,'body'=>$message,'sound'=>'default','body_loc_key'=>$body_key,'body_loc_args'=>$body_args)
+                    'token'  => $to_list[$a],
+                    'notification'      => array('title'=> $title,'body'=> $message)
                 );
 
-                self::sendAsync($url, $headers, $fields);
+            $message_json = array('message'=>$fields);
+            self::sendAsync($url, $headers, $message_json);
             }
-        }
     }
 
     static function fcmPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){

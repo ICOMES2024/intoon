@@ -7,7 +7,7 @@
     <div class="inner">
         <ul class="tab_green long abstract_submission">
             <li><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
-            <li><a href="./abstract_submission.php" class="online_submission_alert">Online Submission</a></li>
+            <li><a href="./abstract_submission.php">Online Submission</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
             <li class="on"><a href="./abstract_submission_award.php">Awards & Grants</a></li>
@@ -16,7 +16,7 @@
 			<div>
 				<div class="text_box">
 					<ul>
-						<li>The organizing committee of ICOMES 2023 has made the decision to offer benefits to all researchers who have accepted abstracts and will be participating in the on-site congress.</li>
+						<li>The organizing committee of ICOMES 2024 has made the decision to offer benefits to all researchers who have accepted abstracts and will be participating in the on-site congress.</li>
 					</ul>
 				</div>
 			</div>
@@ -133,7 +133,7 @@
 						</li>
 						<li>
 							<p>Step 3</p>
-							<p class="sm_txt">Attend and present at <br>ICOMES 2023 on-site.</p>
+							<p class="sm_txt">Attend and present at <br>ICOMES 2024 on-site.</p>
 						</li>
 						<li>
 							<p>Step 4</p>
@@ -180,35 +180,35 @@
 						<img src="./img/icons/icon_award01.png" alt="">
 						<p class="award_title">Best Oral Presentation </p>
 						<!-- <p>4 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2024</p>
+						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p>
 					</li>
 					<li>
 						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
 						<img src="./img/icons/icon_award02.png" alt="">
 						<p class="award_title">Excellent Poster Presentation</p>
 						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2024</p>
+						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
 					</li>
 					<li>
 						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
 						<img src="./img/icons/icon_award01.png" alt="">
 						<p class="award_title">Best Poster Presentation</p>
 						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2024</p>
+						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
 					</li>
 					<li>
 						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
 						<img src="./img/icons/icon_award02.png" alt="">
 						<p class="award_title">Excellent Oral Presentation</p>
 						<!-- <p>4 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2024</p>
+						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
 					</li>
 					<li>
 						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
 						<img src="./img/icons/icon_award01.png" alt="">
 						<p class="award_title">Best Poster Exhibition</p>
 						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2024</p>
+						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p>
 					</li>
 				</ul>
 			</div>

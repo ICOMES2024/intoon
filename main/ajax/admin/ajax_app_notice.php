@@ -64,7 +64,7 @@ if($_POST["flag"]==="pin"){
         exit;
     }
 
-    $title = "ICOMES2023";
+    $title = "ICOMES2024";
     $url = '/main/app_notice_detail.php?idx='.$notice_idx;
     $message = $push_message;
 

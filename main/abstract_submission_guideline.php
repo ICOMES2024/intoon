@@ -26,7 +26,7 @@ $info = sql_fetch($sql_info);
     <div class="inner">
         <ul class="tab_green long abstract_submission">
             <li class="on"><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
-            <li><a href="./abstract_submission.php" class="online_submission_alert">Online Submission</a></li>
+            <li><a href="./abstract_submission.php">Online Submission</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
             <li><a href="./abstract_submission_award.php">Awards & Grants</a></li>
@@ -45,11 +45,12 @@ $info = sql_fetch($sql_info);
                     </ul>
                 </div>
                 <div class="text_center btn_box mt25">
-                    <!-- <a href="https://image.webeon.net/icomes/ICOMES%202023_Abstract%20template_ver1.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a> -->
-					<a href="./download/ICOMES_2023_Abstract_form.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Abstract Form Download</a>
-                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn online_submission_alert">Go to Abstract Submission</a>
+                    <a class="btn long_btn not_yet"><img src="./img/icons/icon_download_white.svg" alt="">Abstract Form Download</a>
+					<!-- [240118] sujeong / not_yet으로 변경 -->
+                    <!-- <a href="./download/ICOMES_2023_Abstract_form.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Abstract Form Download</a> -->
+                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn">Go to Abstract Submission</a>
                 </div>
-                <!-- <a href="./download/ICOMES_2022_Abstract_template.docx" class="btn long_btn" target="_blank"><img src="./img/icons/icon_download_yellow.svg" alt="">Abstract Template Download</a></div> -->
+        
             </div>
             <!-- <div class="details"> -->
             <!-- 	<?= htmlspecialchars_decode(strip_tags($info['note_msg'])) ?> -->

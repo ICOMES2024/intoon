@@ -179,7 +179,7 @@
 </section>
 
 <!-- Plenary Speakers -->
-<div class="speakers_wrap">
+<!-- <div class="speakers_wrap">
 	<div class="container">
 		<h3 class="title">Plenary &amp; Keynote Speakers</h3>
 		<div class="">
@@ -227,7 +227,7 @@
 			</ul>
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- Key dates & News,Notice -->
 <section>
 	<div class="container">

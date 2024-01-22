@@ -88,9 +88,13 @@ $years = explode(',', sql_fetch($sql_years)['years']);
 					$pg = $photo_gallery[$current_year][$a];
 					$url = $file[$a]['url'];
 
-					echo "<li><div class='img_wrap' data-index='" . $i . "'><img src='" . $url . "' width='100%' height='100%'></div></li>";
+					//[240117] sujeong / 이미지 사이즈 재조정 후 일괄 png로 업로드
+					$png_url = explode('.' , $url)[0] . ".png";
+					//print_r($png_url);
 
-					$slider_inner .= "<li><div class='img_wrap'><img src='" . $url . "' width='100%' height='100%'></div></li>";
+					echo "<li><div class='img_wrap' data-index='" . $i . "'><img src='" . $png_url . "' width='100%' height='100%'></div></li>";
+
+					$slider_inner .= "<li><div class='img_wrap'><img src='" . $png_url . "' width='100%' height='100%'></div></li>";
 
 					$i++;
 				}

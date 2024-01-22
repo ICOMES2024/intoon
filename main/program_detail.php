@@ -63,11 +63,11 @@ echo '<script type="text/javascript">
     <h1 class="page_title">Scientific Program</h1>
     <div class="inner">
         <ul class="tab_green long centerT detail_program">
-            <li id="tab1" class="on"><a href="javascript:;">Sep.7 (Thu)
+            <li id="tab1" class="on"><a href="javascript:;">Sep.5 (Thu)
                 </a></li>
-            <li id="tab2"><a href="javascript:;">Sep.8 (Fri)
+            <li id="tab2"><a href="javascript:;">Sep.6 (Fri)
                 </a></li>
-            <li id="tab3"><a href="javascript:;">Sep.9 (Sat)
+            <li id="tab3"><a href="javascript:;">Sep.7 (Sat)
                 </a></li>
         </ul>
         <div class="tab_wrap">

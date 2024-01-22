@@ -4,7 +4,7 @@
     <div class="fixed_btn_wrap">
         <ul class="toolbar_wrap">
             <li>
-                <a href="/main/program_glance.php">
+                <a href="/main/comingsoon.php">
                     <img src="/main/img/icons/tool_program.svg" alt="">
                 </a>
             </li>
@@ -13,6 +13,18 @@
             ?>
             <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
             <li>
+                <a class="type2 pink not_yet">
+                    <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
+                    Abstract Book <br />Download
+                </a>
+            </li>
+            <li>
+                <a class="type2 violet not_yet">
+                    <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
+                    Program Book <br />Download
+                </a>
+            </li>
+            <!-- <li>
                 <a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" target="_blank" class="type2 pink">
                     <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
                     Abstract Book <br />Download
@@ -23,17 +35,17 @@
                     <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
                     Program Book <br />Download
                 </a>
-            </li>
+            </li> -->
             <?php
             } else {
             ?>
             <li>
-                <button type="button" class="online_registration_alert">
+                <button type="button" class="not_yet">
                     <i><img src="/main/img/icons/tool_regist.svg" alt=""></i>Registration
                 </button>
             </li>
             <li>
-                <button type="button" class="online_submission_alert">
+                <button type="button" class="not_yet">
                     <i><img src="/main/img/icons/tool_abstract.svg" alt=""></i>Abstract
                 </button>
             </li>
@@ -86,7 +98,7 @@
             <li><img src="./img/sponsor/logo23.png" alt=""></li>
         </ul>
     </div> -->
-    <div class="sponsor_logo-wrap container">
+    <!-- <div class="sponsor_logo-wrap container">
         <ul class="s_logo_list">
             <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
             <li><a href="https://www.novonordisk.com/" class="novo_nordisk">novo nordisk</a></li>
@@ -114,7 +126,7 @@
             <li class="small"><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
             <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
         </ul>
-    </div>
+    </div> -->
     <footer class="footer">
         <div class="container">
             <br>
@@ -155,7 +167,7 @@
                 </div>
                 <div class="footer_r">
                     <!-- <p>Conference Secretariat</p> -->
-                    <p>Secretariat of ICOMES 2023</p>
+                    <p>Secretariat of ICOMES 2024</p>
                     <ul>
                         <li>A-Block Richensia 4F, 341 Baekbeom-ro, Yongsan-gu, Seoul 04315, Korea</li>
                         <li>T. 82-2-2285-2582</li>
