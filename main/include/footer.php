@@ -5,7 +5,7 @@
         <ul class="toolbar_wrap">
             <li>
                 <a href="/main/comingsoon.php">
-                    <img src="/main/img/icons/tool_program.svg" alt="">
+                    <img src="https://image.webeon.net/icomes2024/logo/tool_program.svg" alt="">
                 </a>
             </li>
             <?php
@@ -14,13 +14,13 @@
             <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
             <li>
                 <a class="type2 pink not_yet">
-                    <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
+                    <i><img src="https://image.webeon.net/icomes2024/logo/icon_download_abstract.svg" alt=""></i>
                     Abstract Book <br />Download
                 </a>
             </li>
             <li>
                 <a class="type2 violet not_yet">
-                    <i><img src="/main/img/icons/icon_download_program.svg" alt=""></i>
+                    <i><img src="https://image.webeon.net/icomes2024/logo/icon_download_program.svg" alt=""></i>
                     Program Book <br />Download
                 </a>
             </li>
@@ -41,12 +41,12 @@
             ?>
             <li>
                 <button type="button" class="not_yet">
-                    <i><img src="/main/img/icons/tool_regist.svg" alt=""></i>Registration
+                    <i><img src="https://image.webeon.net/icomes2024/logo/tool_regist.svg" alt=""></i>Registration
                 </button>
             </li>
             <li>
                 <button type="button" class="not_yet">
-                    <i><img src="/main/img/icons/tool_abstract.svg" alt=""></i>Abstract
+                    <i><img src="https://image.webeon.net/icomes2024/logo/tool_abstract.svg" alt=""></i>Abstract
                 </button>
             </li>
             <?php
@@ -55,19 +55,19 @@
             <?php
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
-            <li><button type="button" onClick="alert('Need to login.')"><i><img src="/main/img/icons/tool_mypage.svg"
+            <li><button type="button" onClick="alert('Need to login.')"><i><img src="https://image.webeon.net/icomes2024/logo/tool_mypage.svg"
                             alt=""></i>My page</button></li>
             <?php
             } else {
             ?>
             <li><button type="button" onClick="location.href='/main/mypage.php'"><i><img
-                            src="/main/img/icons/tool_mypage.svg" alt=""></i>My Page</button></li>
+                            src="https://image.webeon.net/icomes2024/logo/tool_mypage.svg" alt=""></i>My Page</button></li>
             <?php
             }
             ?>
 
         </ul>
-        <button type="button" class="btn_top"><img src="/main/img/icons/icon_top_btn.svg" alt=""></button>
+        <button type="button" class="btn_top"><img src="https://image.webeon.net/icomes2024/logo/icon_top_btn.svg" alt=""></button>
     </div>
     <!-- 220323 HUBDNC LJH 추가 : 끝 -->
     <!--
@@ -134,11 +134,11 @@
             <div class="f_bottom clearfix">
                 <div class="footer_l">
                     <div class="clearfix">
-                        <img src="/main/img/icons/fl01.png" alt="">
-                        <img src="/main/img/icons/fl02.png" alt="">
+                        <img src="https://image.webeon.net/icomes2024/logo/fl01.png" alt="">
+                        <img src="https://image.webeon.net/icomes2024/logo/fl02.png" alt="">
                         <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;"
-                                src="/main/img/icons/fl03.png" alt=""></a>
-                        <img src="/main/img/icons/fl04.png" alt="">
+                                src="https://image.webeon.net/icomes2024/logo/fl03.png" alt=""></a>
+                        <img src="https://image.webeon.net/icomes2024/logo/fl04.png" alt="">
                     </div>
                 </div>
                 <div class="footer_c">

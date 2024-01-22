@@ -144,7 +144,7 @@ $info = sql_fetch($sql_info);
 						<img src="<?= $info['fi_img_url'] ?>" alt="hotel img">
 					 </div> -->
                 <div class="img_wrap">
-					<img src="./img/conrad_seoul.jpg" alt="conrad seoul">
+					<img src="https://image.webeon.net/icomes2024/venue/conrad_seoul.jpg" alt="conrad seoul">
                 </div>
 				<ul class="app_overview_ul app_venue_info">
 					<li>
@@ -236,7 +236,7 @@ $info = sql_fetch($sql_info);
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td><img class="venue_airplane" src="./img/venue_airplane1.svg" alt=""></td>
+                                                    <td><img class="venue_airplane" src="https://image.webeon.net/icomes2024/venue/venue_airplane1.svg" alt=""></td>
                                                     <td>Approx. T2: 78 min <br>Approx. T1: 70 min</td>
                                                     <td>T2: KRW 4,750 <br>T1: KRW 4,150</td>
                                                     <td>
@@ -247,7 +247,7 @@ $info = sql_fetch($sql_info);
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><img class="venue_airplane" src="./img/venue_airplane2.svg" alt=""></td>
+                                                    <td><img class="venue_airplane" src="https://image.webeon.net/icomes2024/venue/venue_airplane2.svg" alt=""></td>
                                                     <td>Approx. T2: 78 min <br>Approx. T1: 70 min</td>
                                                     <td>T2: KRW 4,550 <br>T1: KRW 4,050</td>
                                                     <td>
@@ -258,7 +258,7 @@ $info = sql_fetch($sql_info);
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><img class="venue_airplane" src="./img/venue_airplane3.svg" alt=""></td>
+                                                    <td><img class="venue_airplane" src="https://image.webeon.net/icomes2024/venue/venue_airplane3.svg" alt=""></td>
                                                     <td>19 min (6 line Express) <br>T1: 26 min(5 line)</td>
                                                     <td>KRW 1,350</td>
                                                     <td>Yeouido Stn. (exit #3) is 10 min <br>walking distance away from

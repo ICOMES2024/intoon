@@ -13,7 +13,7 @@
 	<!-- 백그라운드 이미지 slick -->
 	<!--container -->
 	<div>
-		<a href="./index.php" class="logo"><img src="./img/image_logo_2023_white.png"></a>
+		<a href="./index.php" class="logo"><img src="https://image.webeon.net/icomes2024/logo/image_logo_2023_white.png"></a>
 		<form>
 			<ul>
 				<li>
