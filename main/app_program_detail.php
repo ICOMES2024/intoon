@@ -73,16 +73,16 @@ echo '<script type="text/javascript">
     $row_sql = "";
 
     switch ($day){
-        case "day_tbody day_1" : case "day_1" : $day = "2023-09-07";
+        case "day_tbody day_1" : case "day_1" : $day = "2024-09-05";
             break;
-        case "day_tbody day_2" : case "day_2" : $day = "2023-09-08";
+        case "day_tbody day_2" : case "day_2" : $day = "2024-09-06";
             break;
-        case "day_tbody day_3" : case "day_3" : $day = "2023-09-09";
+        case "day_tbody day_3" : case "day_3" : $day = "2024-09-07";
             break;
     }
 
     if($_GET===[]){
-        $row_sql .= " AND program_date = '2023-09-07' ";
+        $row_sql .= " AND program_date = '2024-09-05' ";
     }
 
     if($day != ""){
@@ -214,9 +214,9 @@ echo '<script type="text/javascript">
 	</div>
     <form name="select_form">
 	<ul class="app_tab program center_t fix_cont">
-		<li value="1"><a href="javascript:;">Sep.7(Thu)</a></li>
-		<li value="2"><a href="javascript:;">Sep.8(Fri)</a></li>
-		<li value="3"><a href="javascript:;">Sep.9(Sat)</a></li>
+		<li value="1"><a href="javascript:;">Sep.5(Thu)</a></li>
+		<li value="2"><a href="javascript:;">Sep.6(Fri)</a></li>
+		<li value="3"><a href="javascript:;">Sep.7(Sat)</a></li>
         <input type="hidden" name="program_date">
 	</ul>
     <div class="inner">

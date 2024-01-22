@@ -33,7 +33,7 @@
 		exit;
 	}
 
-	$title   = "ICOMES2023";
+	$title   = "ICOMES2024";
 	$url     = '/main/app_schedule.php';
 	$message = '';
 

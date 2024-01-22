@@ -322,11 +322,11 @@
 				<h3 class="title">Use of Personal Information</h3>
 				<div class="term_box">
 					<strong>Purpose</strong>
-					<p>The Korean Society for the Study of Obesity (KSSO) provides online pre-registration services for ICOMES 2023. Based on your personal information, you can sign up for the conference and complete the payment for registration.</p>
+					<p>The Korean Society for the Study of Obesity (KSSO) provides online pre-registration services for ICOMES 2024. Based on your personal information, you can sign up for the conference and complete the payment for registration.</p>
 					<strong>Collecting Personal Information</strong>
-					<p>ICOMES 2023 requires you to provide your personal information to complete pre-registration online. You will be asked to enter your name, ID (email), password, date of birth, institution/organization, department, mobile, and telephone number.</p>
+					<p>ICOMES 2024 requires you to provide your personal information to complete pre-registration online. You will be asked to enter your name, ID (email), password, date of birth, institution/organization, department, mobile, and telephone number.</p>
 					<strong>Storing Personal Information</strong>
-					<p>ICOMES 2023 will continue to store your personal information to provide you with useful services, such as conference updates and newsletters.</p>
+					<p>ICOMES 2024 will continue to store your personal information to provide you with useful services, such as conference updates and newsletters.</p>
 				</div>
 				<div class="term_label">
 					<input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1" name="terms1" value="Y">

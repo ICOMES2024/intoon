@@ -22,7 +22,7 @@
 			<div class="app_sub_bg"></div>
 			<ul class="app_nav_menu">
 				<li class="on">
-					<a href="javascript:;">ICOMES 2023</a>
+					<a href="javascript:;">ICOMES 2024</a>
 					<ul class="app_sub">
 						<li><a href="/main/welcome.php">Welcome Message</a></li>
 						<li><a href="/main/organizing_committee.php">Organization</a></li>

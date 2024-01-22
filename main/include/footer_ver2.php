@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="footer_c">
-                    <!-- <p>Organized by</p>
+                   <p>Organized by</p>
 					<p>Korean Society for the Study of Obesity(KSSO)</p>
 					<ul>
 						<li>Room 1010, Renaissance tower, 14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
@@ -116,7 +116,7 @@
 						<li>E. <a href="mailto:webmaster@kosso.or.kr" class="font_inherit link">webmaster@kosso.or.kr</a></li>
 						<li>W. <a href="https://www.kosso.or.kr" class="font_inherit link">https://www.kosso.or.kr</a></li>
 					</ul>
-					<!--
+					
                     <ul>
                         <li>Tel. 82-2-6941-0888, 82-2-364-0886,0887 / Fax. 82-2-364-0883</li>
                         <li>Email. webmaster@kosso.or.kr / kosso@kosso.or.kr</li>
@@ -129,7 +129,7 @@
 					
                 </div>
                 <div class="footer_r">
-                    <!-- <p>Conference Secretariat</p>
+                    <p>Conference Secretariat</p>
 					<p>Secretariat of ICOMES 2023</p>
 					<ul>
 						<li>A-Block Richensia 4F, 341 Baekbeom-ro, Yongsan-gu, Seoul 04315, Korea</li>
@@ -137,7 +137,7 @@
 						<li>F. 82-2-2285-2530</li>
 						<li>E. <a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a></li>
 					</ul>
-					<!--
+					
                     <ul>
                         <li>Tel. +82-2-2285-2582  | Fax : 82-2-2285-2530
                             <br />Email : icomes@into-on.com

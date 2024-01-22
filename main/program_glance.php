@@ -49,9 +49,9 @@
 		<div class="app_tab_wrap fix_cont">
 			<ul class="app_tab program glance">
 				<li class="row2 all_days on"><a href="javascript:;">All Days</a></li>
-				<li><a href="javascript:;">Sep.7(Thu)</a></li>
-				<li><a href="javascript:;">Sep.8(Fri)</a></li>
-				<li style="margin-right:5px;"><a href="javascript:;">Sep.9(Sat)</a></li>
+				<li><a href="javascript:;">Sep.5(Thu)</a></li>
+				<li><a href="javascript:;">Sep.6(Fri)</a></li>
+				<li style="margin-right:5px;"><a href="javascript:;">Sep.7(Sat)</a></li>
 			</ul>
 		</div>
 <?php
@@ -65,10 +65,10 @@
 			// pc일때
 ?>
 				<ul class="tab_green long centerT program_glance">
-					<li class="on"><a href="javascript:;">All Days<br/>September 7 (Thu) ~ 9 (Sat)</a></li>
-					<li><a href="javascript:;">Sep.7 (Thu)</a></li>
-					<li><a href="javascript:;">Sep.8 (Fri)</a></li>
-					<li><a href="javascript:;">Sep.9 (Sat)</a></li>
+					<li class="on"><a href="javascript:;">All Days<br/>September 5 (Thu) ~ 7 (Sat)</a></li>
+					<li><a href="javascript:;">Sep.5 (Thu)</a></li>
+					<li><a href="javascript:;">Sep.6 (Fri)</a></li>
+					<li><a href="javascript:;">Sep.7 (Sat)</a></li>
 				</ul>
 <?php
 			}
@@ -79,8 +79,11 @@
 			// pc일때
 ?>
 				<div class="rightT mb20">
-					<button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0901.pdf')"
-						class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</a>
+
+				<button class="btn blue_btn nowrap not_yet"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</button>
+				<!-- [240118] sujeong / not_yet 버튼으로 변경 -->
+					<!-- <button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0901.pdf')"
+						class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
 				</div>
 <?php
 			}
@@ -104,7 +107,7 @@
 							</tr>
 							<tr>
 								<th colspan="8" class="font_big day_tbody day_1">
-									<div class="dots_div">Day 1 - 2023<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />7 (Thu)</div>
+									<div class="dots_div">Day 1 - 2023<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />5 (Thu)</div>
 								</th>
 							</tr>
 						</thead>
@@ -204,7 +207,7 @@
 						<thead>
 							<tr>
 								<th colspan="8" class="font_big day_tbody day_2">
-									<div class="dots_div">Day 2 - 2023<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />8 (Fri)</div>
+									<div class="dots_div">Day 2 - 2023<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />6 (Fri)</div>
 								</th>
 							</tr>
 						</thead>
@@ -491,7 +494,7 @@
 						<thead>
 							<tr>
 								<th colspan="8" class="font_big day_tbody day_3">
-									<div class="dots_div">Day 3 - 2023<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />9 (Sat)</div>
+									<div class="dots_div">Day 3 - 2023<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />7 (Sat)</div>
 								</th>
 							</tr>
 						</thead>

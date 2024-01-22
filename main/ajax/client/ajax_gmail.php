@@ -122,7 +122,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 		$background_img_url = "https://icomes.or.kr";
 	}
 
- $rawMessageString = "From: ICOMES2023<info@icomes.or.kr>\r\n";
+ $rawMessageString = "From: ICOMES2024<info@icomes.or.kr>\r\n";
  $rawMessageString .= "To: <{$to}>\r\n";
  $rawMessageString .= 'Subject: =?utf-8?B?' . base64_encode($subject) . "?=\r\n";
  $rawMessageString .= "MIME-Version: 1.0\r\n";
@@ -133,6 +133,7 @@ function createMessage($language, $mail_type, $fname, $to, $subject, $time, $tmp
 
 if($language == "ko") {
 	if($mail_type == "find_password") {
+		//[240119] sujeong / 원래 작동하지 않음!!
 		 $rawMessageString.= "<div style='width:670px;background-color:#fff;border:1px solid #ADF002;'>
 								<img src='{$background_img_url}/main/img/mail_header_2023.png' style='width:100%;margin-bottom:60px;'>
 								<div style='margin-left:60px;margin-bottom:40px;'>
@@ -229,7 +230,7 @@ if($language == "ko") {
 										</tr>
 										<tr>
 											<td colspan='3'>
-												<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2023] Welcome to ICOMES 2023!</div>
+												<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2024] Welcome to ICOMES 2023!</div>
 											</td>
 										</tr>
 										<tr>
@@ -237,7 +238,7 @@ if($language == "ko") {
 											<td>
 												<div>
 													<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$first_name} {$last_name},</p>
-													<p style='font-size:14px;color:#170F00;margin-top:14px;'>Thank you for signing up for the ICOMES 2023.<br>Your profile has been successfully created.<br>Please review the information that you have entered as below.<br>If necessary, you can access ‘ICOMES 2023 website - MY PAGE’ to review, modify or update your personal information.</p>
+													<p style='font-size:14px;color:#170F00;margin-top:14px;'>Thank you for signing up for the ICOMES 2024.<br>Your profile has been successfully created.<br>Please review the information that you have entered as below.<br>If necessary, you can access ‘ICOMES 2024 website - MY PAGE’ to review, modify or update your personal information.</p>
 													<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 														<tbody>
 															<tr>
@@ -261,7 +262,7 @@ if($language == "ko") {
 															</tr>
 														</tbody>	
 													</table>
-													<p>We express our gratitude to you for your interest in ICOMES 2023.</p>
+													<p>We express our gratitude to you for your interest in ICOMES 2024.</p>
 												</div>
 											</td>
 											<td width='74' style='width:74px;'></td>
@@ -396,7 +397,7 @@ if($language == "ko") {
 								</tr>
 								<tr>
 									<td colspan='3'>
-										<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2023] Temporary Password</div>
+										<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2024] Temporary Password</div>
 									</td>
 								</tr>
 								<tr>
@@ -407,7 +408,7 @@ if($language == "ko") {
 												<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Member of : {$fname}<br><span style='font-size:14px;color:#170F00;font-weight:normal;'>You requested a temporary password at : {$time}</span></p>
 											</div>
 											<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
-											<p style='font-size:14px;color:#170F00;margin-top:14px;'>You can log in to the ICOMES 2023 website using the ID & Temporary Password below and modify your password on the personal information on my page.</p>
+											<p style='font-size:14px;color:#170F00;margin-top:14px;'>You can log in to the ICOMES 2024 website using the ID & Temporary Password below and modify your password on the personal information on my page.</p>
 											<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 												<tbody>
 													<tr>
@@ -449,7 +450,7 @@ if($language == "ko") {
 	if($mail_type == "payment") {
 			$name_title = $data["name_title"] ?? "";
 
-			$register_no = $data["idx"] ? "ICOMES2023-".$data["idx"] : "-";
+			$register_no = $data["idx"] ? "ICOMES2024-".$data["idx"] : "-";
 			$register_date = $data["register_date"] ?? "-";
 
 			$licence_number = $data["licence_number"] ? $data["licence_number"] : "Not applicable";
@@ -780,6 +781,7 @@ if($language == "ko") {
 	}
 
 	if($mail_type == "registration") {
+		//[240119] sujeong / 원래 작동하지 않음!!
 			echo "dd"; exit;
 			$user_idx = $_SESSION["USER"]["idx"];
 			$id = $_SESSION["USER"]["email"];
@@ -1243,7 +1245,7 @@ if($_POST["flag"] == "signup") {
 		
 		$user_data = sql_fetch($select_user_query);
 
-		$subject = "[ICOMES 2023] Welcome to ICOMES 2023!";
+		$subject = "[ICOMES 2024] Welcome to ICOMES 2023!";
 		$callback_url = D9_DOMAIN."/signup_certified.php?idx=".$user_data["idx"];
 		
 		$message =createMessage("en", "sign_up", "", $email, $subject, date("Y-m-d H:i:s"), "", $callback_url, 1);
@@ -1295,7 +1297,7 @@ if($_POST["flag"] == "find_password"){
 		$subject = $locale("mail_find_password_subject");
 		$callback_url = D9_DOMAIN."/password_reset.php?e=".$email."&t=".$random_token;
 
-		$message =createMessage($language, "find_password", $name, $email, "[ICOMES 2023]".$subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
+		$message =createMessage($language, "find_password", $name, $email, "[ICOMES 2024]".$subject, date("Y-m-d H:i:s"), $temporary_password, $callback_url, 0);
 		createDraft($service, "info@icomes.or.kr", $message);
 		sendMessage($service, "info@icomes.or.kr", $message);
 
@@ -1337,7 +1339,7 @@ else if($_POST["flag"] == "payment"){
 	$name = $_POST["name"] ?? null;
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
-	$message =createMessage("en", "payment", $name , $email, "[ICOMES] Payment Confirmation", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
+	$message =createMessage("en", "payment", $name , $email, "[ICOMES 2024] Payment Confirmation", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
 	createDraft($service, "info@icomes.or.kr", $message);
 	sendMessage($service, "info@icomes.or.kr", $message);
 }
@@ -1428,7 +1430,7 @@ else if($_POST["flag"] == "abstract"){
 		"nation_map"				=> $nation_map
 	];
 
-	$message =createMessage($language, "abstract", "", $email, "[ICOMES 2023]".$subject, date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
+	$message =createMessage($language, "abstract", "", $email, "[ICOMES 2024]".$subject, date("Y-m-d H:i:s"), "", "", 1, "", "", "", $user_email, date("Y-m-d H:i:s"), $title, $abstract_title, $data);
 	createDraft($service, "info@icomes.or.kr", $message);
 	sendMessage($service, "info@icomes.or.kr", $message);
 }
