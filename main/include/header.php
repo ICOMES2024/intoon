@@ -12,7 +12,7 @@ $locale = locale($language);
                 <div class="dday_bot">Today is <span><?= $today; ?></span></div>
             </div>
             <!-- <div class="text_center g_h_logo"><img src="/main/img/icon_logo2.svg" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div> -->
-            <div class="g_h_logo"><img src="/main/img/icon_logo_blue.svg" alt="" class="pointer"
+            <div class="g_h_logo"><img src="https://image.webeon.net/icomes2024/logo/icon_logo_blue.svg" alt="" class="pointer"
                     onClick="javascript:location.href='/main/index.php'"></div>
             <ul class="g_h_tool">
                 <!-- <li><a href="/main/index.php">Home</a></li> -->

@@ -26,7 +26,7 @@
             <div class="visa_wrap">
                 <p>
                     In order to enter the Republic of Korea, a valid passport and a Korean visa are mandatory.<br />
-                    For more accurate information, the Secretariat of ICOMES 2023 recommends that you contact the Korean
+                    For more accurate information, the Secretariat of ICOMES 2024 recommends that you contact the Korean
                     Embassy in your country to ask about the necessary documents for visa issuance. It is highly
                     recommended to apply for a visa at least one month before your departure.<br />
                     Nationals or regions with which Korea has signed a visa waiver agreement can enter without a visa
@@ -66,7 +66,7 @@
                     completed registration with full payment.<br />This invitation is intended to assist potential
                     participants in raising funds or obtaining visas. Please note that an invitation letter does <span
                         class="bold">NOT</span> guarantee any financial assistance from the organizers.<br />To obtain
-                    an invitation letter for attending ICOMES 2023, please send an email to the secretariat at <a
+                    an invitation letter for attending ICOMES 2024, please send an email to the secretariat at <a
                         href="mailto:icomes@into-on.com" class="link">icomes@into-on.com</a> and provide the following
                     application information.
                 </p>
