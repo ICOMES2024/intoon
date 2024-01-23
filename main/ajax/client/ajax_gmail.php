@@ -259,7 +259,7 @@ if($language == "ko") {
 															{$affiliation_kor_cont}
 															<tr>
 																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Telephone number</th>
-																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>(+'{$nation_no}'){$phone}</td>
+																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>(+{$nation_no}){$phone}</td>
 															</tr>
 														</tbody>	
 													</table>
@@ -1160,7 +1160,7 @@ if($language == "ko") {
 									<td>
 										<!-- 23.04.25 수정된 버튼 마크업 -->
 										<p>Best regards,</p>
-										<p>Secretariat of ICOMES 2023</p><br/>
+										<p>Secretariat of ICOMES 2024</p><br/>
 										<div style="text-align: center;">
 											<a href="https://'.$url.'/">
 												<img src="https://'.$url.'/main/img/icomes_btn.png" alt="">
