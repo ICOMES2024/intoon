@@ -816,15 +816,35 @@ function inputCheck(formData) {
         data[ok] = ov;
     });
 
-	if($(".presenting_author:checked").length != 1) {
-		alert("please check only one presenting_author");
+    if($(".presenting_author:checked").length < 1) {
+		alert("please check presenting_author");
 		return false;
 	}
 
-	if($(".corresponding_author:checked").length != 1) {
+    if($(".corresponding_author:checked").length < 1) {
+		alert("please check corresponding_author");
+		return false;
+	}
+
+	if($(".presenting_author:checked").length > 1) {
+		alert("please check only one presenting_author.");
+		return false;
+	}
+
+	if($(".corresponding_author:checked").length > 1) {
 		alert("please check only one corresponding_author");
 		return false;
 	}
+    // [240123] sujeong / 효준 대리님 코드와 일치시키기
+	// if($(".presenting_author:checked").length != 1) {
+	// 	alert("please check only one presenting_author");
+	// 	return false;
+	// }
+
+	// if($(".corresponding_author:checked").length != 1) {
+	// 	alert("please check only one corresponding_author");
+	// 	return false;
+	// }
 
     return {
         data: data,
@@ -918,11 +938,17 @@ function check_value() {
         $("#submit_btn").addClass("gray_btn");
         return;
     }
-    if (!affiliation_len < 0) {
+     // [240123] sujeong / 효준 대리님 코드와 일치시키기
+    if (!affiliation_len) {
         $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
         return;
     }
+    // if (!affiliation_len < 0) {
+    //     $("#submit_btn").removeClass("blue_btn");
+    //     $("#submit_btn").addClass("gray_btn");
+    //     return;
+    // }
     if (!email) {
         $("#submit_btn").removeClass("blue_btn");
         $("#submit_btn").addClass("gray_btn");
@@ -1106,7 +1132,8 @@ function setUserInformation(target) {
 }
 
 //핸드폰 유효성
-$(document).on('change keyup', ".phone", function(key) {
+//[240123] sujeong / 효준대리님과 코드 일치시키기
+$(document).on('input', ".phone", function(key) {
     var _this = $(this);
     if (key.keyCode != 8) {
         var phone = _this.val().replace(/[^0-9 || -]/gi, '');
