@@ -119,7 +119,7 @@ $years = explode(',', sql_fetch($sql_years)['years']);
 
 					// 이전페이지
 					if ($pagination_current_page > 1) {
-						echo "<li><a href='/main/photo.php" . ($url . ($pagination_raw * ($pagination_current_page - 1))) . "'><img src='./img/icons/arrows_left.png'></a></li>";
+						echo "<li><a href='/main/photo.php" . ($url . ($pagination_raw * ($pagination_current_page - 1))) . "'><img src='https://image.webeon.net/icomes2024/logo/arrows_left.png'></a></li>";
 					}
 
 					$max = $pagination_raw > $total_page ? $total_page : $pagination_raw;
@@ -132,7 +132,7 @@ $years = explode(',', sql_fetch($sql_years)['years']);
 
 					// 다음페이지
 					if ($pagination_total_page > $current_page) {
-						echo "<li><a href='/main/photo.php" . ($url . ($page + 1)) . "'><img src='./img/icons/arrows_right.png'></a></li>";
+						echo "<li><a href='/main/photo.php" . ($url . ($page + 1)) . "'><img src='https://image.webeon.net/icomes2024/logo/arrows_right.png'></a></li>";
 					}
 					?>
 				</ul>
@@ -143,7 +143,7 @@ $years = explode(',', sql_fetch($sql_years)['years']);
 	<div class="popup more_img_pop">
 		<div class="pop_bg"></div>
 		<div class="pop_contents">
-			<button type="button" class="pop_close pop_close_w"><img src="./img/icons/pop_close_white.png"></button>
+			<button type="button" class="pop_close pop_close_w"><img src="https://image.webeon.net/icomes2024/logo/pop_close_white.png"></button>
 			<ul class="pop_slider">
 				<?= $slider_inner ?>
 			</ul>

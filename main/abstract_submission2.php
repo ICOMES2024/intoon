@@ -245,7 +245,7 @@ $abstract_idx = $_GET["idx"];
                                 <?php
 									foreach ($category_list as $list) {
 										$selected = $abstract_category == $list["idx"] ? "selected" : "";
-										echo "<option value='" . $list["idx"] . "'" . $selected . ">" . $list["title_en"] . "</option>";
+										echo "<option value='" . $list["idx"] . "'" . $selected . ">" .$list["idx"] .'. '. $list["title_en"] . "</option>";
 									}
 									?>
                             </select>

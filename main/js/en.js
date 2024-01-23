@@ -79,7 +79,7 @@ var en = {
 	check_abstract_file : "Please attach your Abstract File.",
 	check_oral_presentation : "Please select the oral presentation.",
 	check_abstract_thumnail : "Please attach Thumbnail.",
-	abstract_submit_ok : "Abstract submission success.",
+	abstract_submit_ok : "Abstract submitted successfully.",
 	abstract_submit_error : "Abstract submission failed.",
 	under_25 : "Please write the title in less than 25 characters.",
 	under_300 : "Please write the abstract text in less than 300 characters.",

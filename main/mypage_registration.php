@@ -116,7 +116,8 @@
         if ($currentDateTime >= $targetDateTime){
         ?>
 		<div class="rightT">
-			<button class="btn green_btn long mb20 certificate_btn" type="button">Certificate of Attendance</button>
+			<!-- [240123] sujeong 증명서 학회팀 요청주석 -->
+			<!-- <button class="btn green_btn long mb20 certificate_btn" type="button">Certificate of Attendance</button> -->
 		</div>
         <?php
         }

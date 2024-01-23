@@ -154,10 +154,10 @@
 				</div>
 				<div class="download_wrap">
 					<a href="./download/ICOMES_2023_Travel_Grant_Application_Form.docx" class="btn long_btn type2 text_long" target="_blank">
-						<img src="./img/icons/icon_download_white.svg" alt="">Travel Grant Application Form Download (Overseas)
+						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Travel Grant Application Form Download (Overseas)
 					</a>
 					<a href="./download/ICOMES_2023_Application_for_travel_subsidy(Non-MD).docx" class="btn long_btn type2 text_long" target="_blank">
-						<img src="./img/icons/icon_download_white.svg" alt="">Non-MD 지방 참석자 여비 보조금 지원 양식 다운로드 (Domestic)
+						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Non-MD 지방 참석자 여비 보조금 지원 양식 다운로드 (Domestic)
 					</a>
 				</div>
 				<p class="mt10 p_indent">• MD 지방 참석자: 지원 양식 별도 없음. 초록채택자 공지 후 대한비만학회 개별 공지 예정</p>
