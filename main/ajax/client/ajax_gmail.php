@@ -176,6 +176,7 @@ if($language == "ko") {
 			$last_name_kor = $data["last_name_kor"];
 			$affiliation = $data["affiliation"];
 			$affiliation_kor = $data["affiliation_kor"];
+			$nation_no = $data["nation_tel"];
 			$phone = $data["phone"];
 			$title = $data["title"] ?? NULL;
 
@@ -258,7 +259,7 @@ if($language == "ko") {
 															{$affiliation_kor_cont}
 															<tr>
 																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Telephone number</th>
-																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$phone}</td>
+																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>(+'{$nation_no}'){$phone}</td>
 															</tr>
 														</tbody>	
 													</table>
