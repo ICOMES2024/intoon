@@ -255,7 +255,7 @@ $price = get_data($sql_price);
 
             <!--3. Cancellation & Refund Policy start-->
             <h3 class="title">Cancellation & Refund Policy</h3>
-			<a href="./download/ICOMES_2023_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long" target="_blank"><img src="./img/icons/icon_download_white.svg" alt="">Cancellation & Refund  Form Download</a>
+			<a href="./download/ICOMES_2023_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long" target="_blank"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Cancellation & Refund  Form Download</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                 <div class="">

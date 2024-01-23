@@ -63,7 +63,7 @@
 
 
 	$sql_during =	"SELECT
-						IF(DATE(NOW()) >= '2022-09-12', 'Y', 'N') AS yn
+						IF(DATE(NOW()) >= '2024-06-20', 'Y', 'N') AS yn
 					FROM info_event";
 	$during_yn = sql_fetch($sql_during)['yn'];
 
@@ -162,7 +162,7 @@
 							<td><?= $submission["regist_date"] ?></td>
 							<td data-idx="<?= $submission["idx"] ?>">
 								<button type="button" class="btn review_regi_open">Review</button>
-<!--								<button type="button" class="btn modify_btn">Modify</button>-->
+								<button type="button" class="btn modify_btn">Modify</button>
 <!--								<button type="button" class="btn delete_btn">Delete</button>-->
 							</td>
 						</tr>
@@ -174,7 +174,7 @@
 			</div>
 			<div class="centerT">
 <!--				<button class="btn blue_btn long online_submission_alert">Make a new submission</button>-->
-				<button class="btn gray_btn long online_submission_alert">Make a new submission</button>
+				<button class="btn blue_btn long" onclick="javascript:window.location.href='./abstract_submission.php';">Make a new submission</button>
 			</div>
 		</div> 
 	</div>

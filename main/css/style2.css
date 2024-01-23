@@ -101,7 +101,7 @@ header.blue_header {background-color: #000066; position: fixed;}
 /*.main_section .txt_wrap p.event_hold {letter-spacing: -5px;}*/
 .main_section .main_btn_wrap {/*margin-top: 124px;*/width:100%; position:absolute; bottom:285px; z-index:5;}
 /* .main_section .btn_circle_arrow {display: block; width: 65px; height: 65px; margin: 44px auto 0; margin:0 auto; background: center / contain no-repeat url("../img/icons/icon_circle_arrow.png")} */
-.main_section .btn_circle_arrow {display: block; width: 55px; height: 55px; margin:0 auto; background: center / contain no-repeat url("../img/icons/icon_circle_arrow2.svg")}
+.main_section .btn_circle_arrow {display: block; width: 55px; height: 55px; margin:0 auto; background: center / contain no-repeat url("https://image.webeon.net/icomes2024/logo/icon_circle_arrow2.svg")}
 section.container {/*margin-top: 125px;*/ border: 1px solid transparent;}
 section.container.login.bg {border: 0px;}
 

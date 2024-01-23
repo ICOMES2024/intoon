@@ -575,7 +575,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	.dday_wrap {display: none;}
 	
 	/* main */
-	.section_bg  {background:url("/main/img/main_mb.png") no-repeat top 60px center /cover;}
+	.section_bg  {background:url("https://image.webeon.net/icomes2024/main/main_mb.png") no-repeat top 60px center /cover;}
 	/*.section_bg  {padding-top: 60px; background-position: center top 60px; border:1px solid;}*/
 	.main_section.icola_main .container {padding: 116px 0;}
 	.main_section .main_btn_wrap {bottom:28px;}

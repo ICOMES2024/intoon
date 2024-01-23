@@ -230,7 +230,7 @@ if($language == "ko") {
 										</tr>
 										<tr>
 											<td colspan='3'>
-												<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2024] Welcome to ICOMES 2023!</div>
+												<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2024] Welcome to ICOMES 2024!</div>
 											</td>
 										</tr>
 										<tr>
@@ -652,7 +652,7 @@ if($language == "ko") {
 											<tr>
 												<td width='74' style='width:74px;'></td>
 												<td>
-													<div style='font-weight:bold; text-align:center; font-size: 21px; color: #00666B; padding: 20px 0;'>[ICOMES 2023] Completed Registration</div>
+													<div style='font-weight:bold; text-align:center; font-size: 21px; color: #00666B; padding: 20px 0;'>[ICOMES 2024] Completed Registration</div>
 												</td>
 												<td width='74' style='width:74px;'></td>
 											</tr>
@@ -1024,8 +1024,8 @@ if($language == "ko") {
 		$rawMessageString .= '<div><table width="750" style="border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;">
 								<tr><td colspan="3"><img src="https://'.$url.'/main/img/mail_header_2023.png" width="750" style="width:100%; max-width:100%;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td>
-								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[ICOMES 2023] Completed Abstract Submission</div></td><td width="74" style="width:74px;"></td></tr>
-								<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear '.$first_name.' '.$last_name.',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">Thank you for the online submission of your abstract to ICOMES 2023.<br>Your abstract has been successfully submitted as follows.</p>
+								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[ICOMES 2024] Completed Abstract Submission</div></td><td width="74" style="width:74px;"></td></tr>
+								<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear '.$first_name.' '.$last_name.',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">Thank you for the online submission of your abstract to ICOMES 2024.<br>Your abstract has been successfully submitted as follows.</p>
 								<!-- Abstract Submission Status -->
 								<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">Abstract Submission Status</p>
 								<table width="586" style="width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:10px 0 30px;">
@@ -1036,7 +1036,7 @@ if($language == "ko") {
 								</tr>
 								<tr>
 									<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">Type of Presentation</th>
-									<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2">'.($presentation_type+1).'. '.$presentation_type_arr[$presentation_type].'</td>
+									<td style="font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;" colspan="2"> '.$presentation_type_arr[$presentation_type].'</td>
 								</tr>
 								<tr>
 									<th style="width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;">Topic Category</th>
@@ -1149,7 +1149,7 @@ if($language == "ko") {
 			}
 		}
 
-		$rawMessageString .=  '<p style="margin: 0 34px 10px 0">If you have any questions regarding abstract submission, please contact the secretariat.(<a href="mailto:icomes_abstracts@into-on.com">icomes_abstracts@into-on.com</a>) We look forward to seeing you in ICOMES 2023</p>
+		$rawMessageString .=  '<p style="margin: 0 34px 10px 0">If you have any questions regarding abstract submission, please contact the secretariat.(<a href="mailto:icomes_abstracts@into-on.com">icomes_abstracts@into-on.com</a>) We look forward to seeing you in ICOMES 2024</p>
 								</div>
 								</td>
 								<td width="74" style="width:74px;"></td>
@@ -1245,7 +1245,7 @@ if($_POST["flag"] == "signup") {
 		
 		$user_data = sql_fetch($select_user_query);
 
-		$subject = "[ICOMES 2024] Welcome to ICOMES 2023!";
+		$subject = "[ICOMES 2024] Welcome to ICOMES 2024!";
 		$callback_url = D9_DOMAIN."/signup_certified.php?idx=".$user_data["idx"];
 		
 		$message =createMessage("en", "sign_up", "", $email, $subject, date("Y-m-d H:i:s"), "", $callback_url, 1);

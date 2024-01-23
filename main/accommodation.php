@@ -23,7 +23,7 @@
                     <div class="btn_wrap">
                          <button class="btn green_btn"
                         onClick="javascript:window.open('https://www.hilton.com/en/hotels/selcici-conrad-seoul/')">Go to Website</button>
-                    <a href="./download/ICOMES_2023_Conrad_Seoul_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="./img/icons/icon_download_white.svg" alt="">Reservation Form Download</a>
+                    <a href="./download/ICOMES_2023_Conrad_Seoul_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
                     <!-- onClick="javascript:alert('Reservation is closed.');" -->
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                     <div class="btn_wrap">
                          <button class="btn green_btn"
                         onClick="javascript:window.open('https://www.seoulgarden.co.kr/EN/')">Go to Website</button>
-                    <a href="./download/ICOMES_2023_Seoul_Garden_Reservation_Form.docx" class="btn green_btn download_btn" target="_blank" download=""><img src="./img/icons/icon_download_white.svg" alt="">Reservation Form Download</a>
+                    <a href="./download/ICOMES_2023_Seoul_Garden_Reservation_Form.docx" class="btn green_btn download_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
                     <!-- onClick="javascript:alert('Reservation is closed.');" -->
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                     <div class="btn_wrap">
                          <button class="btn green_btn"
                         onClick="javascript:window.open('https://www.shillastay.com/mapo/')">Go to Website</button>
-                    <a href="./download/ICOMES_2023_Shilla_Stay_Mapo_Hotel_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="./img/icons/icon_download_white.svg" alt="">Reservation Form Download</a>
+                    <a href="./download/ICOMES_2023_Shilla_Stay_Mapo_Hotel_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
                     <!-- onClick="javascript:alert('Reservation is closed.');" -->
                     </div>
                 </div>

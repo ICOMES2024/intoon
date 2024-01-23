@@ -131,7 +131,7 @@ $info = sql_fetch($sql_info);
 					</ul>
 				</div>
 				<div class="text_center btn_box mt25">
-					<a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Poster Form Download</a>
+					<a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a>
 					<!--
                     <a href="javascript:;" class="btn long_btn type2" target="_blank" download="">
 						Poster Form Download<img src="./img/icons/icon_download_yellow.svg" alt="">
