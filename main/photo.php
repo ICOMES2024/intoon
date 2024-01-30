@@ -2,7 +2,7 @@
 include_once('./include/head.php');
 include_once('./include/header.php');
 
-$current_year = $_GET["year"] ? $_GET["year"] : "";
+$current_year = $_GET["year"] ? $_GET["year"] : "2023";
 
 $total_count = 0;
 $current_page = $_GET["page"] ? @(int) $_GET["page"] : 0;
@@ -24,24 +24,17 @@ $years = explode(',', sql_fetch($sql_years)['years']);
 <section class="container photo">
 	<h1 class="page_title">Photo Gallery</h1>
 	<div class="inner">
-		<!-- <div class="tab_green">
-            <ul class="clearfix">
-                <li class="on"><a href="javascript:;">2022</a></li>
-                <li><a href="javascript:;">2021</a></li>
-                <li><a href="javascript:;">2020</a></li>
-                <li><a href="javascript:;">2019</a></li>
-                <li><a href="javascript:;">2018</a></li>
-                <li><a href="javascript:;">2017</a></li>
-                <li><a href="javascript:;">2016</a></li>
+		<div class="photo_tab_wrap">
+             <ul class="tab_pink">
             </ul>
-        </div> -->
+        </div>
 		<!-- <img class="coming" src="./img/coming.png" /> -->
         <div class="year_slider_wrap section">
             <div class="photo_tab_wrap">
-                <ul class="tab_green">
+                <!-- <ul class="tab_green">
                     <?php
 					$is_first = true;
-					//foreach($photo_gallery as $key => $value){
+				
 						foreach ($years as $key => $value) {
 
 							$on = "";
@@ -72,7 +65,7 @@ $years = explode(',', sql_fetch($sql_years)['years']);
 					$total_count = count($file);
 					
 					?>
-                </ul>
+                </ul> -->
             </div>
         </div>
         <div>
@@ -200,5 +193,64 @@ $years = explode(',', sql_fetch($sql_years)['years']);
 		var width = $(".photo_list li").width();
 		$(".photo_list li .img_wrap").height(width);
 	}
+	//[240130]sujeong / photo gallery years 화살표 추가
+	const yearsList = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015]; 
+	const yearList = document.querySelectorAll(".year_wrap");
+	const arrowsList = document.querySelectorAll(".arrow");
+	const year = <?php echo $current_year; ?>;
+	const photoWrap = document.querySelector(".photo_tab_wrap");
+	const tabUl = document.querySelector(".tab_pink");
+	let i = 0;
+
+	//[240130] sujeong / 2019년도 보다 작은 년도이면 보여지는 리스트 맨 뒤로  
+	function getOnLi(){
+		const yearList = document.querySelectorAll(".year_wrap");
+			if(year < 2019){
+					i = 4;
+					showPinkUl(i)
+				}
+	}
+
+	//[240130] sujeong / 라스트 왼쪽으로 가기 
+	function goLeft(){
+		if(i >= 1){
+			i-=1;
+			showPinkUl(i)
+		}	
+	};
+
+	//[240130] sujeong / 라스트 오른쪽으로 가기 
+	function goRight(){
+		if(i <= 3){
+			i = i + 1;
+			showPinkUl(i)
+		}
+	};
+
+	//[240130] sujeong / list 그리기
+	function showPinkUl(index){
+		tabUl.innerHTML = "";
+		tabUl.innerHTML +=`
+		<li class="arrow_li"><a onclick="goLeft()" class="arrow left"><img src="/main/img/icons/arrows_left.svg"/></a></li>
+			`
+		for(j = index; j <= index + 4; j++){
+			if(yearsList[j] == year){
+				tabUl.innerHTML +=`
+				<li class="on"><a class="year_wrap" href="./photo.php?year=${yearsList[j]}">${yearsList[j]}</a></li>
+			`
+			}else{
+				tabUl.innerHTML +=`
+				<li><a class="year_wrap" href="./photo.php?year=${yearsList[j]}">${yearsList[j]}</a></li>
+			`
+			}
+			
+		}
+		tabUl.innerHTML +=`
+		<li class="arrow_li"><a onclick="goRight()" class="arrow right"><img src="/main/img/icons/arrows_right.svg"/></a></li>
+			`
+		photoWrap.append(tabUl)
+	}
+	showPinkUl(i);
+	getOnLi();
 </script>
 <?php include_once('./include/footer.php'); ?>
