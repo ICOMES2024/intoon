@@ -45,9 +45,7 @@ $info = sql_fetch($sql_info);
                     </ul>
                 </div>
                 <div class="text_center btn_box mt25">
-                    <a class="btn long_btn not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Abstract Form Download</a>
-					<!-- [240118] sujeong / not_yet으로 변경 -->
-                    <!-- <a href="./download/ICOMES_2023_Abstract_form.docx" class="btn long_btn" target="_blank" download><img src="./img/icons/icon_download_white.svg" alt="">Abstract Form Download</a> -->
+                     <a href="./download/ICOMES_2024_Abstract_form.docx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Abstract Form Download</a> 
                     <a href="./abstract_submission.php" class="btn long_btn yellow_btn">Go to Abstract Submission</a>
                 </div>
         
