@@ -96,8 +96,8 @@
 			<img src="https://image.webeon.net/icomes2024/main/img_vsl_text.png" class="pc_only img_vsl_text" alt="">
 			<div class="mb_only img_vsl_text" style="">
 				<img src="https://image.webeon.net/icomes2024/main/img_vsl_text_mb.svg" alt="">
-				<p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
-				<p>CONRAD Seoul Hotel, Korea</p>
+				<!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
+				<p>CONRAD Seoul Hotel, Korea</p> -->
 			</div>
 			<!-- 상단 타이틀 -->
 			<div class="txt_wrap">
@@ -148,35 +148,35 @@
 				<li>
 					<a class="not_yet">
 					<!-- <a href="/main/abstract_submission_guideline.php"> -->
-						<h2>August 10 <span>(Thu)</span></h2>
+						<h2>May 30 <span>(Thu)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
 						<p>Abstract Submission<br/>Deadline</p>
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a class="not_yet">
-					<!-- <a href="/main/abstract_submission_guideline.php"> -->
+					 <a href="/main/abstract_submission_guideline.php"> 
 						<h2>August 14 <span>(Mon)</span></h2>
-						<!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> -->
+						 <i><img src="/main/img/icons/icon_letter.svg" alt=""></i> 
 						<p>Notification of<br/>Acceptance</p>
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a class="not_yet">
 					<!-- <a href="/main/registration_guidelines.php"> -->
-						<h2>August 24 <span>(Thu)</span></h2>
+						<h2>Mid-March <span>(Thu)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
-						<p>Pre-Registration <br/>Deadline</p>
+						<p>Pre-Registration <br/>Open</p>
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a class="not_yet">
-					<!-- <a href="/main/abstract_submission_award.php"> -->
-						<!-- <h2>2 Jun</h2> -->
+					 <a href="/main/abstract_submission_award.php"> 
+						<h2>2 Jun</h2> 
 						<h2>Awards &amp;<br/>Grants</h2>
 						<i><img src="https://image.webeon.net/icomes2024/main/img_trophy.svg" alt=""></i>
 					</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 	</div>
