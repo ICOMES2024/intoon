@@ -138,7 +138,7 @@
 				<?php
 
 					foreach($registration_list as $list) {
-						$register_no = $list["idx"] ? "ICOMES2023-".$list["idx"] : "-";
+						$register_no = $list["idx"] ? "ICOMES2024-".$list["idx"] : "-";
 						$payment_url = "./registration2.php?idx={$list['idx']}";
 						$popup_class = "revise_pop_btn";
 						$price = $list["total_price_kr"] != "" ? "￦ ".number_format($list["total_price_kr"]) : ($list["total_price_us"] != "" ? "$ ".number_format($list["total_price_us"]) : "-");

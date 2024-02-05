@@ -222,230 +222,161 @@ if($language == "ko") {
 							//<img src='".$background_img_url."/img/mail_header_2023.png' style='width:calc(100% + 80px);margin-left:-40px;'>
 			// 23.05.15 HUBDNC_LJH 이메일 템플릿 변경 
 			$rawMessageString.= "
-								<table width='750' style='border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;'>
-									<tbody>
-										<tr>
-											<td colspan='3'>
-												<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:750px;'>
-											</td>
-										</tr>
-										<tr>
-											<td colspan='3'>
-												<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2024] Welcome to ICOMES 2024!</div>
-											</td>
-										</tr>
-										<tr>
-											<td width='74' style='width:74px;'></td>
-											<td>
-												<div>
-													<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$first_name} {$last_name},</p>
-													<p style='font-size:14px;color:#170F00;margin-top:14px;'>Thank you for signing up for the ICOMES 2024.<br>Your profile has been successfully created.<br>Please review the information that you have entered as below.<br>If necessary, you can access ‘ICOMES 2024 website - MY PAGE’ to review, modify or update your personal information.</p>
-													<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-														<tbody>
-															<tr>
-																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>ID (Email Address)</th>
-																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'><a href='mailto:{$email}' class='link font_inherit'>{$email}</a></td>
-															</tr>
-															<tr>
-																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Name</th>
-																<td style='font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;'>{$first_name}</td>
-																<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$last_name}</td>
-															</tr>
-															{$name_kor_cont}
-															<tr>
-																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Affiliation</th>
-																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$affiliation}</td>
-															</tr>
-															{$affiliation_kor_cont}
-															<tr>
-																<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Telephone number</th>
-																<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>(+{$nation_no}){$phone}</td>
-															</tr>
-														</tbody>	
-													</table>
-													<p>We express our gratitude to you for your interest in ICOMES 2024.</p>
-												</div>
-											</td>
-											<td width='74' style='width:74px;'></td>
-										</tr>
-										<tr>
-											<td width='74' style='width:74px;'></td>
-											<td style='padding-top:16px;'>
-												<p>Warmest regards,</p>
-												<div style='text-align: center;'>
-													<a href='https://www.icomes.or.kr/'><img src='https://www.icomes.or.kr/main/img/icomes_btn.png' alt=''></a>
-												</div>
-											</td>
-											<td width='74' style='width:74px;'></td>
-										</tr>
-										<tr>
-											<td colspan='3' style='padding-top:50px;'>
-												<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:750px;'>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-
+			<table width='750' style='border:1px solid #000; padding: 0;'>
+			<tbody>
+				<tr>
+					<td colspan='3'>
+						<img src='https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_header.jpg' width='750' style='width:750px;'>
+					</td>
+				</tr>
+				<tr>
+					<td colspan='3'>
+						<div style='font-weight:bold; text-align:center;font-size: 21px; color: #000066;padding: 20px 0;'>[ICOMES 2024] Welcome to ICOMES 2024!</div>
+					</td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td>
+						<div>
+							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$first_name} {$last_name},</p>
+							<p style='font-size:14px;color:#170F00;margin-top:14px;'>Thank you for signing up for the ICOMES 2024.<br>Your profile has been successfully created.<br>Please review the information that you have entered as below.<br>If necessary, you can access ‘ICOMES 2024 website - MY PAGE’ to review, modify or update your personal information.</p>
+							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
+								<tbody>
+									<tr>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>ID (Email Address)</th>
+										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'><a href='mailto:{$email}' class='link font_inherit'>{$email}</a></td>
+									</tr>
+									<tr>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Name</th>
+										<td style='font-size:14px; padding:10px; border-left:1px solid #000; width:165px; border-bottom:1px solid #000;'>{$first_name}</td>
+										<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$last_name}</td>
+									</tr>
+									{$name_kor_cont}
+									<tr>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Affiliation</th>
+										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$affiliation}</td>
+									</tr>
+									{$affiliation_kor_cont}
+									<tr>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Telephone number</th>
+										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>(+{$nation_no}){$phone}</td>
+									</tr>
+								</tbody>	
+							</table>
+							<p>We express our gratitude to you for your interest in ICOMES 2024.</p>
+						</div>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td style='padding-top:16px;'>
+						<p>Warmest regards,</p>
+		
+						<div style='text-align: center; padding-top:30px;'>
+							<table align='center' cellspacing='0' cellpadding='0' width='100%'>
+								<tr>
+									<td align='center'>
+										<table border='0' class='mobile-button' cellspacing='0' cellpadding='0'>
+											<tr>
+												<td align='center' bgcolor='#ffcc33' style='background-color: #000066; margin: auto; max-width: 600px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; padding: 12px 32px;box-shadow: 0px 5px 0px 0px #000066;' width='100%'><!--[if mso]>&nbsp;<![endif]-->
+													<a href='https://www.icomes.or.kr/' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #000066; text-decoration: none; border: none; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; display: inline-block;'>
+														<span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #fff; font-weight:600; text-align:center;'>Go to registration</span>
+													</a><!--[if mso]>&nbsp;<![endif]-->
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td colspan='3' style='padding-top:50px;'>
+						<img src='https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_footer.jpg' width='750' style='width:750px;'>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
 			";
-			//$rawMessageString.= "
-			//			<div style='width:670px;background-color:#F8F8F8;border:1px solid #f2f2f2; padding: 0 40px;'>
-			//				<img src='{$background_img_url}/main/img/mail_header_2023.png' style='width:calc(100% + 80px);margin-left:-40px;'>
-			//				<div style='width:calc(100%);margin-left:-40px;margin-bottom:60px;background-color:#00666B;text-align:center;font-size: 21px; color: #FFF;padding: 10px 0;border-top:2px solid #707070;'>[ICOEMS 2023] Welcome to ICOMES 2023!</div>	
-			//				<div>
-			//					<div style='margin-bottom:10px; background-color:#F8F8F8; padding:17px 34px; box-sizing:border-box;'>
-			//						<div>
-			//							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$title_input} {$first_name} {$last_name},</p>
-			//							<p style='font-size:14px;color:#170F00;margin-top:14px;'>Thank you for signing up for the ICOMES 2023.<br>Your profile has been successfully created.<br>Please review the information that you have entered as below.<br>If necessary, you can access ‘ICOMES 2023 website - MY PAGE’ to review,<br>modify or update your personal information.</p>
-			//							<table style='border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-			//								<tbody>
-			//									<tr style='border-bottom:1px solid #000;'>
-			//										<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>ID (Email Address)</th>
-			//										<td style='font-size:14px; padding:10px;'><a href='javascript:;' class='link'>{$email}</a></td>
-			//									</tr>
-			//									<tr style='border-bottom:1px solid #000;'>
-			//										<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1;'>Name</th>
-			//										<td style='font-size:14px; padding:10px; width:165px;'>{$first_name}</td>
-			//										<td style='font-size:14px; padding:10px; border-left:1px solid #000'>{$last_name}</td>
-			//									</tr>
-			//									{$name_kor_cont}
-			//									<tr style='border-bottom:1px solid #000;'>
-			//										<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Affiliation</th>
-			//										<td style='font-size:14px; padding:10px;'>{$affiliation}</td>
-			//									</tr>
-			//									{$affiliation_kor_cont}
-			//									<tr style='border-bottom:1px solid #000;'>
-			//										<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>phone number</th>
-			//										<td style='font-size:14px; padding:10px;'>{$phone}</td>
-			//									</tr>
-			//								</tbody>	
-			//							</table>
-			//							<p>We express our gratitude to you for your interest in ICOMES 2023.</p>
-			//						</div>
-			//					</div>
-			//					<!-- 23.04.25 수정된 버튼 마크업 -->
-			//					<p style='margin: 0 0 5px 34px'>Warmest regards,</p>
-			//					<p style='margin: 0 0 34px 34px'>Secretariat of ICOMES 2023</p>
-			//					<div style='text-align: center;'>
-			//						<a href='{$background_img_url}/main/index.php' type='button' style='display:inline-block; padding:5px 20px 10px 20px; border-radius: 25px;border: 2px solid #174A77;outline: 2px solid #DFDFDF;background: linear-gradient(to top, #293380, #8CC5D1);font-size: 18px;font-weight: 500;color: #FFFFFF;cursor: pointer; text-decoration: none;'>Go to ICOMES 2023 Website</a>
-			//					</div>
-			//				</div>
-			//				<img src='{$background_img_url}/main/img/icomes_mail_bottom.png' style='width:calc(100% + 80px); margin-top:60px; margin-left:-40px;'>
-			//			</div>
-			//";
-
-//<div style='width:670px;background-color:#F8F8F8;border:1px solid #f2f2f2; padding: 0 40px;'>
-//							<img src='".$background_img_url."/img/mail_header_2023.png' style='width:calc(100% + 80px);margin-left:-40px;'>
-//							<div style='width:calc(100% + 80px);margin-left:-40px;margin-bottom:60px;background-color:#00666B;text-align:center;font-size: 21px; color: #FFF;padding: 10px 0;border-top:2px solid #707070;'>[ICOEMS 2023] Welcome to ICOMES 2023!</div>	
-//							<div>
-//								<div style='margin-bottom:10px; background-color:#F8F8F8; padding:17px 34px; box-sizing:border-box;'>
-//									<div>
-//										<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$title} {$first_name} {$last_name},</p>
-//										<p style='font-size:14px;color:#170F00;margin-top:14px;'>Thank you for signing up for the ICOMES 2023.<br>Your profile has been successfully created.<br>Please review the information that you have entered as below.<br>If necessary, you can access ‘ICOMES 2023 website - MY PAGE’ to review,<br>modify or update your personal information.</p>
-//										<table style='border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-//											<tbody>
-//												<tr style='border-bottom:1px solid #000;'>
-//													<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>ID (Email Address)</th>
-//													<td style='font-size:14px; padding:10px;'><a href='javascript:;' class='link'>{$email}</a></td>
-//												</tr>
-//												<tr style='border-bottom:1px solid #000;'>
-//													<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1;'>Name</th>
-//													<td style='font-size:14px; padding:10px; width:165px;'>{$first_name}</td>
-//													<td style='font-size:14px; padding:10px; border-left:1px solid #000'>{$last_name}</td>
-//												</tr>
-//												{$name_kor_cont}
-//			
-//												<tr style='border-bottom:1px solid #000;'>
-//													<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1;'>성명</th>
-//													<td style='font-size:14px; padding:10px; width:165px;'>{$first_name_kor}</td>
-//													<td style='font-size:14px; padding:10px; border-left:1px solid #000'>{$last_name_kor}</td>
-//												</tr>
-//												<tr style='border-bottom:1px solid #000;'>
-//													<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>Affiliation</th>
-//													<td style='font-size:14px; padding:10px;'>{$affiliation}</td>
-//												</tr>
-//												<tr style='border-bottom:1px solid #000;'>
-//													<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>소속</th>
-//													<td style='font-size:14px; padding:10px;'>{$affiliation_kor}</td>
-//												</tr>
-//												<tr style='border-bottom:1px solid #000;'>
-//													<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#f1f1f1; '>phone number</th>
-//													<td style='font-size:14px; padding:10px;'>{$phone}</td>
-//												</tr>
-//											</tbody>	
-//										</table>
-//										<p>We express our gratitude to you for your interest in ICOMES 2023.</p>
-//									</div>
-//								</div>
-//								<!-- 23.04.25 수정된 버튼 마크업 -->
-//								<p style='margin: 0 0 5px 34px'>Warmest regards,</p>
-//								<p style='margin: 0 0 34px 34px'>Secretariat of ICOMES 2023</p>
-//								<div style='text-align: center;'>
-//									<a href='http://43.200.170.254/main/index.php' type='button' style='display:inline-block; padding:5px 20px 10px 20px; border-radius: 25px;border: 2px solid #174A77;outline: 2px solid #DFDFDF;background: linear-gradient(to top, #293380, #8CC5D1);font-size: 18px;font-weight: 500;color: #FFFFFF;cursor: pointer; text-decoration: none;'>Go to ICOMES 2023 Website</a>
-//								</div>
-//							</div>
-//							<img src='".$background_img_url."/img/mail_footer_2023.png' style='width:calc(100% + 80px); margin-top:60px; margin-left:-40px;'>
-//						</div>
 	}
 
 	if($mail_type == "find_password") {
 		 $rawMessageString .= "
-						<table width='750' style='border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;'>
-							<tbody>
-								<tr>
-									<td colspan='3'>
-										<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:100%; max-width:100%;'>
-									</td>
-								</tr>
-								<tr>
-									<td colspan='3'>
-										<div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2024] Temporary Password</div>
-									</td>
-								</tr>
-								<tr>
-									<td width='74' style='width:74px;'></td>
-									<td>
-										<div>
-											<div style='margin-bottom:20px'>
-												<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Member of : {$fname}<br><span style='font-size:14px;color:#170F00;font-weight:normal;'>You requested a temporary password at : {$time}</span></p>
-											</div>
-											<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
-											<p style='font-size:14px;color:#170F00;margin-top:14px;'>You can log in to the ICOMES 2024 website using the ID & Temporary Password below and modify your password on the personal information on my page.</p>
-											<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-												<tbody>
-													<tr>
-														<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>ID(Email Address)</th>
-														<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'><a href='mailto:{$to}' class='link font_inherit'>{$to}</a></td>
-													</tr>
-													<tr>
-														<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Temporary Password</th>
-														<td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$tmp_password}</td>
-													</tr>
-												</tbody>	
-											</table>
-											<p style='color:#f00;'>Click the 'Change to temporary password' button to check your changed log-in information.</p>
-										</div>
-									</td>
-									<td width='74' style='width:74px;'></td>
-								</tr>
-								<tr>
-									<td width='74' style='width:74px;'></td>
-									<td>
-										<div style='text-align: center;'>
-											<a href='{$callback_url}'><img src='https://www.icomes.or.kr/main/img/icomes_pw_btn.png' alt=''></a>
-										</div>
-										<p>Best regards,</p>
-									</td>
-									<td width='74' style='width:74px;'></td>
-								</tr>
-								<tr>
-									<td colspan='3' style='padding-top:50px;'>
-										<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+		 <table width='750' style='border:1px solid #000; padding: 0;'>
+		 <tbody>
+			 <tr>
+				 <td colspan='3'>
+					 <img src='https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_header.jpg' width='750' style='width:100%; max-width:100%;'>
+				 </td>
+			 </tr>
+			 <tr>
+				 <td colspan='3'>
+					 <div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2024] Temporary Password</div>
+				 </td>
+			 </tr>
+			 <tr>
+				 <td width='74' style='width:74px;'></td>
+				 <td>
+					 <div>
+						 <div style='margin-bottom:20px'>
+							 <p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Member of : {$fname}<br><span style='font-size:14px;color:#170F00;font-weight:normal;'>You requested a temporary password at : {$time}</span></p>
+						 </div>
+						 <p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$fname},</p>
+						 <p style='font-size:14px;color:#170F00;margin-top:14px;'>You can log in to the ICOMES 2024 website using the ID & Temporary Password below and modify your password on the personal information on my page.</p>
+						 <table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
+							 <tbody>
+								 <tr>
+									 <th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>ID(Email Address)</th>
+									 <td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'><a href='mailto:{$to}' class='link font_inherit'>{$to}</a></td>
+								 </tr>
+								 <tr>
+									 <th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Temporary Password</th>
+									 <td style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>{$tmp_password}</td>
+								 </tr>
+							 </tbody>	
+						 </table>
+						 <p style='color:#f00;'>Click the 'Change to temporary password' button to check your changed log-in information.</p>
+					 </div>
+				 </td>
+				 <td width='74' style='width:74px;'></td>
+			 </tr>
+			 <tr>
+				 <td width='74' style='width:74px;'></td>
+				 <td>
+					 <div style='text-align: center; padding-top:30px;'>
+						 <table align='center' cellspacing='0' cellpadding='0' width='100%'>
+							 <tr>
+								 <td align='center'>
+									 <table border='0' class='mobile-button' cellspacing='0' cellpadding='0'>
+										 <tr>
+											 <td align='center' bgcolor='#ffcc33' style='background-color: #000066; margin: auto; max-width: 600px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; padding: 12px 32px;box-shadow: 0px 5px 0px 0px #000066;' width='100%'><!--[if mso]>&nbsp;<![endif]-->
+												 <a href='{$callback_url}' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #000066; text-decoration: none; border: none; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; display: inline-block;'>
+													 <span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #fff; font-weight:600; text-align:center;'>Change to temporary password</span>
+												 </a><!--[if mso]>&nbsp;<![endif]-->
+											 </td>
+										 </tr>
+									 </table>
+								 </td>
+							 </tr>
+						 </table>
+					 </div>
+					 <p>Best regards,</p>
+				 </td>
+				 <td width='74' style='width:74px;'></td>
+			 </tr>
+			 <tr>
+				 <td colspan='3' style='padding-top:50px;'>
+					 <img src='https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_footer.jpg' width='750' style='width:100%; max-width:100%;'>
+				 </td>
+			 </tr>
+		 </tbody>
+	 </table>
 		 ";
-		 //$rawMessageString .= "<div style='width:549px;background-color:#fff;border:1px solid #000;'><img src='{$background_img_url}/main/img/mail_header_2023.png' style='width:100%;margin-bottom:47px;'><h1 style='text-align:center; font-size:16px; font-weight:bold'>Temporary Password</h1><div style='width:calc(100% - 80px); margin:24px auto 50px; background-color:#f8f8f8; padding:17px 34px 78px 17px; border-top:2px solid #707070; box-sizing:border-box;'><div><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>Member of : <span>{$fname}</span></p><p style='font-size:12px; font-weight:bold; color:#000; margin:0;'>You requested a temporary password at : <span>{$time}</span></p><p style='font-size:10px; color:#707070; margin:10px 0 0 0;'>(If you have never requested a temporary password, please delete the email.)</p></div><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>Since our site does not have your password even if you are an administrator, Instead of giving you your password, we’re creating a new one and guiding you.</p><p style='font-size:12px; font-weight:bold; color:#FF3333; margin:25px 0 0 0;'>Check the password below to change.<br/>Click the “<span style='font:inherit; color:inherit; text-decoration:underline;'>Change to temporary password</span>” button.</p><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>When an authentication message is printed stating that the password has been changed,</p><p style='font-size:12px; color:#000 ;margin:25px 0 0 0;'>Please enter your member ID and changed password on the homepage and log in.</p><p style='font-size:10px; color:#707070;'>After logging in, please change to a new password from the Modify Information menu.</p><div style='padding:16px; border:1px solid #5DBC9B; border-radius:15px; margin-top:25px;'><ul style='padding:0; margin:0;'><li style='list-style:none;'><i style='display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#10BF99; vertical-align:middle;'></i><span style='font-size:12px; font-weight:bold; vertical-align:middle;'>Member ID : {$to}</span><input type='text' style='vertical-align:middle; background:transparent; border:none; outline:none;'></li><li style='list-style:none;'><i style='display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#10BF99; vertical-align:middle;'></i><span style='font-size:12px; font-weight:bold; vertical-align:middle;'>Temporary password :{$tmp_password}</span><input type='text' style='vertical-align:middle; background:transparent; border:none; outline:none;'></li></ul></div><p style='font-size:12px; line-height:22px; color:#000; margin-top:20px; margin-bottom:0;'>Regards,<br/>ICOMES</p><a href='{$callback_url}' style='text-decoration:none;'><button type='button' style='display:block; margin:70px auto 0; font-size:16px; font-weight:bold; color:#FFEB00; background-color:#23BF99; padding:10px 58px 34px 58px; border-radius:30px; border:none;'>Change to temporary password<span style='margin-left:10px; font:inherit;'>&gt;</span></button></a></div><img src='{$background_img_url}/main/img/icomes_mail_bottom.png' style='width:100%;'></div>";
+		
 	}
 
 	if($mail_type == "payment") {
@@ -643,142 +574,126 @@ if($language == "ko") {
 			}
 
 			$rawMessageString .= "
-									<table width='750' style='border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;'>
-										<tbody>
+			<table width='750' style='border:1px solid #000; padding: 0;'>
+			<tbody>
+				<tr>
+					<td colspan='3'>
+						<img src='https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_header.jpg' width='750' style='width:100%; max-width:100%;'>
+					</td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td>
+						<div style='font-weight:bold; text-align:center; font-size: 21px; color: #00666B; padding: 20px 0;'>[ICOMES 2024] Completed Registration</div>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td>
+						<div>
+							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$name_title} {$fname},</p>
+							<p style='font-size:14px;color:#170F00;margin-top:14px;'>We express our gratitude for your registration for the International Congress on Obesity and MEtabolic Syndrome (ICOMES) 2024.	The registration details are presented below.<br/>Should you have any inquiries regarding your registration, kindly reach out to the ICOMES 2024 Secretariat for assistance.(<a href='mailto:icomes@into-on.com'>icomes@into-on.com</a>)</p>
+							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
+								<tbody>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration No.</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$register_no}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration Date</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$register_date}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Name</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$fname}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Country</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$nation_en}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Affiliation</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$affiliation}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Phone Number</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$phone}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Member of KSSO</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$member_status}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Type of Participation</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$attendance_type}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Category</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>Professor</td>
+									</tr>
+									{$review_html}
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Others</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
+											{$other_html}
+										</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Where did you get the information about the conference?</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
+											{$info_html}
+										</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration fee</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$pay_current} {$pay_price}</td>
+									</tr>
+									<tr style='border-bottom:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
+										<td style='font-size:14px; padding:10px;'>{$pay_name}</td>
+									</tr>
+									{$pay_html}
+								</tbody>	
+							</table>
+							<p>We eagerly anticipate your presence in Seoul, Korea this coming September.</p>
+						</div>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td width='74' style='width:74px;'></td>
+					<td>
+						<p>Warmest regards,</p>
+						<p>Secretariat of ICOMES 2024</p>
+						<br/>
+						<div style='text-align: center; padding-top:30px;'>
+							<table align='center' cellspacing='0' cellpadding='0' width='100%'>
+								<tr>
+									<td align='center'>
+										<table border='0' class='mobile-button' cellspacing='0' cellpadding='0'>
 											<tr>
-												<td colspan='3'>
-													<img src='https://www.icomes.or.kr/main/img/mail_header_2023.png' width='750' style='width:100%; max-width:100%;'>
+												<td align='center' bgcolor='#ffcc33' style='background-color: #000066; margin: auto; max-width: 600px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; padding: 12px 32px;box-shadow: 0px 5px 0px 0px #000066;' width='100%'><!--[if mso]>&nbsp;<![endif]-->
+													<a href='https://icomes.or.kr/' target='_blank' style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #000066; text-decoration: none; border: none; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; display: inline-block;'>
+														<span style='font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #fff; font-weight:600; text-align:center;'>Go to ICOMES 2024 Website</span>
+													</a><!--[if mso]>&nbsp;<![endif]-->
 												</td>
 											</tr>
-											<tr>
-												<td width='74' style='width:74px;'></td>
-												<td>
-													<div style='font-weight:bold; text-align:center; font-size: 21px; color: #00666B; padding: 20px 0;'>[ICOMES 2024] Completed Registration</div>
-												</td>
-												<td width='74' style='width:74px;'></td>
-											</tr>
-											<tr>
-												<td width='74' style='width:74px;'></td>
-												<td>
-													<div>
-														<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$name_title} {$fname},</p>
-														<p style='font-size:14px;color:#170F00;margin-top:14px;'>We express our gratitude for your registration for the International Congress on Obesity and MEtabolic Syndrome (ICOMES) 2024.	The registration details are presented below.<br/>Should you have any inquiries regarding your registration, kindly reach out to the ICOMES 2024 Secretariat for assistance.(<a href='mailto:icomes@into-on.com'>icomes@into-on.com</a>)</p>
-														<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
-															<tbody>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration No.</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$register_no}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration Date</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$register_date}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Name</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$fname}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Country</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$nation_en}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Affiliation</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$affiliation}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Phone Number</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$phone}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Member of KSSO</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$member_status}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Type of Participation</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$attendance_type}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Category</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>Professor</td>
-																</tr>
-																{$review_html}
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Others</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
-																		{$other_html}
-																	</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Where did you get the information about the conference?</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
-																		{$info_html}
-																	</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration fee</th>
-																	<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$pay_current} {$pay_price}</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
-																	<td style='font-size:14px; padding:10px;'>{$pay_name}</td>
-																</tr>
-																{$pay_html}
-																<!-- 카드결제 (결제완료) -->
-																<!--
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
-																	<td style='font-size:14px; padding:10px;'>Credit Card</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-																	<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold' >Complete</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Date</th>
-																	<td style='font-size:14px; padding:10px;'>YYYY-MM-DD HH:MM:SS</td>
-																</tr>
-																 -->
-																<!-- 계좌이체 (미결제) -->
-																<!--
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
-																	<td style='font-size:14px; padding:10px;'>Bank Transfer</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-																	<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold'>Needed</td>
-																</tr>
-																<tr style='border-bottom:1px solid #000;'>
-																	<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Bank Information</th>
-																	<td style='font-size:14px; padding:10px;'>584-910003-16504, Hana Bank (하나은행)</td>
-																</tr> 
-																 -->
-															</tbody>	
-														</table>
-														<p>We eagerly anticipate your presence in Seoul, Korea this coming September.</p>
-													</div>
-												</td>
-												<td width='74' style='width:74px;'></td>
-											</tr>
-											<tr>
-												<td width='74' style='width:74px;'></td>
-												<td>
-													<p>Warmest regards,</p>
-													<p>Secretariat of ICOMES 2024</p>
-													<br/>
-													<div style='text-align: center;'>
-														<a href='https://www.icomes.or.kr/'><img src='https://www.icomes.or.kr/main/img/icomes_btn.png' alt=''></a>
-													</div>
-												</td>
-												<td width='74' style='width:74px;'></td>
-											</tr>
-											<tr>
-												<td colspan='3' style='padding-top:50px;'>
-													<img src='https://www.icomes.or.kr/main/img/mail_footer_2023.png' width='750' style='width:100%; max-width:100%;'>
-												</td>
-											</tr>
-										</tbody>
-									</table>";
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td width='74' style='width:74px;'></td>
+				</tr>
+				<tr>
+					<td colspan='3' style='padding-top:50px;'>
+						<img src='https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_footer.jpg' width='750' style='width:100%; max-width:100%;'>
+					</td>
+				</tr>
+			</tbody>
+		</table>";
 	}
 
 	if($mail_type == "registration") {
@@ -984,7 +899,7 @@ if($language == "ko") {
 											</tr>
 											<tr>
 												<td width='549' valign='top' style='width:549px; vertical-align:top; font-size:0; line-height:0;'>
-													<img src='{$background_img_url}/main/img/icomes_mail_bottom_2022.jpg' style='width:100%;'>
+													<img src='https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_footer.jpg' style='width:100%;'>
 												</td>
 											</tr>
 										</tbody>
@@ -1022,8 +937,8 @@ if($language == "ko") {
 
 		$url = $_SERVER['HTTP_HOST'] ?? "www.icomes.or.kr";
 
-		$rawMessageString .= '<div><table width="750" style="border:1px solid #000; border-radius:27px 27px 0 0; padding: 0;">
-								<tr><td colspan="3"><img src="https://'.$url.'/main/img/mail_header_2023.png" width="750" style="width:100%; max-width:100%;"></td></tr>
+		$rawMessageString .= '<div><table width="750" style="border:1px solid #000; padding: 0;">
+								<tr><td colspan="3"><img src="https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_header.jpg" width="750" style="width:100%; max-width:100%;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td>
 								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[ICOMES 2024] Completed Abstract Submission</div></td><td width="74" style="width:74px;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear '.$first_name.' '.$last_name.',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">Thank you for the online submission of your abstract to ICOMES 2024.<br>Your abstract has been successfully submitted as follows.</p>
@@ -1161,17 +1076,29 @@ if($language == "ko") {
 										<!-- 23.04.25 수정된 버튼 마크업 -->
 										<p>Best regards,</p>
 										<p>Secretariat of ICOMES 2024</p><br/>
-										<div style="text-align: center;">
-											<a href="https://'.$url.'/">
-												<img src="https://'.$url.'/main/img/icomes_btn.png" alt="">
-											</a>
-										</div>	
+										<div style="text-align: center; padding-top:30px;">
+								<table align="center" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td align="center">
+											<table border="0" class="mobile-button" cellspacing="0" cellpadding="0">
+												<tr>
+													<td align="center" bgcolor="#ffcc33" style="background-color: #000066; margin: auto; max-width: 600px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; padding: 12px 32px;box-shadow: 0px 5px 0px 0px #000066;" width="100%"><!--[if mso]>&nbsp;<![endif]-->
+														<a href="https://icomes.or.kr/" target="_blank" style="font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #003466; font-weight:600; text-align:center; background-color: #000066; text-decoration: none; border: none; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; display: inline-block;">
+															<span style="font-size: 24px; font-family: Helvetica, Arial, sans-serif; color: #fff; font-weight:600; text-align:center;">Go to ICOMES 2024 Website</span>
+														</a><!--[if mso]>&nbsp;<![endif]-->
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
 									</td>
 									<td width="74" style="width:74px;"></td>
 								</tr>
 								<tr>
 									<td style="padding-top:50px;" colspan="3">
-										<img src="https://'.$url.'/main/img/mail_footer_2023.png" width="750" style="width:100%; max-width:100%;">
+										<img src="https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_footer.jpg" width="750" style="width:100%; max-width:100%;">
 									</td>
 								</tr>
 								</table>
