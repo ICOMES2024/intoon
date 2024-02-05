@@ -93,9 +93,10 @@
 			<!-- <video src="https://player.vimeo.com/progressive_redirect/playback/685374881/rendition/1080p?loc=external&signature=0f96f408d54e4adfe00f0f0a8b8c6a593fa2ecb767763e3709010a574d1a8a3f" autoplay="autoplay" muted="muted" playsinline id="main_2023_video_bg" loop></video> -->
 		<!-- </div> -->
 		<div class="container">
-			<img src="https://image.webeon.net/icomes2024/main/img_vsl_text.png" class="pc_only img_vsl_text" alt="">
+			<img src="https://image.webeon.net/icomes2024/main/2024_img_vsl_text.png" class="pc_only img_vsl_text" alt="">
+			<img src="https://image.webeon.net/icomes2024/main/2024_main_img.png" class="pc_only main_img" alt="">
 			<div class="mb_only img_vsl_text" style="">
-				<img src="https://image.webeon.net/icomes2024/main/img_vsl_text_mb.svg" alt="">
+				<!-- <img src="https://image.webeon.net/icomes2024/main/img_vsl_text_mb.svg" alt=""> -->
 				<!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
 				<p>CONRAD Seoul Hotel, Korea</p> -->
 			</div>
@@ -164,7 +165,7 @@
 				<li>
 					<a class="not_yet">
 					<!-- <a href="/main/registration_guidelines.php"> -->
-						<h2>Mid-March <span>(Thu)</span></h2>
+						<h2>Mid-March <span></span></h2>
 						<!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
 						<p>Pre-Registration <br/>Open</p>
 					</a>
@@ -233,7 +234,7 @@
 	</div>
 </div> -->
 <!-- Key dates & News,Notice -->
-<section>
+<section style="background-color: #FFF;">
 	<div class="container">
 		<div class="noti_wrap">
 			<!-- 2022년 버전에 뉴스레터 없어서 테스트 텍스트로 넣어놓음 -->

@@ -15,7 +15,7 @@
 /* 22.03.15 ICoLA 2022 NEW Main - HUBDNC LJH2*/
 .container {max-width: 1200px;}
 .main_section.icola_main .container {position:relative; max-width: 1200px; padding: 90px 0 156px;}
-.section_bg {height: 100vh; width: 100%; padding-top: 117px; background-image:url("https://image.webeon.net/icomes2024/main/main.png"); background-position: center; background-size: cover; background-repeat: no-repeat;overflow-x: hidden;}
+.section_bg {height: 100vh; width: 100%; padding-top: 117px; /*background-image:url("https://image.webeon.net/icomes2024/main/2024_main.png"); background-position: center; background-size: cover; background-repeat: no-repeat;*/overflow-x: hidden; background-color: #fff;}
 /* .section_bg {min-height: 100vh; padding-top: 117px; background: center top 20px / cover no-repeat url("../img/main_bg2.png");} */
 /*.section_bg {height: 100vh; width: 100vw;padding-top: 126px; background-image:url("https://velog.velcdn.com/images/crystal025/post/d903e8b2-ff90-4f18-aa11-5003c7b08739/image.png"); background-position: center; background-size: cover; background-repeat: no-repeat;}*/
 /* 220614 메인페이지 sponsor slide 추가작업 - HUBDNCHYJ */
@@ -28,6 +28,8 @@
 /*.sponsor_list .slick-slide:not(:first-child) {margin-left:16px;}*/
 .sponsor_list a {width:calc(100% - 10px);height:100%; border:1px solid #e7e7e7; position:relative;}
 .sponsor_list img {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); max-width:95%; max-height:95%;/*width:139px; height:100%; max-width:150px;*/}
+
+.main_section .main_img {position: absolute; top: 0; right: -4px;}
 
 /* 로그인 > 스폰서부분 추가 - HUBDNCHYJ */
 .log_sponsor {max-width:950px; padding: 42px 74px; border-radius: 10px; background-color: #f2f5f7; margin:50px auto 0;}
@@ -575,12 +577,11 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	.dday_wrap {display: none;}
 	
 	/* main */
-	.section_bg  {background:url("https://image.webeon.net/icomes2024/main/main_mb.png") no-repeat top 60px center /cover;}
+	.section_bg  {background:url("https://image.webeon.net/icomes2024/main/2024_main_mb.jpg") no-repeat top 60px center /cover;}
 	/*.section_bg  {padding-top: 60px; background-position: center top 60px; border:1px solid;}*/
 	.main_section.icola_main .container {padding: 116px 0;}
 	.main_section .main_btn_wrap {bottom:28px;}
 	.main_section .img_vsl_text {top:110px !important;}
-
 	/* main > top title */
 	.main_section .txt_wrap h1 {font-size: 50px; margin-bottom:20px;}
 	.main_section .txt_wrap h1 span.light {font-size:40px}
@@ -1072,7 +1073,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 }
 
 .main_section .section_bg{/* min-height:830px; */} /*230523 수정으로 인한 주석*/
-.main_section .img_vsl_text{top:90px;}
+.main_section .img_vsl_text{top:90px;left:0;}
 .main_section .dates_area{bottom:52px;}
 
 .exhibition .container_inner {margin-top:40px;}

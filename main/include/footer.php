@@ -5,14 +5,26 @@
         <ul class="toolbar_wrap">
             <li>
                 <a href="/main/comingsoon.php">
-                    <img src="https://image.webeon.net/icomes2024/logo/tool_program.svg" alt="">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_program.svg" alt="">
                 </a>
             </li>
             <?php
             if ($_SESSION["USER"]["regi_status"] == 2 || $_SESSION["USER"]["regi_status"] == 5) {
             ?>
-            <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
+
+             <li>
+                <button type="button" class="not_yet">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist.svg" alt="">
+                </button>
+            </li>
             <li>
+                <button type="button" class="not_yet">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract.svg" alt="">
+                </button>
+            </li>
+            <!-- [240205] sujeong / 프로그램북, 초록집 다운로드 주석 -->
+            <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
+            <!-- <li>
                 <a class="type2 pink not_yet">
                     <i><img src="https://image.webeon.net/icomes2024/logo/icon_download_abstract.svg" alt=""></i>
                     Abstract Book <br />Download
@@ -23,7 +35,7 @@
                     <i><img src="https://image.webeon.net/icomes2024/logo/icon_download_program.svg" alt=""></i>
                     Program Book <br />Download
                 </a>
-            </li>
+            </li> -->
             <!-- <li>
                 <a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" target="_blank" class="type2 pink">
                     <i><img src="/main/img/icons/icon_download_abstract.svg" alt=""></i>
@@ -41,12 +53,12 @@
             ?>
             <li>
                 <button type="button" class="not_yet">
-                    <i><img src="https://image.webeon.net/icomes2024/logo/tool_regist.svg" alt=""></i>Registration
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist.svg" alt="">
                 </button>
             </li>
             <li>
                 <button type="button" class="not_yet">
-                    <i><img src="https://image.webeon.net/icomes2024/logo/tool_abstract.svg" alt=""></i>Abstract
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract.svg" alt="">
                 </button>
             </li>
             <?php
@@ -55,19 +67,19 @@
             <?php
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
-            <li><button type="button" onClick="alert('Need to login.')"><i><img src="https://image.webeon.net/icomes2024/logo/tool_mypage.svg"
-                            alt=""></i>My page</button></li>
+            <li><button type="button" onClick="alert('Need to login.')"><img src="https://image.webeon.net/icomes2024/logo/2024_tool_mypage.svg"
+                            alt=""></button></li>
             <?php
             } else {
             ?>
-            <li><button type="button" onClick="location.href='/main/mypage.php'"><i><img
-                            src="https://image.webeon.net/icomes2024/logo/tool_mypage.svg" alt=""></i>My Page</button></li>
+            <li><button type="button" onClick="location.href='/main/mypage.php'"><img
+                            src="https://image.webeon.net/icomes2024/logo/2024_tool_mypage.svg" alt=""></button></li>
             <?php
             }
             ?>
 
         </ul>
-        <button type="button" class="btn_top"><img src="https://image.webeon.net/icomes2024/logo/icon_top_btn.svg" alt=""></button>
+        <button type="button" class="btn_top"><img src="https://image.webeon.net/icomes2024/logo/2024_icon_top_btn.svg" alt=""></button>
     </div>
     <!-- 220323 HUBDNC LJH 추가 : 끝 -->
     <!--
@@ -136,9 +148,10 @@
                     <div class="clearfix">
                         <img src="https://image.webeon.net/icomes2024/logo/fl01.png" alt="">
                         <img src="https://image.webeon.net/icomes2024/logo/fl02.png" alt="">
-                        <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;"
+                        <!-- [240201] sujeong / 학회팀 요청 주석 -->
+                        <!-- <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;"
                                 src="https://image.webeon.net/icomes2024/logo/fl03.png" alt=""></a>
-                        <img src="https://image.webeon.net/icomes2024/logo/fl04.png" alt="">
+                        <img src="https://image.webeon.net/icomes2024/logo/fl04.png" alt=""> -->
                     </div>
                 </div>
                 <div class="footer_c">

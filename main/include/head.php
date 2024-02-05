@@ -8,7 +8,7 @@
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="ICOMES 2024">
-    <meta property="og:image" content="/main/img/poster2023.jpg" />
+    <meta property="og:image" content="/main/img/poster2024.jpg" />
     <meta property="og:description" content="2024 ICOMES hosted by KSSO">
     <meta name="description" content="2024 ICOMES hosted by KSSO">
 
