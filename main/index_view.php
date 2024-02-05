@@ -147,8 +147,7 @@
 		<div class="dates_area">
 			<ul>
 				<li>
-					<a class="not_yet">
-					<!-- <a href="/main/abstract_submission_guideline.php"> -->
+					<a href="/main/abstract_submission_guideline.php">
 						<h2>May 30 <span>(Thu)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
 						<p>Abstract Submission<br/>Deadline</p>

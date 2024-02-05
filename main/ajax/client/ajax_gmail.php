@@ -315,7 +315,7 @@ if($language == "ko") {
 			 </tr>
 			 <tr>
 				 <td colspan='3'>
-					 <div style='font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;'>[ICOMES 2024] Temporary Password</div>
+					 <div style='font-weight:bold; text-align:center;font-size: 21px; color: #000066;padding: 20px 0;'>[ICOMES 2024] Temporary Password</div>
 				 </td>
 			 </tr>
 			 <tr>
@@ -584,7 +584,7 @@ if($language == "ko") {
 				<tr>
 					<td width='74' style='width:74px;'></td>
 					<td>
-						<div style='font-weight:bold; text-align:center; font-size: 21px; color: #00666B; padding: 20px 0;'>[ICOMES 2024] Completed Registration</div>
+						<div style='font-weight:bold; text-align:center; font-size: 21px; color: #000066; padding: 20px 0;'>[ICOMES 2024] Completed Registration</div>
 					</td>
 					<td width='74' style='width:74px;'></td>
 				</tr>
@@ -940,7 +940,7 @@ if($language == "ko") {
 		$rawMessageString .= '<div><table width="750" style="border:1px solid #000; padding: 0;">
 								<tr><td colspan="3"><img src="https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_header.jpg" width="750" style="width:100%; max-width:100%;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td>
-								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #00666B;padding: 20px 0;">[ICOMES 2024] Completed Abstract Submission</div></td><td width="74" style="width:74px;"></td></tr>
+								<div style="font-weight:bold; text-align:center;font-size: 21px; color: #000066;padding: 20px 0;">[ICOMES 2024] Completed Abstract Submission</div></td><td width="74" style="width:74px;"></td></tr>
 								<tr><td width="74" style="width:74px;"></td><td><div><p style="font-size:15px; font-weight:bold; color:#000; margin:0;">Dear '.$first_name.' '.$last_name.',</p><p style="font-size:14px;color:#170F00;margin-top:14px;">Thank you for the online submission of your abstract to ICOMES 2024.<br>Your abstract has been successfully submitted as follows.</p>
 								<!-- Abstract Submission Status -->
 								<p style="font-size:17px; font-weight:bold; color:#000;  margin: 30px 0 0;">Abstract Submission Status</p>

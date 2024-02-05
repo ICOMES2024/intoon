@@ -18,7 +18,7 @@
                 </button>
             </li>
             <li>
-                <button type="button" class="not_yet">
+                <button type="button" onClick="location.href='/main/abstract_submission.php'">
                     <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract.svg" alt="">
                 </button>
             </li>
@@ -57,7 +57,7 @@
                 </button>
             </li>
             <li>
-                <button type="button" class="not_yet">
+                <button type="button" onClick="location.href='/main/abstract_submission.php'">
                     <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract.svg" alt="">
                 </button>
             </li>
