@@ -29,7 +29,9 @@ $info = sql_fetch($sql_info);
             <li><a href="./abstract_submission.php">Online Submission</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
-            <li><a href="./abstract_submission_award.php">Awards & Grants</a></li>
+
+            <!--[240205] sujeong / 학회팀 요청 주석 -->
+            <!-- <li><a href="./abstract_submission_award.php">Awards & Grants</a></li> -->
         </ul>
         <div class="section section1">
             <div>
