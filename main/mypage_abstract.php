@@ -28,7 +28,7 @@
                                         END) AS `type_name`,
                                         (CASE
                                             WHEN ra.is_presentation = '0'
-                                            THEN 'In Process'
+                                            THEN 'Completed'
                                             WHEN ra.is_presentation = '1'
                                             THEN 'Completed'
                                             ELSE '-'

@@ -96,19 +96,19 @@ $locale = locale($language);
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/comingsoon.php">Abstracts</a>
+                        <a href="/main/abstract_submission_guideline.php">Abstracts</a>
                         <ul class="sub_nav">
                             <!-- <li><a href="/main/abstract_submission_guideline.php">Abstract Submission</a></li> -->
                             <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
                             <li>
                                 <!-- <a href="/main/abstract_submission_guideline.php">Abstract Submission Guideline</a> -->
                             </li>
-                            <li><a href="/main/comingsoon.php">Submission Guidelines</a></li>
-                            <li><a href="/main/comingsoon.php">Online Submission</a></li>
+                            <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
+                            <li><a href="/main/abstract_submission.php">Online Submission</a></li>
                             <li><a href="/main/comingsoon.php">Presentation Guidelines</a></li>
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
-                            <li><a href="/main/abstract_submission.php">Online Submission</a></li>
+                            
                             <li><a href="/main/abstract_submission_oral.php">Presentation Guidelines</a></li>
                             <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> 
                             <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li> -->
@@ -255,9 +255,9 @@ $(document).ready(function() {
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m3"]) ? "block" : "none") ?>">
                     <!-- <li><a href="poster_abstract_submission.php">Submission Guideline</a></li> -->
                     <!-- <li><a href="lecture_note_submission.php">Lecture Abstract Guideline</a></li> -->
-                    <li><a href="/main/comingsoon.php">Submission Guidelines</a></li>
+                    <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
                     <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
-                    <li><a href="/main/comingsoon.php">Online Submission</a>
+                    <li><a href="/main/abstract_submission.php">Online Submission</a>
                     </li>
                     <li><a href="/main/comingsoon.php">Presentation Guidelines</a></li>
                     <li><a href="/main/comingsoon.php">Awards & Grants</a></li>
