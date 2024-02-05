@@ -49,7 +49,7 @@ header.nav_show .toggle_wrap{border-color:#585858;}
 header.nav_show .toggle_wrap label{color:#585858;}
 header.nav_show .toggle{background:#585858;}
 header.green_header {background-color: #00666B; position: fixed;}
-header.blue_header {background-color: #000066; position: fixed;}
+header.blue_header {background-color: #9897CA; position: fixed;}
 
 .g_h_top {padding: 10px 0; background-color: #fff;}
 .g_h_top .container {position: relative; }
@@ -101,7 +101,7 @@ header.blue_header {background-color: #000066; position: fixed;}
 /*.main_section .txt_wrap p.event_hold {letter-spacing: -5px;}*/
 .main_section .main_btn_wrap {/*margin-top: 124px;*/width:100%; position:absolute; bottom:285px; z-index:5;}
 /* .main_section .btn_circle_arrow {display: block; width: 65px; height: 65px; margin: 44px auto 0; margin:0 auto; background: center / contain no-repeat url("../img/icons/icon_circle_arrow.png")} */
-.main_section .btn_circle_arrow {display: block; width: 55px; height: 55px; margin:0 auto; background: center / contain no-repeat url("https://image.webeon.net/icomes2024/logo/icon_circle_arrow2.svg")}
+.main_section .btn_circle_arrow {display: block; width: 55px; height: 55px; margin:0 auto; background: center / contain no-repeat url("https://image.webeon.net/icomes2024/logo/2024_icon_circle_arrow.svg")}
 section.container {/*margin-top: 125px;*/ border: 1px solid transparent;}
 section.container.login.bg {border: 0px;}
 
@@ -245,9 +245,10 @@ section.faq .select_box {width: 100%; text-align: right; margin-bottom: 27px;}
 .faq_detail li:first-child:before {content: "Q"; color: #10BF99;}
 
 /*로그인*/
-.container.login.bg {max-width:100%; width:100%; padding:138px 16px 100px;}
-.container.login.bg {background: url("../img/img_login_bg2.jpg") no-repeat center /cover; position:relative;}
+.container.login.bg {max-width:100%; width:100%; padding:0px 16px 100px;}
+.container.login.bg {/*background: url("../img/img_login_bg2.jpg") no-repeat center /cover; position:relative;*/ background-color: #fff;}
 .container.login.bg:before {content:''; display:block; width:100%; height:100%; background-color:rgba(0,0,0,0.43); position:absolute; left:0; top:0; z-index:0;}
+.login_img{}
 .container.login .logo {max-width: 400px; margin-bottom: 10px;}
 .container.login .logo img{width: 100%; height: 100%;}
 .container.form_layout > div {max-width:570px; margin:0 auto; position:relative; z-index:1; text-align:center;}
