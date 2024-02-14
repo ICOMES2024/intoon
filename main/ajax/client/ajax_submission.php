@@ -771,8 +771,7 @@ function createSubmissionCode($type_category) {
     
     //함수 파라미터 변화 
     //기존 - "abstract" => 현재 초록 카테고리 번호
-    //초록 - 0 / 강연노트 - 1(requrest_abstract -> type)
-    $type_no = $type_category == "lecture" ? 1 : 0;
+    //초록 - 0 / 강연노트 - 1
     //$type_no = $type_category == "abstract" ? 0 : 1;
     
     //초록 - A / 강연노트 - L
