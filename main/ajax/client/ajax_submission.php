@@ -378,9 +378,6 @@
         $abstract_idx = isset($_POST["idx"]) ? $_POST["idx"] : "";
         $type = isset($_POST["type"]) ? $_POST["type"] : "";
 
-        //제출고유코드 생성
-        $submission_code = createSubmissionCode("abstract");
-
         //SESSION에 저장한 STEP1 데이터
         $data = isset($_SESSION["abstract"]["data"]) ? $_SESSION["abstract"]["data"] : "";
 
@@ -409,6 +406,10 @@
 		$presentation_type_yn = isset($_POST["presentation_type_yn"]) ? $_POST["presentation_type_yn"] : "";
 		$presentation_type = isset($_POST["presentation_type"]) ? $_POST["presentation_type"] : "";
 		
+        //제출고유코드 생성
+        // $submission_code = createSubmissionCode("abstract");
+        $submission_code = createSubmissionCode($abstract_category);
+
 
         //주저자
 		$presenting_author = isset($data["presenting_author"]) ? $data["presenting_author"] : "N";
@@ -765,11 +766,17 @@ function affiliationJson($affiliation) {
     }
 }
 
-function createSubmissionCode($type) {
+function createSubmissionCode($type_category) {
     $year = date("Y");
-
-    $type_no = $type == "abstract" ? 0 : 1;
-    $type_name = $type == "abstract" ? "A" : "L";
+    
+    //함수 파라미터 변화 
+    //기존 - "abstract" => 현재 초록 카테고리 번호
+    //초록 - 0 / 강연노트 - 1(requrest_abstract -> type)
+    $type_no = $type_category == "lecture" ? 1 : 0;
+    //$type_no = $type_category == "abstract" ? 0 : 1;
+    
+    //초록 - A / 강연노트 - L
+    //$type_name = $type_category == "abstract" ? "A" : "L";
 
     $count_query =  "
                             SELECT
@@ -783,11 +790,19 @@ function createSubmissionCode($type) {
 
     $code_number = $count+1;
 
-    while(strlen("".$code_number)< 6){
+    while(strlen("".$code_number)< 5){
         $code_number = "0".$code_number;
     }
     
-    $code = "ICOMES".$year."-".$type_name."-".$code_number;
+    $type_num = 0;
+    
+    if($type_category < 10 ){
+        $type_num = 0 . $type_category;
+    }else{
+        $type_num = $type_category;
+    }
+
+    $code = "ICOMES".$year."-".$type_num."-".$code_number;
     return $code;
 }
 ?>
