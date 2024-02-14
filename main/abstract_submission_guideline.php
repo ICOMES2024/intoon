@@ -80,11 +80,15 @@ $info = sql_fetch($sql_info);
 							</tr>
 							<tr>
 								<th>Notification of<br class="br_mb_only"> Abstract Acceptance</th>
-								<td class="f_bold">June 11 (Tue)</td>
+								<td><span class="font_inherit f_bold">July 10(Wed)</span><br>*Details regarding presentation type and guidelines will be provided.</td>
+							</tr>
+                            <tr>
+								<th>Notification of<br class="br_mb_only"> Acceptance</th>
+								<td><span class="font_inherit f_bold">End of every month</span><br>*The scientific committee will conduct a qualification examination at the end of each month <br>to facilitate attendee's pre-registration.</td>
 							</tr>
 							<tr>
 								<th>Registration Deadline for<br class="br_mb_only"> Approved Abstract Presenters</th>
-								<td class="f_bold">August 1 (Sun)</td>
+								<td>August 1 (Sun)</td>
 							</tr>
 						</table>
 						<!--

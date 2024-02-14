@@ -490,11 +490,11 @@
 <script src="./js/script/client/member.js"></script>
 <script>
 $(document).ready(function() {
-    <!-- $('.book').on('click', function(event) {
-        event.preventDefault();
-        alert('Updates are planned.');
-        return false;
-    }); -->
+    // <!-- $('.book').on('click', function(event) {
+    //     event.preventDefault();
+    //     alert('Updates are planned.');
+    //     return false;
+    // }); -->
 
     //비밀번호 입력 시 비밀번호 필수값으로 전환
     $("#password, #re_password").on("change", function() {
