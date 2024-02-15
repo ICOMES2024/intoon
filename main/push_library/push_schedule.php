@@ -32,7 +32,7 @@
 	if (empty($push_list)) {
 		exit;
 	}
-
+	//[240214] sujoeng / 2023 => 2024 날짜 수정
 	$title   = "ICOMES2024";
 	$url     = '/main/app_schedule.php';
 	$message = '';
