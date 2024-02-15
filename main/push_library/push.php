@@ -2,7 +2,7 @@
 require_once ('/var/www/icomes.or.kr/main/plugin/google-api-php-client-main/vendor/autoload.php');
 class Push
 {
-
+    //[240214] sujeong / api key 전송 방식에서 token 전송 방식으로 수정 / device 상관 X 
     static function fcmMultiPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){
 
         $url    = 'https://fcm.googleapis.com/v1/projects/icomes2024/messages:send';
@@ -35,7 +35,7 @@ class Push
             self::sendAsync($url, $headers, $message_json);
             }
     }
-
+    //기존 방식
     static function fcmPushV2($title, $message, $device, $to_list, $data, $body_key="", $body_args=[""], $img_path=""){
 
         $url    = 'https://fcm.googleapis.com/fcm/send';
