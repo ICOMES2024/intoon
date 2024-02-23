@@ -44,16 +44,16 @@ $price = get_data($sql_price);
                     </colgroup>
                     <tr>
                         <th>Registration<br class="br_mb_only"> System Open</th>
-                        <td class="f_bold">Mid-May</td>
+                        <td class="f_bold">Mid-March</td>
                     </tr>
                     <tr>
                         <th>Early-bird Registration<br class="br_mb_only"> Deadline</th>
-                        <td class="f_bold">June 29 (Thu)</td>
+                        <td class="f_bold">June 16 (Sun)</td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <th>Pre-registration<br class="br_mb_only"> Deadline</th>
                         <td class="f_bold">August 24 (Thu)</td>
-                    </tr>
+                    </tr> -->
                 </table>
             </div>
 
@@ -141,15 +141,15 @@ $price = get_data($sql_price);
 								?>
 								<tr class="text_center">
 									<td>Certified M.D., Professor</td>
-									<td class="closed_td">USD 130<br/>KRW 130,000
+									<td class="closed_td">USD 150<br/>KRW 150,000
 
 										<!-- <img src="./img/icons/icon_closed.png" alt=""> -->
 									</td>
-									<td>USD 160<br>KRW 160,000</td>
-									<td>USD 160<br>KRW 160,000</td>
-									<td>USD 190<br>KRW 190,000</td>
-									<td>USD 200<br>KRW 200,000</td>
-									<td>USD 230<br>KRW 230,000</td>
+									<td>USD 180<br>KRW 180,000</td>
+									<td>USD 180<br>KRW 180,000</td>
+									<td>USD 210<br>KRW 210,000</td>
+									<td>USD 220<br>KRW 220,000</td>
+									<td>USD 250<br>KRW 250,000</td>
 								</tr>
 								<tr class="text_center">
 									<td>
@@ -160,16 +160,16 @@ $price = get_data($sql_price);
 										Public Health Doctor,<br>
 										Corporate Member, Others
 									</td>
-									<td>USD 65<br>KRW 65,000</td>
-									<td>USD 95<br>KRW 95,000</td>
 									<td>USD 85<br>KRW 85,000</td>
 									<td>USD 115<br>KRW 115,000</td>
-									<td>USD 120<br>KRW 120,000</td>
-									<td>USD 150<br>KRW 150,000</td>
+									<td>USD 105<br>KRW 105,000</td>
+									<td>USD 135<br>KRW 135,000</td>
+									<td>USD 140<br>KRW 140,000</td>
+									<td>USD 170<br>KRW 170,000</td>
 								</tr>
 								<tr class="text_center">
 									<td>Student<!--, Surgeon (Military),<br>Public Health Doctor--></td>
-									<td colspan="6">Free<br/>*Student ID cards required</td>
+									<td colspan="6">USD 50 / KRW 50,000<br/>*Student ID cards required</td>
 								</tr>
 							</tbody>
 						</table>
@@ -255,14 +255,14 @@ $price = get_data($sql_price);
 
             <!--3. Cancellation & Refund Policy start-->
             <h3 class="title">Cancellation & Refund Policy</h3>
-			<a href="./download/ICOMES_2023_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long" target="_blank"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Cancellation & Refund  Form Download</a>
+			<a href="./download/ICOMES_2024_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long" target="_blank"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Cancellation & Refund  Form Download</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
                 <div class="">
                     <ul class="indent_ul">
                         <li>• The cancellation of full payment registration and reimbursement will only be accepted in written form and must be submitted via email to the secretariat.<br>(<a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a>)</li>
                         <li>• Prior to making a payment, it is possible to cancel registration through "My page - Registration". However, payment has already been processed, it is necessary to contact the secretariat for further assistance.</li>
-                        <li>• Please note that refunds will be processed after the conference. (*By October 1, 2023)</li>
+                        <li>• Please note that refunds will be processed after the conference.</li>
                         <li>• All bank service charges and administration fees will be deducted from the refund.</li>
                     </ul>
                 </div>
