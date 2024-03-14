@@ -140,5 +140,10 @@ var ko = {
 	//2023
 	//Register > Online Registration
 	check_registration_participation_type : "참여 유형을 선택해주세요.", 
-	check_registration_category : "카테고리를 선택해주세요.", 
+	check_registration_category : "카테고리를 선택해주세요.",
+	
+	//2024
+	// [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ 
+	already_exist_stamp: "이미 스탬프 도장을 받았어요.",
+	invalid_e_booth: "부스정보가 존재하지 않는 번호에요.",
 }

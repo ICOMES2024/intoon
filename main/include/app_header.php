@@ -24,10 +24,10 @@
 				<li class="on">
 					<a href="javascript:;">ICOMES 2024</a>
 					<ul class="app_sub">
-						<li><a href="/main/welcome.php">Welcome Message</a></li>
-						<li><a href="/main/organizing_committee.php">Organization</a></li>
+						<li><a href="/main/app_welcome.php">Welcome Message</a></li>
+						<li><a href="/main/app_organizing_committee.php">Organization</a></li>
 						<li><a href="/main/app_overview.php">Overview</a></li>
-						<li><a href="/main/venue.php">Venue</a></li>
+						<li><a href="/main/app_venue.php">Venue</a></li>
 					</ul>
 				</li>
 				<li>
@@ -78,14 +78,17 @@
 				<li>
 					<a href="/main/app_survey.php">Survey</a>
 				</li>
-				<!-- <li>
+				<!-- [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ -->
+				<!-- app_header // Tour Map(기존) => Stamp List(현재) -->
+				<li>
 					<a href="javascript:;">Stamp Tour</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
 						<li><a href="/main/app_my_stamp.php">My Stamp</a></li>
-						<li><a href="/main/app_tour_map.php">Tour Map</a></li>
+						<li><a href="/main/app_stamp_list.php">Stamp List</a></li>
+						<!-- <li><a href="/main/app_tour_map.php">Tour Map</a></li> -->
 					</ul>
-				</li> -->
+				</li> 
 				<li>
 					<a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">Program Book <br/>Download</a>
 				</li>

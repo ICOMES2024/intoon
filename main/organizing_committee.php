@@ -33,7 +33,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
         if(!empty($session_user) && $session_app_type == 'Y') {
     ?>
         <div class="app_title_box">
-            <h2 class="app_title">ICOMES 2023<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+            <h2 class="app_title">ICOMES 2024<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
             <ul class="app_menu_tab">
                 <li><a href="./welcome.php">Welcome Message</a></li>
                 <li class="on"><a href="./organizing_committee.php">Organization</a></li>

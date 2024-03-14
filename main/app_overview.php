@@ -5,14 +5,14 @@
 <section class="container app_version app_overview">
 	<div class="app_title_box">
 		<h2 class="app_title">
-			ICOMES 2023
+			ICOMES 2024
 			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 		<ul class="app_menu_tab">
-			<li><a href="./welcome.php">Welcome Message</a></li>
-			<li><a href="./organizing_committee.php">Organization</a></li>
+			<li><a href="./app_welcome.php">Welcome Message</a></li>
+			<li><a href="./app_organizing_committee.php">Organization</a></li>
 			<li class="on"><a href="./app_overview.php">Overview</a></li>
-			<li><a href="./venue.php">Venue</a></li>
+			<li><a href="./app_venue.php">Venue</a></li>
 		</ul>
 	</div>
 	<div class="container_inner">
@@ -22,13 +22,13 @@
 					<li>
 						<p>Title</p>
 						<div>
-							<b>ICOMES 2023</b>
-							<span class="small_txt">(2023 International Congress on Obesity and MEtabolic Syndrome)</span>
+							<b>ICOMES 2024</b>
+							<span class="small_txt">(2024 International Congress on Obesity and MEtabolic Syndrome)</span>
 						</div>
 					</li>
 					<li>
 						<p>Date</p>
-						<div>September 7(Thu) ~ 9(Sat), 2023</div>
+						<div>September 5(Thu) ~ 7(Sat), 2024</div>
 					</li>
 					<li>
 						<p>Venue</p>
@@ -41,10 +41,11 @@
 							Korean Society for the Study of Obesity (KSSO)
 						</div>
 					</li>
-					<li>
+					<!-- [240313] sujeong / theme 미정 주석 -->
+					<!-- <li>
 						<p>Theme</p>
 						<div>Now is the Time to Conquer Obesity</div>
-					</li>
+					</li> -->
 					<li>
 						<p>Official Language</p>
 						<div>

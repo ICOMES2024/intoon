@@ -11,7 +11,7 @@
 				<img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
 			</button>
 		</h2>
-		<p class="app_setting_desc">ICOMES 2023 event information and real-time information can be received by mobile app push.</p>
+		<p class="app_setting_desc">ICOMES 2024 event information and real-time information can be received by mobile app push.</p>
 	</div>
 	<div class="container_inner">
 		<div class="contents_box">
@@ -24,7 +24,7 @@
 					</label>
 				</div>
 			</div>
-			<p class="app_setting_desc">If your iOS user does not receive the PUSH notification, please proceed as follows: iPhone > Settings > Notification > ICOMES 2023. Change the notification permission to ‘ON’</p>
+			<p class="app_setting_desc">If your iOS user does not receive the PUSH notification, please proceed as follows: iPhone > Settings > Notification > ICOMES 2024. Change the notification permission to ‘ON’</p>
 		</div>
 	</div>
 	<button class="btn app_logout_btn">LOGOUT</button>

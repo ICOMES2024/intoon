@@ -64,7 +64,9 @@ $(document).ready(function(){
         } catch (err){
             alert(err);
         }
-    } else if (window.webkit && window.webkit.messageHandlers!=null) {
+        //[240314] hub 스탬프 투어 소스 코드 수정 !@#$^
+    } else if (window.webkit && window.webkit?.messageHandlers!=null) {
+    // } else if (window.webkit && window.webkit.messageHandlers!=null) {
         try{
             window.webkit.messageHandlers.getDeviceToken.postMessage('');
         } catch (err){

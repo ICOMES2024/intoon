@@ -752,7 +752,7 @@
 
 function affiliationJson($affiliation) {
     if($affiliation != "") {
-        if(strpos($afflilation, ",")) {
+        if(strpos($affiliation, ",")) {
             $affiliation =  substr($affiliation, -1, 1);
         }
     
@@ -781,7 +781,7 @@ function createSubmissionCode($type_category) {
                             SELECT
                                 count(idx) AS count
                             FROM request_abstract
-                            WHERE `type` = {$type_no}
+                            WHERE `type` = 0
                             AND parent_author IS NULL
                         ";
 

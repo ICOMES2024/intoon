@@ -42,7 +42,7 @@
 	}
 
 	// 변수 설정	
-	$register_no = !empty($registration_idx) ? "ICOMES2023-".$registration_idx : "-";
+	$register_no = !empty($registration_idx) ? "ICOMES2024-".$registration_idx : "-";
 	$name = $data["first_name"]." ".$data["last_name"] ?? "-";
 	$nation = $data["nation_en"] ?? "-";
 	$total_price = ($data["nation_no"] == 25) ? "KRW ".$data["total_price_kr_text"] : "USD ".$data["total_price_us_text"];

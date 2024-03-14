@@ -8,7 +8,9 @@
 		<ul class="app_menu_tab langth_3">
 			<li class="on"><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
 			<li><a href="./app_my_stamp.php">My Stamp</a></li>
-			<li><a href="./app_tour_map.php">Tour Map</a></li>
+			<!-- [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ -->
+			<li><a href="./app_stamp_list.php">Stamp List</a></li>
+			<!-- <li><a href="./app_tour_map.php">Tour Map</a></li> -->
 		</ul>
 	</div>
 	<div class="container_inner">
