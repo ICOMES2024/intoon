@@ -2571,4 +2571,46 @@ function check_submission($user_idx, $type) {
     return sql_fetch($check_submisssion_query)["idx"];
 }
 
+// [240314] hub 스탬프 투어 소스 코드 추가 !@#$^ 
+function gradeBoothInfo($grade){
+	if($grade == 0){		// Diamond
+		return array(
+			"name"=>"Diamond",
+			"class"=>"pink_bg",
+			"medal_class"=>"poster"
+		);
+	}else if($grade == 1){ // Platinum
+		return array(
+			"name"=>"Platinum",
+			"class"=>"green_bg05",
+			"medal_class"=>"platinum"
+		);
+	}else if($grade == 2){ // Gold
+		return array(
+			"name"=>"Gold",
+			"class"=>"gold_bg",
+			"medal_class"=>"gold"
+		);
+	}else if($grade == 3){ // Silver
+		return array(
+			"name"=>"Silver",
+			"class"=>"silver_bg",
+			"medal_class"=>"silver"
+		);
+	}else if($grade == 4){ // Bronze
+		return array(
+			"name"=>"Bronze",
+			"class"=>"bronze_bg",
+			"medal_class"=>"bronze"
+		);
+	}else{
+		return array(
+			"name"=>"ETC",
+			"class"=>"bronze_bg",
+			"medal_class"=>"bronze"
+		);
+	}
+
+}
+
 ?>

@@ -79,7 +79,9 @@ var en = {
 	check_abstract_file : "Please attach your Abstract File.",
 	check_oral_presentation : "Please select the oral presentation.",
 	check_abstract_thumnail : "Please attach Thumbnail.",
-	abstract_submit_ok : "Abstract submitted successfully.",
+	// [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ 
+	abstract_submit_ok : "Abstract submission success.",
+	// abstract_submit_ok : "Abstract submitted successfully.",
 	abstract_submit_error : "Abstract submission failed.",
 	under_25 : "Please write the title in less than 25 characters.",
 	under_300 : "Please write the abstract text in less than 300 characters.",
@@ -142,4 +144,9 @@ var en = {
 	//Register > Online Registration
 	check_registration_participation_type : "Please select the participation type.", 
 	check_registration_category : "Please select the category.", 
+
+	//2024
+	// [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ 
+	already_exist_stamp: "Already have stamp.",
+	invalid_e_booth: "Invalid Booth info.",
 }

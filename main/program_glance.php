@@ -845,11 +845,6 @@ $(document).ready(function() {
 	});
 
 
-	
-
-
-
-
 	// Program At a Glance 줌 스크립트
 
 	var height_array = [];
@@ -884,6 +879,7 @@ $(document).ready(function() {
 	let setDist = 0;
 
 	$(document).on("touchstart", ".program_table", function(event){
+		//터치 이벤트의 터치 포인트 수가 2개
 		if(event.originalEvent.touches.length  === 2){
 			scaling  = true;
 		}
@@ -893,19 +889,27 @@ $(document).ready(function() {
 	var table_font_size_p = $(".program_table td p").css("font-size")
 	var table_line_height = $(".program_table td").css("line-height");
 
+	//APP 줌 이벤트
 	$(document).on("touchmove", ".program_table", function(event){
 		if(scaling){
+
+			//두 점사이 계산
 			var dist = Math.hypot(
 				event.originalEvent.touches[0].pageX - event.originalEvent .touches[1].pageX,
 				event.originalEvent.touches[1].pageY - event.originalEvent.touches[1].pageY
 			);
+
 			dist = Math.floor(dist/20);
+
 			if(setDist == 0) setDist = dist;
+
 			fontSize = $(".program_table td").css("font-size");
 			fontSizeP = $(".program_table td p").css("font-size")
 			imgWidth = $(".program_table")[0].clientWidth;
 			imgHeight = $(".program_table")[0].clientHeight;
 			// alert(parseInt(fontSize))
+
+			//화면 확대 (이전 거리보다 거리가 멀어질 때)
 			if(setDist < dist){
 				if (parseInt(fontSize) <= 16) {
 					$(this).css("width", 1.1*parseFloat(imgWidth));
@@ -915,7 +919,10 @@ $(document).ready(function() {
 					$(this).find("td").find("p").css({"font-size": 1.1*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
 					setDist = dist;
 				}
-			} else if(setDist > dist){
+			} 
+			
+			//화면 축소 (이전 거리보다 거리가 가까워 질때)
+			else if(setDist > dist){
 				if (parseInt(fontSize) >= 8)	{
 					$(this).css("width", 0.9*parseFloat(imgWidth));
 					$(this).css("height", 0.5*parseFloat(imgHeight));
@@ -927,12 +934,6 @@ $(document).ready(function() {
 			}
 		}
 	})
-
-
-
-
-
-
 
 });
 

@@ -96,7 +96,7 @@
 		$recommended_by       = isset($data["recommended_by"]) ? $data["recommended_by"] : "";							// 추천인
 		$payment_method       = isset($data["payment_method"]) ? $data["payment_method"] : "";							// 결제 방식(0:카드 결제, 1:계좌 이체)
 		$payment_method       = $payment_method == "credit" ? 0 : 1;													
-		$conference_info      = implode("*", $data["conference_info_arr"]);									// 정보획득매체
+		$conference_info      = implode("*", $data["conference_info_arr"]);												// 정보획득매체
 
         $special_request      = $data["special_request"] ?? "";                                                            // Special Request For Food
 

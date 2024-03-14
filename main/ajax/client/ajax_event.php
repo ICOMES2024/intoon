@@ -165,6 +165,55 @@
 			return_value(500, "Error during checking whether draw is possible.\nContact your administrator. [02-2039-7802]");
 		}
 	}
+	// [240314] hub 스탬프 투어 소스 코드 추가 stamp_v2 !@#$^
+	// [240314] 현재 유일하게 사용 하는 함수
+	// 스탬프 등록
+	else if ($flag === "stamp_v2") {
+		// CORS 이슈 대응
+		header('Access-Control-Allow-Origin: *');
+
+		$booth_idx	= $_GET["booth_idx"];
+		$member_idx = $_GET["member"];
+		$agent		= $_GET["useragent"];
+
+		if(!$member_idx){
+			return_value(401, "Need to login, Please try again.");
+		}
+
+		$sql_find = "
+					SELECT 
+						eb.idx, IF(el.idx IS NULL, 0, 1) AS is_exist
+					FROM e_booth AS eb
+					LEFT JOIN (
+						SELECT idx, booth_idx FROM e_booth_log WHERE member_idx = {$member_idx}
+					)AS el
+					ON eb.idx = el.booth_idx
+					WHERE is_deleted = 'N'
+					AND eb.idx = {$booth_idx}
+					";
+
+		$booth = sql_fetch($sql_find);
+
+		if(!$booth["idx"]){
+			return_value(402, "스템프를 찍을 수 없는 부스입니다.");
+		}
+
+		if($booth["is_exist"] == 1){
+			return_value(403, "이미 스템프를 찍은 부스입니다.");
+		}
+
+		$sql =	"INSERT INTO
+					e_booth_log
+					(booth_idx, member_idx, useragent)
+				VALUES
+					('{$booth_idx}', '{$member_idx}', ".($agent ? "'{$agent}'" : "NULL").")
+				";
+		if (sql_query($sql)) {
+			return_value(200, "Completed.");
+		} else {
+			return_value(500, "Error during checking whether draw is possible.\nContact your administrator. [02-2039-7802]");
+		}
+	}
 
 	// 스탬프 리스트
 	else if ($flag === "get_stamp_list") {
