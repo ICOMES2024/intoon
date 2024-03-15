@@ -192,30 +192,37 @@ if ($during_yn !== "Y") {
 
 								foreach($participation_arr as $a_arr) {
                                     $attendance_type = "";
-                                    switch($prev["attendance_type"]) {
-                                        case 0:
-                                            $attendance_type = "Committee";
-                                            break;
-                                        case 1:
-                                            $attendance_type = "Speaker";
-                                            break;
-                                        case 2:
-                                            $attendance_type = "Chairperson";
-                                            break;
-                                        case 3:
-                                            $attendance_type = "Panel";
-                                            break;
-                                        case 4:
-                                            $attendance_type = "Participants";
-                                            break;
-                                        case 5:
-                                            $attendance_type = "Sponsor";
-                                            break;
-										case 6:
-											$attendance_type = "Press";
-											break;
-                                    }
-
+									//[240315] sujeong / $prev["attendance_type"] 빈 값일 때 조건 추가 => Committee selected 방지
+									if (!empty($prev["attendance_type"])) {
+										switch($prev["attendance_type"]) {
+											case 0:
+												$attendance_type = "Committee";
+												break;
+											case 1:
+												$attendance_type = "Speaker";
+												break;
+											case 2:
+												$attendance_type = "Chairperson";
+												break;
+											case 3:
+												$attendance_type = "Panel";
+												break;
+											case 4:
+												$attendance_type = "Participants";
+												break;
+											case 5:
+												$attendance_type = "Sponsor";
+												break;
+											case 6:
+												$attendance_type = "Press";
+												break;
+											default:
+												$attendance_type = "";
+										}
+									}else{
+										$attendance_type = "";
+									}
+									
 									$selected = $attendance_type === $a_arr ? "selected" : "";
 
 									echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
@@ -455,7 +462,9 @@ if ($during_yn !== "Y") {
                     <li>
                         <p class="label">Special Request for Food <span class="red_txt">*</span></p>
                         <ul class="chk_list info_check_list flex_center type2">
-                            <?= $prev["special_request_food"] === '0' ? "selected" : "" ?>
+                            <!-- <?= $prev["special_request_food"] === '0' ? "selected" : "" ?> -->
+							<!-- [240315] sujeong / 조건 추가 / 기존 데이터가 없는 경우 Not Applicable에 check -->
+							<?php if($prev["special_request_food"]) {?>
                             <li>
                                 <input type="radio" class='checkbox' id="special_request1" name='special_request' value="0" <?= $prev["special_request_food"] === '0' ? "checked" : "" ?>/>
                                 <label for="special_request1"><i></i>Not Applicable</label>
@@ -468,6 +477,20 @@ if ($during_yn !== "Y") {
                                 <input type="radio" class='checkbox' id="special_request3" name='special_request' value="2" <?= $prev["special_request_food"] === '2' ? "checked" : "" ?>/>
                                 <label for="special_request3"><i></i>Halal</label>
                             </li>
+							<?php }else{ ?>
+								<li>
+                                <input type="radio" class='checkbox' id="special_request1" name='special_request' value="0"  checked/>
+                                <label for="special_request1"><i></i>Not Applicable</label>
+                            </li>
+                            <li>
+                                <input type="radio" class='checkbox' id="special_request2" name='special_request' value="1" <?= $prev["special_request_food"] === '1' ? "checked" : "" ?>/>
+                                <label for="special_request2"><i></i>Vegetarian</label>
+                            </li>
+                            <li>
+                                <input type="radio" class='checkbox' id="special_request3" name='special_request' value="2" <?= $prev["special_request_food"] === '2' ? "checked" : "" ?>/>
+                                <label for="special_request3"><i></i>Halal</label>
+                            </li>
+							<?php } ?>
                         </ul>
                     </li>
                     <li>
@@ -628,6 +651,9 @@ if ($during_yn !== "Y") {
 		let sponsor1 = false;
 		let sponsor2 = false;
 		let sponsor3 = false;
+
+		//[230315] sujeong / 페이지 로딩 시 체크된 값 확인하는 함수
+		checkSponsor();
 		
 		$(document).on("click", "#license_checkbox", function() {
 			//console.log($(this).is(':checked'));
@@ -645,7 +671,6 @@ if ($during_yn !== "Y") {
 		//[240315] sujeong / 평점신청 분리
 		//대한의사협회 평점신청
 		$('input[name=review]').on("change", function() {
-			console.log("의사", $('input[name=review]:checked').val())
 			if($('input[name=review]:checked').val() == '1'){
 				$(".review_sub_list").removeClass("hidden");
 			}else{
@@ -661,7 +686,6 @@ if ($during_yn !== "Y") {
 
 		//한국영양교육평가원 평점신청
 		$('input[name=review1]').on("change", function() {
-			console.log("영양", $('input[name=review1]:checked').val())
 			if($('input[name=review1]:checked').val() == '1'){
 				$(".review_sub_list_1").removeClass("hidden");
 			}else{
@@ -729,6 +753,19 @@ if ($during_yn !== "Y") {
 			}
 		});
 		*/
+		
+		//[230315] sujeong / 페이지 로딩 시 체크된 값 확인하는 함수
+		function checkSponsor(){
+			if($("select[name=participation_type]").val() === "Sponsor"){
+				sponsor1 = true;
+			}
+			if($("select[name=category]").val() === "occupation"){
+				sponsor2 = true;
+			}
+			if($("select[name=category]").val() === "Sponsor"){
+				sponsor3 = true;
+			}
+		}
 
 		//[240314] sujeong / 함수 추가
 		function showPromotionCode(){
@@ -740,7 +777,7 @@ if ($during_yn !== "Y") {
 				$('.total_fee_tr').hide();
 			}
 		}
-
+		
         $(".next_btn").on("click", function (){
              if(!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
                  !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
