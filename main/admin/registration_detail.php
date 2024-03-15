@@ -34,6 +34,7 @@
 											rr.day3_luncheon_yn,
 											rr.special_request_food,
 											rr.price,
+											rr.etc6,
 											IFNULL(rr.status, '1') AS registration_status,
 											DATE(p.payment_date) AS payment_date, p.total_price_kr, p.total_price_us, p.refund_reason, DATE_FORMAT(p.refund_date, '%Y-%m-%d') AS refund_date, p.refund_bank, p.refund_holder, p.refund_account, p.refund_amount,
 											n.nation_ko AS registration_nation, rr.register_path, rr.conference_info, rr.etc1,
@@ -687,6 +688,14 @@
                                 ?>
                             </td>
 						</tr>
+						<tr>
+                        <th>메모</th>
+                        <td colspan="3">
+                            <input style="width:80%" type="text" name="etc6" placeholder="메모"
+                                    value="<?= $registration_detail["etc6"] ?>">
+                            <button type="button" class="btn submit" data-type="update_memo">저장</button>
+                        </td>
+                    </tr> 
 					</tbody>
 				</table>
 				<div class="btn_wrap">
