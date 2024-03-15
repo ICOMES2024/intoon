@@ -21,6 +21,9 @@
         $registration_info = sql_fetch("SELECT * FROM request_registration WHERE idx = {$registration_idx}");
         $payment_no = $registration_info['payment_no'];
 
+          //[240315] sujeong memo 추가(학회팀 요청)
+          $etc6 = isset($data["etc6"]) ?$data["etc6"] : "";
+
         if($submit_type == "update_refund_reason" || $submit_type == "update_refund_info") {
             if(!$payment_no) {
                 $res= [
@@ -31,6 +34,32 @@
                 exit;
             }
         }
+
+        if($submit_type == "update_memo"){
+            $update_memo_query = "
+                    UPDATE request_registration
+                        SET
+                            etc6 = '{$etc6}'
+					WHERE idx = {$registration_idx}";
+
+            $update_memo = sql_query($update_memo_query);
+            if(!$update_memo) {
+                $res = [
+                    code => 400,
+                    msg => "memo update error"
+                ];
+                echo json_encode($res);
+                exit;
+            } else {
+                $res = [
+                    code => 200,
+                    msg => "memo update success"
+                ];
+                echo json_encode($res);
+                exit;
+            }
+        }
+
 
         if($submit_type == "update_payment_status" && $payment_status == 2) {
             $member_idx = $_SESSION['ADMIN']['idx'];

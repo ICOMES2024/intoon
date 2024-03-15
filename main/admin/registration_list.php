@@ -11,6 +11,7 @@
 	$attendance_type = isset($_GET["attendance_type"]) ? $_GET["attendance_type"] : "";
 	$s_date = isset($_GET["s_date"]) ? $_GET["s_date"] : "";
 	$e_date = isset($_GET["e_date"]) ? $_GET["e_date"] : "";
+	$phone_num = isset($_GET["phone_num"]) ? $_GET["phone_num"] : "";
 
 	$where = "";
 	
@@ -32,6 +33,10 @@
 
 	if($e_date != "") {
 		$where .= " AND DATE(rr.register_date) <= '".$e_date."' ";
+	}
+	
+	if($phone_num != "") {
+		$where .= " AND rr.phone LIKE '%".$phone_num."%' ";
 	}
 	
 
@@ -101,7 +106,7 @@
 										(
 											CASE
 												WHEN rr.payment_methods = '0' THEN 'Credit card'
-												WHEN rr.payment_methods = '1' THEN 'Bank transfer'
+												WHEN rr.payment_methods = '1' THEN 'Wire transfer'
 												WHEN rr.payment_methods = '2' THEN 'Onsite payment'
 											END
 										) AS payment_methods,
@@ -438,6 +443,14 @@
 								<td class="select_wrap clearfix2">
 									
 								</td>
+							</tr>
+							<tr>
+								<th>phone</th>
+								<td>
+									<input type="text" name="phone_num" value="<?= $phone_num; ?>">
+								</td>
+								<td></td>
+								<td></td>
 							</tr>
 						</tbody>
 					</table>
