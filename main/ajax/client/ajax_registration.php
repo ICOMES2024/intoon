@@ -494,7 +494,7 @@
 
 
 			$regustration_query = "SELECT
-										idx, attendance_type, is_score, nation_no, phone,
+										idx, attendance_type, is_score, is_score1, is_score2, nation_no, phone,
 										member_type, ksso_member_status, registration_type, affiliation, department,
 										licence_number, specialty_number, nutritionist_number, dietitian_number, academy_number, register_path,
 										welcome_reception_yn, day2_breakfast_yn, day2_luncheon_yn, day3_breakfast_yn, day3_luncheon_yn, 
