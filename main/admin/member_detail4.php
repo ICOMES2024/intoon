@@ -12,77 +12,77 @@
 	}
 
 	$member_registration_query =	"
-										SELECT
-											rr.idx, rr.member_type, rr.attendance_type, rr.etc2, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS regist_date,
-											p.total_price_us, p.total_price_kr, rr.status,
-											(CASE
-													WHEN rr.status = '0'
-													THEN '등록취소'
-													WHEN rr.status = '1'
-													THEN '결제대기'
-													WHEN rr.status = '2'
-													THEN '결제완료'
-													WHEN rr.status = '3'
-													THEN '환불대기'
-													WHEN rr.status = '4'
-													THEN '환불완료'
-													ELSE '-'
-											END) AS registration_status,
-                                            (CASE
-                                                WHEN rr.registration_type = '2'
-                                                THEN '위원회'
-                                                WHEN rr.registration_type = '1'
-                                                THEN '연설자'
-                                                WHEN rr.registration_type = '0'
-                                                THEN '일반참가자'
-                                                ELSE '-'
-                                            END) AS registration_type,
-											(CASE
-												WHEN rr.attendance_type = '0'
-												THEN 'Offline'
-												WHEN rr.attendance_type = '1'
-												THEN 'Online'
-												WHEN rr.attendance_type = '2'
-												THEN 'Online + Offline'
-												ELSE '-'
-											END) AS attendance_type,
-											(CASE rr.attendance_type
-													WHEN '0' THEN 'Committee'
-													WHEN '1' THEN 'Speaker'
-													WHEN '2' THEN 'Chairperson'
-													WHEN '3' THEN 'Panel'
-													WHEN '4' THEN 'Participants'
-													WHEN '5' THEN 'Sponsor'
-													WHEN '6' THEN 'Press'
-													ELSE '-'
-												END
-											) AS attendance_type_text,
-                                            (CASE
-                                                WHEN rr.is_score = '1'
-                                                THEN '신청'
-                                                WHEN rr.is_score = '0'
-                                                THEN '미신청'
-                                                ELSE '-'
-                                            END) AS is_score
-											(CASE
-											WHEN rr.is_score1 = '1'
-											THEN '신청'
-											WHEN rr.is_score1 = '0'
-											THEN '미신청'
+									SELECT
+									rr.idx, rr.member_type, rr.attendance_type, rr.etc2, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS regist_date,
+									p.total_price_us, p.total_price_kr, rr.status,
+									(CASE
+											WHEN rr.status = '0'
+											THEN '등록취소'
+											WHEN rr.status = '1'
+											THEN '결제대기'
+											WHEN rr.status = '2'
+											THEN '결제완료'
+											WHEN rr.status = '3'
+											THEN '환불대기'
+											WHEN rr.status = '4'
+											THEN '환불완료'
 											ELSE '-'
-											END) AS is_score1
-											(CASE
-											WHEN rr.is_score2 = '1'
-											THEN '신청'
-											WHEN rr.is_score2 = '0'
-											THEN '미신청'
+									END) AS registration_status,
+									(CASE
+										WHEN rr.registration_type = '2'
+										THEN '위원회'
+										WHEN rr.registration_type = '1'
+										THEN '연설자'
+										WHEN rr.registration_type = '0'
+										THEN '일반참가자'
+										ELSE '-'
+									END) AS registration_type,
+									(CASE
+										WHEN rr.attendance_type = '0'
+										THEN 'Offline'
+										WHEN rr.attendance_type = '1'
+										THEN 'Online'
+										WHEN rr.attendance_type = '2'
+										THEN 'Online + Offline'
+										ELSE '-'
+									END) AS attendance_type,
+									(CASE rr.attendance_type
+											WHEN '0' THEN 'Committee'
+											WHEN '1' THEN 'Speaker'
+											WHEN '2' THEN 'Chairperson'
+											WHEN '3' THEN 'Panel'
+											WHEN '4' THEN 'Participants'
+											WHEN '5' THEN 'Sponsor'
+											WHEN '6' THEN 'Press'
 											ELSE '-'
-										END) AS is_score2
-										FROM request_registration rr
-										LEFT JOIN payment p
-										ON rr.payment_no = p.idx
-										WHERE rr.is_deleted = 'N'
-										AND rr.register = {$member_idx}
+										END
+									) AS attendance_type_text,
+									(CASE
+										WHEN rr.is_score = '1'
+										THEN '신청'
+										WHEN rr.is_score = '0'
+										THEN '미신청'
+										ELSE '-'
+									END) AS is_score,
+									(CASE
+									WHEN rr.is_score1 = '1'
+									THEN '신청'
+									WHEN rr.is_score1 = '0'
+									THEN '미신청'
+									ELSE '-'
+									END) AS is_score1,
+									(CASE
+									WHEN rr.is_score2 = '1'
+									THEN '신청'
+									WHEN rr.is_score2 = '0'
+									THEN '미신청'
+									ELSE '-'
+								END) AS is_score2
+								FROM request_registration rr
+								LEFT JOIN payment p
+								ON rr.payment_no = p.idx
+								WHERE rr.is_deleted = 'N'
+								AND rr.register  = {$member_idx}
 									";
 	$member_registration = get_data($member_registration_query);
 
@@ -108,7 +108,6 @@
 							<th>대한의사협회 평점신청 여부</th>
 							<th>한국영양교육평가원 평점신청 여부</th>
 							<th>운동사 평점신청 여부</th>
-							<th>신청협회</th>
 							<th>등록일</th>
 						</tr>
 					</thead>
@@ -126,6 +125,8 @@
 								$attendance_type_text = isset($member_registration["attendance_type_text"]) ? $member_registration["attendance_type_text"] : "";
 								$payment_price = isset($member_registration["total_price_us"]) ? "$ ".$member_registration["total_price_us"] : (isset($member_registration["total_price_kr"]) ? "￦ ".$member_registration["total_price_kr"] : "-");
 								$is_score = isset($member_registration["is_score"]) ? $member_registration["is_score"] : "";
+								$is_score1 = isset($member_registration["is_score1"]) ? $member_registration["is_score1"] : "";
+								$is_score2 = isset($member_registration["is_score2"]) ? $member_registration["is_score2"] : "";
 								
 								//평점신청협회 DB에서 select (21.11.03)
 								$result_org		= isset($member_registration["etc2"]) ? $member_registration["etc2"] : "";
@@ -160,7 +161,6 @@
 							<td><?=$is_score?></td>
 							<td><?=$is_score1?></td>
 							<td><?=$is_score2?></td>
-							<td>-</td>
 							<td><?=$register_date?></td>
 						</tr>
 					<?php

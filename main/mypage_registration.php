@@ -342,7 +342,7 @@
 														<td><?=$list["specialty_number"] ?? "Not applicable"?></td>
 													</tr>
 													<tr>
-														<th>한국영양교육평가원 평점신청</th>
+														<th>한국영양교육평가원 <br/>평점신청</th>
 														<td><?=$list["is_score1"] == 1 ? "필요" : "불필요"?></td>
 													</tr>
 													<tr>
@@ -382,9 +382,9 @@
 												<tr class="tr_bg">
 													<th>Payment Method</th>
 													<td>
-														<input type="checkbox" disabled class="checkbox">
+														<!-- <input type="checkbox" disabled class="checkbox"> -->
 														<label for="">
-															<i></i>
+															<i></i>• 
 															<?=$payment_methods?>
 														</label>
 													</td>

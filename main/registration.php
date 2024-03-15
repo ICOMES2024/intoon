@@ -572,14 +572,12 @@ if ($during_yn !== "Y") {
 														<li>
 															<input type="radio" id="credit" class="new_radio" name="payment_method" value="credit" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] !== '1' ? "checked" : ""?>>
 															<label for="credit">
-																<i></i>Credit card
-															</label>
+																<i></i>Credit card</label>
 														</li>
 														<li>
 															<input type="radio" id="bank" class="new_radio" name="payment_method" value="bank" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] === '1' ? "checked" : ""?>>
 															<label for="bank">
-																<i></i>Wire transfer
-															</label>
+																<i></i>Wire transfer</label>
 														</li>
 													</ul>
 												</div>

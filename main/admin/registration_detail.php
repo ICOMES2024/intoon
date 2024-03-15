@@ -186,6 +186,8 @@
 	// 2022 개발 시 워딩 변경
 	$registration_type_text = isset($registration_detail["registration_type_text"]) ? $registration_detail["registration_type_text"] : "";
 	$is_score_text = isset($registration_detail["is_score_text"]) ? $registration_detail["is_score_text"] : "";
+	$is_score1_text = isset($registration_detail["is_score1_text"]) ? $registration_detail["is_score1_text"] : "";
+	$is_score2_text = isset($registration_detail["is_score2_text"]) ? $registration_detail["is_score2_text"] : "";
 	$member_status_text = isset($registration_detail["member_status_text"]) ? $registration_detail["member_status_text"] : "";
 	$attendance_type_text = isset($registration_detail["attendance_type_text"]) ? $registration_detail["attendance_type_text"] : "";
 	$invitation_check_yn = isset($registration_detail["invitation_check_yn"]) ? $registration_detail["invitation_check_yn"] : "N";
@@ -380,9 +382,9 @@
 						</tr>
 						<tr>
 							<th>한국영양교육평가원 평점신청</th>
-							<td><?=$is_score_text1?></td>
+							<td><?=$is_score1_text?></td>
 							<th>운동사 평점신청</th>
-							<td><?=$is_score_text2?></td>
+							<td><?=$is_score2_text?></td>
 						</tr>
 						<tr>
 							<th>KSSO Member Status</th>
