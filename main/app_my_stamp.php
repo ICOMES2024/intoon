@@ -144,7 +144,7 @@
 					// [240314] hub 스탬프 투어 소스 코드 !@#$^
 					// image 서버로 url 수정 필요 !!!
 					function imageUrlManager($str){
-						$url = "http://43.200.170.254/main";
+						$url = "https://icomes.or.kr/main";
 
 						if(strrpos($str, "http", -strlen($str)) !== false ||  strrpos($str, "https", -strlen($str)) !== false){
 							return $str;

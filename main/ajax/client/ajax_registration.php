@@ -55,6 +55,9 @@
             case "Sponsor":
                 $attendance_type = 5;
                 break;
+			case "Press":
+				$attendance_type = 6;
+				break;
 		}
 
 		$category            = isset($data["category"]) ? $data["category"] : "";										// Category
@@ -63,7 +66,13 @@
         $occupation            = isset($data["occupation"]) ? $data["occupation"] : "";									// Type of Participation
         $occupation_other      = isset($data["occupation_input"]) ? $data["occupation_input"] : "";
 
-		$rating              = isset($data["review"]) ? $data["review"] : "";											// 평점신청
+		$rating              = isset($data["review"]) ? $data["review"] : "";											// 대한의사협회 평점신청
+		
+		//[240315] sujeong / 한국영양교육평가원 평점신청 추가
+		$rating1              = isset($data["review1"]) ? $data["review1"] : "";											// 한국영양교육평가원 평점신청
+		
+		//[240315] sujeong / 운동사 평점신청 추가
+		$rating2              = isset($data["review2"]) ? $data["review2"] : "";											// 운동사 평점신청 
 		$licence_number      = $data["licence_number"] != "" ? $data["licence_number"] : "";							// 의사면허번호
 		$specialty_number    = $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
 		$nutritionist_number = $data["nutritionist_number"] != "" ? $data["nutritionist_number"] : "";					// 영양사면허번호
@@ -295,6 +304,20 @@
 			$add_set .= ", is_score = {$rating} ";
 		}else{
 			$add_set .= ", is_score = NULL ";
+		}
+
+		//[240315] sujeong / 한국영양교육평가원 평점신청 추가
+		if($rating1 !== "") {
+			$add_set .= ", is_score1 = {$rating1} ";
+		}else{
+			$add_set .= ", is_score1 = NULL ";
+		}
+
+		//[240315] sujeong / 운동사 평점신청 추가
+		if($rating2 !== "") {
+			$add_set .= ", is_score2 = {$rating2} ";
+		}else{
+			$add_set .= ", is_score2 = NULL ";
 		}
 		
 		if($licence_number !== "") {

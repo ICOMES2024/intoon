@@ -173,6 +173,9 @@
                             case 5:
                                 $attendance_type = "Sponsor";
                                 break;
+							case 6:
+								$attendance_type = "Press";
+								break;
 						}
 
 						// Others
@@ -199,36 +202,31 @@
 
 						if($welcome_reception_yn === "Y"){
 							$other_html .= "
-											<input type='checkbox' class='checkbox' id='other1' disabled>
-											<label for='other1'><i></i>Welcome Reception – September 7(Thu)</label>
+											<label for='other1'><i></i>• Welcome Reception – September 7(Thu)</label>
 										   ";
 						}
 						if($day2_breakfast_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<input type='checkbox' class='checkbox' id='other2' disabled>
-											<label for='other2'><i></i>Day 2 Breakfast Symposium – September 8(Fri)</label>
+											<label for='other2'><i></i>• Day 2 Breakfast Symposium – September 8(Fri)</label>
 										   ";
 						}
 						if($day2_luncheon_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<input type='checkbox' class='checkbox' id='other3' disabled>
-											<label for='other3'><i></i>Day 2 Luncheon Symposium – September 8(Fri)</label>
+											<label for='other3'><i></i>• Day 2 Luncheon Symposium – September 8(Fri)</label>
 										   ";
 						}
 						if($day3_breakfast_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<input type='checkbox' class='checkbox' id='other4' disabled>
-											<label for='other4'><i></i>Day 3 Breakfast Symposium – September 9(Sat)</label>
+											<label for='other4'><i></i>• Day 3 Breakfast Symposium – September 9(Sat)</label>
 										   ";
 						}
 						if($day3_luncheon_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<input type='checkbox' class='checkbox' id='other5' disabled>
-											<label for='other5'><i></i>Day 3 Luncheon Symposium – September 9(Sat)</label>
+											<label for='other5'><i></i>• Day 3 Luncheon Symposium – September 9(Sat)</label>
 										   ";
 						}
 
@@ -242,8 +240,7 @@
 							if($info[$a]){
 								$info_html .= $info_html != "" ? "<br/>" : "";
 								$info_html .= "
-												<input type='checkbox' class='checkbox' id='conference".$a."' disabled>
-												<label for='conference".$a."'><i></i>".$info[$a]."</label>
+												<label for='conference".$a."'><i></i>• ".$info[$a]."</label>
 											  ";
 							}
 						}
@@ -333,7 +330,7 @@
 												</tr>
 												<?php if($list["is_korea"] == 1){?>
 													<tr>
-														<th>평점신청</th>
+														<th>대한의사협회 평점신청</th>
 														<td><?=$list["is_score"] == 1 ? "필요" : "불필요"?></td>
 													</tr>
 													<tr>
@@ -345,6 +342,10 @@
 														<td><?=$list["specialty_number"] ?? "Not applicable"?></td>
 													</tr>
 													<tr>
+														<th>한국영양교육평가원 평점신청</th>
+														<td><?=$list["is_score1"] == 1 ? "필요" : "불필요"?></td>
+													</tr>
+													<tr>
 														<th>영양사 면허번호</th>
 														<td><?=$list["nutritionist_number"] ?? "Not applicable"?></td>
 													</tr>
@@ -352,6 +353,10 @@
                                                         <th>임상영양사 면허번호</th>
                                                         <td><?=$list["dietitian_number"] ?? "Not applicable"?></td>
                                                     </tr>
+													<tr>
+														<th>운동사 평점신청</th>
+														<td><?=$list["is_score2"] == 1 ? "필요" : "불필요"?></td>
+													</tr>
 												<?php }?>
 												<tr>
 													<th>Others</th>

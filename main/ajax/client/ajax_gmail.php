@@ -410,10 +410,22 @@ if($language == "ko") {
                 case 5:
                     $attendance_type = "Sponsor";
                     break;
+				case 6:
+					$attendance_type = "Press";
+					break;
 			}
-
+			//[240315] sujeong / 평점신청 분리
+			//대한의사협회 평점신청
 			$is_score = $data["is_score"] ?? "";
 			$is_score = ($is_score == 1) ? "필요" : "불필요";
+
+			//한국영양교육평가원 평점신청
+			$is_score1 = $data["is_score1"] ?? "";
+			$is_score1 = ($is_score1 == 1) ? "필요" : "불필요";
+			
+			//운동사 평점신청
+			$is_score2 = $data["is_score2"] ?? "";
+			$is_score2 = ($is_score2 == 1) ? "필요" : "불필요";
 
 			/*
 			$member_status = $data["member_status"] ?? "-";
@@ -451,7 +463,7 @@ if($language == "ko") {
 			if($nation_tel == 82){
 				$review_html = "
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>평점신청</th>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>대한의사협회 평점신청</th>
 									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$is_score}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
@@ -463,12 +475,20 @@ if($language == "ko") {
 									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$specialty_number}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>한국영양교육평가원 평점신청</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$is_score1}</td>
+								</tr>
+								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>영양사 면허번호</th>
 									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$nutritionist_number}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>임상영양사 번호</th>
 									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$dietitian_number}</td>
+								</tr>
+								<tr style='border-bottom:1px solid #000;'>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>운동사 평점신청</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$is_score2}</td>
 								</tr>
 							   ";
 			}
@@ -484,36 +504,31 @@ if($language == "ko") {
 
 			if($welcome_reception_yn == "Y"){
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other1'>
-								<label for='other1'><i></i>Welcome Reception – September 7(Thu)</label>
+								<label for='other1'><i></i>• Welcome Reception – September 7(Thu)</label>
 							   ";
 			}
 			if($day2_breakfast_yn == "Y"){
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other2'>
-								<label for='other2'><i></i>Day 2 Breakfast Symposium – September 8(Fri)</label>
+								<label for='other2'><i></i>• Day 2 Breakfast Symposium – September 8(Fri)</label>
 							   ";
 			}
 			if($day2_luncheon_yn == "Y"){
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other3'>
-								<label for='other3'><i></i>Day 2 Luncheon Symposium – September 8(Fri)</label>
+								<label for='other3'><i></i>• Day 2 Luncheon Symposium – September 8(Fri)</label>
 							   ";
 			}
 			if($day3_breakfast_yn == "Y"){
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other4'>
-								<label for='other4'><i></i>Day 3 Breakfast Symposium – September 9(Sat)</label>
+								<label for='other4'><i></i>• Day 3 Breakfast Symposium – September 9(Sat)</label>
 							   ";
 			}
 			if($day3_luncheon_yn == "Y"){
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<input type='checkbox' class='checkbox' id='other5'>
-								<label for='other5'><i></i>Day 3 Luncheon Symposium – September 9(Sat)</label>
+								<label for='other5'><i></i>• Day 3 Luncheon Symposium – September 9(Sat)</label>
 							   ";
 			}
 
@@ -527,8 +542,7 @@ if($language == "ko") {
 				if($info[$a]){
 					$info_html .= $info_html != "" ? "<br/>" : "";
 					$info_html .= "
-									<input type='checkbox' class='checkbox' id='conference".$a."'>
-									<label for='conference".$a."'><i></i>".$info[$a]."</label>
+									<label for='conference".$a."'><i></i>• ".$info[$a]."</label>
 								  ";
 				}
 			}
@@ -553,7 +567,7 @@ if($language == "ko") {
 				$pay_html = "
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold' >Complete</td>
+									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold'>Complete</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Date</th>
