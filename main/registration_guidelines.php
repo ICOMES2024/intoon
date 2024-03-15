@@ -199,7 +199,7 @@ $price = get_data($sql_price);
 					 <div>
 						<ul class="indent_ul">
 							<li>• Credit Card : Master / VISA</li>
-							<li>• Bank Transfer</li>
+							<li>• Wire Transfer</li>
 						</ul>
 					</div>
 					<div class="table_wrap detail_table_common x_scroll">

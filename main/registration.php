@@ -394,6 +394,7 @@ if ($during_yn !== "Y") {
 								<tbody id="othersList">
 									<?php
 										$others_arr = array(
+												"Satellite Symposium",
 												"Welcome Reception",
 												"Day 2 Breakfast Symposium",
 												"Day 2 Luncheon Symposium",
@@ -401,28 +402,32 @@ if ($during_yn !== "Y") {
 												"Day 3 Luncheon Symposium"
 										);
 										$other_date_arr = array(
-												"September 7(Thu)",
-												"September 8(Fri)",
-												"September 8(Fri)",
-												"September 9(Sat)",
-												"September 9(Sat)"
+												"September 5(Thu)",
+												"September 5(Thu)",
+												"September 6(Fri)",
+												"September 6(Fri)",
+												"September 7(Sat)",
+												"September 7(Sat)"
 										);
 
 										$prev_data_arr = [];
-										if($prev["welcome_reception_yn"] == "Y"){
+										if($prev["etc4"] == "Y"){
 											array_push($prev_data_arr ,1);
 										}
-										if($prev["day2_breakfast_yn"] == "Y"){
+										if($prev["welcome_reception_yn"] == "Y"){
 											array_push($prev_data_arr ,2);
 										}
-										if($prev["day2_luncheon_yn"] == "Y"){
+										if($prev["day2_breakfast_yn"] == "Y"){
 											array_push($prev_data_arr ,3);
 										}
-										if($prev["day3_breakfast_yn"] == "Y"){
+										if($prev["day2_luncheon_yn"] == "Y"){
 											array_push($prev_data_arr ,4);
 										}
-										if($prev["day3_luncheon_yn"] == "Y"){
+										if($prev["day3_breakfast_yn"] == "Y"){
 											array_push($prev_data_arr ,5);
+										}
+										if($prev["day3_luncheon_yn"] == "Y"){
+											array_push($prev_data_arr ,6);
 										}
 										
 										for($i = 1; $i <= count($others_arr); $i++) {
@@ -759,7 +764,7 @@ if ($during_yn !== "Y") {
 			if($("select[name=participation_type]").val() === "Sponsor"){
 				sponsor1 = true;
 			}
-			if($("select[name=category]").val() === "occupation"){
+			if($("select[name=occupation]").val() === "Sponsor"){
 				sponsor2 = true;
 			}
 			if($("select[name=category]").val() === "Sponsor"){
