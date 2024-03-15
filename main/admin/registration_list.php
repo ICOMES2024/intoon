@@ -106,7 +106,7 @@
 											END
 										) AS payment_methods,
 										rr.etc1, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,
-										rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn, rr.special_request_food,
+										rr.etc4, rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn, rr.special_request_food,
 										IFNULL(rr.promotion_code, '-') AS promotion_code, IFNULL(rr.recommended_by, '-') AS recommended_by,
 										(
                                             CASE
@@ -170,10 +170,10 @@
 	$html .= '<thead>';
 	$html .= '<tr class="tr_center">';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">Registration</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="15">Participants Inforatmion</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="6">평점신청(Korean Only)</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">Payment Information</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="5">Others</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="17">Participants Inforatmion</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">평점신청(Korean Only)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">Payment Information</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">Others</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;"></th>';
 	$html .= '</tr>';
 	$html .= '<tr class="tr_center">';
@@ -212,6 +212,7 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">할인율</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Promotion Code</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">추천인</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Satellite Symposium</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Welcome Reception</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 2 Breakfast</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
@@ -377,6 +378,7 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["discount_rate"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["promotion_code_number"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["recommended_by"].'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["etc4"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["welcome_reception_yn"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day2_breakfast_yn"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day2_luncheon_yn"].'</td>';
@@ -475,14 +477,14 @@
 							foreach($registration_list as $list) {
 
 								//[240315] sujeong / 등록번호 4자리수 만들기
-								if($list["idx"]< 10){
-									$register_no = !empty($list["idx"]) ? "ICOMES2024-000" .$list["idx"] : "-";
-								}else if($list["idx"] >= 10 && $list["idx"] < 100){
-									$register_no = !empty($list["idx"]) ? "ICOMES2024-00" . $list["idx"] : "-";
-								}else if($list["idx"] >= 100 &&$list["idx"] < 1000){
-									$register_no = !empty($list["idx"]) ? "ICOMES2024-0" . $list["idx"] : "-";
-								}else if($list["idx"] >= 1000 ){
-									$register_no = !empty($list["idx"]) ? "ICOMES2024-" . $list["idx"] : "-";
+								if($list["registration_idx"]< 10){
+									$register_no = !empty($list["registration_idx"]) ? "ICOMES2024-000" .$list["registration_idx"] : "-";
+								}else if($list["registration_idx"] >= 10 && $list["registration_idx"] < 100){
+									$register_no = !empty($list["registration_idx"]) ? "ICOMES2024-00" . $list["registration_idx"] : "-";
+								}else if($list["registration_idx"] >= 100 &&$list["registration_idx"] < 1000){
+									$register_no = !empty($list["registration_idx"]) ? "ICOMES2024-0" . $list["registration_idx"] : "-";
+								}else if($list["registration_idx"] >= 1000 ){
+									$register_no = !empty($list["registration_idx"]) ? "ICOMES2024-" . $list["registration_idx"] : "-";
 								}
 								
 								//$register_no = !empty($list["registration_idx"]) ? "ICOMES2023-".$list["registration_idx"] : "-";

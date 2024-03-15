@@ -176,7 +176,7 @@ if($language == "ko") {
 			$last_name_kor = $data["last_name_kor"];
 			$affiliation = $data["affiliation"];
 			$affiliation_kor = $data["affiliation_kor"];
-			$nation_no = $data["nation_tel"];
+			$nation_tel = $data["nation_tel"];
 			$phone = $data["phone"];
 			$title = $data["title"] ?? NULL;
 
@@ -259,7 +259,7 @@ if($language == "ko") {
 									{$affiliation_kor_cont}
 									<tr>
 										<th style='width:150px; text-align:left; font-size:14px; padding:10px; border-bottom:1px solid #000;'>Telephone number</th>
-										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>(+{$nation_no}){$phone}</td>
+										<td colspan='2' style='font-size:14px; padding:10px; border-left:1px solid #000; border-bottom:1px solid #000;'>(+{$nation_tel}){$phone}</td>
 									</tr>
 								</tbody>	
 							</table>
@@ -505,6 +505,7 @@ if($language == "ko") {
 			}
 
 			// Others
+			$satellite_yn = $data["etc4"] ?? "N";
 			$welcome_reception_yn = $data["welcome_reception_yn"] ?? "N";
 			$day2_breakfast_yn = $data["day2_breakfast_yn"] ?? "N";
 			$day2_luncheon_yn = $data["day2_luncheon_yn"] ?? "N";
@@ -512,34 +513,39 @@ if($language == "ko") {
 			$day3_luncheon_yn = $data["day3_luncheon_yn"] ?? "N";
 
 			$other_html = "";
-
-			if($welcome_reception_yn == "Y"){
+			if($satellite_yn == "Y"){
 				$other_html .= "
-								<label for='other1'><i></i>• Welcome Reception – September 7(Thu)</label>
+								<label for='other1'><i></i>• Satellite Symposium – September 5(Thu)</label>
+							   ";
+			}
+			if($welcome_reception_yn == "Y"){
+				$other_html .= $other_html != "" ? "<br/>" : "";
+				$other_html .= "
+								<label for='other1'><i></i>• Welcome Reception – September 5(Thu)</label>
 							   ";
 			}
 			if($day2_breakfast_yn == "Y"){
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<label for='other2'><i></i>• Day 2 Breakfast Symposium – September 8(Fri)</label>
+								<label for='other2'><i></i>• Day 2 Breakfast Symposium – September 6(Fri)</label>
 							   ";
 			}
 			if($day2_luncheon_yn == "Y"){
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<label for='other3'><i></i>• Day 2 Luncheon Symposium – September 8(Fri)</label>
+								<label for='other3'><i></i>• Day 2 Luncheon Symposium – September 6(Fri)</label>
 							   ";
 			}
 			if($day3_breakfast_yn == "Y"){
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<label for='other4'><i></i>• Day 3 Breakfast Symposium – September 9(Sat)</label>
+								<label for='other4'><i></i>• Day 3 Breakfast Symposium – September 7(Sat)</label>
 							   ";
 			}
 			if($day3_luncheon_yn == "Y"){
 				$other_html .= $other_html != "" ? "<br/>" : "";
 				$other_html .= "
-								<label for='other5'><i></i>• Day 3 Luncheon Symposium – September 9(Sat)</label>
+								<label for='other5'><i></i>• Day 3 Luncheon Symposium – September 7(Sat)</label>
 							   ";
 			}
 
@@ -609,7 +615,7 @@ if($language == "ko") {
 				<tr>
 					<td width='74' style='width:74px;'></td>
 					<td>
-						<div style='font-weight:bold; text-align:center; font-size: 21px; color: #000066; padding: 20px 0;'>[ICOMES 2024] Completed Registration</div>
+						<div style='font-weight:bold; text-align:center; font-size: 21px; color: #000066; padding: 20px 0;'>[ICOMES 2024] Registration Confirmation</div>
 					</td>
 					<td width='74' style='width:74px;'></td>
 				</tr>
@@ -1292,7 +1298,7 @@ else if($_POST["flag"] == "payment"){
 	$name = $_POST["name"] ?? null;
 	$email = $_POST["email"] ?? null;
 	$data = $_POST["data"] ?? null;
-	$message =createMessage("en", "payment", $name , $email, "[ICOMES 2024] Payment Confirmation", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
+	$message =createMessage("en", "payment", $name , $email, "[ICOMES 2024] Registration Confirmation", date("Y-m-d H:i:s"), "", "", 1, "", "", "", "", "", "", "", $data);
 	createDraft($service, "info@icomes.or.kr", $message);
 	sendMessage($service, "info@icomes.or.kr", $message);
 }

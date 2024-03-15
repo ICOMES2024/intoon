@@ -25,7 +25,8 @@
 											rr.ksso_member_status,
 											m.member_idx, m.member_email, m.member_name, m.member_nation,
 											DATE(rr.register_date) AS register_date, rr.email AS registration_email, CONCAT(rr.first_name,' ',rr.last_name) AS registration_name, rr.phone,
-											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,rr.academy_number, 
+											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,rr.academy_number,
+											rr.etc4, 
 											rr.welcome_reception_yn,
 											rr.day2_breakfast_yn,
 											rr.day2_luncheon_yn,
@@ -432,14 +433,15 @@
 							<th>dietitian_number</th>
 							<td><?=$dietitian_number?></td>
 						</tr>
-                        <tr>
+                        <!-- <tr>
                             <th>Congress Banquet Ceremony</th>
                             <td colspan="3"><?= $banquet_yn=="Y" ? "Attend" : "Absent"; ?></td>
-                        </tr>
+                        </tr> -->
 						<tr>
 							<th>Others</th>
 							<td colspan="3">
 								<div>
+								Satellite Symposium : <?=$registration_detail["etc4"] == "Y" ? "Yes" : "No"?><br/>
 									Welcome Reception : <?=$registration_detail["welcome_reception_yn"] == "Y" ? "Yes" : "No"?><br/>
 									Day 2 Breakfast Symposium : <?=$registration_detail["day2_breakfast_yn"] == "Y" ? "Yes" : "No"?><br/>
 									Day 2 Luncheon Symposium : <?=$registration_detail["day2_luncheon_yn"] == "Y" ? "Yes" : "No"?><br/>
