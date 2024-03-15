@@ -138,7 +138,19 @@
 				<?php
 
 					foreach($registration_list as $list) {
-						$register_no = $list["idx"] ? "ICOMES2024-".$list["idx"] : "-";
+
+						//[240315] sujeong / 등록번호 4자리수 만들기
+						if($list["idx"]< 10){
+                            $register_no = !empty($list["idx"]) ? "ICOMES2024-000" .$list["idx"] : "-";
+                        }else if($list["idx"] >= 10 && $list["idx"] < 100){
+                            $register_no = !empty($list["idx"]) ? "ICOMES2024-00" . $list["idx"] : "-";
+                        }else if($list["idx"] >= 100 &&$list["idx"] < 1000){
+                            $register_no = !empty($list["idx"]) ? "ICOMES2024-0" . $list["idx"] : "-";
+                        }else if($list["idx"] >= 1000 ){
+                            $register_no = !empty($list["idx"]) ? "ICOMES2024-" . $list["idx"] : "-";
+                        }
+
+						// $register_no = $list["idx"] ? "ICOMES2024-".$list["idx"] : "-";
 						$payment_url = "./registration2.php?idx={$list['idx']}";
 						$popup_class = "revise_pop_btn";
 						$price = $list["total_price_kr"] != "" ? "￦ ".number_format($list["total_price_kr"]) : ($list["total_price_us"] != "" ? "$ ".number_format($list["total_price_us"]) : "-");
@@ -275,13 +287,14 @@
 							<?php if($list["status"] == 1){?>
 								<td>Payment Needed</td>
 								<td>
+									<!-- [240315] sujeong / 계좌이체 = 수정 버튼 // 카드 결제 = 결제 버튼 -->
 									<?php if($list["payment_methods"] == 1){?>
 										<!--<a href="./online_registration.php" target="_blank" class="btn">Modify</a> 퍼블 ver-->
-<!--										<a href="./registration.php?idx=--><?php //=$list["idx"]?><!--" target="_blank" class="btn">Modify</a>-->
+									<a href="./registration.php?idx=<?php echo $list["idx"];?>" target="_blank" class="btn">Modify</a>
 									<?php }else{?>
-<!--										<button type="button" class="btn payment_btn" data-url="--><?php //=$payment_url?><!--">Payment</button>-->
+										<button type="button" class="btn payment_btn" data-url="<?php echo $payment_url; ?>">Payment</button>
 									<?php }?>
-									<button type="button" class="btn cancel_btn" data-idx="<?=$list["idx"]?>">Cancel</button>
+									<button type="button" class="btn cancel_btn" data-idx="<?php echo $list["idx"]; ?>">Cancel</button>
 								</td>
 							<?php }else if($list["status"] == 2 || $list["status"] == 3){?>
 								<td>Complete</td>

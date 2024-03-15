@@ -382,7 +382,18 @@ if($language == "ko") {
 	if($mail_type == "payment") {
 			$name_title = $data["name_title"] ?? "";
 
-			$register_no = $data["idx"] ? "ICOMES2024-".$data["idx"] : "-";
+			//[240315] sujeong / 등록번호 4자리수 만들기
+			if($data["idx"]< 10){
+				$register_no = !empty($data["idx"]) ? "ICOMES2024-000" .$data["idx"] : "-";
+			}else if($data["idx"] >= 10 && $data["idx"] < 100){
+				$register_no = !empty($data["idx"]) ? "ICOMES2024-00" . $data["idx"] : "-";
+			}else if($data["idx"] >= 100 && $data["idx"] < 1000){
+				$register_no = !empty($data["idx"]) ? "ICOMES2024-0" . $data["idx"] : "-";
+			}else if($data["idx"] >= 1000 ){
+				$register_no = !empty($data["idx"]) ? "ICOMES2024-" . $data["idx"] : "-";
+			}
+
+			// $register_no = $data["idx"] ? "ICOMES2024-".$data["idx"] : "-";
 			$register_date = $data["register_date"] ?? "-";
 
 			$licence_number = $data["licence_number"] ? $data["licence_number"] : "Not applicable";
@@ -396,7 +407,7 @@ if($language == "ko") {
 					$attendance_type = "Committee";
 					break;
 				case 1:
-					$attendance_type = "Invited Speaker";
+					$attendance_type = "Speaker";
 					break;
 				case 2:
 					$attendance_type = "Chairperson";
@@ -405,7 +416,7 @@ if($language == "ko") {
 					$attendance_type = "Panel";
 					break;
 				case 4:
-					$attendance_type = "General Participants";
+					$attendance_type = "Participants";
 					break;
                 case 5:
                     $attendance_type = "Sponsor";
