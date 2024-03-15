@@ -88,7 +88,7 @@ $info = sql_fetch($sql_info);
 							</tr>
 							<tr>
 								<th>Registration Deadline for<br class="br_mb_only"> Approved Abstract Presenters</th>
-								<td>August 1 (Sun)</td>
+								<td>August 1 (Thu)</td>
 							</tr>
 						</table>
 						<!--

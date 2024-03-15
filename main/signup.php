@@ -1431,20 +1431,20 @@ function pw_check(i, password, password2) {
 	if(i==1) {
 		if(!pw1 || pw1_len <= 0) {
 			$("input[name="+password+"]").focus();
-			alert("Invalid passwrod");
+			alert("Invalid Password");
 			return false;
 		}
 	} else {
 		if(!pw2 || pw2_len <= 0) {
 			$("input[name="+password2+"]").focus();
-			alert("Invalid passwrod");
+			alert("Invalid Password");
 			return false;
 		}
 	}
 	if(pw1_len > 0 && pw2_len > 0) {
 		if(pw1 !== pw2) {
 			$("input[name="+password+"]").focus();
-			alert("inconsistency passwrod");
+			alert("inconsistency Password");
 			return false;
 		}
 	}
