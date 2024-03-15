@@ -188,7 +188,7 @@ if ($during_yn !== "Y") {
                         <select id="participation_type" name="participation_type" onChange="calc_fee(this)" <?=$prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : ""?>>
 							<option value="" selected hidden>Choose</option>
 							<?php
-								$participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
+								$participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor", "Press");
 
 								foreach($participation_arr as $a_arr) {
                                     $attendance_type = "";
@@ -275,7 +275,7 @@ if ($during_yn !== "Y") {
 
 					<?php if($member_data['nation_en'] == "Republic of Korea"){?>
 						<li id='chk_org'>
-							<p class='label'>평점신청 <span class='red_txt'>*</span></p>
+							<p class='label'>대한의사협회 평점신청 <span class='red_txt'>*</span></p>
 							<div>
 								<div class='radio_wrap'>
 									<ul class='flex'>
@@ -315,7 +315,27 @@ if ($during_yn !== "Y") {
 							</p>
 							<input type="text" name="specialty_number" id="specialty_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["specialty_number"] ?? "" : ""?>">
 						</li>
-						<li class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
+						
+
+						<!-- [240314] sujeong / 평점 신청 쪼개기 -->
+						<li>
+							<p class='label'>한국영양교육평가원 평점신청 <span class='red_txt'>*</span></p>
+								<div>
+									<div class='radio_wrap'>
+										<ul class='flex'>
+											<li>
+												<input type='radio' class='new_radio registration_check' id='radio3' name='review1' value='1' <?=($prev["is_score1"] == 1 ? "checked" : "")?>>
+												<label for='radio3'><i></i>필요</label>
+											</li>
+											<li>
+												<input type='radio' class='new_radio registration_check' id='radio4' name='review1' value='0' <?=($prev["is_score1"] == 0 ? "checked" : "")?>>
+												<label for='radio4'><i></i>불필요</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+						</li>
+						<li class="review_sub_list_1 <?=($prev["is_score1"] == 1 ? "" : "hidden")?>">
 							<p class="label">
 								영양사 면허번호  <span class="red_txt">*</span>
 								<input type="checkbox" id="app3" class="checkbox" <?=$prev["is_score"] == 1  && ! $prev["nutritionist_number"] ? "checked" : ""?>>
@@ -323,9 +343,9 @@ if ($during_yn !== "Y") {
 									<i></i> <?=$locale("not_applicable")?>
 								</label>
 							</p>	
-							<input type="text" name="nutritionist_number" id="nutritionist_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["nutritionist_number"] ?? "" : ""?>">
+							<input type="text" name="nutritionist_number" id="nutritionist_number" class="under_50 input_license" value="<?=$prev["is_score1"] == 1 ? $prev["nutritionist_number"] ?? "" : ""?>">
 						</li>
-                        <li class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
+                        <li class="review_sub_list_1 <?=($prev["is_score1"] == 1 ? "" : "hidden")?>">
                             <p class="label">
                                 임상영양사 자격번호  <span class="red_txt">*</span>
                                 <input type="checkbox" id="app4" class="checkbox" <?=$prev["is_score"] == 1  && ! $prev["dietitian_number"] ? "checked" : ""?>>
@@ -333,8 +353,27 @@ if ($during_yn !== "Y") {
                                     <i></i> <?=$locale("not_applicable")?>
                                 </label>
                             </p>
-                            <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["dietitian_number"] ?? "" : ""?>">
+                            <input type="text" name="dietitian_number" id="dietitian_number" class="under_50 input_license" value="<?=$prev["is_score1"] == 1 ? $prev["dietitian_number"] ?? "" : ""?>">
                         </li>
+
+						<!-- [240314] sujeong / 운동사 평점 신청 추가 -->
+						<li>
+							<p class='label'>운동사 평점신청 <span class='red_txt'>*</span></p>
+									<div>
+										<div class='radio_wrap'>
+											<ul class='flex'>
+												<li>
+													<input type='radio' class='new_radio registration_check' id='radio5' name='review2' value='1' <?=($prev["is_score2"] == 1 ? "checked" : "")?>>
+													<label for='radio5'><i></i>필요</label>
+												</li>
+												<li>
+													<input type='radio' class='new_radio registration_check' id='radio6' name='review2' value='0' <?=($prev["is_score2"] == 0 ? "checked" : "")?>>
+													<label for='radio6'><i></i>불필요</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+						</li>
 					<?php }?>
                     <li>
                         <p class="label type2"><?=$locale("register_online_question5_2023")?> <span class="red_txt">*</span></p>
@@ -505,7 +544,7 @@ if ($during_yn !== "Y") {
 												<input type="text" id="reg_fee" name="reg_fee" placeholder="0" readonly value="<?=$prev["calc_fee"] || $prev["calc_fee"] == 0 ? number_format($prev["calc_fee"]) : ""?>">
 											</td>
 										</tr>
-										<tr>
+										<tr class="promotion_code_tr">
 											<th>Promotion Code</th>
 											<td>
 												<ul class="half_ul" style="min-width:300px;">
@@ -520,7 +559,7 @@ if ($during_yn !== "Y") {
 												</ul>
 											</td>
 										</tr>
-										<tr>
+										<tr class="total_fee_tr">
 											<th class="red_txt">Total Registration Fee</th>
 											<td><input type="text" id="total_reg_fee" name="total_reg_fee" placeholder="0" value="<?=$prev["price"] || $prev["price"] == 0 ? number_format($prev["price"]) : ""?>" readonly></td>
 										</tr>
@@ -539,7 +578,7 @@ if ($during_yn !== "Y") {
 														<li>
 															<input type="radio" id="bank" class="new_radio" name="payment_method" value="bank" <?=isset($prev["payment_methods"]) && $prev["payment_methods"] === '1' ? "checked" : ""?>>
 															<label for="bank">
-																<i></i>Bank transfer
+																<i></i>Wire transfer
 															</label>
 														</li>
 													</ul>
@@ -584,6 +623,14 @@ if ($during_yn !== "Y") {
 
 		$('.etc1').hide();
 
+		//[240314] sujeong / 프로모션 코드, 총 금액 숨기기 
+		$('.promotion_code_tr').hide();
+		$('.total_fee_tr').hide();
+
+		let sponsor1 = false;
+		let sponsor2 = false;
+		let sponsor3 = false;
+		
 		$(document).on("click", "#license_checkbox", function() {
 			//console.log($(this).is(':checked'));
 			if ($(this).is(':checked') == true) {
@@ -597,7 +644,10 @@ if ($during_yn !== "Y") {
 			}
 		});
 
+		//[240315] sujeong / 평점신청 분리
+		//대한의사협회 평점신청
 		$('input[name=review]').on("change", function() {
+			console.log("의사", $('input[name=review]:checked').val())
 			if($('input[name=review]:checked').val() == '1'){
 				$(".review_sub_list").removeClass("hidden");
 			}else{
@@ -611,7 +661,32 @@ if ($during_yn !== "Y") {
 			}
 		});
 
+		//한국영양교육평가원 평점신청
+		$('input[name=review1]').on("change", function() {
+			console.log("영양", $('input[name=review1]:checked').val())
+			if($('input[name=review1]:checked').val() == '1'){
+				$(".review_sub_list_1").removeClass("hidden");
+			}else{
+				// init
+				$(".review_sub_list_1 input[type=text]").val("");
+				$(".review_sub_list_1 input[type=checkbox]").prop("checked", false);
+
+				if(!$(".review_sub_list_1").hasClass("hidden")){
+					$(".review_sub_list_1").addClass("hidden");
+				}
+			}
+		});
+		//대한의사협회 평점신청
 		$(".review_sub_list input[type=checkbox]").on("change", function(){
+			const checked = $(this).is(":checked");
+
+			if(checked){
+				$(this).parent().next('input').val("");
+			}
+		});
+
+		//한국영양교육평가원 평점신청
+		$(".review_sub_list_1 input[type=checkbox]").on("change", function(){
 			const checked = $(this).is(":checked");
 
 			if(checked){
@@ -657,6 +732,17 @@ if ($during_yn !== "Y") {
 		});
 		*/
 
+		//[240314] sujeong / 함수 추가
+		function showPromotionCode(){
+			if(sponsor1 === true && sponsor2 === true && sponsor3 === true){
+				$('.promotion_code_tr').show();
+				$('.total_fee_tr').show();
+			}else{
+				$('.promotion_code_tr').hide();
+				$('.total_fee_tr').hide();
+			}
+		}
+
         $(".next_btn").on("click", function (){
              if(!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
                  !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
@@ -667,33 +753,66 @@ if ($during_yn !== "Y") {
              }
         });
 
+		//[240314] sujeong / category sponsor 조건 추가
 		$("select[name=category]").on("change", function(){
 			const val = $(this).val();
+
 			const prevTitle = $("input[name=title_prev_input]").val() ?? "";
 
-			if(val === 'Others'){
+			if(val === 'Others' && val !== "Sponsor"){
+				sponsor3 = false;
 				if(!$(this).parent("li").next('.hide_input').hasClass("on")){
 					$(this).parent("li").next('.hide_input').addClass("on");
 				}
+			}else if(val !== 'Others' && val === "Sponsor"){
+				sponsor3 = true;
+				$(this).parent("li").next('.hide_input').removeClass("on");
+				$("input[name=title_input]").val(prevTitle);
 			}else{
+				sponsor3 = false;
 				$(this).parent("li").next('.hide_input').removeClass("on");
 				$("input[name=title_input]").val(prevTitle);
 			}
+			showPromotionCode();
 		});
 
+		//[240314] sujeong / occupation sponsor 조건 추가
         $("select[name=occupation]").on("change", function(){
             const val2 = $(this).val();
             const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
 
-            if(val2 === 'Others'){
+            if(val2 === 'Others' && val2 !== "Sponsor"){
+				sponsor2 = false;
                 if(!$(this).parent("li").next('.hide_input').hasClass("on")){
                     $(this).parent("li").next('.hide_input').addClass("on");
                 }
-            }else{
+            }else if(val2 !== 'Others' && val2 === "Sponsor"){
+				sponsor2 = true;
+				$(this).parent("li").next('.hide_input').removeClass("on");
+                $("input[name=occupation_input]").val(prevTitle2);
+			}else{
+				sponsor2 = false;
                 $(this).parent("li").next('.hide_input').removeClass("on");
                 $("input[name=occupation_input]").val(prevTitle2);
             }
+
+			showPromotionCode();
         });
+
+		//[240314] sujeong / participation_type sponsor 조건 추가
+		$("select[name=participation_type]").on("change", function(){
+            const val3 = $(this).val();
+          
+            if(val3 == "Sponsor"){
+				sponsor1 = true;
+            }else{
+				sponsor1 = false;
+            }
+
+			showPromotionCode();
+        });
+
+
 
 		$("input[name=reg_fee], input[name=promotion_confirm_code]").on("change", function(){
 			const status =  $("input[name=promotion_confirm_code]").val() ?? "";

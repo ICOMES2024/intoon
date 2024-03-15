@@ -222,9 +222,10 @@ function calc_fee(obj){
 	}
 
 	if(participation_type == "Participants" || participation_type =="Sponsor"){
-		if(participation_type == "Sponsor"){
-			category="Others";
-		}
+		//[240314] sujeong / 학회팀 요청 sponsor -> 일반참석자 취급
+		// if(participation_type == "Sponsor"){
+		// 	category="Others";
+		// }
 		$.ajax({
 			url : PATH+"ajax/client/ajax_registration.php",
 			type : "POST",

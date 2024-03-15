@@ -53,7 +53,7 @@
 													WHEN '3' THEN 'Panel'
 													WHEN '4' THEN 'Participants'
 													WHEN '5' THEN 'Sponsor'
-													WHEN '6' THEN 'Others'
+													WHEN '6' THEN 'Press'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
@@ -74,6 +74,20 @@
 												THEN 'Not applied'
 												ELSE '-'
 											END) AS is_score_text,
+											(CASE
+												WHEN rr.is_score1 = 1
+												THEN 'Applied'
+												WHEN rr.is_score1 = 0
+												THEN 'Not applied'
+												ELSE '-'
+											END) AS is_score1_text,
+											(CASE
+												WHEN rr.is_score2 = 1
+												THEN 'Applied'
+												WHEN rr.is_score2 = 0
+												THEN 'Not applied'
+												ELSE '-'
+											END) AS is_score2_text,
 										    (
 											CASE
 												WHEN rr.payment_methods = '0' THEN 'Credit card'
@@ -361,8 +375,14 @@
 						<tr>
 							<th>Registration Type</th>
 							<td><?=$registration_type_text?></td>
-							<th>Applied Review</th>
+							<th>대한의사협회 평점신청</th>
 							<td><?=$is_score_text?></td>
+						</tr>
+						<tr>
+							<th>한국영양교육평가원 평점신청</th>
+							<td><?=$is_score_text1?></td>
+							<th>운동사 평점신청</th>
+							<td><?=$is_score_text2?></td>
 						</tr>
 						<tr>
 							<th>KSSO Member Status</th>

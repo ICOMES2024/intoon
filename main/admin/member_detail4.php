@@ -52,6 +52,8 @@
 													WHEN '2' THEN 'Chairperson'
 													WHEN '3' THEN 'Panel'
 													WHEN '4' THEN 'Participants'
+													WHEN '5' THEN 'Sponsor'
+													WHEN '6' THEN 'Press'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
@@ -62,6 +64,20 @@
                                                 THEN '미신청'
                                                 ELSE '-'
                                             END) AS is_score
+											(CASE
+											WHEN rr.is_score1 = '1'
+											THEN '신청'
+											WHEN rr.is_score1 = '0'
+											THEN '미신청'
+											ELSE '-'
+											END) AS is_score1
+											(CASE
+											WHEN rr.is_score2 = '1'
+											THEN '신청'
+											WHEN rr.is_score2 = '0'
+											THEN '미신청'
+											ELSE '-'
+										END) AS is_score2
 										FROM request_registration rr
 										LEFT JOIN payment p
 										ON rr.payment_no = p.idx
@@ -89,7 +105,9 @@
 							<th>참석유형</th>
 							<th>Registration Fee</th>
 							<th>Online/Offline</th>
-							<th>평점신청여부</th>
+							<th>대한의사협회 평점신청 여부</th>
+							<th>한국영양교육평가원 평점신청 여부</th>
+							<th>운동사 평점신청 여부</th>
 							<th>신청협회</th>
 							<th>등록일</th>
 						</tr>
@@ -140,6 +158,8 @@
 							<td><?=$payment_price?></td>
 							<td>On-site</td>
 							<td><?=$is_score?></td>
+							<td><?=$is_score1?></td>
+							<td><?=$is_score2?></td>
 							<td>-</td>
 							<td><?=$register_date?></td>
 						</tr>

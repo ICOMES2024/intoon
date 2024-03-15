@@ -56,6 +56,7 @@
 												WHEN '3' THEN 'Panel'
 												WHEN '4' THEN 'Participants'
 												WHEN '5' THEN 'Sponsor'
+												WHEN '6' THEN 'Press'
 												ELSE '-'
 											END
 										) AS attendance_type_text,
@@ -66,6 +67,20 @@
 												ELSE '-'
 											END
 										) AS is_score_text,
+										(
+											CASE rr.is_score1
+												WHEN '1' THEN 'Applied'
+												WHEN '0' THEN 'Not applied'
+												ELSE '-'
+											END
+										) AS is_score1_text,
+										(
+											CASE rr.is_score2
+												WHEN '1' THEN 'Applied'
+												WHEN '0' THEN 'Not applied'
+												ELSE '-'
+											END
+										) AS is_score2_text,
 										(
 											CASE
 												WHEN rr.status = '0'
@@ -425,7 +440,9 @@
 							<th>Type of Participation</th>
 							<th>Type of Occupation</th>
 							<th>Category</th>
-							<th>평점신청여부</th>
+							<th>대한의사협회 평점신청여부</th>
+							<th>한국영양교육평가원 평점신청여부</th>
+							<th>운동사 평점신청여부</th>
 							<th>Special Request for Food</th>
 							<th>등록일</th>
 						</tr>
@@ -463,6 +480,8 @@
 									<td><?=$list["occupation_type"]?></td>
 									<td><?=$list["member_type"]?></td>
 									<td><?=isset($list["is_score_text"]) ? $list["is_score_text"] : "-"?></td>
+									<td><?=isset($list["is_score1_text"]) ? $list["is_score1_text"] : "-"?></td>
+									<td><?=isset($list["is_score2_text"]) ? $list["is_score2_text"] : "-"?></td>
 									<td><?=$special_request_food?></td>
 									<td><?=isset($list["register_date"]) ? $list["register_date"] : "-"?></td>
 								</tr>
