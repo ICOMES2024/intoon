@@ -57,7 +57,7 @@
 		
 	$name = $data["first_name"]." ".$data["last_name"] ?? "-";
 	$nation = $data["nation_en"] ?? "-";
-	$total_price = ($data["nation_no"] == 25) ? "KRW ".$data["total_price_kr_text"] : "USD ".$data["total_price_us_text"];
+	$total_price = ($data["nation_no"] == 25) ? "KRW ".number_format($data["total_price_kr_text"]) : "USD ".$data["total_price_us_text"];
 	$payment_method = $data["payment_method_txt"] ?? "-";
 	$payment_date = $data["payment_date_text"] ?? "-";
 ?>
@@ -94,8 +94,8 @@
 								</tr>
 								<tr>
 									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">Registration Fee</th>
-<!--									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;">--><?php //= $total_price ?><!--</td>-->
-									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;"><?= number_format($data['price']) ?></td>
+									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;"><?php echo $total_price ?></td>
+									<!-- <td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;"><?= number_format($data['price']) ?></td> -->
 								</tr>
 								<tr>
 									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:3px solid #000066; text-align:left;">Payment Method</th>

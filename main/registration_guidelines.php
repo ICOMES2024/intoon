@@ -405,7 +405,7 @@ $price = get_data($sql_price);
     <!-- 	<?= $locale("registration") ?> -->
     <!-- </button> -->
 	<div class="centerT">
-		<a href="./registration.php" class="btn long_btn text_long online_registration_alert">Go to Online Registration</a>
+		<a href="./registration.php" class="btn long_btn text_long">Go to Online Registration</a>
 	</div>
 
     <!-- 평점안내 팝업 / 시작 -->
