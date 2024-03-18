@@ -25,7 +25,10 @@
 	<div class="inner">
 		<div class="section section1">
 			<div class="completed_box">
+				<h1>Thank you for registering for ICOMES 2024.</h1>
 				<img src="./img/icons/post_complete.png">
+				<p>Please check the registration completion email for registration and payment details.</p>
+                <button onclick="location.href = '/main/index.php'">Go to ICOMES 2024</button>
 			</div>
 		</div>
 	</div>
