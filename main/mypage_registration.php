@@ -123,7 +123,7 @@
         }
         ?>
 		<div class="table_wrap x_scroll">
-			<table class="table_vertical registration_table">
+			<table class="table_vertical registration_table mr-table">
 				<thead>
 					<tr class="centerT">
 						<th>Registration No.</th>
@@ -426,7 +426,7 @@
 							else if( $list["status"] == 3){ ?>
 							<td>Cancellation processing</td>
 							<td>
-								<p>If you have any questions, <br>please contact the Secretariat of ICOMES 2024<a style="width:fit-content" href="mailto:icomes@into-on.com">(icomes@into-on.com)</a></p>
+								<p>If you have any questions, <br>please contact the secretariat<a style="width:fit-content" href="mailto:icomes@into-on.com">(icomes@into-on.com)</a></p>
 							</td>
                             <?php }else{?>
 								<td>-</td>

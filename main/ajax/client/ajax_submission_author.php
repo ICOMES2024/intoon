@@ -20,10 +20,16 @@ $presenting_author_data = get_data($submit_data_query." WHERE (ra.idx=".$abstrac
 // corresponding_author
 $corresponding_author_data = get_data($submit_data_query." WHERE (ra.idx=".$abstract_idx." OR parent_author=".$abstract_idx.") AND corresponding_author='Y'") ?? [];
 
+//[240318] sujeong / 공동저자 추가 추가
+// co_author
+$co_author_data =  get_data($submit_data_query." WHERE (ra.idx=".$abstract_idx." OR parent_author=".$abstract_idx.") AND presenting_author='N'  AND corresponding_author='N'") ?? [];
+
+
 $result = array(
 	"submit_data" => $submit_data, 
 	"presenting_author_data" => $presenting_author_data,
-	"corresponding_author_data" => $corresponding_author_data
+	"corresponding_author_data" => $corresponding_author_data,
+	"co_author_data" => $co_author_data 
 );
 
 echo json_encode(array(

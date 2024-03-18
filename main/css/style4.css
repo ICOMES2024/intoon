@@ -165,7 +165,7 @@ section.container.organizing {padding-bottom: 190px;}
 .program_detail_ul .detail_table_common tbody {border-bottom: 1px solid #707070;}
 
 /*poster_abstract_submission*/
-.details p, .details li{font-weight:300;line-height:1.8;word-break: keep-all;}
+.details p, .details li{font-weight:300;line-height:2.0;word-break: keep-all;}
 .dowload_btn_wrap{text-align:right;padding-top:10px;}
 .input_table, .input_area{max-width:890px;margin:0 auto;}
 .input_table input, .input_table select, .input_table textarea{padding:18px 0;border:0;background:transparent;font-size:16px;height:auto;width:100%;}
@@ -258,7 +258,7 @@ section.container.organizing {padding-bottom: 190px;}
 .registration .payment_wrap img{width: 100%;}
 /* 220406 HUBDNC LJH2 추가 */
 .registration .title + .details {margin-bottom: 100px;}
-.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td {font-size:12px;}
+.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td {font-size:12px;line-height: 1.5;}
 .registration .btn_wrap {text-align: center; margin-top: 40px;}
 .rating_guide_pop .btn {font-size: 20px; padding: 0 30px; border-radius: 0;}
 .details_bg {border-top: 2px solid #707070; background-color: #F4F4F4; padding: 30px;}
@@ -1094,6 +1094,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.sub_page .section{padding-bottom:60px;}
 	.sub_banner h1:after{height:8px;}
 	.c_table th, .c_table td, .c_table2 th, .c_table2 td {font-size: 14px; padding:10px;}
+	.c_table th, .c_table td label, .c_table2 th, .c_table2 td {font-size: 14px; padding:10px;}
 	.c_table.type2 th, .c_table.type2 td, .c_table2.type2 th, .c_table2.type2 td {font-size: 14px; padding:10px 2px;}
 	.c_table td p, .c_table2 td p{font-size: 14px;}
 	.input_table td{padding:0 4px;}
@@ -1359,5 +1360,59 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 @media screen and (max-width:1100px) {
 	.login_img img {
 		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 486px){
+	/** my page - registration **/
+	.mr-table thead {
+		display:none;
+	}
+	.mr-table tr {
+		display:block;
+		margin-bottom: 1rem;
+		border-top:2px solid #CECECE;
+		border-bottom: none !important;
+	}
+	.mr-table th, .mr-table td {
+		display:block;
+		position:relative;
+		padding-top: 0.3rem;
+		padding-left: 36%;
+		border-width:0 0 1px 0;
+		font-size: 12px;
+	}
+
+	.mr-table td:before {
+		display:block;
+		position:absolute;
+		left:0;
+		top:0;
+		width:30%;
+		padding: 7px;
+		background: #f4f4f4;
+		color: #666666;
+		font-size: 12px;
+	}
+
+	.mr-table td:nth-child(6) > button{
+		min-width: 50px;
+		width: 72px;
+	}
+
+	.mr-table td:nth-child(6) > a{
+		min-width: 50px;
+		width: 75px;
+	}
+	.mr-table td:nth-child(1):before {content:'Registration No.';}
+	.mr-table td:nth-child(2):before {content:'Category';}
+	.mr-table td:nth-child(3):before {content:'Registration Fee';}
+	.mr-table td:nth-child(4):before {content:'Payment Method';}
+	.mr-table td:nth-child(5):before {content:'Payment Status';}
+	.mr-table td:nth-child(6):before {content:'Management';}
+
+	.btn_wrap button{
+		font-size: 12px;
+		min-width: 0;
 	}
 }

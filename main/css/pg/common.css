@@ -141,6 +141,7 @@ p{line-height: 18px;}
 /*font사이즈 ---------------------------------------------------*/
 .Arial{font-family:Arial;}
 .font16{font-size:16px;}
+.font_20{font-size:20px;}
 
 /*input 설정-----------------------------------------------------------*/
 input[type="radio"]{
