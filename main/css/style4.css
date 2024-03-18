@@ -187,6 +187,14 @@ section.container.organizing {padding-bottom: 190px;}
 .input_table input[type="radio"]{padding:0;}
 .submit_application .img_label input:checked + label{border:1px solid #ADF000;}
 .submit_application .completed_box p{text-align:center; font-size:16px;padding:20px 0;}
+.submit_application .completed_box img{max-width:100%;margin:30px 0;}
+.submit_application .completed_box button{display: block; margin: 0 auto; width: 180px; height: 50px; background-color: #FFCC33; font-weight: 600; padding: 0px 8px;}
+.submit_application .completed_box h1 {font-size: 1.8rem; font-weight: 600;}
+
+@media screen and (max-width:600px) {
+	.submit_application .completed_box h1 {font-size: 1rem;}
+	.submit_application .completed_box p {font-size: 12px;}
+}
 /*.submit_application .details{padding:20px 0;}*/
 .co_author_appended{margin-top:50px;}
 .co_author_appended .section_title_wrap2{padding-top:20px;}
