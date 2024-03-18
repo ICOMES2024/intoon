@@ -20,9 +20,9 @@
     $nation_list = get_data($_nation_query);
     $select_user_registration_query = "
         SELECT
-            reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
+            reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, reg.occupation_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score,
 			reg.attendance_type, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number,
-			reg.conference_info, reg.etc4, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food,
+			reg.conference_info, reg.etc4, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food, reg.promotion_code_number,
 			reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
 			(
 				CASE
@@ -285,12 +285,10 @@
 						<tr>
 							<td><?=$register_no ?? "-"?></td>					
 							<td><?=$list["member_type"]?></td>
-							<!--<td><?=$list["attendance_type"]?></td>-->
-							<!--<td><?=$price?></td>-->
 							<td><?=$list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-"?></td>
 							<td><?=$payment_methods?></td>
 							
-
+							<!-- 결제대기 상태 -->
 							<?php if($list["status"] == 1){?>
 								<td>Payment Needed</td>
 								<td>
@@ -303,12 +301,12 @@
 									<?php }?>
 									<button type="button" class="btn cancel_btn" data-idx="<?php echo $list["idx"]; ?>">Cancel</button>
 								</td>
-							<?php }else if($list["status"] == 2 || $list["status"] == 3){?>
+								<!-- 결제 완료상태 -->
+							<?php }else if($list["status"] == 2 || $list["status"] == 5 ){?>
 								<td>Complete</td>
 								<td>
 									<button type="button" class="btn review_regi_open" data-idx="<?=$list["idx"]?>">Review</button>
 									<button type="button" class="btn registration_receipt_btn" data-idx="<?=$list["idx"]?>">Receipt</button>
-									<!--<button type="button" class="btn payment_receipt_btn" data-tid="'.$list['payment_obj']['tid'].'">Payment Receipt</button>-->
 									<div class="review_data hidden">
 										<table class="detail_table">
 											<tbody>
@@ -343,6 +341,10 @@
 												<tr>
 													<th>Type of<br/>Participation</th>
 													<td><?=$attendance_type?></td>
+												</tr>
+												<tr>
+													<th>Type of<br/>Occupation</th>
+													<td><?=$list["occupation_type"]?></td>
 												</tr>
 												<tr>
 													<th>Category</th>
@@ -399,90 +401,34 @@
 													<th>Total Registration fee</th>
 													<td><?=$list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-"?></td>
 												</tr>
+												<?php if(!empty($list["promotion_code_number"])){ ?>
+													<tr class="tr_bg">
+													<th>Promotion Code</th>
+													<td><?=$list["promotion_code_number"]?></td>
+												</tr>
+												<?php } ?>
 												<tr class="tr_bg">
 													<th>Payment Method</th>
 													<td>
-														<!-- <input type="checkbox" disabled class="checkbox"> -->
 														<label for="">
 															<i></i>• 
 															<?=$payment_methods?>
 														</label>
 													</td>
 												</tr>
-												<!-- 이전 개발 -->
-												<!-- 
-												<tr class="tr_bg">
-													<th>Payment Date</th>
-													<td><?=$list["payment_register_date"] ?? "-"?></td>
-												</tr>
-												-->
-												<!-- Credit Card 선택 시 퍼블ver -->
-												<!--
-												<tr class="tr_bg">
-													<th>Registration fee</th>
-													<td>KRW 84,000</td>
-												</tr>
-												<tr class="tr_bg">
-													<th>Total Registration fee</th>
-													<td>KRW 84,000</td>
-												</tr>
-												<tr class="tr_bg">
-													<th>Payment Method</th>
-													<td>
-														<input type="checkbox" disabled class="checkbox">
-														<label for="">
-															<i></i>
-															Credit Card 
-														</label>
-													</td>
-												</tr>
-												-->
-												<!-- Bank transfer 선택 시 -->
-												<!--
-												<tr class="tr_bg">
-													<th>Registration fee</th>
-													<td>KRW 84,000</td>
-												</tr>
-												<tr class="tr_bg">
-													<th>Total Registration fee</th>
-													<td>KRW 84,000</td>
-												</tr>
-												<tr class="tr_bg">
-													<th>Payment Method</th>
-													<td>
-														<input type="checkbox" disabled class="checkbox">
-														<label for="">
-															<i></i>
-															Bank Transfer
-														</label>
-													</td>
-												</tr>
-												<tr>
-													<th>Name of Bank</th>
-													<td>KEB Hana Bank</td>
-												</tr>
-												<tr>
-													<th>Branch</th>
-													<td>HANA BANK, HEAD OFFICE (35, EULJI-RO, JUNG-GU, Seoul, Korea)</td>
-												</tr>
-												<tr>
-													<th>Account Number</th>
-													<td>584-910003-16504</td>
-												</tr>
-												<tr>
-													<th>SWIFT CODE(BIC)</th>
-													<td>KOEXKRSE</td>
-												</tr>
-												<tr>
-													<th>Account Holder</th>
-													<td>대한비만학회 등록비<br>(International Congress on Obesity and Metabolic Syndrome)</td>
-												</tr>
-												-->
 											</tbody>
 										</table>
 									</div>
 								</td>
-							<?php }else{?>
+							<?php }
+							
+							
+							else if( $list["status"] == 3){ ?>
+							<td>Cancellation processing</td>
+							<td>
+								<p>If you have any questions, <br>please contact the Secretariat of ICOMES 2024<a style="width:fit-content" href="mailto:icomes@into-on.com">(icomes@into-on.com)</a></p>
+							</td>
+                            <?php }else{?>
 								<td>-</td>
 								<td>canceled</td>
 							<?php }?>
@@ -656,73 +602,15 @@
 								</div>
 							</td>
 						</tr>
-						<!-- Credit Card 선택 시 -->
-						<!--
-						<tr class="tr_bg">
-							<th>Registration fee</th>
-							<td>KRW 84,000</td>
-						</tr>
-						<tr class="tr_bg">
-							<th>Total Registration fee</th>
-							<td>KRW 84,000</td>
-						</tr>
-						<tr class="tr_bg">
-							<th>Payment Method</th>
-							<td>
-								<input type="checkbox" disabled class="checkbox">
-								<label for="">
-									<i></i>
-									Credit Card 
-								</label>
-							</td>
-						</tr>
-						-->
-						<!-- Bank transfer 선택 시 -->
-						<!--
-						<tr class="tr_bg">
-							<th>Registration fee</th>
-							<td>KRW 84,000</td>
-						</tr>
-						<tr class="tr_bg">
-							<th>Total Registration fee</th>
-							<td>KRW 84,000</td>
-						</tr>
-						<tr class="tr_bg">
-							<th>Payment Method</th>
-							<td>
-								<input type="checkbox" disabled class="checkbox">
-								<label for="">
-									<i></i>
-									Bank Transfer
-								</label>
-							</td>
-						</tr>
-						<tr>
-							<th>Name of Bank</th>
-							<td>KEB Hana Bank</td>
-						</tr>
-						<tr>
-							<th>Branch</th>
-							<td>HANA BANK, HEAD OFFICE (35, EULJI-RO, JUNG-GU, Seoul, Korea)</td>
-						</tr>
-						<tr>
-							<th>Account Number</th>
-							<td>584-910003-16504</td>
-						</tr>
-						<tr>
-							<th>SWIFT CODE(BIC)</th>
-							<td>KOEXKRSE</td>
-						</tr>
-						<tr>
-							<th>Account Holder</th>
-							<td>대한비만학회 등록비<br>(International Congress on Obesity and Metabolic Syndrome)</td>
-						</tr>
-						-->
+					
 					</tbody>
 				</table>
 			</div>
             <div class="btn_wrap">
-                <button type="button" class="btn cancel_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">Cancel</button>
+			<button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">Refund</button>
+                <button type="button" class="btn" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.location.href ='/main/mypage_registration_modify.php'">Modify</button>
+				<button type="button" class="btn review_close" style="position:static; width:auto; height:auto; padding:8px 30px;">Close</button>
+                <!-- <button type="button" class="btn cancel_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">Cancel</button> -->
             </div>
         </div>
     </div>

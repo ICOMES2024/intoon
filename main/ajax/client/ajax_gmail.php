@@ -571,7 +571,7 @@ if($language == "ko") {
 			$pay_name = "-";
 
 			if($pay_type == "card") $pay_name = "Credit Card";
-			else if($pay_type == "bank") $pay_name = "Bank Transfer";
+			else if($pay_type == "bank") $pay_name = "Wire Transfer";
 			else if($pay_type == "free") $pay_name = "Free";
 			else $pay_name = "ETC";
 

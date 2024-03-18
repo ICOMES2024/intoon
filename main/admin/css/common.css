@@ -91,6 +91,7 @@ label.readonly {color: #999;}
 .gray_color {color: #99999C;}
 .red_color {color: red;}
 .blue_color {color: #0000ff;}
+.green_color{color:green !important;}
 
 /*align*/
 .leftT {text-align:left !important;}
