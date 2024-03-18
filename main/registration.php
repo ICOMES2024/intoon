@@ -40,6 +40,7 @@ $sql_during =	"SELECT
 						IF(NOW() BETWEEN '2022-08-18 17:00:00' AND '2024-09-07 22:00:00', 'Y', 'N') AS yn
 					FROM info_event";
 $during_yn = sql_fetch($sql_during)['yn'];
+
 //!=="Y"
 if ($during_yn !== "Y") {
 
@@ -100,7 +101,22 @@ if ($during_yn !== "Y") {
 				WHERE m.idx = {$member_idx}
 				";
 	$member_data = sql_fetch($sql_info);
-	
+
+	//[240318] sujeong / status = 2(결제완료)인 사람 mypage_registration로 이동시키기
+	$reg_sql = "
+		SELECT 
+			idx, `status`
+		FROM request_registration 
+		WHERE is_deleted = 'N'
+		AND NOT status = 2
+		AND register = {$member_idx}
+	";
+
+	$reg_data = sql_fetch($reg_sql);
+
+	if(!$reg_data["idx"]){
+		echo "<script>alert(locale(language.value)('already_registration')); window.location.replace(PATH+'mypage_registration.php');</script>";
+	}
 ?>
 <style>
 /*2022-04-14 ldh 추가*/
@@ -118,7 +134,7 @@ if ($during_yn !== "Y") {
 
 <!-- <section class="container online_register submit_application"> -->
 <section class="container online_register abstract_online_submission">
-	<h1 class="page_title">Online Registration</h1>
+	<h1 class="page_title">Online Registration </h1>
     <div class="inner">
         <!-- <div class="sub_banner"> -->
         <!--     <h1>Online Registration</h1> -->

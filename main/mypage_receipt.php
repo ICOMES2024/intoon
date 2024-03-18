@@ -2,6 +2,7 @@
 	include_once('./include/head.php');
 
 	// 23.05.19 HUBDNC_NYM PC, MOBILE마크업이 다른 부분이여서 체크 필요
+	// test $is_check_mobile = ($_GET["type"] == "pc") ? true : false;
 	$is_check_mobile = ($_GET["type"] == "pc") ? false : true;
 
 	$registration_idx = $_GET["idx"] ?? NULL;
@@ -61,16 +62,17 @@
 	$payment_method = $data["payment_method_txt"] ?? "-";
 	$payment_date = $data["payment_date_text"] ?? "-";
 ?>
-
+<body style="max-width:800px;">
 <div style="max-width:800px;">
 	<!-- 영수증 (PC) -->
 	<?php
 		if (!$is_check_mobile) {
 	?>
 			<div style="max-width:100%; border:5px solid #004793">
-				<div style="padding-top:100px; position:relative;">
+				<div style="position:relative;">
 					<div>
-						<img src="./img/receipt_logo.svg" alt="" style="width:180px; max-width:100%; max-height:80px; position:absolute; top:20px; left:15px;">
+						<!-- <img src="https://image.webeon.net/icomes2024/receipt/2024_header.svg" alt="" style="width:100%; max-width:100%;"> -->
+						<img src="./img/2024_header.svg" alt="" style="width:100%; max-width:100%;">
 						<h1 style="font-size:66px; font-weight:900; color:#000000; text-align:center;">RECEIPT</h1>	
 					</div>
 					<div style="padding:0 50px; margin-top:30px;">
@@ -104,7 +106,8 @@
 							</tbody>
 						</table>
 					</div>
-					<img src="./img/receipt_bottom.png" alt="" style="width:100%; max-width:100%;">
+					<!-- <img src="https://image.webeon.net/icomes2024/receipt/2024_footer.svg" alt="" style="display:block; width:80%; max-width:100%; margin:30px auto;"> -->
+					<img src="./img/2024_footer.svg" alt="" style="display:block; width:80%; max-width:100%; margin:30px auto;">
 				</div>
 			</div>
 	<?php
@@ -113,7 +116,8 @@
 	<!-- 영수증 (MB) -->
 			<div style="max-width:100%;">
 				<div>
-					<img src="./img/receipt_top_mb.png" alt="" style="width:100%; max-width:100%;">
+					<img src="./img/2024_header.svg" alt="" style="width:100%; max-width:100%;">
+					<!-- <img src="https://image.webeon.net/icomes2024/receipt/2024_header.svg" alt="" style="width:100%; max-width:100%;"> -->
 					<div style="padding:0 24px; margin-top:30px;">
 						<table style="border-collapse:collapse; border-spacing:0; width:100%;">
 							<tbody>
@@ -144,12 +148,32 @@
 							</tbody>
 						</table>
 					</div>
-					<img src="./img/receipt_bottom_mb.png" alt="" style="width:100%; max-width:100%;">
+					<img src="./img/2024_footer.svg" alt="" style="display:block; width:80%; max-width:100%; margin:30px auto;">
+					<!-- <img src="https://image.webeon.net/icomes2024/receipt/2024_footer.svg" alt="" style="display:block; width:80%; max-width:100%; margin:30px auto;"> -->
 				</div>
 			</div>
 	<?php
 		}
 	?>
 </div>
+<div class="btn_wrap" style="max-width:800px; text-align:center;">
+    <button type="button" class="btn update_btn pop_save_btn" onclick="CreatePDFfromHTML()">Save</button>
+</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script>
+    function CreatePDFfromHTML() {
+        const buttonBox = document.querySelector(".btn_wrap");
+        const button = document.querySelector(".update_btn");
+
+        buttonBox.removeChild(button)
+        let doc = new jsPDF('p', 'mm', 'a4');
+
+        doc.addHTML(document.body, function() {
+            doc.save('receipt.pdf');
+        });
+    }
+</script>
 </html>
