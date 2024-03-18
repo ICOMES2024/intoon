@@ -23,7 +23,8 @@
 											rr.member_type,
 											rr.occupation_type,
 											rr.ksso_member_status,
-											m.member_idx, m.member_email, m.member_name, m.member_nation,
+											rr.promotion_code_number, rr.recommended_by,
+											m.member_idx, m.member_email, m.member_name, m.member_nation, 
 											DATE(rr.register_date) AS register_date, rr.email AS registration_email, CONCAT(rr.first_name,' ',rr.last_name) AS registration_name, rr.phone,
 											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,rr.academy_number,
 											rr.etc4, 
@@ -689,13 +690,23 @@
                             </td>
 						</tr>
 						<tr>
-                        <th>메모</th>
-                        <td colspan="3">
-                            <input style="width:80%" type="text" name="etc6" placeholder="메모"
-                                    value="<?= $registration_detail["etc6"] ?>">
-                            <button type="button" class="btn submit" data-type="update_memo">저장</button>
-                        </td>
-                    </tr> 
+							<th>메모</th>
+							<td colspan="3">
+								<input style="width:80%" type="text" name="etc6" placeholder="메모"
+										value="<?= $registration_detail["etc6"] ?>">
+								<button type="button" class="btn submit" data-type="update_memo">저장</button>
+							</td>
+                    	</tr> 
+						<tr>
+							<th>프로모션 코드</th>
+							<td>
+								<input style="width:80%" type="text" name="etc6" placeholder="프로모션 코드" value="<?= $registration_detail["promotion_code_number"] ?>" disabled>
+							</td>
+							<th>추천인</th>
+							<td>
+								<input style="width:80%" type="text" name="etc6" placeholder="추천인" value="<?= $registration_detail["recommended_by"] ?>" disabled>
+							</td>
+                    	</tr> 
 					</tbody>
 				</table>
 				<div class="btn_wrap">
@@ -777,7 +788,9 @@ $(document).ready(function(){
             }
             data["refund_amount"] = refund_amount;
         }
-
+        else if (submit_type === "update_memo") {
+            data["etc6"] = $("input[name=etc6]").val();
+        }
 		if(confirm("입력하신 내용으로 저장하시겠습니까?")) {
 			$.ajax({
 			url : "../ajax/admin/ajax_payment.php",

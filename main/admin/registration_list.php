@@ -177,8 +177,8 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">Registration</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="17">Participants Inforatmion</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">평점신청(Korean Only)</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">Payment Information</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">Others</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">Payment Information</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">Others</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;"></th>';
 	$html .= '</tr>';
 	$html .= '<tr class="tr_center">';
@@ -217,6 +217,7 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">할인율</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Promotion Code</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">추천인</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록 메모</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Satellite Symposium</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Welcome Reception</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 2 Breakfast</th>';
@@ -383,6 +384,7 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["discount_rate"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["promotion_code_number"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["recommended_by"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["etc6"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["etc4"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["welcome_reception_yn"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day2_breakfast_yn"].'</td>';
@@ -429,14 +431,6 @@
 								</td>
 							</tr>
 							<tr>
-								<!-- <th>Online/Offline</th> -->
-								<!-- <td> -->
-								<!-- 	<select name="attendance_type"> -->
-								<!-- 		<option value="" <?=$attendance_type == "" ? "selected" : ""?>>전체</option> -->
-								<!-- 		<option value="1" <?=$attendance_type == "1" ? "selected" : ""?>>Online</option> -->
-								<!-- 		<option value="0" <?=$attendance_type == "0" ? "selected" : ""?>>Offline</option> -->
-								<!-- 	</select> -->
-								<!-- </td> -->
 								<th>등록일</th>
 								<td class="input_wrap"><input type="text" value="<?= $s_date; ?>" name="s_date" class="datepicker-here" data-language="en" data-date-format="yyyy-mm-dd" data-type="date"> <span>~</span> <input type="text" value="<?= $e_date; ?>" name="e_date" class="datepicker-here" data-language="en" data-date-format="yyyy-mm-dd" data-type="date"></td>
 								<td></td>
@@ -444,6 +438,7 @@
 									
 								</td>
 							</tr>
+							<!-- [240315] sujeong / 학회팀 요청 휴대폰 번호 검색 추가 -->
 							<tr>
 								<th>phone</th>
 								<td>
@@ -514,7 +509,14 @@
 					?>
 								<tr class="tr_center">
 									<td><?= $register_no; ?></td>
-									<td class="<?=$list["payment_status"] == "결제대기" ? "red_color" : "blue_color"?>"><?=isset($list["payment_status"]) ? $list["payment_status"] : "-" ?></td>
+									<!-- [2403198] sujeong / 환불대기 상태 추가 -->
+									<?php if($list["payment_status"] == "환불대기") {?>
+										<td class="green_color">
+										<?php } else{ ?>
+											<td class="<?= $list["payment_status"] == "결제대기" ? "red_color" : "blue_color" ?>">
+										<?php	} ?>
+                            <?= isset($list["payment_status"]) ? $list["payment_status"] : "-" ?></td>
+									<!-- <td class="<?=$list["payment_status"] == "결제대기" ? "red_color" : "blue_color"?>"><?=isset($list["payment_status"]) ? $list["payment_status"] : "-" ?></td> -->
 									<td><?=isset($list["payment_methods"]) ? $list["payment_methods"] : "-" ?></td>
 									<td><a href="./member_detail.php?idx=<?=isset($list["member_idx"]) ? $list["member_idx"] : "" ?>"><?=isset($list["email"]) ? $list["email"] : "-" ?></a></td>
 									<td><?=isset($list["member_type"]) ? $list["member_type"] : "-" ?></td>

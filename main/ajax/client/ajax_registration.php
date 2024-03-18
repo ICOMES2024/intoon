@@ -1,7 +1,8 @@
 <?php include_once("../../common/common.php");?>
 <?php
 	if($_POST["flag"] == "registration") {
-			
+			error_reporting( E_ALL );
+			ini_set( "display_errors", 1 );
 		//var_dump($_POST); exit;
 		//var_dump($_SESSION); exit;
 
@@ -73,10 +74,10 @@
 		
 		//[240315] sujeong / 운동사 평점신청 추가
 		$rating2              = isset($data["review2"]) ? $data["review2"] : "";											// 운동사 평점신청 
-		$licence_number      = $data["licence_number"] != "" ? $data["licence_number"] : "";							// 의사면허번호
-		$specialty_number    = $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
-		$nutritionist_number = $data["nutritionist_number"] != "" ? $data["nutritionist_number"] : "";					// 영양사면허번호
-        $dietitian_number    = $data["dietitian_number"] != "" ? $data["dietitian_number"] : "";                        // 임상영양사자격번호
+		$licence_number      = isset($data["licence_number"]) && $data["licence_number"] != "" ? $data["licence_number"] : "";							// 의사면허번호
+		$specialty_number    = isset($data["specialty_number"]) && $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
+		$nutritionist_number = isset($data["nutritionist_number"]) && $data["nutritionist_number"] != "" ? $data["nutritionist_number"] : "";					// 영양사면허번호
+        $dietitian_number    = isset($data["dietitian_number"]) && $data["dietitian_number"] != "" ? $data["dietitian_number"] : "";                        // 임상영양사자격번호
 
 		// 0509
 		$user_idx	 = isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : "";
@@ -345,17 +346,18 @@
             $add_set .= ", dietitian_number = NULL ";
         }
 
-		if($academy_number !== "") {
-			$add_set .= ", academy_number = '{$academy_number}' ";
-		}else{
-			$add_set .= ", academy_number = NULL ";
-		}
+		//[240318] sujeong / academy_number 주석
+		// if($academy_number !== "") {
+		// 	$add_set .= ", academy_number = '{$academy_number}' ";
+		// }else{
+		// 	$add_set .= ", academy_number = NULL ";
+		// }
 
-		if($register_path !== "") {
-			$add_set .= ", register_path = '{$register_path}' ";
-		}else{
-			$add_set .= ", register_path = NULL ";
-		}
+		// if($register_path !== "") {
+		// 	$add_set .= ", register_path = '{$register_path}' ";
+		// }else{
+		// 	$add_set .= ", register_path = NULL ";
+		// }
 
         if(!empty($etc)){
             $add_set .= ", etc1 = '{$etc}' ";
@@ -369,59 +371,59 @@
 			$add_set .= ", etc2 = NULL ";
 		}
 
-		if($invitation_nation_no !== "") {
-			$add_set .= ", invitation_nation_no = '{$invitation_nation_no}' ";
-		}else{
-			$add_set .= ", invitation_nation_no = NULL ";
-		}
+		// if($invitation_nation_no !== "") {
+		// 	$add_set .= ", invitation_nation_no = '{$invitation_nation_no}' ";
+		// }else{
+		// 	$add_set .= ", invitation_nation_no = NULL ";
+		// }
 
-		if($address !== "") {
-			$add_set .= ", address = '{$address}' ";
-		}else{
-			$add_set .= ", address = NULL ";
-		}
+		// if($address !== "") {
+		// 	$add_set .= ", address = '{$address}' ";
+		// }else{
+		// 	$add_set .= ", address = NULL ";
+		// }
 
-		if($address_detail !== "") {
-			$add_set .= ", address_detail = '{$address_detail}' ";
-		}else{
-			$add_set .= ", address_detail = NULL ";
-		}
+		// if($address_detail !== "") {
+		// 	$add_set .= ", address_detail = '{$address_detail}' ";
+		// }else{
+		// 	$add_set .= ", address_detail = NULL ";
+		// }
 
-		if($passport_number !== "") {
-			$add_set .= ", passport_number = '{$passport_number}' ";
-		}else{
-			$add_set .= ", passport_number = NULL ";
-		}
+		// if($passport_number !== "") {
+		// 	$add_set .= ", passport_number = '{$passport_number}' ";
+		// }else{
+		// 	$add_set .= ", passport_number = NULL ";
+		// }
 
-		if($date_of_birth !== "") {
-			$add_set .= ", date_of_birth = '{$date_of_birth}' ";
-		}else{
-			$add_set .= ", date_of_birth = NULL ";
-		}
+		// if($date_of_birth !== "") {
+		// 	$add_set .= ", date_of_birth = '{$date_of_birth}' ";
+		// }else{
+		// 	$add_set .= ", date_of_birth = NULL ";
+		// }
 
-		if($date_of_issue !== "") {
-			$add_set .= ", date_of_issue = '{$date_of_issue}' ";
-		}else{
-			$add_set .= ", date_of_issue = NULL ";
-		}
+		// if($date_of_issue !== "") {
+		// 	$add_set .= ", date_of_issue = '{$date_of_issue}' ";
+		// }else{
+		// 	$add_set .= ", date_of_issue = NULL ";
+		// }
 
-		if($date_of_expiry !== "") {
-			$add_set .= ", date_of_expiry = '{$date_of_expiry}' ";
-		}else{
-			$add_set .= ", date_of_expiry = NULL ";
-		}
+		// if($date_of_expiry !== "") {
+		// 	$add_set .= ", date_of_expiry = '{$date_of_expiry}' ";
+		// }else{
+		// 	$add_set .= ", date_of_expiry = NULL ";
+		// }
 
-		if($length_of_visit !== "") {
-			$add_set .= ", length_of_visit = '{$length_of_visit}' ";
-		}else{
-			$add_set .= ", length_of_visit = NULL ";
-		}
+		// if($length_of_visit !== "") {
+		// 	$add_set .= ", length_of_visit = '{$length_of_visit}' ";
+		// }else{
+		// 	$add_set .= ", length_of_visit = NULL ";
+		// }
 
-		if($write_position !== "") {
-			$add_set .= ", write_position = '{$write_position}' ";
-		}else{
-			$add_set .= ", write_position = NULL ";
-		}
+		// if($write_position !== "") {
+		// 	$add_set .= ", write_position = '{$write_position}' ";
+		// }else{
+		// 	$add_set .= ", write_position = NULL ";
+		// }
 
 		if($conference_info !== "") {
 			$add_set .= ", conference_info = '{$conference_info}' ";
@@ -471,6 +473,7 @@
 		}
 
 		$res = sql_query($sql);
+		print_r($res);
 		if($res) {
 			//사전등록
 			if(!$update_idx){
@@ -511,13 +514,27 @@
 			if(!$data["payment_no"] && $total_price < 1) {
 				//현장등록
 				$unit_col = ($nation_no != 25) ? "us" : "kr";
+				// $insert_payment_query = "INSERT INTO 
+				// 								payment 
+				// 								(
+				// 									`type`, payment_type, payment_type_name, payment_status, 
+				// 									payment_price_{$unit_col}, tax_{$unit_col}, total_price_{$unit_col}, 
+				// 									register_date, 
+				// 									DATE_FORMAT(payment_date, '%m-%d-%Y %h:%i:%s') AS payment_date,
+				// 									register
+				// 								)
+				// 							VALUES
+				// 								(
+				// 									3, 2, '무료 신청', 2, 0, 0, 0, NOW(), NOW(), '{$user_idx}'
+				// 								)";
+
+				//[240318] sujeong / payment_date, register data format 수정
 				$insert_payment_query = "INSERT INTO 
 												payment 
 												(
 													`type`, payment_type, payment_type_name, payment_status, 
 													payment_price_{$unit_col}, tax_{$unit_col}, total_price_{$unit_col}, 
-													register_date, register,
-													DATE_FORMAT(payment_date, '%m-%d-%Y %H:%i:%s') AS payment_date
+													register_date, payment_date, register
 												)
 											VALUES
 												(
@@ -537,12 +554,13 @@
 			$data["payment_date"] = date("Y-m-d H:i:s");
 
 			echo json_encode(array(
-				code => 200,
-				msg => "success",
-				registration_idx => $registration_idx,
-				email => $data["pay_type"] == "card" ? null : $email,
-				name => $data["pay_type"] == "card" ? null : $name,
-				data => $data
+				'code' => 200,
+				'msg' => "success",
+				'user' => $payment_new_no,
+				'registration_idx' => $registration_idx,
+				'email' => $data["pay_type"] == "card" ? null : $email,
+				'name' => $data["pay_type"] == "card" ? null : $name,
+				'data' => $data
 			));
 			exit;
 		} else {
@@ -552,11 +570,12 @@
 			));
 			exit;
 		}
+	//[240318] sujeong / registraion_modify page 추가
 	} else if($_POST["flag"] == "update") {
 		$user_idx = $_SESSION["USER"]["idx"];
-		$idx = isset($_POST["idx"]) ? $_POST["idx"] : "";
-		//$_POST = isset($_POST["data"]) ? $_POST["data"] : "";
-
+		$data = isset($_POST["data"]) ? $_POST["data"] : "";
+		$idx =  isset($data["prev_no"]) ? $data["prev_no"] : "";
+		// echo "aaa" . $user_idx;
 		if($idx == "") {
 			$res = [
 				code => 401,
@@ -566,35 +585,45 @@
 			exit;
 		}
 
-		//$banquet_yn = isset($_POST["banquet_yn"]) ? $_POST["banquet_yn"] : "";
+		$licence_number = isset($data["licence_number"]) ? $data["licence_number"] : "";
+		$specialty_number = isset($data["specialty_number"]) ? $data["specialty_number"] : "";
+		$nutritionist_number = isset($data["nutritionist_number"]) ? $data["nutritionist_number"] : "";
+		$dietitian_number = isset($data["dietitian_number"]) ? $data["dietitian_number"] : "";
+	
+		$rating = isset($data["rating"]) ? $data["rating"] : "";
+		$rating1 = isset($data["rating1"]) ? $data["rating1"] : "";
+		$rating2 = isset($data["rating2"]) ? $data["rating2"] : "";
 
-		//if(!empty($banquet_yn)) {
-		//	$banquet = "banquet_yn = '{$banquet_yn}', ";
-		//}
+		$etc4 = $data["others1"] != "no" ? "Y" : "N";
+		$welcome_reception_yn = $data["others2"] != "no" ? "Y" : "N";
+		$day2_breakfast_yn    = $data["others3"] != "no" ? "Y" : "N";
+		$day2_luncheon_yn     = $data["others4"] != "no" ? "Y" : "N";
+		$day3_breakfast_yn    = $data["others5"] != "no" ? "Y" : "N";
+		$day3_luncheon_yn     = $data["others6"] != "no" ? "Y" : "N";
 
-		$nation_no = isset($_POST["nation_no"]) ? $_POST["nation_no"] : "";
-		$affiliation = isset($_POST["affiliation"]) ? $_POST["affiliation"] : "";
-		$department = isset($_POST["department"]) ? $_POST["department"] : "";
-		$licence_number = isset($_POST["licence_number"]) ? $_POST["licence_number"] : "";
-		//$academy_number = isset($_POST["academy_number"]) ? $_POST["academy_number"] : "";
-		$rating = isset($_POST["rating"]) ? $_POST["rating"] : "";
+		$special_request_food = isset($data["special_request"]) ? $data["special_request"] : "";
 
-		$member_status = isset($_POST["member_status"]) ? $_POST["member_status"] : "";
-		$etc2 = isset($_POST["etc2"]) ? $_POST["etc2"] : "";
+		$conference_info      = implode("*", $data["conference_info_arr"]);				
 
 		$update_registration_query =	"
 											UPDATE request_registration
 											SET
-												{$banquet}
-												etc2		= '{$etc2}',
-												nation_no   = {$nation_no},
-												affiliation = '{$affiliation}',
-												department = '{$department}',
-												licence_number = '{$licence_number}',
-												#academy_number = '{$academy_number}',
+												etc4 = '{$etc4}',
+												welcome_reception_yn = '{$welcome_reception_yn}',
+												day2_breakfast_yn = '{$day2_breakfast_yn}',
+												day2_luncheon_yn = '{$day2_luncheon_yn}',
+												day3_breakfast_yn = '{$day3_breakfast_yn}',
+												day3_luncheon_yn = '{$day3_luncheon_yn}',
+												special_request_food = '{$special_request_food}',
+												conference_info = '{$conference_info}', 
 												is_score		= '{$rating}',
-												member_status	= '{$member_status}',
-												modifier = {$user_idx},
+												is_score1		= '{$rating1}',
+												is_score2		= '{$rating2}',
+												licence_number = '{$licence_number}',
+												specialty_number = '{$specialty_number}',
+												nutritionist_number = '{$nutritionist_number}',
+												dietitian_number = '{$dietitian_number}',
+												modifier = '{$user_idx}',
 												modify_date = NOW()
 											WHERE idx = {$idx}
 										";

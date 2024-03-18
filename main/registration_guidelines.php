@@ -177,7 +177,7 @@ $price = get_data($sql_price);
 					<div class="mt10">
 						<ul class="indent_ul">
 							<li>• A registration confirmation will be sent to your registered email address once you have completed your registration with full payment. If you have not received it, please contact the congress secretariat.</li>
-							<li>• For bank transfers, the automatically generated confirmation letter may indicate the payment status as 'unpaid.' If you need to confirm the payment completion, you can check the payment status on 'my page.' (Please be aware that it may take some time for the payment confirmation to be updated.)</li>
+							<li>• For wire transfers, the automatically generated confirmation letter may indicate the payment status as 'unpaid.' If you need to confirm the payment completion, you can check the payment status on 'my page.' (Please be aware that it may take some time for the payment confirmation to be updated.)</li>
 							<li>• Registration will not be considered complete until the full registration fee has been paid.</li>
 							<li>• The online registration page is optimized for Google Chrome and Microsoft Edge. If you encounter any issues with online registration, please reach out to the congress secretariat for assistance.</li>
 							<li>• If you would like to modify your registration information, please contact the congress secretariat at <a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a></li>

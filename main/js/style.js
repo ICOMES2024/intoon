@@ -85,7 +85,8 @@ $(document).ready(function(){
 	//pc header hover action end
 
 	//popup
-	$('.pop_bg, .pop_close').on('click',function(){
+	//[240318] sujeong / mypage review창 닫기
+	$('.pop_bg, .pop_close, .review_close').on('click',function(){
 		$(this).parents('.popup').hide();
 	});
 
