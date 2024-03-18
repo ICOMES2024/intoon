@@ -1,8 +1,8 @@
 <?php include_once("../../common/common.php");?>
 <?php
 	if($_POST["flag"] == "registration") {
-			error_reporting( E_ALL );
-			ini_set( "display_errors", 1 );
+			// error_reporting( E_ALL );
+			// ini_set( "display_errors", 1 );
 		//var_dump($_POST); exit;
 		//var_dump($_SESSION); exit;
 
@@ -473,7 +473,7 @@
 		}
 
 		$res = sql_query($sql);
-		print_r($res);
+
 		if($res) {
 			//사전등록
 			if(!$update_idx){
@@ -554,13 +554,12 @@
 			$data["payment_date"] = date("Y-m-d H:i:s");
 
 			echo json_encode(array(
-				'code' => 200,
-				'msg' => "success",
-				'user' => $payment_new_no,
-				'registration_idx' => $registration_idx,
-				'email' => $data["pay_type"] == "card" ? null : $email,
-				'name' => $data["pay_type"] == "card" ? null : $name,
-				'data' => $data
+				code => 200,
+				msg => "success",
+				registration_idx => $registration_idx,
+				email => $data["pay_type"] == "card" ? null : $email,
+				name => $data["pay_type"] == "card" ? null : $name,
+				data => $data
 			));
 			exit;
 		} else {

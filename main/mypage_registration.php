@@ -277,7 +277,7 @@
 								$payment_methods = "Credit card";
 							}
 						}else{
-							$payment_methods = "Bank Transfer";
+							$payment_methods = "Wire Transfer";
 						}
 
 				?>
