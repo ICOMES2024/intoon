@@ -468,6 +468,13 @@
 			</div>
             <div class="table_wrap x_scroll" id="corresponding_author"></div>
 
+			<!-- [240318] sujeong / 공동 저자 추가 -->
+			<!-- 공동저자 -->
+			<div class="pop_title_wrap">
+				<p id="co_author_title"  style="font-weight: 500;">Co-authors</p>
+			</div>
+			<div class="table_wrap x_scroll" id="co_author"></div>
+
 			<!-- Abstract Submission Status -->
 			<div class="pop_title_wrap">
 				<p>Abstract Submission Status</p>
@@ -700,6 +707,8 @@
 		const presenting_author_data = data.presenting_author_data ?? [];
 		const corresponding_author_data = data.corresponding_author_data ?? [];
 
+		const co_author_data = data?.co_author_data;
+
 		$("#presenting_author").empty();
 		$("#corresponding_author").empty();
 
@@ -724,6 +733,16 @@
 			$("#corresponding_author_title").show();
 			corresponding_author_data.forEach(function(data, idx) {
 				$("#corresponding_author").append(bindAuthor(data));
+			});
+		}
+
+		//[240318] sujeong / 공동저자 추가
+		if (co_author_data.length < 1) {
+			$("#co_author_title").hide();
+		} else {
+			$("#co_author_title").show();
+			co_author_data.forEach(function(data, idx) {
+				$("#co_author").append(bindAuthor(data));
 			});
 		}
 

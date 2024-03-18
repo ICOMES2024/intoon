@@ -72,7 +72,7 @@ html {-webkit-touch-callout:none; -webkit-user-select:text; -webkit-tap-highligh
 .f_bold{font-weight: bold !important;}
 .pre{white-space:pre-line;}
 .initial{white-space:initial !important;}
-
+.font_20{font-size: 18px;}
 
 /*common class*/
 .flex_hide {display: flex !important; gap:8px;}

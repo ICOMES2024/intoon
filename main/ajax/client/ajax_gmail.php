@@ -474,32 +474,32 @@ if($language == "ko") {
 			if($nation_tel == 82){
 				$review_html = "
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>대한의사협회 평점신청</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$is_score}</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>대한의사협회 평점신청</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$is_score}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>의사 면허번호</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$licence_number}</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>의사 면허번호</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$licence_number}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>전문의 번호</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$specialty_number}</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>전문의 번호</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$specialty_number}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>한국영양교육평가원 평점신청</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$is_score1}</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>한국영양교육평가원 평점신청</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$is_score1}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>영양사 면허번호</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$nutritionist_number}</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>영양사 면허번호</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$nutritionist_number}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>임상영양사 번호</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$dietitian_number}</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>임상영양사 번호</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$dietitian_number}</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>운동사 평점신청</th>
-									<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$is_score2}</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>운동사 평점신청</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$is_score2}</td>
 								</tr>
 							   ";
 			}
@@ -583,23 +583,23 @@ if($language == "ko") {
 			if($pay_type == "card" || $pay_type == "free"){
 				$pay_html = "
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold'>Complete</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>Payment Status</th>
+									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold; border-bottom:1px solid #000;'>Complete</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Date</th>
-									<td style='font-size:14px; padding:10px;'>{$pay_date}</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>Payment Date</th>
+									<td style='font-size:14px; padding:10px;border-bottom:1px solid #000;'>{$pay_date}</td>
 								</tr>
 							";
 			}else{
 				$pay_html = "
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Status</th>
-									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold'>Needed</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>Payment Status</th>
+									<td style='font-size:14px; padding:10px; color:#00666B; font-weight:bold;border-bottom:1px solid #000;'>Needed</td>
 								</tr>
 								<tr style='border-bottom:1px solid #000;'>
-									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Bank Information</th>
-									<td style='font-size:14px; padding:10px;'>584-910003-16504, Hana Bank (하나은행)</td>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>Bank Information</th>
+									<td style='font-size:14px; padding:10px;border-bottom:1px solid #000;'>584-910003-16504, Hana Bank (하나은행)</td>
 								</tr> 
 							";
 			}
@@ -628,61 +628,61 @@ if($language == "ko") {
 							<table width='586' style='width:586px; border-collapse:collapse; border-top:2px solid #000; width:100%; margin:17px 0;'>
 								<tbody>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration No.</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$register_no}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Registration No.</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$register_no}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration Date</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$register_date}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Registration Date</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;border-bottom:1px solid #000;'>{$register_date}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Name</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;'>{$fname}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Name</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000; width:165px;border-bottom:1px solid #000;'>{$fname}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Country</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$nation_en}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Country</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$nation_en}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Affiliation</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$affiliation}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Affiliation</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$affiliation}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Phone Number</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$phone}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Phone Number</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$phone}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Member of KSSO</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$member_status}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Member of KSSO</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$member_status}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Type of Participation</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$attendance_type}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Type of Participation</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$attendance_type}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Category</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>Professor</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Category</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>Professor</td>
 									</tr>
 									{$review_html}
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Others</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Others</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>
 											{$other_html}
 										</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Where did you get the information about the conference?</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Where did you get the information about the conference?</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>
 											{$info_html}
 										</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px;'>Registration fee</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;'>{$pay_current} {$pay_price}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Registration fee</th>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$pay_current} {$pay_price}</td>
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
-										<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0; '>Payment Method</th>
-										<td style='font-size:14px; padding:10px;'>{$pay_name}</td>
+										<th style='width:150px; text-align:left; font-size:14px; padding:10px; background-color:#DBF5F0;border-bottom:1px solid #000; '>Payment Method</th>
+										<td style='font-size:14px; padding:10px;border-bottom:1px solid #000;'>{$pay_name}</td>
 									</tr>
 									{$pay_html}
 								</tbody>	
