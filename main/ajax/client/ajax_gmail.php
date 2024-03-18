@@ -613,15 +613,12 @@ if($language == "ko") {
 					</td>
 				</tr>
 				<tr>
-					<td width='74' style='width:74px;'></td>
-					<td>
+					<td colspan='3'>
 						<div style='font-weight:bold; text-align:center; font-size: 21px; color: #000066; padding: 20px 0;'>[ICOMES 2024] Registration Confirmation</div>
-					</td>
-					<td width='74' style='width:74px;'></td>
+					</td>	
 				</tr>
 				<tr>
-					<td width='74' style='width:74px;'></td>
-					<td>
+					<td colspan='3'>
 						<div>
 							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$name_title} {$fname},</p>
 							<p style='font-size:14px;color:#170F00;margin-top:14px;'>We express our gratitude for your registration for the International Congress on Obesity and MEtabolic Syndrome (ICOMES) 2024.	The registration details are presented below.<br/>Should you have any inquiries regarding your registration, kindly reach out to the ICOMES 2024 Secretariat for assistance.(<a href='mailto:icomes@into-on.com'>icomes@into-on.com</a>)</p>
@@ -690,11 +687,9 @@ if($language == "ko") {
 							<p>We eagerly anticipate your presence in Seoul, Korea this coming September.</p>
 						</div>
 					</td>
-					<td width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
-					<td width='74' style='width:74px;'></td>
-					<td>
+					<td colspan='3'>
 						<p>Warmest regards,</p>
 						<p>Secretariat of ICOMES 2024</p>
 						<br/>
@@ -716,7 +711,6 @@ if($language == "ko") {
 							</table>
 						</div>
 					</td>
-					<td width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
 					<td colspan='3' style='padding-top:50px;'>

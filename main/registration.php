@@ -159,15 +159,6 @@ if ($during_yn !== "Y") {
 							<th>Name</th>
 							<td><?= $member_data["first_name"]." ".$member_data["last_name"]?></td>
 						</tr>
-						<?php
-							$name_kor_cont = "<tr> 
-												<th>성명</th>
-												<td>".$member_data['last_name_kor']."".$member_data['first_name_kor']."</td>
-											</tr>";
-							if($member_data['nation_en'] === "Republic of Korea"){
-								echo $name_kor_cont;
-							}
-						?>
 						<tr>
 							<th>Country</th>
 							<td id='country'><?= $member_data['nation_en']?></td>
