@@ -152,7 +152,7 @@ switch($attendance_type) {
 </style>
 
 <section class="container form_section mypage">
-	<h1 class="page_title">등록 수정 페이지</h1>
+	<h1 class="page_title">Modifying Registration</h1>
 	<div class="inner">
 		<div>
 			<form class="table_wrap" name="modify_form">
