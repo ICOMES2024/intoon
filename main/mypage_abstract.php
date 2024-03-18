@@ -471,7 +471,7 @@
 			<!-- [240318] sujeong / 공동 저자 추가 -->
 			<!-- 공동저자 -->
 			<div class="pop_title_wrap">
-				<p id="co_author_title"  style="font-weight: 500;">Co-authors</p>
+				<p id="co_author_title">Co-authors</p>
 			</div>
 			<div class="table_wrap x_scroll" id="co_author"></div>
 
