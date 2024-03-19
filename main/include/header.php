@@ -117,9 +117,9 @@ $locale = locale($language);
                     <li>
                         <a href="/main/comingsoon.php">Registration</a>
                         <ul class="sub_nav">
-                        <li><a href="/main/comingsoon.php">Registration Guidelines
+                        <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
-                            <li><a href="/main/comingsoon.php">Online Registration</a></li>
+                            <li><a href="/main/registration.php">Online Registration</a></li>
                             <li><a href="/main/comingsoon.php">평점 안내</a></li>
                             <!-- <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
@@ -266,8 +266,8 @@ $(document).ready(function() {
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m4"]) ? "show" : "") ?>">
                 <a href="javascript:;"><span>Registration</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m4"]) ? "block" : "none") ?>">
-                    <li><a href="/main/comingsoon.php">Registration Guidelines</a></li>
-                    <li><a href="/main/comingsoon.php">Online Registration</a></li>
+                    <li><a href="/main/registration_guidelines.php">Registration Guidelines</a></li>
+                    <li><a href="/main/registration.php">Online Registration</a></li>
                     <li><a href="/main/comingsoon.php">평점 안내</a></li>
                 </ul>
             </li>
