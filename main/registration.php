@@ -28,7 +28,31 @@ if($registrationNo){
 		//$calc_fee = $prev["attendance_type"] == 4 ? calcFee($register, $category, $nation_no) : 0;
 		$prev["calc_fee"] = $calc_fee;
 	}
+}else{
+	
+	//[240318] sujeong / status 0(새로 시작),4(환불완료)아닌 사람 mypage_registration로 이동시키기
+    /**이미 등록한 회원 마이페이지로 이동하기
+     * idx를 가지고 오면 수정하기 가능
+     */
+    $member_idx = $_SESSION["USER"]['idx'];
+    $registration_info = "
+                        SELECT
+							*
+						FROM request_registration
+						WHERE request_registration.register = {$member_idx} AND is_deleted = 'N' 
+    ";
+    $register_data = get_data($registration_info);
+
+    if(count($register_data) > 0){
+        foreach($register_data as $data){
+            if($data['status'] != 0 && $data['status'] != 4){
+                echo "<script>alert(locale(language.value)('already_registration')); window.location.replace(PATH+'mypage_registration.php');</script>";
+                exit;
+            }
+        }
+    }
 }
+
 
 //경로 주의
 if ($_SERVER["HTTP_HOST"] == "www.icomes.or.kr") {
@@ -101,22 +125,7 @@ if ($during_yn !== "Y") {
 				WHERE m.idx = {$member_idx}
 				";
 	$member_data = sql_fetch($sql_info);
-
-	//[240318] sujeong / status = 2(결제완료)인 사람 mypage_registration로 이동시키기
-	$reg_sql = "
-		SELECT 
-			idx, `status`
-		FROM request_registration 
-		WHERE is_deleted = 'N'
-		AND NOT status = 2
-		AND register = {$member_idx}
-	";
-
-	$reg_data = sql_fetch($reg_sql);
-
-	if(!$reg_data["idx"]){
-		echo "<script>alert(locale(language.value)('already_registration')); window.location.replace(PATH+'mypage_registration.php');</script>";
-	}
+ 
 ?>
 <style>
 /*2022-04-14 ldh 추가*/

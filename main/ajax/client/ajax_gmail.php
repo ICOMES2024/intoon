@@ -235,8 +235,7 @@ if($language == "ko") {
 					</td>
 				</tr>
 				<tr>
-					<td width='74' style='width:74px;'></td>
-					<td>
+					<td colspan='3'>
 						<div>
 							<p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Dear {$first_name} {$last_name},</p>
 							<p style='font-size:14px;color:#170F00;margin-top:14px;'>Thank you for signing up for the ICOMES 2024.<br>Your profile has been successfully created.<br>Please review the information that you have entered as below.<br>If necessary, you can access ‘ICOMES 2024 website - MY PAGE’ to review, modify or update your personal information.</p>
@@ -266,13 +265,11 @@ if($language == "ko") {
 							<p>We express our gratitude to you for your interest in ICOMES 2024.</p>
 						</div>
 					</td>
-					<td width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
-					<td width='74' style='width:74px;'></td>
-					<td style='padding-top:16px;'>
+					<td style='padding-top:16px;' colspan='3'>
 						<p>Warmest regards,</p>
-		
+						<p>Secretariat of ICOMES 2024</p>
 						<div style='text-align: center; padding-top:30px;'>
 							<table align='center' cellspacing='0' cellpadding='0' width='100%'>
 								<tr>
@@ -291,7 +288,6 @@ if($language == "ko") {
 							</table>
 						</div>
 					</td>
-					<td width='74' style='width:74px;'></td>
 				</tr>
 				<tr>
 					<td colspan='3' style='padding-top:50px;'>
@@ -319,8 +315,7 @@ if($language == "ko") {
 				 </td>
 			 </tr>
 			 <tr>
-				 <td width='74' style='width:74px;'></td>
-				 <td>
+				 <td colspan='3'>
 					 <div>
 						 <div style='margin-bottom:20px'>
 							 <p style='font-size:15px; font-weight:bold; color:#000; margin:0;'>Member of : {$fname}<br><span style='font-size:14px;color:#170F00;font-weight:normal;'>You requested a temporary password at : {$time}</span></p>
@@ -342,11 +337,9 @@ if($language == "ko") {
 						 <p style='color:#f00;'>Click the 'Change to temporary password' button to check your changed log-in information.</p>
 					 </div>
 				 </td>
-				 <td width='74' style='width:74px;'></td>
 			 </tr>
 			 <tr>
-				 <td width='74' style='width:74px;'></td>
-				 <td>
+				 <td colspan='3'>
 					 <div style='text-align: center; padding-top:30px;'>
 						 <table align='center' cellspacing='0' cellpadding='0' width='100%'>
 							 <tr>
@@ -365,8 +358,8 @@ if($language == "ko") {
 						 </table>
 					 </div>
 					 <p>Best regards,</p>
+					 <p>Secretariat of ICOMES 2024</p>
 				 </td>
-				 <td width='74' style='width:74px;'></td>
 			 </tr>
 			 <tr>
 				 <td colspan='3' style='padding-top:50px;'>
