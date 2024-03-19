@@ -58,7 +58,8 @@
 		
 	$name = $data["first_name"]." ".$data["last_name"] ?? "-";
 	$nation = $data["nation_en"] ?? "-";
-	$total_price = ($data["nation_no"] == 25) ? "KRW ".number_format($data["total_price_kr_text"]) : "USD ".$data["total_price_us_text"];
+	$total_price = ($data["nation_no"] == 25) ? "KRW ".$data["total_price_kr_text"] : "USD ".$data["total_price_us_text"];
+	// $total_price = ($data["nation_no"] == 25) ? "KRW ".number_format($data["total_price_kr_text"]) : "USD ".$data["total_price_us_text"];
 	$payment_method = $data["payment_method_txt"] ?? "-";
 	$payment_date = $data["payment_date_text"] ?? "-";
 ?>
