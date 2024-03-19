@@ -776,7 +776,7 @@ if ($during_yn !== "Y") {
 		*/
 		
 		//[230315] sujeong / 페이지 로딩 시 체크된 값 확인하는 함수
-		function checkSponsor(){
+		function checkSponsor(value){
 			if($("select[name=participation_type]").val() === "Sponsor"){
 				sponsor1 = true;
 			}
@@ -786,10 +786,12 @@ if ($during_yn !== "Y") {
 			if($("select[name=category]").val() === "Sponsor"){
 				sponsor3 = true;
 			}
+			showPromotionCode()
 		}
 
 		//[240314] sujeong / 함수 추가
 		function showPromotionCode(){
+
 			if(sponsor1 === true && sponsor2 === true && sponsor3 === true){
 				$('.promotion_code_tr').show();
 				$('.total_fee_tr').show();

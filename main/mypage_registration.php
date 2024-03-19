@@ -429,8 +429,8 @@
 								<p>If you have any questions, <br>please contact the secretariat<a style="width:fit-content" href="mailto:icomes@into-on.com">(icomes@into-on.com)</a></p>
 							</td>
                             <?php }else{?>
-								<td>-</td>
 								<td>canceled</td>
+								<td>-</td>
 							<?php }?>
 						</tr>
 				<?php

@@ -33,6 +33,8 @@
         $promotion_code = $_POST["data"]["promotion_code"] ?? "";
         $recommender = $_POST["data"]["recommender"] ?? "";
 
+        echo "test" . $recommender;
+
         $promotion_code_sql ="
 					SELECT idx, promotion_code
                     FROM promotion_code
@@ -41,6 +43,8 @@
 				  ";
 
         $promotion_code_idx = sql_fetch($promotion_code_sql)['idx'];
+
+        echo "test1" . $promotion_code_idx;
 
         $sql =	"
 					INSERT management_promotion_code

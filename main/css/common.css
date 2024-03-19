@@ -117,7 +117,7 @@ a.underline {text-decoration: underline !important;text-underline-position: unde
 .parentheses {text-indent:0;}
 .new_radio + label {cursor:pointer;}
 .fee_chk p {margin-right: 10px;}
-.regi_fee {display:flex; align-items:center; /*margin-bottom: -1px;*/}
+.regi_fee {display:flex; align-items:center; margin-bottom: -1px;}
 .italic {font-style:italic;}
 .font_b {font-weight:bold !important;}
 

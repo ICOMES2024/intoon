@@ -13,7 +13,7 @@
             ?>
 
              <li>
-                <button type="button" class="not_yet">
+                <button type="button" onClick="location.href='/main/registration_guidelines.php'">
                     <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist.svg" alt="">
                 </button>
             </li>
@@ -52,7 +52,7 @@
             } else {
             ?>
             <li>
-                <button type="button" class="not_yet">
+                <button type="button" onClick="location.href='/main/registration_guidelines.php'">
                     <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist.svg" alt="">
                 </button>
             </li>
