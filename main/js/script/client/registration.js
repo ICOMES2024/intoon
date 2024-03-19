@@ -82,12 +82,16 @@ $(document).ready(function(){
 					},
 					dataType : "JSON",
 					success : function(res){
+
 						if(res.code == 200) {
 							var registration_idx = res.registration_idx;
 							var reg_promotion_code = $("input[name=promotion_code]").val();
 							var reg_recommender = $("input[name=recommended_by]").val();
 
-							if(reg_promotion_code != "" && reg_recommender != ""){
+							//[240318] sujeong / promotion code 추천인 없을 때도 정상 동작하도록
+							//(management db insert && promotion code count = 0(사용불가))
+							if(reg_promotion_code != "" ){
+								// if(reg_promotion_code != "" && reg_recommender != ""){
 								regist_promotion_code(registration_idx,reg_promotion_code,reg_recommender);
 							}
 
