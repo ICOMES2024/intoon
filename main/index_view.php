@@ -164,7 +164,7 @@
 				<li>
 					<!-- <a class="not_yet"> -->
 					<a href="/main/registration_guidelines.php">
-						<h2>Mid-March <span></span></h2>
+						<h2>March 19 <span>(Tue)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
 						<p>Pre-Registration <br/>Open</p>
 					</a>
