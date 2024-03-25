@@ -10,7 +10,7 @@
 
 	$abstract_detail_query =	"
 									SELECT 
-										ra.submission_code, ra.city, ra.state, CONCAT(ra.first_name,' ',ra.last_name) AS `name`, ra.affiliation, ra.email, ra.phone, ra.abstract_title,
+										ra.submission_code, ra.city, ra.state, CONCAT(ra.first_name,' ',ra.last_name) AS `name`, ra.affiliation, ra.email, ra.phone, ra.abstract_title, ra.etc1,
 										m.idx AS member_idx, m.member_email, m.member_name, m.member_nation, m.member_register_date,
 										CONCAT(m.affiliation,',',m.department) AS member_affiliation, m.phone AS member_phone,
 										f.original_name AS file_name, CONCAT(f.path,'/',f.save_name) AS path, ra.presenting_author, ra.corresponding_author,
@@ -158,6 +158,33 @@
 						</tr>
 					</tbody>
 				</table>
+				<h2 class="sub_title">심사 정보</h2>
+				<table>
+					<colgroup>
+						<col width="10%">
+						<col width="40%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>심사 여부</th>
+							<td colspan="3">
+								<select name="etc1" style="width:50%">
+									<option value="" selected>Choose</option>
+									<?php
+										$category_arr = array("Y", "N");
+
+										foreach($category_arr as $a_arr) {
+											$selected = $abstract_detail["etc1"] == $a_arr ? "selected" : "";
+
+											echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
+										}
+									?>
+								</select>
+								<button type="button" class="btn submit" data-type="update_etc1_status">저장</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 				<h2 class="sub_title">co-author 정보</h2>
 				<?php
 					for($i=0; $i<count($abstract_detail); $i++) {
@@ -263,4 +290,46 @@
 			</div>
 		</div>
 	</section>
+	<script>
+$(document).ready(function(){
+	const abstract_idx = "<?=$abstract_idx?>";
+
+	$(".submit").on("click", function(){
+		var data = {};
+		var submit_type = $(this).data("type");
+
+		if (submit_type === "update_etc1_status") {
+            data["etc1"] = $("select[name=etc1]").val();
+        }
+		if(confirm("입력하신 내용으로 저장하시겠습니까?")) {
+			$.ajax({
+			url : "../ajax/admin/ajax_abstract.php",
+			type : "POST",
+			data : {
+				flag : "update_etc1",
+				idx : abstract_idx,
+				data : data
+			},
+			dataType : "JSON",
+			success : function(res){
+				if(res.code == 200) {
+					alert("저장이 완료되었습니다.");
+					window.location.reload();
+				} else if(res.code == 400) {
+					alert("저장에 실패하였습니다.");
+					return false;
+				} else if(res.code == 401) {
+					alert("결제정보가 존재하지 않아 환불정보 입력에 실패하였습니다.");
+					return false;
+				} else {
+					alert("일시적으로 요청이 거절되었습니다. 잠시 후 다시 시도해주세요.");
+					return false;
+				}
+			}
+		});
+		}
+	});
+	
+});
+</script>
 <?php include_once('./include/footer.php');?>

@@ -328,6 +328,12 @@
 			<div class="contwrap">
 				<p class="total_num">총 <?=number_format($count)?>개</p>
 				<table id="datatable" class="list_table">
+						<colgroup>
+							<col width="10%">
+							<col width="5%">
+							<col width="5%">
+							<col>
+						</colgroup>
 					<thead>
 						<tr class="tr_center">
 							<th>논문번호</th>
@@ -336,8 +342,8 @@
 							<th>ID(Email)</th>
 							<th>Country</th>
 							<th>Name</th>
-							<th>Title</th>
-							<th>파일명</th>
+							<th class="long_txt_container">Title</th>
+							<th class="long_txt_container">파일명</th>
 							<th>카테고리</th>
 							<th>Preferred Presentation Type</th>
 							<!-- <th>oral</th>
