@@ -273,3 +273,19 @@ div.dataTables_wrapper div.dataTables_paginate{text-align:center;}
 /*app notice 관리*/
 .title_wrap {margin-bottom: 12px;}
 .app_push_btn {width:calc(100% - 12%);}
+
+
+/*
+[240325] sujeong / title, file 길어질 경우 ... 으로
+*/
+.long_txt_container{
+	width: 500px;
+	overflow: hidden;  
+}
+
+.long_txt_container .long_txt_box{
+	overflow: hidden;  		
+    text-overflow: ellipsis;  	
+    white-space: nowrap; 		
+    word-break:break-all;
+}

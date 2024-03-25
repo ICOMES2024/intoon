@@ -36,7 +36,7 @@
 
 	$abstract_list_query =  "
 								SELECT
-                                    ra.submission_code, ra.idx AS abstract_idx, ra.abstract_title,
+                                    ra.submission_code, ra.idx AS abstract_idx, ra.abstract_title, ra.etc1,
                                     DATE_FORMAT(ra.register_date, '%y-%m-%d') AS register_date, ra.oral_presentation,
                                     m.idx AS member_idx, m.email, m.name, m.nation_ko, m.nation_en, m.affiliation, m.department,
                                     f.original_name AS abstract_file_name, CONCAT(f.path,'/',f.save_name) AS path,
@@ -121,6 +121,18 @@
     $request_abstract_list = get_data($request_abstract_list_query);
     $request_abstract_count = sql_fetch($request_abstract_count_query)['count'];
 
+	
+	//[240325] sujeong / 초록 제출자 등록여부 체크 함수
+	function get_register($reg_num){
+		$request_registration_query = "
+								SELECT request_registration.register
+								FROM request_registration
+								WHERE request_registration.register = {$reg_num}
+		";
+		$request_registration = get_data($request_registration_query);
+		return count($request_registration);	
+	};
+
 	// 엑셀 다운로드
 	$html = '<table id="datatable" class="list_table">';
 	$html .= '<thead>';
@@ -128,6 +140,7 @@
 	$html .= '<th>NO</th>';
 	$html .= '<th>Date of Submission</th>';
 	$html .= '<th>Submission No.</th>';
+	$html .= '<th>사전 등록 여부</th>';
 	$html .= '<th>ID(Email)</th>';
 	$html .= '<th>Country</th>';
 	$html .= '<th>Name</th>';
@@ -215,6 +228,16 @@
 		$html .= '<td>'.$no.'</td>';
 		$html .= '<td>'.$al["register_date"].'</td>';
 		$html .= '<td>'.$al["submission_code"].'</td>';
+
+		//[240220] sujeong / 초록 제출자 등록 여부 파악하기
+		$reg_count = get_register($al["member_idx"]);
+		if($reg_count == 0){
+			$registration_yn = 'N';
+		}else if ($reg_count > 0){
+			$registration_yn = 'Y';
+		}
+
+		$html .= '<td>'.$registration_yn.'</td>';
 		$html .= '<td>'.$al["email"].'</td>';
 		$html .= '<td>'.$al["nation_en"].'</td>';
 		$html .= '<td>'.$al["name"].'</td>';
@@ -308,6 +331,8 @@
 					<thead>
 						<tr class="tr_center">
 							<th>논문번호</th>
+							<th>사전등록여부</th>
+							<th>심사여부</th>
 							<th>ID(Email)</th>
 							<th>Country</th>
 							<th>Name</th>
@@ -331,14 +356,27 @@
 					?>
 						<tr class="tr_center">
 							<td><?=$list["submission_code"]?></td>
+
+							<!-- [240325] sujeong / 초록 제출자 등록 여부 파악하기 -->
+							<?php 
+							$reg_count = get_register($list["member_idx"]);
+
+							if($reg_count == 0){
+								$registration_yn = 'N';
+							}else if ($reg_count > 0){
+								$registration_yn = 'Y';
+							} 
+							?>
+							<td><?php echo $registration_yn; ?></td>
+							<td><?php echo $list["etc1"]?></td>
 							<td><a href="./member_detail.php?idx=<?=$list["member_idx"]?>"><?=$list["email"]?></a></td>
 							<td><?=$list["nation_ko"]?></td>
 							<td><?=$list["name"]?></td>
-							<td><a href="./abstract_application_detail.php?idx=<?=$list["abstract_idx"]?>"><?=$list["abstract_title"]?></a></td>
+							<td class="long_txt_container"><a class="long_txt_box" href="./abstract_application_detail.php?idx=<?=$list["abstract_idx"]?>"><?=$list["abstract_title"]?></a></td>
 						<?php if($ext === "pdf") { ?>
-							<td><a href="./pdf_viewer.php?path=<?=$list["path"]?>" target="_blank"><?=$list["abstract_file_name"]?></a></td>
+							<td class="long_txt_container"><a class="long_txt_box" href="./pdf_viewer.php?path=<?=$list["path"]?>" target="_blank"><?=$list["abstract_file_name"]?></a></td>
 						<?php } else { ?>
-							<td><a href="<?=$list["path"]?>" download="<?=$list["submission_code"]?>"><?=$list["abstract_file_name"]?></a></td>
+							<td class="long_txt_container"><a class="long_txt_box" href="<?=$list["path"]?>" download="<?=$list["submission_code"]?>"><?=$list["abstract_file_name"]?></a></td>
 						<?php } ?>
 							<td><?=$list["category"]?></td>
 							<td><?=$list["presentation_type_text"]?></td>

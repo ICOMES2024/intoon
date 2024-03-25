@@ -394,6 +394,8 @@ if($language == "ko") {
 			$nutritionist_number = $data["nutritionist_number"] ? $data["nutritionist_number"] : "Not applicable";
 			$dietitian_number = $data["dietitian_number"] ? $data["dietitian_number"] : "Not applicable";
 
+			$member_type = isset($data["member_type"]) ? $data["member_type"] : "";
+
 			$attendance_type = $data["attendance_type"] ?? "-";
 			switch($attendance_type) {
 				case 0:
@@ -651,7 +653,7 @@ if($language == "ko") {
 									</tr>
 									<tr style='border-bottom:1px solid #000;'>
 										<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>Category</th>
-										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>Professor</td>
+										<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$member_type}</td>
 									</tr>
 									{$review_html}
 									<tr style='border-bottom:1px solid #000;'>
