@@ -232,7 +232,7 @@
 
 			$regustration_query = "SELECT
 										idx, attendance_type, is_score, nation_no, phone,
-										member_type, IF(ksso_member_status > 0, 1, 0) AS member_status, registration_type, affiliation, department,
+										member_type, ksso_member_status, registration_type, affiliation, department,
 										licence_number, specialty_number, nutritionist_number, academy_number, register_path,
 										etc4, welcome_reception_yn, day2_breakfast_yn, day2_luncheon_yn, day3_breakfast_yn, day3_luncheon_yn, 
 										conference_info, price,
