@@ -97,6 +97,7 @@ $(document).ready(function(){
 
 							if(res.email != null){
 								// 구글 메일 발송
+								console.log(res)
 								$.ajax({
 									url:PATH+"ajax/client/ajax_gmail.php",
 									type:"POST",
