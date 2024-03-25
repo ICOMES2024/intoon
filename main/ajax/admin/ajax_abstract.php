@@ -127,6 +127,23 @@
 		}
 	}
 
+	//[240325] sujeong / etc1에 심사유무 체크 
+	else if ($flag === "remove_abstract") {
+		$data = isset($_POST["data"]) ? $_POST["data"] : "";
+		$sql =	"UPDATE abstract
+				SET
+					etc1 = '".$data['etc1']."',
+					upodate_date = NOW()
+				WHERE idx = '".$_POST['idx']."'
+				";
+		if (sql_query($sql)) {
+			return_value(200, "완료되었습니다.");
+		} else {
+			return_value(500, "오류가 발생했습니다.\n관리자에게 문의하세요.");
+		}
+	}
+	
+
 	// 결과값 반환 공통화
 	function return_value($code, $msg, $arr=array()){
 		$arr["code"] = $code;

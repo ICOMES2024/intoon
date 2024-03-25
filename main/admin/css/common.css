@@ -279,11 +279,14 @@ div.dataTables_wrapper div.dataTables_paginate{text-align:center;}
 [240325] sujeong / title, file 길어질 경우 ... 으로
 */
 .long_txt_container{
-	width: 500px;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	width: 300px;
 	overflow: hidden;  
 }
 
 .long_txt_container .long_txt_box{
+	width: 300px;
 	overflow: hidden;  		
     text-overflow: ellipsis;  	
     white-space: nowrap; 		
