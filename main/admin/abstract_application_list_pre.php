@@ -116,133 +116,10 @@
                                 ORDER BY count DESC
                                 LIMIT 1                                 
                             ";
-	//[240326] sujeong / 별 세기
-	//1. presenting_author = 'Y'
-	$pre_star_query = "
-				SELECT
-					MAX(star_count) AS max_star_count
-				FROM
-					(
-						SELECT
-							CHAR_LENGTH(affiliation) - CHAR_LENGTH(REPLACE(affiliation, '★', '')) AS star_count
-						FROM
-							request_abstract
-						WHERE presenting_author = 'Y'
-				) AS counts;
-	";
-
-	//2. corresponding_author = 'Y'					
-	$cor_star_query = "
-			SELECT
-				MAX(star_count) AS max_star_count
-			FROM
-				(
-					SELECT
-						CHAR_LENGTH(affiliation) - CHAR_LENGTH(REPLACE(affiliation, '★', '')) AS star_count
-					FROM
-						request_abstract
-					WHERE corresponding_author = 'Y'
-			) AS counts;
-	";
-
-	//3. presenting_author = 'N' AND corresponding_author = 'N' AND parent_author null이 아닐 때
-	$cor_star_query = "
-			SELECT
-					parent_author,
-					MAX(CASE WHEN rn = 1 THEN affiliation END) AS affiliation1,
-					MAX(CASE WHEN rn = 2 THEN affiliation END) AS affiliation2,
-					MAX(CASE WHEN rn = 3 THEN affiliation END) AS affiliation3,
-					MAX(CASE WHEN rn = 4 THEN affiliation END) AS affiliation4,
-					MAX(CASE WHEN rn = 5 THEN affiliation END) AS affiliation5,
-					MAX(CASE WHEN rn = 6 THEN affiliation END) AS affiliation6,
-					MAX(CASE WHEN rn = 7 THEN affiliation END) AS affiliation7,
-					MAX(CASE WHEN rn = 8 THEN affiliation END) AS affiliation8,
-					MAX(CASE WHEN rn = 9 THEN affiliation END) AS affiliation9,
-					MAX(CASE WHEN rn = 10 THEN affiliation END) AS affiliation10
-				FROM (
-					SELECT
-						parent_author,
-						affiliation,
-						@row_number := IF(@parent_author = parent_author, @row_number + 1, 1) AS rn,
-						@parent_author := parent_author
-					FROM
-						(SELECT * FROM request_abstract ORDER BY parent_author, affiliation) AS sorted
-					CROSS JOIN
-						(SELECT @row_number := 0, @parent_author := '') AS vars
-					WHERE
-						presenting_author = 'N' AND corresponding_author = 'N' AND parent_author IS NOT NULL
-				) AS subquery
-				WHERE
-					rn <= 10
-				GROUP BY
-			parent_author;
-	";
-
-	//4. 제출저자 parent_author IS NULL
-	$author_star_query = "
-			SELECT
-				MAX(star_count) AS max_star_count
-			FROM
-				(
-					SELECT
-						CHAR_LENGTH(affiliation) - CHAR_LENGTH(REPLACE(affiliation, '★', '')) AS star_count
-					FROM
-						request_abstract
-					WHERE parent_author IS NULL
-			) AS counts;
-	";
-
-	//5. max-star
-	$max_star_query = "
-			SELECT
-				MAX(star_count) AS max_star_count
-			FROM
-				(
-					SELECT
-						CHAR_LENGTH(affiliation) - CHAR_LENGTH(REPLACE(affiliation, '★', '')) AS star_count
-					FROM
-						request_abstract
-					
-			) AS counts;
-	";
 
 	$abstract_list = get_data($abstract_list_query);
     $request_abstract_list = get_data($request_abstract_list_query);
     $request_abstract_count = sql_fetch($request_abstract_count_query)['count'];
-	$co_star_list = get_data($cor_star_query);
-	
-	//[240326] sujeong / 별 세기
-	//1. presenting_author = 'Y'
-	$count_pre_star = sql_fetch($pre_star_query)['max_star_count'];
-
-	//2. corresponding_author = 'Y'
-	$count_cor_star = sql_fetch($cor_star_query)['max_star_count'];
-	
-	//3. presenting_author = 'N' AND corresponding_author = 'N' AND parent_author null이 아닐 때
-	$count_co_star_list = array_fill(0, $request_abstract_count, 0);
-	// 각 요소별로 최고 ★의 수 계산
-	for ($i = 0; $i < $request_abstract_count; $i++) {
-		// 각 요소의 affiliation1부터 affiliation10까지 순회하면서 ★의 개수 세기
-		for ($j = 1; $j < $request_abstract_count; $j++) {
-			$affiliation_key = "affiliation" . $j;
-			$affiliation = $co_star_list[$i][$affiliation_key];
-			
-			// affiliation이 존재할 때만 ★의 개수 세기
-			if (!empty($affiliation)) {
-				// ★의 개수 세기
-				$star_count = substr_count($affiliation, '★');
-				
-				// 최고 ★의 수 업데이트
-				$count_co_star_list[$j - 1] = max($count_co_star_list[$j - 1], $star_count);
-			}
-		}
-	}
-
-	//4. 제출저자 parent_author IS NULL
-	$count_author_star = sql_fetch($author_star_query)['max_star_count'];
-
-	//5. max star
-	$count_max_star = sql_fetch($max_star_query)['max_star_count'];
 
 	
 	//[240325] sujeong / 초록 제출자 등록여부 체크 함수
@@ -256,8 +133,6 @@
 		return count($request_registration);	
 	};
 
-	
-
 	// 엑셀 다운로드
 	$html = '<table id="datatable" class="list_table">';
 	$html .= '<thead>';
@@ -266,7 +141,6 @@
 	$html .= '<th>Date of Submission</th>';
 	$html .= '<th>Submission No.</th>';
 	$html .= '<th>사전 등록 여부</th>';
-	$html .= '<th>심사 여부</th>';
 	$html .= '<th>ID(Email)</th>';
 	$html .= '<th>Country</th>';
 	$html .= '<th>Name</th>';
@@ -277,7 +151,7 @@
 	$html .= '<th>Title</th>';
 	$html .= '<th>File</th>';
 	$html .= '<th>Presenting Author Name</th>';
-	$html .= '<th colspan='. $count_pre_star  .'>Presenting Author Affiliation</th>';
+	$html .= '<th>Presenting Author Affiliation</th>';
 	$html .= '<th>Presenting Author E-mail</th>';
 	$html .= '<th>Corresponding Author Name</th>';
 	$html .= '<th>Corresponding Author E-mail</th>';
@@ -286,7 +160,7 @@
         $html .= '<th>Author Type</th>';
         $html .= '<th>Name</th>';
         $html .= '<th>Country</th>';
-        $html .= '<th colspan='. $count_max_star  .'>Affiliation (Department of Institution)</th>';
+        $html .= '<th>Affiliation (Department of Institution)</th>';
         $html .= '<th>E-mail</th>';
         $html .= '<th>Phone Number</th>';
     }
@@ -347,7 +221,8 @@
             }
         }
     }
-
+	// print_r($abstract_list);
+	// print_r($resultData);
  	foreach($abstract_list as $num => $al){
         $no = (int)$num+1;
 		$html .= '<tr class="tr_center">';
@@ -364,7 +239,6 @@
 		}
 
 		$html .= '<td>'.$registration_yn.'</td>';
-		$html .= '<td>'.$al["etc1"].'</td>';
 		$html .= '<td>'.$al["email"].'</td>';
 		$html .= '<td>'.$al["nation_en"].'</td>';
 		$html .= '<td>'.$al["name"].'</td>';
@@ -376,26 +250,7 @@
 		$html .= '<td>'.$al["abstract_file_name"].'</td>';
 
 		$html .= '<td>'.$resultData[$no]['presenting_author_name'].'</td>';
-
-		//[240326] sujeong / 세로로 쪼개기
-		$count_pre = substr_count($resultData[$no]["presenting_author_affiliation"], '★'); //현재 별 개수
-		$pre_list = explode('★', $resultData[$no]["presenting_author_affiliation"]); // 별로 자른 배열
-
-		if($count_pre < $count_pre_star){
-			for($i = 0; $i < $count_pre; $i++){
-				$html .= '<td>'.$pre_list[$i].'</td>';
-			}
-			for($j = 0; $j < $count_pre_star - $count_pre; $j++ ){
-				$html .= '<td></td>';
-			}
-		}else{
-			for($i = 0; $i < $count_pre; $i++){
-				$html .= '<td>'.$pre_list[$i].'</td>';
-			}
-		}
-
-		//$html .= '<td>'.str_replace('★','</td><td>',$resultData[$no]["presenting_author_affiliation"]).'</td>';
-
+		$html .= '<td>'.str_replace('★','<br>',$resultData[$no]["presenting_author_affiliation"]).'</td>';
 		$html .= '<td>'.$resultData[$no]['presenting_author_email'].'</td>';
 		$html .= '<td>'.$resultData[$no]['corresponding_author_name'].'</td>';
 		$html .= '<td>'.$resultData[$no]['corresponding_author_email'].'</td>';
@@ -404,25 +259,7 @@
         $html .= '<td>'.$al["author_type"].'</td>';
         $html .= '<td>'.$al["ra_name"].'</td>';
         $html .= '<td>'.$al["ra_country"].'</td>';
-
-		//[240326] sujeong / 세로로 쪼개기
-		$count_star = substr_count($al["ra_affiliation"], '★'); //현재 별 개수
-		$star_list = explode('★', $al["ra_affiliation"]); // 별로 자른 배열
-
-		if($count_star < $count_max_star){
-			for($i = 0; $i < $count_star; $i++){
-				$html .= '<td>'.$star_list[$i].'</td>';
-			}
-			for($j = 0; $j < $count_max_star - $count_star; $j++ ){
-				$html .= '<td></td>';
-			}
-		}else{
-			for($i = 0; $i < $count_max_star; $i++){
-				$html .= '<td>'.$star_list[$i].'</td>';
-			}
-		}
-
-        //$html .= '<td>'.str_replace('★','<br>',$al["ra_affiliation"]).'</td>';
+        $html .= '<td>'.str_replace('★','<br>',$al["ra_affiliation"]).'</td>';
         $html .= '<td>'.$al["ra_email"].'</td>';
         $html .= '<td>'.$al["ra_phone"].'</td>';
 
@@ -434,25 +271,7 @@
                 $html .= '<td>'.$ral["author_type"].'</td>';
                 $html .= '<td>'.$ral["ra_name"].'</td>';
                 $html .= '<td>'.$ral["ra_country"].'</td>';
-
-				//[240326] sujeong / 세로로 쪼개기
-				$count_star_2 = substr_count($ral["ra_affiliation"], '★'); //현재 별 개수
-				$star_list_2 = explode('★', $ral["ra_affiliation"]); // 별로 자른 배열
-
-				if($count_star_2 < $count_max_star){
-					for($i = 0; $i < $count_star_2; $i++){
-						$html .= '<td>'.$star_list_2[$i].'</td>';
-					}
-					for($j = 0; $j < $count_max_star - $count_star_2; $j++ ){
-						$html .= '<td></td>';
-					}
-				}else{
-					for($i = 0; $i < $count_max_star; $i++){
-						$html .= '<td>'.$star_list_2[$i].'</td>';
-					}
-				}
-
-                //$html .= '<td>'.str_replace('★','<br>',$ral["ra_affiliation"]).'</td>';
+                $html .= '<td>'.str_replace('★','<br>',$ral["ra_affiliation"]).'</td>';
                 $html .= '<td>'.$ral["ra_email"].'</td>';
                 $html .= '<td>'.$ral["ra_phone"].'</td>';
                 ++$ra_author_No;

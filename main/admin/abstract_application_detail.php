@@ -168,13 +168,13 @@
 						<tr>
 							<th>심사 여부</th>
 							<td colspan="3">
+								
 								<select name="etc1" style="width:50%">
-									<option value="" selected>Choose</option>
 									<?php
 										$category_arr = array("Y", "N");
 
 										foreach($category_arr as $a_arr) {
-											$selected = $abstract_detail["etc1"] == $a_arr ? "selected" : "";
+											$selected = $author_detail["etc1"] == $a_arr ? "selected" : "";
 
 											echo '<option value="'.$a_arr.'" '.$selected.'>'.$a_arr.'</option>';
 										}
@@ -295,11 +295,11 @@ $(document).ready(function(){
 	const abstract_idx = "<?=$abstract_idx?>";
 
 	$(".submit").on("click", function(){
-		var data = {};
-		var submit_type = $(this).data("type");
+		let etc1 = "";
+		const submit_type = $(this).data("type");
 
 		if (submit_type === "update_etc1_status") {
-            data["etc1"] = $("select[name=etc1]").val();
+            etc1 =  $("select[name=etc1]").val();
         }
 		if(confirm("입력하신 내용으로 저장하시겠습니까?")) {
 			$.ajax({
@@ -308,7 +308,7 @@ $(document).ready(function(){
 			data : {
 				flag : "update_etc1",
 				idx : abstract_idx,
-				data : data
+				etc1 : etc1
 			},
 			dataType : "JSON",
 			success : function(res){
