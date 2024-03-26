@@ -128,12 +128,12 @@
 	}
 
 	//[240325] sujeong / etc1에 심사유무 체크 
-	else if ($flag === "remove_abstract") {
+	else if ($flag === "update_etc1") {
 		$data = isset($_POST["data"]) ? $_POST["data"] : "";
-		$sql =	"UPDATE abstract
+		$sql =	"UPDATE request_abstract
 				SET
-					etc1 = '".$data['etc1']."',
-					upodate_date = NOW()
+					etc1 = '".$_POST['etc1']."',
+					modify_date = NOW()
 				WHERE idx = '".$_POST['idx']."'
 				";
 		if (sql_query($sql)) {
