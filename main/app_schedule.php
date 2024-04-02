@@ -97,11 +97,12 @@ foreach($program_list as $pl){
 			My Page
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
-        <ul class="app_menu_tab langth_3">
+        <!-- [240402] sujeong / 디자인 미확정으로 마이 페이지 주석 -->
+        <!-- <ul class="app_menu_tab langth_3">
 			<li><a href="./app_registration.php">Registration</a></li>
 			<li><a href="./app_mypage_abstract.php">Abstract</a></li>
 			<li class="on"><a href="./app_schedule.php">My Schedule</a></li>
-		</ul>
+		</ul> -->
 	</div>
 	<div class="contents_box">
 		<div class="sponsor_grade schedule_area">
