@@ -106,6 +106,8 @@ $locale = locale($language);
                             <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
                             <li><a href="/main/abstract_submission.php">Online Submission</a></li>
                             <li><a href="/main/comingsoon.php">Presentation Guidelines</a></li>
+                            <li><a href="/main/comingsoon.php">Awards & Grants</a></li>
+
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
                             

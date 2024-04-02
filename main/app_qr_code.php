@@ -9,7 +9,7 @@
                     FROM member m
                     LEFT JOIN nation n ON m.nation_no = n.idx
                     LEFT JOIN (
-                        SELECT rr.idx, rr.register, @rownum:=@rownum+1 AS qr_num, CONCAT('ICOMES2023-',rr.idx) AS registration_no
+                        SELECT rr.idx, rr.register, @rownum:=@rownum+1 AS qr_num, CONCAT('ICOMES2024-',rr.idx) AS registration_no
                         FROM request_registration rr, (SELECT @rownum:=0) TMP
                         WHERE status IN (2,5)
                         AND is_deleted = 'N'

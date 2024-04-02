@@ -90,6 +90,14 @@
 						<!-- <li><a href="/main/app_tour_map.php">Tour Map</a></li> -->
 					</ul>
 				</li> 
+				<!-- <li>
+					<a href="javascript:;">My Page</a>
+					<ul class="app_sub">
+						<li><a href="/main/app_registration.php">Registration</a></li>
+						<li><a href="/main/app_mypage_abstract.php">Abstract</a></li>
+						<li><a href="/main/app_schedule.php">My Schedule</a></li>
+					</ul>
+				</li>  -->
 				<li>
 					<a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">Program Book <br/>Download</a>
 				</li>

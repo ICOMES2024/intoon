@@ -32,6 +32,7 @@ $info = sql_fetch($sql_info);
 
             <!--[240205] sujeong / 학회팀 요청 주석 -->
             <!-- <li><a href="./abstract_submission_award.php">Awards & Grants</a></li> -->
+            <li><a href="" class="not_yet">Awards & Grants</a></li>
         </ul>
         <div class="section section1">
             <div>

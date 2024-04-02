@@ -111,7 +111,7 @@
 <!-- HUBDNCAJY : App - STAMP TOUR > Tour Map 페이지 -->
 <section class="container app_version app_tour_map"> <!-- 23.06.14 HUBDNCAJY : .layout_type2 클래스 삭제 -->
 	<div class="app_title_box">
-		<h2 class="app_title">STAMP TOUR</h2>
+		<h2 class="app_title">STAMP TOUR<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		<ul class="app_menu_tab langth_3">
 			<li><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
 			<li><a href="./app_my_stamp.php">My Stamp</a></li>

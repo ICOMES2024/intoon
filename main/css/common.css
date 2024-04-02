@@ -68,11 +68,13 @@ html {-webkit-touch-callout:none; -webkit-user-select:text; -webkit-tap-highligh
 .brown_txt{color:#921004 !important;}
 .blue_txt{color:#00666B !important;}
 .font_small{font-size:13px !important;}
+.font_12{font-size: 12px !important;}
 .font_light{font-weight: 400;}
 .f_bold{font-weight: bold !important;}
 .pre{white-space:pre-line;}
 .initial{white-space:initial !important;}
 .font_20{font-size: 18px;}
+.font_16{font-size: 16px !important;}
 
 /*common class*/
 .flex_hide {display: flex !important; gap:8px;}
@@ -1100,7 +1102,13 @@ section.container.sponsor {padding-top: 164px;}
 .app_header.simple .app_h_logo {display:none;}
 .app_header .hd_inner {padding:0 18px; height:100%; display:flex; align-items:center; justify-content:center; position:relative;}
 .app_header .app_h_logo {width:121px;}
-.app_nav_btn {width:24px; position:absolute; left:17px;}
+
+/* [240402] sujeong / hub 코드 수정 & 추가 */
+/* .app_nav_btn {width:24px; position:absolute; left:17px;} */
+/* .app_nav_btn img {cursor: pointer;} */
+.app_nav_btn {width:58px; height:58px; position:absolute; left:0;}
+.app_nav_btn img {width:24px;}
+
 .stamp_admin_close {display:none; width:20px; position:absolute; right:17px;}
 .stamp_admin_close.on {display:block;}
 
@@ -1110,7 +1118,11 @@ section.container.sponsor {padding-top: 164px;}
 .app_nav_bg {visibility:hidden; opacity:0; position:fixed; top:0; left:0; width:100%; height:100%; background-color:#404040; transition:all 0.5s; z-index:99; cursor:pointer;}
 .app_nav_bg.on {visibility:visible; opacity:0.75;}
 .app_nav .nav_inner {width:100%; height:100%;}
-.app_nav_close {position:absolute; top:30px; left:calc(100% + 12px); transform:translateY(-50%);}
+
+/* [240402] sujeong / hub 코드 수정 */
+/* .app_nav_close {position:absolute; top:30px; left:calc(100% + 12px); transform:translateY(-50%);} */
+.app_nav_close {position:absolute; width:13%; max-width:58px; height:58px; top:0; left:calc(100%);}
+
 .app_nav_close img {width:18px;}
 .app_nav_top {height:59px; padding:19px 17px; display:flex; align-items:center; justify-content:flex-end; background-color:#FFFFFF;}
 .app_nav_top a {font-size:17px; font-weight:800; display:flex; align-items:center;}

@@ -46,7 +46,9 @@
 								<td rowspan="2" class="text_center">On-site attendance and presentation are required.</td>
 							</tr>
 							<tr>
-								<td class="text_center">Guided Poster Presenter<br>Poster Exhibitior</td>
+                                <!-- [240402] sujeong / 학회팀 요청 문구 수정 -->
+								<td class="text_center">Poster Presenter</td>
+								<!-- <td class="text_center">Guided Poster Presenter<br>Poster Exhibitior</td> -->
 								<td class="text_center border_r">USD 500</td>
 							</tr>
 							<!--<tr>
@@ -74,7 +76,7 @@
 			<!--Contact for Abstract start-->
 			<div>
 				<div class="section_title_wrap2">
-					<h4 class="title">지방 참석자 여비 보조금 지원 (Domestic Only) <span>ICOMES 2023은 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
+					<h4 class="title">지방 참석자 여비 보조금 지원 (Domestic Only) <span>ICOMES 2024는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
 				</div>
 				<div class="table_wrap detail_table_common x_scroll">
 					<table class="c_table detail_table">
@@ -137,7 +139,7 @@
 						</li>
 						<li>
 							<p>Step 4</p>
-							<p class="sm_txt">Complete the travel <br>grant application form <br>and apply via email <br><span class="red_t font_inherit">(Application period: <br>Sep 10th ~ Sep 16th)</span></p>
+							<p class="sm_txt">Complete the travel <br>grant application form <br>and apply via email <br><span class="red_t font_inherit">(Application period: <br>Sep 8<sup class="red_t font_inherit font_12">th</sup> ~ Sep 14<sup class="red_t font_inherit font_12">th</sup>)</span></p>
 						</li>
 						<li>
 							<p>Step 5</p>
@@ -153,10 +155,10 @@
 					<h4 class="title">Download Application Form</h4>
 				</div>
 				<div class="download_wrap">
-					<a href="./download/ICOMES_2023_Travel_Grant_Application_Form.docx" class="btn long_btn type2 text_long" target="_blank">
+					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Registration_Cancellation_Request_Form.docx" class="btn long_btn type2 text_long font_16" target="_blank">
 						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Travel Grant Application Form Download (Overseas)
 					</a>
-					<a href="./download/ICOMES_2023_Application_for_travel_subsidy(Non-MD).docx" class="btn long_btn type2 text_long" target="_blank">
+					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Application_for_travel_subsidy_Non-MD.docx" class="btn long_btn type2 text_long font_16" target="_blank">
 						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Non-MD 지방 참석자 여비 보조금 지원 양식 다운로드 (Domestic)
 					</a>
 				</div>
@@ -549,7 +551,7 @@ $(document).ready(function() {
     });
 
 	$(".download_wrap .btn").click(function(){
-		alert("[ Note!! Application period: Sep 10th ~ Sep 20th ]")
+		alert("[ Note!! Application period: Sep 8th ~ Sep 14th ]")
 	});
 });
 </script>
