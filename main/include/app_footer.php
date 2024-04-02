@@ -78,7 +78,9 @@ $schedule = sql_fetch($select_schedule_query);
 				<a href="/main/app_abstract.php"><img src="/main/img/icons/icon_ft_abstract.svg" alt=""><span>ABSTRACT</span></a>
 			</li>
 			<li>
-				<a href="/main/app_schedule.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY SCHEDULE</span></a>
+				<!-- [240328] sujeong / app_my_page -->
+				<!-- <a href="/main/app_registration.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY PAGE</span></a> -->
+				<a href="/main/app_schedule.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY PAGE</span></a>
 			</li>
 		</ul>
 	</div>

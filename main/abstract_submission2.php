@@ -201,7 +201,7 @@ $abstract_idx = $_GET["idx"];
             </div>
             <div class="input_area">
 				<h3 class="title">
-					Author Information
+					Abstract Information
 					<span class="mini_alert"><span class="red_txt">*</span> All requested field(<span class="red_txt">*</span>) should be completed.</span>
 				</h3>
                 <ul class="basic_ul">
