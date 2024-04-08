@@ -19,6 +19,10 @@ main/plugin
 main/plugin/
 main/plugin/**
 
+main/push_library
+main/push_library/
+main/push_library/**
+
 main/live/assets/download
 main/live/assets/download/
 main/live/assets/download/**
