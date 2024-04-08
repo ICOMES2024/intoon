@@ -1,5 +1,8 @@
 <?php include_once("../../common/common.php");?>
-<?php include_once('../../push_library/push.php'); ?>
+<?php include_once('../../push_library/push.php'); 
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+?>
 <?php
 if($_POST["flag"]==="pin"){
 
@@ -74,6 +77,7 @@ if($_POST["flag"]==="pin"){
         "link_url" => $url,
     ];
 
+    // print_r($push_list);
     $ios_token_list[] = [];
     $ios_token_list_history[] = [];
     $android_token_list[] = [];
