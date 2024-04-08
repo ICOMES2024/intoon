@@ -5,19 +5,19 @@
 <?php
     if(empty($_SESSION["USER"])){
         echo "
-                <script>
-                    if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
-                        window.AndroidScript.logout();
-                    }
-                
-                    if (webkit.messageHandlers!=null) {
-                        try{
-                            window.webkit.messageHandlers.logout.postMessage('');
-                        } catch (err){
-                            console.log(err);
-                        }
-                    }
-                </script>
+			<script>
+				if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+					window.AndroidScript.logout();
+				}
+			
+				if (window.webkit?.messageHandlers!=null) {
+					try{
+						window.webkit.messageHandlers.logout.postMessage('');
+					} catch (err){
+						console.log(err);
+					}
+				}
+			</script>
         ";
     }
 ?>

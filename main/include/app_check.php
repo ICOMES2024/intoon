@@ -1,5 +1,5 @@
 <?php
-
+//[240408] sujeong / 기존코드 -> app_check_pre.php - IOS try-catch문 추가
 if (empty($_SESSION["USER"])) {
     echo "
             <script>
@@ -8,14 +8,15 @@ if (empty($_SESSION["USER"])) {
                     window.location.href = '/main/app_login.php';
                 }
             
-                if (webkit.messageHandlers!=null) {
+               
                     try{
-                        window.webkit.messageHandlers.logout.postMessage('');
-                        window.location.href = '/main/app_login.php';
+						if (window.webkit?.messageHandlers!=null) {
+							window.webkit.messageHandlers.logout.postMessage('');
+							window.location.href = '/main/app_login.php';
+						}
                     } catch (err){
                         console.log(err);
                     }
-                }
             </script>
         ";
 }
