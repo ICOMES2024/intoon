@@ -572,7 +572,7 @@
 							<td>13 / 32</td> -->
 							<td><?=$list["register_date"]?></td>
 							<td>
-								<!-- <a href="javascript:;" onclick="delete_submission('<?= $list["abstract_idx"] ?>')">삭제</a> -->
+								<a href="javascript:;" onclick="delete_submission(<?php echo $list['abstract_idx']; ?>)">삭제</a>
 							</td>
 						</tr>
 					<?php
