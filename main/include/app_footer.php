@@ -8,22 +8,28 @@ $select_notice_query = "
                         ";
 $notice_list = get_data($select_notice_query);
 
-$select_schedule_query = "
-                            SELECT p.idx, program_name, program_date, start_time
-                            FROM program p
-                            LEFT JOIN(
-                                SELECT s.idx, member_idx, s.program_idx, s.register_date, s.is_deleted
-                                FROM schedule s
-                                WHERE member_idx='{$member_idx}'
-                                AND s.is_deleted = 'N'
-                            )s on s.program_idx=p.idx
-                            WHERE p.is_deleted = 'N'
-                            AND s.idx IS NOT NULL
-                            AND NOW()>=start_time - interval 10 minute
-                            AND NOW()<=start_time + interval 1 minute
-                            ORDER BY program_date ASC, start_time ASC
-                        ";
-$schedule = sql_fetch($select_schedule_query);
+//[240417] sujeong / app login 페이지 구분 위해
+if(empty($member_idx)){
+	$schedule = "";
+}else{
+	$select_schedule_query = "
+		SELECT p.idx, program_name, program_date, start_time
+		FROM program p
+		LEFT JOIN(
+			SELECT s.idx, member_idx, s.program_idx, s.register_date, s.is_deleted
+			FROM schedule s
+			WHERE member_idx='{$member_idx}'
+			AND s.is_deleted = 'N'
+		)s on s.program_idx=p.idx
+		WHERE p.is_deleted = 'N'
+		AND s.idx IS NOT NULL
+		AND NOW()>=start_time - interval 10 minute
+		AND NOW()<=start_time + interval 1 minute
+		ORDER BY program_date ASC, start_time ASC
+	";
+	$schedule = sql_fetch($select_schedule_query);
+}
+
 ?>
 
 <!-- 사용자 App footer -->
@@ -64,7 +70,7 @@ $schedule = sql_fetch($select_schedule_query);
 				<a href="/main/app_index.php"><img src="/main/img/icons/icon_ft_home.svg" alt=""><span>HOME</span></a>
 			</li>
 			<li>
-				<a href="/main/program_glance.php"><img src="/main/img/icons/icon_ft_program.svg" alt=""><span>PROGRAM</span></a>
+				<a href="/main/app_program_glance.php"><img src="/main/img/icons/icon_ft_program.svg" alt=""><span>PROGRAM</span></a>
 			</li>
 			<li class="round_menu">
 				<a href="/main/app_qr_code.php">
@@ -75,12 +81,12 @@ $schedule = sql_fetch($select_schedule_query);
 				</a>
 			</li>
 			<li>
-				<a href="/main/app_abstract.php"><img src="/main/img/icons/icon_ft_abstract.svg" alt=""><span>ABSTRACT</span></a>
+				<a href="/main/app_schedule.php"><img src="/main/img/icons/icon_ft_abstract.svg" alt=""><span>ABSTRACT</span></a>
 			</li>
 			<li>
 				<!-- [240328] sujeong / app_my_page -->
 				<!-- <a href="/main/app_registration.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY PAGE</span></a> -->
-				<a href="/main/app_schedule.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY PAGE</span></a>
+				<a href="/main/app_registration.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY PAGE</span></a>
 			</li>
 		</ul>
 	</div>

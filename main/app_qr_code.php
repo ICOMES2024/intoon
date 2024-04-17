@@ -2,6 +2,30 @@
 <?php include_once('./include/app_header.php');?>
 
 <?php
+
+    if (empty($_SESSION["USER"])) {
+        echo "
+                <script>
+                    if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                        window.AndroidScript.logout();
+                        alert('Need to login.');
+                        window.location.href = '/main/app_login.php';
+                    }
+                
+                
+                        try{
+                            if (window.webkit?.messageHandlers!=null) {
+                                window.webkit.messageHandlers.logout.postMessage('');
+                                alert('Need to login.');
+                                window.location.href = '/main/app_login.php';
+                            }
+                        } catch (err){
+                            console.log(err);
+                        }
+                </script>
+            ";
+    }
+
     $member_idx=$_SESSION["USER"]["idx"];
     $sql_info = "
                     SELECT
@@ -32,7 +56,7 @@
         $register_no = !empty($member_data["r_idx"]) ? "ICOMES2024-" . $member_data["r_idx"] : "-";
     }
 ?>
-
+ 
 <!-- HUBDNCLHJ : app qr_code 페이지 -->
 <section class="container app_qr_code app_version">
 	<div class="app_title_box">

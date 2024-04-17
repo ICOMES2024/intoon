@@ -36,13 +36,13 @@
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
 			<li>
-				<a href="/main/welcome.php">
+				<a href="/main/app_welcome.php">
 					<img src="./img/icons/app_menu01.svg" alt="">
 					<span>ICOMES 2023</span>
 				</a>
 			</li>
 			<li>
-				<a href="/main/program_glance.php">
+				<a href="/main/app_program_glance.php">
 					<img src="./img/icons/app_menu02.svg" alt="">
 					<span>PROGRAM</span>
 				</a>

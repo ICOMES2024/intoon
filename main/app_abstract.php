@@ -5,6 +5,29 @@
 <script src="./js/script/client/app_abstract.js?v=0.4"></script>
 
 <?php
+//[240408] sujeong / 기존코드 -> app_check_pre.php - IOS try-catch문 추가
+if (empty($_SESSION["USER"])) {
+    echo "
+            <script>
+                if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                    window.AndroidScript.logout();
+					alert('Need to login.');
+                    window.location.href = '/main/app_login.php';
+                }
+            
+               
+                    try{
+						if (window.webkit?.messageHandlers!=null) {
+							window.webkit.messageHandlers.logout.postMessage('');
+							alert('Need to login.');
+							window.location.href = '/main/app_login.php';
+						}
+                    } catch (err){
+                        console.log(err);
+                    }
+            </script>
+        ";
+}
 
 $category_idx = $_GET['category_idx'] ?? "";
 $row_sql="";

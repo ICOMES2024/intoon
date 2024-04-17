@@ -532,7 +532,7 @@ section.terms .details p {text-align: justify;}
 /* 22.04.05 HUBDNC LJH2 추가 */
 /*.organizing .title {padding: 0 0 15px 20px;}*/
 .organizing .table_wrap {overflow-x:auto;}
-.organizing .table_wrap:first-of-type {margin-bottom: 83px;}
+.organizing .table_wrap{margin-bottom: 83px;}
 .organizing .table_wrap table {min-width:840px;}
 
 /* 22.04.07 HUBDNC LJH2 추가 */

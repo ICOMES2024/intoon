@@ -81,9 +81,15 @@ section.container.organizing {padding-bottom: 190px;}
 .organizing .cat1 th{ /* background-color: rgba(16,191,153,0.4); */ background-color:#f2f2f2; /*text-align: center;*/ border-right: 1px solid #707070;}
 .organizing .cat2 th{background-color: #f2f2f2; border-right: 1px solid #707070;}
 /*.organizing .cat2 th{background-color: rgba(255,235,0,0.4);}*/
+/* .organizing .c_table2 th, .organizing .c_table2 td {padding: 9px 4px; text-align:center;} */
 .organizing .c_table2 th, .organizing .c_table2 td {padding: 9px 28px; text-align:center;}
 .organizing .c_table2 th, .organizing .c_table2 td:first-of-type {font-weight: bold;}
 .organizing .section_title_wrap2:nth-of-type(3) {padding-top: 83px;}
+
+/*[240417] sujoeng mo 버전 padding*/
+@media screen and (max-width:486px) {
+	.organizing .c_table2 th, .organizing .c_table2 td {padding: 4px;}
+}
 
 /*photo*/
 .x_scroll {overflow-x:auto;}
@@ -565,6 +571,23 @@ section.container.organizing {padding-bottom: 190px;}
 .purple_bg {background-color:rgba(181,178,255,0.3) !important;}
 .blue_bg {background-color:#00b0f0 !important;}
 .light_orange_bg {background-color:#FFEDD5 !important;}
+/* 2024 bg */
+.yellow_green_bg {background-color: #d8e4bc !important;}
+.violet_bg{background-color: #ccc0da !important;}
+.skyblue_bg{background-color: #dce6f1 !important;}
+.light_yellow_bg{background-color: yellow !important;}
+.light_gray_bg_2{background-color: #eeece1 !important;}
+.dark_sky_bg{background-color: #b7dee8 !important;}
+.white_yellow_bg{background-color: #ffffe7 !important;}
+.light_sky_bg{background-color: #b7dee8 !important;}
+.dark_pink_bg{background-color: #E6B8B7 !important;}
+.dark_green_bg{background-color: #d8e4bc !important;}
+.dark_orange_bg{background-color: #fcd5b4 !important;}
+.dark_gray_bg{background-color: #7f7f7f !important;}
+.dark_gray_bg > div{ color: white; font-weight: 700;}
+
+.break_time{padding: 4px !important;}
+
 /*230705 HUBDNC AJY 추가*/
 .dots_div {font:inherit; display:flex; align-items:flex-end; justify-content:center;}
 .dots_img {width:auto; height:1.75px; margin:0 1px 2px;}

@@ -2,6 +2,29 @@
 <?php include_once('./include/app_header.php');?>
 
 <?php
+if (empty($_SESSION["USER"])) {
+    echo "
+            <script>
+                if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                    window.AndroidScript.logout();
+					alert('Need to login.');
+                    window.location.href = '/main/app_login.php';
+                }
+            
+               
+                    try{
+						if (window.webkit?.messageHandlers!=null) {
+							window.webkit.messageHandlers.logout.postMessage('');
+							alert('Need to login.');
+							window.location.href = '/main/app_login.php';
+						}
+                    } catch (err){
+                        console.log(err);
+                    }
+            </script>
+        ";
+}
+
 $invited_speaker_idx = $_GET['idx'] ?? "";
 
 $select_invited_speaker_query = "
@@ -20,9 +43,9 @@ $select_program_query = "
                             SELECT p.idx, isp.idx, first_name, last_name, contents_title, program_name,program_tag_name,p.chairpersons, p.preview, pp.program_place_name, program_category_idx, p.program_date,
                                    date_format(p.start_time, '%H:%i') as start_time, date_format(p.end_time, '%H:%i') as end_time,
                                    (CASE
-                                       WHEN program_date = '2023-09-07' THEN 'day_1'
-                                       WHEN program_date = '2023-09-08' THEN 'day_2'
-                                       WHEN program_date = '2023-09-09' THEN 'day_3'
+                                       WHEN program_date = '2023-09-05' THEN 'day_1'
+                                       WHEN program_date = '2023-09-06' THEN 'day_2'
+                                       WHEN program_date = '2023-09-07' THEN 'day_3'
                                        ELSE ''
                                        END
                                    ) as day,
@@ -49,7 +72,7 @@ $select_program_query = "
 $program_list = get_data($select_program_query);
 
 ?>
-
+ 
 <!-- App - Invited Speakers 페이지 -->
 <section class="container app_version app_scientific app_invited_speakers_detail">
 	<div class="app_title_box">

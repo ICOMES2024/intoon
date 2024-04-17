@@ -1,6 +1,28 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
 <?php
+	if (empty($_SESSION["USER"])) {
+		echo "
+				<script>
+					if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+						window.AndroidScript.logout();
+						alert('Need to login.');
+						window.location.href = '/main/app_login.php';
+					}
+				
+				
+						try{
+							if (window.webkit?.messageHandlers!=null) {
+								window.webkit.messageHandlers.logout.postMessage('');
+								alert('Need to login.');
+								window.location.href = '/main/app_login.php';
+							}
+						} catch (err){
+							console.log(err);
+						}
+				</script>
+			";
+	}
     $user_idx = $member["idx"] ?? -1;
 	
 	// [22.04.25] 미로그인시 처리
@@ -30,10 +52,10 @@
 				My Page
 				<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 			</h2>
-			<ul class="app_menu_tab langth_3">
+			<ul class="app_menu_tab langth_2">
 				<li><a href="./app_registration.php">Registration</a></li>
 				<li class="on"><a href="./app_mypage_abstract.php">Abstract</a></li>
-				<li><a href="./app_schedule.php">My Schedule</a></li>
+				<!-- <li><a href="./app_schedule.php">My Schedule</a></li> -->
 			</ul>
 		</div>
 	<div class="container_inner inner">

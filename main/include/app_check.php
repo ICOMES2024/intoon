@@ -1,26 +1,26 @@
-<?php
-//[240408] sujeong / 기존코드 -> app_check_pre.php - IOS try-catch문 추가
-if (empty($_SESSION["USER"])) {
-    echo "
-            <script>
-                if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
-                    window.AndroidScript.logout();
-                    window.location.href = '/main/app_login.php';
-                }
+<!-- //<?php 
+//[240408] sujeong / 기존코드 -> app_check_pre.php - IOS try-catch문 추가 // 모든 페이지 login 풀기 위해 주석
+// if (empty($_SESSION["USER"])) {
+//     echo "
+//             <script>
+//                 if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+//                     window.AndroidScript.logout();
+//                     window.location.href = '/main/app_login.php';
+//                 }
             
                
-                    try{
-						if (window.webkit?.messageHandlers!=null) {
-							window.webkit.messageHandlers.logout.postMessage('');
-							window.location.href = '/main/app_login.php';
-						}
-                    } catch (err){
-                        console.log(err);
-                    }
-            </script>
-        ";
-}
-?>
+//                     try{
+// 						if (window.webkit?.messageHandlers!=null) {
+// 							window.webkit.messageHandlers.logout.postMessage('');
+// 							window.location.href = '/main/app_login.php';
+// 						}
+//                     } catch (err){
+//                         console.log(err);
+//                     }
+//             </script>
+//         ";
+// }
+// ?> -->
 <script>
     if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
         try{
