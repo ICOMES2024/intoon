@@ -1,6 +1,29 @@
 <!-- [240314] hub 스탬프 투어 소스 코드 파일 추가(기존 -> X ) !@#$^ -->
 <?php include_once('./include/head.php');?>
-<?php include_once('./include/app_header.php');?>
+<?php include_once('./include/app_header.php');
+if (empty($_SESSION["USER"])) {
+    echo "
+            <script>
+                if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                    window.AndroidScript.logout();
+					alert('Need to login.');
+                    window.location.href = '/main/app_login.php';
+                }
+            
+               
+                    try{
+						if (window.webkit?.messageHandlers!=null) {
+							window.webkit.messageHandlers.logout.postMessage('');
+							alert('Need to login.');
+							window.location.href = '/main/app_login.php';
+						}
+                    } catch (err){
+                        console.log(err);
+                    }
+            </script>
+        ";
+}
+?>
 
 <?php 
 	$loginNo  = $_SESSION["USER"]["idx"] ?? 0;

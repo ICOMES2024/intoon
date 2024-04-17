@@ -2,6 +2,30 @@
 <?php include_once('./include/app_header.php');?>
 
 <?php
+
+    if (empty($_SESSION["USER"])) {
+        echo "
+                <script>
+                    if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                        window.AndroidScript.logout();
+                        alert('Need to login.');
+                        window.location.href = '/main/app_login.php';
+                    }
+                
+                
+                        try{
+                            if (window.webkit?.messageHandlers!=null) {
+                                window.webkit.messageHandlers.logout.postMessage('');
+                                alert('Need to login.');
+                                window.location.href = '/main/app_login.php';
+                            }
+                        } catch (err){
+                            console.log(err);
+                        }
+                </script>
+            ";
+    }
+
 $member_idx = $_SESSION["USER"]["idx"];
 $select_program_query = "
                             SELECT @rownum := @rownum+1 AS rownum, P.*

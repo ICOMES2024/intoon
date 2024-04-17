@@ -3,6 +3,28 @@
 <?php include_once('./include/app_header.php');?>
 
 <?php 
+	if (empty($_SESSION["USER"])) {
+		echo "
+				<script>
+					if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+						window.AndroidScript.logout();
+						alert('Need to login.');
+						window.location.href = '/main/app_login.php';
+					}
+				
+				
+						try{
+							if (window.webkit?.messageHandlers!=null) {
+								window.webkit.messageHandlers.logout.postMessage('');
+								alert('Need to login.');
+								window.location.href = '/main/app_login.php';
+							}
+						} catch (err){
+							console.log(err);
+						}
+				</script>
+			";
+	}
 	$loginNo  = $_SESSION["USER"]["idx"] ?? 0;
 
 	$sql = "SELECT 

@@ -1,3 +1,4 @@
+<!-- [240417] sujeong / app_check 주석 -->
 <?php
 	include_once('./include/app_check.php');
 ?>
@@ -25,10 +26,10 @@
 				<li class="on">
 					<a href="javascript:;">ICOMES 2024</a>
 					<ul class="app_sub">
-						<li><a href="/main/welcome.php">Welcome Message</a></li>
-						<li><a href="/main/organizing_committee.php">Organization</a></li>
+						<li><a href="/main/app_welcome.php">Welcome Message</a></li>
+						<li><a href="/main/app_organizing_committee.php">Organization</a></li>
 						<li><a href="/main/app_overview.php">Overview</a></li>
-						<li><a href="/main/venue.php">Venue</a></li>
+						<li><a href="/main/app_venue.php">Venue</a></li>
 					</ul>
 				</li>
 				<li>
@@ -37,7 +38,7 @@
 				<li>
 					<a href="javascript:;">Program</a>
 					<ul class="app_sub">
-						<li><a href="/main/program_glance.php">Program at a Glance</a></li>
+						<li><a href="/main/app_program_glance.php">Program at a Glance</a></li>
 						<li><a href="/main/app_program_detail.php">Scientific Program</a></li>
 					</ul>
 				</li>
@@ -63,15 +64,15 @@
 				<li>
 					<a href="/main/app_invited_speakers.php">Invited Speakers</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="javascript:;">Sponsorship</a>
 					<ul class="app_sub">
-						<li><a href="/main/sponsor.php">Sponsorship</a></li>
-						<li><a href="/main/sponsor_exhibition.php">Exhibition</a></li>
+						<li><a href="/main/app_sponsor.php">Sponsorship</a></li>
+						<li><a href="/main/app_sponsor_exhibition.php">Exhibition</a></li>
 					</ul>
-				</li>
+				</li> -->
 				<li>
-					<a href="/main/registration_rating_guides.php">평점 안내<br/>(Korean Only)</a>
+					<a href="/main/app_registration_rating_guides.php">평점 안내<br/>(Korean Only)</a>
 				</li>
 				<li>
 					<a href="/main/app_notice.php">Notice</a>
@@ -82,7 +83,7 @@
 				<!-- [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ -->
 				<!-- app_header // Tour Map(기존) => Stamp List(현재) -->
 				<li>
-					<a href="javascript:;">Stamp Tour</a>
+					<a href="javascript:;">Booth Tour</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
 						<li><a href="/main/app_my_stamp.php">My Stamp</a></li>

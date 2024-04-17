@@ -10,6 +10,29 @@
 
 <?php
 
+    if (empty($_SESSION["USER"])) {
+        echo "
+                <script>
+                    if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                        window.AndroidScript.logout();
+                        alert('Need to login.');
+                        window.location.href = '/main/app_login.php';
+                    }
+                
+                
+                        try{
+                            if (window.webkit?.messageHandlers!=null) {
+                                window.webkit.messageHandlers.logout.postMessage('');
+                                alert('Need to login.');
+                                window.location.href = '/main/app_login.php';
+                            }
+                        } catch (err){
+                            console.log(err);
+                        }
+                </script>
+            ";
+    }
+
 $type = $_GET['type'];
 $day = $_GET['day'] ?? '';
 $name = $_GET['name'] ?? '';
@@ -195,7 +218,7 @@ echo '<script type="text/javascript">
 		}
     }
 ?>
-
+  
 <section class="container app_version app_scientific app_program_detail">
     <input type="hidden" name="scroll_target" value="<?=$name?>"/>
     <input type="hidden" name="day" value="<?=$day?>"/>
@@ -208,7 +231,7 @@ echo '<script type="text/javascript">
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 		<ul class="app_menu_tab langth_2">
-			<li><a href="./program_glance.php">Program at a Glance</a></li>
+			<li><a href="./app_program_glance.php">Program at a Glance</a></li>
 			<li class="on"><a href="./app_program_detail.php">Scientific Program</a></li>
 		</ul>
 	</div>

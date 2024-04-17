@@ -1,5 +1,28 @@
 <?php include_once('./include/head.php');?>
-<?php include_once('./include/app_header.php');?>
+<?php include_once('./include/app_header.php');
+if (empty($_SESSION["USER"])) {
+    echo "
+            <script>
+                if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                    window.AndroidScript.logout();
+					alert('Need to login.');
+                    window.location.href = '/main/app_login.php';
+                }
+            
+               
+                    try{
+						if (window.webkit?.messageHandlers!=null) {
+							window.webkit.messageHandlers.logout.postMessage('');
+							alert('Need to login.');
+							window.location.href = '/main/app_login.php';
+						}
+                    } catch (err){
+                        console.log(err);
+                    }
+            </script>
+        ";
+}
+?>
 <script src="./js/script/client/app_setting.js"></script>
 
 <!-- HUBDNCLHJ : app setting 페이지 -->

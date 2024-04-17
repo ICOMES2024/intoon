@@ -3,6 +3,28 @@
 <script src="./js/script/client/app_invited_speakers.js?ver=0.1"></script>
 
 <?php
+if (empty($_SESSION["USER"])) {
+    echo "
+            <script>
+                if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                    window.AndroidScript.logout();
+					alert('Need to login.');
+                    window.location.href = '/main/app_login.php';
+                }
+            
+               
+                    try{
+						if (window.webkit?.messageHandlers!=null) {
+							window.webkit.messageHandlers.logout.postMessage('');
+							alert('Need to login.');
+							window.location.href = '/main/app_login.php';
+						}
+                    } catch (err){
+                        console.log(err);
+                    }
+            </script>
+        ";
+}
 $member_idx = $_SESSION["USER"]["idx"];
 
 $select_invited_speaker_query = "
@@ -34,7 +56,6 @@ $select_initial_query = "
                         ";
 $initial_list = get_data($select_initial_query);
 ?>
-
 <!-- App - Invited Speakers 페이지 -->
 <section class="container app_version app_invited_speakers">
 	<div class="app_title_box">
