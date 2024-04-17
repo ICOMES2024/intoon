@@ -717,7 +717,9 @@
         echo json_encode($res);
         exit;
     } else if($_POST["flag"] == "submission_delete") {
-        $user_idx = $_SESSION["USER"]["idx"];
+        //[240408] sujoeng / 조건추가 admin 삭제 -> modifier 1
+        $user_idx =  isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : 1;
+        // $user_idx = $_SESSION["USER"]["idx"];
         $idx = isset($_POST["idx"]) ? $_POST["idx"] : "";
 
         $abstract_delete_query =    "
@@ -730,6 +732,7 @@
                                         OR parent_author = {$idx}
                                     ";
         $delete = sql_query($abstract_delete_query);
+
 
         if(!$delete)  {
             $res = [

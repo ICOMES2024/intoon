@@ -117,7 +117,7 @@ $locale = locale($language);
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/comingsoon.php">Registration</a>
+                        <a href="/main/registration_guidelines.php">Registration</a>
                         <ul class="sub_nav">
                         <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
