@@ -72,7 +72,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="/main/sponsor.php">
+				<a href="/main/app_stamp_guidelines.php">
 					<img src="./img/icons/app_menu07.svg" alt="">
 					<span>SPONSORSHIP</span>
 				</a>

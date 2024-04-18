@@ -100,7 +100,7 @@ $info = sql_fetch($sql_info);
             <li class="on"><a href="./app_venue.php">Venue</a></li>
         </ul>
     </div>    
-    <h1 class="page_title">Venue</h1> 
+    <!-- <h1 class="page_title">Venue</h1>  -->
 
 	<!-- HUBDNCLHJ : app에선 타이틀 Conrad Seoul>Venue로 변경 됨(위 h1.page_title{Venue} 주석해제 후 아래 h1.page_title{Conrad Seoul} 주석처리). 메뉴 위치 이동 됨. 노출되는 컨텐츠 [호텔 이름과 주소, 연락처]+[지도]. -->
 

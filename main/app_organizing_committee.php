@@ -245,7 +245,7 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
             </div>
             <h3 class="title">International Advisory Board</h3>
             <div class="table_wrap">
-                <table class="c_table2">
+                <table class="c_table2 iab_table">
                     <colgroup>
                         <col width="30%">
                         <col width="*">

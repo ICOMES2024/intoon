@@ -850,12 +850,13 @@ $(document).ready(function() {
 
 });
 
+//[240418] sujeong / 이동 주석
 function table_location(event, _this, e, day, this_name) {
 	var session_app_type = $("[name=session_app_type]").val();
 	if (session_app_type != "" && session_app_type == 'N') {
-		window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+		//window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 	} else {
-	    window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+	    //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 	}
 }
 </script>

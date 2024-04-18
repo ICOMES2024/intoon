@@ -149,11 +149,16 @@ if (empty($_SESSION["USER"])) {
 						foreach($boothList as $k => $v){
 							$boothType = $k;
 							$boothInfo = gradeBoothInfo($boothType);
-
+							
 							$totalReqCnt = $v['total_require_cnt'] ?? 0;
 							$reqCnt = $v['require_cnt'] ?? 0;
 
 							$isCrown = $totalReqCnt > 0 && $totalReqCnt == $reqCnt ? true : false;
+
+							//[240418] sujeong / 럭키 드로우 남은 스탬프 카운트
+							$luckyCnt = $reqCnt + 6;
+
+							
 					?>
 						<li class="<?=$boothInfo["medal_class"]?>">
 							<p><?=$boothInfo["name"]?></p>
@@ -191,17 +196,19 @@ if (empty($_SESSION["USER"])) {
                 </ul>
 				<div class="stamps_crown_info clearfix">
 					<img src="./img/crown.png" class="info_icon"/>
-					<p class="info_text">필수 스폰서를 포함하여 스탬프 스캔 했을 경우<br/>왕관 아이콘이 표시됩니다.</p>
+					<p class="info_text">Once you have visited the required number of booths, the crown will be displayed.</p>
 				</div>
                 <div class="stamps_count">
-                    <p>Count of stamps collected :<span><?= number_format($myStampCnt) ?></span></p>
+                    <p>Remaining Booths for Lucky Draw :<span><?= number_format($myStampCnt) ?></span></p>
                 </div>
 			</div> 
 		</div>
 	</div>
 	<div class="qr_code_fixed">
 		<a href="javascript:;">	
-			<p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each loacation</p>
+		<p class="qr_code_fixed_txt">Scan the <span>QR CODE</span> at each booth.</p>
+			<!-- <p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each loacation</p> -->
+			<p class="qr_code_fixed_txt">“Click here to scan!”</p>
 			<div class="qr_code_fixed_wrap">SCANNER</div>
 		</a>	
 	</div>

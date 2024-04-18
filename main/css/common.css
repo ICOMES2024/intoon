@@ -1317,7 +1317,9 @@ a.daewon {background-image: url("../img/sponsor/logo24.png");}
 a.lilly {background-image: url("../img/sponsor/logo25.png");}
 
 /*app STAMP TOUR > My Stamp*/
-.container.app_my_stamp .container_inner {padding-bottom: 40px;}
+.container.app_my_stamp .container_inner {padding-bottom: 70px;}
+section.app_version .container_inner{padding-bottom: 80px;}
+/* .container.app_my_stamp .container_inner {padding-bottom: 40px;} */
 .stamp_collect {padding:10px 16px; background-color:#E7E6E6; display:flex; align-items:center; justify-content:space-between;} /*임시 스타일*/
 .stamp_control {padding:10px 16px; background-color:#D9D9D9;} /*임시 스타일*/
 .refresh_btn img {max-width:24px;} /*임시 스타일*/
