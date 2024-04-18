@@ -16,7 +16,7 @@
 	<div class="container_inner">
 		<div class="contents_box">
 			<div class="app_contents_wrap type3">
-				content 영역
+				<img style="width: 100%;" src="/main/img/app_pop_stamp_tour_event.png"/>
 			</div> 
 		</div>
 	</div>

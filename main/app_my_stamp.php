@@ -157,7 +157,7 @@
 		<div class="contents_box">
 			<div class="stamp_count">
 				<div class="stamp_collect">
-					<p class="f_bold">Count of stamps collected: <span class="f_inherit red_txt"><?= number_format($myStampCnt) ?></span></p>
+					<!-- <p class="f_bold">Count of stamps collected: <span class="f_inherit red_txt"><?= number_format($myStampCnt) ?></span></p> -->
 <!-- 					<button type="button" class="refresh_btn"><img src="./img/icons/icon_refresh.png" alt="새로고침"></button> -->
 				</div>
 			</div>
@@ -336,7 +336,9 @@
 	</div>
 	<div class="qr_code_fixed">
 		<a href="javascript:;">	
-			<p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each loacation</p>
+			<p class="qr_code_fixed_txt">Scan the <span>QR CODE</span> at each booth.</p>
+			<!-- <p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each loacation</p> -->
+			<p class="qr_code_fixed_txt">“Click here to scan!”</p>
 			<div class="qr_code_fixed_wrap">SCANNER</div>
 		</a>	
 	</div>
