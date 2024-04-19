@@ -1,21 +1,29 @@
 <!-- [240314] hub 스탬프 투어 소스 코드 파일 추가(기존 -> X ) !@#$^ -->
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');
+
+ // [240419] sujeong / APP 로그인 페이지 /window confirm 창으로 수정 !!!
 if (empty($_SESSION["USER"])) {
     echo "
             <script>
                 if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
                     window.AndroidScript.logout();
-					alert('Need to login.');
-                    window.location.href = '/main/app_login.php';
+					if(window.confirm('Login required. Would you like to log in?')){ 
+						window.location.href = '/main/app_login.php';
+					}else{
+						window.history.back();
+					}
                 }
             
                
                     try{
 						if (window.webkit?.messageHandlers!=null) {
 							window.webkit.messageHandlers.logout.postMessage('');
-							alert('Need to login.');
-							window.location.href = '/main/app_login.php';
+							if(window.confirm('Login required. Would you like to log in?')){ 
+								window.location.href = '/main/app_login.php';
+							}else{
+								window.history.back();
+							}
 						}
                     } catch (err){
                         console.log(err);

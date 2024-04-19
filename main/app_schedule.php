@@ -2,7 +2,7 @@
 <?php include_once('./include/app_header.php');?>
 
 <?php
-
+    // [240419] sujeong / APP 로그인 페이지 /window confirm 창으로 수정 !!!
     if (empty($_SESSION["USER"])) {
         echo "
                 <script>
@@ -10,6 +10,8 @@
                         window.AndroidScript.logout();
                         if(window.confirm('Login required. Would you like to log in?')){ 
                             window.location.href = '/main/app_login.php';
+                        }else{
+                            window.history.back();
                         }
                     }
                 
@@ -19,6 +21,8 @@
                                 window.webkit.messageHandlers.logout.postMessage('');
                                 if(window.confirm('Login required. Would you like to log in?')){ 
                                     window.location.href = '/main/app_login.php';
+                                }else{
+                                    window.history.back();
                                 }
                             }
                         } catch (err){
