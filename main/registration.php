@@ -418,12 +418,12 @@ if ($during_yn !== "Y") {
 												"Day 3 Luncheon Symposium"
 										);
 										$other_date_arr = array(
-												"September 5(Thu)",
-												"September 5(Thu)",
-												"September 6(Fri)",
-												"September 6(Fri)",
-												"September 7(Sat)",
-												"September 7(Sat)"
+												"September 5 (Thu)",
+												"September 5 (Thu)",
+												"September 6 (Fri)",
+												"September 6 (Fri)",
+												"September 7 (Sat)",
+												"September 7 (Sat)"
 										);
 
 										$prev_data_arr = [];

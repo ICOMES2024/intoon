@@ -632,8 +632,10 @@ table.center * {text-align:center;}
 
 /*sponsor*/
 section.container.sponsor {padding-top: 164px;}
-.sponsor_grade .grade_title {display:block; font-size: 32px; padding: 18px 0; color:#fff; text-align: center; font-weight: bold;}
+/* .sponsor_grade .grade_title {display:block; font-size: 32px; padding: 18px 0; color:#fff; text-align: center; font-weight: bold;} */
+.sponsor_grade .grade_title {display:block; font-size: 32px; padding: 18px 0; color:#fff; text-align: center; font-weight: 900; border-radius: 20px;}
 .grade_wrap {padding-left: 0 !important; padding-right:0 !important;}
+.grade_wrap div {width: 100%;display: flex;align-items: center; justify-content: space-between;flex-wrap: wrap; gap: 0.88rem 0;}
 .grade_wrap li {height: 130px;}
 .grade_wrap.length_5 li {height: 103px;}
 
@@ -745,7 +747,7 @@ section.container.sponsor {padding-top: 164px;}
 	.grade_wrap li {height: 67px; padding: 8px 12px !important;}
 	.grade_wrap.length_5 li {height: 67px;}
 	.grade_wrap li.small {padding: 16px !important;}
-	.grade_wrap li a.daewon, .grade_wrap li a.lilly {transform:scale(0.6)}
+	/* .grade_wrap li a.daewon, .grade_wrap li a.lilly {transform:scale(0.6)} */
 
 	/*HUBDNCLHJ 23.05.12 footer2*/
 	.footer2 .f_bottom .footer_b {flex-direction:column;}
@@ -1077,12 +1079,17 @@ section.container.sponsor {padding-top: 164px;}
 
 /*app grade_title bg color*/
 .grade_title.pink_bg {background-color: #BC3478 !important;}
-.grade_title.purple_bg {background-color: #7030A0 !important;}
-.grade_title.gold_bg {background-color: #CCA13F !important;}
+/* .grade_title.purple_bg {background-color: #7030A0 !important;}
+.grade_title.gold_bg {background-color: #CCA13F !important;} */
+.grade_title.purple_bg {background: linear-gradient(180deg, #7468ad 50%, #665c99 50%) !important;}
+.grade_title.gold_bg {background: linear-gradient(180deg, #deb01f 50%, #d1a61d 50%) !important;}
 .grade_title.green_bg {background-color: #336666 !important;}
-.grade_title.green_bg05 {background-color:#20B7B7 !important;}
+/* .grade_title.green_bg05 {background-color:#20B7B7 !important;}
 .grade_title.silver_bg {background-color:#AAA9A9 !important;}
-.grade_title.bronze_bg {background-color:#583C26 !important;}
+.grade_title.bronze_bg {background-color:#583C26 !important;} */
+.grade_title.green_bg05 {background: linear-gradient(180deg, #00b3c4 50%, #00a1b0 50%) !important;}
+.grade_title.silver_bg {background: linear-gradient(180deg, #cad7e1 50%, #becbd4 50%) !important;}
+.grade_title.bronze_bg {background: linear-gradient(180deg, #c69c8d 50%, #b79083 50%) !important;}
 
 /*app td color*/
 .mint_td {background-color:#56AFB5 !important; color:#FFFFFF !important;}
@@ -1286,48 +1293,88 @@ h2.app_title {width: 100%; font-size: 16px; background: #000066; text-align: cen
 .app_half_ul li {flex:1;}
 
 /*sponsor*/
+/* .grade_wrap {display:flex; flex-wrap:wrap; gap:0.88rem 0; padding: 1.5rem 0.75rem 2.19rem; justify-content:space-between;}
+.grade_wrap li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; border: 1px solid #f2f2f2; }
+.grade_wrap li.small {padding: 30px;}
+.grade_wrap li a {width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain; display: block;} */
+
+/*sponsor*/
 .grade_wrap {display:flex; flex-wrap:wrap; gap:0.88rem 0; padding: 1.5rem 0.75rem 2.19rem; justify-content:space-between;}
+.no_padding_bottom{padding:1.5rem 0.75rem 0.88rem;}
+.no_padding_top {padding: 0 0.75rem 2.19rem;}
 .grade_wrap li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; border: 1px solid #f2f2f2; }
 .grade_wrap li.small {padding: 30px;}
 .grade_wrap li a {width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
-a.alvogen {background-image: url("../img/sponsor/logo01.png"); /*transform:scale(0.8);*/ }
-a.novo_nordisk {background-image: url("../img/sponsor/logo02_1.png");}
-a.daewoong {background-image: url("../img/sponsor/logo03.png");}
-a.yuhan {background-image: url("../img/sponsor/logo04.png");}
-a.chong_kun_dang {background-image: url("../img/sponsor/logo05_1.png");}
-a.handok {background-image: url("../img/sponsor/logo06.png");}
-a.dong_a {background-image: url("../img/sponsor/logo07.png");}
-a.hanmi_pharm {background-image: url("../img/sponsor/logo08_2.png");}
-a.astra_zeneca {background-image: url("../img/sponsor/logo09.png");}
-a.inno_n {background-image: url("../img/sponsor/logo10_1.png");}
+
+.grade_wrap div {width:100%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;gap: 0.88rem 0;} 
+.grade_wrap div li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; border: 1px solid #f2f2f2; }
+.grade_wrap div li.small {padding: 30px;}
+.grade_wrap div li a {width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
+
+.grade_wrap .grade_diamond{
+	height: 150px;
+}
+
+@media screen and (max-width: 1024px){
+	.grade_wrap div.pc_only {display: none;}
+	.grade_wrap .grade_diamond{
+		height: 80px;
+	}
+}
+
+
+/* diamond */
+a.novo_nordisk {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo01.png");}
+a.novo_nordisk_page {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo01_1.png");}
+
+/* platinum */
+a.alvogen {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo02_1.png"); /*transform:scale(0.8);*/ }
+a.hanmi_pharm {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo03.png");}
+a.chong_kun_dang {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo04.png");}
+
+/* gold */
+a.handok {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo05.png");}
+a.yuhan {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo06.png");}
+a.dong_a {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo07.png");}
+a.inno_n {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo08.png");}
+a.daewoong_1 {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo09.png");}
+a.lilly {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo10.png");}
+
+/* silver */
+a.astra_zeneca {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo11.png");}
+a.lg_chem {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo12.png");}
+a.celltrion {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo13.png");}
+a.sanofi {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo14.png");}
+a.boryung {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo15.png");}
+a.kwangdong {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo16.png");}
+
+/* bronze */
+a.gc_biopharma {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo17.png");}
+a.aju_pharm {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo18.png");}
+a.daiichi_sankyo {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo19.png");}
+a.organon {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo20.png");}
+a.boehringer {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo21.png");}
+a.dalimbiotech {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo22.png");}
+a.daewon {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo23.png");}
+a.daewoong_2 {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo24.png");}
+a.jw_pharm {background-image: url("https://image.webeon.net/icomes2024/sponsor/2024_logo25.png");}
+
 a.msd {background-image: url("../img/sponsor/logo11.png");}
-a.celltrion {background-image: url("../img/sponsor/logo12.png");}
-a.lg_chem {background-image: url("../img/sponsor/logo13.png");}
-a.sanofi {background-image: url("../img/sponsor/logo14_1.png");}
-a.organon {background-image: url("../img/sponsor/logo15.png");}
-a.dalimbiotech {background-image: url("../img/sponsor/logo16.png");}
-a.kwangdong {background-image: url("../img/sponsor/logo17_1.png");}
-a.daiichi_sankyo {background-image: url("../img/sponsor/logo18.png");}
-a.boehringer {background-image: url("../img/sponsor/logo19_1.png");}
-a.aju_pharm {background-image: url("../img/sponsor/logo20.png");}
-a.boryung {background-image: url("../img/sponsor/logo21.png");}
-a.jw_pharm {background-image: url("../img/sponsor/logo22_1.png");}
-a.gc_biopharma {background-image: url("../img/sponsor/logo23_1.png");}
-a.daewon {background-image: url("../img/sponsor/logo24.png");}
-a.lilly {background-image: url("../img/sponsor/logo25.png");}
 
 /*app STAMP TOUR > My Stamp*/
 .container.app_my_stamp .container_inner {padding-bottom: 70px;}
-section.app_version .container_inner{padding-bottom: 80px;}
+section.app_version .container_inner{padding-bottom: 90px;}
 /* .container.app_my_stamp .container_inner {padding-bottom: 40px;} */
-.stamp_collect {padding:10px 16px; background-color:#E7E6E6; display:flex; align-items:center; justify-content:space-between;} /*임시 스타일*/
+.stamp_collect {padding:10px 16px; /*background-color:#E7E6E6; */display:flex; align-items:center; justify-content:space-between;} /*임시 스타일*/
 .stamp_control {padding:10px 16px; background-color:#D9D9D9;} /*임시 스타일*/
 .refresh_btn img {max-width:24px;} /*임시 스타일*/
 .grade_wrap.length_1 li {width:100%; padding: 4px 18px !important;}
 .grade_wrap.length_3 li {width:calc(33.3% - 0.44rem);}
 .grade_wrap.length_4 li {width:calc(25% - 0.44rem);}
+/* .grade_wrap.length_5 {gap:0.44rem 0;}
+.grade_wrap.length_5 li {width:calc(20% - 0.44rem);} */
 .grade_wrap.length_5 {gap:0.44rem 0;}
-.grade_wrap.length_5 li {width:calc(20% - 0.44rem);}
+.grade_wrap .length_5 li {width:calc(20% - 0.44rem);}
 .qr_code_fixed {position:fixed; left: 0; bottom: 65px; width:100%; text-align: center; background: #CC3366; border-radius:24px 24px 0 0;}
 .qr_code_fixed > a {width:100%; padding: 10px 0;}
 .qr_code_fixed .qr_code_fixed_txt {color:#fff; font-weight: bold; margin-bottom: 4px;}

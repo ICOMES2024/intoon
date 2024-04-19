@@ -79,7 +79,7 @@ $floor = get_data($sql_floor);
                  <td>
                      <!-- <?= date_format(date_create($info['period_event_start']), "M, j(D)") ?> ~
                      <?= date_format(date_create($info['period_event_end']), "M, j(D)  Y") ?> -->
-                     September 5(Thu) ~ 7(Sat), 2024
+                     September 5 (Thu) ~ 7 (Sat), 2024
                  </td>
              </tr>
              <tr>

@@ -157,6 +157,7 @@
 		<div class="contents_box">
 			<div class="stamp_count">
 				<div class="stamp_collect">
+					<!-- [240419] sujeong / 학회팀 요청 주석 /총 스탬프 카운트 -->
 					<!-- <p class="f_bold">Count of stamps collected: <span class="f_inherit red_txt"><?= number_format($myStampCnt) ?></span></p> -->
 <!-- 					<button type="button" class="refresh_btn"><img src="./img/icons/icon_refresh.png" alt="새로고침"></button> -->
 				</div>
@@ -166,7 +167,8 @@
 					// [240314] hub 스탬프 투어 소스 코드 !@#$^
 					// image 서버로 url 수정 필요 !!!
 					function imageUrlManager($str){
-						$url = "https://icomes.or.kr/main";
+						// $url = "https://icomes.or.kr/main";
+						$url = "https://image.webeon.net/icomes2024/sponsor";
 
 						if(strrpos($str, "http", -strlen($str)) !== false ||  strrpos($str, "https", -strlen($str)) !== false){
 							return $str;

@@ -154,10 +154,6 @@ if (empty($_SESSION["USER"])) {
 							$reqCnt = $v['require_cnt'] ?? 0;
 
 							$isCrown = $totalReqCnt > 0 && $totalReqCnt == $reqCnt ? true : false;
-
-							//[240418] sujeong / 럭키 드로우 남은 스탬프 카운트
-							$luckyCnt = $reqCnt + 6;
-
 							
 					?>
 						<li class="<?=$boothInfo["medal_class"]?>">
@@ -165,7 +161,7 @@ if (empty($_SESSION["USER"])) {
 							<?php if($isCrown){?>
 								<i><img src="./img/crown.png" class="info_icon"/></i>
 							<?php }?>
-							<div><?=number_format($v['cnt'])?></div>
+							<div class="<?=$boothInfo["name"]?>"><?=number_format($v['cnt'])?></div>
 						</li>
 					<?php
 						}
@@ -199,7 +195,8 @@ if (empty($_SESSION["USER"])) {
 					<p class="info_text">Once you have visited the required number of booths, the crown will be displayed.</p>
 				</div>
                 <div class="stamps_count">
-                    <p>Remaining Booths for Lucky Draw :<span><?= number_format($myStampCnt) ?></span></p>
+                    <!-- <p>Remaining Booths for Lucky Draw <p><span><?= number_format($myStampCnt) ?></span></p></p> -->
+                    <p>Remaining Booths for Lucky Draw <p><span class="lunck_count"></span></p></p>
                 </div>
 			</div> 
 		</div>
@@ -213,5 +210,44 @@ if (empty($_SESSION["USER"])) {
 		</a>	
 	</div>
 </section>
+<script>
+	const diamond = document.querySelector(".Diamond");
+	const platinum = document.querySelector(".Platinum");
+	const gold = document.querySelector(".Gold");
+	
+	const sliver = document.querySelector(".Silver");
+	const bronze = document.querySelector(".Bronze");
+
+	const luckyCountTag = document.querySelector(".lunck_count");
+
+	window.onload = () =>{getLuckyNum()}
+
+	function getLuckyNum(){
+		let luckyCount = 0;
+		//필수 스탬프 숫자
+		const requireNum = 10;
+		//태깅한 필수 스탬프 숫자
+		const checkRequireNum = Number(diamond.innerText) +  Number(platinum.innerText) +  Number(gold.innerText);
+		//필수에서 부족한 숫자
+		luckyCount += requireNum - checkRequireNum;
+
+		//선택 스탬프 숫자
+		const silverNum = 6;
+		//태깅한 선택 스탬프 숫자
+		const checkSilverNum =  Number(sliver.innerText) + Number(bronze.innerText);
+
+		//선택 스탬프 숫자보다 많이 태깅한 경우
+		if(checkSilverNum >= silverNum){
+			luckyCount += 0;
+		}
+		//선택 스탬프 숫자보다 적게 태깅한 경우
+		else if(checkSilverNum < silverNum){
+			luckyCount += silverNum - checkSilverNum;
+		}
+
+		luckyCountTag.innerText = luckyCount;
+	}
+
+</script>
 
 <?php include_once('./include/app_footer.php');?>

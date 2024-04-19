@@ -110,35 +110,36 @@
             <li><img src="./img/sponsor/logo23.png" alt=""></li>
         </ul>
     </div> -->
-    <!-- <div class="sponsor_logo-wrap container">
-        <ul class="s_logo_list">
-            <li><a href="https://www.alvogen.com/" class="alvogen">Alvogen</a></li>
-            <li><a href="https://www.novonordisk.com/" class="novo_nordisk">novo nordisk</a></li>
-            <li><a href="https://www.handok.co.kr/eng/" class="handok">HANDOK</a></li>
-            <li><a href="http://eng.yuhan.co.kr/Main/" class="yuhan">YUHAN</a></li>
-            <li><a href="http://en.donga-st.com/Main.da" class="dong_a">Dong-A ST</a></li>
-            <li><a href="https://www.msd.com/" class="msd">MSD</a></li>
-            <li><a href="https://www.inno-n.com/eng" class="inno_n">inno N</a></li>
-            <li><a href="https://www.hanmipharm.com/ehanmi/handler/Home-Start" class="hanmi_pharm">Hanmi Pharm</a></li>
-            <li><a href="http://www.ckdpharm.com/en/home" class="chong_kun_dang">Chong Kun Dang</a></li>
-            <li><a href="https://m.daewoong.co.kr/en/main/index" class="daewoong">DAEWOONG</a></li>
-            <li><a href="https://www.astrazeneca.com/" class="astra_zeneca">Astra Zeneca</a></li>
-            <li><a href="https://www.lgchem.com/main/index" class="lg_chem">LG Chem</a></li>
-            <li><a href="https://www.celltrionph.com/en-us/home/index" class="celltrion">CELLTRION</a></li>
-            <li><a href="https://www.gccorp.com/eng/index" class="gc_biopharma">GC Niopharma</a></li>
-            <li><a href="https://www.sanofi.com/en/our-company" class="sanofi">sanofi</a></li>
-            <li><a href="http://ajupharm.co.kr/en/index.html" class="aju_pharm">AJU PHARM</a></li>
-            <li><a href="http://eng.ekdp.com/main/main.asp" class="kwangdong">Kwangdong</a></li>
-            <li><a href="https://www.daiichisankyo.com/" class="daiichi_sankyo">Daiichi Sankyo</a></li>
-            <li><a href="https://www.organon.com/" class="organon">ORGANON</a></li>
-            <li><a href="https://www.boehringer-ingelheim.com/" class="boehringer">Boehringer INgelheim</a></li>
-            <li><a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a></li>
-            <li><a href="http://www.dalimpharm.co.kr/en_index.html" class="dalimbiotech">dalimbiotech</a></li>
-            <li><a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm">jw Pharmaceutical</a></li>
-            <li class="small"><a href="https://www.lilly.co.kr/" class="lilly">Lilly</a></li>
-            <li class="small"><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon">Daewon</a></li>
-        </ul>
-    </div> -->
+    <div class="sponsor_logo-wrap container">
+            <ul class="s_logo_list">
+                <li><a href="https://www.novonordisk.com/" class="novo_nordisk"></a></li>
+                <li><a href="https://www.alvogen.com/" class="alvogen"></a></li>
+                <li><a href="https://www.hanmipharm.com/ehanmi/handler/Home-Start" class="hanmi_pharm"></a></li>
+                <li><a href="http://www.ckdpharm.com/en/home" class="chong_kun_dang"></a></li>
+                <li><a href="https://www.handok.co.kr/eng/" class="handok"></a></li>
+                <li><a href="http://eng.yuhan.co.kr/Main/" class="yuhan"></a></li>
+                <li><a href="http://en.donga-st.com/Main.da" class="dong_a"></a></li>
+                <li><a href="https://www.inno-n.com/eng" class="inno_n"></a></li>
+                <li><a href="https://m.daewoong.co.kr/kr/main/index" class="daewoong_1"></a></li>
+                <li><a href="https://www.lilly.co.kr/" class="lilly"></a></li>
+                <li><a href="https://www.astrazeneca.com/" class="astra_zeneca"></a></li>
+                <li><a href="https://www.lgchem.com/main/index" class="lg_chem"></a></li>
+                <li><a href="https://www.celltrionph.com/en-us/home/index" class="celltrion"></a></li>
+                <li><a href="https://www.sanofi.com/en/our-company" class="sanofi"></a></li>
+                <li><a href="https://www.boryung.co.kr/en/" class="boryung"></a></li>
+                <li><a href="http://eng.ekdp.com/main/main.asp" class="kwangdong"></a></li>
+                <li><a href="https://www.gccorp.com/eng/index" class="gc_biopharma"></a></li>
+                <li><a href="http://ajupharm.co.kr/en/index.html" class="aju_pharm"></a></li>
+                <li><a href="https://www.daiichisankyo.com/" class="daiichi_sankyo"></a></li>
+                <li><a href="https://www.organon.com/" class="organon"></a></li>
+                <li><a href="https://www.boehringer-ingelheim.com/" class="boehringer"></a></li>
+                <li><a href="http://www.dalimpharm.co.kr/en_index.html" class="dalimbiotech"></a></li>
+                <li><a href="https://www.daewonpharm.com/eng/main/index.jsp" class="daewon"></a></li>
+                <li><a href="https://daewoongbio.co.kr/daewoongbiokr/main/main.web" class="daewoong_2"></a></li>
+                <li><a href="https://www.jw-pharma.co.kr/pharma/en/main.jsp" class="jw_pharm"></a></li>
+                <!-- <li><a href="https://www.msd.com/" class="msd">MSD</a></li> -->
+            </ul>
+    </div>
     <footer class="footer">
         <div class="container">
             <br>
@@ -156,7 +157,7 @@
                 </div>
                 <div class="footer_c">
                     <!-- <p>Organized by</p> -->
-                    <p>Korean Society for the Study of Obesity(KSSO)</p>
+                    <p>Korean Society for the Study of Obesity (KSSO)</p>
                     <ul>
                         <li>Room 1010, Renaissance tower, 14 Mallijae-ro, Mapo-gu, Seoul, Korea</li>
                         <li>T. 82-2-364-0886,0887</li>
