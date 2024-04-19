@@ -8,16 +8,18 @@
                 <script>
                     if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
                         window.AndroidScript.logout();
-                        alert('Need to login.');
-                        window.location.href = '/main/app_login.php';
+                        if(window.confirm('Login required. Would you like to log in?')){ 
+                            window.location.href = '/main/app_login.php';
+                        }
                     }
                 
                 
                         try{
                             if (window.webkit?.messageHandlers!=null) {
                                 window.webkit.messageHandlers.logout.postMessage('');
-                                alert('Need to login.');
-                                window.location.href = '/main/app_login.php';
+                                if(window.confirm('Login required. Would you like to log in?')){ 
+                                    window.location.href = '/main/app_login.php';
+                                }
                             }
                         } catch (err){
                             console.log(err);
@@ -118,7 +120,7 @@ foreach($program_list as $pl){
 <section class="container app_version app_scientific">
 	<div class="app_title_box">
 		<h2 class="app_title">
-			My Page
+			My Schedule
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
         <!-- [240402] sujeong / 디자인 미확정으로 마이 페이지 주석 -->
