@@ -22,7 +22,7 @@
 		<div class="app_title_box">
 			<h2 class="app_title">Program<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 			<ul class="app_menu_tab langth_2">
-				<li class="on"><a href="./program_glance.php">Program at a Glance</a></li>
+				<li class="on"><a href="./app_program_glance.php">Program at a Glance</a></li>
 				<li><a href="./app_program_detail.php">Scientific Program</a></li>
 			</ul>
 		</div>

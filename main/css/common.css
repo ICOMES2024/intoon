@@ -634,6 +634,9 @@ table.center * {text-align:center;}
 section.container.sponsor {padding-top: 164px;}
 /* .sponsor_grade .grade_title {display:block; font-size: 32px; padding: 18px 0; color:#fff; text-align: center; font-weight: bold;} */
 .sponsor_grade .grade_title {display:block; font-size: 32px; padding: 18px 0; color:#fff; text-align: center; font-weight: 900; border-radius: 20px;}
+
+.schedule_area .grade_title{border-radius: 0px!important;}
+
 .grade_wrap {padding-left: 0 !important; padding-right:0 !important;}
 .grade_wrap div {width: 100%;display: flex;align-items: center; justify-content: space-between;flex-wrap: wrap; gap: 0.88rem 0;}
 .grade_wrap li {height: 130px;}
