@@ -80,7 +80,7 @@ $info = sql_fetch($sql_info);
 							</tr>
 							<tr>
 								<th>Notification of<br class="br_mb_only"> Abstract Acceptance</th>
-								<td><span class="font_inherit f_bold">July 10(Wed)</span><br>*Details regarding presentation type and guidelines will be provided.</td>
+								<td><span class="font_inherit f_bold">July 10 (Wed)</span><br>*Details regarding presentation type and guidelines will be provided.</td>
 							</tr>
                             <tr>
 								<th>Notification of<br class="br_mb_only"> Acceptance</th>
@@ -302,7 +302,7 @@ $info = sql_fetch($sql_info);
                 <div class="text_box indent">
                     <ul>
                         <li>• Failure to register by the presenter registration deadline will result in the automatic withdrawal of the accepted abstract from the final program.</li>
-                        <li>• To request the withdrawal of an abstract, send an email to the ICOMES 2024 secretariat(<a href="mailto:icomes_abstracts@into-on.com" class="link font_inherit">icomes_abstracts@into-on.com</a>) at your earliest convenience.</li>
+                        <li>• To request the withdrawal of an abstract, send an email to the ICOMES 2024 secretariat (<a href="mailto:icomes_abstracts@into-on.com" class="link font_inherit">icomes_abstracts@into-on.com</a>) at your earliest convenience.</li>
                     </ul>
                 </div>
             </div>

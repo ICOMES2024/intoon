@@ -2576,7 +2576,7 @@ function gradeBoothInfo($grade){
 	if($grade == 0){		// Diamond
 		return array(
 			"name"=>"Diamond",
-			"class"=>"pink_bg",
+			"class"=>"purple_bg",
 			"medal_class"=>"poster"
 		);
 	}else if($grade == 1){ // Platinum

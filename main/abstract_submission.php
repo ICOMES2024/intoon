@@ -1228,7 +1228,7 @@ $(document).ready(function() {
                         <div class="section_title_wrap2">
                             <h3 class="title">
 								Author Information
-								<p class="mini_alert essential"><span class="red_txt">*</span> All requested field(<span class="red_txt">*</span>) should be completed.</p>
+								<p class="mini_alert essential"><span class="red_txt">*</span> All requested field (<span class="red_txt">*</span>) should be completed.</p>
 							</h3>
                         </div>
                         <ul class="basic_ul">

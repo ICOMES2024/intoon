@@ -119,7 +119,7 @@
 								<td class="light_gray_bg"></td>
 							</tr>
                             <tr>
-								<td>
+								<td rowspan="2">
 									<div class="colons_div">18:10-19:10</div>
 								</td>
 								<td class="dark_sky_bg pointer" name="satellite_symposium_1">
@@ -137,9 +137,9 @@
 								<td class="light_gray_bg"></td>
 							</tr>
 							<tr>
-								<td>
+								<!-- <td>
 									<div class="colons_div">18:30-19:00</div>
-								</td>
+								</td> -->
 								<td class="dark_sky_bg pointer" name="satellite_symposium_2">
 									Satellite<br />Symposium 2
 									<input type="hidden" name="e" value="room1">

@@ -215,37 +215,37 @@
 
 						if($satellite_yn === "Y"){
 							$other_html .= "
-											<label for='other1'><i></i>• Satellite Symposium – September 5(Thu)</label>
+											<label for='other1'><i></i>• Satellite Symposium – September 5 (Thu)</label>
 										   ";
 						}
 						if($welcome_reception_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<label for='other1'><i></i>• Welcome Reception – September 5(Thu)</label>
+											<label for='other1'><i></i>• Welcome Reception – September 5 (Thu)</label>
 										   ";
 						}
 						if($day2_breakfast_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<label for='other2'><i></i>• Day 2 Breakfast Symposium – September 6(Fri)</label>
+											<label for='other2'><i></i>• Day 2 Breakfast Symposium – September 6 (Fri)</label>
 										   ";
 						}
 						if($day2_luncheon_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<label for='other3'><i></i>• Day 2 Luncheon Symposium – September 6(Fri)</label>
+											<label for='other3'><i></i>• Day 2 Luncheon Symposium – September 6 (Fri)</label>
 										   ";
 						}
 						if($day3_breakfast_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<label for='other4'><i></i>• Day 3 Breakfast Symposium – September 7(Sat)</label>
+											<label for='other4'><i></i>• Day 3 Breakfast Symposium – September 7 (Sat)</label>
 										   ";
 						}
 						if($day3_luncheon_yn === "Y"){
 							$other_html .= $other_html != "" ? "<br/>" : "";
 							$other_html .= "
-											<label for='other5'><i></i>• Day 3 Luncheon Symposium – September 7(Sat)</label>
+											<label for='other5'><i></i>• Day 3 Luncheon Symposium – September 7 (Sat)</label>
 										   ";
 						}
 

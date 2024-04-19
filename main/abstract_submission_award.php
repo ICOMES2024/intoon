@@ -76,7 +76,7 @@
 			<!--Contact for Abstract start-->
 			<div>
 				<div class="section_title_wrap2">
-					<h4 class="title">지방 참석자 여비 보조금 지원 (Domestic Only) <span>ICOMES 2024는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
+					<h4 class="title">지방 참석자 여비 보조금 지원(Domestic Only) <span>ICOMES 2024는 서울/인천/경기 제외 지방 소속 초록 발표자들을 위하여 여비 보조금을 지원합니다.</span></h4>
 				</div>
 				<div class="table_wrap detail_table_common x_scroll">
 					<table class="c_table detail_table">
@@ -95,7 +95,7 @@
 							<tr>
 								<td class="text_center">지원 내용</td>
 								<td class="text_center">KRPIA/KPBMA 공정규약에 의거하여 지원</td>
-								<td class="text_center">300,000원 (기타소득세 제외 후 지급)</td>
+								<td class="text_center">300,000원(기타소득세 제외 후 지급)</td>
 							</tr>
 							<tr>
 								<td class="text_center">지원자격</td>
@@ -159,7 +159,7 @@
 						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Travel Grant Application Form Download (Overseas)
 					</a>
 					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Application_for_travel_subsidy_Non-MD.docx" class="btn long_btn type2 text_long font_16" target="_blank">
-						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Non-MD 지방 참석자 여비 보조금 지원 양식 다운로드 (Domestic)
+						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Non-MD 지방 참석자 여비 보조금 지원 양식 다운로드(Domestic)
 					</a>
 				</div>
 				<p class="mt10 p_indent">• MD 지방 참석자: 지원 양식 별도 없음. 초록채택자 공지 후 대한비만학회 개별 공지 예정</p>
