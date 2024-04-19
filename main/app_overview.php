@@ -28,7 +28,7 @@
 					</li>
 					<li>
 						<p>Date</p>
-						<div>September 5(Thu) ~ 7(Sat), 2024</div>
+						<div>September 5 (Thu) ~ 7 (Sat), 2024</div>
 					</li>
 					<li>
 						<p>Venue</p>

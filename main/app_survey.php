@@ -18,7 +18,7 @@
 					<a href="https://forms.gle/qmVnFNuJqAj7L4mj6/" target="_blank">
 						<img src="./img/icons/icon_survey_en.svg" alt="">
 						<p class="center_t">
-							<span class="bold">ICOMES 2023</span><br/>
+							<span class="bold">ICOMES 2024</span><br/>
 							Satisfaction and<br/>Feedback Survey
 						</p>
 						<button href="javascript:;" class="lang">English</button>
@@ -28,7 +28,7 @@
 					<a href="https://forms.gle/zfJbNAyNxggE7NxX9/" target="_blank">
 						<img src="./img/icons/icon_survey_kr.svg" alt="">
 						<p class="center_t">
-							<span class="bold">ICOMES 2023</span><br/>
+							<span class="bold">ICOMES 2024</span><br/>
 							만족도 및<br/>피드백 설문조사
 						</p>
 						<button href="javascript:;" class="lang">한국어</button>

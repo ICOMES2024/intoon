@@ -62,33 +62,13 @@
 		<div class="contents_box">
 			<div class="contents_wrap_my_page">
 				<p class="mypage_abstract_txt">Review of Submission</p>
-				<!-- <table class="table_vertical registration_table table--block">
-					<thead>
-						<tr class="centerT">
-                            <th>No.</th>
-							<th>Submission No.</th>
-							<th>Title</th>
-							<th>Date of Submission</th>
-							<th>File</th>
-						</tr>
-					</thead>
-					<tbody>
-					<?php foreach($my_abstract_list as $i => $submission) { ?>
-						<tr>
-                            <td><?= $i + 1 ?></td>
-							<td><?= $submission["submission_code"] ?></td>
-							<td>
-								<?= $submission["abstract_title"] ?>
-							</td>
-							<td><?= $submission["regist_date"] ?></td>
-							<td>
-								<a target="_blank" href="https://docs.google.com/gview?url=https://icomes.or.kr<?php echo  $submission["path"]. $submission["save_name"] ?>&embedded=true"><?= $submission["original_name"] ?></a>
-							</td>
-						</tr>
-					<?php } ?>
-					</tbody>
-				</table> -->
-				<?php foreach($my_abstract_list as $i => $submission) { ?>
+				
+				<?php 
+				if(count($my_abstract_list) == 0){?>
+					<p>No Data.</p>
+				<?php }else if(count($my_abstract_list) >= 1){
+					foreach($my_abstract_list as $i => $submission) { ?>
+
 					<table class="mypage_abstract_table">
 					
 						<tr class="centerT">
@@ -112,7 +92,7 @@
 							<td><a target="_blank" href="https://docs.google.com/gview?url=https://icomes.or.kr<?php echo  $submission["path"]. $submission["save_name"] ?>&embedded=true"><?= $submission["original_name"] ?></a></td>
 						</tr>
 					</table>
-					<?php } ?>
+					<?php } 	}?>
 			</div>			
 		</div> 
 	</div>
