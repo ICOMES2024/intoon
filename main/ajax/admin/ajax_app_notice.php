@@ -42,7 +42,9 @@ if($_POST["flag"]==="pin"){
         exit;
     }
 
-} else if($_POST["flag"] === "push"){
+} 
+//[240423] sujeong /login X여도 push 알림 받기/ 기존 APP push
+else if($_POST["flag"] === "push_pre"){
     $push_message = $_POST["message"];
     $notice_idx = $_POST["notice_idx"];
 
@@ -104,7 +106,61 @@ if($_POST["flag"]==="pin"){
         }
     }
 
-} else if($_POST["flag"]==="select"){
+} 
+//[240423] sujeong /login X여도 push 알림 받기/ APP push
+else if($_POST["flag"] === "push"){
+    $push_message = $_POST["message"];
+    $notice_idx = $_POST["notice_idx"];
+
+    $select_query = "
+                    SELECT DISTINCT token, type
+                    FROM device_token               
+                ";
+
+    $push_list = get_data($select_query);
+    if (empty($push_list)) {
+        exit;
+    }
+
+    $title = "ICOMES2024";
+    $url = '/main/app_notice_detail.php?idx='.$notice_idx;
+    $message = $push_message;
+
+    $data = [
+        "title"    => $title,
+        "msg"      => $message,
+        "link_url" => $url,
+    ];
+
+    // print_r($push_list);
+    $ios_token_list[] = [];
+    $ios_token_list_history[] = [];
+    $android_token_list[] = [];
+    $android_token_list_history = [];
+
+    foreach ($push_list as $pl) {
+        if ($pl['token'] !== '' && $pl['type'] !== '') {
+
+            if ($pl["type"] === 'I' && $pl['is_alarm'] === 'Y') {
+                $ios_token_list[] = $pl["token"];
+                $ios_token_list_history[] = $pl["token"];
+
+                $ios_token_list = array_values(array_filter($ios_token_list));
+                Push::fcmMultiPushV2($title, $message, "ios", $ios_token_list, $data);
+                $ios_token_list = [];
+            } else if (!in_array($pl["token"], $android_token_list_history) && $pl['is_alarm'] == 'Y') {
+                $android_token_list[] = $pl["token"];
+                $android_token_list_history[] = $pl["token"];
+
+                $android_token_list = array_values(array_filter($android_token_list));
+                Push::fcmMultiPushV2($title, $message, "android", $android_token_list, $data);
+                $android_token_list = [];
+            }
+        }
+    }
+
+}
+else if($_POST["flag"]==="select"){
     $board_idx = $_POST["board_idx"];
 
     $select_query = "
