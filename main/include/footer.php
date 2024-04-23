@@ -151,8 +151,9 @@
                         <img src="https://image.webeon.net/icomes2024/logo/fl02.png" alt="">
                         <!-- [240201] sujeong / 학회팀 요청 주석 -->
                         <!-- <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;"
-                                src="https://image.webeon.net/icomes2024/logo/fl03.png" alt=""></a>
-                        <img src="https://image.webeon.net/icomes2024/logo/fl04.png" alt=""> -->
+                                src="https://image.webeon.net/icomes2024/logo/fl03.png" alt=""></a>-->
+                        <img class="pointer" onclick="goKnto()" src="https://image.webeon.net/icomes2024/logo/fl04.png" alt=""> 
+                      
                     </div>
                 </div>
                 <div class="footer_c">
@@ -231,11 +232,12 @@ $('.term3_btn').on('click', function() {
 $('.term4_btn').on('click', function() {
         $('.term4').show();
     })
-
-    <
-    !--$('.type2').on('click', function(event) {
+   function goKnto(){
+     window.location.href = "https://knto.or.kr/index";
+   }
+   $('.type2').on('click', function(event) {
         event.preventDefault();
         alert('Updates are planned.');
         return false;
-    }) -- >
+    }) 
 </script>
