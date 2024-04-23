@@ -91,12 +91,13 @@
 				<div class="program_table_wrap">
 					<table class="program_table main-table">
 						<colgroup>
+							<col class="program_time">
 							<col class="program_first_col">
 							<col class="program_first_col">
 						</colgroup>
 						<thead>
 							<tr>
-								<th class="font_big">Time/Location</th>
+								<th class="font_big program_time">Time/Location</th>
 								<th>Room 1<br> </th>
 								<th>Room 2</th>
 								<th>Room 3</th>

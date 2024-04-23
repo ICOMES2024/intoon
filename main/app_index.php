@@ -107,6 +107,53 @@
 //		}
 		$(".app_header").addClass("simple");
 		$(".app_nav_btn img").attr("src", "/main/img/icons/icon_hamburger2.svg");
+
+
+	//[240423] sujeong / 로그인 없이 토큰 받기
+	let icomes_device = null;
+    let icomes_token = null;
+
+	if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+        try{
+            window.AndroidScript.getDeviceToken();
+        } catch (err){
+            alert(err);
+        }
+        //[240314] hub 스탬프 투어 소스 코드 수정 !@#$^
+    } else if (window.webkit && window.webkit?.messageHandlers!=null) {
+    // } else if (window.webkit && window.webkit.messageHandlers!=null) {
+        try{
+            window.webkit.messageHandlers.getDeviceToken.postMessage('');
+        } catch (err){
+            console.log(err);
+        }
+    }
+
+    getDeviceTokenCallback = (device, deviceToken) => {
+        icomes_device = device;
+        icomes_token = deviceToken;
+		saveToken();
+    }
+
+	function saveToken(){
+		$.ajax({
+            url : "./ajax/client/ajax_member.php",
+            type : "POST",
+            data : {
+                flag : "app_index",
+                icomes_device : icomes_device,
+                icomes_token : icomes_token
+            },
+            dataType : "JSON",
+            success : function(res){
+                if(res.code == 200) {
+                 
+                } 
+            }
+        });
+	}
+
+
 	});
 
 	//webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")

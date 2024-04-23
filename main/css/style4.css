@@ -1579,3 +1579,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	width: 100%;
 	padding: 0px 20px;
 }
+
+.program_time {
+	width: 110px;
+}
