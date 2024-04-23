@@ -97,14 +97,14 @@
 						</colgroup>
 						<thead>
 							<tr>
-								<th class="font_big program_time">Time/Location</th>
-								<th>Room 1<br> </th>
-								<th>Room 2</th>
-								<th>Room 3</th>
-								<th>Room 4</th>
-								<th>Room 5</th>
-								<th>Room 6</th>
-								<th>Room 7</th>
+								<th class="font_big program_time program_room">Time/Location</th>
+								<th class="program_room">Room 1</th>
+								<th class="program_room">Room 2</th>
+								<th class="program_room">Room 3</th>
+								<th class="program_room">Room 4</th>
+								<th class="program_room">Room 5</th>
+								<th class="program_room">Room 6</th>
+								<th class="program_room">Room 7</th>
 							</tr>
 							<tr>
 								<th colspan="8" class="dark_gray_bg font_big day_tbody day_1">
@@ -120,15 +120,15 @@
 									<div class="colons_div">15:00-16:30</div>
 								</td>
 								<td class="yellow_green_bg pointer" name="jomes">
-									Best Article in JOMES<p>편집위원회</p>
+									Best Article in JOMES
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="violet_bg pointer" name="joint">
-									Joint Symposium<p>KSSO-JKT 기초</p>
+									Joint Symposium<br>KSSO-JKT (Basic)
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="committee">
-									Committee Session <p> 대외협력</p>
+									Committee Session 
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -150,18 +150,22 @@
 								<td>
 									<div class="colons_div">16:40-18:10</div>
 								</td>
-                                <td class="light_yellow_bg pointer" name="pre_congress_symposium_2">
+								<!-- [240423] sujeong / 학회팀 요청 주석 -->
+								<td></td>
+                                <!-- <td class="light_yellow_bg pointer" name="pre_congress_symposium_2">
 									Obesity Treatment Guidelines Symposium<p></p>
 									<input type="hidden" name="e" value="room1">
-								</td>
+								</td> -->
                                 <td class="violet_bg pointer" name="joint">
-									Joint Symposium<p>KSSO-JKT 임상</p>
+									Joint Symposium<br>KSSO-JKT (Clinical)
 									<input type="hidden" name="e" value="room2">
 								</td>
-                                <td class="light_gray_bg_2">
+								<!-- [240423] sujeong / 학회팀 요청 주석 -->
+								<td></td>
+                                <!-- <td class="light_gray_bg_2">
 									기자간담회
 									<input type="hidden" name="e" value="room3">
-								</td>
+								</td> -->
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>
@@ -208,7 +212,7 @@
 								<td></td>
 								<td></td>
 								<td class="white_yellow_bg pointer" name="welcome_cocktail_party">
-									Welcome<br />Cocktail Party
+									Textbook Publication Inauguration Ceremony & Welcome Cocktail Party
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -284,11 +288,11 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_2">
-									Symposium 2 <p></p>
+									Symposium 2 <p>Gut, Brain, and Obesity</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_3">
-									Symposium 3 <p>Possibilities and prospects of digital therapeutics for metabolic diseases</p>
+									Symposium 3 <p>Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_4">
@@ -397,7 +401,7 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_6">
-									Symposium 6 <p></p>
+									Symposium 6 <p>Holistic Approach to Obesity Management: Exploring Exercise, Metabolism, and Muscle Health</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_7">
@@ -461,7 +465,7 @@
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="violet_bg pointer" name="joint">
-									Joint Symposium<p> KSSO-EASO</p>
+									Joint Symposium<br>KSSO-EASO
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
@@ -550,7 +554,7 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_14">
-									Symposium 14 <p>Understanding aging skeletal muscle and dynamics</p>
+									Symposium 14 <p>Understanding Aging Skeletal Muscle and Dynamics</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_15">
@@ -693,11 +697,11 @@
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_20">
 									Symposium 20
-									<p>Exercise and Cardiometabolic dysfunction</p>
+									<p>Exercise and Cardiometabolic Dysfunction</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="violet_bg pointer best_jomes" name="jomes_session">
-									Joint Symposium<p>KSSO-TOS</p>
+									Joint Symposium<br>KSSO-TOS
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>

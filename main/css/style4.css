@@ -1583,3 +1583,8 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 .program_time {
 	width: 110px;
 }
+
+.program_room{
+	background-color:#130553 !important;
+	color: #FFF !important;
+}
