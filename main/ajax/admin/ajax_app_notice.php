@@ -44,7 +44,7 @@ if($_POST["flag"]==="pin"){
 
 } 
 //[240423] sujeong /login X여도 push 알림 받기/ 기존 APP push
-else if($_POST["flag"] === "push_pre"){
+else if($_POST["flag"] === "push"){
     $push_message = $_POST["message"];
     $notice_idx = $_POST["notice_idx"];
 
@@ -108,7 +108,7 @@ else if($_POST["flag"] === "push_pre"){
 
 } 
 //[240423] sujeong /login X여도 push 알림 받기/ APP push
-else if($_POST["flag"] === "push"){
+else if($_POST["flag"] === "push_sujeong"){
     $push_message = $_POST["message"];
     $notice_idx = $_POST["notice_idx"];
 
