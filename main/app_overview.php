@@ -42,10 +42,10 @@
 						</div>
 					</li>
 					<!-- [240313] sujeong / theme 미정 주석 -->
-					<!-- <li>
+					<li>
 						<p>Theme</p>
-						<div>Now is the Time to Conquer Obesity</div>
-					</li> -->
+						<div>Integrating Cutting-Edge Insights in Obesity Management</div>
+					</li>
 					<li>
 						<p>Official Language</p>
 						<div>

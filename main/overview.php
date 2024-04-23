@@ -96,12 +96,12 @@ $floor = get_data($sql_floor);
                  </td>
              </tr>
 			 <!-- [240117] sujeong 테마 미정으로 주석 -->
-             <!-- <tr>
+             <tr>
                  <th>Theme</th>
                  <td>
-                     Now is the Time to Conquer Obesity
+				 	Integrating Cutting-Edge Insights in Obesity Management
                  </td>
-             </tr> -->
+             </tr>
              <tr>
                  <th>Official Language</th>
                  <td>

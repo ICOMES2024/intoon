@@ -39,7 +39,7 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
                 <table class="c_table2 center_table fixed_table">
                     <colgroup>
                         <col width="100px">
-                        <col width="200px">
+                        <col width="120px">
                         <col width="*">
                     </colgroup>
                     <thead>
@@ -243,66 +243,14 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
                     </tbody>
                 </table>
             </div>
-            <h3 class="title">International Advisory Board</h3>
-            <div class="table_wrap">
-                <table class="c_table2 iab_table">
-                    <colgroup>
-                        <col width="30%">
-                        <col width="*">
-                    </colgroup>
-					<thead>
-						<tr>
-							<th>Country</th>
-							<th>Name</th>
-						</tr>
-					</thead>
-                    <tbody class="cat2">
-                        <tr>
-                            <td>Austrailia</td>
-                            <td>Leonie Kaye Heiboronn</td>
-                        </tr>
-                        <tr>
-                            <td>Hong Kong <br>(HKASO)</td>
-                            <td>Andrea Luk</td>
-                        </tr>
-                        <tr>
-                            <td>Hong Kong <br>(HKOS)</td>
-                            <td>Michele Mae Ann Yuen</td>
-                        </tr>
-                        <tr>
-                            <td>India</td>
-                            <td>Banshi Saboo</td>
-                        </tr>
-                        <tr>
-                            <td>Malaysia</td>
-                            <td>Geeta Appannah</td>
-                        </tr>
-                        <tr>
-                            <td>New Zealand</td>
-                            <td>Elaine Rush</td>
-                        </tr>
-                        <tr>
-                            <td>Philippines</td>
-                            <td>Nemencio A Nicodemus, Jr</td>
-                        </tr>
-                        <tr>
-                            <td>Taiwan</td>
-                            <td>Wen-Yuan Lin</td>
-                        </tr>
-                        <tr>
-                            <td>Vietman</td>
-                            <td>Do Thi Ngoc Diep</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+           
 			<h3 class="title">Scientific Program Committee</h3>
             <div class="table_wrap">
-                <table class="c_table2">
+                <table class="c_table2 center_table fixed_table">
                     <colgroup>
-                        <col width="18%">
-                        <col width="20%">
-                        <col width="62%">
+                        <col width="100px">
+                        <col width="120px">
+                        <col width="*">
                     </colgroup>
 					<thead>
 						<tr>
@@ -415,6 +363,59 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
                         <tr>
                             <td>Sewon Lee</td>
                             <td>Incheon National University</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="title">International Advisory Board</h3>
+            <div class="table_wrap">
+                <table class="c_table2 iab_table">
+                    <colgroup>
+                        <col width="100px">
+                        <col width="*">
+                    </colgroup>
+					<thead>
+						<tr>
+							<th>Country</th>
+							<th>Name</th>
+						</tr>
+					</thead>
+                    <tbody class="cat2">
+                        <tr>
+                            <td>Austrailia</td>
+                            <td>Leonie Kaye Heiboronn</td>
+                        </tr>
+                        <tr>
+                            <td>Hong Kong <br>(HKASO)</td>
+                            <td>Andrea Luk</td>
+                        </tr>
+                        <tr>
+                            <td>Hong Kong <br>(HKOS)</td>
+                            <td>Michele Mae Ann Yuen</td>
+                        </tr>
+                        <tr>
+                            <td>India</td>
+                            <td>Banshi Saboo</td>
+                        </tr>
+                        <tr>
+                            <td>Malaysia</td>
+                            <td>Geeta Appannah</td>
+                        </tr>
+                        <tr>
+                            <td>New Zealand</td>
+                            <td>Elaine Rush</td>
+                        </tr>
+                        <tr>
+                            <td>Philippines</td>
+                            <td>Nemencio A Nicodemus, Jr</td>
+                        </tr>
+                        <tr>
+                            <td>Taiwan</td>
+                            <td>Wen-Yuan Lin</td>
+                        </tr>
+                        <tr>
+                            <td>Vietman</td>
+                            <td>Do Thi Ngoc Diep</td>
                         </tr>
                     </tbody>
                 </table>
