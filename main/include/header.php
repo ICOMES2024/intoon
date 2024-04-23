@@ -130,9 +130,9 @@ $locale = locale($language);
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/comingsoon.php">Sponsorship</a>
+                        <a href="/main/sponsor.php">Sponsorship</a>
                         <ul class="sub_nav">
-                            <li><a href="/main/comingsoon.php">Sponsorship</a></li>
+                            <li><a href="/main/sponsor.php">Sponsorship</a></li>
                             <li><a href="/main/comingsoon.php">Exhibition</a></li>
                             <!-- <li><a href="/main/sponsor.php">Sponsorship</a></li>
                             <li><a href="/main/sponsor_exhibition.php">Exhibition</a></li> -->
@@ -276,7 +276,7 @@ $(document).ready(function() {
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m5"]) ? "show" : "") ?>">
                 <a href="javascript:;"><span>Sponsorship</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m5"]) ? "block" : "none") ?>">
-                    <li><a href="/main/comingsoon.php">Sponsorship</a></li>
+                    <li><a href="/main/sponsor.php">Sponsorship</a></li>
                     <li><a href="/main/comingsoon.php">Exhibition</a></li>
                     <!-- <li><a href="application.php">Application</a></li> -->
                 </ul>

@@ -132,7 +132,7 @@
     getDeviceTokenCallback = (device, deviceToken) => {
         icomes_device = device;
         icomes_token = deviceToken;
-		saveToken();
+		//saveToken();
     }
 
 	function saveToken(){
