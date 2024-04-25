@@ -11,11 +11,11 @@ if($_POST["flag"] == "select") {
     $row_sql2="";
 
     switch ($date){
-        case "1" : $program_date = "2023-09-07";
+        case "1" : $program_date = "2024-09-05";
             break;
-        case "2" : $program_date = "2023-09-08";
+        case "2" : $program_date = "2024-09-06";
             break;
-        case "3" : $program_date = "2023-09-09";
+        case "3" : $program_date = "2024-09-07";
             break;
     }
 

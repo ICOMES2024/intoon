@@ -29,7 +29,7 @@
 .sponsor_list a {width:calc(100% - 10px);height:100%; border:1px solid #e7e7e7; position:relative;}
 .sponsor_list img {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); max-width:95%; max-height:95%;/*width:139px; height:100%; max-width:150px;*/}
 
-.main_section .main_img {position: absolute; top: 0; right: -4px;}
+.main_section .main_img {position: absolute; top: 0; right: -54px; scale: 0.95;}
 
 /* 로그인 > 스폰서부분 추가 - HUBDNCHYJ */
 .log_sponsor {max-width:950px; padding: 42px 74px; border-radius: 10px; background-color: #f2f5f7; margin:50px auto 0;}
@@ -530,7 +530,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	
 	/* main > 230504 AJY 추가*/
 	.section_bg  {padding-top: 76px; background-position: center top 0;}
-	.img_vsl_text {width: 400px; top: 60%;}
+	.img_vsl_text {width: 35%!important; top: 60%;}
 
 	/* main > key dates */
 	.dates_area li h2 {font-size: 20px;}
@@ -581,7 +581,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	/*.section_bg  {padding-top: 60px; background-position: center top 60px; border:1px solid;}*/
 	.main_section.icola_main .container {padding: 116px 0;}
 	.main_section .main_btn_wrap {bottom:28px;}
-	.main_section .img_vsl_text {top:110px !important;}
+	.main_section .img_vsl_text {top:110px !important; width: 40%;}
 	/* main > top title */
 	.main_section .txt_wrap h1 {font-size: 50px; margin-bottom:20px;}
 	.main_section .txt_wrap h1 span.light {font-size:40px}
@@ -596,7 +596,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 	.main_section .event_msg {width: 100%; max-width: 658px; margin: 30px auto 0;}
 	.event_msg br {display: none;}
 	/*.main_section .main_btn_wrap {margin-top: 60px;}*/
-	.main_section .btn_circle_arrow {width:50px; height:50px;}
+	.main_section .btn_circle_arrow {width:45px; height:45px;}
 	.main_section .btn_register_now {font-size: 30px; line-height: 70px;}
 
 	/* main > Invited speaker */
@@ -1073,8 +1073,8 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 }
 
 .main_section .section_bg{/* min-height:830px; */} /*230523 수정으로 인한 주석*/
-.main_section .img_vsl_text{top:90px;left:0;}
-.main_section .dates_area{bottom:52px;}
+.main_section .img_vsl_text{top:90px;left:0;width: 100%;max-width: 500px;}
+.main_section .dates_area{bottom:42px;}
 
 .exhibition .container_inner {margin-top:40px;}
 .contents_box.exhibition .clearfix2:not(:first-child) {margin-top:90px;}

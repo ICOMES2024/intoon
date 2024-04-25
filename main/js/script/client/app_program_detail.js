@@ -80,7 +80,9 @@ $(document).ready(function (){
         event.stopPropagation();
         //$(".program_alarm_pop").show();
         //$(this).toggleClass("on");
-        Schedule(event);
+        
+        //[240424] sujeong / 임시 주석 / 즐겨찾기 막기 / DB 수정 예정
+        //Schedule(event);
     });
 
     $(".app_scientific .program_detail_ul").on("click", ".program_detail_btn", function(event){
@@ -179,7 +181,6 @@ function selectProgram(){
         success : function(res){
             if(res.code == 200) {
                 let program_list = res.result;
-
                 history.replaceState({list:program_list, date, option_room, option_category, active: null},'', `#list`);
 
                 createHTMLList(program_list);
@@ -198,7 +199,7 @@ function selectProgram(){
 function createHTMLList(program_list, active){
     let _html = "";
 
-    const abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18'];
+    const abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'];
 
     if($(".program_detail_ul .loading_list").length > 0){
         $(".program_detail_ul .loading_list").detach();
@@ -219,7 +220,8 @@ function createHTMLList(program_list, active){
             let speaker_html = "";
 
             if(cl.speaker_idx!=null){
-                speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">Speakers info</a>';
+                //[240424] sujeong / 임시 주석 / 연자정보 버튼 숨기기
+                //speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">Speakers info</a>';
                 speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+', '+cl.nation+')'+'</p>';
             } else {
                 if(cl.speaker!=null){
@@ -248,7 +250,8 @@ function createHTMLList(program_list, active){
             if(pl.path==null){
                 pl.path = 'javascript:void(0)';
             }
-            abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
+            //[240424] sujeong / 임시 주석 / 초록보기 버튼 숨기기
+            //abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
         }
 
         if(pl.chairpersons!=null){
@@ -258,11 +261,14 @@ function createHTMLList(program_list, active){
             } else {
                 chairperson = "Chairperson: "
             }
-            chairpersons_html += '<p class="chairperson"><span class="bold">'+chairperson+'</span>'+pl.chairpersons+'</p>'
+            //[240424] sujeong / 임시 주석 / 좌장 숨기기
+            //chairpersons_html += '<p class="chairperson"><span class="bold">'+chairperson+'</span>'+pl.chairpersons+'</p>'
         }
 
         if(pl.preview!=null){
-            preview_html = ' <button class="preview_btn">Preview</button>';
+
+            //[240424] sujeong / 임시 주석 / 미리보기 버튼 숨기기
+            //preview_html = ' <button class="preview_btn">Preview</button>';
             detail_text_html += '<div class="detail_text">'+pl.preview+'</div>';
         }
 
@@ -288,7 +294,9 @@ function createHTMLList(program_list, active){
 
     $('.program_detail_ul li').detach();
     $('.program_detail_ul').html(_html);
-    scrollHandler()
+
+     //[240424] sujeong / 임시 주석 / scroll handler
+    //scrollHandler()
 }
 
 // [함수] 스크롤 핸들링 - 퍼블

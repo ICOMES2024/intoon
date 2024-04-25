@@ -69,6 +69,8 @@
 								<td class="input_wrap">
 									<input <?=$datepicker_set?> name="period_poster_start"> <span>~</span> <input <?=$datepicker_set?> name="period_poster_end">
 								</td>
+								<td></td>
+								<td></td>
 							</tr>
 							<tr>
 								<th>Lecture Note Submission 등록기간</th>
@@ -300,35 +302,39 @@
 			alert('행사 사전등록 종료일이 시작일보다 빠를 수 없습니다.');
 			$('input[name=period_event_pre_end]').val('').focus();
 
-		} else if (!verify_flags.period_live_start || !verify_flags.period_live_end) {
-			alert('라이브 플랫폼 행사기간을 모두 입력해주세요.');
+		} 
+		// else if (!verify_flags.period_live_start || !verify_flags.period_live_end) {
+		// 	alert('라이브 플랫폼 행사기간을 모두 입력해주세요.');
 
-		} else if (verify_flags.period_live_start > verify_flags.period_live_end) {
-			alert('라이브 플랫폼 행사 종료일이 시작일보다 빠를 수 없습니다.');
-			$('input[name=period_live_end]').val('').focus();
+		// } else if (verify_flags.period_live_start > verify_flags.period_live_end) {
+		// 	alert('라이브 플랫폼 행사 종료일이 시작일보다 빠를 수 없습니다.');
+		// 	$('input[name=period_live_end]').val('').focus();
 
-		} else if (!verify_flags.period_poster_start || !verify_flags.period_poster_end) {
+		// } 
+		else if (!verify_flags.period_poster_start || !verify_flags.period_poster_end) {
 			alert('Poster Abstract Submission 등록기간을 모두 입력해주세요.');
 
 		} else if (verify_flags.period_poster_start > verify_flags.period_poster_end) {
 			alert('Poster Abstract Submission 등록 종료일이 시작일보다 빠를 수 없습니다.');
 			$('input[name=period_poster_end]').val('').focus();
 
-		} else if (!verify_flags.period_lecture_start || !verify_flags.period_lecture_end) {
-			alert('Lecture Note Submission 등록기간을 모두 입력해주세요.');
+		} 
+		// else if (!verify_flags.period_lecture_start || !verify_flags.period_lecture_end) {
+		// 	alert('Lecture Note Submission 등록기간을 모두 입력해주세요.');
 
-		} else if (verify_flags.period_lecture_start > verify_flags.period_lecture_end) {
-			alert('Lecture Note Submission 등록 종료일이 시작일보다 빠를 수 없습니다.');
-			$('input[name=period_lecture_end]').val('').focus();
+		// } else if (verify_flags.period_lecture_start > verify_flags.period_lecture_end) {
+		// 	alert('Lecture Note Submission 등록 종료일이 시작일보다 빠를 수 없습니다.');
+		// 	$('input[name=period_lecture_end]').val('').focus();
 
-		} else if (!verify_flags.period_sponsorship_start || !verify_flags.period_sponsorship_end) {
-			alert('Sponsorship & Exhibition 신청기간을 모두 입력해주세요.');
+		// } else if (!verify_flags.period_sponsorship_start || !verify_flags.period_sponsorship_end) {
+		// 	alert('Sponsorship & Exhibition 신청기간을 모두 입력해주세요.');
 
-		} else if (verify_flags.period_sponsorship_start > verify_flags.period_sponsorship_end) {
-			alert('Sponsorship & Exhibition 신청 종료일이 시작일보다 빠를 수 없습니다.');
-			$('input[name=period_sponsorship_end]').val('').focus();
+		// } else if (verify_flags.period_sponsorship_start > verify_flags.period_sponsorship_end) {
+		// 	alert('Sponsorship & Exhibition 신청 종료일이 시작일보다 빠를 수 없습니다.');
+		// 	$('input[name=period_sponsorship_end]').val('').focus();
 
-		} else if (!verify_flags.price_exist) {
+		// } 
+		else if (!verify_flags.price_exist) {
 			alert('가격 정보를 1개 이상 등록해주세요.');
 			$('input[name=type_en]').focus();
 

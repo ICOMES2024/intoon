@@ -18,12 +18,12 @@
 	<div class="app_main_inner">
 		<div class="app_main_box">
 			<div class="app_main_txt">
-				<img src="./img/app_main_txt.svg" alt="">
-				<p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
-				<p>CONRAD Seoul Hotel, Korea</p>
+				<img src="https://image.webeon.net/icomes2024/app/2024_app_main_txt.svg" alt="">
+				<!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
+				<p>CONRAD Seoul Hotel, Korea</p> -->
 			</div>
 			<div class="app_login_box">
-				<p>* Please log in using the same ID you used to register on the ICOMES 2023 website.</p>
+				<p>* Please log in using the same ID you used to register on the ICOMES 2024 website.</p>
 				<ul>
 					<li>
 						<input type="text" name="email" placeholder="ID(email)">

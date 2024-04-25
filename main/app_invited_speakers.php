@@ -68,7 +68,7 @@ $initial_list = get_data($select_initial_query);
 	<div class="app_title_box">
 		<h2 class="app_title">
 			Invited Speakers
-			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
 	<div class="container_inner">
@@ -119,9 +119,13 @@ $initial_list = get_data($select_initial_query);
 							} else {
 								$favorite = "";
 							}
-
-							
-							$is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
+							$is_profile_img = "";
+							if($isl['image_path']){
+								$is_profile_img = $isl['image_path'];
+							}else{
+								$is_profile_img = '/main/img/profile_empty.png';
+							}
+							//$is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
 
 							if($isl['initial']==$ini['initial']){
                 ?>
@@ -152,7 +156,8 @@ $initial_list = get_data($select_initial_query);
 <script>
 	$(document).ready(function(){
 		$(".favorite_btn").click(function(e){
-            favorite(e);
+			//[240424] sujeong / 함수 주석 처리 / DB 변경 예정
+            //favorite(e);
 		})
 
         $(".search_icon").click(function(){

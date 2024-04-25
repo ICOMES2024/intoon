@@ -7,10 +7,14 @@ $locale = locale($language);
 <header class="blue_header">
     <div class="g_h_top">
         <div class="container">
-            <div class="dday_wrap">
+            <div class="dday_box">
+                <div class="dday_left">TODAY<p><?= $today; ?></p></div>
+                <div class="dday_right">D-<?= number_format($d_days); ?></div>
+            </div>
+            <!-- <div class="dday_wrap">
                 <div class="dday_top"><span>D-<?= number_format($d_days); ?></span></div>
                 <div class="dday_bot">Today is <span><?= $today; ?></span></div>
-            </div>
+            </div> -->
             <!-- <div class="text_center g_h_logo"><img src="/main/img/icon_logo2.svg" alt="" class="pointer" onClick="javascript:location.href='/main/index.php'"></div> -->
             <div class="g_h_logo"><img src="https://image.webeon.net/icomes2024/logo/icon_logo_blue.svg" alt="" class="pointer"
                     onClick="javascript:location.href='/main/index.php'"></div>
@@ -68,7 +72,7 @@ $locale = locale($language);
             <div class="nav_wrap pc_only">
                 <ul class="depth01 clearfix">
                     <li>
-                        <a href="/main/comingsoon.php">ICOMES 2024</a>
+                        <a href="/main/overview.php">ICOMES 2024</a>
                         <ul class="sub_nav">
                             <li><a href="/main/comingsoon.php">Welcome Message</a></li>
                             <li><a href="/main/organizing_committee.php">Organization</a></li>
@@ -79,9 +83,9 @@ $locale = locale($language);
                         </ul>
                     </li>
                     <li>
-                        <a href="/main/comingsoon.php">Program</a>
+                        <a href="/main/program_glance.php">Program</a>
                         <ul class="sub_nav">
-                        <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
+                        <li><a href="/main/program_glance.php">Program at a Glance</a></li>
                             <li>
                                 <!-- <a href="/main/program_detail.php">Program in Detail</a> -->
                             </li>
@@ -242,7 +246,7 @@ $(document).ready(function() {
                 <a href="javascript:;"
                     class="<?= (in_array($_page, $_page_config["m2"]) ? "show" : "") ?>"><span>Program</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m2"]) ? "block" : "none") ?>">
-                    <li><a href="/main/comingsoon.php">Program at a Glance</a></li>
+                    <li><a href="/main/program_glance.php">Program at a Glance</a></li>
                     <!-- <li><a href="/main/program_glance.php">Program at a Glance</a></li> 
                     <li><a href="/main/program_detail.php">Scientific Program</a></li>
                     <li><a href="/main/invited_speaker.php">Invited Speakers</a></li>-->

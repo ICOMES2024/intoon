@@ -125,7 +125,7 @@ foreach($program_list as $pl){
 	<div class="app_title_box">
 		<h2 class="app_title">
 			My Schedule
-			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
         <!-- [240402] sujeong / 디자인 미확정으로 마이 페이지 주석 -->
         <!-- <ul class="app_menu_tab langth_3">
@@ -136,7 +136,7 @@ foreach($program_list as $pl){
 	</div>
 	<div class="contents_box">
 		<div class="sponsor_grade schedule_area">
-			<a href="javascript:;" class="grade_title green_bg">Day 1 / September 5(Thu)</a>
+			<a href="javascript:;" class="grade_title deep_skyblue_bg">Day 1 / September 5 (Thu)</a>
 			<ul class="program_detail_ul">
                 <?php
                 foreach ($resultObj as $program){
@@ -145,7 +145,7 @@ foreach($program_list as $pl){
                     } else {
                         $schedule="";
                     }
-                    if($program['program_date']==='2023-09-05'){
+                    if($program['program_date']==='2024-09-05'){
                     ?>
                     <li name="">
                         <div class="main">
@@ -233,7 +233,7 @@ foreach($program_list as $pl){
                 }
                 ?>
 			</ul>
-			<a href="javascript:;" class="grade_title purple_bg">Day 2 / September 6(Fri)</a>
+			<a href="javascript:;" class="grade_title deep_blue_bg">Day 2 / September 6 (Fri)</a>
 			<ul class="program_detail_ul">
                 <?php
                 foreach ($resultObj as $program){
@@ -242,7 +242,7 @@ foreach($program_list as $pl){
                     } else {
                         $schedule="";
                     }
-                    if($program['program_date']==='2023-09-06'){
+                    if($program['program_date']==='2024-09-06'){
                         ?>
                         <li name="">
                             <div class="main">
@@ -330,7 +330,7 @@ foreach($program_list as $pl){
                 }
                 ?>
 			</ul>
-			<a href="javascript:;" class="grade_title pink_bg">Day 3 / September 7(Sat)</a>
+			<a href="javascript:;" class="grade_title deep_purple_bg">Day 3 / September 7 (Sat)</a>
 			<ul class="program_detail_ul">
                 <?php
                 foreach ($resultObj as $program){
@@ -339,7 +339,7 @@ foreach($program_list as $pl){
                     } else {
                         $schedule="";
                     }
-                    if($program['program_date']==='2023-09-07'){
+                    if($program['program_date']==='2024-09-07'){
                         ?>
                         <li name="">
                             <div class="main">

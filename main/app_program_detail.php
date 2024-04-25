@@ -133,7 +133,7 @@ echo '<script type="text/javascript">
 
     $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18 ORDER BY sort_num ASC";
     $category_list = get_data($select_category_sql);
-    $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18'];
+    $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'];
 
     $select_program_query = "
                             SELECT @rownum := @rownum+1 AS rownum, P.*
@@ -234,7 +234,7 @@ echo '<script type="text/javascript">
 	<div class="app_title_box">
 		<h2 class="app_title">
 			PROGRAM
-			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 		<ul class="app_menu_tab langth_2">
 			<li><a href="./app_program_glance.php">Program at a Glance</a></li>
@@ -256,17 +256,6 @@ echo '<script type="text/javascript">
 						<select name="option_room" id="option_room" class="sort_select" onchange="selectProgram();">
 							<option value="" hidden>Select Room</option>
 							<option value="" class="day1 day2 day3">All</option>
-<!--                            --><?php
-//                                foreach($place_list as $place){
-//									//$is_place_arr_type = (!empty($room_list) && in_array($place['program_place_name'], $room_list)) ? 1 : 0;
-//
-//									//if ($is_place_arr_type) {
-//                            ?>
-<!--										<option value="--><?php //=$place['idx']?><!--" --><?php //= !empty($option_room) && $place['idx'] == $option_room ? "selected" : "" ?><!-->--><?php //=$place['program_place_name']?><!--</option>-->
-<!--                            --><?php
-//									//}
-//								}
-//                            ?>
                             <option value="1" class="day1 day2 day3">Room1</option>
                             <option value="2" class="day1 day2 day3">Room2</option>
                             <option value="3" class="day1 day2 day3">Room3</option>
@@ -280,26 +269,22 @@ echo '<script type="text/javascript">
 						<select name="option_category" id="option_category" class="" onchange="selectProgram();">
                             <option value="" hidden>Select Category</option>
                             <option value="" class="day1 day2 day3">All</option>
-<!--                            --><?php
-//                                foreach($category_list as $category){
-//                            ?>
-<!--									<option value="--><?php //=$category['idx']?><!--" --><?php //= !empty($option_category) && $category['idx'] == $option_category ? "selected" : "" ?><!-->--><?php //=$category['title']?><!--</option>-->
-<!--                            --><?php
-//								}
-//                            ?>
+
                             <option value="5" class="day2 day3">Pleanary Lecture</option>
                             <option value="6" class="day2 day3">Keynote Lecture</option>
                             <option value="8" class="day2 day3">Symposium</option>
-                            <option value="15" class="day2">Joint Symposium</option>
-                            <option value="9" class="day2">Obesity Treatment Guidelines Symposium</option>
-                            <option value="7" class="day3">Best Articles in JOMES</option>
-                            <option value="10" class="day1">Pre-congress Symposium</option>
+                            <option value="15" class="day1 day2">Joint Symposium</option>
+                            <option value="9" class="day1">Obesity Treatment Guidelines Symposium</option>
+                            <option value="7" class="day1">Best Articles in JOMES</option>
+                            <!-- <option value="10" class="day1">Pre-congress Symposium</option> -->
                             <option value="11" class="day2 day3">Breakfast Symposium</option>
                             <option value="12" class="day2 day3">Luncheon Symposium</option>
                             <option value="13" class="day1">Satellite Symposium</option>
                             <option value="14" class="day2 day3">Sponsored Session</option>
                             <option value="16" class="day2 day3">Oral Presentation</option>
                             <option value="17" class="day2 day3">Guided Poster Presentation</option>
+                            <option value="19" class="day1">Committee Session</option>
+                            <option value="20" class="day3">Presidential Lecture</option>
                             <option value="1" class="day2">Opening Address</option>
                             <option value="2" class="day3">Closing & Award Ceremony</option>
                             <option value="3" class="day1">Welcome Cocktail Party</option>

@@ -15,7 +15,7 @@
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
 
 	<div class="app_title_box">
-		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		<ul class="app_menu_tab langth_2">
 			<li class="on"><a href="./app_sponsor.php">Sponsorship</a></li>
 			<li><a href="./app_sponsor_exhibition.php">Exhibition</a></li>
