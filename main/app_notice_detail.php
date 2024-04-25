@@ -22,7 +22,7 @@ $notice = sql_fetch($select_notice_detail_query);
 			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_notice.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="app_contents_wrap type3">
 				<div class="app_notice_detail">

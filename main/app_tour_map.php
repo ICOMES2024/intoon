@@ -11,7 +11,7 @@
 			<li class="on"><a href="./app_tour_map.php">Tour Map</a></li>
 		</ul>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<ul class="app_tab min_tab">
 				<li class="on"><a href="javascript:;">3F</a></li>

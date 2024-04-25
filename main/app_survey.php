@@ -11,7 +11,7 @@
 			</button>
 		</h2>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="app_contents_wrap">
 				<div class="survey_box box_top">

@@ -149,7 +149,7 @@ if (empty($_SESSION["USER"])) {
 			<li class="on"><a href="./app_stamp_list.php">Stamp List</a></li>
 		</ul>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="app_contents_wrap type2">
                 <ul class="stamp_list">

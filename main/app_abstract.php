@@ -64,7 +64,7 @@ $abstract_list = get_data($select_abstract_query);
 	<div class="app_title_box">
 		<h2 class="app_title">Abstract<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 	</div>
-	<div class="container_inner w_full">
+	<div class="inner w_full">
 		<div class="app_contents_box">
 			<div class="app_contents_wrap type3">
 				<ul class="app_sort_form app_half_ul fix_cont">

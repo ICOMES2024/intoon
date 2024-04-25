@@ -13,7 +13,7 @@
 			<!-- <li><a href="./app_tour_map.php">Tour Map</a></li> -->
 		</ul>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="app_contents_wrap type3">
 				<img style="width: 100%;" src="/main/img/app_pop_stamp_tour_event.png"/>

@@ -11,7 +11,7 @@
 			<li><a href="./app_tour_map.php">Tour Map</a></li>
 		</ul>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="stamp_count">
 				<div class="stamp_collect">

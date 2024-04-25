@@ -44,7 +44,7 @@ if (empty($_SESSION["USER"])) {
 		</h2>
 		<p class="app_setting_desc">ICOMES 2024 event information and real-time information can be received by mobile app push.</p>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="app_push_area">
 				<p>PUSH</p>
