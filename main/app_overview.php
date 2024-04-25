@@ -15,7 +15,7 @@
 			<li><a href="./app_venue.php">Venue</a></li>
 		</ul>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="app_contents_wrap type3">
 				<ul class="app_overview_ul">

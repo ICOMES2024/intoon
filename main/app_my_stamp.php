@@ -159,7 +159,7 @@
 			<li><a href="./app_stamp_list.php">Stamp List</a></li>
 		</ul>
 	</div>
-	<div class="container_inner">
+	<div class="inner">
 		<input type="hidden" name="mn" value="<?=$_SESSION["USER"]["idx"]?>"/>
 		<div class="contents_box">
 			<div class="stamp_count">

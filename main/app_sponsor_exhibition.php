@@ -19,7 +19,7 @@
 		</ul>
 	</div>
     <!-- 앱 뷰 -->
-	<div class="container_inner">
+	<div class="inner">
 		<div class="contents_box">
 			<ul class="app_tab min_tab fix_cont">
 				<li class="on"><a href="javascript:;">3F</a></li>

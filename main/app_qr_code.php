@@ -71,7 +71,7 @@
 			<button type="button" class="app_title_prev" onclick="javascript:window.history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
 	</div>
-	<div class="container_inner inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="contents_wrap">
                 <p class="app_qr_num">No. <?=$member_data['r_idx']?></p>

@@ -65,7 +65,7 @@
 				<!-- <li><a href="./app_schedule.php">My Schedule</a></li> -->
 			</ul>
 		</div>
-	<div class="container_inner inner">
+	<div class="inner">
 		<div class="contents_box">
 			<div class="contents_wrap_my_page">
 				<p class="mypage_abstract_txt">Review of Submission</p>
