@@ -105,6 +105,7 @@ header.blue_header {/*background-color: #9897CA;*/ background-color: #5C0378; po
 section.container {/*margin-top: 125px;*/ border: 1px solid transparent;}
 section.container.login.bg {border: 0px;}
 
+
 /* main > top title */
 /*.green_t {color:#00666B !important; font:inherit;}
 .main_section .txt_wrap h1 {font-family: 'Montserrat', sans-serif; letter-spacing: 1px;}
@@ -247,6 +248,7 @@ section.faq .select_box {width: 100%; text-align: right; margin-bottom: 27px;}
 /*로그인*/
 .container.login.bg {max-width:100%; width:100%; padding:0px 16px 100px;}
 .container.login.bg {/*background: url("../img/img_login_bg2.jpg") no-repeat center /cover; position:relative;*/ background-color: #fff;}
+.find_password{background: url("https://image.webeon.net/icomes2024/app/2024_app_login_bg2.png") no-repeat center /cover; position:relative;    padding: 138px 16px 100px !important;}
 .container.login.bg:before {content:''; display:block; width:100%; height:100%; background-color:rgba(0,0,0,0.43); position:absolute; left:0; top:0; z-index:0;}
 .login_img img{width: 100%;}
 .container.login .logo {max-width: 400px; margin-bottom: 10px;}
