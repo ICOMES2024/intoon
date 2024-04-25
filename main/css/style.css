@@ -63,10 +63,10 @@
 .app_scientific.app_program_detail .app_sort_form.app_half_ul {gap:0;}
 
 /*App main*/
-.container.app_version.main { padding-bottom: /*120*/150px !important; margin-top: 0; padding-top: 60px !important; }
-.app_vsl {position:relative; max-width:1200px; margin:0 auto 30px; width:85%;}
+.container.app_version.main { padding-bottom: 120px !important; margin-top: 0; padding-top: 60px !important; }
+.app_vsl {position:relative; max-width:1200px; margin:0 auto 30px; width:70%;}
 .app_vsl .text {display:block; width:100%;}
-.app_index_menu {display:block; width:100%; margin:0 auto; display:flex; flex-wrap:wrap; justify-contents:space-between;}
+.app_index_menu {display:block; width:100%; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between;}
 .app_index_menu:after {content:''; display:block; clear:both;}
 .app_index_menu li {width:calc(33.33%); text-align:center;}
 .app_index_menu li:nth-child(n+4) {margin-top:10px;}

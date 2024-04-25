@@ -65,28 +65,25 @@ if(empty($member_idx)){
 		</div>
 	</div>
 	<div class="ft_inner">
+		<img class="app_footer_img" alt="footer" src="https://image.webeon.net/icomes2024/app/2024_app_footer.svg"/>
 		<ul class="ft_menu">
 			<li>
-				<a href="/main/app_index.php"><img src="/main/img/icons/icon_ft_home.svg" alt=""><span>HOME</span></a>
+				<a href="/main/app_index.php"></a>
 			</li>
 			<li>
-				<a href="/main/app_program_glance.php"><img src="/main/img/icons/icon_ft_program.svg" alt=""><span>PROGRAM</span></a>
+				<a href="/main/app_program_glance.php"></a>
 			</li>
 			<li class="round_menu">
 				<a href="/main/app_qr_code.php">
-					<div class="qr_blue">
-						<img src="/main/img/icons/icon_ft_qr.svg" alt="">
-					</div>
-					<span>QR CODE</span>
 				</a>
 			</li>
 			<li>
-				<a href="/main/app_schedule.php"><img src="/main/img/icons/icon_ft_abstract.svg" alt=""><span>ABSTRACT</span></a>
+				<a href="/main/app_schedule.php"></a>
 			</li>
 			<li>
 				<!-- [240328] sujeong / app_my_page -->
 				<!-- <a href="/main/app_registration.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY PAGE</span></a> -->
-				<a href="/main/app_registration.php"><img src="/main/img/icons/icon_ft_schedule.svg" alt=""><span>MY PAGE</span></a>
+				<a href="/main/app_registration.php"></a>
 			</li>
 		</ul>
 	</div>

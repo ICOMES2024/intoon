@@ -1,7 +1,8 @@
 <?php
 // error_reporting(E_ALL);
 // ini_set("display_errors", 1);
-require_once ('/var/www/icomes.or.kr/main/plugin/google-api-php-client-main/vendor/autoload.php');
+// include_once ('../plugin/google-api-php-client-main/vendor/autoload.php');
+include_once ('/var/www/icomes.or.kr/main/plugin/google-api-php-client-main/vendor/autoload.php');
 class Push
 {
     //[240214] sujeong / api key 전송 방식에서 token 전송 방식으로 수정 / device 상관 X 

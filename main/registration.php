@@ -558,6 +558,13 @@ if ($during_yn !== "Y") {
 
                         </ul>
                     </li>
+					<li>
+						<p class="label">Have you received the ICOMES 2024 promotion code?</p>
+						<input type="radio" class='checkbox' name="promotion_code" value="Y" id="promotion_y"/>
+						<label for="promotion_y" style="margin-right:14px;">Yes</label>
+						<input type="radio" class='checkbox' name="promotion_code" value="N" id="promotion_n" checked/>
+						<label for="promotion_n">No</label>
+					</li>
 					<?php if($prev["status"] != 2 && $prev["status"] != 3){?>
 						<li>
 							<p class="label type2"><?=$locale("register_online_question7_2023")?></p>
@@ -669,12 +676,12 @@ if ($during_yn !== "Y") {
 		$('.promotion_code_tr').hide();
 		$('.total_fee_tr').hide();
 
-		let sponsor1 = false;
-		let sponsor2 = false;
-		let sponsor3 = false;
+		// let sponsor1 = false;
+		// let sponsor2 = false;
+		// let sponsor3 = false;
 
 		//[230315] sujeong / 페이지 로딩 시 체크된 값 확인하는 함수
-		checkSponsor();
+		//checkSponsor();
 		
 		$(document).on("click", "#license_checkbox", function() {
 			//console.log($(this).is(':checked'));
@@ -776,30 +783,41 @@ if ($during_yn !== "Y") {
 		*/
 		
 		//[230315] sujeong / 페이지 로딩 시 체크된 값 확인하는 함수
-		function checkSponsor(value){
-			if($("select[name=participation_type]").val() === "Sponsor"){
-				sponsor1 = true;
-			}
-			if($("select[name=occupation]").val() === "Sponsor"){
-				sponsor2 = true;
-			}
-			if($("select[name=category]").val() === "Sponsor"){
-				sponsor3 = true;
-			}
-			showPromotionCode()
-		}
+		// function checkSponsor(value){
+		// 	if($("select[name=participation_type]").val() === "Sponsor"){
+		// 		sponsor1 = true;
+		// 	}
+		// 	if($("select[name=occupation]").val() === "Sponsor"){
+		// 		sponsor2 = true;
+		// 	}
+		// 	if($("select[name=category]").val() === "Sponsor"){
+		// 		sponsor3 = true;
+		// 	}
+		// 	showPromotionCode()
+		// }
 
 		//[240314] sujeong / 함수 추가
-		function showPromotionCode(){
+		function showPromotionCode(promotionValue){
+			//console.log(promotionValue);
 
-			if(sponsor1 === true && sponsor2 === true && sponsor3 === true){
+			if(promotionValue === 'Y'){
 				$('.promotion_code_tr').show();
 				$('.total_fee_tr').show();
 			}else{
 				$('.promotion_code_tr').hide();
 				$('.total_fee_tr').hide();
 			}
-		}
+		};
+
+		$("input[name=promotion_code]").on("click", function(){
+			if($("#promotion_y").is(":checked")){
+				showPromotionCode('Y')
+			}else if($("#promotion_n").is(":checked")){
+				showPromotionCode('N')
+			}
+		});
+
+
 		
         $(".next_btn").on("click", function (){
              if(!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
@@ -812,63 +830,63 @@ if ($during_yn !== "Y") {
         });
 
 		//[240314] sujeong / category sponsor 조건 추가
-		$("select[name=category]").on("change", function(){
-			const val = $(this).val();
+		// $("select[name=category]").on("change", function(){
+		// 	const val = $(this).val();
 
-			const prevTitle = $("input[name=title_prev_input]").val() ?? "";
+		// 	const prevTitle = $("input[name=title_prev_input]").val() ?? "";
 
-			if(val === 'Others' && val !== "Sponsor"){
-				sponsor3 = false;
-				if(!$(this).parent("li").next('.hide_input').hasClass("on")){
-					$(this).parent("li").next('.hide_input').addClass("on");
-				}
-			}else if(val !== 'Others' && val === "Sponsor"){
-				sponsor3 = true;
-				$(this).parent("li").next('.hide_input').removeClass("on");
-				$("input[name=title_input]").val(prevTitle);
-			}else{
-				sponsor3 = false;
-				$(this).parent("li").next('.hide_input').removeClass("on");
-				$("input[name=title_input]").val(prevTitle);
-			}
-			showPromotionCode();
-		});
+		// 	if(val === 'Others' && val !== "Sponsor"){
+		// 		sponsor3 = false;
+		// 		if(!$(this).parent("li").next('.hide_input').hasClass("on")){
+		// 			$(this).parent("li").next('.hide_input').addClass("on");
+		// 		}
+		// 	}else if(val !== 'Others' && val === "Sponsor"){
+		// 		sponsor3 = true;
+		// 		$(this).parent("li").next('.hide_input').removeClass("on");
+		// 		$("input[name=title_input]").val(prevTitle);
+		// 	}else{
+		// 		sponsor3 = false;
+		// 		$(this).parent("li").next('.hide_input').removeClass("on");
+		// 		$("input[name=title_input]").val(prevTitle);
+		// 	}
+		// 	showPromotionCode();
+		// });
 
 		//[240314] sujeong / occupation sponsor 조건 추가
-        $("select[name=occupation]").on("change", function(){
-            const val2 = $(this).val();
-            const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
+        // $("select[name=occupation]").on("change", function(){
+        //     const val2 = $(this).val();
+        //     const prevTitle2 = $("input[name=occupation_prev_input]").val() ?? "";
 
-            if(val2 === 'Others' && val2 !== "Sponsor"){
-				sponsor2 = false;
-                if(!$(this).parent("li").next('.hide_input').hasClass("on")){
-                    $(this).parent("li").next('.hide_input').addClass("on");
-                }
-            }else if(val2 !== 'Others' && val2 === "Sponsor"){
-				sponsor2 = true;
-				$(this).parent("li").next('.hide_input').removeClass("on");
-                $("input[name=occupation_input]").val(prevTitle2);
-			}else{
-				sponsor2 = false;
-                $(this).parent("li").next('.hide_input').removeClass("on");
-                $("input[name=occupation_input]").val(prevTitle2);
-            }
+        //     if(val2 === 'Others' && val2 !== "Sponsor"){
+		// 		sponsor2 = false;
+        //         if(!$(this).parent("li").next('.hide_input').hasClass("on")){
+        //             $(this).parent("li").next('.hide_input').addClass("on");
+        //         }
+        //     }else if(val2 !== 'Others' && val2 === "Sponsor"){
+		// 		sponsor2 = true;
+		// 		$(this).parent("li").next('.hide_input').removeClass("on");
+        //         $("input[name=occupation_input]").val(prevTitle2);
+		// 	}else{
+		// 		sponsor2 = false;
+        //         $(this).parent("li").next('.hide_input').removeClass("on");
+        //         $("input[name=occupation_input]").val(prevTitle2);
+        //     }
 
-			showPromotionCode();
-        });
+		// 	showPromotionCode();
+        // });
 
 		//[240314] sujeong / participation_type sponsor 조건 추가
-		$("select[name=participation_type]").on("change", function(){
-            const val3 = $(this).val();
+		// $("select[name=participation_type]").on("change", function(){
+        //     const val3 = $(this).val();
           
-            if(val3 == "Sponsor"){
-				sponsor1 = true;
-            }else{
-				sponsor1 = false;
-            }
+        //     if(val3 == "Sponsor"){
+		// 		sponsor1 = true;
+        //     }else{
+		// 		sponsor1 = false;
+        //     }
 
-			showPromotionCode();
-        });
+		// 	showPromotionCode();
+        // });
 
 
 

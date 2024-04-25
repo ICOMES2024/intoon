@@ -431,7 +431,7 @@ section.container.organizing {padding-bottom: 190px;}
 /*  main :: HUBDNC LJH2 수정 */
 .main .footer_wrap {padding:0;}
 .main .footer_wrap .footer, .main .sponsor_logo-wrap {display:none;}
-.main_section {width:100%; min-height:100vh;}
+.main_section {width:100%; min-height:100vh; padding-bottom: 40px;background-color: #fff;}
 .main_section * {font-family: 'Nanum Gothic', sans-serif;line-height: 1;}
 .main_section .container{max-width:1200px;padding-top:216px;padding-bottom:55px;position:relative;}
 .main_section .txt_wrap{text-align:center; position:relative; z-index:2;}
@@ -622,9 +622,9 @@ section.container.organizing {padding-bottom: 190px;}
 /* 230511 HUBDNCLHJ ******* 작업 */
 .long_btn {font-size: 22px; color: #FFF; border: 0; border-radius: 25px; background-color: #0066CC; width: 100%; max-width: 400px;}
 .long_btn.type2 {font-size: 18px; border-radius: 99px; height: auto; }
-section.container .page_title {background: #7CC6E4; width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 40px 0 48px;color: #FFF;}
+section.container .page_title {background: #7CC6E4; width:100%; height: 135px; position: absolute; left: 0;top: 0; padding: 40px 0 48px;color: #FFF;letter-spacing: 1px;}
 .inner {padding-top:50px;}
-h3.title:before {content:'';display: inline-block;  width: 9px;height: 9px; background: transparent; border:6px solid #4267C5; margin-bottom: 2px; border-radius:50%; margin-right: 10px; vertical-align: middle;}
+h3.title:before {content:'';display: inline-block;  width: 20px;height: 13px; background: url("https://image.webeon.net/icomes2024/logo/2024_icomes_title.svg");/*border:6px solid #4267C5;*/ margin-bottom: 2px; /*border-radius:50%; */margin-right: 10px; vertical-align: middle;}
 h3.title.icon_none {padding-left:0;}
 h3.title.icon_none:before {display:none;}
 section.container.login .page_title {color:#fff; text-align:center; margin-bottom:52px; position: relative; line-height:1; background: transparent;}
@@ -636,7 +636,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 .invited_speaker .speaker_list > li h2:before {content:''; display: block; width: 6px;height: 6px; background: transparent; border:4px solid #5699F8; border-radius:50%;}
 .invited_speaker .speaker_list > li h2 > p {font-size:16px; }
 .invited_speaker .speaker_list .desc_wrap  {font-size:16px; display:flex; flex-direction:column; justify-content:space-between; }
-.invited_speaker .speaker_list .desc_wrap > p:before {content:''; display: block; width: 3px; height:100%; background-color:#5699F8; margin-right: 10px; margin-top: 1px; flex-shrink:0;}
+.invited_speaker .speaker_list .desc_wrap > p:before {content:''; display: block; width: 3px; height:100%; /*background-color:#5699F8;*/ margin-right: 10px; margin-top: 1px; flex-shrink:0;}
 .invited_speaker .speaker_list .desc_wrap > p {display:flex;}
 .invited_speaker .speaker_list > li .flex {margin-top: 0; padding:15px;}
 .invited_speaker .speaker_list .profile_wrap {margin: 0;}
@@ -1157,7 +1157,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	.pop_contents .pop_close{top:15px;right:15px;}
 	.pop_contents .pop_close_w{top:-40px;right:35px;}
 	.input_table .radio_wrap{padding:10px 0;}
-	h3.title:before {width: 7px;height: 7px; border-width:4px; margin-right: 6px;}
+	h3.title:before {width: 20px;height: 13px; border-width:4px; margin-right: 6px;}
 
 	/* ▼ Tab 수정으로 인한 주석 - 230517 HUBDNC AJY */
 	/* 220323 HUBDNC LJH2 추가*/
@@ -1587,4 +1587,145 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 .program_room{
 	background-color:#130553 !important;
 	color: #FFF !important;
+}
+
+/* Main - plenary & keynote speaker */
+.speakers_wrap .main_speaker_wrap {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 35px;
+}
+
+.speakers_wrap .main_speaker_wrap > div{
+	width: 25%;
+	max-width: 258px;
+	flex-shrink: 0;
+	position: relative;
+}
+.speakers_wrap .main_speaker_wrap > div:nth-child(1){
+	/* top:-10px; */
+	height: 257px;
+}
+
+.speakers_wrap .main_speaker_wrap > div:nth-child(2){
+	top:-10px;
+	height: 269px;
+}
+
+.speakers_wrap .main_speaker_wrap > div:nth-child(3){
+	height: 260px;
+}
+.speakers_wrap .main_speaker_wrap > div:nth-child(4){
+	height: 260px;
+}
+
+.speakers_wrap .main_speaker_wrap > div:nth-child(5){
+	top:-85px;
+	height: 273px;
+}
+
+.speakers_wrap .main_speaker_wrap > div:nth-child(6){
+	top:-84px;
+	height: 273px;
+}
+
+.speakers_wrap .main_speaker_wrap > div:nth-child(7){
+	top:-64px;
+	height: 254px;
+}
+
+.speakers_wrap .main_speaker_wrap > div > img {
+	width: 100%;
+	/* height: 100%; */
+}
+
+
+@media screen and (max-width:1290px) {
+		
+	.speakers_wrap .main_speaker_wrap > div{
+		top:0px !important;
+	}
+}
+
+
+@media screen and (max-width:1020px) {
+		
+	.speakers_wrap .main_speaker_wrap > div{
+		width: 45%;
+	}
+}
+
+@media screen and (max-width:600px) {
+		
+	.speakers_wrap .main_speaker_wrap > div{
+		width: 80%;
+	}
+
+	.speakers_wrap .main_speaker_wrap{
+		gap: 0;
+	}
+}
+
+/* header - d-day box*/
+.blue_header .dday_box{
+	position: absolute;
+	width: 230px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 25px;
+	/* background: #D9E1FD 0% 0% no-repeat padding-box; */
+	background: linear-gradient(124deg, #D9E1FD 48%, transparent 48%),
+				linear-gradient(180deg, #B411A7 0%, #5C0378 100%)							
+}
+
+.blue_header .dday_box .dday_left{
+	padding-left: 14px;
+	width: 90px;
+	height: 100%;
+	font-size: 12px;
+	text-align: center;
+	font: normal normal bold 12px/15px Nanum Gothic;
+	letter-spacing: 0px;
+	color: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.blue_header .dday_box .dday_left > p{
+	font-size: 12px;
+	text-align: center;
+	font: normal normal bold 12px/15px Nanum Gothic;
+	letter-spacing: 0px;
+	color: #000000;
+}
+
+.blue_header .dday_box .dday_right{
+	width: 95px;
+	height: 100%;
+	text-align: center;
+	font: normal normal 800 24px/17px Nanum Gothic;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 24px;
+}
+
+.app_footer_img{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.ft_menu > li > a{
+	width: 60px;
+    height: 50px;
 }

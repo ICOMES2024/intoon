@@ -57,7 +57,7 @@
 	<div class="app_title_box">
 			<h2 class="app_title">
 				My Page
-				<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
+				<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 			</h2>
 			<ul class="app_menu_tab langth_2">
 				<li><a href="./app_registration.php">Registration</a></li>
