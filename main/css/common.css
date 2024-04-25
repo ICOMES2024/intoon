@@ -1021,7 +1021,7 @@ section.container.sponsor {padding-top: 164px;}
 .style_2023.login_form .btn {height:61px; border-radius:0;}
 .style_2023.login_form .main_btn {background-color:#FFFE04; border-color:#FFFE04; color:#000;}
 .style_2023.login_form .gray_line_btn {background-color:#EDEDED; border-color:#AAAAAA; color:#000000;}
-
+.icomes_2024_login_btn{background-color:#000066 !important; border-color:#000066!important; color:#FFFFFF!important;}
 
 @media screen and (max-width: 768px){
 	/* 로그인 */

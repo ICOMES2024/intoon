@@ -26,7 +26,7 @@
 			<!-- <div class="text_r"> -->
 			<!-- 	<a href="./find_password.php"><?=$locale("find_password")?> ></a> -->
 			<!-- </div> -->
-			<button type="button" class="btn login_btn main_btn"><?=$locale("login")?></button>
+			<button type="button" class="btn login_btn main_btn icomes_2024_login_btn"><?=$locale("login")?></button>
 			<div class="btn_wrap clearfix2">
 				<button type="button" class="btn gray_line_btn" onclick="window.location.href='./find_password.php';"><?=$locale("find_password")?></button>
 				<button type="button" class="btn gray_line_btn" onclick="window.location.href='./signup.php';"><?=$locale("signup")?></button>

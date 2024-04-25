@@ -272,7 +272,16 @@ section.container.organizing {padding-bottom: 190px;}
 .registration .payment_wrap img{width: 100%;}
 /* 220406 HUBDNC LJH2 추가 */
 .registration .title + .details {margin-bottom: 100px;}
-.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td {font-size:12px;line-height: 1.5;}
+.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td {/*font-size:12px;*/line-height: 1.5;}
+
+/*[240425] sujeong / 학회팀 요청 / 글씨 크기 키우기*/
+.registration .title + .details.icomes_air th{font-size: 16px;}
+.registration .title + .details.icomes_air td{font-size:14px;}
+@media screen and (max-width:1100px) {
+	.registration .title + .details.icomes_air th, .registration .title + .details.icomes_air td{font-size: 12px;}
+}
+
+
 .registration .title + .details.icomes_air th span {font-size:12px;line-height: 1.5;}
 .registration .btn_wrap {text-align: center; margin-top: 40px;}
 .rating_guide_pop .btn {font-size: 20px; padding: 0 30px; border-radius: 0;}
