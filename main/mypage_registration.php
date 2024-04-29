@@ -403,7 +403,7 @@
 												</tr>
 												<?php if(!empty($list["promotion_code_number"])){ ?>
 													<tr class="tr_bg">
-													<th>Promotion Code</th>
+													<th>Invitation Code </th>
 													<td><?=$list["promotion_code_number"]?></td>
 												</tr>
 												<?php } ?>
