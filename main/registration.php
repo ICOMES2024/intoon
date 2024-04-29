@@ -559,7 +559,8 @@ if ($during_yn !== "Y") {
                         </ul>
                     </li>
 					<li>
-						<p class="label">Have you received the ICOMES 2024 promotion code?</p>
+						<!-- [240429] sujeong / 학회팀 요청 문구 수정 / promotion code -> invitation code  -->
+						<p class="label">Have you received the ICOMES 2024 invitation code?</p>
 						<input type="radio" class='checkbox' name="promotion_code" value="Y" id="promotion_y"/>
 						<label for="promotion_y" style="margin-right:14px;">Yes</label>
 						<input type="radio" class='checkbox' name="promotion_code" value="N" id="promotion_n" checked/>
@@ -596,11 +597,11 @@ if ($during_yn !== "Y") {
 											</td>
 										</tr>
 										<tr class="promotion_code_tr">
-											<th>Promotion Code</th>
+											<th>Invitation Code </th>
 											<td>
 												<ul class="half_ul" style="min-width:300px;">
 													<li>
-														<input type="text" placeholder="Promotion code" name="promotion_code" value="<?=$prev["promotion_code_number"] ?? ""?>">
+														<input type="text" placeholder="Invitation code" name="promotion_code" value="<?=$prev["promotion_code_number"] ?? ""?>">
 														<input type="hidden" name="promotion_confirm_code" value="<?=$prev["promotion_code"] ?? ""?>"/>
 													</li>
 													<li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?=$prev["recommended_by"] ?? ""?>" maxlength="100" onkeyup="checkRegExp(this);" onchange="checkRegExp(this);"></li>
