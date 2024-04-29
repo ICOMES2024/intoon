@@ -29,7 +29,7 @@
 .sponsor_list a {width:calc(100% - 10px);height:100%; border:1px solid #e7e7e7; position:relative;}
 .sponsor_list img {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); max-width:95%; max-height:95%;/*width:139px; height:100%; max-width:150px;*/}
 
-.main_section .main_img {position: absolute; top: 0; right: -54px; scale: 0.95;}
+.main_section .main_img {position: absolute; top: 0; right: -29px; scale: 0.95;}
 
 /* 로그인 > 스폰서부분 추가 - HUBDNCHYJ */
 .log_sponsor {max-width:950px; padding: 42px 74px; border-radius: 10px; background-color: #f2f5f7; margin:50px auto 0;}
