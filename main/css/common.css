@@ -58,6 +58,29 @@ html {-webkit-touch-callout:none; -webkit-user-select:text; -webkit-tap-highligh
 
 /*font_size & color & family*/
 *{font-family: 'Nanum Gothic', sans-serif; font-size:16px; box-sizing:border-box; color:#585858; /*IOS 폰트사이즈*/-webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */ -ms-text-size-adjust : none;  /* IE */ -moz-text-size-adjust : none;  /* 파이어폭스 */ -o-text-size-adjust : none;  /* 오페라 구버전 */}
+
+html::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+html::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    /* background: #5C0378; 스크롤바의 색상 */
+    background: #000166; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgba(33, 58, 244, 0.1);  /*스크롤바 뒷 배경 색상*/
+}
+html::-webkit-scrollbar-thumb:active{
+	background: #000166;
+}
+html::-webkit-scrollbar-thumb:hover{
+	background: #000166;
+}
+
 .point_txt{color:#000066 !important;} /*초록색*/
 .point2_txt{color:#F6A400 !important;} /*노랑색*/
 .point3_txt{color:#3366CC !important;} /*파란색*/

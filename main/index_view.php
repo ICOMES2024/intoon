@@ -74,7 +74,7 @@
 		<div class="container">
 			<!-- <img src="https://image.webeon.net/icomes2024/main/2024_img_vsl_text_2.png" class="pc_only img_vsl_text" alt="">
 			<img src="https://image.webeon.net/icomes2024/main/2024_main_img.png" class="pc_only main_img" alt=""> -->
-			<img src="https://image.webeon.net/icomes2024/main/2024_icomes_main-2.png" class="pc_only main_img"/>
+			<img src="https://image.webeon.net/icomes2024/main/2024_icomes_main_v2.png" class="pc_only main_img"/>
 			<div class="mb_only img_vsl_text" style="">
 			</div>
 			<!-- 상단 타이틀 -->
