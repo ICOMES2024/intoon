@@ -300,7 +300,11 @@
 		$(".app_contents_wrap").children(".floor").eq(i).addClass("on");
 	});
 </script>
-
+<script>
+	$(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
+</script>
 
 <?php 
   

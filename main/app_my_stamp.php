@@ -360,5 +360,9 @@
 		<p class="white_t center_t">Thank you for your participation!</p>
 	</div>
 </div>
-
+<script>
+	$(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
+</script>
 <?php include_once('./include/app_footer.php');?>

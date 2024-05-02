@@ -185,6 +185,11 @@ window.initMap = function () {
 	var map = new kakao.maps.Map(container, options);
 </script>
 -->
+<script>
+	$(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
+</script>
 
 <?php 
 

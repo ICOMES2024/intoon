@@ -243,7 +243,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_3">
-									Symposium 3 <p>Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
+									Symposium 3 <p> Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_4">
@@ -348,7 +348,7 @@
 									<div class="colons_div">14:00-15:30</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_5">
-									Symposium 5 <p></p>
+									Symposium 5 <p>Current Perspectives on Health Inequity in Obesity</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_6">
@@ -734,6 +734,7 @@ $(document).ready(function() {
 		}
 	});
 	$(window).trigger("resize");*/
+	$(".app_header").removeClass("simple");
 
 	$(".hold_pop .pop_contents").click(function(){
 		$(".hold_pop").hide();

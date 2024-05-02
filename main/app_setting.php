@@ -90,5 +90,10 @@ if (empty($_SESSION["USER"])) {
         });
     });
 </script>
+<script>
+	$(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
+</script>
 
 <?php include_once('./include/app_footer.php');?>

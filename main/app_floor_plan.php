@@ -241,6 +241,9 @@
 <script>
 	$(document).ready(function(){
 		// var div_height = $(".a_wrap > a").outerHeight();
+
+        $(".app_header").removeClass("simple");
+
 		$(window).resize(function(){
 			$(".a_wrap > a").each(function(){
 				var div_height = $(this).outerHeight();

@@ -35,6 +35,9 @@ section.container.login.bg {margin-top: 0 !important;}
     var alreadyProcess = false; // 더블 클릭 방지
 
     $(document).ready(function() {
+        
+        $(".app_header").removeClass("simple");
+
         $(".login_btn").on("click", function() {
             if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
                 window.location.href="./app_login.php";
@@ -46,6 +49,9 @@ section.container.login.bg {margin-top: 0 !important;}
                 }
             }
         });
+
+
+
 
         // 비밀번호 찾기 Enter
         $("input[name=email]").on("keyup", function(key) {

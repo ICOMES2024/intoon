@@ -104,6 +104,10 @@ $abstract_list = get_data($select_abstract_query);
         let path = event.target.href;
         openPDF(path);
     });
+
+    $(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
 </script>
 <?php
 	include_once ("./include/app_footer.php");

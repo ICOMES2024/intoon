@@ -169,6 +169,8 @@ $program_list = get_data($select_program_query);
 <script>
 	$(document).ready(function() {
 
+		$(".app_header").removeClass("simple");
+
 		$(".program_detail_ul > li").click(function() {
 			var e = $(this).find("input[name=e]").val();
 			var day = $(this).attr("class");

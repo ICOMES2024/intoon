@@ -193,6 +193,11 @@
 		$(".app_contents_wrap").children(".floor").removeClass("on");
 		$(".app_contents_wrap").children(".floor").eq(i).addClass("on");
 	});
+	
 </script>
-
+<script>
+	$(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
+</script>
 <?php include_once('./include/app_footer.php');?>

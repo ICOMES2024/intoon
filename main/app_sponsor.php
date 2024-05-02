@@ -127,7 +127,11 @@
 		<img src="/main/img/app_pop_stamp_tour_event.png" alt="">
     </div>
 </div>
-
+<script>
+	$(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
+</script>
 
 <?php 
         // mo일때

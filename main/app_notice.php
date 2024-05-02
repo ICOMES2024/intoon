@@ -69,6 +69,9 @@ $total_notice = count($notice_list) ?? 0;
 
 <script>
 	$(document).ready(function(){
+
+        $(".app_header").removeClass("simple");
+
 		$(".app_notice_ul > li").click(function(){
             let idx=$(this).val();
 
