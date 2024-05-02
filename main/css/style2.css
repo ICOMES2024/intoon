@@ -559,7 +559,7 @@ section.terms .details p {text-align: justify;}
 .accommodation .btn.green_btn {height: auto; padding: 10px; color: #FFF;}
 .accommodation .btn.green_btn img {width: 16px; margin-right: 5px;}
 .accommodation .useful_list > li:after {content:''; display:block; clear:both;}
-.accommodation .useful_list li {font-size:16px; line-height:26px;}
+.accommodation .useful_list li {font-size:16px; line-height:26px;    margin-bottom: 100px;}
 .accommodation .useful_list > li:not(:first-child) {margin-top:60px;}
 .accommodation .useful_list > li > div {float:left; width:auto; height:auto;}
 .accommodation .useful_list > li > div:last-child {width:calc(100% - 378px); height:auto; margin-left:28px;}
