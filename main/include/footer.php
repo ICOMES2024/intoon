@@ -127,7 +127,7 @@
                 <li><a href="https://www.celltrionph.com/en-us/home/index" class="celltrion"></a></li>
                 <li><a href="https://www.sanofi.com/en/our-company" class="sanofi"></a></li>
                 <li><a href="https://www.boryung.co.kr/en/" class="boryung"></a></li>
-                <li><a href="http://eng.ekdp.com/main/main.asp" class="kwangdong"></a></li>
+                <li><a href="https://eng.ekdp.com/main.do" class="kwangdong"></a></li>
                 <li><a href="https://www.gccorp.com/eng/index" class="gc_biopharma"></a></li>
                 <li><a href="http://ajupharm.co.kr/en/index.html" class="aju_pharm"></a></li>
                 <li><a href="https://www.daiichisankyo.com/" class="daiichi_sankyo"></a></li>

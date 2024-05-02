@@ -117,7 +117,7 @@
                     <a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a>
                 </li>
                 <li class="small">
-                    <a href="http://eng.ekdp.com/main/main.asp" class="kwangdong">Kwangdong</a>
+                    <a href="https://eng.ekdp.com/main.do" class="kwangdong">Kwangdong</a>
                 </li>
             </div>
                 <li class="small mb_only">
@@ -127,7 +127,7 @@
                     <a href="https://www.boryung.co.kr/en/" class="boryung">BORYUNG</a>
                 </li>
                 <li class="small mb_only">
-                    <a href="http://eng.ekdp.com/main/main.asp" class="kwangdong">Kwangdong</a>
+                    <a href="https://eng.ekdp.com/main.do" class="kwangdong">Kwangdong</a>
                 </li>
                 </ul>  
             <p class="grade_title bronze_bg">Bronze</p>
