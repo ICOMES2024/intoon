@@ -153,7 +153,11 @@
 		<!-- 3. 이수 시간에 따른 부분 평점 및 주의사항 안내 end -->
    </div>
 </section>
-
+<script>
+	$(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
+</script>
 
 <?php 
     include_once('./include/app_footer.php'); 

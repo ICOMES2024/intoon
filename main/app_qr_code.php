@@ -98,6 +98,7 @@
 <script type="text/javascript" src="/main/admin/js/qrcode.js"></script>
 <script>
     $(document).ready(function(){
+        $(".app_header").removeClass("simple");
         // qrcode 생성
         var qrcode = new QRCode(document.getElementById("qrcode"), {
             text: document.getElementById("qrcode").dataset.encrypt,
@@ -108,6 +109,7 @@
             correctLevel : QRCode.CorrectLevel.H
         });
     });
+
 </script>
 
 <?php include_once('./include/app_footer.php');?>

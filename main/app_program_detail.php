@@ -328,6 +328,9 @@ echo '<script type="text/javascript">
 
 <script>
     $(document).ready(function() {
+
+        $(".app_header").removeClass("simple");
+
 		$(".main .right_tag, .preview_btn").click(function(event) {
             event.stopPropagation();
         });
@@ -373,6 +376,7 @@ echo '<script type="text/javascript">
     });
 
 </script>
+
 <style>
 	div.detail button.preview_btn {display: none;}
 	.app_scientific .preview_btn.on {background-image: url('./img/icons/icon_minus_white.svg');}

@@ -155,6 +155,9 @@ $initial_list = get_data($select_initial_query);
 
 <script>
 	$(document).ready(function(){
+
+		$(".app_header").removeClass("simple");
+
 		$(".favorite_btn").click(function(e){
 			//[240424] sujeong / 함수 주석 처리 / DB 변경 예정
             //favorite(e);

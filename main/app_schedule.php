@@ -444,6 +444,9 @@ foreach($program_list as $pl){
 
 <script>
     $(document).ready(function() {
+
+        $(".app_header").removeClass("simple");
+
         $(".program_detail_btn").click(function(event) {
             event.preventDefault();
             event.stopPropagation();

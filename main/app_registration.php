@@ -312,5 +312,10 @@
 		</div>
 	</div>
 </section>
+<script>
+	$(document).ready(function(){
+        $(".app_header").removeClass("simple");
+    })
+</script>
 
 <?php include_once('./include/app_footer.php');?>

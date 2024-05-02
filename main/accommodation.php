@@ -185,7 +185,7 @@
                                 </tr>
                                 <tr>
                                     <th>Tel / Fax</th>
-                                    <td colspan="3">Tel +82-02-21089000 / Fax +82-2-2108-9001</td>
+                                    <td colspan="3">Tel +82-02-2108-9000 / Fax +82-2-2108-9001</td>
                                 </tr>
                                 <tr>
                                     <th>Email</th>
@@ -222,7 +222,7 @@
                 <div>
                     <div class="imgs"></div>
                     <button class="btn green_btn"
-                        onClick="javascript:window.location.href='https://www.shillastay.com/mapo/index.do'">Go to Website</button>
+                        onClick="javascript:window.open('https://www.shillastay.com/mapo/index.do')">Go to Website</button>
                 </div>
                 <div>
                     <p>Shilla Stay Mapo</p>
