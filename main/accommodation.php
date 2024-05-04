@@ -93,11 +93,12 @@
                     <div class="btn_wrap">
                          <button class="btn green_btn"
                         onClick="javascript:window.open('https://www.lottehotel.com/mapo-city/en.html')">Go to Website</button>
+                        <a href="https://abit.ly/lgntua" class="btn green_btn download_btn" target="_blank">URL reservation website</a>
                     <!-- onClick="javascript:alert('Reservation is closed.');" -->
                     </div>
                 </div>
                 <div>
-                    <p>Lotte City Hotel Mapo</p>
+                    <p>Lotte City Hotel Mapo <span class="font_16">(Special rate for ICOMES participants applied)</span></p>
                     <div class="table_wrap x_scroll">
                         <table class="c_table2 detail_table layout_fixed">
                             <colgroup>
@@ -135,17 +136,16 @@
                                             class="underline link">https://www.lottehotel.com/mapo-city/en.html</a>
                                     </td>
                                 </tr>
-                                <!-- <tr>
+                                <tr>
                                     <th>How to<br>reserve</th>
                                     <td colspan="3">
-                                        1. <span class="font_b">Download the reservation form.</span><br>
-                                        2. Fill out the form.<br>
-                                        3. <span class="font_b">Send it directly to the hotel email</span><br>
-                                        (<a href="mailto:resv@seoulgarden.co.kr" target="_blank" class="underline">resv@seoulgarden.co.kr</a>)<br>
-                                        4. Confirm the confirmation letter.
-                                        <p class="red_t font_small mt4">* Reservation must reach the hotel by 23rd August 2023.</p>
+                                        1. Please access the URL reservation site.<br>
+                                        2. After selecting the date, click on room selection.<br>
+                                        3.Confirm the amount and make a reservation (Lotte Rewards members OR non-members).<br>
+                                        4. Complete the reservation after entering guest information and credit card information.
+                                        <p class="red_t font_small mt4">* This is a website with ICOMES 2024 special rates. If you need to make changes, cancellations, or modifications, please contact the hotel directly for more information.</p>
                                     </td>
-                               </tr> -->
+                               </tr>
                             </tbody>
                         </table>
                     </div>
@@ -157,7 +157,7 @@
                     <div class="imgs"></div>
                     <div class="btn_wrap">
                          <button class="btn green_btn"
-                        onClick="javascript:window.open('https://www.marriott.com/reservation/rateListMenu.mi')">Go to Website</button>
+                        onClick="javascript:window.open('https://www.marriott.com/ko/hotels/selfi-fairfield-seoul/overview/')">Go to Website</button>
                     <!-- <a href="./download/ICOMES_2023_Shilla_Stay_Mapo_Hotel_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a> -->
                     <!-- onClick="javascript:alert('Reservation is closed.');" -->
                     </div>
@@ -197,8 +197,8 @@
                                 <tr>
                                     <th>Website</th>
                                     <td colspan="3">
-                                        <a href="https://www.marriott.com/reservation/rateListMenu.mi" target="_blank"
-                                            class="underline link">https://www.marriott.com/reservation/rateListMenu.mi</a>
+                                        <a href="https://www.marriott.com/ko/hotels/selfi-fairfield-seoul/overview/" target="_blank"
+                                            class="underline link">https://www.marriott.com/ko/hotels/selfi-fairfield-seoul/overview/</a>
                                     </td>
                                 </tr>
                                 <!-- <tr>
@@ -260,7 +260,7 @@
                                     <th>Website</th>
                                     <td colspan="3">
                                         <a href="https://www.shillastay.com/mapo/index.do" target="_blank"
-                                            class="underline link">https://www.shillastay.com/mapo/index.do</a>
+                                            class="underline link">https://www.shillastay.com/mapo</a>
                                     </td>
                                 </tr>
 

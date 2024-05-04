@@ -41,12 +41,7 @@
 <?php
 	} 
 ?>
-<!-- 		<div class="contents_wrap"> -->
-<!-- 			<h1 class="page_title">Welcome Message</h1> -->
-<!-- 			<div class="inner"> -->
-<!-- 				<img class="coming" src="./img/coming.png"> -->
-<!-- 			</div> -->
-<!-- 		</div> -->
+
     <div>
 		<h1 class="page_title">Welcome Message</h1>
         <div class="inner">

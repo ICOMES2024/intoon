@@ -4,7 +4,7 @@
 if($_POST["flag"]==="updateDeviceToken"){
     $device = $_POST["device"];
     $deviceToken = $_POST["deviceToken"];
-    $member_idx = $_SESSION["USER"]["idx"];
+    $member_idx = $_SESSION["USER"]["idx"] ? $_SESSION["USER"]["idx"] : 0;
     $type= "";
 
     if($device==="IOS"){
