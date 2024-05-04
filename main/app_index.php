@@ -20,6 +20,8 @@
 			</script>
         ";
     }
+
+	$_SESSION["APP"] = "Phone";
 ?>
 
 <style>
@@ -108,53 +110,81 @@
 		$(".app_header").addClass("simple");
 		$(".app_nav_btn img").attr("src", "https://image.webeon.net/icomes2024/app/2024_icon_hamburger2.svg");
 
+        
 
 	//[240423] sujeong / 로그인 없이 토큰 받기
-	let icomes_device = null;
-    let icomes_token = null;
+	// let icomes_device = null;
+    // let icomes_token = null;
 
-	if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-        try{
-            window.AndroidScript.getDeviceToken();
-        } catch (err){
-            alert(err);
-        }
-        //[240314] hub 스탬프 투어 소스 코드 수정 !@#$^
-    } else if (window.webkit && window.webkit?.messageHandlers!=null) {
-    // } else if (window.webkit && window.webkit.messageHandlers!=null) {
-        try{
-            window.webkit.messageHandlers.getDeviceToken.postMessage('');
-        } catch (err){
-            console.log(err);
-        }
-    }
+	// if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+    //     try{
+    //         window.AndroidScript.getDeviceToken();
+    //     } catch (err){
+    //         alert(err);
+    //     }
+    //     //[240314] hub 스탬프 투어 소스 코드 수정 !@#$^
+    // } else if (window.webkit && window.webkit?.messageHandlers!=null) {
+    // // } else if (window.webkit && window.webkit.messageHandlers!=null) {
+    //     try{
+    //         window.webkit.messageHandlers.getDeviceToken.postMessage('');
+    //     } catch (err){
+    //         console.log(err);
+    //     }
+    // }
 
-    getDeviceTokenCallback = (device, deviceToken) => {
-        icomes_device = device;
-        icomes_token = deviceToken;
-		//saveToken();
-    }
+    // getDeviceTokenCallback = (device, deviceToken) => {
+    //     icomes_device = device;
+    //     icomes_token = deviceToken;
+	// 	saveToken();
+    // }
 
-	function saveToken(){
-		$.ajax({
-            url : "./ajax/client/ajax_member.php",
-            type : "POST",
-            data : {
-                flag : "app_index",
-                icomes_device : icomes_device,
-                icomes_token : icomes_token
-            },
-            dataType : "JSON",
-            success : function(res){
-                if(res.code == 200) {
-                 
-                } 
-            }
-        });
-	}
+	// function saveToken(){
+	// 	$.ajax({
+    //         url : "./ajax/client/ajax_member.php",
+    //         type : "POST",
+    //         data : {
+    //             flag : "app_index",
+    //             icomes_device : icomes_device,
+    //             icomes_token : icomes_token
+    //         },
+    //         dataType : "JSON",
+    //         success : function(res){
+    //             if(res.code == 200) {
+    //                 var href_path = "/main/app_index.php";
+
+    //                     var from = "<?=$_GET['from']?>";
+    //                     if (from != "") {
+    //                         href_path += "/"+from
+    //                     }
+
+    //                     var toDate = new Date();
+    //                     toDate.setHours(toDate.getHours() + ((23-toDate.getHours()) + 9));
+    //                     toDate.setMinutes(toDate.getMinutes() + (60-toDate.getMinutes()));
+    //                     toDate.setSeconds(0);
+    //                     document.cookie = "member_idx=" + 0 + "; path=/; expires=" + toDate.toGMTString() + ";";
+
+    //                     if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+    //                         window.AndroidScript.login(res.idx);
+    //                     } else if (window.webkit && window.webkit.messageHandlers!=null) {
+    //                         try{
+    //                             window.webkit.messageHandlers.login.postMessage(res.idx);
+    //                         } catch (err){
+    //                             console.log(err);
+    //                         }
+    //                     }
+
+    //                     // loginCallback = (res) => {
+    //                     //     const result = Json.parse(res)
+    //                     // }
+
+    //                     location.href = href_path;
+    //             } 
+    //         }
+    //     });
+	// }
 
 
-	});
+	 });
 
 	//webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")
 

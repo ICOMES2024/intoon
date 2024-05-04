@@ -1208,7 +1208,7 @@ section.container.sponsor {padding-top: 164px;}
 
 /*app layout*/
 /* section.app_version {padding-top:0 !important; margin:57px auto 65px; max-width:1200px; padding-bottom: 50px !important;} */ /*margin-top:57px;*/
-section.app_version {padding-top:0 !important; /*margin-top:57px;*/ margin:57px auto 65px; max-width:1200px; padding-bottom: 100px !important;}
+section.app_version {padding-top:0 !important; /*margin-top:57px;*/ margin:57px auto 65px; max-width:1200px; padding-bottom: 170px !important;}
 section.app_version.app_main {padding-bottom: 0 !important; overflow: hidden;}
 section.app_version .inner {padding-top:40px !important; margin-top:0 !important; margin-bottom: 0;}
 section.container.app_version .page_title {width:calc(100% + 36px); margin-left: -18px; /*background: transparent;*/ margin-bottom: 0;}

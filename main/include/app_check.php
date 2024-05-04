@@ -22,34 +22,37 @@
 // }
 // ?> -->
 <script>
-    if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-        try{
-            window.AndroidScript.getDeviceToken();
-        } catch (err){
-            alert(err);
+    // if (!empty($_SESSION["USER"])){
+            if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+            try{
+                window.AndroidScript.getDeviceToken();
+            } catch (err){
+                alert(err);
+            }
+        } else if (window.webkit && window.webkit.messageHandlers!=null) {
+            try{
+                window.webkit.messageHandlers.getDeviceToken.postMessage('');
+            } catch (err){
+                console.log(err);
+            }
         }
-    } else if (window.webkit && window.webkit.messageHandlers!=null) {
-        try{
-            window.webkit.messageHandlers.getDeviceToken.postMessage('');
-        } catch (err){
-            console.log(err);
+
+        getDeviceTokenCallback = (device, deviceToken) => {
+
+            $.ajax({
+                url: "./ajax/client/ajax_app_check.php",
+                type: "POST",
+                data: {
+                    flag: "updateDeviceToken",
+                    device: device,
+                    deviceToken: deviceToken
+                },
+                dataType: "JSON",
+                success: function (res) {
+                    //alert("hello");
+                }
+            });
         }
-    }
-
-    getDeviceTokenCallback = (device, deviceToken) => {
-
-        $.ajax({
-            url: "./ajax/client/ajax_app_check.php",
-            type: "POST",
-            data: {
-                flag: "updateDeviceToken",
-                device: device,
-                deviceToken: deviceToken
-            },
-            dataType: "JSON",
-            success: function (res) {
-                //alert("hello");
-		    }
-        });
-    }
+    // }
+    
 </script>
