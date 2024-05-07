@@ -73,12 +73,15 @@
                                         1. <span class="font_b">Download the reservation form.</span><br>
                                         2. Fill out the form.<br>
                                         3. <span class="font_b">Send it directly to the hotel email</span><br>
-                                        (<a href="mailto:Conradseoul_GroupReservations@hilton.com" target="_blank" class="underline link">Conradseoul_GroupReservations@hilton.com</a>)<br>
+                                        <!-- (<a href="mailto:Conradseoul_GroupReservations@hilton.com" target="_blank" class="underline link">Conradseoul_GroupReservations@hilton.com</a>)<br> -->
+                                        
                                         4. Confirm the confirmation letter.
-                                        <p class="red_t font_small mt4">
-                                            * Reservation can be changed, canceled, or amended up to 30 days before the congress date within a special rate from ICOMES 2024.<br>
+                                        <p class="font_small mt4 font_b">
+                                            * Reservation can be <span class="font_small underline bold">changed, canceled, or amended</span> <span class="font_small red_t font_b">up to 30 days before the congress date</span> within a special rate from ICOMES 2024.<br>
                                             * Starting, the rate may vary, and it is non-refundable upon booking. For further information, please kindly contact the hotel directly.
                                         </p>
+
+                                        <p class="font_small"><br>For further information, please kindly contact the hotel directly.</p>
                                     </td>
                                </tr>
                             </tbody>
@@ -91,9 +94,10 @@
                 <div>
                     <div class="imgs"></div>
                     <div class="btn_wrap">
-                         <button class="btn green_btn"
-                        onClick="javascript:window.open('https://www.lottehotel.com/mapo-city/en.html')">Go to Website</button>
-                        <a href="https://abit.ly/lgntua" class="btn green_btn download_btn" target="_blank">URL reservation website</a>
+                         <!-- <button class="btn green_btn"
+                        onClick="javascript:window.open('https://www.lottehotel.com/mapo-city/en.html')">Go to Website</button> -->
+                        <a href="https://abit.ly/lgntua" class="btn green_btn download_btn" target="_blank">Go to Reservation 
+with Special Rate</a>
                     <!-- onClick="javascript:alert('Reservation is closed.');" -->
                     </div>
                 </div>
@@ -130,20 +134,28 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Website</th>
+                                    <th>Reservation Website</th>
                                     <td colspan="3">
-                                        <a href="https://www.lottehotel.com/mapo-city/en.html" target="_blank"
-                                            class="underline link">https://www.lottehotel.com/mapo-city/en.html</a>
+                                        <a href="https://abit.ly/lgntua" target="_blank"
+                                            class="underline link">https://abit.ly/lgntua</a>
+                                        <p class="font_small bold"><br>* This is a website with ICOMES 2024 special rates. </p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>How to<br>reserve</th>
                                     <td colspan="3">
-                                        1. Please access the URL reservation site.<br>
+                                        1. Please access the linked reservation site.<br>
                                         2. After selecting the date, click on room selection.<br>
-                                        3.Confirm the amount and make a reservation (Lotte Rewards members OR non-members).<br>
-                                        4. Complete the reservation after entering guest information and credit card information.
-                                        <p class="red_t font_small mt4">* This is a website with ICOMES 2024 special rates. If you need to make changes, cancellations, or modifications, please contact the hotel directly for more information.</p>
+                                        3. Select desired room type.<br>
+                                        4. Confirm the amount and make a reservation (Lotte Rewards members OR non-members).<br>
+                                        5. . Complete the reservation after entering guest information and credit card information.
+                                        <p class="bold font_small mt4">* If you need to make changes, cancellations, or modifications, please contact the hotel directly for more information.</p>
+                                    </td>
+                               </tr>
+                               <tr>
+                                    <th>Hotel-to-Venue<br>Transportation<br>(by Car)</th>
+                                    <td colspan="3">
+                                        10 minutes (3.6km) 
                                     </td>
                                </tr>
                             </tbody>
@@ -201,6 +213,12 @@
                                             class="underline link">https://www.marriott.com/ko/hotels/selfi-fairfield-seoul/overview/</a>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>Hotel-to-Venue<br>Transportation<br>(by Car)</th>
+                                    <td colspan="3">
+                                        5 minutes (1.7km) 
+                                    </td>
+                               </tr>
                                 <!-- <tr>
                                     <th>How to<br>reserve</th>
                                     <td colspan="3">
@@ -263,7 +281,12 @@
                                             class="underline link">https://www.shillastay.com/mapo</a>
                                     </td>
                                 </tr>
-
+                                <tr>
+                                    <th>Hotel-to-Venue<br>Transportation<br>(by Car)</th>
+                                    <td colspan="3">
+                                        10 minutes (3.3km) 
+                                    </td>
+                               </tr>
                             </tbody>
                         </table>
                     </div>

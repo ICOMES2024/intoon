@@ -94,7 +94,7 @@
                     <ul>
                         <li>• The purpose of travel should be for tourism, visiting family members, participating in events or meetings, or commercial business (excluding the pursuit of profit).</li>
                         <li>• Starting 1st September 2021, K-ETA is mandatory for all foreigners entering Korea from visa-waiver countries and visa-free countries. All foreigners without either a K-ETA or a valid Visa will not be permitted to board a plane to Korea. (You do not need a K-ETA if you have a valid visa)</li>
-						<li class="bold">• Starting 1st April 1, 2023, K-ETA (The Korea Electronic Travel Authorization) will be temporarily exempted to the 26 countries/regions listed below.<br/>- Austria, Australia, Belgium, Canada, Czech Republic, Denmark, Finland, France, Germany, Hong Kong, Italy, Japan, Macau, Netherlands, New Zealand, Norway, Poland, Qatar, Romania, Saudi Arabia, Singapore, Spain, Sweden, Taiwan, UAE, United Kingdom, United States (including Guam)</li>
+						<li class="bold">• Starting 1st April 1, 2023, K-ETA (The Korea Electronic Travel Authorization) will be temporarily exempted to the 22 countries/regions listed below.<br/>- Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Hong Kong, Italy, Japan, Macao, Netherlands, New Zealand, Norway, Poland, Singapore, Spain, Sweden, Taiwan, UK, US (including Guam)</li>
                     </ul>
                 </div>
             </div>
