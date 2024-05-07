@@ -682,7 +682,7 @@ section.visa .table_vertical th {color: #000;}
 /*.abstract_submission_award .c_table th {border-right: 1px solid #707070;}*/
 
 /* 평점팝업 */
-.underline {text-decoration:underline;}
+.underline {text-decoration:underline;text-underline-position: under;}
 .transparent_bg {background-color:transparent !important;}
 .red_t {color:#FF3333;}
 .layout_fixed {table-layout:fixed;}
