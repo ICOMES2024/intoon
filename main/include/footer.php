@@ -147,12 +147,15 @@
             <div class="f_bottom clearfix">
                 <div class="footer_l">
                     <div class="clearfix">
-                        <img src="https://image.webeon.net/icomes2024/logo/fl01.png" alt="">
-                        <img src="https://image.webeon.net/icomes2024/logo/fl02.png" alt="">
+                        <!-- <img src="https://image.webeon.net/icomes2024/logo/fl01.png" alt="">
+                        <img src="https://image.webeon.net/icomes2024/logo/fl02.png" alt=""> -->
+                        <img src="https://image.webeon.net/icomes2024/logo/2024_footer_ksso_logo.svg" alt="">
+                        <img src="https://image.webeon.net/icomes2024/logo/2024_footer_icomes_logo.svg" alt="">
                         <!-- [240201] sujeong / 학회팀 요청 주석 -->
                         <!-- <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;"
                                 src="https://image.webeon.net/icomes2024/logo/fl03.png" alt=""></a>-->
-                        <img class="pointer" onclick="goKnto()" src="https://image.webeon.net/icomes2024/logo/fl04.png" alt=""> 
+                        <img class="pointer" onclick="goKnto()" src="https://image.webeon.net/icomes2024/logo/2024_footer_korea_logo.svg" alt=""> 
+                        <!-- <img class="pointer" onclick="goKnto()" src="https://image.webeon.net/icomes2024/logo/fl04.png" alt="">  -->
                       
                     </div>
                 </div>

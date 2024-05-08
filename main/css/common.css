@@ -325,8 +325,8 @@ td.pc_only {display:table-cell;}
 .footer .container > h5 {margin: 60px 0 50px;}
 .f_bottom {display: flex; word-break: break-all;}
 .footer_l {width:260px; padding:0 34px 0 27px;}
-.footer_l img:nth-child(even) {margin-left:20px;}
-.footer_l img:nth-child(n+3) {margin-top:35px;}
+.footer_l img:nth-child(even) {margin-left:10px;}
+.footer_l img:nth-child(n+3) {margin-top:16px;}
 .footer_c {width:calc(55% - 170px);}
 .footer_r {width:calc(45% - 90px);}
 .footer_c ul li:first-child, .footer_r ul li:first-child {margin-bottom: 10px;}
