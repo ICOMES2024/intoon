@@ -1761,3 +1761,43 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 		margin-right: 20px;
 	}
 }
+
+.along_th{
+	background-color: #d5e3cf !important;
+	border: 2px solid #a4c88d !important;
+}
+
+.along_td{
+	background-color: #ebf1e9 !important;
+	border: 2px solid #a4c88d !important;
+}
+
+.dark_along_th{
+	background-color: #9bb991 !important;
+	border: 2px solid #a4c88d !important;
+}
+
+.info_th{
+	background-color: #ffe8cb !important;
+	border: 2px solid #ffdd82 !important;
+}
+
+.info_td{
+	background-color: #fff4e7 !important;
+	border: 2px solid #ffdd82 !important;
+}
+
+.along_btn_box{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.along_btn_box > a {
+	width: 400px !important;
+	max-width: 400px !important;
+	margin-left: 0 !important;
+}
