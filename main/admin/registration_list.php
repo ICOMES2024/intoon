@@ -231,6 +231,7 @@
 	$html .= '<tbody>';
 	
 	foreach($registration_list as $rk => $rl){
+		if($rl['affiliation'] !== "into-on"){
 		$member_status = ($rl["member_status"] == 0) ? "N" : "Y";
 
 		//[240315] sujeong / 등록번호 4자리수 만들기
@@ -395,6 +396,7 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$conference_info.'</td>';
 		$html .= '</tr>';
 	}
+}
 	$html .= '</tbody>';
 	$html .= '</table>';
 

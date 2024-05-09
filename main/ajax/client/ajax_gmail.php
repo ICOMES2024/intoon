@@ -296,7 +296,6 @@ if($language == "ko") {
 				</tr>
 			</tbody>
 		</table>
-		
 			";
 	}
 
