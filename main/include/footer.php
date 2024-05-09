@@ -238,9 +238,9 @@ $('.term4_btn').on('click', function() {
    function goKnto(){
      window.location.href = "https://knto.or.kr/index";
    }
-   $('.type2').on('click', function(event) {
-        event.preventDefault();
-        alert('Updates are planned.');
-        return false;
-    }) 
+//    $('.type2').on('click', function(event) {
+//         event.preventDefault();
+//         alert('Updates are planned.');
+//         return false;
+//     }) 
 </script>
