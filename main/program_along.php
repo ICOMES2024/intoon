@@ -10,8 +10,9 @@ include_once('./include/header.php');
             <div>
                 <div class="text_box">
                     <ul>
-                        <li>ICOMES organized by KSSO(Korean Society for the Study of Obesity) offers an exceptional opportunity for international participants to gain valuable insight and advance their career in the healthcare field.</li>
-                        <li><br>Join our comprehensive program featuring situational analysis workshop, visit to healthcare system sites, and the chance to gain invaluable insights.</li>
+                        <li>ICOMES organized by KSSO(Korean Society for the Study of Obesity) offers an exceptional opportunity for international participants.</li>
+                        <li><br>Join our comprehensive program, featuring situational analysis workshops, visits to healthcare system sites, and the opportunity 
+to gain invaluable insights while advancing your career in the healthcare field.</li>
                         <!--
 						<li class="f_bold">• If you are selected by submitting an abstract, 100% of the registration fee can be reduced.</li>
 						<li>• The reduction is based on the payment of the pre-registration fee, and only the submitter will receive a refund within 2 weeks after the congress.</li>
@@ -52,12 +53,12 @@ include_once('./include/header.php');
                             <td class="">September, 4 (Wed.)</td>
                             <td class="">14:00~</td>
                             <td class="">
-                                <p class="bold">Workshop -Presentation and Discussion</p>
+                                <p class="bold">Workshop - Presentation and Discussion</p>
                                 - Related to the epidemiology, definition, stigmata, and public health burden of obesity
                             </td>
                         </tr>
                         <tr>
-                            <td class="">September, 5(Thur.)</td>
+                            <td class="">September, 5 (Thur.)</td>
                             <td class="">08:00~</td>
                             <td class="">
                                 <p class="bold">Hospital Tour</p>
