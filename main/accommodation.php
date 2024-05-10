@@ -23,13 +23,15 @@
                     <div class="btn_wrap">
                          <button class="btn green_btn"
                         onClick="javascript:window.open('https://www.hilton.com/en/hotels/selcici-conrad-seoul/')">Go to Website</button>
-                    <a href="" class="btn green_btn download_btn not_yet" target="_blank"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
+                    <!-- <a href="" class="btn green_btn download_btn not_yet" target="_blank"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a> -->
                     <!-- <a href="./download/ICOMES_2023_Conrad_Seoul_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
                      -->
                     </div>
                 </div>
                 <div>
-                    <p>Conrad Seoul <span class="font_16">(Special rate for ICOMES participants applied)</span></p>
+                    <p>Conrad Seoul 
+                        <!-- <span class="font_16">(Special rate for ICOMES participants applied)</span> -->
+                    </p>
                     <div class="table_wrap x_scroll">
                         <table class="c_table2 detail_table layout_fixed">
                             <colgroup>
@@ -60,21 +62,20 @@
                                             class="underline link">Conrad_Seoul@conradhotels.com</a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <th>Website</th>
                                     <td colspan="3">
                                         <a href="https://www.hilton.com/en/hotels/selcici-conrad-seoul/" target="_blank"
                                             class="underline link">https://www.hilton.com</a>
                                     </td>
-                                </tr>
-                                <tr>
+                                </tr> -->
+                                <!-- <tr>
                                     <th>How to<br>reserve</th>
                                     <td colspan="3">
                                         1. <span class="font_b">Download the reservation form.</span><br>
                                         2. Fill out the form.<br>
                                         3. <span class="font_b">Send it directly to the hotel email</span><br>
-                                        <!-- (<a href="mailto:Conradseoul_GroupReservations@hilton.com" target="_blank" class="underline link">Conradseoul_GroupReservations@hilton.com</a>)<br> -->
-                                        
+                                    
                                         4. Confirm the confirmation letter.
                                         <p class="font_small mt4 font_b">
                                             * Reservation can be <span class="font_small underline bold">changed, canceled, or amended</span> <span class="font_small red_t font_b">up to 30 days before the congress date</span> within a special rate from ICOMES 2024.<br>
@@ -83,7 +84,7 @@
 
                                         <p class="font_small"><br>For further information, please kindly contact the hotel directly.</p>
                                     </td>
-                               </tr>
+                               </tr> -->
                             </tbody>
                         </table>
                     </div>
@@ -94,10 +95,10 @@
                 <div>
                     <div class="imgs"></div>
                     <div class="btn_wrap">
-                         <!-- <button class="btn green_btn"
-                        onClick="javascript:window.open('https://www.lottehotel.com/mapo-city/en.html')">Go to Website</button> -->
-                        <a href="https://abit.ly/lgntua" class="btn green_btn download_btn" target="_blank">Go to Reservation 
-with Special Rate</a>
+                         <button class="btn green_btn"
+                        onClick="javascript:window.open('https://abit.ly/spofwu')">Go to Reservation<br/>with Special Rate</button>
+                        <!-- <a href="https://abit.ly/lgntua" class="btn green_btn download_btn" target="_blank">Go to Reservation 
+with Special Rate</a> -->
                     <!-- onClick="javascript:alert('Reservation is closed.');" -->
                     </div>
                 </div>
@@ -133,14 +134,14 @@ with Special Rate</a>
                                             class="underline link">Leehd@lotte.net</a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <th>Reservation Website</th>
                                     <td colspan="3">
                                         <a href="https://abit.ly/lgntua" target="_blank"
                                             class="underline link">https://abit.ly/lgntua</a>
                                         <p class="font_small bold"><br>* This is a website with ICOMES 2024 special rates. </p>
                                     </td>
-                                </tr>
+                                </tr> -->
                                 <tr>
                                     <th>How to<br>reserve</th>
                                     <td colspan="3">
@@ -206,13 +207,13 @@ with Special Rate</a>
                                             class="underline link">ffi.selfi.rsvn@fairfieldseoul.com</a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <th>Website</th>
                                     <td colspan="3">
                                         <a href="https://www.marriott.com/ko/hotels/selfi-fairfield-seoul/overview/" target="_blank"
                                             class="underline link">https://www.marriott.com/ko/hotels/selfi-fairfield-seoul/overview/</a>
                                     </td>
-                                </tr>
+                                </tr> -->
                                 <tr>
                                     <th>Hotel-to-Venue<br>Transportation<br>(by Car)</th>
                                     <td colspan="3">
@@ -274,13 +275,13 @@ with Special Rate</a>
                                             class="underline link">ma_po@shilllast.com</a>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <th>Website</th>
                                     <td colspan="3">
                                         <a href="https://www.shillastay.com/mapo/index.do" target="_blank"
                                             class="underline link">https://www.shillastay.com/mapo</a>
                                     </td>
-                                </tr>
+                                </tr> -->
                                 <tr>
                                     <th>Hotel-to-Venue<br>Transportation<br>(by Car)</th>
                                     <td colspan="3">
