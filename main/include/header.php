@@ -128,7 +128,7 @@ $locale = locale($language);
                         <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
                             <li><a href="/main/registration.php">Online Registration</a></li>
-                            <li><a href="/main/comingsoon.php">평점 안내</a></li>
+                            <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                             <!-- <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
                             <li><a href="/main/registration.php">Online Registration</a></li>
@@ -277,7 +277,7 @@ $(document).ready(function() {
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m4"]) ? "block" : "none") ?>">
                     <li><a href="/main/registration_guidelines.php">Registration Guidelines</a></li>
                     <li><a href="/main/registration.php">Online Registration</a></li>
-                    <li><a href="/main/comingsoon.php">평점 안내</a></li>
+                    <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m5"]) ? "show" : "") ?>">

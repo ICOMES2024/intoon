@@ -97,7 +97,7 @@
                                             <p class=""></p>
                                             <div>
                                                 <h4 class="title">Jean-Pierre Després</h4>
-                                                <h5>Quebec Heart and Lung Institute Université Laval, Canada</h5>
+                                                <h5>VITAM – Research Centre on Sustainable Health, Canada</h5>
                                             </div>
                                         </div>
                                     </div>
