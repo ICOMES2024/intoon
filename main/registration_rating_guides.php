@@ -68,30 +68,30 @@
 					<tbody>
 						<tr>
 							<td>대한의사협회</td>
-							<td>최대 1평점</td>
-							<td>최대 6평점</td>
-							<td>최대 6평점</td>
+							<td>최대 3평점<span class="red_t bold">(예정)</span></td>
+							<td>최대 6평점<span class="red_t bold">(예정)</span></td>
+							<td>최대 6평점<span class="red_t bold">(예정)</span></td>
 						</tr>
 						<tr>
 							<td>내과전공의 외부학술회의(학술대회)</td>
 							<td>없음</td>
-							<td colspan="2">최대 2평점 <br/><span class="font_small">* 오전 3시간, 오후 3시간 참석 시 각 1점 부여</span></td>
+							<td colspan="2">최대 2평점<span class="red_t bold">(예정)</span></td>
 						</tr>
 						<tr>
 							<td>대한비만학회(비만전문인정의) <br/>*별도 신청 없음. 모든 참석자 제공</td>
 							<!-- <td>대한비만학회(비만전문인정의) <br/><span class="font_small">*별도 신청 없음</span></td> -->
-							<td>최대 1평점</td>
-							<td>최대 6평점</td>
-							<td>최대 6평점</td>
+							<td>최대 1평점<span class="red_t bold">(예정)</span></td>
+							<td>최대 6평점<span class="red_t bold">(예정)</span></td>
+							<td>최대 6평점<span class="red_t bold">(예정)</span></td>
 						</tr>
 						<tr>
 							<td>한국영양교육평가원 임상영양사 <br/>전문연수교육(CPD)</td>
-							<td colspan="3">5평점 <br/><span class="font_small">* 5시간 이상 참석 필수</span></td>
+							<td colspan="3">5평점<span class="red_t bold">(예정)</span> <br/><span class="font_small">* 5시간 이상 참석 필수</span></td>
 						</tr>
 						<tr>
 							<td>대한운동사협회</td>
 							<td>없음</td>
-							<td colspan="2">40평점<br/><span class="font_small">* 부분 평점 없음. 6시간 참석 필수</span></td>
+							<td colspan="2">40평점<span class="red_t bold">(예정)</span><br/><span class="font_small">* 부분 평점 없음. 6시간 참석 필수</span></td>
 						</tr>
 					</tbody>
 				</table>
@@ -100,7 +100,7 @@
 		<!-- 2. 제공 평점 end -->
 
 		<!-- 3. 이수 시간에 따른 부분 평점 및 주의사항 안내 start -->
-		<h3 class="title">이수 시간에 따른 부분 평점 및 주의사항 안내</h3>
+		<h3 class="title">이수 시간에 따른 대한의사협회/대한비만학회 부분 평점 및 주의사항</h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
 				<table class="c_table2 detail_table center">
@@ -168,8 +168,10 @@
 					<li class="bold">• 입실 시와 퇴실 시 1일 2회 명찰 혹은 어플리케이션의 QR 코드를 입출결 확인 시스템에 태깅하여 주십시오.</li>
 					<li>• 입/퇴실 시 QR 코드를 태깅하지 않은 경우 이수 시간이 인정되지 않습니다.</li>
 					<li class="red_txt bold">• 휴게 시간은 이수 시간에 포함되지 않습니다.</li>
-					<li class="red_txt bold">• 이수 시간은 학술대회 시작 시간부터 종료 시간 내에서만 인정됩니다.</li>
-					<li>• 학술대회 종료 후, 학회 사무국에서 취합된 명단을 의사협회 연수 교육 시스템에 등록하여 자동으로 평점이 부여됩니다(약 4주 소요). 개인에게 평점카드를 발급하지 않습니다.</li>
+					<li>• 이수 시간은 학술대회 교육 시작 시간부터 종료 시간 내에서만 인정됩니다.</li>
+					<li class="red_txt bold">• 내과전공의 외부학술회의 평점은 ‘전공의’만 평점 부여 가능합니다.</li>
+					<li>• 학술대회 종료 후, 학회 사무국에서 취합된 명단을 의사협회 연수 교육 시스템에 등록하여 자동으로 평점이 부여됩니다(약 4주 소요).</li>
+					<li>• 개인에게 평점카드를 발급하지 않습니다.</li>
 				</ul>
 			</div>
 		</div>
