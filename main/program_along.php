@@ -37,7 +37,7 @@ to gain invaluable insights while advancing your career in the healthcare field.
                         </tr>
                         <tr>
                             <th class=" center_t bold">Date</th>
-                            <td class="" colspan="3">September 4 (Wed.) ~ 5 (Thru.), 2024</td>
+                            <td class="" colspan="3">September 4 (Wed.) ~ 5 (Thu.), 2024</td>
                         </tr>
                         <tr>
                             <th class=" center_t bold">Place</th>
@@ -58,7 +58,7 @@ to gain invaluable insights while advancing your career in the healthcare field.
                             </td>
                         </tr>
                         <tr>
-                            <td class="">September, 5 (Thur.)</td>
+                            <td class="">September, 5 (Thu.)</td>
                             <td class="">08:00~</td>
                             <td class="">
                                 <p class="bold">Hospital Tour</p>
@@ -108,7 +108,10 @@ to gain invaluable insights while advancing your career in the healthcare field.
                         </tr>   
                         <tr>
                             <th class="center_t" >Remark</th>
-                            <td class="">- This program is available to all, irrespective of ICOMES 2024 participation.<br>
+                            <td class="bold">- This program is available to all, irrespective of ICOMES 2024 participation<span class="font_12"><br/>
+                            (* Participants and abstract submitters who have completed ICOMES registration <br/>will receive additional points 
+      for selection into the ALONG Program.)<br/>
+                            </span>
                                 - Upon application, a curriculum vitae is required.<br/>
                                 - <span class="bold">Acceptance notification will be informed via personal email at <span class="point3_txt bold">the beginning of July</span></span>                
                             </td>
