@@ -149,7 +149,7 @@ with Special Rate</a> -->
                                         2. After selecting the date, click on room selection.<br>
                                         3. Select desired room type.<br>
                                         4. Confirm the amount and make a reservation (Lotte Rewards members OR non-members).<br>
-                                        5. . Complete the reservation after entering guest information and credit card information.
+                                        5. Complete the reservation after entering guest information and credit card information.
                                         <p class="bold font_small mt4">* If you need to make changes, cancellations, or modifications, please contact the hotel directly for more information.</p>
                                     </td>
                                </tr>
@@ -198,7 +198,7 @@ with Special Rate</a> -->
                                 </tr>
                                 <tr>
                                     <th>Tel / Fax</th>
-                                    <td colspan="3">Tel +82-02-2108-9000 / Fax +82-2-2108-9001</td>
+                                    <td colspan="3">Tel +82-2-2108-9000 / Fax +82-2-2108-9001</td>
                                 </tr>
                                 <tr>
                                     <th>Email</th>
