@@ -35,7 +35,7 @@ $info = sql_fetch($sql_info);
                 $weekday = ["일", "월", "화", "수", "목", "금", "토"];
             ?>
             <!--List of Accepted Abstract-->
-            <div>
+            <!-- <div>
                 <div class="section_title_wrap2">
                     <h3 class="title">List of Accepted Abstract</h3>
                 </div>
@@ -44,7 +44,7 @@ $info = sql_fetch($sql_info);
 					<button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0824.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
 					<button type="button" onClick="javascript:window.open('./download/Poster Exhibition_0824.pdf')"><img src="./img/icons/download_w.svg" />Poster Exhibition</button>
                 </div>
-            </div>
+            </div> -->
             <!--keydate-->
             <div>
                 <div class="section_title_wrap2">
@@ -58,19 +58,24 @@ $info = sql_fetch($sql_info);
                         </colgroup>
                         <tr>
                             <th>Abstract Submission System Open</th>
-                            <td class="f_bold">Mid-May</td>
+                            <td class="f_bold">Mid-February</td>
                         </tr>
                         <tr>
-                            <th class="close_th">Abstract Submission Deadline</th>
-                            <td><span class="font_inherit red_t f_bold">August 10 (Thu)</span></td>
+                            <th>Abstract Submission Deadline</th>
+                            <!-- <th class="close_th">Abstract Submission Deadline</th> -->
+                            <td><span class="font_inherit red_t f_bold">May 30 (Thu)</span></td>
                         </tr>
                         <tr>
                             <th>Notification of Abstract Acceptance</th>
-                            <td class="f_bold">August 14 (Mon)</td>
+                            <td class="f_bold">July 10 (Wed)<br><span class="font_12">*Details regarding presentation type and guidelines will be provided.</span></td>
+                        </tr>
+                        <tr>
+                            <th>Notification of Acceptance</th>
+                            <td class="f_bold">End of every month<br><span class="font_12">*The scientific committee will conduct a qualification examination at the end of each month to facilitate attendee's pre-registration.</span></td>
                         </tr>
                         <tr>
                             <th>Registration Deadline for Approved Abstract Presenters</th>
-                            <td class="f_bold">August 24 (Thu)</td>
+                            <td class="f_bold">August 1 (Thu)</td>
                         </tr>
                     </table>
                 </div>
@@ -95,10 +100,9 @@ $info = sql_fetch($sql_info);
                         </tr>
 						<tr>
 							<td class="text_center">Date & Time</td>
-							<td class="text_center">13:00-14:00, Sep. 8 (Fri)</td>
-							<td class="text_center">13:00-14:00, Sep. 8 (Fri)</td>
-							<td class="text_center">12:50-13:50, Sep. 9 (Sat)</td>
-							<td class="text_center">12:50-13:50, Sep. 9 (Sat)</td>
+							<td class="text_center" colspan="2">13:00-14:00, Sep. 6 (Fri)</td>
+							<td class="text_center" colspan="2">12:50-13:50, Sep. 7 (Sat)</td>
+							
 						</tr>
 						<tr>
 							<td class="text_center">Location</td>
@@ -140,14 +144,14 @@ $info = sql_fetch($sql_info);
                            <tr>
                                <th></th>
 <!--                                <th class="f_bold text_center">Sep. 7 (Thu)</th> -->
-                               <th class="f_bold text_center">Sep. 8 (Fri)</th>
-                               <th class="f_bold text_center">Sep. 9 (Sat)</th>
+                               <th class="f_bold text_center">Sep. 6 (Fri)</th>
+                               <th class="f_bold text_center">Sep. 7 (Sat)</th>
                            </tr>
 						<tr>
 							<td class="text_center">Location</td>
 <!-- 							<td class="text_center">Dressing Room, 3F</td> -->
-							<td class="text_center">Park Studio, 5F</td>
-							<td class="text_center">Park Studio, 5F</td>
+							<td class="text_center" colspan="2">Park Studio, 5F</td>
+							<!-- <td class="text_center">Park Studio, 5F</td> -->
 						</tr>
 						<tr>
 							<td class="text_center">Operating Hour</td>

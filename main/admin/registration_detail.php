@@ -91,6 +91,13 @@
 												THEN 'Not applied'
 												ELSE '-'
 											END) AS is_score2_text,
+											(CASE
+												WHEN rr.is_score3 = 1
+												THEN 'Applied'
+												WHEN rr.is_score3 = 0
+												THEN 'Not applied'
+												ELSE '-'
+											END) AS is_score3_text,
 										    (
 											CASE
 												WHEN rr.payment_methods = '0' THEN 'Credit card'
@@ -191,6 +198,7 @@
 	$is_score_text = isset($registration_detail["is_score_text"]) ? $registration_detail["is_score_text"] : "";
 	$is_score1_text = isset($registration_detail["is_score1_text"]) ? $registration_detail["is_score1_text"] : "";
 	$is_score2_text = isset($registration_detail["is_score2_text"]) ? $registration_detail["is_score2_text"] : "";
+	$is_score3_text = isset($registration_detail["is_score3_text"]) ? $registration_detail["is_score3_text"] : "";
 	$member_status_text = isset($registration_detail["member_status_text"]) ? $registration_detail["member_status_text"] : "";
 	$attendance_type_text = isset($registration_detail["attendance_type_text"]) ? $registration_detail["attendance_type_text"] : "";
 	$invitation_check_yn = isset($registration_detail["invitation_check_yn"]) ? $registration_detail["invitation_check_yn"] : "N";
@@ -388,6 +396,10 @@
 							<td><?=$is_score1_text?></td>
 							<th>운동사 평점신청</th>
 							<td><?=$is_score2_text?></td>
+						</tr>
+						<tr>
+							<th>내과전공의 외부학술회의<br>평점신청</th>
+							<td colspan="3"><?=$is_score3_text?></td>
 						</tr>
 						<tr>
 							<th>KSSO Member Status</th>

@@ -77,6 +77,7 @@ $(document).ready(function(){
 	  ]
 	});
 
+
 	$('header .top, .nav_dim').on('mouseenter',function(){
 		$('.nav_dim').hide();
 		$('.depth01 li a img').attr('src','./img/icons/nav_arrow.png');
@@ -512,5 +513,19 @@ $(document).ready(function(){
 			}
 		}
 	}
+
+	
+		//APP main slick
+		// $('.app_main_wrap').slick({
+		// 	dots: false,
+		// 	infinite: true,
+		// 	slidesToShow: 1,
+		// 	arrows : false,
+		// 	autoplay: true,
+		// 	pauseOnHover : true,       
+		// 	autoplaySpeed: 4000,
+		// 	responsive: []
+		// });
+	
 
 });

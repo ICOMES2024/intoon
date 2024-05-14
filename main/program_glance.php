@@ -4,11 +4,9 @@
 	$session_user = $_SESSION['USER'] ?? NULL;
 	$session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
 
-	if (!empty($session_user) && $session_app_type == 'Y') {
-		include_once('./include/app_header.php');
-	} else {
+
 		include_once('./include/header.php');
-	}
+	
 
 	$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
 ?>
@@ -20,64 +18,21 @@
 </style>
 
 <!-- HUBDNCHYJ : App 일 경우 padding/margin을 조정하는 app_version 클래스가 container에 들어가야 함 -->
-<section class="container program_glance <?= $add_section_class; ?>">
-	<!-- HUBDNCHYJ : App 일 경우 타이틀 영역 입니다. -->
-<?php
-	if (!empty($session_app_type) && $session_app_type == 'Y') {
-		// mobile일때
-?>
-		<div class="app_title_box">
-			<h2 class="app_title">Program<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-			<ul class="app_menu_tab langth_2">
-				<li class="on"><a href="./program_glance.php">Program at a Glance</a></li>
-				<li><a href="./app_program_detail.php">Scientific Program</a></li>
-			</ul>
-		</div>
-<?php
-	} else {
-		// pc일때
-?>
+<section class="container program_glance">
+
 		<h1 class="page_title">Program at a Glance</h1>
-<?php
-	}
-?>
-	<!-- HUBDNCHYJ : App 에서는 이 클래스 사용하시면 됩니다. -->
-<?php
-	if (!empty($session_app_type) && $session_app_type == 'Y') {
-		// mobile일때
-?>
-		<div class="app_tab_wrap fix_cont">
-			<ul class="app_tab program glance">
-				<li class="row2 all_days on"><a href="javascript:;">All Days</a></li>
-				<li><a href="javascript:;">Sep.5(Thu)</a></li>
-				<li><a href="javascript:;">Sep.6(Fri)</a></li>
-				<li style="margin-right:5px;"><a href="javascript:;">Sep.7(Sat)</a></li>
-			</ul>
-		</div>
-<?php
-	}
-?>
+
+
     <div class="inner">
         <div class="program_wrap section">
             <div class="scroll_table">
-<?php
-			if (!empty($session_app_type) && $session_app_type == 'N') {
-			// pc일때
-?>
 				<ul class="tab_green long centerT program_glance">
 					<li class="on"><a href="javascript:;">All Days<br/>September 5 (Thu) ~ 7 (Sat)</a></li>
 					<li><a href="javascript:;">Sep.5 (Thu)</a></li>
 					<li><a href="javascript:;">Sep.6 (Fri)</a></li>
 					<li><a href="javascript:;">Sep.7 (Sat)</a></li>
 				</ul>
-<?php
-			}
-?>
-				<!-- HUBDNCHYJ : App 일때 하위 마크업 주석처리 필요 -->
-<?php
-			if (!empty($session_app_type) && $session_app_type == 'N') {
-			// pc일때
-?>
+
 				<div class="rightT mb20">
 
 				<!-- <button class="btn blue_btn nowrap not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
@@ -85,9 +40,7 @@
 					<!-- <button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0901.pdf')"
 						class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
 				</div>
-<?php
-			}
-?>
+
 				<div class="program_table_wrap">
 					<table class="program_table main-table">
 						<colgroup>
@@ -753,20 +706,7 @@
 </section>
 
 <!-- HUBDNCHYJ : App 일때만 노출되는 팝업 입니다. -->
-<?php
-	if (!empty($session_app_type) && $session_app_type == 'Y') {
-	// mo일때
-?>
-		<div class="popup hold_pop" style="display:block;"> <!-- -->
-			<div class="pop_bg"></div>
-			<div class="pop_contents transparent center_t">
-				<img src="./img/icons/icon_resize.png" alt="">
-				<p class="white_t center_t">Touch on a session to check the details. <br/>Use your fingers to zoom in/out</p>
-			</div>
-		</div>
-<?php
-	}
-?>
+
 <input type="hidden" name="session_app_type" value="<?= $session_app_type ?>">
 <script>
 $(document).ready(function() {
@@ -916,10 +856,7 @@ function table_location(event, _this, e, day, this_name) {
 </script>
 
 <?php 
-    if (!empty($session_app_type) && $session_app_type == 'Y') {
-        // mo일때
-        include_once('./include/app_footer.php'); 
-    }else {
+
         include_once('./include/footer.php');
-    }
+
 ?>

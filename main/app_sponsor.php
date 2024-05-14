@@ -1,8 +1,5 @@
 <?php include_once('./include/head.php'); ?>
 <?php 
-    $session_user = $_SESSION['USER'] ?? NULL;
-    $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
-
     include_once('./include/app_header.php');
 ?>
 

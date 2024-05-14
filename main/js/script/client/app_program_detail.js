@@ -273,14 +273,16 @@ function createHTMLList(program_list, active){
         }
 
         _html += `
-                    <li name="${pl.program_tag_name}">
+                    <li name="${pl.program_tag_name}" class="${pl.program_place_name.toLowerCase()}">
                         <div class="main">
                             ${abstract_html}
                             <p class="title">${pl.program_name}</p>
                             ${chairpersons_html}
                             <div class="info">
-                                <button class="${schedule} schedule_btn" value="${pl.idx}"></button>
-                                <span class="time">${pl.start_time}-${pl.end_time}</span>
+                                <div>
+                                    <button class="${schedule} schedule_btn" value="${pl.idx}"></button>
+                                    <span class="time">${pl.start_time}-${pl.end_time}</span>
+                                </div>
                                 <span class="branch">${pl.program_place_name}</span>
                             </div>
                             ${preview_html}

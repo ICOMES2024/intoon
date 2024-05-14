@@ -338,7 +338,23 @@ if ($during_yn !== "Y") {
 							</p>
 							<input type="text" name="specialty_number" id="specialty_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["specialty_number"] ?? "" : ""?>">
 						</li>
-						
+						<li>
+							<p class='label'>내과전공의 외부학술회의 평점신청 <span class='red_txt'>*</span></p>
+									<div>
+										<div class='radio_wrap'>
+											<ul class='flex'>
+												<li>
+													<input type='radio' class='new_radio registration_check' id='radio7' name='review3' value='1' <?=($prev["is_score3"] == 1 ? "checked" : "")?>>
+													<label for='radio7'><i></i>필요</label>
+												</li>
+												<li>
+													<input type='radio' class='new_radio registration_check' id='radio8' name='review3' value='0' <?=($prev["is_score3"] == 0 ? "checked" : "")?>>
+													<label for='radio8'><i></i>불필요</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+						</li>
 
 						<!-- [240314] sujeong / 평점 신청 쪼개기 -->
 						<li>
