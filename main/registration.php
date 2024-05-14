@@ -601,7 +601,7 @@ if ($during_yn !== "Y") {
 											<td>
 												<ul class="half_ul" style="min-width:300px;">
 													<li>
-														<input type="text" placeholder="Invitation code" name="promotion_code" value="<?=$prev["promotion_code_number"] ?? ""?>">
+														<input type="text" placeholder="Invitation code" name="promotion_code_num" value="<?=$prev["promotion_code_number"] ?? ""?>">
 														<input type="hidden" name="promotion_confirm_code" value="<?=$prev["promotion_code"] ?? ""?>"/>
 													</li>
 													<li><input type="text" placeholder="Recommended by" name="recommended_by" value="<?=$prev["recommended_by"] ?? ""?>" maxlength="100" onkeyup="checkRegExp(this);" onchange="checkRegExp(this);"></li>

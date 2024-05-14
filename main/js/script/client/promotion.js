@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
     $(".apply_btn").on("click", function () {
-        const promotionCode = $("input[name=promotion_code]").val();
+        const promotionCode = $("input[name=promotion_code_num]").val();
         const recommender = $("input[name=recommended_by]").val();
-
+        console.log(promotionCode)
         if($("input[name=reg_fee]").val()==0){
             alert("Please Check the paticipation type");
             return
