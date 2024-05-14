@@ -1810,8 +1810,8 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
   .site_ul > li{
 	margin-bottom: 2.8rem;
-	background-color: #eee;
-	border-radius: 12px;
+	/* background-color: #eee;
+	border-radius: 12px; */
   }
 
   .site_ul > li > a {
@@ -1826,10 +1826,10 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	width: 100%;
   }
 
-  .site_ul > li > a > img:nth-child(1){
+  /* .site_ul > li > a > img:nth-child(1){
 	width: 65%;
 	margin: 0 auto;
-  }
+  } */
 
   .program_detail_ul{
 	display: flex;
