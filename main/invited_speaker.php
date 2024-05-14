@@ -54,7 +54,7 @@
                                             <!-- <p class="">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p> -->
                                             <div>
                                                 <h4 class="title">William Evans</h4>
-                                                <h5>University of Pittsburgh, USA</h5>
+                                                <h5>UC Berkeley, USA</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -139,7 +139,7 @@
                                             <p class=""></p>
                                             <div>
                                                 <h4 class="title">Michael D. Jensen</h4>
-                                                <h5>Mayo Clinic, USA</h5>
+                                                <h5>Mayo College of Medicine, USA</h5>
                                             </div>
                                         </div>
                                     </div>

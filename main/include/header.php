@@ -148,7 +148,7 @@ $locale = locale($language);
                         <a href="/main/venue.php">Venue</a>
                         <ul class="sub_nav">
                             <li><a href="/main/venue.php">Conrad Seoul</a></li>
-                            <li><a href="/main/comingsoon.php">Accommodation</a></li>
+                            <li><a href="/main/accommodation.php">Accommodation</a></li>
                             <li><a href="/main/comingsoon.php">Floor Plan</a></li>
                             <!-- <li><a href="/main/accommodation.php">Accommodation</a></li>
                             <li><a href="/main/floor_plan.php">Floor Plan</a></li> -->
@@ -292,7 +292,7 @@ $(document).ready(function() {
                 <a href="javascript:;"><span>Venue</span></a>
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m7"]) ? "block" : "none") ?>">
                     <li><a href="/main/venue.php">Conrad Seoul</a></li>
-                    <li><a href="/main/comingsoon.php">Accommodation</a></li>
+                    <li><a href="/main/accommodation.php">Accommodation</a></li>
                     <li><a href="/main/comingsoon.php">Floor Plan</a></li>
                 </ul>
             </li>

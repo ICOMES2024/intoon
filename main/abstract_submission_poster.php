@@ -35,7 +35,7 @@ $info = sql_fetch($sql_info);
                 $weekday = ["일", "월", "화", "수", "목", "금", "토"];
             ?>
             <!--List of Accepted Abstract-->
-            <div>
+            <!-- <div>
                 <div class="section_title_wrap2">
                     <h3 class="title">List of Accepted Abstract</h3>
                 </div>
@@ -44,7 +44,7 @@ $info = sql_fetch($sql_info);
 					<button type="button" onClick="javascript:window.open('./download/Guided Poster Presentation_0817.pdf')"><img src="./img/icons/download_w.svg" />Guided Poster Presentation</button>
 					<button type="button" onClick="javascript:window.open('./download/Poster Exhibition_0817_v2.pdf')"><img src="./img/icons/download_w.svg" />Poster Exhibition</button>
                 </div>
-            </div>
+            </div> -->
             <!--keydate-->
             <div>
                 <div class="section_title_wrap2">
@@ -58,19 +58,24 @@ $info = sql_fetch($sql_info);
                         </colgroup>
                         <tr>
                             <th>Abstract Submission System Open</th>
-                            <td class="f_bold">Mid-May</td>
+                            <td class="f_bold">Mid-February</td>
                         </tr>
                         <tr>
-                            <th class="close_th">Abstract Submission Deadline</th>
-                            <td><span class="font_inherit red_t f_bold">August 10 (Thu)</span></td>
+                            <th>Abstract Submission Deadline</th>
+                            <!-- <th class="close_th">Abstract Submission Deadline</th> -->
+                            <td><span class="font_inherit red_t f_bold">May 30 (Thu)</span></td>
                         </tr>
                         <tr>
                             <th>Notification of Abstract Acceptance</th>
-                            <td class="f_bold">August 14 (Mon)</td>
+                            <td class="f_bold">July 10 (Wed)<br><span class="font_12">*Details regarding presentation type and guidelines will be provided.</span></td>
+                        </tr>
+                        <tr>
+                            <th>Notification of Acceptance</th>
+                            <td class="f_bold">End of every month<br><span class="font_12">*The scientific committee will conduct a qualification examination at the end of each month to facilitate attendee's pre-registration.</span></td>
                         </tr>
                         <tr>
                             <th>Registration Deadline for Approved Abstract Presenters</th>
-                            <td class="f_bold">August 24 (Thu)</td>
+                            <td class="f_bold">August 1 (Thu)</td>
                         </tr>
                     </table>
                 </div>
@@ -94,13 +99,12 @@ $info = sql_fetch($sql_info);
                         </tr>
 						<tr>
 							<td class="text_center">Date & Time</td>
-							<td class="text_center">13:00-14:00, Sep. 8(Fri)</td>
-							<td class="text_center">12:50-13:50, Sep. 9(Sat)</td>
+							<td class="text_center">13:00-14:00, Sep. 6 (Fri)</td>
+							<td class="text_center">12:50-13:50, Sep. 7 (Sat)</td>
 						</tr>
 						<tr>
 							<td class="text_center">Location</td>
-							<td class="text_center">Room 7, 6F</td>
-							<td class="text_center">Room 7, 6F</td>
+							<td class="text_center" colspan="2">Room 7, 6F</td>
 						</tr>
                     </table>
                 </div>
@@ -125,17 +129,16 @@ $info = sql_fetch($sql_info);
 				<div class="text_box indent">
 					<ul>
 						<li>• The ICOMES secretariat will be responsible for the printing and displaying of posters on behalf of the presenter.</li>
-						<li>• All presenters of posters must submit their final presentation materials, including PPT and PDF formats, to the secretariat via email <a href="mailto:icomes_abstracts@into-on.com" class="parentheses">(<span class="font_inherit link">icomes_abstracts@into-on.com</span>)</a> before the deadline of <span class="f_bold italic">August 24 (Thu).</span></li>
-						<li class="f_bold">• Please download the designated poster form below.</li>
+						<li>•  All presenters of posters must submit their final presentation materials, including PPT and PDF formats, to the secretariat via email <a href="mailto:icomes_abstracts@into-on.com" class="parentheses">(<span class="font_inherit link">icomes_abstracts@into-on.com</span>)</a> before <span class="f_bold ">August 8 (Thu).</span></li>
+						<li class="f_bold">• Please download the designated poster template below.</li>
 						<li>• If presenters fail to submit their posters before the designated deadlines, they may face penalties such as automatic withdrawal of their accepted abstracts. Therefore, it is strongly advised that presenters keep this in mind and submit their posters in a timely manner.</li>
 					</ul>
 				</div>
 				<div class="text_center btn_box mt25">
-					<a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a>
-					<!--
-                    <a href="javascript:;" class="btn long_btn type2" target="_blank" download="">
-						Poster Form Download<img src="./img/icons/icon_download_yellow.svg" alt="">
-					</a> -->
+                <a href="" class="btn long_btn not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a>
+
+					<!-- [240514] sujeong / 기존 다운로드 버튼 / 파일 전달받지 못해 not_yet으로 대체 -->
+					<!-- <a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a> -->
                 </div>
 			</div>
 			<!--Poster Panel-->

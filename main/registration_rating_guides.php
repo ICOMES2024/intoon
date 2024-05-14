@@ -5,40 +5,30 @@
 	$session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
 
 	//230714 HUBDNC 앱 로그인 시 파라미터 추가 된 부분
-	if(!empty($session_user) && $session_app_type == 'Y') {
-		include_once('./include/app_header.php');
-	} else {
-		include_once('./include/header.php');
-	}
+	include_once('./include/header.php');
+	
 
 	$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
 ?>
 
 <!-- app일 시 app_version 클래스 추가 -->
-<section class="container registration registration_rating_guides <?= $add_section_class; ?>">
+<section class="container registration registration_rating_guides">
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
-<?php
-	if(!empty($session_user) && $session_app_type == 'Y') {
-?>
-	<div class="app_title_box">
-		<h2 class="app_title">평점 안내<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="/main/img/icons/icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-	</div>
-<?php
-	} 
-?>
+
 	<!-- APP에선 h1.page_title{평점 안내} 주석처리 후 위 app 메뉴 탭 주석해제 -->
 	<!-- HUBDNCHYJ : Web 에서는 이 클래스 사용하시면 됩니다. -->
 <?php
 	if (!empty($session_app_type) && $session_app_type == 'N') {
 		// Web일때
 ?>
-	<h1 class="page_title">평점 안내</h1>
+
 <?php
 	}
 ?>
 	<!-- <div class="inner"> -->
 	<!-- 	<img class="coming" src="./img/coming.png"> -->
 	<!-- </div> -->
+	<h1 class="page_title">평점 안내</h1>
 	<div class="inner">
 		<!-- 1. 연수 평점 안내 start -->
 		<h3 class="title">연수 평점 안내</h3>
@@ -93,6 +83,12 @@
 							<td>없음</td>
 							<td colspan="2">40평점<span class="red_t bold">(예정)</span><br/><span class="font_small">* 부분 평점 없음. 6시간 참석 필수</span></td>
 						</tr>
+						<!-- <tr>
+							<td>대한내과학회 분과전문의 자격갱신</td>
+							<td>최대 1평점<span class="red_t bold">(예정)</span></td>
+							<td>최대 1평점<span class="red_t bold">(예정)</span></td>
+							<td>최대 1평점<span class="red_t bold">(예정)</span></td>
+						</tr> -->
 					</tbody>
 				</table>
 			</div>
@@ -172,6 +168,7 @@
 					<li class="red_txt bold">• 내과전공의 외부학술회의 평점은 ‘전공의’만 평점 부여 가능합니다.</li>
 					<li>• 학술대회 종료 후, 학회 사무국에서 취합된 명단을 의사협회 연수 교육 시스템에 등록하여 자동으로 평점이 부여됩니다(약 4주 소요).</li>
 					<li>• 개인에게 평점카드를 발급하지 않습니다.</li>
+					<!-- <li class="red_txt bold">• 내과분과전공의 시험/갱신 평점은 체류 시간 상관없이 참석 확인 시 1평점이 부여됩니다.</li> -->
 				</ul>
 			</div>
 		</div>
@@ -181,10 +178,7 @@
 
 
 <?php 
-    if (!empty($session_app_type) && $session_app_type == 'Y') {
-        // mo일때
-        include_once('./include/app_footer.php'); 
-    }else {
+
         include_once('./include/footer.php');
-    }
+
 ?>

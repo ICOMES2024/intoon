@@ -74,6 +74,7 @@
 		
 		//[240315] sujeong / 운동사 평점신청 추가
 		$rating2              = isset($data["review2"]) ? $data["review2"] : "";											// 운동사 평점신청 
+		$rating3              = isset($data["review3"]) ? $data["review3"] : "";											// 운동사 평점신청 
 		$licence_number      = isset($data["licence_number"]) && $data["licence_number"] != "" ? $data["licence_number"] : "";							// 의사면허번호
 		$specialty_number    = isset($data["specialty_number"]) && $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
 		$nutritionist_number = isset($data["nutritionist_number"]) && $data["nutritionist_number"] != "" ? $data["nutritionist_number"] : "";					// 영양사면허번호
@@ -322,6 +323,14 @@
 			$add_set .= ", is_score2 = NULL ";
 		}
 		
+
+		//[240514] sujeong / 내과전공의 외부학술회의 평점신청추가
+		if($rating3 !== "") {
+			$add_set .= ", is_score3 = {$rating3} ";
+		}else{
+			$add_set .= ", is_score3 = NULL ";
+		}
+			
 		if($licence_number !== "") {
 			$add_set .= ", licence_number = '{$licence_number}' ";
 		}else{

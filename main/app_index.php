@@ -28,12 +28,40 @@
 	html {background: url("https://image.webeon.net/icomes2024/app/2024_img_app_vsl5.png") no-repeat left bottom /cover;}
 	html, body {min-height:100%;}
 	.rolling_wrap {display:block;}
+	.slick-slider{padding:0 !important;}
 </style>
 
 <!-- HUBDNCLHJ : app loading 페이지 -->
 <section class="container app_version main">
 	<div class="app_vsl">
-		<img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt="">
+		<div class="app_main_wrap">
+			<img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt="">
+			<!-- <li>
+				<a>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-3.png" class="text" alt="">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_1-3.png" class="text" alt="">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_2-3.png" class="text" alt="">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_3-3.png" class="text" alt="">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_4-3.png" class="text" alt="">
+				</a>
+			</li> -->
+		</div>
 	</div>
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
@@ -92,7 +120,7 @@
 				</a>
 			</li> -->
 			<li>
-				<a href="https://www.jomes.org/" target="_blank">
+				<a href="/main/app_site.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu09.svg" alt="">
 					<!-- <span>JOMES</span> -->
 				</a>
@@ -184,43 +212,43 @@
 	// }
 
 	//[240509] APP 버전 체크 코드
-	// if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-    //     try{
-    //         window.AndroidScript.checkAppVersion();
-    //     } catch (err){
-    //        alert("ICOMES App has been updated.")
-    //        window.location.href = "https://play.google.com/store/apps/details?id=com.intoon.icomes";
-    //     }
-    //     //[240314] hub 스탬프 투어 소스 코드 수정 !@#$^
-    // } else if (window.webkit && window.webkit?.messageHandlers!=null) {
-    // // } else if (window.webkit && window.webkit.messageHandlers!=null) {
-    //     try{
-    //         window.webkit.messageHandlers.checkAppVersion.postMessage('');
-    //     } catch (err){
-    //         // alert("ICOMES App has been updated.")
-    //         // window.location.href = "https://apps.apple.com/kr/app/icomes2023/id6450940155";
+	if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+        try{
+            window.AndroidScript.checkAppVersion();
+        } catch (err){
+           alert("ICOMES App has been updated.")
+           window.location.href = "https://play.google.com/store/apps/details?id=com.intoon.icomes";
+        }
+        //[240314] hub 스탬프 투어 소스 코드 수정 !@#$^
+    } else if (window.webkit && window.webkit?.messageHandlers!=null) {
+    // } else if (window.webkit && window.webkit.messageHandlers!=null) {
+        try{
+            window.webkit.messageHandlers.checkAppVersion.postMessage('');
+        } catch (err){
+            alert("ICOMES App has been updated.")
+            window.location.href = "https://apps.apple.com/kr/app/icomes/id6450940155";
            
-    //     }
-    // }
+        }
+    }
 
-    // checkAppVersionCallback = (appVersion) =>{
-	// 	const AOSver = 1.4;
-	// 	const IOSver = 1.6;
+    checkAppVersionCallback = (appVersion) =>{
+		const AOSver = 1.4;
+		const IOSver = 1.6;
 
-    //     if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
-    //         if(parseFloat(appVersion) < AOSver){
-    //             alert("ICOMES App has been updated.")
-    //             window.location.href = "https://play.google.com/store/apps/details?id=com.intoon.icomes";     
-    //         }
-    //     //[240314] hub 스탬프 투어 소스 코드 수정 !@#$^
-    // } else if (window.webkit && window.webkit?.messageHandlers!=null) {
-    // // } else if (window.webkit && window.webkit.messageHandlers!=null) {
-    //     if(parseFloat(appVersion) < IOSver){
-    //         // alert("ICOMES App has been updated.")
-    //         // window.location.href = "https://apps.apple.com/kr/app/icomes2023/id6450940155";
-    //     }
-    // }
-    // }
+        if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
+            if(parseFloat(appVersion) < AOSver){
+                alert("ICOMES App has been updated.")
+                window.location.href = "https://play.google.com/store/apps/details?id=com.intoon.icomes";     
+            }
+        //[240314] hub 스탬프 투어 소스 코드 수정 !@#$^
+    } else if (window.webkit && window.webkit?.messageHandlers!=null) {
+    // } else if (window.webkit && window.webkit.messageHandlers!=null) {
+        if(parseFloat(appVersion) < IOSver){
+            alert("ICOMES App has been updated.")
+            window.location.href = "https://apps.apple.com/kr/app/icomes/id6450940155";
+        }
+    }
+    }
 	 });
 
 	//webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")

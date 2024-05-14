@@ -1193,7 +1193,7 @@ section.container.sponsor {padding-top: 164px;}
 .rolling_wrap .schedule {color:#fff; background:rgba(0,102,204,0.63);}
 .rolling_wrap .schedule a {color:#fff; position:relative;}
 .rolling_wrap .schedule a:after {content:''; display:block; position:absolute; top:1px; left:-4px; transform:translateX(-100%); width:12px; height:12px; background: url("../img/icons/icon_app_star.svg") no-repeat center /12px;}
-.rolling_wrap .notice {background:#FFF url("https://image.webeon.net/icomes2024/app/2024_icon_app_alarm2.svg") no-repeat left 20px top 12px /15px; min-height:20px;}
+.rolling_wrap .notice {background:#FFF url("https://image.webeon.net/icomes2024/app/2024_icon_app_alarm2.svg") no-repeat left 20px top 12px /15px; min-height:24px;}
 .rolling_wrap .notice a {display:block; white-space:nowrap; width:100%; overflow:hidden; text-overflow:ellipsis; line-height:20px;}
 .program_inner_open {display:flex; flex-direction:column; align-items:center; justify-content:flex-end; position:relative;}
 .program_inner_pop {display:none; background-color:#002060; padding:10px 12px; position:absolute; left:50%; bottom:63px; z-index:30; transform:translateX(-15.5%);}

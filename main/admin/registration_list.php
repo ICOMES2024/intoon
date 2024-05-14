@@ -87,6 +87,13 @@
 											END
 										) AS is_score2_text,
 										(
+											CASE rr.is_score3
+												WHEN '1' THEN 'Applied'
+												WHEN '0' THEN 'Not applied'
+												ELSE '-'
+											END
+										) AS is_score3_text,
+										(
 											CASE
 												WHEN rr.status = '0'
 												THEN '등록취소'
@@ -176,7 +183,7 @@
 	$html .= '<tr class="tr_center">';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">Registration</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="17">Participants Inforatmion</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">평점신청(Korean Only)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">평점신청(Korean Only)</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">Payment Information</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">Others</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;"></th>';
@@ -205,6 +212,7 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">대한의사협회 평점신청</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">의사면허번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">전문의번호</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">내과전공의 외부학술회의 평점신청 여부</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">한국영양교육평가원 평점신청 여부</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">영양사자격번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">임상영양사자격번호</th>';
@@ -347,6 +355,7 @@
 		$is_score = ($rl['is_score_text'] == 'Applied') ? 'Y' : 'N';
 		$is_score1 = ($rl['is_score1_text'] == 'Applied') ? 'Y' : 'N';
 		$is_score2 = ($rl['is_score2_text'] == 'Applied') ? 'Y' : 'N';
+		$is_score3 = ($rl['is_score3_text'] == 'Applied') ? 'Y' : 'N';
 
 		$html .= '<tr class="tr_center">';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.($rk + 1).'</td>';
@@ -372,6 +381,7 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$is_score.'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $licence_number.'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $specialty_number .'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$is_score3.'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$is_score1.'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $nutritionist_number .'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $dietitian_number.'</td>';
