@@ -100,7 +100,7 @@ $(document).ready(function(){
     }
 
     checkAppVersionCallback = (appVersion) =>{
-        const AOSver = 1.4;
+        const AOSver = 1.5;
 		const IOSver = 1.6;
 
         if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {

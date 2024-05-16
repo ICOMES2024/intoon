@@ -1800,14 +1800,12 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	z-index: 1; 
   }
   
-  .app_index_menu li a:hover::after {
-	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2); /* 호버 상태일 때 배경색 변경 */
-  }
 
   .app_main_wrap li a img{
 	padding: 0 20px;
   }
 
+  /* APP - app_site.php */
   .site_ul > li{
 	margin-bottom: 2.8rem;
 	/* background-color: #eee;
@@ -1837,11 +1835,13 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	gap: 4px;
   }
 
+
+  /*APP - program detail*/
   .program_detail_ul > li{
 	border-radius: 12px;
   }
 
-  .program_detail_ul > .room1{
+  /* .program_detail_ul > .room1{
 	padding-left: 10%;
 	background: rgb(0,0,102);
 	background: linear-gradient(90deg, rgba(0,0,102,1) 0%, rgba(0,0,102,1) 10%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 100%);
@@ -1857,4 +1857,4 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	padding-left: 10%;
 	background: rgb(255,244,0);
 	background: linear-gradient(90deg, rgba(250,0,0,1) 0%, rgba(250,0,0,1) 10%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 100%);
-  }
+  } */
