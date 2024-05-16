@@ -217,8 +217,9 @@
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="key_lecture_1">
 									Keynote Lecture 1 
-									<!-- <p class="bold">Intermittent Metabolic Switching and Brain Health</p>
-									<p>Thiruma V. Arumugam (La Trobe University, Australia)</p> -->
+									<p class="bold">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
+									<p>Joel K. Elmquist</p>
+									<p>UT Southwestern Medical Center, USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -285,8 +286,9 @@
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2">
 									Keynote Lecture 2
-									<!-- <p class="bold">Adipose Tissue – A Treasure Box for Discoveries</p>
-									<p>Matthias Blüher (University of Leipzig, Germany)</p> -->
+									<p class="bold">GLP-1-based therapy of obesity</p>
+									<p>Michael A. Nauck</p>
+									<p>Ruhr-University Bochum, Germany</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -384,6 +386,9 @@
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2">
 									Keynote Lecture 3
+									<p class="bold">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
+									<p>Silva Arslanian</p>
+									<p>University of Pittsburgh, USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -410,7 +415,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_11">
-									Symposium 11 <p></p>
+									Symposium 11 <p>Diet Quality and Weight Regulation</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_12">
@@ -483,8 +488,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="key_lecture_4" colspan="3">
 									Keynote Lecture 4
-									<!-- <p class="bold">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
-									<p>Tamas Horvath (Yale University, USA)</p> -->
+									<p class="bold">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
+									<p>Jean-Pierre Després</p>
+									<p>VITAM - Research Centre on Sustainable Health, Canada</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -503,7 +509,7 @@
 									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_13">
-									Symposium 13 <p></p>
+									Symposium 13 <p>Obesity Related Comorbidity-Fatty Liver</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_14">
@@ -599,8 +605,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_5" colspan="3">
 									Keynote Lecture 5
-									<p class="bold"></p>
-									<p></p>
+									<p class="bold">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
+									<p>William Evans</p>
+									<p>University of California, Berkeley, USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -614,8 +621,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_6" colspan="3">
 									Keynote Lecture 6
-									<p class="bold"></p>
-									<p></p>
+									<p class="bold">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
+									<p>Michael D. Jensen</p>
+									<p>Mayo College of Medicine,USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -635,7 +643,7 @@
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_17">
 									Symposium 17 
-									<p></p>
+									<p>Incretin Therapy from MARS, Bariatric Surgery from VENUS</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_18">
@@ -645,7 +653,7 @@
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_19">
 									Symposium 19 
-									<p></p>
+									<p>Expanding Horizons in Pediatric Obesity</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_20">
@@ -672,8 +680,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_7" colspan="3">
 									Keynote Lecture 7
-									<p class="bold"></p>
-									<p></p>
+									<p class="bold">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
+									<p>W. Timothy Garvey</p>
+									<p>University of Alabama at Birmingham, USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
