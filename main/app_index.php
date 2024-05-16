@@ -26,7 +26,15 @@
 
 <style>
 	html {background: url("https://image.webeon.net/icomes2024/app/2024_img_app_vsl5.png") no-repeat left bottom /cover;}
-	html, body {min-height:100%;}
+	html, body {
+		min-height:100%;
+		-webkit-touch-callout: none;
+		 -webkit-user-select: none; 
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none; 
+	}
 	.rolling_wrap {display:block;}
 	.slick-slider{padding:0 !important;}
 </style>
@@ -65,61 +73,55 @@
 	</div>
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_welcome.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu01.svg" alt="">
 					<!-- <span>ICOMES 2023</span> -->
 				</a>
 			</li>
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_program_glance.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu02.svg" alt="">
 					<!-- <span>PROGRAM</span> -->
 				</a>
 			</li>
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_abstract.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu03.svg" alt="">
 					<!-- <span>ABSTRACT</span> -->
 				</a>
 			</li>
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_invited_speakers.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu04.svg" alt="">
 					<!-- <span>INVITED<br/>SPEAKERS</span> -->
 				</a>
 			</li>
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_happening_now.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu05.svg" alt="">
 					<!-- <span>HAPPENING<br/>NOW</span> -->
 				</a>
 			</li>
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_floor_plan.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu06.svg" alt="">
 					<!-- <span>FLOOR PLAN</span> -->
 				</a>
 			</li>
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_stamp_guidelines.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu07.svg" alt="">
 					<!-- <span>SPONSORSHIP</span> -->
 				</a>
 			</li>
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_notice.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu08.svg" alt="">
 					<!-- <span>NOTICE</span> -->
 				</a>
 			</li>
-			<!-- <li>
-				<a href="https://www.kosso.or.kr/">
-					<img src="./img/icons/app_menu09.svg" alt="">
-					<span>KSSO</span>
-				</a>
-			</li> -->
-			<li>
+			<li class="app_menu_img">
 				<a href="/main/app_site.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu09.svg" alt="">
 					<!-- <span>JOMES</span> -->
@@ -138,7 +140,112 @@
 		$(".app_header").addClass("simple");
 		$(".app_nav_btn img").attr("src", "https://image.webeon.net/icomes2024/app/2024_icon_hamburger2.svg");
 
-        
+        const imgList = document.querySelectorAll(".app_menu_img");
+
+		imgList.forEach((menuImg) => {
+			menuImg.addEventListener("touchstart", (e) => {
+			
+				//console.log(e.target.childNodes[1].src);
+				let ImgUrl = e.target.childNodes[1].src;
+				if(ImgUrl.includes("app_menu01")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu01-1.png"
+				}
+				else if(ImgUrl.includes("app_menu02")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu02-1.png"
+				}
+				else if(ImgUrl.includes("app_menu03")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu03-1.png"
+				}
+				else if(ImgUrl.includes("app_menu04")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu04-1.png"
+				}
+				else if(ImgUrl.includes("app_menu05")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu05-1.png"
+				}
+				else if(ImgUrl.includes("app_menu06")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu06-1.png"
+				}
+				else if(ImgUrl.includes("app_menu07")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07-1.png"
+				}
+				else if(ImgUrl.includes("app_menu08")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu08-1.png"
+				}
+				else if(ImgUrl.includes("app_menu09")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu09-1.png"
+				}
+			});
+
+			menuImg.addEventListener("drag", (e) => {
+				
+				//console.log(e.target.childNodes[1].src);
+				let ImgUrl = e.target.childNodes[1].src;
+				if(ImgUrl.includes("app_menu01")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu01.svg"
+				}
+				else if(ImgUrl.includes("app_menu02")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu02.svg"
+				}
+				else if(ImgUrl.includes("app_menu03")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu03.svg"
+				}
+				else if(ImgUrl.includes("app_menu04")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu04.svg"
+				}
+				else if(ImgUrl.includes("app_menu05")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu05.svg"
+				}
+				else if(ImgUrl.includes("app_menu06")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu06.svg"
+				}
+				else if(ImgUrl.includes("app_menu07")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07.svg"
+				}
+				else if(ImgUrl.includes("app_menu08")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu08.svg"
+				}
+				else if(ImgUrl.includes("app_menu09")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu09.svg"
+				}
+
+			});
+
+			menuImg.addEventListener("touchend", (e) => {
+				//console.log(e.target.childNodes[1].src);
+				let ImgUrl = e.target.childNodes[1].src;
+				if(ImgUrl.includes("app_menu01")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu01.svg"
+				}
+				else if(ImgUrl.includes("app_menu02")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu02.svg"
+				}
+				else if(ImgUrl.includes("app_menu03")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu03.svg"
+				}
+				else if(ImgUrl.includes("app_menu04")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu04.svg"
+				}
+				else if(ImgUrl.includes("app_menu05")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu05.svg"
+				}
+				else if(ImgUrl.includes("app_menu06")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu06.svg"
+				}
+				else if(ImgUrl.includes("app_menu07")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07.svg"
+				}
+				else if(ImgUrl.includes("app_menu08")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu08.svg"
+				}
+				else if(ImgUrl.includes("app_menu09")){
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu09.svg"
+				}
+
+			});
+		});
+
+
+
 
 	//[240423] sujeong / 로그인 없이 토큰 받기
 	// let icomes_device = null;
@@ -232,7 +339,7 @@
     }
 
     checkAppVersionCallback = (appVersion) =>{
-		const AOSver = 1.4;
+		const AOSver = 1.5;
 		const IOSver = 1.6;
 
         if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
@@ -249,7 +356,7 @@
         }
     }
     }
-	 });
+});
 
 	//webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")
 
