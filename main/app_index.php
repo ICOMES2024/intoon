@@ -74,7 +74,8 @@
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
 			<li class="app_menu_img">
-				<a href="/main/app_welcome.php">
+				<a href="/main/app_overview.php" >
+                <!-- overview 로 번경 -->   
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu01.svg" alt="">
 					<!-- <span>ICOMES 2023</span> -->
 				</a>
@@ -86,33 +87,34 @@
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_abstract.php">
+				<a href="/main/app_abstract.php" class="get_ready_alert">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu03.svg" alt="">
 					<!-- <span>ABSTRACT</span> -->
+                    <!-- 추후 get_ready_alert 삭제 -->
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_invited_speakers.php">
+				<a href="/main/app_invited_speakers.php" class="get_ready_alert">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu04.svg" alt="">
 					<!-- <span>INVITED<br/>SPEAKERS</span> -->
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_happening_now.php">
+				<a href="/main/app_happening_now.php" class="get_ready_alert">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu05.svg" alt="">
 					<!-- <span>HAPPENING<br/>NOW</span> -->
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_floor_plan.php">
+				<a href="/main/app_floor_plan.php" class="get_ready_alert">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu06.svg" alt="">
 					<!-- <span>FLOOR PLAN</span> -->
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_stamp_guidelines.php">
+				<a href="/main/app_stamp_guidelines.php" class="get_ready_alert">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu07.svg" alt="">
-					<!-- <span>SPONSORSHIP</span> -->
+					<!-- <span>Booth Tour</span> -->
 				</a>
 			</li>
 			<li class="app_menu_img">
@@ -356,6 +358,8 @@
         }
     }
     }
+    
+
 });
 
 	//webView.evaluateJavaScript("document.documentElement.style.webkitUserSelect='none'")
