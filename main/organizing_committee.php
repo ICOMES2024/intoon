@@ -5,7 +5,8 @@ $session_user = $_SESSION['USER'] ?? NULL;
 $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
 
 if(!empty($session_user) && $session_app_type == 'Y') {
-    include_once('./include/app_header.php');
+    include_once('./include/header.php');
+    //include_once('./include/app_header.php');  pc에서 접속시 앱페이지 나오는 경우 발생으로 변경
 } else {
     include_once('./include/header.php');
 }
@@ -23,7 +24,8 @@ $sql_title =    "SELECT
 					) AS res";
 $titles = explode(',', sql_fetch($sql_title)['title_concat']);
 
-$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
+$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : '';
+//$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : ''; pc에서 접속시 앱페이지 나오는 경우 발생으로 변경
 ?>
 
 <!-- app일 시 section에 app_version 클래스 추가 -->
@@ -440,7 +442,8 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_
 <?php 
     if (!empty($session_app_type) && $session_app_type == 'Y') {
         // mo일때
-        include_once('./include/app_footer.php'); 
+        include_once('./include/footer.php'); 
+        //include_once('./include/app_footer.php'); pc에서 접속시 앱페이지 나오는 경우 발생으로 변경
     }else {
         include_once('./include/footer.php');
     }

@@ -81,7 +81,7 @@ to gain invaluable insights while advancing your career in the healthcare field.
                         </colgroup>
                         <tr>
                             <th class=" center_t">Qualification</th>
-                            <td class="">For APEC residents interested in ASIA Leaders Obesity Network Group</td>
+                            <td class="">For APEC residents interested in ASIA Leaders Obesity Network Group (For Foreigners Only)</td>
                         </tr>
                         <tr>
                             <th class=" center_t">Limit</th>

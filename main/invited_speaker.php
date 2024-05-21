@@ -23,7 +23,7 @@
                                 <div class="bottom_wrap">
                                     <div class="flex">
                                         <div class="profile_wrap">
-                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_01.jpg">
+                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-2.jpg">
                                             <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-1.jpg"> -->
                                         </div>
                                         <div class="desc_wrap flex1">
@@ -32,7 +32,7 @@
                                             <!-- <p class="">Intermittent Metabolic Switching and Brain Health</p> -->
                                             <div>
                                                 <h4 class="title">Joel K. Elmquist</h4>
-                                                <h5>University of Texas Southwestern, USA</h5>
+                                                <h5>UT Southwestern Medical Center, USA</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@
                                             <!-- <p class="">Understanding Human Metabolic Dysregulation In Vivo Using Stable Isotope Tracers: More than 50 Years of Experience</p> -->
                                             <div>
                                                 <h4 class="title">William Evans</h4>
-                                                <h5>UC Berkeley, USA</h5>
+                                                <h5>University of California, Berkeley, USA</h5>
                                             </div>
                                         </div>
                                     </div>

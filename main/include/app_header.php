@@ -26,24 +26,24 @@
 				<li class="on">
 					<a href="javascript:;">ICOMES 2024</a>
 					<ul class="app_sub">
-						<li><a href="/main/app_welcome.php">Welcome Message</a></li>
+						<li><a href="/main/app_welcome.php" class="get_ready_alert">Welcome Message</a></li>
 						<li><a href="/main/app_organizing_committee.php">Organization</a></li>
 						<li><a href="/main/app_overview.php">Overview</a></li>
 						<li><a href="/main/app_venue.php">Venue</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="/main/app_floor_plan.php">Floor Plan</a>
+					<a href="/main/app_floor_plan.php" class="get_ready_alert">Floor Plan</a>
 				</li>
 				<li>
 					<a href="javascript:;">Program</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_program_glance.php">Program at a Glance</a></li>
-						<li><a href="/main/app_program_detail.php">Scientific Program</a></li>
+						<li><a href="/main/app_program_detail.php" class="get_ready_alert">Scientific Program</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:;">Abstract</a>
+					<a href="javascript:;" class="get_ready_alert">Abstract</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
@@ -62,7 +62,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="/main/app_invited_speakers.php">Invited Speakers</a>
+					<a href="/main/app_invited_speakers.php" class="get_ready_alert">Invited Speakers</a>
 				</li>
 				<!-- <li>
 					<a href="javascript:;">Sponsorship</a>
@@ -78,12 +78,12 @@
 					<a href="/main/app_notice.php">Notice</a>
 				</li>
 				<li>
-					<a href="/main/app_survey.php">Survey</a>
+					<a href="/main/app_survey.php" class="get_ready_alert">Survey</a>
 				</li>
 				<!-- [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ -->
 				<!-- app_header // Tour Map(기존) => Stamp List(현재) -->
 				<li>
-					<a href="javascript:;">Booth Tour</a>
+					<a href="javascript:;" class="get_ready_alert">Booth Tour</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
 						<li><a href="/main/app_my_stamp.php">My Stamp</a></li>
@@ -99,12 +99,15 @@
 						<li><a href="/main/app_schedule.php">My Schedule</a></li>
 					</ul>
 				</li>  -->
-				<li>
+				<!--
+                <li>
 					<a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">Program Book <br/>Download</a>
 				</li>
 				<li>
 					<a href="http://184a8b4a1a076d93.kinxzone.com/Abstractbook.pdf" download class="pdf_view">Abstract Book <br/>Download</a>
 				</li>
+                -->
+
 			</ul>
 		</div>
     </div>
@@ -122,6 +125,12 @@
                 openPDF(path);
             }
         });
+
+        $(".get_ready_alert").click(function() {
+            alert("Will be updated.");
+            return false;     
+          });
+
 
         function openPDF(path) {
             // let path = e.target.href;

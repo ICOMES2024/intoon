@@ -286,7 +286,7 @@
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2">
 									Keynote Lecture 2
-									<p class="bold">GLP-1-based therapy of obesity</p>
+									<p class="bold">GLP-1 Based Therapy of Obesity</p>
 									<p>Michael A. Nauck</p>
 									<p>Ruhr-University Bochum, Germany</p>
 									<input type="hidden" name="e" value="room1">

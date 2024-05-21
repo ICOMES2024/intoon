@@ -100,8 +100,8 @@ $info = sql_fetch($sql_info);
                         </tr>
 						<tr>
 							<td class="text_center">Date & Time</td>
-							<td class="text_center" colspan="2">13:00-14:00, Sep. 6 (Fri)</td>
-							<td class="text_center" colspan="2">12:50-13:50, Sep. 7 (Sat)</td>
+							<td class="text_center" colspan="2">13:00 - 14:00<br>Sep. 6 (Fri)</td>
+							<td class="text_center" colspan="2">12:50 - 13:50<br>Sep. 7 (Sat)</td>
 							
 						</tr>
 						<tr>
