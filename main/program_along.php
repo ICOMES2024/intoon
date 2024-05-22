@@ -50,16 +50,16 @@ to gain invaluable insights while advancing your career in the healthcare field.
                             <th class="bold center_t dark_along_th">Details</th>
                         </tr>
                         <tr>
-                            <td class="">September, 4 (Wed.)</td>
-                            <td class="">14:00~</td>
+                            <td class="">September 4 (Wed.)</td>
+                            <td class="">14:00 ~</td>
                             <td class="">
                                 <p class="bold">Workshop - Presentation and Discussion</p>
                                 - Related to the epidemiology, definition, stigmata, and public health burden of obesity
                             </td>
                         </tr>
                         <tr>
-                            <td class="">September, 5 (Thu.)</td>
-                            <td class="">08:00~</td>
+                            <td class="">September 5 (Thu.)</td>
+                            <td class="">08:00 ~</td>
                             <td class="">
                                 <p class="bold">Hospital Tour</p>
                             </td>
@@ -81,11 +81,11 @@ to gain invaluable insights while advancing your career in the healthcare field.
                         </colgroup>
                         <tr>
                             <th class=" center_t">Qualification</th>
-                            <td class="">For APEC residents interested in ASIA Leaders Obesity Network Group (For Foreigners Only)</td>
+                            <td class="">For APEC residents interested in ASIA Leaders Obesity Network Group <span style="font-weight:900; color:#000" >(For Foreigners Only)</span></td>
                         </tr>
                         <tr>
-                            <th class=" center_t">Limit</th>
-                            <td class="">18 people</td>
+                            <th class=" center_t">Participant limit</th>
+                            <td class="">## people</td>
                         </tr>
                         <tr>
                             <th class=" center_t">Participation Fee</th>
@@ -122,7 +122,7 @@ to gain invaluable insights while advancing your career in the healthcare field.
         </div>
         <div class="text_center along_btn_box mt25">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6pbvmim7Oi_ZQuiYNpGvws7T8ZyFYdvY-7SYEDuBlE3CNHg/viewform" target="_blank"  class="btn long_btn">Apply for ALONG Program</a> 
-            <a href="https://image.webeon.net/icomes2024/download/ICOMES_ALONG_Program_CV_Form.docx" class="btn long_btn" target="_blank" download ><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Curriculum Vitae Template</a>
+            <a href="https://image.webeon.net/icomes2024/download/ICOMES_ALONG_Program_CV_Form_v2.docx" class="btn long_btn" target="_blank" download ><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Curriculum Vitae Template</a>
         </div>
         <!--//section1-->
 

@@ -1164,15 +1164,15 @@ section.container.sponsor {padding-top: 164px;}
 .app_nav_top {height:59px; padding:19px 17px; display:flex; align-items:center; justify-content:flex-end; background-color:#FFFFFF;}
 .app_nav_top a {font-size:17px; font-weight:800; display:flex; align-items:center;}
 .app_nav_top img {width:15px; margin-right:4px;}
-.app_nav_bot {height:calc(100% - 60px); position:relative; background-color:#000066;}
+.app_nav_bot {height:calc(100% - 60px); position:relative; background-color:#5C0778;}
 .app_nav_menu {width:46%; height:100%; overflow-y:auto;}
 .app_nav_menu > li > a {display:block; padding:22px; font-size:16px; font-weight:bold; line-height:1.4; color:#FFFFFF; text-align:left;}
-.app_nav_menu > li.on > a {background-color:#2C65C4;}
+.app_nav_menu > li.on > a {background-color:#EBE5ED; color:#5C0778;}
 .app_nav_menu > li.on .app_sub {display:block; font-size:17px; color:#FFFFFF;}
 .app_nav_menu .app_sub {display:none; width:54%; height:100%; overflow-y:auto; padding:10px 0; position:absolute; top:0; left:46%;}
 .app_nav_menu .app_sub li a {padding:12px 22px; display:block; font-size:16px; color:#000000;}
-.app_nav_menu .app_sub li a:hover, .app_nav_menu .app_sub li a:focus {font-weight:800; color:#000066;}
-.app_sub_bg {width:54%; height:100%; position:absolute; top:0; left:46%; background-color:#D2E7FC;}
+.app_nav_menu .app_sub li a:hover, .app_nav_menu .app_sub li a:focus {font-weight:800; color:#5C0778;}
+.app_sub_bg {width:54%; height:100%; position:absolute; top:0; left:46%; background-color:#F2F2F2;}
 
 /*사용자 APP footer*/
 .app_ft_dim {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:transparent; z-index:20;}

@@ -126,25 +126,25 @@
 		<div class="">
 			<div class="main_speaker_wrap">
 				<div>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_1-3.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_1-6.png"/>
 				</div>
 				<div>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_2-3.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_2-6.png"/>
 				</div>
 				<div>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_3-3.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_3-6.png"/>
 				</div>
 				<div>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_4-3.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_4-6.png"/>
 				</div>
 				<div>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-3.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-6.png"/>
 				</div>
 				<div>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_6-3.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_6-6.png"/>
 				</div>
 				<div>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_7-3.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_7-6.png"/>
 				</div>
 			</div>
 			<!-- <div class="main_btn_wrap">

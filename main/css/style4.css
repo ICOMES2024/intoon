@@ -1106,6 +1106,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 /* HUBDNCLHJ 작업*/
 @media screen and (max-width: 1199px) {
 	section.container .page_title {height: 105px;padding: 38px 0 48px;}
+	.page_title p{margin-top:0px;}
 } 
 
 @media screen and (max-width: 486px) {
@@ -1615,34 +1616,34 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 }
 .speakers_wrap .main_speaker_wrap > div:nth-child(1){
 	/* top:-10px; */
-	height: 257px;
+	/* width: 257px; */
 }
 
 .speakers_wrap .main_speaker_wrap > div:nth-child(2){
-	top:-10px;
-	height: 269px;
+	/* top:-10px; */
+	/* height: 269px; */
 }
 
 .speakers_wrap .main_speaker_wrap > div:nth-child(3){
-	height: 260px;
+	/* height: 260px; */
 }
 .speakers_wrap .main_speaker_wrap > div:nth-child(4){
-	height: 260px;
+	/* height: 260px; */
 }
 
 .speakers_wrap .main_speaker_wrap > div:nth-child(5){
-	top:-85px;
-	height: 273px;
+	top:-55px;
+	/* height: 273px; */
 }
 
 .speakers_wrap .main_speaker_wrap > div:nth-child(6){
-	top:-84px;
-	height: 273px;
+	top:-55px;
+	/* height: 273px; */
 }
 
 .speakers_wrap .main_speaker_wrap > div:nth-child(7){
-	top:-64px;
-	height: 254px;
+	top:-55px;
+	/* height: 254px; */
 }
 
 .speakers_wrap .main_speaker_wrap > div > img {
