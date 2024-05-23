@@ -498,7 +498,7 @@ $(document).ready(function() {
             var html = '';
             for (i = current_count; i < num; i++) {
 				html = '';
-
+                //[240523] sujoeng / 학회팀 요청 / 추가되는 저자에 별 표시 없애기
                 html += '<form name="coauthor_abstract_form' + i + '" class="abstract_form co_abstract" data-num="'+i+'">';
                 html += '<ul class="basic_ul">';
                 html += '<li>';
@@ -514,13 +514,15 @@ $(document).ready(function() {
 				html += '<li>';
 				html += '<input type="checkbox" class="checkbox presenting_author" id="author_chk1_2_'+i+'" name="add_co_presenting_author'+i+'" value="Y" onchange="check_value()">';
 				html += '<label for="author_chk1_2_'+i+'">';
-				html += '<i></i>Presenting Author<span class="red_txt">*</span>';
+				//html += '<i></i>Presenting Author<span class="red_txt">*</span>';
+				html += '<i></i>Presenting Author';
 				html += '</label>';
                 html += '</li>';
 				html += '<li>';
 				html += '<input type="checkbox" class="checkbox corresponding_author" id="author_chk1_3_'+i+'" name="add_co_corresponding_author'+i+'" value="Y" onchange="check_value()">';
 				html += '<label for="author_chk1_3_'+i+'">';
-				html += '<i></i>Corresponding Author<span class="red_txt">*</span>';
+				// html += '<i></i>Corresponding Author<span class="red_txt">*</span>';
+				html += '<i></i>Corresponding Author';
 				html += '</label>';
                 html += '</li>';
                 html += '</ul>';

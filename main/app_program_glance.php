@@ -70,15 +70,15 @@
 								<td>
 									<div class="colons_div">15:00-16:30</div>
 								</td>
-								<td class="yellow_green_bg pointer" name="jomes">
+								<td class="skyblue_bg pointer" name="jomes_session">
 									Best Article in JOMES<p></p>
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="violet_bg pointer" name="joint">
+								<td class="violet_bg pointer" name="joint_symposium_1">
 									Joint Symposium<br>KSSO-JKT (Basic)
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="skyblue_bg pointer" name="committee">
+								<td class="skyblue_bg pointer" name="committee_session_1">
 									Committee Session <p></p>
 									<input type="hidden" name="e" value="room3">
 								</td>
@@ -107,7 +107,7 @@
 									Obesity Treatment Guidelines Symposium<p></p>
 									<input type="hidden" name="e" value="room1">
 								</td> -->
-                                <td class="violet_bg pointer" name="joint">
+                                <td class="violet_bg pointer" name="joint_symposium_2">
 									Joint Symposium<br>KSSO-JKT (Clinical)
 									<input type="hidden" name="e" value="room2">
 								</td>
@@ -213,7 +213,7 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="key_lecture_1">
+								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_1">
 									Keynote Lecture 1 
 									<!-- <p class="bold">Intermittent Metabolic Switching and Brain Health</p>
 									<p>Thiruma V. Arumugam (La Trobe University, Australia)</p> -->
@@ -386,7 +386,7 @@
 								<td>
 									<div class="colons_div">15:40-16:20</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2">
+								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_3">
 									Keynote Lecture 3
 									<p class="bold">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
 									<p>Silva Arslanian</p>
@@ -424,7 +424,7 @@
 									Symposium 12 <p></p>
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="violet_bg pointer" name="joint">
+								<td class="violet_bg pointer" name="joint_symposium_3">
 									Joint Symposium<br>KSSO-EASO
 									<input type="hidden" name="e" value="room5">
 								</td>
@@ -488,7 +488,7 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="key_lecture_4" colspan="3">
+								<td class="dark_pink_bg pointer" name="keynote_lecture_4" colspan="3">
 									Keynote Lecture 4
 									<p class="bold">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
 									<p>Jean-Pierre Després</p>
@@ -545,7 +545,7 @@
 								<td>
 									<div class="colons_div">11:00-11:40</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="presidential_lecture" colspan="3">
+								<td class="dark_pink_bg pointer" name="presidential_lecture_1" colspan="3">
 								Presidential Lecture<p class="bold"></p>
 									<p></p>
 									<input type="hidden" name="e" value="room1">
@@ -665,7 +665,7 @@
 									<p>Exercise and Cardiometabolic Dysfunction</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="violet_bg pointer best_jomes" name="jomes_session">
+								<td class="violet_bg pointer best_jomes" name="joint_symposium_4">
 									Joint Symposium<br>KSSO-TOS
 									<input type="hidden" name="e" value="room5">
 								</td>
