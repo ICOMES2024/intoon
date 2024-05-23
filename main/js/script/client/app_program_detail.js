@@ -174,7 +174,9 @@ function selectProgram(){
         url : PATH+"ajax/client/ajax_app_program.php",
         type : "POST",
         data :  {
-            flag : "select",
+            //[240523] sujeong / 임시 변경 / 로그인 없이 program detail 보기
+            //flag : "select",
+            flag : "select_1",
             data : data
         },
         dataType : "JSON",

@@ -143,7 +143,144 @@ if($_POST["flag"] == "select") {
         exit;
     }
 
-} else if($_POST["flag"] === "schedule"){
+} 
+//[240523] sujeong / 임시 버전 로그인 없이 program detail 보기 (위에가 원본)
+if($_POST["flag"] == "select_1") {
+    $member_idx = $_SESSION["USER"]["idx"];
+    $date = $_POST["data"]["date"] ?? "";
+    $option_room = $_POST["data"]["option_room"] ?? "";
+    $option_category = $_POST["data"]["option_category"] ?? "";
+
+    $row_sql="";
+    $row_sql2="";
+
+    switch ($date){
+        case "1" : $program_date = "2024-09-05";
+            break;
+        case "2" : $program_date = "2024-09-06";
+            break;
+        case "3" : $program_date = "2024-09-07";
+            break;
+    }
+
+    if($date !== ""){
+        $row_sql .= " AND program_date = '{$program_date}' ";
+        $row_sql2 = " AND start_time >= '{$program_date}' ";
+    }
+
+    if($option_room !== ""){
+        if($option_room == 1 || $option_room ==2 || $option_room==3){
+            $row_sql .= " AND program_place_idx IN ($option_room, 8) ";
+        } else{
+            $row_sql .= " AND program_place_idx = $option_room ";
+        }
+    }
+
+    if($option_category !== ""){
+        $row_sql .= " AND program_category_idx = $option_category ";
+    }
+
+    $select_program_query = "
+                    SELECT @rownum := @rownum+1 AS rownum, P.*
+                    FROM (
+                            SELECT p.idx, program_name, program_tag_name, chairpersons, preview, program_place_idx, pp.program_place_name ,program_category_idx, program_date,
+                                    date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time, start_time as _start_time,
+                                    path
+                            FROM program p
+                            LEFT JOIN (SELECT va.program_idx, path FROM viewer_abstract va) va ON va.program_idx=p.idx
+                            LEFT JOIN program_place pp on p.program_place_idx = pp.idx
+                            JOIN (SELECT @rownum := 0) AS R
+                            WHERE p.is_deleted = 'N'
+                                     {$row_sql}
+                                     ORDER BY _start_time ASC, program_place_idx ASC, CAST(SUBSTRING_INDEX(program_tag_name, '_', -1) AS SIGNED), program_tag_name
+                                     ) P
+                            ";
+    $program_list = get_data($select_program_query);
+
+    $select_contents_query = "
+                             SELECT pc.idx, program_idx, contents_title, isp.idx AS speaker_idx, first_name, last_name, affiliation, nation, pc.speaker,
+                                    date_format(start_time, '%H:%i') as start_time, date_format(end_time, '%H:%i') as end_time
+                             FROM program_contents pc
+                             LEFT JOIN (
+                                SELECT isp.idx, program_contents_idx, first_name, last_name, nation, affiliation
+                                FROM invited_speaker isp
+                                WHERE isp.is_deleted='N'
+                             ) isp ON isp.idx = pc.speaker_idx
+                             WHERE is_deleted = 'N'
+                             {$row_sql2}
+                             ORDER BY start_time
+                            ";
+    $contents_list = get_data($select_contents_query);
+
+    $resultObj = [];
+	$room_list = [];
+    foreach($program_list as $pl){
+        $pl_idx = $pl['idx'];
+
+        $resultObj[$pl['rownum']] = [
+            'idx' => $pl_idx,
+            'program_name' => $pl['program_name'],
+            'program_tag_name' => $pl['program_tag_name'],
+            'chairpersons' => $pl['chairpersons'],
+            'preview' => $pl['preview'],
+            'program_place_name' => $pl['program_place_name'],
+            'program_category_idx' => $pl['program_category_idx'],
+            'program_date' => $pl['program_date'],
+            'start_time' => $pl['start_time'],
+            'end_time' => $pl['end_time'],
+            'contents' => [],
+            'schedule_check' => $pl['schedule_check'],
+            'path' => $pl['path']
+        ];
+
+        foreach ($contents_list as $cl){
+            $program_idx = $cl['program_idx'];
+            $cl_info = [
+                'cl_idx' => $cl['idx'],
+                'program_idx' => $program_idx,
+                'contents_title' => $cl['contents_title'],
+                'speaker_idx' => $cl['speaker_idx'],
+                'first_name' => $cl['first_name'],
+                'last_name' => $cl['last_name'],
+                'affiliation' => $cl['affiliation'],
+                'nation' => $cl['nation'],
+                'speaker' => $cl['speaker'],
+                'start_time' => $cl['start_time'],
+                'end_time' => $cl['end_time']
+            ];
+
+            if($pl_idx === $program_idx){
+                $resultObj[$pl['rownum']]['contents'][]=$cl_info;
+            }
+        }
+
+		if (!in_array($pl['program_place_name'], $room_list)) {
+			$room_list[] = $pl['program_place_name'];
+		}
+    }
+
+    if (isset($resultObj)) {
+        $res = [
+            'code' => 200,
+            'msg' => "success",
+            'result' => $resultObj,
+			'room_result' => $room_list
+        ];
+        echo json_encode($res);
+        exit;
+    } else {
+        $res = [
+            'code' => 400,
+            'msg' => "select program error"
+        ];
+        echo json_encode($res);
+        exit;
+    }
+
+} 
+
+
+else if($_POST["flag"] === "schedule"){
     $member_idx = $_SESSION["USER"]["idx"];
     $program_idx = $_POST['program_idx'] ?? "";
     $check_schedule = $_POST['check_schedule'];
