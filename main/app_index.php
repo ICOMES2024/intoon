@@ -44,11 +44,12 @@
 	<!-- <div class="app_vsl"> -->
 		<div class="app_main_wrap">
 			<!-- <img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt=""> -->
+			<!-- [240523] sujeong / 학회팀 요청 순서 수정 -->
 			<li>
 				<a>
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-01.png" class="text" alt="">
 				</a>
-			</li>
+			</li>		
 			<li>
 				<a>
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-04.png" class="text" alt="">
@@ -56,12 +57,12 @@
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-05.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-06.png" class="text" alt="">
 				</a>
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-06.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-05.png" class="text" alt="">
 				</a>
 			</li>
 			<li>

@@ -72,11 +72,11 @@
 								<td>
 									<div class="colons_div">15:00-16:30</div>
 								</td>
-								<td class="yellow_green_bg pointer" name="jomes">
+								<td class="yellow_green_bg pointer" name="jomes_session">
 									Best Article in JOMES
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="violet_bg pointer" name="joint">
+								<td class="violet_bg pointer" name="joint_symposium_1">
 									Joint Symposium<br>KSSO-JKT (Basic)
 									<input type="hidden" name="e" value="room2">
 								</td>
@@ -109,7 +109,7 @@
 									Obesity Treatment Guidelines Symposium<p></p>
 									<input type="hidden" name="e" value="room1">
 								</td> -->
-                                <td class="violet_bg pointer" name="joint">
+                                <td class="violet_bg pointer" name="joint_symposium_2">
 									Joint Symposium<br>KSSO-JKT (Clinical)
 									<input type="hidden" name="e" value="room2">
 								</td>
@@ -215,7 +215,7 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="key_lecture_1">
+								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_1">
 									Keynote Lecture 1 
 									<p class="bold">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
 									<p>Joel K. Elmquist</p>
@@ -422,7 +422,7 @@
 									Symposium 12 <p></p>
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="violet_bg pointer" name="joint">
+								<td class="violet_bg pointer" name="joint_symposium_3">
 									Joint Symposium<br>KSSO-EASO
 									<input type="hidden" name="e" value="room5">
 								</td>
@@ -857,7 +857,7 @@ $(document).ready(function() {
 function table_location(event, _this, e, day, this_name) {
 	var session_app_type = $("[name=session_app_type]").val();
 	if (session_app_type != "" && session_app_type == 'N') {
-		//window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+		// window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 	} else {
 	    //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 	}
