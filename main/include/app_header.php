@@ -4,7 +4,7 @@
 ?>
 
 <!-- 사용자 App header -->
-<header class="app_header simple">
+<header class="app_header">
 	<div class="hd_inner">
 		<h1 class="app_h_logo"><a href="/main/app_index.php"><img src="https://image.webeon.net/icomes2024/app/2024_app_logo.svg" alt="ICOMES 로고"></a></h1>
 		<button type="button" class="app_nav_btn"><img src="/main/img/icons/icon_hamburger.svg" alt="메뉴"></button>
@@ -18,6 +18,7 @@
 <div class="app_nav">
     <div class="nav_inner">
 		<div class="app_nav_top">
+			<img src="https://image.webeon.net/icomes2024/app/2024_icomes_s_logo.svg" alt="logo" class="app_header_logo"/>
 			<a href="/main/app_setting.php" class="point_txt"><img src="/main/img/icons/icon_setting.svg" alt="설정">Setting</a>
 		</div>
 		<div class="app_nav_bot">

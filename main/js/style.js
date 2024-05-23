@@ -516,16 +516,16 @@ $(document).ready(function(){
 
 	
 		//APP main slick
-		// $('.app_main_wrap').slick({
-		// 	dots: false,
-		// 	infinite: true,
-		// 	slidesToShow: 1,
-		// 	arrows : false,
-		// 	autoplay: true,
-		// 	pauseOnHover : true,       
-		// 	autoplaySpeed: 4000,
-		// 	responsive: []
-		// });
+		$('.app_main_wrap').slick({
+			dots: false,
+			infinite: true,
+			slidesToShow: 1,
+			arrows : false,
+			autoplay: true,
+			pauseOnHover : true,       
+			autoplaySpeed: 4000,
+			responsive: []
+		});
 	
 
 });
