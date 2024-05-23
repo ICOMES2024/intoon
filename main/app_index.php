@@ -41,36 +41,36 @@
 
 <!-- HUBDNCLHJ : app loading 페이지 -->
 <section class="container app_version main">
-	<div class="app_vsl">
+	<!-- <div class="app_vsl"> -->
 		<div class="app_main_wrap">
-			<img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt="">
-			<!-- <li>
+			<!-- <img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt=""> -->
+			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-3.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-01.png" class="text" alt="">
 				</a>
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_1-3.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-04.png" class="text" alt="">
 				</a>
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_2-3.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-05.png" class="text" alt="">
 				</a>
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_3-3.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-06.png" class="text" alt="">
 				</a>
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_4-3.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-07.png" class="text" alt="">
 				</a>
-			</li> -->
+			</li>
 		</div>
-	</div>
+	<!-- </div> -->
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
 			<li class="app_menu_img">
@@ -139,7 +139,7 @@
 //		if ( varUA.indexOf('android') > -1) {
 //			alert("Please update the app.")
 //		}
-		$(".app_header").addClass("simple");
+		// $(".app_header").addClass("simple");
 		$(".app_nav_btn img").attr("src", "https://image.webeon.net/icomes2024/app/2024_icon_hamburger2.svg");
 
         const imgList = document.querySelectorAll(".app_menu_img");
