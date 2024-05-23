@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/app_header.php'); ?>
 
-<script src="./js/script/client/app_program_detail.js?v=0.5"></script>
+<script src="./js/script/client/app_program_detail.js?v=0.6"></script>
 <style>
     /*230830 안재현 로딩화면 추가 */
     .loading_list{text-align: center; padding:30%; border-bottom:none !important;}
@@ -9,8 +9,8 @@
 </style>
 
 <?php
- // [240419] sujeong / APP 로그인 페이지 /window confirm 창으로 수정 !!!
- //[240523] sujeong / APP 즐겨찾기 숨기기 + 로그인 불필요하도록
+ // [240419] sujeong / APP 로그인 페이지 /window confirm 창으로 수정 !!! 
+ //[240523] sujeong / APP 즐겨찾기 숨기기 + 로그인 불필요하도록 / js 버전 변경하기!!(현재 0.6)
     // if (empty($_SESSION["USER"])) {
     //     echo "
     //             <script>
