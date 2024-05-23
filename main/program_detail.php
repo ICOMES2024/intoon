@@ -88,7 +88,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="yellow_green_bg">
+                                            <tr class="skyblue_bg">
                                                 <td>15:00-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Best Article in JOMES</p>

@@ -72,7 +72,7 @@
 								<td>
 									<div class="colons_div">15:00-16:30</div>
 								</td>
-								<td class="yellow_green_bg pointer" name="jomes_session">
+								<td class="skyblue_bg pointer" name="jomes_session">
 									Best Article in JOMES
 									<input type="hidden" name="e" value="room1">
 								</td>
