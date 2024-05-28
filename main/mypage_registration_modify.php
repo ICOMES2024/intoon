@@ -87,16 +87,16 @@ switch($attendance_type) {
 	case 3:
 		$attendance_type = "Panel";
 		break;
-	case 4:
+	case 7:
 		$attendance_type = "Abstract Presenter";
 		break;
-	case 5:
+	case 4:
 		$attendance_type = "Participants";
 		break;
-	case 6:
+	case 5:
 		$attendance_type = "Sponsor";
 		break;
-	case 7:
+	case 6:
 		$attendance_type = "Press";
 		break;
 	default:

@@ -51,16 +51,16 @@
 				$attendance_type = 3;
 				break;
 			case "Abstract Presenter":
-				$attendance_type = 4;
+				$attendance_type = 7;
 				break;
 			case "Participants":
-				$attendance_type = 5;
+				$attendance_type = 4;
 				break;
             case "Sponsor":
-                $attendance_type = 6;
+                $attendance_type = 5;
                 break;
 			case "Press":
-				$attendance_type = 7;
+				$attendance_type = 6;
 				break;
 		}
 

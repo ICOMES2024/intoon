@@ -20,7 +20,7 @@ if($registrationNo){
         $occupation = $prev["occupation_type"] ?? "";
         $nation_no = $prev["nation_no"] ?? "";
 
-        if($prev["attendance_type"] == 4 || $prev["attendance_type"] == 5 || $prev["attendance_type"] == 6){
+        if($prev["attendance_type"] == 4 || $prev["attendance_type"] == 5 || $prev["attendance_type"] == 7){
             $calc_fee = calcFee($register, $category, $nation_no);
         } else{
             $calc_fee = 0;
@@ -223,16 +223,16 @@ if ($during_yn !== "Y") {
 											case 3:
 												$attendance_type = "Panel";
 												break;
-											case 4:
+											case 7:
 												$attendance_type = "Abstract Presenter";
 												break;
-											case 5:
+											case 4:
 												$attendance_type = "Participants";
 												break;
-											case 6:
+											case 5:
 												$attendance_type = "Sponsor";
 												break;
-											case 7:
+											case 6:
 												$attendance_type = "Press";
 												break;
 											default:
