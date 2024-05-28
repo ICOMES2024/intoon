@@ -140,7 +140,7 @@ input[type="file"].file_input + .file_label {display: inline-block; line-height:
 /* .steps_area li:after {content: ""; display: block; width: 9px; height: 15px; background: center / contain no-repeat url("../img/icons/icon_step_arrow.svg"); position: absolute; right: 0; top: 65px; transform: translateX(50%);} */
 .steps_area li:last-child:after {display: none;}
 /*.steps_area li p{font-size: 18px; color:#000;}*/
-.steps_area li p:first-of-type{background:rgba(123,106,88,0.4);margin:0 auto;border-radius:50%;width:130px;line-height:130px;height:130px;margin-bottom:17px; font-size: 26px; font-weight: bold; color: #fff;}
+.steps_area li p:first-of-type{background:rgba(123,106,88,0.4);margin:0 auto;border-radius:50%;width:130px;line-height:130px;height:130px;margin-bottom:17px; font-size: 26px; font-weight: bold; color: #fff;border: 1px solid #a7cbec;}
 /*.steps_area li p:first-of-type:after{content:'';display:block;width:150px;background:#707070;height:2px;position:absolute;top:50%;right:-150px;z-index:-1;}*/
 /*.steps_area li:last-of-type p:first-of-type:after{display:none;}*/
 /*.steps_area li.on p{color:#000}*/

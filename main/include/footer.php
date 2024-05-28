@@ -116,11 +116,11 @@
                 <li><a href="https://www.alvogen.com/" class="alvogen"></a></li>
                 <li><a href="https://www.hanmipharm.com/ehanmi/handler/Home-Start" class="hanmi_pharm"></a></li>
                 <li><a href="http://www.ckdpharm.com/en/home" class="chong_kun_dang"></a></li>
-                <li><a href="https://www.handok.co.kr/eng/" class="handok"></a></li>
+                <li><a href="https://eng.handok.com/eng/" class="handok"></a></li>
                 <li><a href="http://eng.yuhan.co.kr/Main/" class="yuhan"></a></li>
                 <li><a href="http://en.donga-st.com/Main.da" class="dong_a"></a></li>
                 <li><a href="https://www.inno-n.com/eng" class="inno_n"></a></li>
-                <li><a href="https://m.daewoong.co.kr/kr/main/index" class="daewoong_1"></a></li>
+                <li><a href="https://www.daewoong.co.kr/en/main/index" class="daewoong_1"></a></li>
                 <li><a href="https://www.lilly.co.kr/" class="lilly"></a></li>
                 <li><a href="https://www.astrazeneca.com/" class="astra_zeneca"></a></li>
                 <li><a href="https://www.lgchem.com/main/index" class="lg_chem"></a></li>

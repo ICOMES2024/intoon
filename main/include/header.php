@@ -89,8 +89,8 @@ $locale = locale($language);
                             <li>
                                 <!-- <a href="/main/program_detail.php">Program in Detail</a> -->
                             </li>
-                            <li><a href="/main/comingsoon.php">Scientific Program</a></li>
-                            <li><a href="/main/program_detail.php">Invited Speakers</a></li>
+                            <li><a href="/main/program_detail.php">Scientific Program</a></li>
+                            <li><a href="/main/invited_speaker.php">Invited Speakers</a></li>
                             <li><a href="/main/program_along.php">ALONG Program</a></li>
                             <!-- <li><a href="/main/comingsoon.php">ALONG Program</a></li> -->
                             <!-- <li><a href="/main/program_glance.php">Program at a Glance</a></li>

@@ -65,7 +65,7 @@
             <p class="grade_title gold_bg">Gold</p>
             <ul class="grade_wrap length_3 no_padding_bottom">
                 <li class="small">
-                    <a href="https://www.handok.co.kr/eng/" class="handok">HANDOK</a>
+                    <a href="https://eng.handok.com/eng/" class="handok">HANDOK</a>
                 </li>
                 <li class="small">
                     <a href="http://eng.yuhan.co.kr/Main/" class="yuhan">YUHAN</a>
@@ -79,7 +79,7 @@
                         <a href="https://www.inno-n.com/eng" class="inno_n">inno N</a>
                     </li>
                     <li class="small">
-                        <a href="https://m.daewoong.co.kr/en/main/index" class="daewoong_1">DAEWOONG</a>
+                        <a href="https://www.daewoong.co.kr/en/main/index" class="daewoong_1">DAEWOONG</a>
                     </li>
                     <li class="small">
                         <a href="https://www.lilly.co.kr/" class="lilly">Lilly</a>
