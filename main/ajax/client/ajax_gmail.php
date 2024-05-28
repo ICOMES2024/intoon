@@ -410,14 +410,19 @@ if($language == "ko") {
 					$attendance_type = "Panel";
 					break;
 				case 4:
+					$attendance_type = "Abstract Presenter";
+					break;
+				case 5:
 					$attendance_type = "Participants";
 					break;
-                case 5:
-                    $attendance_type = "Sponsor";
-                    break;
 				case 6:
+					$attendance_type = "Sponsor";
+					break;
+				case 7:
 					$attendance_type = "Press";
 					break;
+				default:
+					$attendance_type = "";
 			}
 			//[240315] sujeong / 평점신청 분리
 			//대한의사협회 평점신청

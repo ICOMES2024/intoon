@@ -225,8 +225,8 @@ function calc_fee(obj){
 			return;
 		}
 	}
-
-	if(participation_type == "Participants" || participation_type =="Sponsor"){
+	//[240528] sujeong / Abstract Presenter 추가
+	if(participation_type == "Participants" || participation_type =="Sponsor" || participation_type === "Abstract Presenter"){
 		//[240314] sujeong / 학회팀 요청 sponsor -> 일반참석자 취급
 		// if(participation_type == "Sponsor"){
 		// 	category="Others";

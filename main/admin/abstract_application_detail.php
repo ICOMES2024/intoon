@@ -10,7 +10,7 @@
 
 	$abstract_detail_query =	"
 									SELECT 
-										ra.submission_code, ra.city, ra.state, CONCAT(ra.first_name,' ',ra.last_name) AS `name`, ra.affiliation, ra.email, ra.phone, ra.abstract_title, ra.etc1,
+										ra.submission_code, ra.city, ra.state, CONCAT(ra.first_name,' ',ra.last_name) AS `name`, ra.affiliation, ra.email, ra.phone, ra.abstract_title, ra.etc1, ra.etc2,
 										m.idx AS member_idx, m.member_email, m.member_name, m.member_nation, m.member_register_date,
 										CONCAT(m.affiliation,',',m.department) AS member_affiliation, m.phone AS member_phone,
 										f.original_name AS file_name, CONCAT(f.path,'/',f.save_name) AS path, ra.presenting_author, ra.corresponding_author,
@@ -183,6 +183,13 @@
 								<button type="button" class="btn submit" data-type="update_etc1_status">저장</button>
 							</td>
 						</tr>
+						<tr>
+							<th>초록 메모</th>
+							<td colspan="3">
+								<input style="width:80%;height:36px; border:1px solid #DDD;padding:8px 16px" name="etc2" value="<?=$author_detail["etc2"]?>"/>
+								<button type="button" class="btn submit" data-type="update_etc2_status">저장</button>
+							</td>
+						</tr>
 					</tbody>
 				</table>
 				<h2 class="sub_title">co-author 정보</h2>
@@ -300,7 +307,7 @@ $(document).ready(function(){
 
 		if (submit_type === "update_etc1_status") {
             etc1 =  $("select[name=etc1]").val();
-        }
+     
 		if(confirm("입력하신 내용으로 저장하시겠습니까?")) {
 			$.ajax({
 			url : "../ajax/admin/ajax_abstract.php",
@@ -326,7 +333,37 @@ $(document).ready(function(){
 					return false;
 				}
 			}
-		});
+		});   }
+		}
+		else if(submit_type === "update_etc2_status"){
+			etc2 =  $("input[name=etc2]").val();
+     
+		if(confirm("입력하신 내용으로 저장하시겠습니까?")) {
+			$.ajax({
+			url : "../ajax/admin/ajax_abstract.php",
+			type : "POST",
+			data : {
+				flag : "update_etc2",
+				idx : abstract_idx,
+				etc2 : etc2
+			},
+			dataType : "JSON",
+			success : function(res){
+				if(res.code == 200) {
+					alert("저장이 완료되었습니다.");
+					window.location.reload();
+				} else if(res.code == 400) {
+					alert("저장에 실패하였습니다.");
+					return false;
+				} else if(res.code == 401) {
+					alert("결제정보가 존재하지 않아 환불정보 입력에 실패하였습니다.");
+					return false;
+				} else {
+					alert("일시적으로 요청이 거절되었습니다. 잠시 후 다시 시도해주세요.");
+					return false;
+				}
+			}
+		});   }
 		}
 	});
 	
