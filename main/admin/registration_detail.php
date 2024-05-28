@@ -54,10 +54,10 @@
 													WHEN '1' THEN 'Speaker'
 													WHEN '2' THEN 'Chairperson'
 													WHEN '3' THEN 'Panel'
-													WHEN '4' THEN 'Abstract Presenter'
-													WHEN '5' THEN 'Participants'
-													WHEN '6' THEN 'Sponsor'
-													WHEN '7' THEN 'Press'
+													WHEN '7' THEN 'Abstract Presenter'
+													WHEN '4' THEN 'Participants'
+													WHEN '5' THEN 'Sponsor'
+													WHEN '6' THEN 'Press'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
