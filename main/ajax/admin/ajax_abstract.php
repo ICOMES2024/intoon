@@ -144,6 +144,22 @@
 	}
 	
 
+		//[240528] sujeong / etc2에 초록 메모 저장
+		else if ($flag === "update_etc2") {
+			$data = isset($_POST["data"]) ? $_POST["data"] : "";
+			$sql =	"UPDATE request_abstract
+					SET
+						etc2 = '".$_POST['etc2']."',
+						modify_date = NOW()
+					WHERE idx = '".$_POST['idx']."'
+					";
+			if (sql_query($sql)) {
+				return_value(200, "완료되었습니다.");
+			} else {
+				return_value(500, "오류가 발생했습니다.\n관리자에게 문의하세요.");
+			}
+		}
+
 	// 결과값 반환 공통화
 	function return_value($code, $msg, $arr=array()){
 		$arr["code"] = $code;

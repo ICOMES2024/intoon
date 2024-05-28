@@ -11,6 +11,7 @@
 	$title = $_GET["title"] ?? "";
 	$s_date = $_GET["s_date"] ?? "";
 	$e_date = $_GET["e_date"] ?? "";
+	$submission_code = $_GET["submission_code"] ?? "";
 
 	$where = "";
 	
@@ -34,9 +35,13 @@
 		$where .= " AND DATE(ra.register_date) <= '".$e_date."' ";
 	}
 
+	if($submission_code != "") {
+		$where .= " AND ra.submission_code LIKE '%".$submission_code."%' ";
+	}
+
 	$abstract_list_query =  "
 								SELECT
-                                    ra.submission_code, ra.idx AS abstract_idx, ra.abstract_title, ra.etc1,
+                                    ra.submission_code, ra.idx AS abstract_idx, ra.abstract_title, ra.etc1, ra.etc2,
                                     DATE_FORMAT(ra.register_date, '%y-%m-%d') AS register_date, ra.oral_presentation,
                                     m.idx AS member_idx, m.email, m.name, m.nation_ko, m.nation_en, m.affiliation, m.department,
                                     f.original_name AS abstract_file_name, CONCAT(f.path,'/',f.save_name) AS path,
@@ -276,6 +281,7 @@
 	$html .= '<th>Topic Category</th>';
 	$html .= '<th>Title</th>';
 	$html .= '<th>File</th>';
+	$html .= '<th>Memo</th>';
 	$html .= '<th>Presenting Author Name</th>';
 	$html .= '<th colspan='. $count_pre_star  .'>Presenting Author Affiliation</th>';
 	$html .= '<th>Presenting Author E-mail</th>';
@@ -374,6 +380,7 @@
 		$html .= '<td>'.$al["category"].'</td>';
 		$html .= '<td>'.$al["abstract_title"].'</td>';
 		$html .= '<td>'.$al["abstract_file_name"].'</td>';
+		$html .= '<td>'.$al["etc2"].'</td>';
 
 		$html .= '<td>'.$resultData[$no]['presenting_author_name'].'</td>';
 
@@ -502,6 +509,12 @@
 								<th>등록일</th>
 								<td class="input_wrap"><input type="text" name="s_date" value="<?= $s_date; ?>" class="datepicker-here" data-language="en" data-date-format="yyyy-mm-dd" data-type="date"> <span>~</span> <input type="text" value="<?= $e_date; ?>" name="e_date" class="datepicker-here" data-language="en" data-date-format="yyyy-mm-dd" data-type="date"></td>
 							</tr>
+							<tr>
+								<th>제출코드</th>
+								<td colspan="3" class="input_wrap">
+									<input type="text" name="submission_code" value="<?= $submission_code; ?>"/>
+								</td>
+							</tr>
 						</tbody>
 					</table>
 					<button type="button" class="btn search_btn">검색</button>
@@ -521,6 +534,7 @@
 							<th>논문번호</th>
 							<th>사전등록여부</th>
 							<th>심사여부</th>
+							<th>메모여부</th>
 							<th>ID(Email)</th>
 							<th>Country</th>
 							<th>Name</th>
@@ -557,6 +571,11 @@
 							?>
 							<td><?php echo $registration_yn; ?></td>
 							<td><?php echo $list["etc1"]?></td>
+							<td><?php if($list["etc2"]){
+								echo "Y";
+								}else{
+								echo "N";
+								}?></td>
 							<td><a href="./member_detail.php?idx=<?=$list["member_idx"]?>"><?=$list["email"]?></a></td>
 							<td><?=$list["nation_ko"]?></td>
 							<td><?=$list["name"]?></td>

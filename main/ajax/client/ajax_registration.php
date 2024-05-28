@@ -50,14 +50,17 @@
 			case "Panel":
 				$attendance_type = 3;
 				break;
-			case "Participants":
+			case "Abstract Presenter":
 				$attendance_type = 4;
 				break;
+			case "Participants":
+				$attendance_type = 5;
+				break;
             case "Sponsor":
-                $attendance_type = 5;
+                $attendance_type = 6;
                 break;
 			case "Press":
-				$attendance_type = 6;
+				$attendance_type = 7;
 				break;
 		}
 

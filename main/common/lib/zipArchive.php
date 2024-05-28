@@ -164,7 +164,7 @@ $filePath = $_SERVER['DOCUMENT_ROOT'];
 
 $zip = new DirectZip();
 
-$zip -> open("ICOMES-2023_Abstract.".date("Ymd").".zip");
+$zip -> open("ICOMES-2024_Abstract.".date("Ymd").".zip");
 
 // addFile ( 파일이 존재하는 경로, 저장될 이름 )
 foreach ($abstract_list as $abstract) {
