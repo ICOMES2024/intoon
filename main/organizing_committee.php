@@ -429,7 +429,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : 
                             <td>Wen-Yuan Lin</td>
                         </tr>
                         <tr>
-                            <td>Vietman</td>
+                            <td>Vietnam</td>
                             <td>Do Thi Ngoc Diep</td>
                         </tr>
                     </tbody>

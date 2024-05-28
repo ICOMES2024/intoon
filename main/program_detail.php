@@ -24,7 +24,7 @@ echo '<script type="text/javascript">
 					  $(".tab_green li").removeClass("on");
 					  if ("' . $day . '" === "") {
 						$(".tab_green li:first-child").addClass("on");
-					  }
+					  }else{
 					  $(".tab_green li:nth-child(' . $d_num . ')").addClass("on");
 					  $(".tab_green + .tab_wrap > .tab_cont").removeClass("on");
 					  $(".tab_green + .tab_wrap > .tab_cont:nth-child(' . $d_num . ')").addClass("on");
@@ -50,7 +50,7 @@ echo '<script type="text/javascript">
 							console.log("scrollTop: ", this_top - 150)
 						}
 					  });
-
+                    }
 				  });
 		</script>';
 
@@ -1267,7 +1267,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:40-16:10</td>
                                                                     <td class="bold">
-                                                                    Management of Youth Type 2 Diabetes:<br/>New Pharmacotherapeutic Modalities
+                                                                    Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Silva Arslanian</p>(University of Pittsburgh, USA)
@@ -1622,7 +1622,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                    Cross-talk Between the Gut (Microbiota) and Peripheral<br/>Organs in Obesity
+                                                                    Cross-talk Between the Gut (Microbiota) and Peripheral Organs in Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Chih-Yen Chen</p>(National Yang Ming Chiao Tung University, Taiwan)
@@ -1882,7 +1882,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>14:00-15:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 6 : Holistic Approach to Obesity Management: Exploring Exercise, Metabolism,<br/>and Muscle Health
+                                                    <p class="font_20 bold">Symposium 6 : Holistic Approach to Obesity Management: Exploring Exercise, Metabolism, and Muscle Health
                                                     </p>
                                                     <!-- <p>
                                                         <span class="bold">Chairpersons : Hyo Youl Moon</span> (Seoul
@@ -2043,7 +2043,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:40-16:10</td>
                                                                     <td class="bold">
-                                                                    Management of Youth Type 2 Diabetes:<br/>New Pharmacotherapeutic Modalities
+                                                                    Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Silva Arslanian</p>(University of Pittsburgh, USA)
@@ -2832,7 +2832,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:40-16:10</td>
                                                                     <td class="bold">
-                                                                    Management of Youth Type 2 Diabetes:<br/>New Pharmacotherapeutic Modalities
+                                                                    Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Silva Arslanian</p>(University of Pittsburgh, USA)
@@ -2906,7 +2906,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55</td>
                                                                     <td class="bold">
-                                                                    Applications of Digital Health and Nutrition Approaches for Obesity Prevention and Management in the<br/>Western Pacific Region
+                                                                    Applications of Digital Health and Nutrition Approaches for Obesity Prevention and Management in the Western Pacific Region
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Wen Peng</p>(Qinghai University, China)
@@ -2915,7 +2915,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                    Protocols and Practices of Telenutrition in<br/>Weight Loss Interventions
+                                                                    Protocols and Practices of Telenutrition in Weight Loss Interventions
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Melissa Ventura Marra</p>(West Virginia University, USA)
@@ -2924,7 +2924,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:20-17:45</td>
                                                                     <td class="bold">
-                                                                    Telenutrition for Weight Management:<br/>Benefits, Limits, and Future Perspectives
+                                                                    Telenutrition for Weight Management: Benefits, Limits, and Future Perspectives
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Shinok Park</p>(Noom Korea, Korea)
@@ -3032,7 +3032,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                    The Role of GIP/or Glucagon Receptor Agonism in the<br/>Treatment of Obesity
+                                                                    The Role of GIP/or Glucagon Receptor Agonism in the Treatment of Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Michael A. Nauck</p>(Ruhr-University Bochum, Germany)
@@ -3342,7 +3342,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55</td>
                                                                     <td class="bold">
-                                                                    Pediatric Obesity Prevention and Management in Korea:<br/>How to Do It in the Real World?
+                                                                    Pediatric Obesity Prevention and Management in Korea: How to Do It in the Real World?
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sochung Chung</p>(Konkuk University, Korea)
@@ -3351,7 +3351,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                    Nutritional Intervention Strategies for Childhood Obesity:<br/>The Role of the Dietitian
+                                                                    Nutritional Intervention Strategies for Childhood Obesity: The Role of the Dietitian
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Mary Easaw</p>(Cardiac Vascular Sentral Kuala Lumpur, Malaysia)
@@ -4430,7 +4430,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                    Incretin-based Therapy Combined with Bariatric Surgery:<br/>Will It Be Better than Single?
+                                                                    Incretin-based Therapy Combined with Bariatric Surgery: Will It Be Better than Single?
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">McGowan Barbara</p>(Guy's and St Thomas' NHS Foundation Trust, UK)
@@ -4801,7 +4801,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
-                                                                    Overcoming Anabolic Resistance to Exercise in Sarcopenia:<br/>Role of Free Essential Amino Acids
+                                                                    Overcoming Anabolic Resistance to Exercise in Sarcopenia: Role of Free Essential Amino Acids
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Il-Young Kim</p>(Gachon University, Korea)
@@ -5157,7 +5157,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>15:20-16:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 18 : Cracking the Neural Code: Understanding Obesity through the Hypothalamus,<br/>Brain Stem, and Vagus Pathways</p>
+                                                    <p class="font_20 bold">Symposium 18 : Cracking the Neural Code: Understanding Obesity through the Hypothalamus, Brain Stem, and Vagus Pathways</p>
                                                     <!-- <p><span class="bold">Chairpersons : Eun-Jung Rhee</span>
                                                         (Sungkyunkwan University, Republic of Korea), <br><span
                                                             class="bold">Hyung Jin Choi</span> (Seoul National

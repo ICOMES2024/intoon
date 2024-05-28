@@ -319,7 +319,7 @@ function createHTMLList(program_list, active){
     $('.program_detail_ul').html(_html);
 
      //[240424] sujeong / 임시 주석 / scroll handler
-    //scrollHandler()
+    scrollHandler()
 }
 
 // [함수] 스크롤 핸들링 - 퍼블

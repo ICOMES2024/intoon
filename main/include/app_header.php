@@ -18,7 +18,7 @@
 <div class="app_nav">
     <div class="nav_inner">
 		<div class="app_nav_top">
-			<img src="https://image.webeon.net/icomes2024/app/2024_icomes_s_logo.svg" alt="logo" class="app_header_logo"/>
+			<a href="/main/app_index.php"><img src="https://image.webeon.net/icomes2024/app/2024_icomes_s_logo.svg" alt="logo" class="app_header_logo"/></a>
 			<a href="/main/app_setting.php" class="point_txt"><img src="/main/img/icons/icon_setting.svg" alt="설정">Setting</a>
 		</div>
 		<div class="app_nav_bot">
@@ -40,7 +40,7 @@
 					<a href="javascript:;">Program</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_program_glance.php">Program at a Glance</a></li>
-						<li><a href="/main/app_program_detail.php" class="get_ready_alert">Scientific Program</a></li>
+						<li><a href="/main/app_program_detail.php">Scientific Program</a></li>
 					</ul>
 				</li>
 				<li>

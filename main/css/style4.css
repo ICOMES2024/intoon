@@ -645,7 +645,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 .invited_speaker .speaker_list > li h2:before {content:''; display: block; width: 6px;height: 6px; background: transparent; border:4px solid #5699F8; border-radius:50%;}
 .invited_speaker .speaker_list > li h2 > p {font-size:16px; }
 .invited_speaker .speaker_list .desc_wrap  {font-size:16px; display:flex; flex-direction:column; justify-content:space-between; }
-.invited_speaker .speaker_list .desc_wrap > p:before {content:''; display: block; width: 3px; height:100%; /*background-color:#5699F8;*/ margin-right: 10px; margin-top: 1px; flex-shrink:0;}
+.invited_speaker .speaker_list .desc_wrap > p:before {content:''; display: block; width: 3px; height:100%; background-color:#5699F8; margin-right: 10px; margin-top: 1px; flex-shrink:0;}
 .invited_speaker .speaker_list .desc_wrap > p {display:flex;}
 .invited_speaker .speaker_list > li .flex {margin-top: 0; padding:15px;}
 .invited_speaker .speaker_list .profile_wrap {margin: 0;}
