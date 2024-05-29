@@ -23,7 +23,8 @@ to gain invaluable insights while advancing your career in the healthcare field.
             <!--Instructions start-->
             <div>
                 <div class="section_title_wrap2">
-                    <h3 class="title">Information of ALONG Program</h3>
+                    <h3 class="title" style="padding-bottom: 0;">Information of ALONG Program </h3><p class="text_r bold">*KST (UTC+9)</p>
+                   
                 </div>
                 <div class="table_wrap x_scroll detail_table_common">
                     <table class="c_table detail_table">

@@ -62,7 +62,8 @@ $info = sql_fetch($sql_info);
                 <!--keydate start-->
                 <div>
                     <div class="section_title_wrap2">
-                        <h3 class="title"><!--<?= $locale("keydate") ?>-->Key Dates</h3>
+                        <h3 class="title" style="padding-bottom: 0;"><!--<?= $locale("keydate") ?>-->Key Dates</h3>
+                        <p class="text_r bold">*KST (UTC+9)</p>
                     </div>
                     <div class="table_wrap detail_table_common x_scroll">
 						<table class="c_table detail_table td_nowrap_table">

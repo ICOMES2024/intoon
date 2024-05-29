@@ -42,6 +42,7 @@
 				</div>
 
 				<div class="program_table_wrap">
+					<p class="text_r bold mb10">*KST (UTC+9)</p>
 					<table class="program_table main-table">
 						<colgroup>
 							<col class="program_time">
@@ -72,15 +73,15 @@
 								<td>
 									<div class="colons_div">15:00-16:30</div>
 								</td>
-								<td class="skyblue_bg pointer" name="jomes_session">
+								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
 									Best Article in JOMES
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="violet_bg pointer" name="joint_symposium_1">
+								<td class="violet_bg pointer" name="joint_symposium_1" data-id="2">
 									Joint Symposium<br>KSSO-JKT (Basic)
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="skyblue_bg pointer" name="committee">
+								<td class="skyblue_bg pointer" name="committee_session_1" data-id="3">
 									Committee Session 
 									<input type="hidden" name="e" value="room3">
 								</td>
@@ -109,7 +110,7 @@
 									Obesity Treatment Guidelines Symposium<p></p>
 									<input type="hidden" name="e" value="room1">
 								</td> -->
-                                <td class="violet_bg pointer" name="joint_symposium_2">
+                                <td class="violet_bg pointer" name="joint_symposium_2" data-id="5">
 									Joint Symposium<br>KSSO-JKT (Clinical)
 									<input type="hidden" name="e" value="room2">
 								</td>
@@ -128,11 +129,11 @@
 								<td rowspan="2">
 									<div class="colons_div">18:10-19:10</div>
 								</td>
-								<td class="dark_sky_bg pointer" name="satellite_symposium_1">
+								<td class="dark_sky_bg pointer" name="satellite_symposium_1" data-id="7">
 									Satellite<br />Symposium 1
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_sky_bg pointer" name="satellite_symposium_3">
+								<td class="dark_sky_bg pointer" name="satellite_symposium_3" data-id="8">
 									Satellite<br />Symposium 3
 									<input type="hidden" name="e" value="room2">
 								</td>
@@ -146,7 +147,7 @@
 								<!-- <td>
 									<div class="colons_div">18:30-19:00</div>
 								</td> -->
-								<td class="dark_sky_bg pointer" name="satellite_symposium_2">
+								<td class="dark_sky_bg pointer" name="satellite_symposium_2" data-id="9">
 									Satellite<br />Symposium 2
 									<input type="hidden" name="e" value="room1">
 								</td>
@@ -164,7 +165,7 @@
 								</td>
 								<td></td>
 								<td></td>
-								<td class="white_yellow_bg pointer" name="welcome_cocktail_party">
+								<td class="white_yellow_bg pointer" name="welcome_cocktail_party" data-id="10">
 									Textbook Publication Inauguration Ceremony & Welcome Cocktail Party
 									<input type="hidden" name="e" value="room3">
 								</td>
@@ -188,15 +189,15 @@
 								<td>
 									<div class="colons_div">07:30-08:20</div>
 								</td>
-								<td class="light_sky_bg pointer" name="breakfast_symposium_1">
+								<td class="light_sky_bg pointer" name="breakfast_symposium_1" data-id="11">
 									Breakfast<br />Symposium 1
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="light_sky_bg pointer" name="breakfast_symposium_2">
+								<td class="light_sky_bg pointer" name="breakfast_symposium_2" data-id="12">
 									Breakfast<br />Symposium 2
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="light_sky_bg pointer" name="breakfast_symposium_3">
+								<td class="light_sky_bg pointer" name="breakfast_symposium_3" data-id="13">
 									Breakfast<br />Symposium 3
 									<input type="hidden" name="e" value="room3">
 								</td>
@@ -215,7 +216,7 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_1">
+								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_1" data-id="14">
 									Keynote Lecture 1 
 									<p class="bold">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
 									<p>Joel K. Elmquist</p>
@@ -237,23 +238,23 @@
 								<td>
 									<div class="colons_div">09:20-10:50</div>
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_1">
+								<td class="dark_green_bg pointer" name="symposium_1" data-id="15">
 									Symposium 1 <p>Precision Medicine for Obesity</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_2">
+								<td class="dark_green_bg pointer" name="symposium_2" data-id="16">
 									Symposium 2 <p>Gut, Brain, and Obesity</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_3">
+								<td class="dark_green_bg pointer" name="symposium_3" data-id="17">
 									Symposium 3 <p> Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_4">
+								<td class="dark_green_bg pointer" name="symposium_4" data-id="18">
 									Symposium 4 <p></p>
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="dark_sky_bg pointer" name="sponsored_session_1">
+								<td class="dark_sky_bg pointer" name="sponsored_session_1" data-id="19">
 									Sponsored Session 1 
 									<!-- <p>Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p> -->
 									<input type="hidden" name="e" value="room5">
@@ -271,7 +272,7 @@
 								<td>
 									<div class="colons_div">11:00-11:10</div>
 								</td>
-								<td colspan="3" class="white_yellow_bg pointer" name="opening_address">
+								<td colspan="3" class="white_yellow_bg pointer" name="opening_address" data-id="20">
 									Opening Address
 									<input type="hidden" name="e" value="room1">
 								</td>
@@ -284,7 +285,7 @@
 								<td>
 									<div class="colons_div">11:10-11:50</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2">
+								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2" data-id="21">
 									Keynote Lecture 2
 									<p class="bold">GLP-1 Based Therapy of Obesity</p>
 									<p>Michael A. Nauck</p>
@@ -306,19 +307,19 @@
 								<td>
 									<div class="colons_div">12:00-13:00</div>
 								</td>
-								<td class="light_sky_bg pointer" name="luncheon_symposium_1">
+								<td class="light_sky_bg pointer" name="luncheon_symposium_1" data-id="22">
 									Luncheon<br />Symposium 1
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="light_sky_bg pointer" name="luncheon_symposium_2">
+								<td class="light_sky_bg pointer" name="luncheon_symposium_2" data-id="23">
 									Luncheon<br />Symposium 2
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="light_sky_bg pointer" name="luncheon_symposium_3">
+								<td class="light_sky_bg pointer" name="luncheon_symposium_3" data-id="24">
 									Luncheon<br />Symposium 3
 									<input type="hidden" name="e" value="room3">
 								</td>
-								<td class="light_sky_bg pointer" name="luncheon_symposium_4">
+								<td class="light_sky_bg pointer" name="luncheon_symposium_4" data-id="25">
 									Luncheon<br />Symposium 4
 									<input type="hidden" name="e" value="room4">
 								</td>
@@ -333,16 +334,16 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td class="dark_orange_bg pointer" name="oral_presentation_1">
+								<td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26">
 									Oral presentation 1
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="dark_orange_bg pointer" name="oral_presentation_2">
+								<td class="dark_orange_bg pointer" name="oral_presentation_2" data-id="27">
 									Oral presentation 2
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
-								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1">
+								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28">
 									Guided Poster1
 									<input type="hidden" name="e" value="room7">
 								</td>
@@ -351,23 +352,23 @@
 								<td>
 									<div class="colons_div">14:00-15:30</div>
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_5">
+								<td class="dark_green_bg pointer" name="symposium_5" data-id="29">
 									Symposium 5 <p>Current Perspectives on Health Inequity in Obesity</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_6">
+								<td class="dark_green_bg pointer" name="symposium_6" data-id="30">
 									Symposium 6 <p>Holistic Approach to Obesity Management: Exploring Exercise, Metabolism, and Muscle Health</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_7">
+								<td class="dark_green_bg pointer" name="symposium_7" data-id="31">
 									Symposium 7 <p></p>
 									<input type="hidden" name="e" value="room3">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_8">
+								<td class="dark_green_bg pointer" name="symposium_8" data-id="32">
 									Symposium 8 <p></p>
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="dark_sky_bg pointer" name="sponsored_session_2">
+								<td class="dark_sky_bg pointer" name="sponsored_session_2" data-id="33">
 									Sponsored Session 2 <p></p>
 									<input type="hidden" name="e" value="room5">
 								</td>
@@ -384,7 +385,7 @@
 								<td>
 									<div class="colons_div">15:40-16:20</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2">
+								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_3" data-id="34">
 									Keynote Lecture 3
 									<p class="bold">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
 									<p>Silva Arslanian</p>
@@ -406,23 +407,23 @@
 								<td>
 									<div class="colons_div">16:30-18:00</div>
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_9">
+								<td class="dark_green_bg pointer" name="symposium_9" data-id="35">
 									Symposium 9 <p></p>
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_10">
+								<td class="dark_green_bg pointer" name="symposium_10" data-id="36">
 									Symposium 10 <p></p>
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_11">
+								<td class="dark_green_bg pointer" name="symposium_11" data-id="37">
 									Symposium 11 <p>Diet Quality and Weight Regulation</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_12">
+								<td class="dark_green_bg pointer" name="symposium_12" data-id="38">
 									Symposium 12 <p></p>
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="violet_bg pointer" name="joint_symposium_3">
+								<td class="violet_bg pointer" name="joint_symposium_3" data-id="39">
 									Joint Symposium<br>KSSO-EASO
 									<input type="hidden" name="e" value="room5">
 								</td>
@@ -438,7 +439,7 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td class="white_yellow_bg pointer" name="congress_banquet_ceremony">
+								<td class="white_yellow_bg pointer" name="congress_banquet_ceremony" data-id="40">
 									Congress Banquet 
 									<p><span class="red_txt">*</span>Invited Only</p>
 									<input type="hidden" name="e" value="room6">
@@ -459,15 +460,15 @@
 								<td>
 									<div class="colons_div">07:30-08:20</div>
 								</td>
-								<td class="light_sky_bg pointer" name="breakfast_symposium_4">
+								<td class="light_sky_bg pointer" name="breakfast_symposium_4" data-id="41">
 									Breakfast<br />Symposium 4
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="light_sky_bg pointer" name="breakfast_symposium_5">
+								<td class="light_sky_bg pointer" name="breakfast_symposium_5" data-id="42">
 									Breakfast<br />Symposium 5
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="light_sky_bg pointer" name="breakfast_symposium_6">
+								<td class="light_sky_bg pointer" name="breakfast_symposium_6" data-id="43">
 									Breakfast<br />Symposium 6
 									<input type="hidden" name="e" value="room3">
 								</td>
@@ -486,7 +487,7 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="key_lecture_4" colspan="3">
+								<td class="dark_pink_bg pointer" name="key_lecture_4" colspan="3" data-id="44">
 									Keynote Lecture 4
 									<p class="bold">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
 									<p>Jean-Pierre Després</p>
@@ -508,23 +509,23 @@
 								<td>
 									<div class="colons_div">09:20-10:50</div>
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_13">
+								<td class="dark_green_bg pointer" name="symposium_13" data-id="45">
 									Symposium 13 <p>Obesity Related Comorbidity-Fatty Liver</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_14">
+								<td class="dark_green_bg pointer" name="symposium_14" data-id="46">
 									Symposium 14 <p>Understanding Aging Skeletal Muscle and Dynamics</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_15">
+								<td class="dark_green_bg pointer" name="symposium_15" data-id="47">
 									Symposium 15 <p></p>
 									<input type="hidden" name="e" value="room3">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_16">
+								<td class="dark_green_bg pointer" name="symposium_16" data-id="48">
 									Symposium 16 <p></p>
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="dark_sky_bg pointer" name="sponsored_session_3">
+								<td class="dark_sky_bg pointer" name="sponsored_session_3" data-id="49">
 									Sponsored Session 3 <p></p>
 									<input type="hidden" name="e" value="room5">
 								</td>
@@ -541,7 +542,7 @@
 								<td>
 									<div class="colons_div">11:00-11:40</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="presidential_lecture" colspan="3">
+								<td class="dark_pink_bg pointer" name="presidential_lecture" colspan="3" data-id="50">
 								Presidential Lecture<p class="bold"></p>
 									<p></p>
 									<input type="hidden" name="e" value="room1">
@@ -561,15 +562,15 @@
 								<td>
 									<div class="colons_div">11:50-12:50</div>
 								</td>
-								<td class="light_sky_bg pointer" name="luncheon_symposium_5">
+								<td class="light_sky_bg pointer" name="luncheon_symposium_5" data-id="51">
 									Luncheon<br />Symposium 5
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="light_sky_bg pointer" name="luncheon_symposium_6">
+								<td class="light_sky_bg pointer" name="luncheon_symposium_6" data-id="52">
 									Luncheon<br />Symposium 6
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="light_sky_bg pointer" name="luncheon_symposium_7">
+								<td class="light_sky_bg pointer" name="luncheon_symposium_7" data-id="53">
 									Luncheon<br />Symposium 7
 									<input type="hidden" name="e" value="room3">
 								</td>
@@ -585,16 +586,16 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td class="dark_orange_bg pointer" name="oral_presentation_3">
+								<td class="dark_orange_bg pointer" name="oral_presentation_3" data-id="54">
 									Oral Presentation 3
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="dark_orange_bg pointer" name="oral_presentation_4">
+								<td class="dark_orange_bg pointer" name="oral_presentation_4" data-id="55">
 									Oral Presentation 4
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
-								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2">
+								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56">
 									Guided Poster 2
 									<input type="hidden" name="e" value="room7">
 								</td>
@@ -603,7 +604,7 @@
 								<td>
 									<div class="colons_div">13:50-14:30</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_5" colspan="3">
+								<td class="dark_pink_bg pointer" name="keynote_lecture_5" colspan="3" data-id="57">
 									Keynote Lecture 5
 									<p class="bold">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
 									<p>William Evans</p>
@@ -619,7 +620,7 @@
 								<td>
 									<div class="colons_div">14:30-15:10</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_6" colspan="3">
+								<td class="dark_pink_bg pointer" name="keynote_lecture_6" colspan="3" data-id="58">
 									Keynote Lecture 6
 									<p class="bold">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
 									<p>Michael D. Jensen</p>
@@ -641,27 +642,27 @@
 								<td>
 									<div class="colons_div">15:20-16:50</div>
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_17">
+								<td class="dark_green_bg pointer" name="symposium_17" data-id="59">
 									Symposium 17 
 									<p>Incretin Therapy from MARS, Bariatric Surgery from VENUS</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_18">
+								<td class="dark_green_bg pointer" name="symposium_18" data-id="60">
 									Symposium 18 
 									<p>Cracking the Neural Code: Understanding Obesity through the Hypothalamus, Brain Stem, and Vagus Pathways</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_19">
+								<td class="dark_green_bg pointer" name="symposium_19" data-id="61">
 									Symposium 19 
 									<p>Expanding Horizons in Pediatric Obesity</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
-								<td class="dark_green_bg pointer" name="symposium_20">
+								<td class="dark_green_bg pointer" name="symposium_20" data-id="62">
 									Symposium 20
 									<p>Exercise and Cardiometabolic Dysfunction</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
-								<td class="violet_bg pointer best_jomes" name="jomes_session">
+								<td class="violet_bg pointer best_jomes" name="joint_symposium_4" data-id="63">
 									Joint Symposium<br>KSSO-TOS
 									<input type="hidden" name="e" value="room5">
 								</td>
@@ -678,7 +679,7 @@
 								<td>
 									<div class="colons_div">17:00-17:40</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_7" colspan="3">
+								<td class="dark_pink_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
 									Keynote Lecture 7
 									<p class="bold">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
 									<p>W. Timothy Garvey</p>
@@ -694,7 +695,7 @@
 								<td>
 									<div class="colons_div">17:40-18:00</div>
 								</td>
-								<td class="white_yellow_bg pointer" name="closing_ceremony" colspan="3">
+								<td class="white_yellow_bg pointer" name="closing_ceremony" colspan="3" data-id="65">
 									Closing & Award Ceremony
 									<input type="hidden" name="e" value="room1">
 								</td>
@@ -713,6 +714,33 @@
     </div>
 
 </section>
+
+
+<!-- program modal -->
+<div class="modal_background" onclick="modal_close()" style="display: none;"></div>
+<div class="detail_modal" style="display: none;">
+    <button class="modal_close" onclick="modal_close()"><img src="./img/icons/icon_x.png" /></button>
+	<div class="modal_container">
+		<div class="modal_header">
+			<h3 class="modal_title title"></h3>
+			<div class="modal_sub_header">
+				<div>
+                    <p class="modal_title_day"></p>
+					<p class="modal_title_time"></p>
+					<p class="modal_title_room"></p>
+				</div>
+				<div>
+					<p class="program_modal_chair">좌장 : </p>
+					<p class="program_modal_person"></p>
+				</div>
+			</div>
+            <p class="modal_preview"></p>
+		</div>
+		<div class="content_container">	
+		</div>
+	</div>
+</div>
+<!-- //program modal -->
 
 <!-- HUBDNCHYJ : App 일때만 노출되는 팝업 입니다. -->
 
@@ -857,11 +885,186 @@ $(document).ready(function() {
 function table_location(event, _this, e, day, this_name) {
 	var session_app_type = $("[name=session_app_type]").val();
 	if (session_app_type != "" && session_app_type == 'N') {
+		// clickProgramTd(event);
 		// window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 	} else {
 	    //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 	}
 }
+
+
+    /** program_modal */
+    
+    function clickProgramTd(e){
+            let id = e.target.dataset.id;
+            /** td 내부 선택할 경우 */
+            if(!id){
+                id = e.target.parentElement.dataset.id;
+            }
+     
+    
+    $.ajax({
+        url: PATH + "ajax/client/ajax_program_detail.php",
+        type: "POST",
+        data: {
+            flag: "modal",
+            idx: id
+        },
+        dataType: "JSON",
+        success: function (res) {
+            //console.log(res.data)
+            if (res.code == 200) {
+                show_modal(res.data) 
+            } else {
+                return;
+            }
+        }
+    });
+        }
+   
+
+//모달 보여주기
+function show_modal(data) {
+    const detailModal = document.querySelector(".detail_modal");
+    const background = document.querySelector(".modal_background");
+    const contentsWrap =  document.querySelector(".content_container");
+
+    detailModal.style.display = "";
+    background.style.display = "";
+
+    contentsWrap.innerHTML = "";
+    writeModal(data)
+}
+
+//모달 창 닫기
+function modal_close() {
+    const detailModal = document.querySelector(".detail_modal")
+    const background = document.querySelector(".modal_background")
+    const contentsWrap =  document.querySelector(".content_container");
+
+    detailModal.style.display = "none";
+    background.style.display = "none";
+    contentsWrap.innerHTML = "";
+}
+
+//모달 안 내용 채우기
+function writeModal(data){
+    
+    const modalTitle = document.querySelector(".modal_title");
+    const modalTitleDay = document.querySelector(".modal_title_day");
+    const modalTitleTime = document.querySelector(".modal_title_time");
+    const modalTitleRoom = document.querySelector(".modal_title_room");
+    const modalChairPerson = document.querySelector(".program_modal_person");
+    const contentsWrap =  document.querySelector(".content_container");
+    const modalPreview = document.querySelector(".modal_preview")
+
+    let title = "";
+    let subTitle = "";
+    let titleDay = "";
+    let titleTime = "";
+    let titleRoom = "";
+    let chairpersonHtml = "";
+    let preview = "";
+
+
+    data.map((t, i)=>{
+   
+        const contents = document.createElement("div")
+        title = t.title;
+        subTitle = t.program_name;
+        titleRoom = t.program_place_name;
+        if(t.preview !== ""){
+            preview = t.preview;
+        }
+        const startDay = t.start_time?.split(" ")[0];
+        const startTime = t.start_time?.split(" ")[1];
+        const speakerName = t.speaker?.split("(")[0];
+        const speakerOrg = t.speaker?.split("(")[1]?.split(")")[0];
+
+        titleDay = `• ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
+        // titleDay = `${startDay?.split("-")[0]}년 ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
+        titleTime = "• " + startTime + '~' + t.end_time;
+        contents.className = "content";
+
+        //좌장 한 명일 경우
+        if(!t.chairpersons?.includes(",")){
+            const chairperson = t.chairpersons?.split("(")[0];
+            const chairperson_org = t.chairpersons?.split("(")[1]?.split(")")[0];
+
+            chairpersonHtml = `<span class="bold">${chairperson}</span>(${chairperson_org})`;
+        }
+        //좌장 두 명일 경우
+        else if(t.chairpersons?.includes(",")){
+            const first_chairperson = t.chairpersons.split("(")[0];
+            const first_chairperson_org = t.chairpersons.split("(")[1].split(")")[0];
+
+            const second_chairperson = t.chairpersons.split("(")[1].split(", ")[1];
+            const second_chairperson_org = t.chairpersons.split("(")[2].split(")")[0]
+
+            chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<br class="mb_only"/><span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
+        }
+
+
+        /**speaker가 있을 경우 */
+        if(t.speaker){
+             /**speaker가 한 명일 경우 */
+            if(!t.speaker?.includes(",")){
+                contents.innerHTML =  `
+                                        <div class="content_time">${t.contents_start_time} - ${t.contents_end_time}</div>
+                                        <div>${t.contents_title}</div>
+                                        <div class="content_1 content_person">
+                                            <b>${speakerName}</b>
+                                            <p>${speakerOrg ? speakerOrg : 'TBD'}</p>
+                                        </div>
+                                    `
+            }
+            /**speaker가 여러 명일 경우 */
+            else if(t.speaker?.includes(",")){
+                /***240222 hyojun수정 심사위원일경우 시간 X***/
+                if(t.contents_title =="심사위원")
+                {
+                    contents.innerHTML =  `
+                                        <div class="content_time"></div>
+                                        <div>${t.contents_title}</div>
+                                        <div class="content_1 content_person">
+                                            <p>${t.speaker}</p>
+                                        </div>
+                                    `
+                }
+                else
+                {
+                    contents.innerHTML =  `
+                                        <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
+                                        <div>${t.contents_title}</div>
+                                        <div class="content_1 content_person">
+                                            <p>${t.speaker}</p>
+                                        </div>
+                                    `
+                }
+            }
+        }
+         /**speaker가 없을 경우 */
+        else{
+            contents.innerHTML =  `
+                                    <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
+                                    <div>${t.contents_title}</div>
+                                    <div>
+                                        <p> </p>
+                                    </div>
+                                `
+        }
+        contentsWrap.append(contents)
+    })
+
+    modalTitle.innerText = subTitle;
+    // modalSubTitle.innerText = subTitle;
+    modalTitleDay.innerText = titleDay;
+    modalTitleTime.innerText = titleTime;
+    modalTitleRoom.innerText = "• "+ titleRoom;
+    modalChairPerson.innerHTML = chairpersonHtml;
+    modalPreview.innerText = preview;
+}
+
 </script>
 
 <?php 

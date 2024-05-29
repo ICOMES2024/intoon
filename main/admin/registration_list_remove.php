@@ -172,7 +172,7 @@
 										FROM payment
 									) AS p
 									ON p.idx = rr.payment_no
-									WHERE rr.is_deleted = 'N' AND rr.status != 4
+									WHERE rr.is_deleted = 'Y' OR rr.status = 4
 									{$where}
 									ORDER BY rr.idx DESC
 								";
@@ -240,7 +240,7 @@
 	$html .= '<tbody>';
 	
 	foreach($registration_list as $rk => $rl){
-		if($rl['affiliation'] !== "into-on"){
+		//if($rl['affiliation'] !== "into-on"){
 		$member_status = ($rl["member_status"] == 0) ? "N" : "Y";
 
 		//[240315] sujeong / 등록번호 4자리수 만들기
@@ -407,7 +407,7 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$conference_info.'</td>';
 		$html .= '</tr>';
 	}
-}
+//}
 	$html .= '</tbody>';
 	$html .= '</table>';
 
@@ -419,7 +419,7 @@
 	<section class="list">
 		<div class="container">
 			<div class="title clearfix">
-				<h1 class="font_title">Registration</h1>
+				<h1 class="font_title">Registration(Deleted)</h1>
 				<button type="button" class="btn floatR" onclick="javascript:window.open('./member_list.php?for=offline');">네임택 보기</button>
 				<button type="button" class="btn excel_download_btn" onclick="javascript:fnExcelReport('Registration', html);">엑셀 다운로드</button>
 			</div>

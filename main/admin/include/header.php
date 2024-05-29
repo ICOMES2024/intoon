@@ -30,9 +30,11 @@
 		<li class="main_nav"><a href="javascript:;"><i class="la la-list"></i>신청서관리<i class="la la-angle-down"></i></a>
 			<ul class="sub_nav">
 				<li class="apply_poster"><a href="./abstract_application_list.php">Poster Abstract Submission</a></li>
+				<li class="apply_poster"><a href="./abstract_application_list_remove.php">Poster Abstract Submission(Deleted)</a></li>
 				<!-- <li class="apply_lecture"><a href="./lecture_note_list.php">Lecture Note Submission</a></li> -->
 				<li class="apply_registration"><a href="./registration_list.php">Registration</a></li>
-				<li class="apply_sponsorship"><a href="./sponsorship_list.php">Sponsorship & Exhibition</a></li>
+				<li class="apply_registration"><a href="./registration_list_remove.php">Registration(Deleted)</a></li>
+				<!-- <li class="apply_sponsorship"><a href="./sponsorship_list.php">Sponsorship & Exhibition</a></li> -->
 			</ul>
 		</li>
 		<li class="main_nav"><a href="javascript:;"><i class="la la-file"></i>페이지관리<i class="la la-angle-down"></i></a>
@@ -43,7 +45,7 @@
 				<li class="page_poster"><a href="./set_poster.php">Poster Abstract Submission 관리</a></li>
 				<li class="page_lecture"><a href="./set_lecture.php">Lecture Note Submission 관리</a></li>
 				<li class="page_registration"><a href="./set_registration.php">Registration 관리</a></li>
-				<li class="page_sponsorship"><a href="./sponsorship_overview.php">Sponsorship & Exhibition 관리</a></li>
+				<!-- <li class="page_sponsorship"><a href="./sponsorship_overview.php">Sponsorship & Exhibition 관리</a></li> -->
 			</ul>
 		</li>
 		<!-- <li class="main_nav"><a href="javascript:;"><i class="la la-play"></i>라이브플랫폼관리<i class="la la-angle-down"></i></a> -->
