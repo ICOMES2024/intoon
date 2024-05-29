@@ -11,7 +11,7 @@
     
     $my_submission_list_query = " 
                                 SELECT
-                                        ra.idx, ra.submission_code, DATE_FORMAT(ra.register_date, '%Y-%m-%d') AS regist_date, `type`,
+                                        ra.idx, ra.etc1, ra.submission_code, DATE_FORMAT(ra.register_date, '%Y-%m-%d') AS regist_date, `type`,
                                         (CASE
                                             WHEN `type` = 0
                                             THEN abstract_title
@@ -162,7 +162,9 @@
 							<td><?= $submission["regist_date"] ?></td>
 							<td data-idx="<?= $submission["idx"] ?>">
 								<button type="button" class="btn review_regi_open">Review</button>
-								<button type="button" class="btn modify_btn">Modify</button>
+								<?php if($submission["etc1"] != "Y"){ ?>
+									<button type="button" class="btn modify_btn">Modify</button>
+								<?php } ?>
 <!--								<button type="button" class="btn delete_btn">Delete</button>-->
 							</td>
 						</tr>

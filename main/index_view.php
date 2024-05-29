@@ -85,6 +85,7 @@
 			<button type="button" class="btn_circle_arrow"></button>
 		</div>
 		<div class="dates_area">
+			<p class="kst">*KST (UTC+9)</p>
 			<ul>
 				<li>
 					<a href="/main/abstract_submission_guideline.php">

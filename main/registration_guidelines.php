@@ -35,7 +35,9 @@ $price = get_data($sql_price);
 		<h1 class="page_title">Registration Guidelines</h1>
         <div class="inner">
             <!--1. important dates start-->
-            <h3 class="title">Key Dates</h3>
+            <h3 class="title">Key Dates
+                <p class="text_r bold">*KST (UTC+9)</p>
+            </h3>
             <div class="table_wrap detail_table_common details">
                 <table class="c_table detail_table">
                     <colgroup>
