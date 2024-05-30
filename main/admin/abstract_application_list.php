@@ -12,6 +12,7 @@
 	$s_date = $_GET["s_date"] ?? "";
 	$e_date = $_GET["e_date"] ?? "";
 	$submission_code = $_GET["submission_code"] ?? "";
+	$name_kor = $_GET["name_kor"] ?? "";
 
 	$where = "";
 	
@@ -39,12 +40,16 @@
 		$where .= " AND ra.submission_code LIKE '%".$submission_code."%' ";
 	}
 
+	if($name_kor != "") {
+		$where .= " AND CONCAT(m.last_name_kor,m.first_name_kor) LIKE '%".$name_kor."%' ";
+	}
+
 	$abstract_list_query =  "
 								SELECT
                                     ra.submission_code, ra.idx AS abstract_idx, ra.abstract_title, ra.etc1, ra.etc2,
                                     DATE_FORMAT(ra.register_date, '%y-%m-%d') AS register_date, ra.oral_presentation,
                                     m.idx AS member_idx, m.email, m.name, m.nation_ko, m.nation_en, m.affiliation, m.department,
-                                    f.original_name AS abstract_file_name, CONCAT(f.path,'/',f.save_name) AS path,
+                                    f.original_name AS abstract_file_name, CONCAT(f.path,'/',f.save_name) AS path, CONCAT(m.last_name_kor,'',m.first_name_kor) AS name_kor,
                                     c.title_en AS category,
                                     (
                                         CASE ra.presentation_type
@@ -64,7 +69,7 @@
                                 FROM request_abstract ra
                                          LEFT JOIN (
                                     SELECT
-                                        m.idx, m.email, CONCAT(m.first_name,' ',m.last_name) AS name, 
+                                        m.idx, m.email, CONCAT(m.first_name,' ',m.last_name) AS name, m.last_name_kor, m.first_name_kor, 
                                         n.nation_ko AS nation_ko, n.nation_en AS nation_en, affiliation, department, is_deleted
                                     FROM member m
                                              JOIN nation n
@@ -511,9 +516,11 @@
 							</tr>
 							<tr>
 								<th>제출코드</th>
-								<td colspan="3" class="input_wrap">
+								<td class="input_wrap">
 									<input type="text" name="submission_code" value="<?= $submission_code; ?>"/>
 								</td>
+								<th>한국어 이름</th>
+								<td><input type="text" name="name_kor" value="<?= $name_kor; ?>"/></td>
 							</tr>
 						</tbody>
 					</table>
