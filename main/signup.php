@@ -387,12 +387,12 @@
 								<p>대한비만학회 회원 정보로 간편 가입</p>
 								<ul class="simple_join clearfix">
 									<li>
-										<label for="">KSSO ID<span class="red_txt">*</span></label>
-										<input class="email_id" name="kor_id" type="text" maxlength="60">
+										<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
+										<input id="ksso_id" class="email_id" name="kor_id" type="text" maxlength="60">
 									</li>
 									<li>
-										<label for="">KSSO PW<span class="red_txt">*</span></label>
-										<input class="passwords" name="kor_pw" type="password" maxlength="60">
+										<label for="ksso_pw">KSSO PW<span class="red_txt">*</span></label>
+										<input id="ksso_pw" class="passwords" name="kor_pw" type="password" maxlength="60">
 									</li>
 									<li>
 										<button onclick="kor_api()" type="button" class="btn">회원인증</button>
@@ -784,12 +784,12 @@
 						<p class="mb10">대한비만학회 회원 정보로 간편 가입</p>
 						<ul class="simple_signup mb10">
 							<li>
-								<label for="" class="bold">KSSO ID<span class="red_txt">*</span></label>
-								<input class="email_id passwords" name="mo_kor_id" type="text" maxlength="60">
+								<label for="ksso_id_mo" class="bold">KSSO ID<span class="red_txt">*</span></label>
+								<input id="ksso_id_mo" class="email_id passwords" name="mo_kor_id" type="text" maxlength="60">
 							</li>
 							<li>
-								<label for="" class="bold">KSSO PW<span class="red_txt">*</span></label>
-								<input class="passwords" name="mo_kor_pw" type="password" maxlength="60">
+								<label for="ksso_pw_mo" class="bold">KSSO PW<span class="red_txt">*</span></label>
+								<input id="ksso_pw_mo" class="passwords" name="mo_kor_pw" type="password" maxlength="60">
 							</li>
 							<li>
 								<button onclick="mo_kor_api()" type="button" class="btn btn_small">회원인증</button>

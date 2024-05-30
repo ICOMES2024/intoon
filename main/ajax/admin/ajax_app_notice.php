@@ -271,6 +271,63 @@ else if($_POST["flag"]==="select"){
         exit;
     }
 }
+//[240530] sujeong / APP newsletter 추가
+else if($_POST["flag"] === 'insert_letter'){
+    $title_en = $_POST['data']['title_en'];
+    $content_en = $_POST['data']['content_en'];
+	$idx = $_POST['data']['idx'] ?? NULL;
+
+    $register = $_SESSION["ADMIN"]["idx"];
+
+//    print_r($title_en);
+//    print_r($content_en);
+
+	if (!empty($idx)) {
+
+		$insert_query = "
+							UPDATE board
+							SET 
+								title_en = '{$title_en}',
+								title_ko = NULL,
+								content_en = '{$content_en}',
+								content_ko = NULL,
+								modifier = '{$register}',
+								modify_date = NOW()
+							WHERE idx = {$idx}
+					";
+	} else {
+		$insert_query = "
+							INSERT board
+							SET 
+								type = 4,
+								title_en = '{$title_en}',
+								title_ko = NULL,
+								content_en = '{$content_en}',
+								content_ko = NULL,
+								register = '{$register}'          
+					";
+	}
+
+    $insert_notice = sql_query($insert_query);
+
+    if($insert_notice){
+        $res = [
+            'code' => 200,
+            'msg' => "success"
+        ];
+
+        echo json_encode($res);
+        exit;
+    } else {
+        $res = [
+            'code' => 400,
+            'msg' => "insert notice error"
+        ];
+        echo json_encode($res);
+        exit;
+    }
+}
+
 
 ?>
 

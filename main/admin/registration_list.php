@@ -12,7 +12,8 @@
 	$s_date = isset($_GET["s_date"]) ? $_GET["s_date"] : "";
 	$e_date = isset($_GET["e_date"]) ? $_GET["e_date"] : "";
 	$phone_num = isset($_GET["phone_num"]) ? $_GET["phone_num"] : "";
-
+	$name_kor = isset($_GET["name_kor"]) ? $_GET["name_kor"] : "";
+	
 	$where = "";
 	
 	if($id != "") {
@@ -38,11 +39,13 @@
 	if($phone_num != "") {
 		$where .= " AND rr.phone LIKE '%".$phone_num."%' ";
 	}
-	
+	if($name_kor != "") {
+		$where .= " AND CONCAT(m.last_name_kor,m.first_name_kor) LIKE '%".$name_kor."%' ";
+	}
 
 	$registration_list_query =  "
 									SELECT
-										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2,
+										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2, CONCAT(m.last_name_kor,m.first_name_kor) AS `name_kor`,
 										rr.member_type, rr.member_other_type, rr.occupation_type, rr.occupation_other_type,
 										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
 										(
@@ -457,8 +460,8 @@
 								<td>
 									<input type="text" name="phone_num" value="<?= $phone_num; ?>">
 								</td>
-								<td></td>
-								<td></td>
+								<th>한국어 이름</th>
+								<td><input type="text" name="name_kor" value="<?= $name_kor; ?>"></td>
 							</tr>
 						</tbody>
 					</table>
