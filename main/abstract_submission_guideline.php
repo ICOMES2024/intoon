@@ -77,7 +77,7 @@ $info = sql_fetch($sql_info);
 							</tr>
 							<tr>
 								<th>Abstract Submission<br class="br_mb_only"> Deadline</th>
-								<td><span class="font_inherit f_bold red_t">May 30 (Thu)</span></td>
+								<td><span class="font_inherit f_bold red_t">June 20 (Thu)</span></td>
 							</tr>
 							<tr>
 								<th>Notification of<br class="br_mb_only"> Abstract Acceptance</th>
