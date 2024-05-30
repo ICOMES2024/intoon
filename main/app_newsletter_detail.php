@@ -1,0 +1,50 @@
+<?php include_once('./include/head.php');?>
+<?php include_once('./include/app_header.php');?>
+<script src="./js/app_notice.js"></script>
+<?php
+$idx=$_GET['idx'];
+
+$select_notice_detail_query="
+                                SELECT idx, type, title_en, content_en
+                                FROM board
+                                WHERE is_deleted='N'
+                                AND type=4
+                                ANd idx = {$idx}
+                            ";
+$notice = sql_fetch($select_notice_detail_query);
+?>
+
+<!-- HUBDNCAJY : App - Notice > 상세 페이지 -->
+<section class="container app_version">
+		<div class="app_title_box">
+			<h2 class="app_title">NOTICE<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+			<ul class="app_menu_tab langth_2">
+				<li><a href="./app_notice.php">NOTICE</a></li>
+				<li class="on"><a href="./app_newsletter.php">Newsletter</a></li>
+			</ul>
+		</div>
+	<div class="inner">
+		<div class="contents_box">
+			<div class="app_contents_wrap type3">
+				<div class="app_notice_detail">
+					<div class="app_notice_title">
+						<?=$notice['title_en']?>
+					</div>
+					<div class="app_notice_cont">
+						<?=$notice['content_en']?>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function () {
+          $('img[usemap]').rwdImageMaps()  
+		  $(".app_header").removeClass("simple");
+})
+
+</script>
+
+<?php include_once('./include/app_footer.php');?>

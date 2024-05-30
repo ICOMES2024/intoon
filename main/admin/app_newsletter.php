@@ -86,7 +86,7 @@
 			<div class="contwrap">
                 <div class="flex_between title_wrap">
     				<p class="table_title">List</p>
-                    <button type="button" class="btn app_add_notice_btn" onclick="location.href='./app_notice_detail.php'">Notice 등록</button>
+                    <button type="button" class="btn app_add_notice_btn" onclick="location.href='./app_newsletter_detail.php'">Newsletter 등록</button>
                 </div>
 <!-- 				<table id="datatable" class="list_table"> -->
 				<table id="datatable" class="list_table app">

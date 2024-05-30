@@ -80,7 +80,7 @@ $total_notice = count($notice_list) ?? 0;
 				return;
 			}
 
-			window.location.href="./app_notice_detail.php?idx="+idx;
+			window.location.href="./app_newsletter_detail.php?idx="+idx;
 		});
 	});
 </script>

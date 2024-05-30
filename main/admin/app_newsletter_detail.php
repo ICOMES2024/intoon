@@ -180,7 +180,7 @@
 					success:function(res){
 						if(res.code === 200){
 							alert("작성된 내용이 저장되었습니다.");
-							window.location.replace("./app_notice.php");
+							window.location.replace("./app_newsletter.php");
 						}else if(res.code == 400){
 							alert(res.msg);
 						}else if(res.code == 401){
