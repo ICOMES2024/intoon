@@ -238,7 +238,7 @@
 									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_1">
-									Symposium 1 <p>Precision Medicine for Obesity</p>
+									Symposium 1 <p>Precision Medicine for Obesity and Diabetes</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_2">
@@ -409,7 +409,7 @@
 									<div class="colons_div">16:30-18:00</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_9">
-									Symposium 9 <p></p>
+									Symposium 9 <p>Obesity and Cardiovascular Health</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_10">
@@ -417,11 +417,11 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_11">
-									Symposium 11 <p>Diet Quality and Weight Regulation</p>
+									Symposium 11 <p>Perspectives in Digital Nutrition Care for Obesity </p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_12">
-									Symposium 12 <p></p>
+									Symposium 12 <p>Childhood Obesity is a Chronic Disease Demanding Specific Health Care</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_3">
@@ -521,7 +521,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_15">
-									Symposium 15 <p></p>
+									Symposium 15 <p>Obesity and Cardiovascular Health</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_16">

@@ -767,7 +767,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 1 : Precision Medicine for Obesity</p>
+                                                    <p class="font_20 bold">Symposium 1 : Precision Medicine for Obesity and Diabetes </p>
                                                     <!-- <p><span class="bold">Chairpersons : Sung Rae Kim</span> (The
                                                         Catholic University of Korea, Republic of Korea), <br><span
                                                             class="bold">Yoon-Sok Chung</span> (Ajou University,
@@ -821,6 +821,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
+                                                                    Obesity Phenotypes and Precision Medicine
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jean-Pierre Després</p>(VITAM – Research Centre on Sustainable Health, Canada)
@@ -2881,7 +2882,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 11 : Diet Quality and Weight Regulation</p>
+                                                    <p class="font_20 bold">Symposium 11 : Perspectives in Digital Nutrition Care for Obesity </p>
                                                     <!-- <p><span class="bold">Chairpersons : Cho-il Kim</span> (Seoul
                                                         National University, Republic of Korea), <br><span
                                                             class="bold">Eun Mi Kim</span> (Kangbuk Samsung Hospital,
@@ -2924,7 +2925,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:20-17:45</td>
                                                                     <td class="bold">
-                                                                    Telenutrition for Weight Management: Benefits, Limits, and Future Perspectives
+                                                                    Exploring the Landscape of Telenutrition in Obesity Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Shinok Park</p>(Noom Korea, Korea)
@@ -3288,7 +3289,8 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 12</p>
+                                                    <p class="font_20 bold">Symposium 12 : Childhood Obesity is a Chronic Disease Demanding Specific Health Care
+</p>
                                                     <!-- <p><span class="bold">Chairpersons : Kee-Hyoung Lee</span> (Korea
                                                         University, Republic of Korea), <br><span class="bold">So
                                                             ChungChung</span> (Konkuk University, Republic of Korea)</p> -->
@@ -4037,7 +4039,8 @@ echo '<script type="text/javascript">
                                                                         
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Seung-Jin Kim</p>
+                                                                        (Kangwon University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4046,7 +4049,8 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Hua Wang</p>
+                                                                        (First Affiliated Hospital of Anhui Medical University, China)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4054,7 +4058,8 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jun Hwa Hong </p>
+                                                                        (Eulji University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4441,7 +4446,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Mi-Kyung Kim</p>(Keimyung University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5498,7 +5503,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 15</p>
+                                                    <p class="font_20 bold">Symposium 15 : Diet Quality and Weight Regulation</p>
                                                     <!-- <p><span class="bold">Chairpersons : Kyu Rae Lee</span> (Gachon
                                                         University, Republic of Korea), <br><span class="bold">Sung Nim
                                                             Han</span> (Seoul National University, Republic of Korea)
@@ -5572,19 +5577,19 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    Low-Carbohydrate Diet Macronutrient Quality and Weight Change
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Yang Hu</p>(Harvard University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
-                                                                    Telenutrition for Weight Management: Benefits, Limits, and Future Perspectives
+                                                                    Trends in Diet Quality and Cardiometabolic Risk Factors Among Korean Adults
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Shinok Park</p>(Noom Korea, Korea)
+                                                                        <p class="bold">Hannah Oh</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5966,7 +5971,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                    School for Health & Obesity – For Children, Parents and Teachers
+                                                                    The Effects of Physical Activity on Obesity and Health in Adolescents
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jihyun Ahn</p>(Kyeongin High School, Korea)
