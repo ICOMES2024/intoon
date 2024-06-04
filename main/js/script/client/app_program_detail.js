@@ -267,10 +267,10 @@ function createHTMLList(program_list, active){
             //chairpersons_html += '<p class="chairperson"><span class="bold">'+chairperson+'</span>'+pl.chairpersons+'</p>'
         }
 
-        if(pl.preview!=null){
+        if(pl.preview != ""){
 
             //[240424] sujeong / 임시 주석 / 미리보기 버튼 숨기기
-            //preview_html = ' <button class="preview_btn">Preview</button>';
+            preview_html = ' <button class="preview_btn">Preview</button>';
             detail_text_html += '<div class="detail_text">'+pl.preview+'</div>';
         }
 
