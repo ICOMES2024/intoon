@@ -1891,12 +1891,32 @@ echo '<script type="text/javascript">
                                                         <span class="bold">Minchul Lee</span> (CHA University, Republic
                                                         of Korea)
                                                     </p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                <p class="bold">Organizer : Sewon Lee (Incheon National University, Korea), Minchul Lee (CHA University, Korea)</p>
+                                                    <ul>
+                                                        <li>Symposium 6 aims to comprehensively explore the roles of exercise-induced mitochondrial controls in skeletal muscle, novel strategies in managing NAFLD focusing on muscle metabolism and exercise, and the impact of exercise intervention on sarcopenia and menopause in women. By taking a holistic approach, this symposium delves into various aspects of obesity management, examining the interplay between exercise, metabolism, and muscle health.</li>
+                                                        <!-- <li>Professor Blüher has won several awards, including the
+                                                            Obesity Research Award of the German Society for the Study
+                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
+                                                            Diabetes Association, and the Rising Star Lecture at the
+                                                            44th European Association for the Study of Diabetes (EASD)
+                                                            meeting. More recently, he received the Hans Christian
+                                                            Hagedorn Award from the German Diabetes Association in 2011
+                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
+                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
+                                                            insights into the treatment of obesity. Diabetes Obes Metab.
+                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
+                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
+                                                            May 1;41(3):bnaa004.
+                                                        </li> -->
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -4435,10 +4455,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                    Incretin-based Therapy Combined with Bariatric Surgery: Will It Be Better than Single?
+                                                                   
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">McGowan Barbara</p>(Guy's and St Thomas' NHS Foundation Trust, UK)
+                                                                        <p class="bold">Mi-Kyung Kim</p>(Keimyung University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4446,14 +4466,14 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Mi-Kyung Kim</p>(Keimyung University, Korea)
+                                                                        <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">McGowan Barbara</p>(Guy's and St Thomas' NHS Foundation Trust, UK)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5167,12 +5187,22 @@ echo '<script type="text/javascript">
                                                         (Sungkyunkwan University, Republic of Korea), <br><span
                                                             class="bold">Hyung Jin Choi</span> (Seoul National
                                                         University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                <p class="bold">Organizer : Hyung Jin Choi (Seoul National University, Korea)</p>
+                                                    <ul>
+                                                        <li>The brainstem and hypothalamus intricately orchestrate physiological processes, including appetite regulation and body weight maintenance, by modulating the hunger and satiety. Prof. Jo-Eun Son will elucidate the hypothalamus's mechanism in the genetic determinants of human obesity, Prof. Chen Ran will reveal on the neural encoding of internal senses within the brainstem, and Prof. Zhan Cheng will discuss the function of brainstem catecholaminergic neurons in the regulation of energy homeostasis.</li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. 2021 Nature Metabolism. Irx3 and Irx5 in Ins2-Cre+ cells regulate hypothalamic postnatal neurogenesis and leptin response<br/>
+2021 Science Advances. Ectopic expression of Irx3 and Irx5 in the paraventricular nucleus of the hypothalamus contributes to defects in Sim1 haploinsufficiency 
+<br />2. 2022 Nature. A brainstem map for visceral sensations <br/>3. 2024 Nature Neuroscience. Fasting-activated ventrolateral medulla neurons regulate T cell homing and suppress autoimmune disease in mice<br/>2023 Cell Reports. AgRP neurons are not indispensable for body weight maintenance in adult mice
+
+                                                        </li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>

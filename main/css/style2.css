@@ -430,7 +430,7 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 .program_detail_td.on {display:table-cell;}
 .program_detail_btn {position:absolute; top:50%; right:20px; transform:translateY(-50%); height: 32px; font-size: 14px; padding: 0 14px;}
 .program_detail_ul .program_detail_td ul {margin-top:12px;}
-.program_detail_ul .program_detail_td li {line-height: 1.27;}
+.program_detail_ul .program_detail_td li {line-height: 1.27; word-break: keep-all;}
 .program_detail_ul .program_detail_td li:not(:first-child) {margin-top:8px;}
 
 /*Abstract Submission*/
@@ -754,7 +754,7 @@ section.visa .table_vertical th {color: #000;}
 .program_detail_ul li .caption span:first-child {font-size:24px;}
 .program_detail_ul .detail_table_common {margin-top:10px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:last-child > td {padding:0; border-bottom:none;}
-.program_detail_ul .detail_table th, .program_detail_ul .detail_table td, .overview td {padding:10px 20px;}
+.program_detail_ul .detail_table th, .program_detail_ul .detail_table td, .overview td {padding:10px 20px; line-height: 1.6;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child {cursor:pointer;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td {padding:14px 20px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td:last-child {padding:14px 100px 14px 20px;}
