@@ -3,7 +3,7 @@
 
 <section class="coming sub_page">
 	<div class="inner">
-		<img alt="coming" src="https://image.webeon.net/icomes2024/icomes/coming_soon.png"/>
+		<img alt="coming" src="https://image.webeon.net/icomes2024/icomes/coming_soon-2.png"/>
 		<div class="sub_banner">
 			<h5>Will be updated</h5>
 		</div>

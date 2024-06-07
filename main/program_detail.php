@@ -840,7 +840,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jun Yeop Lee</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2142,7 +2142,7 @@ echo '<script type="text/javascript">
                                                                       
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Emma Fontvieille</p>(IARC - International Agency for Research on Cancer / World Health Organization, France)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2744,7 +2744,7 @@ echo '<script type="text/javascript">
                                                                         
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Dong Wook Choi</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2753,10 +2753,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Dughyun Choi</p>(Soonchunhyang
-                                                                        University, Republic of Korea),<br />
-                                                                        <p class="bold">Hye Yeon Koo</p>(Seoul National
-                                                                        University, Republic of Korea) -->
+                                                                        <p class="bold">Ja Hyun Koo</p>(Seoul National University, Korea),<br />
+                                                                        <p class="bold">Ki Yong Hong</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4086,8 +4084,8 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Jun Hwa Hong</p>(Eulji
-                                                                        University, Republic of Korea) -->
+                                                                        <p class="bold">Bo Kyung Koo</p>(Seoul National University, Korea),<br/>
+                                                                        <p class="bold">Youn Huh</p>(Eulji University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4466,7 +4464,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Po-Chih Chang</p>(National Sun Yat-Sen University, Kaohsiung, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4480,10 +4478,8 @@ echo '<script type="text/javascript">
                                                                     <td>16:35-16:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Eun Roh</p>(Hallym University,
-                                                                        Republic of Korea),<br>
-                                                                        <p class="bold">Jun Sung Moon</p>(Yeungnam
-                                                                        University, Republic of Korea) -->
+                                                                        <p class="bold">Chang Hee Jung</p>(University of Ulsan, Korea),<br>
+                                                                        <p class="bold">Jun Sung Moon</p>(Yeungnam University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -5248,8 +5244,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Won Jun Kim</p>(University of
-                                                                        Ulsan, Republic of Korea) -->
+                                                                        <p class="bold">Yong Taek Jeong</p>(Korea University, Korea),<br/>
+                                                                        <p class="bold">Chan Hee Lee</p>(Hallym University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6336,7 +6332,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                    Impact of Progressive Dynamic Resistance Training on Skeletal Muscle and Vascular Function in Older Adults: A Study on the Oldest Old
+                                                                    Impact of Progressive Dynamic Resistance Training on Skeletal Muscle and Vascular Function in Older Adults
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Oh Sung Kwon</p>(University of Connecticut, USA)
