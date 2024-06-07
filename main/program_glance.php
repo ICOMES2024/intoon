@@ -26,9 +26,9 @@
     <div class="inner">
         <div class="program_wrap section">
             <div class="scroll_table">
-				<div>All Days September 5 (Thu) ~ 7 (Sat)</div>
+				<!-- <div>All Days September 5 (Thu) ~ 7 (Sat)</div> -->
 				<ul class="tab_green long centerT program_glance">
-					<!-- <li class="on"><a href="javascript:;">All Days September 5 (Thu) ~ 7 (Sat)</a></li> -->
+					<li class="on"><a href="javascript:;">All Days <br/>September 5 (Thu) ~ 7 (Sat)</a></li>
 					<li><a href="javascript:;">Sep.5 (Thu)</a></li>
 					<li><a href="javascript:;">Sep.6 (Fri)</a></li>
 					<li><a href="javascript:;">Sep.7 (Sat)</a></li>

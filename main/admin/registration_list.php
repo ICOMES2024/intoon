@@ -143,7 +143,8 @@
 										member_status,
 										IFNULL(rr.register_path, '-') AS register_path, 
 										IFNULL(rr.conference_info, '-') AS conference_info,
-										m.ksola_member_status
+										m.ksola_member_status,
+                                        rr.etc6
 									FROM request_registration  rr
 									INNER JOIN (
 										SELECT
