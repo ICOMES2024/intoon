@@ -562,6 +562,9 @@ section.container.organizing {padding-bottom: 190px;}
 .program_table thead th p{font-size:14px;color:#fff;font-weight:normal;}
 .program_table tbody img{width: 50px;margin-top: 10px;}
 .program_table tbody td{border-right:1px solid #999;font-size:12px;font-weight:bold; position: relative; line-height:1.6;}
+
+.program_table tbody td.pointer:hover{text-decoration: underline; text-underline-position: under;}
+
 /*.program_table tbody td:not(:first-child){vertical-align:top;}*/
 .program_table tbody .font_10_tr td:not(:first-child){font-size:10px; line-height:14px;}
 .program_table tbody .font_10_tr td:not(:first-child) p{font-size:10px; word-break: break-all;}
@@ -1917,13 +1920,13 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
 .detail_modal::-webkit-scrollbar-thumb {
     height: 30%; /* 스크롤바의 길이 */
-    background: #047CBB; /* 스크롤바의 색상 */
+    background: #5C0378; /* 스크롤바의 색상 */
     
     border-radius: 10px;
 }
 
 .detail_modal::-webkit-scrollbar-track {
-    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+    background: #9897CA20;  /*스크롤바 뒷 배경 색상*/
 }
 
 
@@ -1991,7 +1994,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
 .modal_sub_header > div:last-child {
 	display: grid;
-	grid-template-columns: 48px 1fr;
+	grid-template-columns: 120px 1fr;
 }
 
 
@@ -2037,8 +2040,8 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 }
 
 .modal_container > .content_container > .content > .content_person{
-	/* background-color: #FFCC33; */
-	background-color:#047CBB;
+	background-color: #ab78c3; 
+	/* background-color:#047CBB; */
 	height: 100%;
 	column-gap: 0.5rem;
 	padding: 0.5rem;
@@ -2054,7 +2057,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 	justify-content: center;
 	align-items: center;
 	border-top: 1px solid #a6a6a6;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: bold;
 }
 

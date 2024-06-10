@@ -26,7 +26,7 @@
     <div class="inner">
         <div class="program_wrap section">
             <div class="scroll_table">
-				<!-- <div>All Days September 5 (Thu) ~ 7 (Sat)</div> -->
+
 				<ul class="tab_green long centerT program_glance">
 					<li class="on"><a href="javascript:;">All Days <br/>September 5 (Thu) ~ 7 (Sat)</a></li>
 					<li><a href="javascript:;">Sep.5 (Thu)</a></li>
@@ -240,7 +240,7 @@
 									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_1" data-id="15">
-									Symposium 1 <p>Precision Medicine for Obesity and Diabetes</p>
+									Symposium 1 <p>Precision Medicine for Obesity and Diabetes </p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_2" data-id="16">
@@ -731,7 +731,10 @@
 					<p class="modal_title_room"></p>
 				</div>
 				<div>
-					<p class="program_modal_chair">좌장 : </p>
+					<p class="program_modal_chair"></p>
+					
+					<!-- [240607] sujeong / 학회팀 요청 모달 오픈 & 좌장 미확정 주석처리 -->
+					<!-- <p class="program_modal_chair">Chairperson : </p> -->
 					<p class="program_modal_person"></p>
 				</div>
 			</div>
@@ -886,7 +889,7 @@ $(document).ready(function() {
 function table_location(event, _this, e, day, this_name) {
 	var session_app_type = $("[name=session_app_type]").val();
 	if (session_app_type != "" && session_app_type == 'N') {
-		// clickProgramTd(event);
+		clickProgramTd(event);
 		// window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 	} else {
 	    //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
@@ -1002,14 +1005,14 @@ function writeModal(data){
             const second_chairperson = t.chairpersons.split("(")[1].split(", ")[1];
             const second_chairperson_org = t.chairpersons.split("(")[2].split(")")[0]
 
-            chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<br class="mb_only"/><span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
+           chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<br class="mb_only"/><span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
         }
 
 
         /**speaker가 있을 경우 */
         if(t.speaker){
              /**speaker가 한 명일 경우 */
-            if(!t.speaker?.includes(",")){
+            if(t.speaker?.split(',').length <= 3){
                 contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time} - ${t.contents_end_time}</div>
                                         <div>${t.contents_title}</div>
@@ -1020,7 +1023,7 @@ function writeModal(data){
                                     `
             }
             /**speaker가 여러 명일 경우 */
-            else if(t.speaker?.includes(",")){
+            else if(t.speaker?.split(',').length > 3){
                 /***240222 hyojun수정 심사위원일경우 시간 X***/
                 if(t.contents_title =="심사위원")
                 {
@@ -1062,7 +1065,9 @@ function writeModal(data){
     modalTitleDay.innerText = titleDay;
     modalTitleTime.innerText = titleTime;
     modalTitleRoom.innerText = "• "+ titleRoom;
-    modalChairPerson.innerHTML = chairpersonHtml;
+
+	//[240607] sujeong / 학회팀 요청 모달 오픈 & 좌장 미확정 주석처리
+    //modalChairPerson.innerHTML = chairpersonHtml;
     modalPreview.innerText = preview;
 }
 

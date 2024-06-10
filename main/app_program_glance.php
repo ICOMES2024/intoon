@@ -238,7 +238,7 @@
 									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_1">
-									Symposium 1 <p>Precision Medicine for Obesity and Diabetes</p>
+									Symposium 1 <p>Precision Medicine for Obesity and Diabetes </p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_2">
@@ -246,7 +246,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_3">
-									Symposium 3 <p> Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
+									Symposium 3 <p>Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_4">
@@ -521,7 +521,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_15">
-									Symposium 15 <p>Obesity and Cardiovascular Health</p>
+									Symposium 15 <p>Diet Quality and Weight Regulation</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_16">
