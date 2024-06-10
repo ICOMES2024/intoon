@@ -343,11 +343,11 @@
 									Oral presentation 2
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td></td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1">
 									Guided Poster1
 									<input type="hidden" name="e" value="room7">
-								</td>
+									</td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>
@@ -440,12 +440,12 @@
 								<td></td>
 								<td></td>
 								<td></td>
+								<td></td>
 								<td class="white_yellow_bg pointer" name="congress_banquet_ceremony">
 									Congress Banquet 
 									<p><span class="red_txt">*</span>Invited Only</p>
 									<input type="hidden" name="e" value="room6">
 								</td>
-								<td></td>
 							</tr>
 						</tbody>
 						<!---------- DAY 3 ---------->
@@ -597,11 +597,11 @@
 									Oral Presentation 4
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td></td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2">
 									Guided Poster 2
 									<input type="hidden" name="e" value="room7">
-								</td>
+									</td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>
