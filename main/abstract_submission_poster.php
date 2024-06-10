@@ -104,7 +104,7 @@ $info = sql_fetch($sql_info);
 						</tr>
 						<tr>
 							<td class="text_center">Location</td>
-							<td class="text_center" colspan="2">Room 7, 6F</td>
+							<td class="text_center" colspan="2">Room 6, 6F</td>
 						</tr>
                     </table>
                 </div>
