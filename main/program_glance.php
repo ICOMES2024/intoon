@@ -1,3 +1,4 @@
+
 <?php 
 	include_once('./include/head.php'); 
 	// HUBDNCHYJ : app 일 경우 전용 헤더 app_header 사용필요 

@@ -277,6 +277,7 @@
 	$html .= '<th>Submission No.</th>';
 	$html .= '<th>사전 등록 여부</th>';
 	$html .= '<th>심사 여부</th>';
+    $html .= '<th>메모</th>';
 	$html .= '<th>ID(Email)</th>';
 	$html .= '<th>Country</th>';
 	$html .= '<th>Name</th>';
@@ -376,6 +377,7 @@
 
 		$html .= '<td>'.$registration_yn.'</td>';
 		$html .= '<td>'.$al["etc1"].'</td>';
+        $html .= '<td>'.$al["etc2"].'</td>';
 		$html .= '<td>'.$al["email"].'</td>';
 		$html .= '<td>'.$al["nation_en"].'</td>';
 		$html .= '<td>'.$al["name"].'</td>';
