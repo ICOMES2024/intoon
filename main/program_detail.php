@@ -3706,31 +3706,6 @@ echo '<script type="text/javascript">
                     <!-- !!! Day2 - Room6 -->
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-                            <li name="congress_banquet_ceremony">
-                                <div class="table_wrap detail_table_common x_scroll border_bottom_70">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="white_yellow_bg">
-                                                <td>18:30-20:30</td>
-                                                <td>
-                                                    <p class="font_20 bold mb0">Congress Banquet <span
-                                                            class="font_inherit red_txt">*</span>Invited Only</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- !!! Day2 - Room7 -->
-                    <div class="tab_cont">
-                        <ul class="program_detail_ul">
                             <li name="guided_poster_presentation_1">
                                 <div class="table_wrap detail_table_common x_scroll border_bottom_70">
                                     <table class="c_table detail_table">
@@ -3807,6 +3782,32 @@ echo '<script type="text/javascript">
                             </li>
                         </ul>
                     </div>
+                   
+
+                    <!-- !!! Day2 - Room7 -->
+                    <div class="tab_cont">
+                        <ul class="program_detail_ul">
+                            <li name="congress_banquet_ceremony">
+                                <div class="table_wrap detail_table_common x_scroll border_bottom_70">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="white_yellow_bg">
+                                                <td>18:30-20:30</td>
+                                                <td>
+                                                    <p class="font_20 bold mb0">Congress Banquet <span
+                                                            class="font_inherit red_txt">*</span>Invited Only</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -3819,7 +3820,7 @@ echo '<script type="text/javascript">
                     <li><a href="javascript:;">Room4</a></li>
                     <li><a href="javascript:;">Room5</a></li>
                     <li><a href="javascript:;">Room6</a></li>
-                    <li><a href="javascript:;">Room7</a></li>
+                    <!-- <li><a href="javascript:;">Room7</a></li> -->
                 </ul>
                 <!-- Day3 - Room1 -->
                 <div class="tab_wrap">
@@ -6610,13 +6611,6 @@ echo '<script type="text/javascript">
                     <!-- !!!Day3 - Room6 -->
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-                            
-                        </ul>
-                    </div>
-
-                       <!-- !!!Day3 - Room7 -->
-                    <div class="tab_cont">
-                        <ul class="program_detail_ul">
                             <li name="guided_poster_presentation_2">
                                 <div class="table_wrap detail_table_common x_scroll border_bottom_70">
                                     <table class="c_table detail_table">
@@ -6697,6 +6691,14 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+                        </ul>
+                    </div>
+                   
+
+                     <!-- !!!Day3 - Room7 -->
+                     <div class="tab_cont">
+                        <ul class="program_detail_ul">
+                            
                         </ul>
                     </div>
                 </div>

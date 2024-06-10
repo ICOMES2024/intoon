@@ -1,3 +1,4 @@
+
 <?php 
 	include_once('./include/head.php'); 
 	// HUBDNCHYJ : app 일 경우 전용 헤더 app_header 사용필요 
@@ -343,11 +344,11 @@
 									Oral presentation 2
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td></td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28">
 									Guided Poster1
 									<input type="hidden" name="e" value="room7">
-								</td>
+									</td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>
@@ -440,12 +441,12 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td class="white_yellow_bg pointer" name="congress_banquet_ceremony" data-id="40">
+								<td></td>
+								<td class="white_yellow_bg " name="congress_banquet_ceremony" data-id="40">
 									Congress Banquet 
 									<p><span class="red_txt">*</span>Invited Only</p>
 									<input type="hidden" name="e" value="room6">
 								</td>
-								<td></td>
 							</tr>
 						</tbody>
 						<!---------- DAY 3 ---------->
@@ -595,11 +596,11 @@
 									Oral Presentation 4
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td></td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56">
 									Guided Poster 2
 									<input type="hidden" name="e" value="room7">
-								</td>
+									</td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>
@@ -888,12 +889,12 @@ $(document).ready(function() {
 //[240417] sujeong / 클릭 이벤트 주석 처리 / 모달창 띄울 예정
 function table_location(event, _this, e, day, this_name) {
 	var session_app_type = $("[name=session_app_type]").val();
-	if (session_app_type != "" && session_app_type == 'N') {
-		clickProgramTd(event);
-		// window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
-	} else {
-	    //window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
-	}
+	clickProgramTd(event);
+	// if (session_app_type != "" && session_app_type == 'N') {
+	// 	window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+	// } else {
+	//     window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+	// }
 }
 
 
@@ -916,7 +917,6 @@ function table_location(event, _this, e, day, this_name) {
         },
         dataType: "JSON",
         success: function (res) {
-            //console.log(res.data)
             if (res.code == 200) {
                 show_modal(res.data) 
             } else {
