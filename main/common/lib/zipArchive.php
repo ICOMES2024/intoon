@@ -169,7 +169,10 @@ $zip -> open("ICOMES-2024_Abstract.".date("Ymd").".zip");
 // addFile ( 파일이 존재하는 경로, 저장될 이름 )
 foreach ($abstract_list as $abstract) {
     if(file_exists($filePath.$abstract['path'])){
-        $zip->addFile($filePath.$abstract['path'], $abstract['submission_code']."_".$abstract['abstract_file_name']);
+        //[240610] sujeong / 기존 파일 -> 제출 파일 이름
+        // $zip->addFile($filePath.$abstract['path'], $abstract['submission_code']."_".$abstract['abstract_file_name']);
+        //새로운 파일 -> 제출 초록 제목
+        $zip->addFile($filePath.$abstract['path'], $abstract['submission_code']."_".$abstract['abstract_title']);
     }
 }
 
