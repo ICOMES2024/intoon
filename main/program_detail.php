@@ -1934,7 +1934,7 @@ echo '<script type="text/javascript">
                                                                     Exercise-Induced Mitochondrial Controls in Skeletal Muscle
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yuho Kim</p>(University of Massachusetts-Lowell,USA)
+                                                                        <p class="bold">Yuho Kim</p>(University of Massachusetts-Lowell, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
