@@ -433,8 +433,28 @@
 								<td></td>
 							</tr>
 							<tr>
+								<td class="break_time">
+									<div class="colons_div">18:00-18:05</div>
+								</td>
+								<td colspan="7" class="light_gray_bg break_time">Break</td>
+							</tr>
+							<tr>
+								<td class="break_time">
+									<div class="colons_div">18:05-18:40</div>
+								</td>
+								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="2">
+									EASO Presidential Lecture
+									<input type="hidden" name="e" value="room1">
+								</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
 								<td>
-									<div class="colons_div">18:00-</div>
+									<div class="colons_div">18:40-</div>
 								</td>
 								<td></td>
 								<td></td>

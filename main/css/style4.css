@@ -2042,8 +2042,9 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 }
 .modal_container > .content_container > .content > .content_person > p{
 	color: #fff;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 1.6;
+	text-align: center;
 }
 
 .modal_container > .content_container > .content > .content_person{
