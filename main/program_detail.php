@@ -1141,7 +1141,7 @@ echo '<script type="text/javascript">
                                                                       
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Monika Chaudhary</p>(IIHMR University,India)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1363,7 +1363,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                        Bariatric Surgery in Patients with Advanced Heart Failure
+                                                                     
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Kyung-Hee Kim</p>(Incheon Sejong Hospital, Korea)
@@ -2934,7 +2934,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                    Protocols and Practices of Telenutrition in Weight Loss Interventions
+                                                                    Exploring the Landscape of Telenutrition in Obesity Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Melissa Ventura Marra</p>(West Virginia University, USA)
@@ -2943,8 +2943,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:20-17:45</td>
                                                                     <td class="bold">
-                                                                    Exploring the Landscape of Telenutrition in Obesity Management
-                                                                    </td>
+                                                                    Telenutrition for Weight Management: Benefits, Limits, and Future Perspectives</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Shinok Park</p>(Noom Korea, Korea)
                                                                     </td>
@@ -3063,7 +3062,7 @@ echo '<script type="text/javascript">
                                                                       
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Gary Sweeney</p>(York University, Canada)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4055,7 +4054,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                        
+                                                                    Impact of Adipocyte Death on Steatotic Liver Disease (SLD)
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung-Jin Kim</p>
@@ -4454,7 +4453,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                   
+                                                                    Incretin-Based Therapy Before Bariatric Surgery: Will It Be Helpful?
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Mi-Kyung Kim</p>(Keimyung University, Korea)
@@ -4817,7 +4816,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Marc Hellerstein</p>
-                                                                        (UC Berkeley, USA)
+                                                                        (University of California, Berkeley, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5595,7 +5594,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                    Functional Supplements: Their Fat Controls and Molecular Mechanisms
+                                                                  
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yuri Kim</p>(Ewha Womans University, Korea)
@@ -5604,7 +5603,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                    Low-Carbohydrate Diet Macronutrient Quality and Weight Change
+                                                                   
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yang Hu</p>(Harvard University, USA)
@@ -6351,10 +6350,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">
-                                                                    Obesity and Physical Activity
+                                                                 
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Minhwa Suk</p>(Seoul National University of Education, Korea)
+                                                                        <p class="bold">Min-Hwa Suk</p>(Seoul National University of Education, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
