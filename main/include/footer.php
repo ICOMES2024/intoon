@@ -152,6 +152,7 @@
                         <img src="https://image.webeon.net/icomes2024/logo/2024_footer_ksso_logo.svg" alt="">
                         <img src="https://image.webeon.net/icomes2024/logo/2024_footer_icomes_logo.svg" alt="">
                         <!-- [240201] sujeong / 학회팀 요청 주석 -->
+                        <img class="pointer" onclick="goVisitSeoul()" src="https://image.webeon.net/icomes2024/logo/fl03.png" alt="">
                         <!-- <a href="https://www.visitseoul.net/index"><img style="margin-top: 35px;"
                                 src="https://image.webeon.net/icomes2024/logo/fl03.png" alt=""></a>-->
                         <img class="pointer" onclick="goKnto()" src="https://image.webeon.net/icomes2024/logo/2024_footer_korea_logo.svg" alt=""> 
@@ -237,6 +238,9 @@ $('.term4_btn').on('click', function() {
     })
    function goKnto(){
      window.location.href = "https://knto.or.kr/index";
+   }
+   function goVisitSeoul(){
+     window.location.href = "https://www.visitseoul.net/index";
    }
 //    $('.type2').on('click', function(event) {
 //         event.preventDefault();

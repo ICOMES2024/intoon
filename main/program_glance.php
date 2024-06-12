@@ -985,7 +985,30 @@ function writeModal(data){
         const speakerName = t.speaker?.split("(")[0];
         const speakerOrg = t.speaker?.split("(")[1]?.split(")")[0];
 
-        titleDay = `• ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
+        const [year, month, day] = startDay.split("-");
+        const monthName = "September";
+
+        let dayName;
+  
+        switch (day) {
+        case '05':
+            dayName = 'Thursday';
+            break;
+        case '06':
+            dayName = 'Friday';
+            break;
+        case '07':
+            dayName = 'Saturday';
+            break;
+        default:
+            dayName = '';
+            break;
+        }
+        const dayNumber = parseInt(day, 10);
+
+        titleDay = `• ${dayName}, ${monthName} ${dayNumber}, ${year}`;
+        // titleDay = `• ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
+        
         // titleDay = `${startDay?.split("-")[0]}년 ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
         titleTime = "• " + startTime + '~' + t.end_time;
         contents.className = "content";
