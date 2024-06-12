@@ -595,7 +595,7 @@
 							<!-- [240610] sujeong / 기존 - 다운로드시 초록 제출코드 제목 -->
 							<!-- <td class="long_txt_container"><a class="long_txt_box" href="<?=$list["path"]?>" download="<?=$list["submission_code"]?>"><?=$list["abstract_file_name"]?></a></td> -->
 
-							<td class="long_txt_container"><a class="long_txt_box" href="<?=$list["path"]?>" download="<?=$list["submission_code"] . $list["abstract_title"]?>"><?=$list["abstract_file_name"]?></a></td>
+							<td class="long_txt_container"><a class="long_txt_box" href="<?=$list["path"]?>" download="<?=$list["submission_code"]?>"><?=$list["abstract_file_name"]?></a></td>
 						<?php } ?>
 							<td><?=$list["category"]?></td>
 							<td><?=$list["presentation_type_text"]?></td>
