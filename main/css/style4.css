@@ -556,7 +556,7 @@ section.container.organizing {padding-bottom: 190px;}
 .program_table tbody td, .program_table tbody th{border-bottom:1px solid #999;}
 .program_table tr td:last-of-type, .program_table .no_right_border{border-right:0 !important;}
 .left_border{border-left:1px solid #999;}
-.program_table thead th{color:#000;font-size:12px;font-weight:bold;background:#F4F4F4;border-right:1px solid #999;padding:10px;/* width:12.5%;*/}
+.program_table thead th{color:#000;font-size:12px;font-weight:bold;background:#F4F4F4;border-right:1px solid #999;padding:10px;width:12.5%;}
 .program_table thead th.room_big{width: 190px;}
 .program_table thead th.room_small{width: 9%;}
 .program_table thead th.font_big{font-size:14px;}

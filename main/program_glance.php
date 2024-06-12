@@ -46,26 +46,21 @@
 				<div class="program_table_wrap">
 					<p class="text_r bold mb10">*KST (UTC+9)</p>
 					<table class="program_table main-table">
-					<colgroup>
-							<col class="90px">
-							<col class="190px">
-							<col class="190px">
-							<col class="190px">
-							<col class="190px">
-							<col class="*">
-							<col class="*">
-							<col class="*">
+						<colgroup>
+							<col class="program_time">
+							<col class="program_first_col">
+							<col class="program_first_col">
 						</colgroup>
 						<thead>
 							<tr>
-								<th class="font_big program_room room_small">Time/Location</th>
-								<th class="program_room room_big">Room 1</th>
-								<th class="program_room room_big">Room 2</th>
-								<th class="program_room room_big">Room 3</th>
-								<th class="program_room room_small">Room 4</th>
-								<th class="program_room room_small">Room 5</th>
-								<th class="program_room room_small">Room 6</th>
-								<th class="program_room room_small">Room 7</th>
+								<th class="font_big program_time program_room">Time/Location</th>
+								<th class="program_room">Room 1</th>
+								<th class="program_room">Room 2</th>
+								<th class="program_room">Room 3</th>
+								<th class="program_room">Room 4</th>
+								<th class="program_room">Room 5</th>
+								<th class="program_room">Room 6</th>
+								<th class="program_room">Room 7</th>
 							</tr>
 							<tr>
 								<th colspan="8" class="dark_gray_bg font_big day_tbody day_1">
@@ -172,7 +167,8 @@
 								</td>
 								<td></td>
 								<td></td>
-								<td class="white_yellow_bg pointer" name="welcome_cocktail_party" data-id="10">
+								<td class="white_yellow_bg pointer" name="welcome_cocktail_party" data-id="10" style="letter-spacing: -0.8px;
+"> 
 									Textbook Publication Inauguration Ceremony & Welcome Cocktail Party
 									<input type="hidden" name="e" value="room3">
 								</td>
