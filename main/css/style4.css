@@ -558,7 +558,7 @@ section.container.organizing {padding-bottom: 190px;}
 .left_border{border-left:1px solid #999;}
 .program_table thead th{color:#000;font-size:12px;font-weight:bold;background:#F4F4F4;border-right:1px solid #999;padding:10px;/* width:12.5%;*/}
 .program_table thead th.room_big{width: 190px;}
-.program_table thead th.room_small{width: 8%;}
+.program_table thead th.room_small{width: 9%;}
 .program_table thead th.font_big{font-size:14px;}
 .program_table thead tr th:last-of-type{border-right:0} 
 .program_table thead th p{font-size:14px;color:#fff;font-weight:normal;}

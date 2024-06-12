@@ -62,7 +62,7 @@
 								<th class="program_room room_big">Room 1</th>
 								<th class="program_room room_big">Room 2</th>
 								<th class="program_room room_big">Room 3</th>
-								<th class="program_room room_big">Room 4</th>
+								<th class="program_room room_small">Room 4</th>
 								<th class="program_room room_small">Room 5</th>
 								<th class="program_room room_small">Room 6</th>
 								<th class="program_room room_small">Room 7</th>
