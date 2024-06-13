@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/app_header.php'); ?>
 
-<script src="./js/script/client/app_program_detail.js?v=0.8"></script>
+<script src="./js/script/client/app_program_detail.js?v=0.91"></script>
 <style>
     /*230830 안재현 로딩화면 추가 */
     .loading_list{text-align: center; padding:30%; border-bottom:none !important;}
@@ -10,7 +10,7 @@
 
 <?php
  // [240419] sujeong / APP 로그인 페이지 /window confirm 창으로 수정 !!! 
- //[240523] sujeong / APP 즐겨찾기 숨기기 + 로그인 불필요하도록 / js 버전 변경하기!!(현재 0.6)
+ //[240523] sujeong / APP 즐겨찾기 숨기기 + 로그인 불필요하도록 / js 버전 변경하기!!(현재 0.91)
     // if (empty($_SESSION["USER"])) {
     //     echo "
     //             <script>
@@ -69,6 +69,8 @@ switch ($e){
     case "room7" : case "Room7" : $option_room = "7";
     break;
     case "Room1~3" : $option_room = "8";
+    break;
+    case "Room1~2" : $option_room = "9";
     break;
 }
 
@@ -129,7 +131,7 @@ echo '<script type="text/javascript">
         }
     }
 
-    $select_place_sql = " SELECT idx, program_place_name FROM program_place WHERE idx!=8";
+    $select_place_sql = " SELECT idx, program_place_name FROM program_place WHERE idx!=8 AND idx!=9";
     $place_list = get_data($select_place_sql);
 
     $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18 ORDER BY sort_num ASC";
@@ -262,8 +264,8 @@ echo '<script type="text/javascript">
                             <option value="3" class="day1 day2 day3">Room3</option>
                             <option value="4" class="day2 day3">Room4</option>
                             <option value="5" class="day2 day3">Room5</option>
-                            <option value="6" class="day2">Room6</option>
-                            <option value="7" class="day2 day3">Room7</option>
+                            <option value="6" class="day2 day3">Room6</option>
+                            <option value="7" class="day2">Room7</option>
 						</select>
 					</li>
 					<li>

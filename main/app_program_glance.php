@@ -441,9 +441,9 @@
 								<td class="break_time">
 									<div class="colons_div">18:05-18:40</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="" colspan="2">
+								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="2">
 									EASO Presidential Lecture
-									<input type="hidden" name="e" value="room1">
+									<input type="hidden" name="e" value="room1~2">
 								</td>
 								<td></td>
 								<td></td>
