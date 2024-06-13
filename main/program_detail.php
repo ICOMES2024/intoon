@@ -4058,7 +4058,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung-Jin Kim</p>
-                                                                        (Kangwon University, Korea)
+                                                                        (Kangwon National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

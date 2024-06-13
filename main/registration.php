@@ -204,7 +204,7 @@ if ($during_yn !== "Y") {
                         <select id="participation_type" name="participation_type" onChange="calc_fee(this)" <?=$prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : ""?>>
 							<option value="" selected hidden>Choose</option>
 							<?php
-								$participation_arr = array("Participants", "Committee", "Speaker", "Chairperson", "Panel", "Abstract Presenter",  "Sponsor", "Press");
+								$participation_arr = array("Participants", "Committee", "Speaker", "Chairperson", "Panel", "Sponsor", "Press");
 
 								foreach($participation_arr as $a_arr) {
                                     $attendance_type = "";

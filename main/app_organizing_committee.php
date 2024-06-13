@@ -38,8 +38,8 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
             <div class="table_wrap">
                 <table class="c_table2 center_table fixed_table">
                     <colgroup>
-                        <col width="100px">
-                        <col width="120px">
+                        <col width="26%">
+                        <col width="200px">
                         <col width="*">
                     </colgroup>
                     <thead>
@@ -246,10 +246,10 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
            
 			<h3 class="title">Scientific Program Committee</h3>
             <div class="table_wrap">
-                <table class="c_table2 center_table fixed_table">
+                <table class="c_table2">
                     <colgroup>
-                        <col width="100px">
-                        <col width="120px">
+                        <col width="26%">
+                        <col width="200px">
                         <col width="*">
                     </colgroup>
 					<thead>
@@ -369,53 +369,68 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
             </div>
             <h3 class="title">International Advisory Board</h3>
             <div class="table_wrap">
-                <table class="c_table2 iab_table">
+                <table class="c_table2">
                     <colgroup>
-                        <col width="100px">
+                        <col width="26%">
                         <col width="*">
                     </colgroup>
 					<thead>
 						<tr>
 							<th>Country</th>
 							<th>Name</th>
+                            <th>Association</th>
 						</tr>
 					</thead>
                     <tbody class="cat2">
                         <tr>
                             <td>Austrailia</td>
                             <td>Leonie Kaye Heiboronn</td>
+                            <td>ANZOS<br/>(The Australian and New Zealand Obesity Society)</td>
                         </tr>
                         <tr>
-                            <td>Hong Kong <br>(HKASO)</td>
+                            <td>Hong Kong</td>
                             <td>Andrea Luk</td>
+                            <td>HKASO<br/>(Hong Kong Association for the Study of Obesity)</td>
                         </tr>
                         <tr>
-                            <td>Hong Kong <br>(HKOS)</td>
+                            <td>Hong Kong</td>
                             <td>Michele Mae Ann Yuen</td>
+                            <td>HKOS<br/>(Hong Kong Obesity Society)</td>
                         </tr>
                         <tr>
                             <td>India</td>
                             <td>Banshi Saboo</td>
+                            <td>AiAARO<br/>(All India Association for Advancing Research in Obesity)</td>
+                        </tr>
+                        <tr>
+                            <td>Japan</td>
+                            <td>Geeta Appannah</td>
+                            <td>JASSO<br/>(Japan Society for the Study of Obesity)</td>
                         </tr>
                         <tr>
                             <td>Malaysia</td>
                             <td>Geeta Appannah</td>
+                            <td>MASO<br/>(Malaysian Association for the Study of Obesity)</td>
                         </tr>
                         <tr>
                             <td>New Zealand</td>
                             <td>Elaine Rush</td>
+                            <td>ANZOS<br/>(The Australian and New Zealand Obesity Society)</td>
                         </tr>
                         <tr>
                             <td>Philippines</td>
                             <td>Nemencio A Nicodemus, Jr</td>
+                            <td>PASOO<br/>(Philippine Association for the Study of Overweight and Obesity)</td>
                         </tr>
                         <tr>
                             <td>Taiwan</td>
                             <td>Wen-Yuan Lin</td>
+                            <td>TMASO<br/>(Taiwan Medical Association for the Study of Obesity)</td>
                         </tr>
                         <tr>
-                            <td>Vietman</td>
+                            <td>Vietnam</td>
                             <td>Do Thi Ngoc Diep</td>
+                            <td>VINUTAS<br/>(Vietnam Nutrition Association)</td>
                         </tr>
                     </tbody>
                 </table>
