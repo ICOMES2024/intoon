@@ -105,6 +105,7 @@ html::-webkit-scrollbar-thumb:hover{
 .border_bottom_000 {border-bottom:1px solid #000;}
 .border_bottom_70 {border-bottom:1px solid #707070;}
 .mt10 {margin-top:10px;}
+.mt20 {margin-top:20px;}
 .mt4 {margin-top:4px;}
 .mb_0 {margin-bottom: 0 !important;}
 .mb10 {margin-bottom: 10px;}
@@ -145,7 +146,7 @@ a.underline {text-decoration: underline !important;text-underline-position: unde
 .regi_fee {display:flex; align-items:center; margin-bottom: -1px;}
 .italic {font-style:italic;}
 .font_b {font-weight:bold !important;}
-.p4{padding: 4px !important;}
+.p4{padding: 24px 4px !important;}
 
 /* title */
 .sub_section_title{font-size:20px;display:inline-block;background:#ADF002;color:#000;padding:6px 28px;border-radius:20px;}

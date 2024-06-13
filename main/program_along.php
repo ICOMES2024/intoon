@@ -34,7 +34,7 @@ to gain invaluable insights while advancing your career in the healthcare field.
                         </colgroup>
                         <tr>
                             <th class=" center_t bold">Goals</th>
-                            <td class="" colspan="6">Develop outstanding relationships with APAC countries, and establish obesity as a priority in their individual countries</td>
+                            <td class="" colspan="6">Develop Outstanding Relationships with APAC Countries, and Establish Obesity as a Priority in Their Individual Countries</td>
                         </tr>
                         <tr>
                             <th class=" center_t bold">Date</th>
