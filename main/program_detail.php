@@ -2160,7 +2160,7 @@ echo '<script type="text/javascript">
                                                                         
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Wonsock Kim</p>(Eulji University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
