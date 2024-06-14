@@ -24,10 +24,14 @@ if($_POST["flag"] == "select") {
         $row_sql2 = " AND start_time >= '{$program_date}' ";
     }
 
+    //[240614] sujeong / 9번 option room 조건 추가
     if($option_room !== ""){
-        if($option_room == 1 || $option_room ==2 || $option_room==3){
+        if($option_room == 1 || $option_room ==2 ){
+            $row_sql .= " AND program_place_idx IN ($option_room, 8, 9) ";
+        } else if($option_room==3){
             $row_sql .= " AND program_place_idx IN ($option_room, 8) ";
-        } else{
+        }
+        else{
             $row_sql .= " AND program_place_idx = $option_room ";
         }
     }
@@ -168,10 +172,14 @@ if($_POST["flag"] == "select_1") {
         $row_sql2 = " AND start_time >= '{$program_date}' ";
     }
 
+    //[240614] sujeong / 9번 option room 조건 추가
     if($option_room !== ""){
-        if($option_room == 1 || $option_room ==2 || $option_room==3){
+        if($option_room == 1 || $option_room ==2 ){
+            $row_sql .= " AND program_place_idx IN ($option_room, 8, 9) ";
+        } else if($option_room==3){
             $row_sql .= " AND program_place_idx IN ($option_room, 8) ";
-        } else{
+        }
+        else{
             $row_sql .= " AND program_place_idx = $option_room ";
         }
     }
