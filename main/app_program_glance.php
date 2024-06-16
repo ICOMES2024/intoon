@@ -70,17 +70,17 @@
 								<td>
 									<div class="colons_div">15:00-16:30</div>
 								</td>
-								<td class="skyblue_bg pointer" name="jomes_session">
-									Best Article in JOMES<p></p>
-									<input type="hidden" name="e" value="room1">
+								<td class="skyblue_bg pointer" name="committee_session_1">
+									Committee Session <p></p>
+									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_1">
 									Joint Symposium<br>KSSO-JKT (Basic)
 									<input type="hidden" name="e" value="room2">
 								</td>
-								<td class="skyblue_bg pointer" name="committee_session_1">
-									Committee Session <p></p>
-									<input type="hidden" name="e" value="room3">
+								<td class="skyblue_bg pointer" name="jomes_session">
+									Best Article in JOMES<p></p>
+									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>
@@ -102,7 +102,10 @@
 									<div class="colons_div">16:40-18:10</div>
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
-								<td></td>
+								<td class="skyblue_bg pointer" name="committee_session_2" data-id="">
+									Committee Session 
+									<input type="hidden" name="e" value="room3">
+								</td>
                                 <!-- <td class="light_yellow_bg pointer" name="pre_congress_symposium_2">
 									Obesity Treatment Guidelines Symposium<p></p>
 									<input type="hidden" name="e" value="room1">
@@ -112,7 +115,10 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
-								<td></td>
+								<td class="violet_bg pointer" name="joint_symposium_3" data-id="">
+									Joint Symposium
+									<input type="hidden" name="e" value="room2">
+								</td>
                                 <!-- <td class="light_gray_bg_2">
 									기자간담회
 									<input type="hidden" name="e" value="room3">
@@ -149,7 +155,10 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								
-								<td></td>
+								<td class="dark_sky_bg pointer" name="satellite_symposium_4" data-id="">
+									Satellite<br />Symposium 4
+									<input type="hidden" name="e" value="room1">
+								</td>
 								<td></td>
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>

@@ -117,7 +117,7 @@ $info = sql_fetch($sql_info);
 				<div class="text_box indent">
 					<ul>
 						<li>• Language: English</li>
-						<li>• Each presenter will be given 10 minutes. (7 minutes talk / 3 minutes Q&A)</li>
+						<li>• Each presenter will be given 7 minutes. (5 minutes talk / 2 minutes Q&A)</li>
 					</ul>
 				</div>
 			</div>
