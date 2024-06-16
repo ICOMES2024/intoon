@@ -76,7 +76,9 @@ $(document).ready(function(){
 
 	//이름 유효성
 	$("input[name=first_name], input[name=mo_first_name]").on("change keyup", function(key){
-		var pattern_eng = /[^a-zA-Z\s]/gi;
+		//[240614] sujeong / 학회팀요청 이름 정규식에 - 추가
+		// var pattern_eng = /[^a-zA-Z\s]/gi;
+		var pattern_eng =/[^a-zA-Z||-\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
 			var first_name = _this.val().replace(pattern_eng, '');
@@ -85,7 +87,9 @@ $(document).ready(function(){
 	});
 
 	$("input[name=last_name], input[name=mo_last_name]").on("change keyup", function(key){
-		var pattern_eng = /[^a-zA-Z\s]/gi;
+		//[240614] sujeong / 학회팀요청 이름 정규식에 - 추가
+		// var pattern_eng = /[^a-zA-Z\s]/gi;
+		var pattern_eng =/[^a-zA-Z||-\s]/gi;
 		var _this = $(this);
 		if(key.keyCode != 8) {
 			var first_name = _this.val().replace(pattern_eng, '');

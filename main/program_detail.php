@@ -3391,8 +3391,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Byoungduck Han</p>(Korea
-                                                                        University, Republic of Korea),<br />
+                                                                        <p class="bold">Yeo-Jin Hong</p>(Korea University Ansan Hospital, Korea)
+                                                                         <!--,<br />
                                                                         <p class="bold">Yong Hyuk Kim</p>(Yonsei
                                                                         University, Republic of Korea) -->
                                                                     </td>
