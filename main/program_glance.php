@@ -107,7 +107,7 @@
 									<div class="colons_div">16:40-18:10</div>
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
-								<td class="skyblue_bg pointer" name="committee_session_2" data-id="67">
+								<td class="skyblue_bg " name="committee_session_2" data-id="67">
 									Committee Session 
 									<input type="hidden" name="e" value="room3">
 								</td>
@@ -116,7 +116,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
-								<td class="violet_bg pointer" name="joint_symposium_3" data-id="68">
+								<td class="violet_bg " name="joint_symposium_3" data-id="68">
 									Joint Symposium
 									<input type="hidden" name="e" value="room2">
 								</td>
@@ -155,7 +155,7 @@
 									Satellite<br />Symposium 2
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_sky_bg pointer" name="satellite_symposium_4" data-id="69">
+								<td class="dark_sky_bg " name="satellite_symposium_4" data-id="69">
 									Satellite<br />Symposium 4
 									<input type="hidden" name="e" value="room1">
 								</td>
