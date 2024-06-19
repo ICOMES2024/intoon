@@ -90,6 +90,8 @@
 </style>
 <script>
 	$(document).ready(function(){
+
+
 		$("#user1").change(function(){
 			if($("#user1").prop('checked') == true) {
 				$(".ksola_signup").addClass("on");
@@ -115,6 +117,9 @@
 
 				$(".korea_only").addClass("on");
 				$(".korea_radio").addClass("on");
+				if($("#user1").prop('checked') == true) {
+				  $(".ksola_signup").addClass("on");
+				}
 			} else {
 				$(".korea_radio").removeClass("on");
 				$(".korea_only").removeClass("on");
@@ -252,6 +257,10 @@
 
 				$(".mo_korea_only").addClass("on");
 				$(".mo_korea_radio").addClass("on");
+
+				if($("#mo_user1").prop('checked') == true) {
+					$(".mo_ksola_signup").addClass("on");
+				}
 			}else {
 				$(".mo_korea_radio").removeClass("on");
 				$(".mo_korea_only").removeClass("on");
@@ -373,10 +382,11 @@
 							<th class="nowrap"><span class="red_txt">*</span>대한비만학회(KSSO) 회원 여부</th>
 							<td>
 								<div class="label_wrap">
-									<input type="radio" class="new_radio" name="user" id="user1">
+									<input checked type="radio" class="new_radio" name="user" id="user1">
 									<label for="user1"><i></i>회원</label>	
-									<input checked type="radio" class="new_radio" name="user" id="user2">
+									<input type="radio" class="new_radio" name="user" id="user2">
 									<label for="user2"><i></i>비회원</label>	
+									<span class="red_t">* 대한비만학회 회원이 아닐 경우, 비회원을 선택해 주시기 바랍니다.</span>	
 								</div>
 							</td>
 						</tr>
@@ -773,10 +783,11 @@
 					<li class="korea_radio mo_korea_radio">
 						<p class="label"><span class="red_txt">*</span>대한비만학회(KSSO) 회원 여부</p>
 						<div class="label_wrap">
-							<input type="radio" class="new_radio" name="mo_user" id="mo_user1">
+							<input checked type="radio" class="new_radio" name="mo_user" id="mo_user1">
 							<label for="mo_user1"><i></i>회원</label>	
-							<input checked type="radio" class="new_radio" name="mo_user" id="mo_user2">
-							<label for="mo_user2"><i></i>비회원</label>	
+							<input type="radio" class="new_radio" name="mo_user" id="mo_user2">
+							<label for="mo_user2"><i></i>비회원</label>
+							<span class="red_t">* 대한비만학회 회원이 아닐 경우, 비회원을 선택해 주시기 바랍니다.</span>	
 						</div>
 					</li>
 					<li class="mo_ksola_signup">
@@ -2353,24 +2364,6 @@ function mo_kor_api() {
 			$("input[name=ksola_member_type]").val(user_row.user_type);
 			$("input[name=ksola_member_check]").val(user_row.id);
 
-			
-			//if(user_row.user_type == "평w회원" || user_row.user_type == "정회원"){
-			//	$("input[name=ksola_member_check]").val("Y");
-			//}else {
-			//	$("input[name=ksola_member_check]").val("N");
-			//}
-
-
-			/* 2023-05-10 HUBDNC  고객사 요청으로 주석처리 */
-			//$("input[name=mo_email]").val(kor_sign.email);
-			//$("input[name=mo_name_kor]").val(kor_sign.name);
-			//$("input[name=mo_first_name]").val(name_eng_arr[0]);
-			//$("input[name=mo_last_name]").val(name_eng_arr[1]);
-			//$("input[name=mo_phone]").val(kor_sign.phone);
-			//$("input[name=mo_nation_tel]").val("82");
-			
-
-
 			//select option에 비교해서 selected 처리
 			var options = $('#mo_department').find('option').map(function() {
 				  return $(this).val();
@@ -2381,20 +2374,10 @@ function mo_kor_api() {
 				}
 			}
 
-			//var birthday_arr = kor_sign.birthday.split("-");
-
-			//$("input[name=mo_date_of_birth]").val(birthday_arr[2]+"-"+birthday_arr[1]+"-"+birthday_arr[0]);
 			$("input[name=mo_licence_number]").val(kor_sign.license_number);
 			$("input[name=mo_affiliation_kor]").val(kor_sign.office_name);
 
-			//for(var i=0; i<$(".mo_red_alert").length; i++) {
-			//	//한국 아이디 입력했을 때 입력 안 되는 값들은 제외
-			//	if(i==1 || i==2 || i==6) {
-			//		continue;
-			//	}
-			//	$(".mo_red_alert").eq(i).html("good");
-			//	$(".mo_red_alert").eq(i).css('display', 'none');
-			//}
+		
 		}
 
 	}

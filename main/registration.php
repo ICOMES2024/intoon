@@ -249,6 +249,7 @@ if ($during_yn !== "Y") {
 								}
 							?>
                         </select>
+						<p class="red_t bold mt10">* If your abstract has been accepted, please select "Participants".</p>
                     </li>
                     <li>
                         <p class="label">Type of Occupation <span class="red_txt">*</span></p>
