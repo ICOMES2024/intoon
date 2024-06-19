@@ -106,8 +106,175 @@
     font-weight: bold;
     color: #10BF99;
 }
+
+.ksola_signup {
+		display:none;
+	}
+	.mo_ksola_signup {
+		display:none;
+	}
+	.ksola_signup.on {
+		display:revert;
+	}
+	.mo_ksola_signup.on{
+		display:revert;
+	}
 </style>
 <script>
+
+	//이메일 중복 체크 한국으로 체크시
+function email_check(email) {
+	$.ajax({
+		url : PATH+"ajax/client/ajax_member.php", 
+		type : "POST", 
+		data :  {
+			flag : "ksso_id_check",
+			email : email
+		},
+		dataType : "JSON", 
+		success : function(res){
+			if(res.code == 200) {
+			} else if(res.code == 400) {
+				alert("이미 사용된 ID입니다.");
+				return false;
+			} else {
+				
+				return false;
+			}
+		}
+	});
+}
+
+//한국 회원 인증시 api호출
+function mo_kor_api() {
+	var kor_id = $("input[name=mo_kor_id]").val().trim();
+	var kor_pw = $("input[name=mo_kor_pw]").val().trim();
+	//제 3자 개인정보 수집에 동의 여부
+	var privacy = $("#mo_privacy").is(":checked");
+
+	if(!kor_id) {
+		//$(".mo_red_api").eq(0).html("format_id");
+		alert("Invalid id");
+		return;
+	}
+	if(!kor_pw) {
+		//$(".mo_red_api").eq(0).html("Invalid_password");
+		alert("Invalid password");
+		return;
+	}
+	
+	if(privacy == false) {
+		alert("Please agree to the collection of personal information.");
+		$(".mo_red_api").eq(0).html("Please agree to the collection of personal information.");
+		return;
+	}
+
+	var data = {
+		'id' : kor_id,
+		'password' : kor_pw 
+	};
+
+	$.ajax({
+		url			: "signup_api.php",
+		type		: "POST",
+		data		: data,
+		dataType	: "JSON",
+		success		: success,
+		fail		: fail,
+		error		: error
+	});
+
+	function success(res) {
+		//console.dir(res); return; // null
+		var kor_sign = JSON.parse(res.value);
+		var user_row = kor_sign.user_row;
+
+		if(kor_sign.code == "N1") {
+			alert("아이디를 입력해주세요.");
+			//$(".mo_red_api").eq(0).html("아이디를 입력해주세요.");
+		} else if(kor_sign.code == "N2") {
+			alert("비밀번호를 입력해주세요.");
+			//$(".mo_red_api").eq(0).html("비밀번호를 입력해주세요.");
+		} else if(kor_sign.code == "N3") {
+			alert("가입되지 않은 아이디입니다.");
+			//$(".mo_red_api").eq(0).html("가입되지 않은 아이디입니다.");
+		} else if(kor_sign.code == "N4") {
+			alert("잘못된 비밀번호 입니다.");
+			//$(".mo_red_api").eq(0).html("잘못된 비밀번호 입니다.");
+		} else if(kor_sign.code == "N5") {
+			alert("탈퇴된 아이디 입니다.");
+			//$(".mo_red_api").eq(0).html("탈퇴된 아이디 입니다.");
+		} else if(kor_sign.code == "N7") {
+			alert("이미 인증된 계정입니다.");
+			$("[name=kor_id]").val("");
+			$("[name=kor_pw]").val("");
+			$("#privacy").prop("checked", false);
+			$("[name=kor_id]").focus();
+		} 
+			else if(kor_sign.code == "N6") {
+			
+			//alert("회원님은 대한비만학회 " + user_row.user_type + " 입니다.");
+			//이거 실행했을 때도 이메일 중복체크
+			var check_email= email_check(user_row.id);
+			if(check_email == false) {
+				return;
+			}
+
+			$("input[name=ksola_member_type]").val(user_row.user_type);			
+			$("input[name=ksola_member_check]").val(user_row.id);
+			let ksola_member_status = 0;
+
+			if(user_row.user_type == "인터넷회원"){
+					ksola_member_status = 3;
+				}else if(user_row.user_type == "평생회원"){
+					ksola_member_status = 2;
+				}else if(user_row.user_type == "정회원"){
+					ksola_member_status = 1;
+				}else {
+					ksola_member_status = 0;
+				}
+
+			const data = {
+				email : $("[name=mo_email]").val(),
+				ksola_member_status : ksola_member_status,
+				ksola_member_check : user_row.id
+			}
+			if(ksola_member_status != 0 && window.confirm("회원님은 대한비만학회 " + user_row.user_type + " 입니다. \n현재 ID로 ICOMES 2024에 KSSO 회원 인증을 하시겠습니까?")){
+				$.ajax({
+					url:"/main/ajax/client/ajax_member.php",
+					type: "POST",
+					data: {
+						flag: "memeber_update",
+						data
+					},
+					dataType: "JSON",
+					success: function (res) {
+						// console.log(res)
+						if (res.code == 200) {
+							alert("회원인증이 완료되었습니다.")
+							$('#mo_membership_status1').prop('checked',true);
+							$('#mo_membership_status2').prop('checked',false);
+							return;
+						} else {
+						
+							return;
+						}
+					}
+				});
+		}
+		}
+	}
+
+	function fail(res) {
+		alert("Failed.\nPlease try again later.");
+		return false;
+	}
+
+	function error(res) {
+		alert("An error has occurred. \nPlease try again later.");
+		return false;
+	}
+}
 	
 function kor_api() {
 	var kor_id = $("input[name=kor_id]").val().trim();
@@ -171,22 +338,63 @@ function kor_api() {
 			$("[name=kor_id]").focus();
 		} else if(kor_sign.code == "N6") {
 			
-			alert("회원님은 대한비만학회 " + user_row.user_type + " 입니다");
+			//alert("회원님은 대한비만학회 " + user_row.user_type + " 입니다.");
 			//이거 실행했을 때도 이메일 중복체크
-			var check_email= email_check(user_row.email);
+			var check_email= email_check(user_row.id);
 			if(check_email == false) {
 				return;
 			}
 
 			$("input[name=ksola_member_type]").val(user_row.user_type);			
 			$("input[name=ksola_member_check]").val(user_row.id);
-		}
+			let ksola_member_status = 0;
 
+			if(user_row.user_type == "인터넷회원"){
+					ksola_member_status = 3;
+				}else if(user_row.user_type == "평생회원"){
+					ksola_member_status = 2;
+				}else if(user_row.user_type == "정회원"){
+					ksola_member_status = 1;
+				}else {
+					ksola_member_status = 0;
+				}
+
+			const data = {
+				email : $("[name=email]").val(),
+				ksola_member_status : ksola_member_status,
+				ksola_member_check : user_row.id
+			}
+			if( ksola_member_status != 0 && window.confirm("회원님은 대한비만학회 " + user_row.user_type + " 입니다. \n현재 ID로 ICOMES 2024에 KSSO 회원 인증을 하시겠습니까?")){
+			$.ajax({
+                url:"/main/ajax/client/ajax_member.php",
+                type: "POST",
+                data: {
+                    flag: "memeber_update",
+                    data
+                },
+                dataType: "JSON",
+                success: function (res) {
+                    // console.log(res)
+                    if (res.code == 200) {
+						alert("회원인증이 완료되었습니다.")
+						$('#membership_status1').prop('checked',true);
+						$('#membership_status2').prop('checked',false);
+                        return;
+                    } else {
+                       
+                        return;
+                    }
+                }
+            });
+		}
+		}
 	}
+
 	function fail(res) {
 		alert("Failed.\nPlease try again later.");
 		return false;
 	}
+
 	function error(res) {
 		alert("An error has occurred. \nPlease try again later.");
 		return false;
@@ -289,10 +497,11 @@ function kor_api() {
 											<label for="membership_status1"><i></i>회원</label> 
 											<input type="checkbox" class="checkbox" id="membership_status2" disabled <?=$mem_chk2 ?>> 
 											<label for="membership_status2"><i></i>비회원</label> 
+											<button type="button" class="btn" id="user_check">대한비만학회 회원 인증하기</button>
 										</div> 
 									</td> 
 								 </tr>
-								 <tr class="ksola_signup">
+							<tr class="ksola_signup">
 							<th style="background-color:transparent"></th>
 							<td>
 								<p>대한비만학회 회원 인증하기</p>
@@ -481,7 +690,36 @@ function kor_api() {
 									<label for="membership_status1"><i></i>회원</label>
 									<input type="checkbox" class="checkbox" id="mo_membership_status2" disabled <?=$mem_chk2 ?>>
 									<label for="membership_status2"><i></i>비회원</label>
+									<button type="button" class="btn" id="mo_user_check">대한비만학회 회원 인증하기</button>
 								</div>
+							</li>
+							<li class="mo_ksola_signup">
+								<p>대한비만학회 회원 인증하기</p>
+								<ul class="simple_join clearfix">
+									<li>
+										<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
+										<input id="ksso_id" class="email_id" name="mo_kor_id" type="text" maxlength="60">
+									</li>
+									<li>
+										<label for="ksso_pw">KSSO PW<span class="red_txt">*</span></label>
+										<input id="ksso_pw" class="passwords" name="mo_kor_pw" type="password" maxlength="60">
+									</li>
+									<li>
+										<button onclick="mo_kor_api()" type="button" class="btn">회원인증</button>
+									</li>
+								</ul>
+								<div class="clearfix2">
+									<div>
+										<input type="checkbox" class="checkbox" id="mo_privacy">
+										<label for="mo_privacy">
+											제 3자 개인정보 수집에 동의합니다.
+											<!-- <a href="javascript:;" class="term2_btn red_txt"> Details ></a> -->
+										</label>
+									</div>
+									<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
+								</div>
+								<input hidden name="ksola_member_type"/>
+								<input hidden name="ksola_member_check"/>
 							</li>
 					<?php
 						}
@@ -613,6 +851,15 @@ $(document).ready(function() {
     //     alert('Updates are planned.');
     //     return false;
     // }); -->
+
+	$('#user_check').on("click", ()=>{
+		$(".ksola_signup").toggleClass("on");
+	})
+
+	$('#mo_user_check').on("click", ()=>{
+		$(".mo_ksola_signup").toggleClass("on");
+	})
+	
 
     //비밀번호 입력 시 비밀번호 필수값으로 전환
     $("#password, #re_password").on("change", function() {
@@ -765,7 +1012,20 @@ $(document).ready(function() {
 
 			var department_kor = $("input[name=department_kor]").val();
 			check = name_check("department_kor");
-			if(check == false) return;
+			if(check == false) return;	
+			
+			var ksola_member_type = $("input[name=ksola_member_type]").val();	
+			var ksola_member_check = $("input[name=ksola_member_check]").val();	
+			var ksola_member_status = 0;
+				if(ksola_member_type == "인터넷회원"){
+					ksola_member_status = 3;
+				}else if(ksola_member_type == "평생회원"){
+					ksola_member_status = 2;
+				}else if(ksola_member_type == "정회원"){
+					ksola_member_status = 1;
+				}else {
+					ksola_member_status = 0;
+				}
 		}
 		var titleInput = $("[name=title_input]").val();
 		if ((title == 4) && titleInput == "") {
@@ -798,6 +1058,8 @@ $(document).ready(function() {
 			formData['last_name_kor']	= last_name_kor;
 			formData['department_kor']	= department_kor;
 			formData['affiliation_kor']	= affiliation_kor;
+			formData['ksola_member_status']	= ksola_member_status;
+			formData['ksola_member_check']	= ksola_member_check;
 		}
 		/*
 		var process = inputCheck(formData, checkType);
@@ -935,8 +1197,17 @@ $(document).ready(function() {
 			check = name_check("mo_department_kor");
 			if(check == false) return;
 			
-			const ksola_member_type = $("input[name=ksola_member_type]").val();	
-			const ksola_member_check = $("input[name=ksola_member_check]").val();	
+			var ksola_member_type = $("input[name=ksola_member_type]").val();	
+			var ksola_member_check = $("input[name=ksola_member_check]").val();	
+				if(ksola_member_type == "인터넷회원"){
+					ksola_member_status = 3;
+				}else if(ksola_member_type == "평생회원"){
+					ksola_member_status = 2;
+				}else if(ksola_member_type == "정회원"){
+					ksola_member_status = 1;
+				}else {
+					ksola_member_status = 0;
+				}
 		}
 		var titleInput = $("[name=title_input]").val();
 		if ((title == 4) && titleInput == "") {
@@ -969,7 +1240,7 @@ $(document).ready(function() {
 			formData['last_name_kor']	= last_name_kor;
 			formData['department_kor']	= department_kor;
 			formData['affiliation_kor']	= affiliation_kor;
-			formData['ksola_member_type']	= ksola_member_type;
+			formData['ksola_member_status']	= ksola_member_status;
 			formData['ksola_member_check']	= ksola_member_check;
 		}
 
