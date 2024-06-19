@@ -107,6 +107,93 @@
     color: #10BF99;
 }
 </style>
+<script>
+	
+function kor_api() {
+	var kor_id = $("input[name=kor_id]").val().trim();
+	var kor_pw = $("input[name=kor_pw]").val().trim();
+	//제 3자 개인정보 수집에 동의 여부
+	var privacy = $("#privacy").is(":checked");
+
+	if(!kor_id) {
+		alert("Invalid id");
+		//$(".red_api").eq(0).html("format_id");
+		return;
+	}
+	if(!kor_pw) {
+		alert("Invalid password");
+		//$(".red_api").eq(0).html("format_password");
+		return;
+	}
+	
+	if(privacy == false) {
+		alert("Please agree to the collection of personal information.");
+		$(".red_api").eq(0).html("Please agree to the collection of personal information.");
+		return;
+	}
+
+	var data = {
+		'id' : kor_id,
+		'password' : kor_pw 
+	};
+
+	$.ajax({
+		url			: "signup_api.php",
+		type		: "POST",
+		data		: data,
+		dataType	: "JSON",
+		success		: success,
+		fail		: fail,
+		error		: error
+	});
+
+	function success(res) {
+		var kor_sign = JSON.parse(res.value);
+		console.log(kor_sign); 
+		var user_row = kor_sign.user_row;
+		//alert(user_row.user_type); return;
+
+		if(kor_sign.code == "N1") {
+			alert("아이디를 입력해주세요.");
+		} else if(kor_sign.code == "N2") {
+			alert("비밀번호를 입력해주세요.");
+		} else if(kor_sign.code == "N3") {
+			alert("가입되지 않은 아이디입니다.");
+		} else if(kor_sign.code == "N4") {
+			alert("잘못된 비밀번호 입니다.");
+		} else if(kor_sign.code == "N5") {
+			alert("탈퇴된 아이디 입니다.");
+		} else if(kor_sign.code == "N7") {
+			alert("이미 인증된 계정입니다.");
+			$("[name=kor_id]").val("");
+			$("[name=kor_pw]").val("");
+			$("#privacy").prop("checked", false);
+			$("[name=kor_id]").focus();
+		} else if(kor_sign.code == "N6") {
+			
+			alert("회원님은 대한비만학회 " + user_row.user_type + " 입니다");
+			//이거 실행했을 때도 이메일 중복체크
+			var check_email= email_check(user_row.email);
+			if(check_email == false) {
+				return;
+			}
+
+			$("input[name=ksola_member_type]").val(user_row.user_type);			
+			$("input[name=ksola_member_check]").val(user_row.id);
+		}
+
+	}
+	function fail(res) {
+		alert("Failed.\nPlease try again later.");
+		return false;
+	}
+	function error(res) {
+		alert("An error has occurred. \nPlease try again later.");
+		return false;
+	}
+}
+
+</script>
 
 <section class="container form_section mypage">
     <h1 class="page_title">Mypage</h1>
@@ -204,7 +291,38 @@
 											<label for="membership_status2"><i></i>비회원</label> 
 										</div> 
 									</td> 
-								 </tr> 
+								 </tr>
+								 <tr class="ksola_signup">
+							<th style="background-color:transparent"></th>
+							<td>
+								<p>대한비만학회 회원 인증하기</p>
+								<ul class="simple_join clearfix">
+									<li>
+										<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
+										<input id="ksso_id" class="email_id" name="kor_id" type="text" maxlength="60">
+									</li>
+									<li>
+										<label for="ksso_pw">KSSO PW<span class="red_txt">*</span></label>
+										<input id="ksso_pw" class="passwords" name="kor_pw" type="password" maxlength="60">
+									</li>
+									<li>
+										<button onclick="kor_api()" type="button" class="btn">회원인증</button>
+									</li>
+								</ul>
+								<div class="clearfix2">
+									<div>
+										<input type="checkbox" class="checkbox" id="privacy">
+										<label for="privacy">
+											제 3자 개인정보 수집에 동의합니다.
+											<!-- <a href="javascript:;" class="term2_btn red_txt"> Details ></a> -->
+										</label>
+									</div>
+									<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
+								</div>
+								<input hidden name="ksola_member_type"/>
+								<input hidden name="ksola_member_check"/>
+							</td>
+						</tr> 
 						<?php 
 							}
 						?>
@@ -816,6 +934,9 @@ $(document).ready(function() {
 			var department_kor = $("input[name=mo_department_kor]").val();
 			check = name_check("mo_department_kor");
 			if(check == false) return;
+			
+			const ksola_member_type = $("input[name=ksola_member_type]").val();	
+			const ksola_member_check = $("input[name=ksola_member_check]").val();	
 		}
 		var titleInput = $("[name=title_input]").val();
 		if ((title == 4) && titleInput == "") {
@@ -836,7 +957,7 @@ $(document).ready(function() {
 			"date_of_birth"			: date_of_birth,
 			"title"					: title,
 			"title_input"			: titleInput,
-			"telephone"				: resultMobileTel
+			"telephone"				: resultMobileTel,
 		};
 
 		if (pw && pw2) {
@@ -848,6 +969,8 @@ $(document).ready(function() {
 			formData['last_name_kor']	= last_name_kor;
 			formData['department_kor']	= department_kor;
 			formData['affiliation_kor']	= affiliation_kor;
+			formData['ksola_member_type']	= ksola_member_type;
+			formData['ksola_member_check']	= ksola_member_check;
 		}
 
 		/*
@@ -883,42 +1006,6 @@ $(document).ready(function() {
         //}
 	});
 
-
-	//$(document).on("click", ".submit_btn", function(){
-
-	//	var formData = $("form[name=modify_form]").serializeArray();
-	
-	//	var process = inputCheck(formData,checkType);
-	//	var data = process.data;
-
-	//	var status = process.status;
-    //    if(status) {
-
-    //        if(confirm(locale(language.value)("account_modify_msg"))) {
-    //            $.ajax({
-    //                url : PATH+"ajax/client/ajax_member.php",
-    //                type : "POST",
-    //                data : {
-    //                    flag : "update",
-    //                    data : data
-    //                },
-    //                dataType : "JSON",
-    //                success : function(res){
-    //                    if(res.code == 200) {
-    //                        alert(locale(language.value)("complet_account_modify"));
-    //                        location.reload();
-    //                    } else if(res.code == 400) {
-    //                        alert(locale(language.value)("error_account_modify"));
-    //                        return false;
-    //                    } else {
-    //                        alert(locale(language.value)("reject_msg"))
-    //                        return false;
-    //                    }
-    //                }
-    //            });
-	//	    }
-    //    }
-	//});
 });
 
 function country_chk(obj){

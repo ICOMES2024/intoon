@@ -112,7 +112,7 @@ $price = get_data($sql_price);
                                     </th>
 									<th colspan="2">
                                         Pre-registration
-                                        <br/><span class="red_txt bold">Monday, June 17, 2024
+                                        <br/><span class="red_txt bold">Saturday, July 13, 2024
                                         <br/>~ Thursday, August 1, 2024</span>
                                     </th>
 									<th colspan="2">On-site Registration</th>

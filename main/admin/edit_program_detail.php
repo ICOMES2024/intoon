@@ -6,19 +6,20 @@
         $program_query = "	SELECT * 
         FROM program_contents";
     }else{
-        // $program_query = "	
-        // SELECT * 
-        // FROM program_contents
-        // WHERE program_contents.program_idx = {$idx}
-        // ";
-
         $program_query = "	
-            SELECT es.nick_name, es.org, es.email, es.attendance_type, es.cv_path, es.abstract_path, es.is_mailed,
-			p.program_name, p.contents_title, p.start_time, p.end_time, p.idx
-            FROM program_contents AS p
-            LEFT JOIN email_speaker AS es ON es.program_contents_idx = p.idx
-            WHERE p.is_deleted = 'N' AND p.program_idx = {$idx}
+        SELECT * 
+        FROM program_contents
+        WHERE program_contents.program_idx = {$idx}
         ";
+
+        //[240617] sujoeng / icomes - email_speaker DB 필요 
+        // $program_query = "	
+        //     SELECT es.nick_name, es.org, es.email, es.attendance_type, es.cv_path, es.abstract_path, es.is_mailed,
+		// 	p.program_name, p.contents_title, p.start_time, p.end_time, p.idx
+        //     FROM program_contents AS p
+        //     LEFT JOIN email_speaker AS es ON es.program_contents_idx = p.idx
+        //     WHERE p.is_deleted = 'N' AND p.program_idx = {$idx}
+        // ";
     }
     
     $program_list = get_data($program_query);
