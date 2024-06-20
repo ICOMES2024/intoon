@@ -258,7 +258,7 @@ with Special Rate</a> -->
                                     <th>Check in</th>
                                     <td>15:00</td>
                                     <th>Check out</th>
-                                    <td>12:00 PM</td>
+                                    <td>12:00</td>
                                 </tr>
                                 <tr>
                                     <th>Address</th>

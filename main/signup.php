@@ -496,22 +496,7 @@
 								</div>
 							</td>
 						</tr>
-						<!--
-						<tr>
-							<th><span class="red_txt">*</span>Title</th>
-							<td>
-								<div class="max_long">
-									<select name="title" id="title">
-										<option value="Professor">Professor</option>
-										<option value="Dr.">Dr.</option>
-										<option value="Mr.">Mr.</option>
-										<option value="Ms.">Ms.</option>
-										<option value="Others">Others</option>
-									</select>
-								</div>
-							</td>
-						</tr>
-						-->
+					
 						<tr>
 							<th><span class="red_txt">*</span><?=$locale("affiliation")?></th>
 							<td>
@@ -540,24 +525,7 @@
 									<!-- <span class="mini_alert red_txt red_alert"></span> -->
 								</div>
 							</td>
-							<!--
-							<td class="clearfix">
-								<div class="max_normal responsive_float">
-									<select name="department" id="department">
-										<option value="" selected hidden>Choose</option>
-									<?php
-										$department_arr = array("Cardiology", "Endocrinology", "Internal Medicine", "Family Medicine", "Nursing", "Basic Science", "Pediatric", "Food & Nutrition", "Neurology", "Nephrology", "Pharmacology", "Pharmacy", "Preventive Medicine", "Exercise Physiology", "Clinical Pathology", "Other Professional");
-
-										foreach($department_arr as $d_arr) {
-											echo '<option value="'.$d_arr.'">'.$d_arr.'</option>';
-										}
-									?>
-									</select>
-									<!-- <span class="mini_alert red_txt red_alert_option"></span>
-								</div>
-								<!-- <span class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric,<br/>Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine,<br/>Exercise Physiology, Clinical Pathology, Other Professional )</span>
-								<span class="mini_alert"></span>
-							</td> -->
+						
 						</tr>
 						<tr class="korea_only">
 							<th><span class="red_txt">*</span>부서</th>
@@ -568,90 +536,9 @@
 									<!-- <span class="mini_alert red_txt red_alert"></span> -->
 								</div>
 							</td>
-							<!--
-							<td class="clearfix">
-								<div class="max_normal responsive_float">
-									<select name="department_kor" id="department_kor">
-										<option value="" selected hidden>Choose</option>
-									<?php
-										$department_arr = array("Cardiology", "Endocrinology", "Internal Medicine", "Family Medicine", "Nursing", "Basic Science", "Pediatric", "Food & Nutrition", "Neurology", "Nephrology", "Pharmacology", "Pharmacy", "Preventive Medicine", "Exercise Physiology", "Clinical Pathology", "Other Professional");
-
-										foreach($department_arr as $d_arr) {
-											echo '<option value="'.$d_arr.'">'.$d_arr.'</option>';
-										}
-									?>
-									</select>
-									<!-- <span class="mini_alert red_txt red_alert_option"></span>
-								</div>
-								<!-- <span class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric,<br/>Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine,<br/>Exercise Physiology, Clinical Pathology, Other Professional )</span>
-								<span class="mini_alert"></span>
-							</td> -->
+							
 						</tr>
-						<!-- <tr> -->
-							<!-- <th><span class="red_txt">*</span>Category</th> -->
-							<!-- <td class="clearfix"> -->
-							<!-- 	<div class="max_normal responsive_float clearfix"> -->
-							<!-- 		<select name="category" id="category" class="select_others"> -->
-							<!-- 			<option value="" selected hidden>Choose</option> -->
-									<?php
-										/*$category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Surgeon(Military)", "Public Health Doctor", "Corporate Member", "Student", "Others");
-
-										foreach($category_arr as $a_arr) {
-											echo '<option value="'.$a_arr.'">'.$a_arr.'</option>';
-										}*/
-									?>
-									<!-- </select> -->
-									<!-- <input type="text" name="category_input" class="input_others en_check"> -->
-									<!-- <span class="mini_alert red_txt red_alert_option"></span> -->
-								<!-- </div> -->
-								<!-- <span class="mini_alert">(Professor, Specialist, Fellow, Resident, Researcher, Military Medical Officer, Nurse,<br/>Nutritionist, Student, Pharmacist, Corporate Member, Others)</span> -->
-						<!-- 		<span class="mini_alert"></span> -->
-						<!-- 	</td> -->
-						<!-- </tr> -->
-						<!--2022-05-09 추가사항-->
-						<!--
-						<tr class="korea_only">
-							<th><span class="red_txt">*</span>평점 신청</th>
-							<td class="clearfix">
-								<div class="label_wrap">
-									<input type="radio" class="radio" name="necessity1" id="necessity">
-									<label for="necessity">필요</label>	
-									<input checked="" type="radio" class="radio" name="necessity1" id="unnecessary">
-									<label for="unnecessary">불필요</label>	
-								</div>
-							</td>
-						</tr>
-						<tr class="korea_only">
-							<th><span class="red_txt">*</span>의사 면허번호</th>
-							<td>
-								<div class="max_long">
-									<input type="checkbox" class="checkbox input not_checkbox" id="licence_number" name="licence_number2" value="Not applicable"><label for="licence_number">Not applicable</label>
-									<input name="licence_number" type="text" maxlength="60" class="kor_check_number">
-									<span class="mini_alert red_txt red_alert">good</span>
-								</div>
-							</td>
-						</tr>
-						<tr class="korea_only">
-							<th><span class="red_txt">*</span>전문의 번호</th>
-							<td>
-								<div class="max_long">
-									<input type="checkbox" class="checkbox input not_checkbox" id="specialty_number" name="specialty_number2" value="Not applicable"><label for="specialty_number">Not applicable</label>
-									<input name="specialty_number" type="text" maxlength="60" class="kor_check_number">
-									<span class="mini_alert red_txt red_alert">good</span>
-								</div>
-							</td>
-						</tr>
-						<tr class="korea_only">
-							<th><span class="red_txt">*</span>영양사 면허번호</th>
-							<td>
-								<div class="max_long">
-									<input type="checkbox" class="checkbox input not_checkbox" id="nutritionist_number" name="nutritionist_number2" value="Not applicable"><label for="nutritionist_number">Not applicable</label>
-									<input name="nutritionist_number" type="text" maxlength="60" class="kor_check_number">
-									<span class="mini_alert red_txt red_alert">good</span>
-								</div>
-							</td>
-						</tr>
-						-->
+						
 						<tr>
 							<th rowspan = "2"><span class="red_txt">*</span>Mobile Phone Number</th>
 							<td>
@@ -659,10 +546,7 @@
 									<input class="numbers" name="nation_tel" type="text" maxlength="60" readonly>
 									<input name="phone" id="phone" type="text" maxlength="15">
 								</div>
-								<!-- <div> -->
-								<!-- 	<span class="mini_alert red_txt red_alert"></span> -->
-								<!-- 	<span class="mini_alert red_txt red_alert"></span> -->
-								<!-- <div> -->
+								
 							</td>
 						</tr>
 						<tr>
@@ -676,10 +560,7 @@
 								<input class="tel_number tel_phone" name="tel_nation_tel" type="text" maxlength="60" readonly>
 								<input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60">
 								<input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60">
-								<!-- <div> -->
-								<!-- 	<span class="mini_alert red_txt red_alert"></span> -->
-								<!-- 	<span class="mini_alert red_txt red_alert"></span> -->
-								<!-- <div> -->
+								<
 							</td>
 						</tr>
 						<tr>
@@ -694,69 +575,11 @@
 								</div>
 							</td>
 						</tr>
-						<!--
-						<tr>
-							<th>Special Request for Food</th>
-							<td>
-								<div class="label_wrap">
-									<input checked value="None" type="radio" id="none" class="radio" name="food">
-									<label for="none">None</label>
-									<input value="Vegetarian" type="radio" id="vegetarian" class="radio" name="food">
-									<label for="vegetarian">Vegetarian</label>
-									<input value="Halal" type="radio" id="halal" class="radio" name="food">
-									<label for="halal">Halal</label>
-									<input value="Others" type="radio" id="Others" class="radio other_radio" name="food">
-									<label for="Others">
-										Others
-										<input name="short_input" type="text" class="short_input en_check" maxlength="60">
-									</label>
-								</div>
-							</td>
-						</tr>
-						-->
-						<!-- <tr> -->
-						<!-- 	<th scope="row"><span class="label require">회원정보 공개여부</span></th> -->
-						<!-- 	<td> -->
-						<!-- 		<input name="infoYn" id="infoYn1" value="Y" type="radio"  /> -->
-						<!-- 		<label for="infoYn1">동의합니다.</label> -->
-						<!-- 		<input name="infoYn" id="infoYn2" value="N" type="radio"  /> -->
-						<!-- 		<label for="infoYn2">동의하지 않습니다.</label> -->
-
-						<!-- 		<span class="cmt block">(회원공간을 통해 회원께만 회원님의 소속, 전화번호, 이메일 정보를 보여줍니다.)</span> -->
-						<!-- 	</td> -->
-						<!-- </tr> -->
-
-						<!-- <tr> -->
-						<!-- 	<th scope="row"><span class="label require">메일수신 동의여부</span></th> -->
-						<!-- 	<td><input name="emailYn" id="emailYn1" value="Y" type="radio"  /> -->
-						<!-- 		<label for="emailYn1">동의합니다.</label> -->
-						<!-- 		<input name="emailYn" id="emailYn2" value="N" type="radio"  /> -->
-						<!-- 		<label for="emailYn2">동의하지 않습니다.</label> -->
-
-						<!-- 		<span class="cmt block">(동의하시면 학회에서 보내는 메일을 수신할 수 있습니다.)</span> -->
-						<!-- 	</td> -->
-						<!-- </tr> -->
+						
 					</tbody>
 				</table>	
 			</div>
-			<!--
-			<div class="checkbox_wrap pc_only">
-				<ul>
-					<li>
-						<input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1" name="terms1" value="Y">
-						<label for="terms1">Terms & Conditions
-							<a href="javascript:;" class="term1_btn red_txt"> Details ></a>
-						</label>
-					</li>
-					<li>
-						<input type="checkbox" class="checkbox input required" data-name="terms 2" id="terms2" name="terms2" value="Y">
-						<label for="terms2"> Privacy Policy 
-							<a href="javascript:;" class="term2_btn red_txt"> Details ></a>
-						</label>
-					</li>
-				</ul>
-			</div>
-			-->
+		
 			<div class="mb_only">
 				<ul class="sign_list">
 					<li>

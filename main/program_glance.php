@@ -1111,7 +1111,7 @@ function writeModal(data){
     modalTitle.innerText = subTitle;
     // modalSubTitle.innerText = subTitle;
     modalTitleDay.innerText = titleDay;
-    modalTitleTime.innerText = titleTime;
+    modalTitleTime.innerHTML = titleTime;
     modalTitleRoom.innerText = "• "+ titleRoom;
 
 	//[240607] sujeong / 학회팀 요청 모달 오픈 & 좌장 미확정 주석처리

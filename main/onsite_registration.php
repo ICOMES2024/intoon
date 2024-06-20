@@ -43,12 +43,12 @@
 		<div class="term_wrap">
 			<h3 class="title">Use of Personal Information</h3>
 			<div class="term_box">
-				<strong>Purpose</strong>
-				<p>The Korean Society for the Study of Obesity (KSSO) provides online on-site registration services for ICOMES 2023. Based on your personal information, you can sign up for the conference and complete the payment for registration.</p>
-				<strong>Collecting Personal Information</strong>
-				<p>ICOMES 2023 requires you to provide your personal information to complete on-site registration online. You will be asked to enter your name, ID (email), password, date of birth, institution/organization, department, mobile, and telephone number.</p>
-				<strong>Storing Personal Information</strong>
-				<p>ICOMES 2023 will continue to store your personal information to provide you with useful services, such as conference updates and newsletters.</p>
+			<strong>Purpose</strong>
+					<p>The Korean Society for the Study of Obesity (KSSO) provides online pre-registration services for ICOMES 2024. Based on your personal information, you can sign up for the conference and complete the payment for registration.</p>
+					<strong>Collecting Personal Information</strong>
+					<p>ICOMES 2024 requires you to provide your personal information to complete pre-registration online. You will be asked to enter your name, ID (email), password, date of birth, institution/organization, department, mobile, and telephone number.</p>
+					<strong>Storing Personal Information</strong>
+					<p>ICOMES 2024 will continue to store your personal information to provide you with useful services, such as conference updates and newsletters.</p>
 			</div>
 			<div class="term_label">
 				<input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1" name="terms1" value="Y">
@@ -296,7 +296,7 @@
                                         <select id="category" name="category" class="required" onChange="calc_fee()">
                                             <option value="" selected hidden>Choose</option>
                                             <?php
-                                            $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Corporate Member", "Student", "Others");
+                                            $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Sponsor", "Student", "Press","Others");
 
                                             foreach($category_arr as $a_arr) {
                                                 $selected = $prev["member_type"] == $a_arr ? "selected" : "";
@@ -315,7 +315,7 @@
 							</td>
 						</tr>
 						<tr class="korea_only">
-							<th><span class="red_txt">*</span> 평점 신청</th>
+							<th><span class="red_txt">*</span>대한의사협회 평점 신청</th>
 							<td>
 								<div class="label_wrap">
 									<input type="radio" class="new_radio" name="review" id="review1" value="1">
@@ -325,7 +325,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="review_sub_list korea_only">
+						<tr class="review_sub_list ">
 							<th>의사 면허번호</th>
 							<td>
 								<div class="max_normal">
@@ -333,7 +333,37 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="review_sub_list korea_only">
+						<tr class="review_sub_list ">
+							<th>전문의 번호</th>
+							<td>
+								<div class="max_normal">
+									<input type="text" name="specialty_number" id="specialty_number">
+								</div>
+							</td>
+						</tr>
+						<tr class="korea_only">
+							<th><span class="red_txt">*</span>내과전공의 외부학술회의 평점신청</th>
+							<td>
+								<div class="label_wrap">
+									<input type="radio" class="new_radio" name="review3" id="review3" value="1">
+									<label for="review3"><i></i>신청함</label>
+									<input checked="" type="radio" class="new_radio" name="review3" id="review4" value="0">
+									<label for="review4"><i></i>신청 안 함</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="korea_only">
+							<th><span class="red_txt">*</span>한국영양교육평가원 평점신청</th>
+							<td>
+								<div class="label_wrap">
+									<input type="radio" class="new_radio" name="review1" id="review5" value="1">
+									<label for="review5"><i></i>신청함</label>
+									<input checked type="radio" class="new_radio" name="review1" id="review6" value="0">
+									<label for="review6"><i></i>신청 안 함</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="review_sub_list_1 ">
 							<th>영양사 면허번호</th>
 							<td>
 								<div class="max_normal">
@@ -341,11 +371,23 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="review_sub_list korea_only">
+						<tr class="review_sub_list_1 ">
 							<th>임상영양사 자격번호</th>
 							<td>
 								<div class="max_normal">
 									<input type="text" name="dietitian_number" id="dietitian_number">
+								</div>
+							</td>
+						</tr>
+						
+						<tr class="korea_only">
+							<th><span class="red_txt">*</span>운동사 평점신청</th>
+							<td>
+								<div class="label_wrap">
+									<input type="radio" class="new_radio" name="review2" id="review7" value="1">
+									<label for="review7"><i></i>신청함</label>
+									<input checked="" type="radio" class="new_radio" name="review2" id="review8" value="0">
+									<label for="review8"><i></i>신청 안 함</label>
 								</div>
 							</td>
 						</tr>
@@ -446,6 +488,21 @@
 								</ul>
 							</td>
 						</tr>
+						<tr>
+                            <th><span class="red_txt">*</span> Payment Methods</th>
+                            <td>
+                                <ul class="chk_list info_check_list flex_center type2">
+                                    <li>
+                                        <input type="radio" class='checkbox' id="card" name='payment_method' value="1"/>
+                                        <label for="card"><i></i>Credit card</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class='checkbox' id="bank" name='payment_method' value="2"/>
+                                        <label for="bank"><i></i>Wire transfer</label>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
 					</tbody>
 				</table>
 			</div>
@@ -475,6 +532,41 @@
 
 <script>
 	$(document).ready(function(){
+
+		//면허 번호 input 숨기기
+		$(".review_sub_list").addClass("hidden");
+		$(".review_sub_list_1").addClass("hidden");
+
+		//대한의사협회 평점 신청
+		$('input[name=review]').on("change", function() {
+			if($('input[name=review]:checked').val() == '1'){
+				$(".review_sub_list").removeClass("hidden");
+			}else{
+				// init
+				$(".review_sub_list input[type=text]").val("");
+				$(".review_sub_list input[type=checkbox]").prop("checked", false);
+
+				if(!$(".review_sub_list").hasClass("hidden")){
+					$(".review_sub_list").addClass("hidden");
+				}
+			}
+		});
+
+		//한국영양교육평가원 평점신청
+		$('input[name=review1]').on("change", function() {
+			if($('input[name=review1]:checked').val() == '1'){
+				$(".review_sub_list_1").removeClass("hidden");
+			}else{
+				// init
+				$(".review_sub_list_1 input[type=text]").val("");
+				$(".review_sub_list_1 input[type=checkbox]").prop("checked", false);
+
+				if(!$(".review_sub_list_1").hasClass("hidden")){
+					$(".review_sub_list_1").addClass("hidden");
+				}
+			}
+		});
+
         $("select[name=nation_no]").change(function(){
 
             var value = $(this).val();
