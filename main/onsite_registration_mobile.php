@@ -35,33 +35,9 @@
     .mo_korea_only.on, .korea_radio.on{
         display:revert;
     }
-
-	@media screen and (max-width:700px) {
-		.mobile_table th, .mobile_table td{
-			white-space: inherit;
-			padding: 4px !important
-	}
-		.mobile_table th,  .mobile_table td {
-			width: 100%;
-			display: block;
-			border-top: none;
-		}
-		.mobile_table tr:first-child th {
-			border-top: 1px solid #ddd;
-		}
-		.mobile_table td p, .mobile_table td label, .mobile_table td input[type="text"] {
-			font-size: 12px;
-		}
-	
-}
-
-.mobile_table select, .mobile_table input{
-	width: 80%;
-}
-
 </style>
 
-<img src="./img/img_onsite_registration.png" class="w100" alt="">
+<img src="https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_header.jpg" class="w100" alt="">
 <section class="container window_open onsite_register">
 	<div class="">
 		<div class="term_wrap">
@@ -74,15 +50,15 @@
 					<strong>Storing Personal Information</strong>
 					<p>ICOMES 2024 will continue to store your personal information to provide you with useful services, such as conference updates and newsletters.</p>
 			</div>
-			<div class="term_label text_l">
+			<div class="term_label">
 				<input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1" name="terms1" value="Y">
-				<label for="terms1">I agree to the collection <br/>and use of my personal information. </label>
+				<label for="terms1">I agree to the collection and use of my personal information. </label>
 			</div>	
 		</div>
 		<div class="section_div">
 			<h3 class="title">Participant Information<span class="mini_alert"><span class="red_txt font_inherit">*</span>All requested field (<span class="red_txt font_inherit">*</span>) should be completed.</span></h3>
 			<div class="table_wrap detail_table_common x_scroll">
-				<table class="table detail_table mobile_table">
+				<table class="table detail_table">
 					<colgroup>
 						<col class="col_th"/>
 						<col width="*"/>
@@ -262,7 +238,7 @@
 		<div class="section_div">
 			<h3 class="title">Registration Information</h3>
 			<div class="table_wrap detail_table_common x_scroll">
-				<table class="table detail_table mobile_table">
+				<table class="table detail_table">
 					<colgroup>
 						<col class="col_th"/>
 						<col width="*"/>
@@ -275,7 +251,7 @@
 									<select id="participation_type" name="participation_type" class="required" onChange="calc_fee()">
                                         <option value="" selected hidden>Choose</option>
                                         <?php
-                                        $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor", "Press");
+                                        $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor");
                                         foreach($participation_arr as $a_arr) {
                                             $selected = $prev["attendance_type"] == $a_arr ? "selected" : "";
 
@@ -294,7 +270,7 @@
                                         <select id="occupation" name="occupation" class="required">
                                             <option value="" selected hidden>Choose</option>
                                             <?php
-                                            $occupation_arr = array("Medical", "Food & Nutrition", "Exercise","Sponsor","Press","Others");
+                                            $occupation_arr = array("Medical", "Food & Nutrition", "Exercise", "Others");
 
                                             foreach($occupation_arr as $a_arr) {
                                                 $selected = $prev["occupation_type"] === $a_arr ? "selected" : "";
@@ -317,7 +293,7 @@
 							<td>
 								<ul class="max_normal flex_hide">
                                     <li>
-                                        <select id="category" name="category" class="required" onChange="calc_fee()" style="width: 80%;">
+                                        <select id="category" name="category" class="required" onChange="calc_fee()">
                                             <option value="" selected hidden>Choose</option>
                                             <?php
                                             $category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Sponsor", "Student", "Press","Others");
@@ -349,7 +325,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="review_sub_list">
+						<tr class="review_sub_list ">
 							<th>의사 면허번호</th>
 							<td>
 								<div class="max_normal">
@@ -357,7 +333,7 @@
 								</div>
 							</td>
 						</tr>
-						<tr class="review_sub_list">
+						<tr class="review_sub_list ">
 							<th>전문의 번호</th>
 							<td>
 								<div class="max_normal">
@@ -471,14 +447,14 @@
                             </td>
                         </tr>
 						<tr>
-							<th><span class="red_txt">*</span> Where did you get the information about the ICOMES 2024?</th>
+							<th><span class="red_txt">*</span> Where did you get the information about the ICOMES 2023?</th>
 							<td>
 								<ul class="radio_list">
                                     <?php
                                         $conference_info_arr = array(
                                             "Website of the Korea Society of Obesity",
                                             "Promotional email from the Korea Society of Obesity",
-                                            "Advertising email or the bulletin board <br/>from the relevant society",
+                                            "Advertising email or the bulletin board from the relevant society",
                                             "Information about affiliated companies/organizations",
                                             "Invited as a speaker, moderator, and panelist",
                                             "Recommended by a professor",
@@ -534,7 +510,7 @@
 		<div class="section_div">
 			<h3 class="title">Registration fee</h3>
 			<div class="table_wrap detail_table_common x_scroll">
-				<table class="table detail_table mobile_table">
+				<table class="table detail_table">
 					<colgroup>
 						<col class="col_th"/>
 						<col width="*"/>
@@ -557,7 +533,7 @@
 <script>
 	$(document).ready(function(){
 
-	//면허 번호 input 숨기기
+		//면허 번호 input 숨기기
 		$(".review_sub_list").addClass("hidden");
 		$(".review_sub_list_1").addClass("hidden");
 
