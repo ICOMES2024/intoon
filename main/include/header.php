@@ -110,7 +110,7 @@ $locale = locale($language);
                                 <!-- <a href="/main/abstract_submission_guideline.php">Abstract Submission Guideline</a> -->
                             </li>
                             <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
-                            <li><a href="/main/abstract_submission.php">Online Submission</a></li>
+                            <li><a class="online_submission_alert" href="/main/abstract_submission.php">Online Submission</a></li>
                             <li><a href="/main/comingsoon.php">Presentation Guidelines</a></li>
                             <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
 
@@ -266,7 +266,7 @@ $(document).ready(function() {
                     <!-- <li><a href="lecture_note_submission.php">Lecture Abstract Guideline</a></li> -->
                     <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
                     <!-- <li><a href="/main/lecture_note_submission.php">Lecture Note Submission</a></li> -->
-                    <li><a href="/main/abstract_submission.php">Online Submission</a>
+                    <li><a class="online_submission_alert" href="/main/abstract_submission.php">Online Submission</a>
                     </li>
                     <li><a href="/main/comingsoon.php">Presentation Guidelines</a></li>
                     <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>

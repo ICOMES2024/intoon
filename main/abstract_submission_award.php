@@ -7,7 +7,7 @@
     <div class="inner">
         <ul class="tab_green long abstract_submission">
             <li><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
-            <li><a href="./abstract_submission.php">Online Submission</a></li>
+            <li><a class="online_submission_alert" href="./abstract_submission.php">Online Submission</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
             <li class="on"><a href="./abstract_submission_award.php">Awards & Grants</a></li>
