@@ -91,46 +91,6 @@
 
 </section>
 <script>
-	//$('.year_slider_wrap ul').slick({
-	//	dots: false,
-	//	infinite: true,
-	//	slidesToShow: 6,
-	//	slidesToScroll: 1,
-	//	responsive: [
-	//		{
-	//			breakpoint: 1100,
-	//			settings: {
-	//				slidesToShow: 5
-	//			}
-	//		},
-	//		{
-	//			breakpoint: 780,
-	//			settings: {
-	//				slidesToShow: 3
-	//			}
-	//		},
-	//		{
-	//			breakpoint: 486,
-	//			settings: {
-	//				slidesToShow: 2
-	//			}
-	//		}
-	//	]
-	//});
-
-	// var _slider = $('.pop_slider');
-	// $('.photo_list .img_wrap').on('click', function() {
-	// 	if (!_slider.hasClass('slick-slider')) {
-	// 		_slider.slick({
-	// 			dots: false,
-	// 			infinite: true,
-	// 			slidesToShow: 1
-	// 		});
-	// 	}
-	// 	_slider.slick('goTo', ($(this).data('index')));
-	// 	$('.more_img_pop').show();
-	// });
-
 	height_resize();
 	$(window).resize(function() {
 		height_resize();

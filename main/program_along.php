@@ -68,7 +68,7 @@ to gain invaluable insights while advancing your career in the healthcare field.
                             <td class="center_t p4 font_small">The Catholic University of Korea, Korea</td>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small">14:40-14:10</td>
+                            <td class="center_t p4 font_small">14:40-15:10</td>
                             <td class="center_t p4 font_small">Key Insights from 2023 Nutrition Research:<br/>A Comprehensive Review</td>
                             <td class="center_t p4 font_small">Yoon-Ju Song</td>
                             <td class="center_t p4 font_small">The Catholic University of Korea, Korea</td>

@@ -1138,7 +1138,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                      
+                                                                    Obesity Related Health Disparities - A Specific Case of Low- and Middle-Income Countries
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Monika Chaudhary</p>(IIHMR University,India)
@@ -2741,7 +2741,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
                                                                     <td class="bold">
-                                                                        
+                                                                    The Functional Relevance of a Microbiome-Derived SCFA in Reprogramming Hepatic Lipid Metabolism
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Dong Wook Choi</p>(Korea University, Korea)
@@ -4812,7 +4812,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                        
+                                                                    Understanding Skeletal Muscle Mass, Protein Dynamics, Regulation and Function Using New Tracer Techniques
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Marc Hellerstein</p>
@@ -5603,7 +5603,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                   
+                                                                        Optimal Diets for Body Weight Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yang Hu</p>(Harvard University, USA)

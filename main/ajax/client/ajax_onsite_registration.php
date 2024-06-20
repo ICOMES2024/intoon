@@ -23,6 +23,7 @@ if($_POST["flag"] === "onsite") {
     $department_kor = $data["department_kor"] ?? "";
     $phone = $data["phone"] ?? "";
     $date_of_birth = $data["date_of_birth"] ?? "";
+    $payment_method = $data["payment_method"] ?? "";
 
     // registration
     $participation_type = $data["participation_type"] ?? "";
@@ -46,13 +47,23 @@ if($_POST["flag"] === "onsite") {
         case "Sponsor":
             $attendance_type = 5;
             break;
+        case "Press":
+            $attendance_type = 6;
+            break;
     }
+
     $occupation = $data["occupation"] ?? "";
     $occupation_other_type = $data["occupation_other_type"] ?? "";
     $member_type = $data["member_type"] ?? "";
     $member_other_type = $data["member_other_type"] ?? "";
+
     $is_score = $data["is_score"] ?? "";
+    $is_score1 = $data["is_score1"] ?? "";
+    $is_score2 = $data["is_score2"] ?? "";
+    $is_score3 = $data["is_score3"] ?? "";
+
     $licence_number = $data["licence_number"] ?? "";
+    $specialty_number = $data["specialty_number"] ?? "";
     $nutritionist_number = $data["nutritionist_number"] ?? "";
     $dietitian_number = $data["dietitian_number"] ?? "";
 
@@ -111,6 +122,9 @@ if($_POST["flag"] === "onsite") {
                                             status = 5,
                                             attendance_type = '{$attendance_type}',
                                             is_score = '{$is_score}',
+                                            is_score1 = '{$is_score1}',
+                                            is_score2= '{$is_score2}',
+                                            is_score3 = '{$is_score3}',
                                             ksso_member_status = '{$ksso_member_status}',
                                             email = '{$email}',
                                             nation_no = '{$nation_no}',
@@ -149,6 +163,11 @@ if($_POST["flag"] === "onsite") {
     if(!empty($licence_number)){
         $insert_registration_query .= ", licence_number = '{$licence_number}' ";
     }
+
+    if(!empty($specialty_number)){
+        $insert_registration_query .= ", specialty_number = '{$specialty_number}' ";
+    }
+
     if(!empty($nutritionist_number)){
         $insert_registration_query .= ", nutritionist_number = '{$nutritionist_number}' ";
     }
@@ -168,7 +187,18 @@ if($_POST["flag"] === "onsite") {
     $users_registration = sql_fetch($select_registration_sql);
     $registration_idx = $users_registration['idx'];
     $nation_eng = $users_registration['nation_en'];
-    $registration_no = 'ICOMES2023-'.$registration_idx;
+    
+    //[240315] sujeong / 등록번호 4자리수 만들기
+    if($registration_idx < 10){
+        $register_no = !empty($registration_idx) ? "ICOMES2024-000" .$registration_idx : "-";
+    }else if($registration_idx >= 10 && $registration_idx < 100){
+        $register_no = !empty($registration_idx) ? "ICOMES2024-00" .$registration_idx : "-";
+    }else if($registration_idx >= 100 && $registration_idx < 1000){
+        $register_no = !empty($registration_idx) ? "ICOMES2024-0" .$registration_idx : "-";
+    }else if($registration_idx >= 1000 ){
+        $register_no = !empty($registration_idx) ? "ICOMES2024-" .$registration_idx : "-";
+    }
+
     $name_kor = $last_name_kor.$first_name_kor;
 
     $ksso_member_status_text="";
@@ -194,6 +224,36 @@ if($_POST["flag"] === "onsite") {
             break;
     }
 
+    $is_score1_text="";
+    switch($is_score1) {
+        case 0 :
+            $is_score1_text = "미신청";
+            break;
+        case 1 :
+            $is_score1_text = "신청";
+            break;
+    }
+
+    $is_score2_text="";
+    switch($is_score2) {
+        case 0 :
+            $is_score2_text = "미신청";
+            break;
+        case 1 :
+            $is_score2_text = "신청";
+            break;
+    }
+
+    $is_score3_text="";
+    switch($is_score3) {
+        case 0 :
+            $is_score3_text = "미신청";
+            break;
+        case 1 :
+            $is_score3_text = "신청";
+            break;
+    }
+
     $special_request_text="";
     switch($special_request){
         case 0 :
@@ -207,10 +267,21 @@ if($_POST["flag"] === "onsite") {
             break;
     }
 
+    $payment_method_text = "";
+    switch($payment_method){
+        case 1 :
+            $payment_method_text = "Credit card";
+            break;
+        case 2 :
+            $payment_method_text = "Wire transfer";
+            break;
+    }
+
+
     $insert_reg_user_sql = "
                         INSERT reg2.users
                         SET
-                            registration_no = '{$registration_no}',
+                            registration_no = '{$register_no}',
                             first_name = '{$first_name}',
                             last_name = '{$last_name}',
                             email = '{$email}',
@@ -222,9 +293,12 @@ if($_POST["flag"] === "onsite") {
                             attendance_type = '{$participation_type}',
                             member_type = '{$member_type}',
                             occupation_type = '{$occupation}',
-                            ksso_member_status = '{$ksso_member_status_text}',
+                            member_status = '{$ksso_member_status_text}',
                             fee = '{$fee}',
                             is_score = '{$is_score_text}',
+                            is_score1 = '{$is_score1_text}',
+                            is_score2 = '{$is_score2_text}',
+                            is_score3 = '{$is_score3_text}',
                             conference_info = '{$conference_info}',
                             welcome_reception_yn = '{$welcome_reception_yn}',
                             day2_breakfast_yn = '{$day2_breakfast_yn}',
@@ -232,7 +306,9 @@ if($_POST["flag"] === "onsite") {
                             day3_breakfast_yn = '{$day3_breakfast_yn}',
                             day3_luncheon_yn = '{$day3_luncheon_yn}',
                             special_request_food = '{$special_request_text}',
-                            date_of_birth = '{$date_of_birth}'
+                            date_of_birth = '{$date_of_birth}',
+                            deposit_method = '{$payment_method_text}',
+                            onsite_reg = 1
                     ";
 
     if($nation_no == 25) {
@@ -244,6 +320,11 @@ if($_POST["flag"] === "onsite") {
     if(!empty($licence_number)){
         $insert_reg_user_sql .= ", licence_number = '{$licence_number}' ";
     }
+
+    if(!empty($specialty_number)){
+        $insert_reg_user_sql .= ", specialty_number = '{$specialty_number}' ";
+    }
+
     if(!empty($nutritionist_number)){
         $insert_reg_user_sql .= ", nutritionist_number = '{$nutritionist_number}' ";
     }
@@ -313,7 +394,7 @@ function calcFee($ksso_member_status, $category, $country){
     // 카테고리별 상품금액 조회
     $calc_fee_query =	"
 								SELECT
-									on_member_usd, on_guest_usd, on_member_krw, on_guest_krw
+									off_member_usd, off_guest_usd, off_member_krw, off_guest_krw
 								FROM info_event_price
 								WHERE type_en = '{$category}';
 							";
@@ -322,20 +403,20 @@ function calcFee($ksso_member_status, $category, $country){
 
     if($country == 25){
         if($ksso_member_status >= 1){
-            $result = $calc_fee["on_member_krw"];
+            $result = $calc_fee["off_member_krw"];
         }else{
-            $result = $calc_fee["on_guest_krw"];
+            $result = $calc_fee["off_guest_krw"];
         }
     }else{
-        if(($ksso_member_status && !isset($calc_fee["on_member_usd"])) || (!$ksso_member_status && !isset($calc_fee["on_guest_usd"]))){
+        if(($ksso_member_status && !isset($calc_fee["off_member_usd"])) || (!$ksso_member_status && !isset($calc_fee["off_guest_usd"]))){
             echo json_encode(array("code"=>403, "msg"=>"Not invalid price type"));
             exit;
         }
 
         if($ksso_member_status >= 1){
-            $result = $calc_fee["on_member_usd"];
+            $result = $calc_fee["off_member_usd"];
         }else{
-            $result = $calc_fee["on_guest_usd"];
+            $result = $calc_fee["off_guest_usd"];
         }
     }
 

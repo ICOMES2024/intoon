@@ -132,19 +132,6 @@ function birthChk(input) {
 
 // 요금계산(프로모션 적용X)
 function calc_fee(){
-    // if(obj.name == "participation_type"){
-    //     var participation_type = obj.value;
-    //     var category = document.getElementById("category").value;
-    //     if(category == ""){
-    //         return;
-    //     }
-    // }else if (obj.name == "category"){
-    //     var category = obj.value;
-    //     var participation_type = document.getElementById("participation_type").value;
-    //     if(participation_type == ""){
-    //         return;
-    //     }
-    // }
 
     var category = document.getElementById("category").value;
     var participation_type = document.getElementById("participation_type").value;
@@ -241,8 +228,14 @@ function onsite_submit(){
     var occupation_other_type = $("input[name=occupation_input]").val();
     var member_type = $('#category > option:selected').val();
     var member_other_type = $("input[name=title_input]").val();
-    var is_score = $('input[name=review]:checked').val();
+
+    var is_score = $('input[name=review]:checked').val(); //대한의사협회 
+    var is_score1 = $('input[name=review1]:checked').val(); //한국영양교육평가원
+    var is_score2 = $('input[name=review2]:checked').val(); //운동사
+    var is_score3 = $('input[name=review3]:checked').val(); //내과전공의 외부학술회의
+
     var licence_number = $("input[name=licence_number]").val();
+    var specialty_number =  $("input[name=specialty_number]").val();
     var nutritionist_number = $("input[name=nutritionist_number]").val();
     var dietitian_number = $("input[name=dietitian_number]").val();
 
@@ -253,6 +246,8 @@ function onsite_submit(){
     var day3_luncheon_yn = $("input:checkbox[id='others5']:checked").val()
 
     var special_request = $("input[name='special_request']:checked").val()
+
+    var payment_method =  $("input[name='payment_method']:checked").val()
 
     const conference_info_arr=[];
     var info = $("input[name='list']:checked");
@@ -297,10 +292,17 @@ function onsite_submit(){
         occupation_other_type : occupation_other_type,
         member_type : member_type,
         member_other_type : member_other_type,
+
         is_score : is_score,
+        is_score1 : is_score1,
+        is_score2 : is_score2,
+        is_score3 : is_score3,
+
         licence_number : licence_number,
+        specialty_number : specialty_number,
         nutritionist_number : nutritionist_number,
         dietitian_number : dietitian_number,
+        
         welcome_reception_yn : welcome_reception_yn,
         day2_breakfast_yn : day2_breakfast_yn,
         day2_luncheon_yn : day2_luncheon_yn,
@@ -308,6 +310,9 @@ function onsite_submit(){
         day3_luncheon_yn : day3_luncheon_yn,
         special_request : special_request,
         conference_info_arr : conference_info_arr,
+
+        payment_method : payment_method,
+        
         price : price
     };
 
