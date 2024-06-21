@@ -215,7 +215,16 @@ $abstract_idx = $_GET["idx"];
 									if (!$presentation_type) {
 										echo '<option value="" hidden>Choose</option>';
 									}
-									$presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation", "Any of them");
+									// $presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation", "Any of them");
+									// foreach ($presentation_type_arr as $value) {
+									// 	if ($presentation_type == $i_count) {
+									// 		echo '<option value=' . ($i_count) . ' selected>' . $value . '</option>';
+									// 	} else {
+									// 		echo '<option value=' . ($i_count) . '>' . $value . '</option>';
+									// 	}
+									// 	$i_count++;
+									// }
+                                    $presentation_type_arr = array("Poster Exhibition");
 									foreach ($presentation_type_arr as $value) {
 										if ($presentation_type == $i_count) {
 											echo '<option value=' . ($i_count) . ' selected>' . $value . '</option>';
@@ -224,6 +233,7 @@ $abstract_idx = $_GET["idx"];
 										}
 										$i_count++;
 									}
+
 									?>
                             </select>
                         </div>

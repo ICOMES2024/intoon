@@ -107,7 +107,7 @@
 									<div class="colons_div">16:40-18:10</div>
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
-								<td class="skyblue_bg " name="committee_session_2" data-id="67">
+								<td class="skyblue_bg pointer" name="committee_session_2" data-id="67">
 									Committee Session 
 									<input type="hidden" name="e" value="room3">
 								</td>
@@ -116,7 +116,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
-								<td class="violet_bg " name="joint_symposium_3" data-id="68">
+								<td class="violet_bg pointer" name="joint_symposium_3" data-id="68">
 									Joint Symposium
 									<input type="hidden" name="e" value="room2">
 								</td>
@@ -155,8 +155,8 @@
 									Satellite<br />Symposium 2
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_sky_bg " name="satellite_symposium_4" data-id="69">
-									Satellite<br />Symposium 4
+								<td class="violet_bg pointer" name="satellite_symposium_4" data-id="69">
+									Special Session<br />for Publication
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -446,11 +446,12 @@
 								<td class="break_time">
 									<div class="colons_div">18:05-18:40</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="2">
+								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="3">
 									EASO Presidential Lecture
+									<p>Volkan Yumuk</p>
+									<p>Turkish Association for the Study of Obesity, Turkey</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -548,7 +549,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_16" data-id="48">
-									Symposium 16 <p></p>
+									Symposium 16 <p>International Collaboration </p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_3" data-id="49">
@@ -569,8 +570,9 @@
 									<div class="colons_div">11:00-11:40</div>
 								</td>
 								<td class="dark_pink_bg pointer" name="presidential_lecture" colspan="3" data-id="50">
-								Presidential Lecture<p class="bold"></p>
-									<p></p>
+								Presidential Lecture
+								<p>Cheol-Young Park</p>
+								<p>Sungkyunkwan University, Korea</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
