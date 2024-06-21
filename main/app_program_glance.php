@@ -155,8 +155,8 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								
-								<td class="dark_sky_bg pointer" name="satellite_symposium_4" data-id="">
-									Satellite<br />Symposium 4
+								<td class="violet_bg pointer" name="satellite_symposium_4" data-id="">
+									Special Session<br />for Publication
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -450,11 +450,12 @@
 								<td class="break_time">
 									<div class="colons_div">18:05-18:40</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="2">
+								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="3">
 									EASO Presidential Lecture
-									<input type="hidden" name="e" value="room1~2">
+									<p>Volkan Yumuk</p>
+									<p>Turkish Association for the Study of Obesity, Turkey</p>
+									<input type="hidden" name="e" value="room1~3">
 								</td>
-								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -554,7 +555,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_16">
-									Symposium 16 <p></p>
+									Symposium 16 <p>International Collaboration </p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_3">
@@ -575,8 +576,9 @@
 									<div class="colons_div">11:00-11:40</div>
 								</td>
 								<td class="dark_pink_bg pointer" name="presidential_lecture_1" colspan="3">
-								Presidential Lecture<p class="bold"></p>
-									<p></p>
+								Presidential Lecture
+								<p>Cheol-Young Park</p>
+								<p>Sungkyunkwan University, Korea</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>

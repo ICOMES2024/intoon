@@ -173,6 +173,67 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+                            <li name="committee_2">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="skyblue_bg">
+                                                <td>16:40-18:10</td>
+                                                <td>
+                                                    <p class="font_20 bold">Committee Session</p>
+                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
+                                                        University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    will be updated.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>16:40-17:10</td>
+                                                                    <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:10-17:40</td>
+                                                                    <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:40-18:10</td>
+                                                                    <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="satellite_symposium_1">
                                 <!--
                                 <div class="clearfix2 caption">
@@ -490,13 +551,60 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+                            <li name="special_session">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="violet_bg">
+                                                <td>18:40-19:10</td>
+                                                <td>
+                                                    <p class="font_20 bold">Special Session for Publication</p>
+                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
+                                                        University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    will be updated.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>18:40-19:10</td>
+                                                                    <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
                 <!-- Day 1 - Room 3 -->
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-                        <li name="committee">
+                        <li name="committee_1">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -543,6 +651,67 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:00-16:30</td>
+                                                                    <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="joint_symposium">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="violet_bg">
+                                                <td>16:40-18:10</td>
+                                                <td>
+                                                    <p class="font_20 bold">Joint Symposium</p>
+                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
+                                                        University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    will be updated.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>18:40-19:10</td>
+                                                                    <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:10-17:40</td>
+                                                                    <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:40-18:10</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
@@ -1394,6 +1563,84 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+                            <li name="easo_presidential_lecture">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="dark_pink_bg">
+                                                <td>18:05-18:40</td>
+                                                <td>
+                                                    <p class="font_20 bold">EASO Presidential Lecture</p>
+                                                    <!-- <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon
+                                                        University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
+                                                        Korea, Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
+                                                            the fields of physiology and pharmacology at La Trobe
+                                                            University, Australia, is pushing the boundaries of
+                                                            neuroscience and metabolism. In his upcoming lecture, he
+                                                            will discuss how his work on intermittent metabolic
+                                                            switching has enhanced our comprehension of its effect on
+                                                            brain health, paving the way for potential therapeutic
+                                                            interventions.</li>
+                                                        <li>His recent publication in Theranostics, titled
+                                                            "Time-restricted feeding modulates the DNA methylation
+                                                            landscape, attenuates hallmark neuropathology and cognitive
+                                                            impairment in a mouse model of vascular dementia," has
+                                                            presented novel insights into the therapeutic potential of
+                                                            intermittent metabolic switching, offering promising
+                                                            strategies for managing and potentially reversing cognitive
+                                                            impairment in dementia.</li>
+                                                        <li>Further expanding our understanding, Professor Arumugam's
+                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
+                                                            Adaptive and Pathological Modification by Metabolic States,"
+                                                            continues to revolutionize our perspective on the role of
+                                                            metabolism in brain aging.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>18:05-18:35</td>
+                                                                    <td class="bold">
+                                                                  
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Volkan Yumuk</p>(Turkish Association for the Study of Obesity, Turkey)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>09:00-09:10</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <!-- !!! Day2 - Room2 -->
@@ -2162,6 +2409,84 @@ echo '<script type="text/javascript">
                                                                         <p class="bold">Young Sang Lyu</p>(Chosun
                                                                         University, Republic of Korea) -->
                                                                     </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="easo_presidential_lecture">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="dark_pink_bg">
+                                                <td>18:05-18:40</td>
+                                                <td>
+                                                    <p class="font_20 bold">EASO Presidential Lecture</p>
+                                                    <!-- <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon
+                                                        University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
+                                                        Korea, Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
+                                                            the fields of physiology and pharmacology at La Trobe
+                                                            University, Australia, is pushing the boundaries of
+                                                            neuroscience and metabolism. In his upcoming lecture, he
+                                                            will discuss how his work on intermittent metabolic
+                                                            switching has enhanced our comprehension of its effect on
+                                                            brain health, paving the way for potential therapeutic
+                                                            interventions.</li>
+                                                        <li>His recent publication in Theranostics, titled
+                                                            "Time-restricted feeding modulates the DNA methylation
+                                                            landscape, attenuates hallmark neuropathology and cognitive
+                                                            impairment in a mouse model of vascular dementia," has
+                                                            presented novel insights into the therapeutic potential of
+                                                            intermittent metabolic switching, offering promising
+                                                            strategies for managing and potentially reversing cognitive
+                                                            impairment in dementia.</li>
+                                                        <li>Further expanding our understanding, Professor Arumugam's
+                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
+                                                            Adaptive and Pathological Modification by Metabolic States,"
+                                                            continues to revolutionize our perspective on the role of
+                                                            metabolism in brain aging.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>18:05-18:35</td>
+                                                                    <td class="bold">
+                                                                   
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Volkan Yumuk</p>(Turkish Association for the Study of Obesity, Turkey)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>09:00-09:10</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
