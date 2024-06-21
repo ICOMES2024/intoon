@@ -45,7 +45,7 @@
 
 	$registration_list_query =  "
 									SELECT
-										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2, CONCAT(m.last_name_kor,m.first_name_kor) AS `name_kor`,
+										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2, CONCAT(m.last_name_kor,m.first_name_kor) AS `name_kor`, rr.first_name, rr.last_name,
 										rr.member_type, rr.member_other_type, rr.occupation_type, rr.occupation_other_type,
 										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
 										(
@@ -187,7 +187,7 @@
 	$html .= '<thead>';
 	$html .= '<tr class="tr_center">';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">Registration</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="17">Participants Inforatmion</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="19">Participants Inforatmion</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">평점신청(Korean Only)</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">Payment Information</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">Others</th>';
@@ -202,6 +202,8 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Country</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">KSSO 회원 여부</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Name</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Last Name</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">First Name</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">성함</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Affiliation(Institution)</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">소속</th>';
@@ -371,6 +373,8 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["nation_en"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["ksola_member_status"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["name"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["last_name"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["first_name"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["kor_name"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["affiliation"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["affiliation_kor"].'</td>';

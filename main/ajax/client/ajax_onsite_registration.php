@@ -67,6 +67,7 @@ if($_POST["flag"] === "onsite") {
     $nutritionist_number = $data["nutritionist_number"] ?? "";
     $dietitian_number = $data["dietitian_number"] ?? "";
 
+    $satellite_symposium_yn = $data["satellite_symposium_yn"] !== null ? "Y" : "N";
     $welcome_reception_yn = $data["welcome_reception_yn"] !== null ? "Y" : "N";
     $day2_breakfast_yn    = $data["day2_breakfast_yn"] !== null ? "Y" : "N";
     $day2_luncheon_yn     = $data["day2_luncheon_yn"] !== null ? "Y" : "N";
@@ -138,6 +139,7 @@ if($_POST["flag"] === "onsite") {
                                             register_path = 'onsite',
                                             register = '{$member_idx}',
                                             conference_info = '{$conference_info}',
+                                            etc4 = '{$satellite_symposium_yn}',
                                             welcome_reception_yn = '{$welcome_reception_yn}',
                                             day2_breakfast_yn = '{$day2_breakfast_yn}',
                                             day2_luncheon_yn = '{$day2_luncheon_yn}',
@@ -189,14 +191,15 @@ if($_POST["flag"] === "onsite") {
     $nation_eng = $users_registration['nation_en'];
     
     //[240315] sujeong / 등록번호 4자리수 만들기
-    if($registration_idx < 10){
-        $register_no = !empty($registration_idx) ? "ICOMES2024-000" .$registration_idx : "-";
-    }else if($registration_idx >= 10 && $registration_idx < 100){
-        $register_no = !empty($registration_idx) ? "ICOMES2024-00" .$registration_idx : "-";
-    }else if($registration_idx >= 100 && $registration_idx < 1000){
-        $register_no = !empty($registration_idx) ? "ICOMES2024-0" .$registration_idx : "-";
-    }else if($registration_idx >= 1000 ){
-        $register_no = !empty($registration_idx) ? "ICOMES2024-" .$registration_idx : "-";
+    $register_no = "-";
+    if(!empty($registration_idx)){
+        $code_number = $registration_idx;
+
+        while (strlen("" . $code_number) < 4) {
+            $code_number = "0" . $code_number;
+        }
+
+        $register_no = "ICOMES2024". "-" . $code_number;
     }
 
     $name_kor = $last_name_kor.$first_name_kor;
@@ -300,6 +303,7 @@ if($_POST["flag"] === "onsite") {
                             is_score2 = '{$is_score2_text}',
                             is_score3 = '{$is_score3_text}',
                             conference_info = '{$conference_info}',
+                            etc2 = '{$satellite_symposium_yn}',
                             welcome_reception_yn = '{$welcome_reception_yn}',
                             day2_breakfast_yn = '{$day2_breakfast_yn}',
                             day2_luncheon_yn = '{$day2_luncheon_yn}',

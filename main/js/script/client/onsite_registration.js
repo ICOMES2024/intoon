@@ -239,11 +239,12 @@ function onsite_submit(){
     var nutritionist_number = $("input[name=nutritionist_number]").val();
     var dietitian_number = $("input[name=dietitian_number]").val();
 
-    var welcome_reception_yn = $("input:checkbox[id='others1']:checked").val()
-    var day2_breakfast_yn = $("input:checkbox[id='others2']:checked").val()
-    var day2_luncheon_yn = $("input:checkbox[id='others3']:checked").val()
-    var day3_breakfast_yn = $("input:checkbox[id='others4']:checked").val()
-    var day3_luncheon_yn = $("input:checkbox[id='others5']:checked").val()
+    var satellite_symposium_yn = $("input:checkbox[id='others1']:checked").val()
+    var welcome_reception_yn = $("input:checkbox[id='others2']:checked").val()
+    var day2_breakfast_yn = $("input:checkbox[id='others3']:checked").val()
+    var day2_luncheon_yn = $("input:checkbox[id='others4']:checked").val()
+    var day3_breakfast_yn = $("input:checkbox[id='others5']:checked").val()
+    var day3_luncheon_yn = $("input:checkbox[id='others6']:checked").val()
 
     var special_request = $("input[name='special_request']:checked").val()
 
@@ -303,6 +304,7 @@ function onsite_submit(){
         nutritionist_number : nutritionist_number,
         dietitian_number : dietitian_number,
         
+        satellite_symposium_yn : satellite_symposium_yn,
         welcome_reception_yn : welcome_reception_yn,
         day2_breakfast_yn : day2_breakfast_yn,
         day2_luncheon_yn : day2_luncheon_yn,
