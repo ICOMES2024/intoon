@@ -76,7 +76,7 @@
 			</div>
 			<div class="term_label text_l">
 				<input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1" name="terms1" value="Y">
-				<label for="terms1">I agree to the collection <br/>and use of my personal information. </label>
+				<label for="terms1">I agree to the collection <br class="mb_only"/>and use of my personal information. </label>
 			</div>	
 		</div>
 		<div class="section_div">
@@ -421,6 +421,7 @@
 								<ul class="radio_list">
                                     <?php
                                         $others_arr = array(
+												"Satellite Symposium",
 												"Welcome Reception",
 												"Day 2 Breakfast Symposium",
 												"Day 2 Luncheon Symposium",
