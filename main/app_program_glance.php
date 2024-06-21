@@ -371,7 +371,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_7">
-									Symposium 7 <p></p>
+									Symposium 7 <p>Lipid Remodeling and Adipocyte Biology in Metabolic Health and Disease</p>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_8">
@@ -422,7 +422,7 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_10">
-									Symposium 10 <p></p>
+									Symposium 10 <p>Obesity and Other Disease</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_11">
