@@ -1168,10 +1168,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Jin-Wook Kim</p>(Hippocrata
-                                                                        Clinic, Republic of Korea), <br>
-                                                                        <p class="bold">Seo Young Kang</p>(Eulji
-                                                                        University, Republic of Korea) -->
+                                                                        <p class="bold">Kyunghee Jung-Choi</p>(Ewha Womans University, Korea), <br>
+                                                                        <p class="bold">Sang Min Park</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1652,10 +1650,8 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Jang Won Son</p>(The Catholic
-                                                                        University of Korea, Republic of Korea), <br>
-                                                                        <p class="bold">Kyung Ae Lee</p>(Jeonbuk
-                                                                        National University, Republic of Korea) -->
+                                                                        <p class="bold">Obin Kwon</p>(Seoul National University, Korea), <br>
+                                                                        <p class="bold">Jaemin Lee</p>(Daegu Gyeongbuk Institute of Science & Technology, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1959,15 +1955,9 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">Panel Discussion</td>
-                                                                    <!-- <td class="text_r panels">
-                                                                        <p><span class="bold">Kyeongho Byun</span> (Incheon National University, Republic of Korea),</p>
-                                                                        <p><span class="bold">Min-Seong Ha</span> (University of Seoul, Republic of Korea)</p>
-                                                                    </td> -->
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Kyeongho Byun</p>(Incheon
-                                                                        National University, Republic of Korea),<br>
-                                                                        <p class="bold">Min-Seong Ha</p>(University of
-                                                                        Seoul, Republic of Korea) -->
+                                                                        <p class="bold">Hyo Youl Moon</p>(Seoul National University, Korea),<br>
+                                                                        <p class="bold">Kwangseok Hong</p>(Chung-Ang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2113,7 +2103,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 10 </p>
+                                                    <p class="font_20 bold">Symposium 10 : Obesity and Other Disease</p>
                                                     <!-- <p><span class="bold">Chairpersons : Kyu Chang Won</span> (Yeungnam University, Republic of Korea), <br><span class="bold">Min-Seon Kim</span> (University of Ulsan, Republic of Korea)</p> -->
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -2151,7 +2141,7 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Mai Thi Xuan Tran</p>(Hanyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2438,10 +2428,8 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Sang Youl Rhee</p>(Kyung Hee
-                                                                        University, Republic of Korea),
-                                                                        <p class="bold">Hyunji Sang</p>(Kyung Hee
-                                                                        University, Republic of Korea) -->
+                                                                        <p class="bold">Young Sang Lyu</p>(Chosun University, Korea),
+                                                                        <p class="bold">Byoungduck Han</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2668,7 +2656,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>14:00-15:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 7</p>
+                                                    <p class="font_20 bold">Symposium 7 : Lipid Remodeling and Adipocyte Biology in Metabolic Health and Disease</p>
                                                     <!-- <p><span class="bold">Chairpersons : Chul Sik Kim</span> (Yonsei
                                                         University, Republic of Korea), <br><span class="bold">Yun-Hee
                                                             Lee</span> (Seoul National University, Republic of Korea)
@@ -6027,11 +6015,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">In Hyuk Chung</p>(National
-                                                                        Health Insurance Service Ilsan Hospital,
-                                                                        Republic of Korea),<br />
-                                                                        <p class="bold">Eungu Kang</p>(Korea University,
-                                                                        Republic of Korea) -->
+                                                                        <p class="bold">Junga Lee</p>(Kyung Hee University, Korea)<br />
+                                                                        <!-- <p class="bold">Eungu Kang</p>(Korea University, Republic of Korea) -->
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6362,8 +6347,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Hyunseok Jee</p>(Yeungnam University, Republic of Korea), <br>
-                                                                        <p class="bold">Jin-Wook Lee</p>(Dankook University, Republic of Korea) -->
+                                                                        <p class="bold">Kyeongho Byun</p>(Incheon National University, Korea), <br>
+                                                                        <p class="bold">Seungyong Lee</p>(Incheon National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
