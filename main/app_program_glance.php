@@ -576,9 +576,9 @@
 									<div class="colons_div">11:00-11:40</div>
 								</td>
 								<td class="dark_pink_bg pointer" name="presidential_lecture_1" colspan="3">
-								Presidential Lecture
-								<p>Cheol-Young Park</p>
-								<p>Sungkyunkwan University, Korea</p>
+									Presidential Lecture
+									<p>Cheol-Young Park</p>
+									<p>Sungkyunkwan University, Korea</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
