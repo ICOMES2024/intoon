@@ -6462,7 +6462,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 16</p>
+                                                    <p class="font_20 bold">Symposium 16 : International Collaboration</p>
                                                     <!-- <p><span class="bold">Chairpersons : Soo Lim</span> (Seoul National
                                                         University, Republic of Korea), <br><span class="bold">Luca
                                                             Busetto</span> (University of Padova, Italy)</p> -->

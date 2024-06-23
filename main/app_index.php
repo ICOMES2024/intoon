@@ -70,6 +70,11 @@
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-07.png" class="text" alt="">
 				</a>
 			</li>
+			<li>
+				<a>
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240522-08.png" class="text" alt="">
+				</a>
+			</li>
 		</div>
 	<!-- </div> -->
 	<div class="app_main_inner">
