@@ -415,6 +415,25 @@
 								</div>
 							</td>
 						</tr>
+						<tr class="korea_only">
+							<th><span class="red_txt">*</span>내과분과전문의 시험/갱신 평점신청 </th>
+							<td>
+								<div class="label_wrap">
+									<input type="radio" class="new_radio" name="review4" id="review9" value="1">
+									<label for="review9"><i></i>신청함</label>
+									<input checked="" type="radio" class="new_radio" name="review4" id="review10" value="0">
+									<label for="review10"><i></i>신청 안 함</label>
+								</div>
+							</td>
+						</tr>
+						<tr class="review_sub_list_2">
+							<th>내과전문의 면허번호</th>
+							<td>
+								<div class="max_normal">
+									<input type="text" name="etc5" id="etc5">
+								</div>
+							</td>
+						</tr>
 						<tr>
 							<th><span class="red_txt">*</span> Others</th>
 							<td>
@@ -561,6 +580,7 @@
 	//면허 번호 input 숨기기
 		$(".review_sub_list").addClass("hidden");
 		$(".review_sub_list_1").addClass("hidden");
+		$(".review_sub_list_2").addClass("hidden");
 
 		//대한의사협회 평점 신청
 		$('input[name=review]').on("change", function() {
@@ -588,6 +608,22 @@
 
 				if(!$(".review_sub_list_1").hasClass("hidden")){
 					$(".review_sub_list_1").addClass("hidden");
+				}
+			}
+		});
+
+
+				//한국영양교육평가원 평점신청
+			$('input[name=review4]').on("change", function() {
+			if($('input[name=review4]:checked').val() == '1'){
+				$(".review_sub_list_2").removeClass("hidden");
+			}else{
+				// init
+				$(".review_sub_list_2 input[type=text]").val("");
+				$(".review_sub_list_2 input[type=checkbox]").prop("checked", false);
+
+				if(!$(".review_sub_list_2").hasClass("hidden")){
+					$(".review_sub_list_2").addClass("hidden");
 				}
 			}
 		});

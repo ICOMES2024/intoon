@@ -94,13 +94,12 @@
 						<p>Late-breaking-Abstract Submission Deadline</p>
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					 <a href="/main/abstract_submission_guideline.php"> 
 						<h2>End of Every Month <span>(until June)</span></h2>
-						 <!-- <i><img src="/main/img/icons/icon_letter.svg" alt=""></i>  -->
 						<p style="margin-top: 10px;">Notification of<br/>Acceptance</p>
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="/main/registration_guidelines.php">
 						<h2>July 12 <span>(Fri)</span></h2>

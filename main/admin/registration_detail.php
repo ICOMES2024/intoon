@@ -208,7 +208,7 @@
 	$is_score1_text = isset($registration_detail["is_score1_text"]) ? $registration_detail["is_score1_text"] : "";
 	$is_score2_text = isset($registration_detail["is_score2_text"]) ? $registration_detail["is_score2_text"] : "";
 	$is_score3_text = isset($registration_detail["is_score3_text"]) ? $registration_detail["is_score3_text"] : "";
-	$is_score34_text = isset($registration_detail["is_score4_text"]) ? $registration_detail["is_score4_text"] : "";
+	$is_score4_text = isset($registration_detail["is_score4_text"]) ? $registration_detail["is_score4_text"] : "";
 	$member_status_text = isset($registration_detail["member_status_text"]) ? $registration_detail["member_status_text"] : "";
 	$attendance_type_text = isset($registration_detail["attendance_type_text"]) ? $registration_detail["attendance_type_text"] : "";
 	$invitation_check_yn = isset($registration_detail["invitation_check_yn"]) ? $registration_detail["invitation_check_yn"] : "N";

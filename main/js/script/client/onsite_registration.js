@@ -233,11 +233,13 @@ function onsite_submit(){
     var is_score1 = $('input[name=review1]:checked').val(); //한국영양교육평가원
     var is_score2 = $('input[name=review2]:checked').val(); //운동사
     var is_score3 = $('input[name=review3]:checked').val(); //내과전공의 외부학술회의
+    var is_score4 = $('input[name=review4]:checked').val(); //내과분과전문의 시험/갱신 평점신청 
 
     var licence_number = $("input[name=licence_number]").val();
     var specialty_number =  $("input[name=specialty_number]").val();
     var nutritionist_number = $("input[name=nutritionist_number]").val();
     var dietitian_number = $("input[name=dietitian_number]").val();
+    var etc5 = $("input[name=etc5]").val();
 
     var satellite_symposium_yn = $("input:checkbox[id='others1']:checked").val()
     var welcome_reception_yn = $("input:checkbox[id='others2']:checked").val()
@@ -298,11 +300,13 @@ function onsite_submit(){
         is_score1 : is_score1,
         is_score2 : is_score2,
         is_score3 : is_score3,
+        is_score4 : is_score4,
 
         licence_number : licence_number,
         specialty_number : specialty_number,
         nutritionist_number : nutritionist_number,
         dietitian_number : dietitian_number,
+        etc5:etc5,
         
         satellite_symposium_yn : satellite_symposium_yn,
         welcome_reception_yn : welcome_reception_yn,

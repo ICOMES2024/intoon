@@ -130,7 +130,7 @@ section.container.login.bg {border: 0px;}
 .moreview_btn {font-size:26px; font-weight:bold; color:#000000; padding:0 10px; position:absolute; top:50%; right:0; transform:translateY(-50%);}
 .dates_area {position:absolute; bottom:54px; left:50%; transform:translateX(-50%); z-index:10; width:calc(100% - 32px); max-width:1200px;}
 .dates_area ul {display: flex; flex-wrap: wrap;/* min-height: 228px;*/    margin-left: 24px;}
-.dates_area li {width: 24%; background-color: #8A0579; padding:0 20px; position:relative; height: 155px;}
+.dates_area li {width: 32%; background-color: #8A0579; padding:0 20px; position:relative; height: 155px;}
 .dates_area li:nth-of-type(2) {background-color: #5C0378;}
 .dates_area li:nth-of-type(3) {background-color: #01408F;}
 .dates_area li:nth-of-type(4) {background-color: #0181C8;}
