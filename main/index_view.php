@@ -89,9 +89,9 @@
 			<ul>
 				<li>
 					<a href="/main/abstract_submission_guideline.php">
-						<h2>June 20 <span>(Thu)</span></h2>
+						<h2>July 11 <span>(Thu)</span></h2>
 						<!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
-						<p>Abstract Submission<br/>Deadline</p>
+						<p>Late-breaking-Abstract Submission Deadline</p>
 					</a>
 				</li>
 				<li>
