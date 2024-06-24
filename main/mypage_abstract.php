@@ -163,7 +163,7 @@
 							<td data-idx="<?= $submission["idx"] ?>">
 								<button type="button" class="btn review_regi_open">Review</button>
 								<?php if($submission["etc1"] != "Y"){ ?>
-									<button type="button" class="btn modify_btn online_submission_alert">Modify</button>
+									<button type="button" class="btn modify_btn ">Modify</button>
 								<?php } ?>
 <!--								<button type="button" class="btn delete_btn">Delete</button>-->
 							</td>
@@ -175,8 +175,8 @@
 			<div class="pagination">
 			</div>
 			<div class="centerT">
-     		<button class="btn blue_btn long online_submission_alert">Make a new submission</button>
-				<!-- <button class="btn blue_btn long " onclick="javascript:window.location.href='./abstract_submission.php';">Make a new submission</button> -->
+     		<!-- <button class="btn blue_btn long online_submission_alert">Make a new submission</button> -->
+				<button class="btn blue_btn long " onclick="javascript:window.location.href='./abstract_submission.php';">Make a new submission</button>
 			</div>
 		</div> 
 	</div>
