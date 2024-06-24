@@ -61,11 +61,13 @@ if($_POST["flag"] === "onsite") {
     $is_score1 = $data["is_score1"] ?? "";
     $is_score2 = $data["is_score2"] ?? "";
     $is_score3 = $data["is_score3"] ?? "";
+    $is_score4 = $data["is_score4"] ?? "";
 
     $licence_number = $data["licence_number"] ?? "";
     $specialty_number = $data["specialty_number"] ?? "";
     $nutritionist_number = $data["nutritionist_number"] ?? "";
     $dietitian_number = $data["dietitian_number"] ?? "";
+    $etc5 = $data["etc5"] ?? "";
 
     $satellite_symposium_yn = $data["satellite_symposium_yn"] !== null ? "Y" : "N";
     $welcome_reception_yn = $data["welcome_reception_yn"] !== null ? "Y" : "N";
@@ -126,6 +128,7 @@ if($_POST["flag"] === "onsite") {
                                             is_score1 = '{$is_score1}',
                                             is_score2= '{$is_score2}',
                                             is_score3 = '{$is_score3}',
+                                            is_score4 = '{$is_score4}',
                                             ksso_member_status = '{$ksso_member_status}',
                                             email = '{$email}',
                                             nation_no = '{$nation_no}',
@@ -175,6 +178,9 @@ if($_POST["flag"] === "onsite") {
     }
     if(!empty($dietitian_number)){
         $insert_registration_query .= ", dietitian_number = '{$dietitian_number}' ";
+    }
+    if(!empty($etc5)){
+        $insert_registration_query .= ", etc5 = '{$etc5}' ";
     }
 
     $insert_registration = sql_query($insert_registration_query);
@@ -257,6 +263,16 @@ if($_POST["flag"] === "onsite") {
             break;
     }
 
+    $is_score4_text="";
+    switch($is_score4) {
+        case 0 :
+            $is_score4_text = "미신청";
+            break;
+        case 1 :
+            $is_score4_text = "신청";
+            break;
+    }
+
     $special_request_text="";
     switch($special_request){
         case 0 :
@@ -302,6 +318,7 @@ if($_POST["flag"] === "onsite") {
                             is_score1 = '{$is_score1_text}',
                             is_score2 = '{$is_score2_text}',
                             is_score3 = '{$is_score3_text}',
+                            is_score4 = '{$is_score4_text}',
                             conference_info = '{$conference_info}',
                             etc2 = '{$satellite_symposium_yn}',
                             welcome_reception_yn = '{$welcome_reception_yn}',
@@ -334,6 +351,10 @@ if($_POST["flag"] === "onsite") {
     }
     if(!empty($dietitian_number)){
         $insert_reg_user_sql .= ", dietitian_number = '{$dietitian_number}' ";
+    }
+
+    if(!empty($etc5)){
+        $insert_reg_user_sql .= ", etc5 = '{$etc5}' ";
     }
 
     if(!empty($member_other_type)){
