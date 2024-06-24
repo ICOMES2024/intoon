@@ -244,6 +244,7 @@ $abstract_idx = $_GET["idx"];
                                     <label for="presentation_type_yn"><i></i>I agree to change the presentation type if requested by the Scientific Committee.</label>
                                 </li>
                             </ul>
+                            <p class="red_t bold">*Late-breaking abstracts can only be submitted as poster exhibitions.</p>
                         </div>
                     </li>
 					<li>
