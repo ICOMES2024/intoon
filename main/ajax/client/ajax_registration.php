@@ -1,5 +1,7 @@
 <?php include_once("../../common/common.php");?>
 <?php
+// error_reporting(E_ALL);
+// ini_set("display_errors", 1);
 	if($_POST["flag"] == "registration") {
 			// error_reporting( E_ALL );
 			// ini_set( "display_errors", 1 );
@@ -26,8 +28,8 @@
 
 			if(!$prev["idx"]){
 				$res = [
-					code => 403,
-					msg => "Can not modify registration, should be checked registration status and owner"
+					"code" => 403,
+					"msg" => "Can not modify registration, should be checked registration status and owner"
 				];
 				echo json_encode($res);
 				exit;
@@ -77,11 +79,16 @@
 		
 		//[240315] sujeong / 운동사 평점신청 추가
 		$rating2              = isset($data["review2"]) ? $data["review2"] : "";											// 운동사 평점신청 
-		$rating3              = isset($data["review3"]) ? $data["review3"] : "";											// 운동사 평점신청 
+		$rating3              = isset($data["review3"]) ? $data["review3"] : "";	
+		
+		//[240624] sujeong / 내과분과전문의 시험/갱신 평점신청 추가										
+		$rating4              = isset($data["review4"]) ? $data["review4"] : "";											// 내과분과전문의 시험/갱신 평점신청
+
 		$licence_number      = isset($data["licence_number"]) && $data["licence_number"] != "" ? $data["licence_number"] : "";							// 의사면허번호
 		$specialty_number    = isset($data["specialty_number"]) && $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
 		$nutritionist_number = isset($data["nutritionist_number"]) && $data["nutritionist_number"] != "" ? $data["nutritionist_number"] : "";					// 영양사면허번호
         $dietitian_number    = isset($data["dietitian_number"]) && $data["dietitian_number"] != "" ? $data["dietitian_number"] : "";                        // 임상영양사자격번호
+        $etc5    = isset($data["etc5"]) && $data["etc5"] != "" ? $data["etc5"] : "";                        // 내과전문의 면허번호 
 
 		// 0509
 		$user_idx	 = isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : "";
@@ -121,60 +128,12 @@
 		if(!$update_idx){
 			if($price == "" || $total_price == ""){
 				$res = [
-					code => 400,
-					msg => "empty the price data"
+					"code" => 400,
+					"msg" => "empty the price data"
 				];
 				echo json_encode($res);
 				exit;
 			}
-
-			//$conference_info_arr = $data["conference_info_arr"];
-			//$others = implode("*", $data["others_arr"]);																	// 심포지엄일정
-
-
-			//$member_status = isset($data["member_status"]) ? $data["member_status"] : "";
-			//$member_status = htmlspecialchars($member_status);
-			//$email = isset($data["email"]) ? $data["email"] : "";
-			//$nation_no = isset($data["nation_no"]) ? $data["nation_no"] : "";
-			//$last_name = isset($data["last_name"]) ? $data["last_name"] : "";
-			//$first_name = isset($data["first_name"]) ? $data["first_name"] : "";
-			//$nation_tel = isset($data["nation_tel"]) ? $data["nation_tel"] : "";
-			//$phone = isset($data["phone"]) ? $data["phone"] : "";
-			//$member_type = isset($data["member_type"]) ? $data["member_type"] : "";
-			//$member_type = ($member_type != "Choose") ? $member_type : "";
-			//$registration_type = isset($data["registration_type"]) ? $data["registration_type"] : "";
-			//2022-05-11 추가
-			//$banquet_yn = isset($data["banquet_yn"]) ? $data["banquet_yn"] : "";
-
-			//$affiliation = isset($data["affiliation"]) ? $data["affiliation"] : "";
-			//$affiliation = htmlspecialchars($affiliation);
-			//$department = isset($data["department"]) ? $data["department"] : "";
-			//$department = htmlspecialchars($department);
-			//$academy_number = isset($data["academy_number"]) ? $data["academy_number"] : "";
-			//$register_path = isset($data["register_path"]) ? $data["register_path"] : "";
-			//$register_path = ($register_path != "Choose") ? $register_path : "";
-			//$etc = $data["etc"] ?? null;
-			//$etc = htmlspecialchars($etc);
-			//$result_org = isset($data["result_org"]) ? $data["result_org"] : "";
-			//if($nation_tel != "" && $phone != "") {
-			//	$phone = $nation_tel."-".$phone;
-			//}
-
-			//$write_position = isset($data["write_position"]) ? $data["write_position"] : "";
-
-			////비자 여부
-			//$invitation_check_yn = isset($data["invitation_yn"]) ? $data["invitation_yn"] : "";
-
-			//$invitation_nation_no = isset($data["invitation_nation_no"]) ? $data["invitation_nation_no"] : "";
-			//$address = isset($data["address"]) ? $data["address"] : "";
-			//$address_detail = isset($data["address_detail"]) ? $data["address_detail"] : "";
-			//$address_detail = htmlspecialchars($address_detail);
-			//$passport_number = isset($data["passport_number"]) ? $data["passport_number"] : "";
-			//$date_of_birth = isset($data["date_of_birth"]) ? $data["date_of_birth"] : "";
-			//$date_of_issue = isset($data["date_of_issue"]) ? $data["date_of_issue"] : "";
-			//$date_of_expiry = isset($data["date_of_expiry"]) ? $data["date_of_expiry"] : "";
-			//$length_of_visit = isset($data["length_of_visit"]) ? $data["length_of_visit"] : "";
-			//$length_of_visit = htmlspecialchars($length_of_visit);
 
 			$check_registration_query =	"
 											SELECT
@@ -201,8 +160,8 @@
 		
 			if($registration_idx && ($payment_status != "0" && $payment_status != "4")){
 				$res = [
-					code => 401,
-					msg => "already registration"
+					"code" => 401,
+					"msg" => "already registration"
 				];
 				echo json_encode($res);
 				exit;
@@ -333,6 +292,13 @@
 		}else{
 			$add_set .= ", is_score3 = NULL ";
 		}
+
+		//[240624] sujeong / 내과분과전문의 시험/갱신 평점신청 추가
+		if($rating4 !== "") {
+			$add_set .= ", is_score4 = {$rating4} ";
+		}else{
+			$add_set .= ", is_score4 = NULL ";
+		}
 			
 		if($licence_number !== "") {
 			$add_set .= ", licence_number = '{$licence_number}' ";
@@ -356,6 +322,13 @@
             $add_set .= ", dietitian_number = '{$dietitian_number}' ";
         }else{
             $add_set .= ", dietitian_number = NULL ";
+        }
+		
+		//[240624] sujeong / 내과분과전문의 시험/갱신 평점신청 추가
+		if($etc5 !== "") {
+            $add_set .= ", etc5 = '{$etc5}' ";
+        }else{
+            $add_set .= ", etc5 = NULL ";
         }
 
 		//[240318] sujeong / academy_number 주석
@@ -383,59 +356,6 @@
 			$add_set .= ", etc2 = NULL ";
 		}
 
-		// if($invitation_nation_no !== "") {
-		// 	$add_set .= ", invitation_nation_no = '{$invitation_nation_no}' ";
-		// }else{
-		// 	$add_set .= ", invitation_nation_no = NULL ";
-		// }
-
-		// if($address !== "") {
-		// 	$add_set .= ", address = '{$address}' ";
-		// }else{
-		// 	$add_set .= ", address = NULL ";
-		// }
-
-		// if($address_detail !== "") {
-		// 	$add_set .= ", address_detail = '{$address_detail}' ";
-		// }else{
-		// 	$add_set .= ", address_detail = NULL ";
-		// }
-
-		// if($passport_number !== "") {
-		// 	$add_set .= ", passport_number = '{$passport_number}' ";
-		// }else{
-		// 	$add_set .= ", passport_number = NULL ";
-		// }
-
-		// if($date_of_birth !== "") {
-		// 	$add_set .= ", date_of_birth = '{$date_of_birth}' ";
-		// }else{
-		// 	$add_set .= ", date_of_birth = NULL ";
-		// }
-
-		// if($date_of_issue !== "") {
-		// 	$add_set .= ", date_of_issue = '{$date_of_issue}' ";
-		// }else{
-		// 	$add_set .= ", date_of_issue = NULL ";
-		// }
-
-		// if($date_of_expiry !== "") {
-		// 	$add_set .= ", date_of_expiry = '{$date_of_expiry}' ";
-		// }else{
-		// 	$add_set .= ", date_of_expiry = NULL ";
-		// }
-
-		// if($length_of_visit !== "") {
-		// 	$add_set .= ", length_of_visit = '{$length_of_visit}' ";
-		// }else{
-		// 	$add_set .= ", length_of_visit = NULL ";
-		// }
-
-		// if($write_position !== "") {
-		// 	$add_set .= ", write_position = '{$write_position}' ";
-		// }else{
-		// 	$add_set .= ", write_position = NULL ";
-		// }
 
 		if($conference_info !== "") {
 			$add_set .= ", conference_info = '{$conference_info}' ";
@@ -485,7 +405,6 @@
 		}
 
 		$res = sql_query($sql);
-
 		if($res) {
 			//사전등록
 			if(!$update_idx){
@@ -512,9 +431,9 @@
 
 
 			$regustration_query = "SELECT
-										idx, attendance_type, is_score, is_score1, is_score2, nation_no, phone,
+										idx, attendance_type, is_score, is_score1, is_score2, is_score3, is_score4, nation_no, phone,
 										member_type, ksso_member_status, registration_type, affiliation, department,
-										licence_number, specialty_number, nutritionist_number, dietitian_number, academy_number, register_path,
+										licence_number, specialty_number, nutritionist_number, dietitian_number,etc5, academy_number, register_path,
 										etc4, welcome_reception_yn, day2_breakfast_yn, day2_luncheon_yn, day3_breakfast_yn, day3_luncheon_yn, 
 										conference_info, price, payment_no,
 										DATE_FORMAT(register_date, '%m-%d-%Y %H:%i:%s') AS register_date
@@ -566,18 +485,18 @@
 			$data["payment_date"] = date("Y-m-d H:i:s");
 
 			echo json_encode(array(
-				code => 200,
-				msg => "success",
-				registration_idx => $registration_idx,
-				email => $data["pay_type"] == "card" ? null : $email,
-				name => $data["pay_type"] == "card" ? null : $name,
-				data => $data
+				"code" => 200,
+				"msg" => "success",
+				"registration_idx" => $registration_idx,
+				"email" => $data["pay_type"] == "card" ? null : $email,
+				"name" => $data["pay_type"] == "card" ? null : $name,
+				"data" => $data
 			));
 			exit;
 		} else {
 			echo json_encode(array(
-				code => 400,
-				msg => "error"
+				"code" => 400,
+				"msg" => "error"
 			));
 			exit;
 		}
@@ -589,8 +508,8 @@
 		// echo "aaa" . $user_idx;
 		if($idx == "") {
 			$res = [
-				code => 401,
-				msg => "no idx"
+				"code" => 401,
+				"msg" => "no idx"
 			];
 			echo json_encode($res);
 			exit;
@@ -643,15 +562,15 @@
 
 		if($update) {
 			$res = [
-				code => 200,
-				msg => "success"
+				"code" => 200,
+				"msg" => "success"
 			];
 			echo json_encode($res);
 			exit;
 		} else {
 			$res = [
-				code => 400,
-				msg => "update query error"
+				"code" => 400,
+				"msg" => "update query error"
 			];
 			echo json_encode($res);
 			exit;
@@ -672,8 +591,8 @@
 		if($user_idx == "" || $payment["register"] != $user_idx){
 			// 허가받지 않은 사람이나 타인이 요청한 경우
 			$res = [
-				code => 401,
-				msg => "invalid auth"
+				"code" => 401,
+				"msg" => "invalid auth"
 			];
 			echo json_encode($res);
 			exit;
@@ -682,8 +601,8 @@
 		if($payment["payment_no"]){
 			// 이미 결제건은 취소가 불가능하고 환불요청으로 넘어가야됨.
 			$res = [
-				code => 402,
-				msg => "invalid request status"
+				"code" => 402,
+				"msg" => "invalid request status"
 			];
 			echo json_encode($res);
 			exit;
@@ -719,15 +638,15 @@
 
 		if($update_payment) {
 			$res = [
-				code => 200,
-				msg => "success"
+				"code" => 200,
+				"msg" => "success"
 			];
 			echo json_encode($res);
 			exit;
 		} else {
 			$res = [
-				code => 400,
-				msg => "error"
+				"code" => 400,
+				"msg" => "error"
 			];
 			echo json_encode($res);
 			exit;
@@ -762,8 +681,8 @@
 
 		if(!$update_registration) {
 			$res = [
-				code => 400,
-				msg => "registration query error"
+				"code" => 400,
+				"msg" => "registration query error"
 			];
 			echo json_encode($res);
 			exit;
@@ -785,16 +704,16 @@
 
 		 if(!$update_payment) {
 			$res = [
-				code => 400,
-				msg => "payment query error"
+				"code" => 400,
+				"msg" => "payment query error"
 			];
 			echo json_encode($res);
 			exit;
 		}
 
 		$res = [
-			code => 200,
-			msg => "success"
+			"code" => 200,
+			"msg" => "success"
 		];
 		echo json_encode($res);
 		exit;
@@ -815,16 +734,16 @@
 
 		if($registration_info) {
 			$res = [
-				code => 200,
-				msg => "success",
-				data => $registration_info
+				"code" => 200,
+				"msg" => "success",
+				"data" => $registration_info
 			];
 			echo json_encode($res);
 			exit;
 		} else {
 			$res = [
-				code => 400,
-				msg => "error",
+				"code" => 400,
+				"msg" => "error",
 			];
 			echo json_encode($res);
 			exit;

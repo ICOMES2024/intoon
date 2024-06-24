@@ -61,14 +61,19 @@ $info = sql_fetch($sql_info);
                             <td class="f_bold">Mid-February</td>
                         </tr>
                         <tr>
-                            <th class="">Late-breaking-Abstract Submission Deadline</th>
+                            <th class="close_th">Abstract Submission Deadline</th>
                             <!-- <th class="close_th">Abstract Submission Deadline</th> -->
-                            <td><span class="font_inherit red_t f_bold">July 11 (Thu)</span></td>
+                            <td><span class="font_inherit red_t f_bold">June 20 (Thu)</span></td>
                         </tr>
                         <tr>
                             <th>Notification of Abstract Acceptance</th>
                             <td class="f_bold">July 10 (Wed)<br><span class="font_12">*Details regarding presentation type and guidelines will be provided.</span></td>
                         </tr>
+                        <tr>
+                                <!-- <th class="close_th">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th> -->
+                                <th class="">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th>
+                                <td><span class="font_inherit f_bold red_t">July 11 (Thu)</span><p>*Late-breaking abstracts can only be submitted as poster exhibitions.</p></td>
+                            </tr>
                         <tr>
                             <th>Notification of Acceptance</th>
                             <td class="f_bold">End of every month<br><span class="font_12">*The scientific committee will conduct a qualification examination at the end of each month to facilitate attendee's pre-registration.</span></td>

@@ -97,6 +97,13 @@
 												ELSE '-'
 											END
 										) AS is_score3_text,
+										 (
+											CASE rr.is_score4
+												WHEN '1' THEN 'Applied'
+												WHEN '0' THEN 'Not applied'
+												ELSE '-'
+											END
+										) AS is_score4_text,
 										(
 											CASE
 												WHEN rr.status = '0'
@@ -121,7 +128,7 @@
 												WHEN rr.payment_methods = '2' THEN 'Onsite payment'
 											END
 										) AS payment_methods,
-										rr.etc1, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,
+										rr.etc1, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number, rr.etc5,
 										rr.etc4, rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn, rr.special_request_food,
 										IFNULL(rr.promotion_code, '-') AS promotion_code, IFNULL(rr.recommended_by, '-') AS recommended_by,
 										(
@@ -188,7 +195,7 @@
 	$html .= '<tr class="tr_center">';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="3">Registration</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="19">Participants Inforatmion</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">평점신청(Korean Only)</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="10">평점신청(Korean Only)</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">Payment Information</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">Others</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;"></th>';
@@ -224,6 +231,8 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">영양사자격번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">임상영양사자격번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">운동사 평점신청 여부</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">내과분과전문의 시험/갱신 평점신청 여부</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">내과전문의 면허번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제상태</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록비</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제일</th>';
@@ -346,6 +355,7 @@
 		$specialty_number = $rl['specialty_number'] ?? 'Not applicable';
 		$nutritionist_number = $rl['nutritionist_number'] ?? 'Not applicable';
         $dietitian_number = $rl['dietitian_number'] ?? 'Not applicable';
+        $etc5 = $rl['etc5'] ?? 'Not applicable';
 
         $special_request_food = "";
         if($rl['special_request_food'] === '0'){
@@ -363,6 +373,7 @@
 		$is_score1 = ($rl['is_score1_text'] == 'Applied') ? 'Y' : 'N';
 		$is_score2 = ($rl['is_score2_text'] == 'Applied') ? 'Y' : 'N';
 		$is_score3 = ($rl['is_score3_text'] == 'Applied') ? 'Y' : 'N';
+		$is_score4 = ($rl['is_score4_text'] == 'Applied') ? 'Y' : 'N';
 
 		$html .= '<tr class="tr_center">';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.($rk + 1).'</td>';
@@ -395,6 +406,8 @@
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $nutritionist_number .'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin; mso-number-format:\@">'. $dietitian_number.'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$is_score2.'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$is_score4.'</td>';
+		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'. $etc5.'</td>';
 		// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$is_exercise.'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_status"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';

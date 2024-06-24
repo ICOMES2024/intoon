@@ -332,7 +332,7 @@ if ($during_yn !== "Y") {
 							</p>
 							<input type="text" name="licence_number" id="licence_number" class="under_50 input_license" value="<?=$prev["is_score"] == 1 ? $prev["licence_number"] ?? "" : ""?>">
 						</li>
-						<li class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
+						<li style="display: none;" class="review_sub_list <?=($prev["is_score"] == 1 ? "" : "hidden")?>">
 							<p class="label">
 								전문의 번호 <span class="red_txt">*</span>
 								<input type="checkbox" id="app2" class="checkbox" <?=$prev["is_score"] == 1  && ! $prev["specialty_number"] ? "checked" : ""?>>
@@ -416,6 +416,35 @@ if ($during_yn !== "Y") {
 											</ul>
 										</div>
 									</div>
+						</li>
+
+							<!-- [240624] sujeong / 내과분과전문의 시험/갱신 평점신청  추가 -->
+							<li>
+							<p class='label'>내과분과전문의 시험/갱신 평점신청 <span class='red_txt'>*</span></p>
+									<div>
+										<div class='radio_wrap'>
+											<ul class='flex'>
+												<li>
+													<input type='radio' class='new_radio registration_check' id='radio9' name='review4' value='1' <?=($prev["is_score4"] == 1 ? "checked" : "")?>>
+													<label for='radio9'><i></i>필요</label>
+												</li>
+												<li>
+													<input type='radio' class='new_radio registration_check' id='radio10' name='review4' value='0' <?=($prev["is_score4"] == 0 ? "checked" : "")?>>
+													<label for='radio10'><i></i>불필요</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+						</li>
+						<li class="review_sub_list_2 <?=($prev["is_score4"] == 1 ? "" : "hidden")?>">
+							<p class="label">
+								내과전문의 면허번호 <span class="red_txt">*</span>
+								<input type="checkbox" id="app5" class="checkbox" <?=$prev["is_score4"] == 1  && ! $prev["etc5"] ? "checked" : ""?>>
+								<label for="app5">
+									<i></i> <?=$locale("not_applicable")?>
+								</label>
+							</p>
+							<input type="text" name="etc5" id="etc5" class="under_50 input_license" value="<?=$prev["is_score4"] == 1 ? $prev["etc5"] ?? "" : ""?>">
 						</li>
 					<?php }?>
                     <li>
@@ -762,6 +791,22 @@ if ($during_yn !== "Y") {
 
 			if(checked){
 				$(this).parent().next('input').val("");
+			}
+		});
+
+
+		//[240624] sujeong / 내과전문의 면허번호 추가
+		$('input[name=review4]').on("change", function() {
+			if($('input[name=review4]:checked').val() == '1'){
+				$(".review_sub_list_2").removeClass("hidden");
+			}else{
+				// init
+				$(".review_sub_list_2 input[type=text]").val("");
+				$(".review_sub_list_2 input[type=checkbox]").prop("checked", false);
+
+				if(!$(".review_sub_list_2").hasClass("hidden")){
+					$(".review_sub_list_2").addClass("hidden");
+				}
 			}
 		});
 

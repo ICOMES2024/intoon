@@ -82,7 +82,7 @@ $(document).ready(function(){
 					},
 					dataType : "JSON",
 					success : function(res){
-
+							console.log(res)
 						if(res.code == 200) {
 							var registration_idx = res.registration_idx;
 							var reg_promotion_code = $("input[name=promotion_code]").val();

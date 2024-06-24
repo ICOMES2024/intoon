@@ -392,6 +392,7 @@ if($language == "ko") {
 			$specialty_number = $data["specialty_number"] ? $data["specialty_number"] : "Not applicable";
 			$nutritionist_number = $data["nutritionist_number"] ? $data["nutritionist_number"] : "Not applicable";
 			$dietitian_number = $data["dietitian_number"] ? $data["dietitian_number"] : "Not applicable";
+			$etc5 = $data["etc5"] ? $data["etc5"] : "Not applicable";
 
 			$member_type = isset($data["member_type"]) ? $data["member_type"] : "";
 
@@ -436,6 +437,14 @@ if($language == "ko") {
 			//운동사 평점신청
 			$is_score2 = $data["is_score2"] ?? "";
 			$is_score2 = ($is_score2 == 1) ? "필요" : "불필요";
+
+			//내과전공의 외부학술회의 평점신청
+			$is_score3 = $data["is_score3"] ?? "";
+			$is_score3 = ($is_score3 == 1) ? "필요" : "불필요";
+
+			//내과분과전문의 시험/갱신 평점신청
+			$is_score4 = $data["is_score4"] ?? "";
+			$is_score4 = ($is_score4 == 1) ? "필요" : "불필요";
 
 			/*
 			$member_status = $data["member_status"] ?? "-";
@@ -499,6 +508,18 @@ if($language == "ko") {
 								<tr style='border-bottom:1px solid #000;'>
 									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>운동사 평점신청</th>
 									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$is_score2}</td>
+								</tr>
+								<tr style='border-bottom:1px solid #000;'>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>내과전공의 외부학술회의 평점신청</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$is_score3}</td>
+								</tr>
+								<tr style='border-bottom:1px solid #000;'>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>내과분과전문의 시험/갱신 평점신청</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$is_score4}</td>
+								</tr>
+								<tr style='border-bottom:1px solid #000;'>
+									<th style='width:150px; text-align:left; font-size:14px; padding:10px;border-bottom:1px solid #000;'>내과전문의 면허번호</th>
+									<td style='font-size:14px; padding:10px;border-left:1px solid #000;border-bottom:1px solid #000;'>{$etc5}</td>
 								</tr>
 							   ";
 			}

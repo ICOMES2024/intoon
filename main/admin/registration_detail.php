@@ -27,7 +27,7 @@
 											m.member_idx, m.member_email, m.member_name, m.member_nation, 
 											DATE(rr.register_date) AS register_date, rr.email AS registration_email, CONCAT(rr.first_name,' ',rr.last_name) AS registration_name, rr.phone,
 											rr.affiliation, rr.department, rr.licence_number, rr.specialty_number, rr.nutritionist_number, rr.dietitian_number,rr.academy_number,
-											rr.etc4, 
+											rr.etc4, rr.etc5, 
 											rr.welcome_reception_yn,
 											rr.day2_breakfast_yn,
 											rr.day2_luncheon_yn,
@@ -99,6 +99,13 @@
 												THEN 'Not applied'
 												ELSE '-'
 											END) AS is_score3_text,
+											(CASE
+												WHEN rr.is_score4 = 1
+												THEN 'Applied'
+												WHEN rr.is_score4 = 0
+												THEN 'Not applied'
+												ELSE '-'
+											END) AS is_score4_text,
 										    (
 											CASE
 												WHEN rr.payment_methods = '0' THEN 'Credit card'
@@ -163,6 +170,7 @@
 	$specialty_number = isset($registration_detail["specialty_number"]) ? $registration_detail["specialty_number"] : "-";
 	$nutritionist_number = isset($registration_detail["nutritionist_number"]) ? $registration_detail["nutritionist_number"] : "-";
 	$dietitian_number = isset($registration_detail["dietitian_number"]) ? $registration_detail["dietitian_number"] : "-";
+	$etc5 = isset($registration_detail["etc5"]) ? $registration_detail["etc5"] : "-";
 	$academy_number = isset($registration_detail["academy_number"]) ? $registration_detail["academy_number"] : "-";
 	$registration_status = isset($registration_detail["registration_status"]) ? $registration_detail["registration_status"] : "";
 	$payment_date = isset($registration_detail["payment_date"]) ? $registration_detail["payment_date"] : "-";
@@ -200,6 +208,7 @@
 	$is_score1_text = isset($registration_detail["is_score1_text"]) ? $registration_detail["is_score1_text"] : "";
 	$is_score2_text = isset($registration_detail["is_score2_text"]) ? $registration_detail["is_score2_text"] : "";
 	$is_score3_text = isset($registration_detail["is_score3_text"]) ? $registration_detail["is_score3_text"] : "";
+	$is_score34_text = isset($registration_detail["is_score4_text"]) ? $registration_detail["is_score4_text"] : "";
 	$member_status_text = isset($registration_detail["member_status_text"]) ? $registration_detail["member_status_text"] : "";
 	$attendance_type_text = isset($registration_detail["attendance_type_text"]) ? $registration_detail["attendance_type_text"] : "";
 	$invitation_check_yn = isset($registration_detail["invitation_check_yn"]) ? $registration_detail["invitation_check_yn"] : "N";
@@ -401,6 +410,12 @@
 						<tr>
 							<th>내과전공의 외부학술회의<br>평점신청</th>
 							<td colspan="3"><?=$is_score3_text?></td>
+						</tr>
+						<tr>
+							<th>내과분과전문의 시험/갱신 평점신청</th>
+							<td><?=$is_score4_text?></td>
+							<th>내과전문의 면허번호</th>
+							<td><?=$etc5?></td>
 						</tr>
 						<tr>
 							<th>KSSO Member Status</th>
