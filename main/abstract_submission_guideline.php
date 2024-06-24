@@ -76,8 +76,9 @@ $info = sql_fetch($sql_info);
 								<td class="f_bold">Mid-February</td>
 							</tr>
 							<tr>
-								<th class="close_th">Abstract Submission<br class="br_mb_only"> Deadline</th>
-								<td><span class="font_inherit f_bold red_t">June 20 (Thu)</span></td>
+								<!-- <th class="close_th">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th> -->
+								<th class="">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th>
+								<td><span class="font_inherit f_bold red_t">July 11 (Thu)</span></td>
 							</tr>
 							<tr>
 								<th>Notification of<br class="br_mb_only"> Abstract Acceptance</th>
@@ -215,9 +216,9 @@ $info = sql_fetch($sql_info);
                         <tr>
                             <th>Presentation Type </th>
                             <td>
-                                <p>1) Oral Presentation</p>
-                                <p>2) Guided Poster Presentation</p>
-                                <p>3) Poster Exhibition <br />
+                                <!-- <p>1) Oral Presentation</p>
+                                <p>2) Guided Poster Presentation</p> -->
+                                <p>1) Poster Exhibition <br />
                                     (*Scientific Committee may change the presentation type by review.)
                                 </p>
                             </td>
