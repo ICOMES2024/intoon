@@ -156,7 +156,7 @@ section.container.login.bg {border: 0px;}
 
 /* main > Invited speaker */
 .dates_wrap {padding: 73px 0 76px;}
-.speakers_wrap {/*background-color: #F0F3F8;*/background-color: #FCF3E5; padding: 61px 0 0;}
+.speakers_wrap {/*background-color: #F0F3F8;*/background-color: #FCF3E5; padding: 30px 0 0;}
 .speakers_wrap .title {font-size:28px; margin-bottom: 15px;}
 /*.speakers_wrap_title {font-size: 44px; font-weight: bold; color: #000000; text-align: center; margin-bottom: 28px;}*/
 /* .main_speaker2 {display: flex;} */

@@ -15,6 +15,28 @@
                 <div class="tab_wrap">
                     <div class="tab_cont on">
                         <ul class="speaker_list">
+                        <li>
+                                <div class="top_wrap">
+                                <!-- [240424] sujeong / 임시 오픈 / style4.css //.invited_speaker .speaker_list > li h2:before border 주석 해제 필요 -->
+                                     <h2></h2>
+                                    <span class="date text_r">11:00-11:40,<br class="br_530_only"> Sep. 7 (Sat)</span>
+                                </div>
+                                <div class="bottom_wrap">
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_08.png">
+                                            <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-1.jpg"> -->
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                             <p class="">TBD</p> 
+                                            <div>
+                                                <h4 class="title">Cheol-Young Park</h4>
+                                                <h5>Sungkyunkwan University, Korea</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 							<li>
                                 <div class="top_wrap">
                                 <!-- [240424] sujeong / 임시 오픈 / style4.css //.invited_speaker .speaker_list > li h2:before border 주석 해제 필요 -->
