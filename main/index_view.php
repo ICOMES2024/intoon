@@ -122,31 +122,34 @@
 <!-- Plenary Speakers -->
  <div class="speakers_wrap">
 	<div class="container">
-		<h3 class="title">Plenary &amp; Keynote Lecture Speakers</h3>
-		<div class="">
-			<div class="main_speaker_wrap">
-				<div>
+		<h3 class="title">Key Speakers</h3>
+		<!-- <h3 class="title">Plenary &amp; Keynote Lecture Speakers</h3> -->
+		<div class="key_speaker_wrap">
+			<!-- <div class="main_speaker_wrap"> -->
+				<li>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_8-1.png"/>
+				</li>
+				<li>
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_1-6.png"/>
-				</div>
-				<div>
+				</li>
+				<li>
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_2-6.png"/>
-				</div>
-				<div>
+				</li>
+				<li>
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_3-6.png"/>
-				</div>
-				<div>
+				</li>
+				<li>
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_4-6.png"/>
-				</div>
-				<div>
+				</li>
+				<li>
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-6.png"/>
-				</div>
-				<div>
+				</li>
+				<li>
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_6-6.png"/>
-				</div>
-				<div>
+				</li>
+				<li>
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_7-6.png"/>
-				</div>
-			</div>
+				</li>
 			<!-- <div class="main_btn_wrap">
 				<button type="button" class="btn_circle_arrow"></button>
 			</div> -->
@@ -348,3 +351,35 @@
     });
 </script>
  -->
+
+ <script>
+		$('.key_speaker_wrap').slick({
+			dots: false,
+			infinite: true,
+			slidesToShow: 4,
+			arrows : true,
+			autoplay: true,
+			pauseOnHover : true,       
+			autoplaySpeed: 4000,
+			responsive: [
+				{
+					breakpoint: 1100,
+					settings: {
+						slidesToShow: 3
+					}
+					},
+					{
+					breakpoint: 780,
+					settings: {
+						slidesToShow: 2
+					}
+					},
+					{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1
+					}
+					}
+			]
+		});
+ </script>
