@@ -221,9 +221,9 @@ $info = sql_fetch($sql_info);
                         <tr>
                             <th>Presentation Type </th>
                             <td>
-                                <!-- <p>1) Oral Presentation</p>
-                                <p>2) Guided Poster Presentation</p> -->
-                                <p>1) Poster Exhibition <br />
+                                <p>1) Oral Presentation</p>
+                                <p>2) Guided Poster Presentation</p>
+                                <p>3) Poster Exhibition <br />
                                     (*Scientific Committee may change the presentation type by review.)
                                 </p>
                             </td>
@@ -262,7 +262,7 @@ $info = sql_fetch($sql_info);
                         </tr>
                         <tr>
                             <th>Modification</th>
-                            <td>Abstract review or modification will be available until the abstract submission deadline.</td>
+                            <td>Abstract review or modification will be available until the abstract submission deadline.<br/>If submitted abstracts are under evaluation for acceptance, modification is prohibited.<br/>If you need to make any changes, please email the secretariat. </td>
                         </tr>
                         <tr>
                             <th>Withdrawal</th>

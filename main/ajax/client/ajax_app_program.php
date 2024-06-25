@@ -498,6 +498,18 @@ else if($_POST["flag"] === "schedule"){
         }
     }
 }
+//[240625] sujeong / program_glance date focus
+else if($_POST["flag"]==="focus") {
+   $now_date = date("Y-m-d H:i:s");
+
+   $res = [
+    'code' => 200,
+    'msg' => "success",
+    'date' => $now_date
+    ];
+    echo json_encode($res);
+    exit;
+}
 
 
 
