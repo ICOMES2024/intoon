@@ -65,7 +65,7 @@
 							</tr>
 						</thead>
 						<!---------- DAY 1 ---------->
-						<tbody name="day" class="day_tbody day_1">
+						<tbody name="day" class="day_tbody day_1 day1">
 							<tr>
 								<td>
 									<div class="colons_div">15:00-16:30</div>
@@ -190,7 +190,7 @@
 								</th>
 							</tr>
 						</thead>
-						<tbody name="day" class="day_tbody day_2">
+						<tbody name="day" class="day_tbody day_2 day2">
 							<tr>
 								<td>
 									<div class="colons_div">07:30-08:20</div>
@@ -486,7 +486,7 @@
 								</th>
 							</tr>
 						</thead>
-						<tbody name="day" class="day_tbody day_3">
+						<tbody name="day" class="day_tbody day_3 day3">
 							<tr>
 								<td>
 									<div class="colons_div">07:30-08:20</div>
@@ -767,6 +767,115 @@
 <input type="hidden" name="session_app_type" value="<?= $session_app_type ?>">
 <script>
 $(document).ready(function() {
+	
+	//[240625] sujeong / app_program_glance date 받아오기
+	$.ajax({
+			url : PATH+"ajax/client/ajax_app_program.php",
+			type : "POST",
+			data : {
+				flag : "focus"
+			},
+			dataType : "JSON",
+			success : function(res){
+				if(res.code == 200) {
+					getTime(res.date)
+				}
+			}
+		});
+
+	function getTime(nowDate){
+
+		const day1Tbody = document.querySelector('.day1');
+		const day2Tbody = document.querySelector('.day2');
+		const day3Tbody = document.querySelector('.day3');
+		const day1TimeList = day1Tbody.querySelectorAll('.colons_div');
+		const day2TimeList = day2Tbody.querySelectorAll('.colons_div');
+		const day3TimeList = day3Tbody.querySelectorAll('.colons_div');
+
+		const date = nowDate.split(" ")[0];
+		const nowTime = new Date(nowDate)
+		//console.log(date)
+		if(date === "2024-09-05"){
+			//tbody 숨기기
+			$(".day_tbody").hide();
+			$(".day_tbody.day_1").show();
+
+			//day별 불 들어오게 하기
+			$(".app_tab").children().removeClass("on");
+			$(".app_tab").children().eq(1).addClass("on");
+			
+			//포커스 맞춰 스크롤 내리기
+			day1TimeList.forEach((timeDiv)=>{
+				const startTime = new Date(`2024-09-05 ${timeDiv.innerText.split("-")[0]}`)
+				const endTime = new Date(`2024-09-05 ${timeDiv.innerText.split("-")[1]}`)
+				if(searchDate(startTime, endTime, nowTime)){
+					focusTable(timeDiv)
+				}	
+			})
+		// }else if(date === "2024-06-25"){
+		}else if(date === "2024-09-06"){
+			//tbody 숨기기
+			$(".day_tbody").hide();
+			$(".day_tbody.day_2").show();
+
+			//day별 불 들어오게 하기
+			$(".app_tab").children().removeClass("on");
+			$(".app_tab").children().eq(2).addClass("on");
+
+			//포커스 맞춰 스크롤 내리기
+			day2TimeList.forEach((timeDiv)=>{
+				const startTime = new Date(`2024-09-06 ${timeDiv.innerText.split("-")[0]}`)
+				const endTime = new Date(`2024-09-06 ${timeDiv.innerText.split("-")[1]}`)
+				if(searchDate(startTime, endTime, nowTime)){
+					focusTable(timeDiv)
+				}	
+			})
+		}else if(date === "2024-09-07"){
+			//tbody 숨기기
+			$(".day_tbody").hide();
+			$(".day_tbody.day_3").show();
+
+			//day별 불 들어오게 하기
+			$(".app_tab").children().removeClass("on");
+			$(".app_tab").children().eq(3).addClass("on");
+
+			//포커스 맞춰 스크롤 내리기
+			day3TimeList.forEach((timeDiv)=>{
+				const startTime = new Date(`2024-09-07 ${timeDiv.innerText.split("-")[0]}`)
+				const endTime = new Date(`2024-09-07 ${timeDiv.innerText.split("-")[1]}`)
+				if(searchDate(startTime, endTime, nowTime)){
+					focusTable(timeDiv)
+				}	
+			})
+		}
+	}
+
+	//date1 - 시작시간
+	//date2 - 종료시간
+	//date3 - 현재시간
+	function searchDate(date1, date2, date3){
+		if(date1.getTime() <= date3.getTime() && date2.getTime() >= date3.getTime()){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	function focusTable(timeDiv){
+		//console.log(timeDiv)
+		// 요소의 뷰포트 내 위치를 가져옵니다.
+		const rect = timeDiv.getBoundingClientRect();
+		const absoluteElementTop = rect.top + window.pageYOffset;
+		const offset = window.innerHeight / 2 - rect.height / 2;
+
+		// 중간에 위치하도록 조정된 절대 위치를 계산합니다.
+		const scrollToPosition = absoluteElementTop - offset;
+
+		// 조정된 위치로 스크롤합니다.
+		window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
+	}
+
+
 	/*$(window).resize(function(){
 		if ($(window).width() <= 480) {
 			var table_width = 1200 * 0.71;
@@ -898,8 +1007,9 @@ $(document).ready(function() {
 			}
 		}
 	})
-
 });
+
+
 
 //[240418] sujeong / 이동 주석
 function table_location(event, _this, e, day, this_name) {

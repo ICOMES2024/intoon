@@ -70,6 +70,12 @@
 							<td>없음</td>
 							<td colspan="2">40평점<span class="red_t bold">(예정)</span><br/><span class="font_small">* 부분 평점 없음. 6시간 참석 필수</span></td>
 						</tr>
+						<tr>
+							<td>대한내과학회 분과전문의 자격갱신</td>
+							<td>최대 1평점<span class="red_t bold">(예정)</span></td>
+							<td>최대 1평점<span class="red_t bold">(예정)</span></td>
+							<td>최대 1평점<span class="red_t bold">(예정)</span></td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -149,6 +155,7 @@
                     <li class="red_txt bold">• 내과전공의 외부학술회의 평점은 '전공의'만 평점 부여 가능합니다.</li>
 					<li>• 학술대회 종료 후, 학회 사무국에서 취합된 명단을 의사협회 연수 교육 시스템에 등록하여 자동으로 평점이 부여됩니다(약 4주 소요).</li>
                     <li>• 개인에게 평점카드를 발급하지 않습니다.</li>
+					<li class="red_txt bold">• 내과분과전공의 시험/갱신 평점은 체류 시간 상관없이 참석 확인 시 1평점이 부여됩니다.</li>
 				</ul>
 			</div>
 		</div>

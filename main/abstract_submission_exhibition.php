@@ -57,31 +57,31 @@ $info = sql_fetch($sql_info);
                             <col>
                         </colgroup>
                         <tr>
-                            <th>Abstract Submission System Open</th>
-                            <td class="f_bold">Mid-February</td>
-                        </tr>
-                        <tr>
-                            <th class="close_th">Abstract Submission Deadline</th>
-                            <!-- <th class="close_th">Abstract Submission Deadline</th> -->
-                            <td><span class="font_inherit red_t f_bold">June 20 (Thu)</span></td>
-                        </tr>
-                        <tr>
-                            <th>Notification of Abstract Acceptance</th>
-                            <td class="f_bold">July 10 (Wed)<br><span class="font_12">*Details regarding presentation type and guidelines will be provided.</span></td>
-                        </tr>
-                        <tr>
-                                <!-- <th class="close_th">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th> -->
+								<th>Abstract Submission<br class="br_mb_only"> System Open</th>
+								<td class="f_bold">Mid-February</td>
+							</tr>
+							<tr>
+								<!-- <th class="close_th">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th> -->
+								<th class="close_th">Abstract Submission<br class="br_mb_only"> Deadline</th>
+								<td><span class="font_inherit f_bold red_t">June 20 (Thu)</span></td>
+							</tr>
+							<tr>
+                                <th>Notification of<br class="br_mb_only"> Abstract Acceptance</th>
+								<td><span class="font_inherit f_bold">July 10 (Wed)</span><br>*Details regarding presentation type and guidelines will be provided.<br>*Abstracts submitted by June 20 will be notified of acceptance on July 10.</td>
+							</tr>
+                            <tr>
                                 <th class="">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th>
                                 <td><span class="font_inherit f_bold red_t">July 11 (Thu)</span><p>*Late-breaking abstracts can only be submitted as poster exhibitions.</p></td>
                             </tr>
-                        <tr>
-                            <th>Notification of Acceptance</th>
-                            <td class="f_bold">End of every month<br><span class="font_12">*The scientific committee will conduct a qualification examination at the end of each month to facilitate attendee's pre-registration.</span></td>
-                        </tr>
-                        <tr>
-                            <th>Registration Deadline for Approved Abstract Presenters</th>
-                            <td class="f_bold">August 1 (Thu)</td>
-                        </tr>
+                            <tr>
+								<th>Notification of<br class="br_mb_only"> Late-breaking Abstract Acceptance</th>
+								<!-- <td><span class="font_inherit f_bold">End of every month</span><br>*The scientific committee will conduct a qualification examination at the end of each month <br>to facilitate attendee's pre-registration.</td> -->
+                                 <td><span class="font_inherit f_bold">July 30 (Tue)</span></td>
+							</tr>
+							<tr>
+								<th>Registration Deadline for<br class="br_mb_only"> Approved Abstract Presenters</th>
+								<td>August 1 (Thu)</td>
+							</tr>
                     </table>
                 </div>
             </div>
