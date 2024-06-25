@@ -80,7 +80,7 @@ echo '<script type="text/javascript">
                 <div class="tab_wrap">
                     <div class="tab_cont on">
                         <ul class="program_detail_ul">
-                            <li name="jomes">
+                        <li name="committee_1">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -91,16 +91,15 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>15:00-16:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Best Article in JOMES</p>
-                                                    <!-- <p><span class="bold">Chairpersons : 김성수</span> (대한비만학회 회장), <span
-                                                            class="bold">김종화</span> (부천세종병원 내분비내과)</p> -->
-                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <p class="font_20 bold">Committee Session</p>
+                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
+                                                        University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                  
+                                                    will be updated.
                                                 </td>
                                             </tr>
                                             <tr>
@@ -112,36 +111,23 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <!-- <tr>
-                                                                    <td>15:10-15:25</td>
-                                                                    <td class="bold">
-                                                                        학회에서 바라는 비만 관리를 위한 정부 정책 방향
-                                                                    </td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">김경곤</p>(대한비만학회 부회장)
-                                                                    </td>
-                                                                </tr> -->
                                                                 <tr>
                                                                     <td>15:00-15:30</td>
-                                                                    <td class="bold">
-                                                                      
-                                                                    </td>
+                                                                    <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>15:30-16:00</td>
-                                                                    <td class="bold">
-                                                                    </td>
+                                                                    <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:00-16:30</td>
-                                                                    <td class="bold">
-                                                                     </td>
+                                                                    <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
@@ -398,14 +384,14 @@ echo '<script type="text/javascript">
                                                                     <td>15:00-15:30</td>
                                                                     <td class="bold"></td></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Masato Furuhashi</p>(Sapporo Medical University School of Medicine, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>15:30-16:00</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University Hospital, Taipei, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -413,7 +399,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Hye Won Lee</p>(Yonsei University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -478,21 +464,21 @@ echo '<script type="text/javascript">
                                                                     <td>16:40-17:10</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Hisanori Goto</p>(Kanazawa University Graduate School of Medical Sciences, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:10-17:40</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Chia-Wen Lu</p>(National Taiwan Sport University, Taoyuan, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:40-18:10</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Molecular Pathophysiology Underlying MASH Complicated by Diabetes</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Eun Hee Koh</p>(University of Ulsan College of Medicine, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -604,7 +590,7 @@ echo '<script type="text/javascript">
                 <!-- Day 1 - Room 3 -->
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-                        <li name="committee_1">
+                        <li name="jomes">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -613,17 +599,18 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="skyblue_bg">
-                                                <td>15:00-16:30</td>
+                                                <td>15:00-16:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Committee Session</p>
-                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
-                                                        University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <p class="font_20 bold">Best Article in JOMES</p>
+                                                    <!-- <p><span class="bold">Chairpersons : 김성수</span> (대한비만학회 회장), <span
+                                                            class="bold">김종화</span> (부천세종병원 내분비내과)</p> -->
+                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                  
                                                 </td>
                                             </tr>
                                             <tr>
@@ -635,23 +622,54 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
-                                                                    <td>15:00-15:30</td>
-                                                                    <td class="bold"></td>
+                                                                <!-- <tr>
+                                                                    <td>15:10-15:25</td>
+                                                                    <td class="bold">
+                                                                        학회에서 바라는 비만 관리를 위한 정부 정책 방향
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">김경곤</p>(대한비만학회 부회장)
+                                                                    </td>
+                                                                </tr> -->
+                                                                <tr>
+                                                                    <td>15:00-15:15</td>
+                                                                    <td class="bold">
+                                                                      
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Su-Min Jeong</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:30-16:00</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>15:15-15:30</td>
+                                                                    <td class="bold">
+                                                                      
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jung Eun Lee</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:00-16:30</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>15:30-15:45</td>
+                                                                    <td class="bold">
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Yun-A Shin</p>(Dankook University, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>15:45-16:00</td>
+                                                                    <td class="bold">
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Jieun Lee</p>(Inje University Ilsan Paik Hospital, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:00-16:10</td>
+                                                                    <td class="bold">
+                                                                    Award Ceremony
+                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
@@ -665,6 +683,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+                       
                             <li name="joint_symposium">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -843,35 +862,18 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon
                                                         University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
-                                                        Korea, Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Ki Woo Kim (Yonsei University, College of Dentistry, Korea)</p>
                                                     <ul>
-                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
-                                                            the fields of physiology and pharmacology at La Trobe
-                                                            University, Australia, is pushing the boundaries of
-                                                            neuroscience and metabolism. In his upcoming lecture, he
-                                                            will discuss how his work on intermittent metabolic
-                                                            switching has enhanced our comprehension of its effect on
-                                                            brain health, paving the way for potential therapeutic
-                                                            interventions.</li>
-                                                        <li>His recent publication in Theranostics, titled
-                                                            "Time-restricted feeding modulates the DNA methylation
-                                                            landscape, attenuates hallmark neuropathology and cognitive
-                                                            impairment in a mouse model of vascular dementia," has
-                                                            presented novel insights into the therapeutic potential of
-                                                            intermittent metabolic switching, offering promising
-                                                            strategies for managing and potentially reversing cognitive
-                                                            impairment in dementia.</li>
-                                                        <li>Further expanding our understanding, Professor Arumugam's
-                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
-                                                            Adaptive and Pathological Modification by Metabolic States,"
-                                                            continues to revolutionize our perspective on the role of
-                                                            metabolism in brain aging.</li>
+                                                        <li>In this session, Dr. Elmquist, Dean of Research at UT-Southwestern Medical Center and Director of the Center for Hypothalamic Research, will introduce a new platform for identifying key factors in obesity and metabolic regulation through the hypothalamus. He will explain the identified factors and present the latest research on how these factors influence whole-body homeostasis. This presentation will provide crucial insights into the mechanisms of hypothalamic function and the regulation of obesity and metabolic disorders, greatly benefiting conference attendees.
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Coordination of metabolism, arousal, and reward by orexin/hypocretin neurons<br />2. Leptin and brain-adipose crosstalks</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -999,6 +1001,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
+                                                                    Recent Advances in Nutrigenomics of Obesity and Weight Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yoon Jung Park</p>(Ewha Womans University, Korea)
@@ -1007,9 +1010,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
+                                                                    Precision Diabetes Care through Integrative Life-Log Data
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jun Yeop Lee</p>(The Catholic University of Korea, Korea)
+                                                                        <p class="bold">Joonyub Lee</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1726,35 +1730,18 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon
                                                         University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
-                                                        Korea, Republic of Korea)</p>
+                                                <p class="bold">Organizer : Ki Woo Kim (Yonsei University, College of Dentistry, Korea)</p>
                                                     <ul>
-                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
-                                                            the fields of physiology and pharmacology at La Trobe
-                                                            University, Australia, is pushing the boundaries of
-                                                            neuroscience and metabolism. In his upcoming lecture, he
-                                                            will discuss how his work on intermittent metabolic
-                                                            switching has enhanced our comprehension of its effect on
-                                                            brain health, paving the way for potential therapeutic
-                                                            interventions.</li>
-                                                        <li>His recent publication in Theranostics, titled
-                                                            "Time-restricted feeding modulates the DNA methylation
-                                                            landscape, attenuates hallmark neuropathology and cognitive
-                                                            impairment in a mouse model of vascular dementia," has
-                                                            presented novel insights into the therapeutic potential of
-                                                            intermittent metabolic switching, offering promising
-                                                            strategies for managing and potentially reversing cognitive
-                                                            impairment in dementia.</li>
-                                                        <li>Further expanding our understanding, Professor Arumugam's
-                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
-                                                            Adaptive and Pathological Modification by Metabolic States,"
-                                                            continues to revolutionize our perspective on the role of
-                                                            metabolism in brain aging.</li>
+                                                        <li>In this session, Dr. Elmquist, Dean of Research at UT-Southwestern Medical Center and Director of the Center for Hypothalamic Research, will introduce a new platform for identifying key factors in obesity and metabolic regulation through the hypothalamus. He will explain the identified factors and present the latest research on how these factors influence whole-body homeostasis. This presentation will provide crucial insights into the mechanisms of hypothalamic function and the regulation of obesity and metabolic disorders, greatly benefiting conference attendees.
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Coordination of metabolism, arousal, and reward by orexin/hypocretin neurons<br />2. Leptin and brain-adipose crosstalks</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1868,7 +1855,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                    Cross-talk Between the Gut (Microbiota) and Peripheral Organs in Obesity
+                                                                    Gut Hormone, Brain, and Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Chih-Yen Chen</p>(National Yang Ming Chiao Tung University, Taiwan)
@@ -2385,7 +2372,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    Metabolic Health and Risk of Breast Cancer: A Focus on Impact of Body Composition and Waist Circumference
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Mai Thi Xuan Tran</p>(Hanyang University, Korea)
@@ -2584,35 +2571,18 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon
                                                         University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
-                                                        Korea, Republic of Korea)</p>
+                                                <p class="bold">Organizer : Ki Woo Kim (Yonsei University, College of Dentistry, Korea)</p>
                                                     <ul>
-                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
-                                                            the fields of physiology and pharmacology at La Trobe
-                                                            University, Australia, is pushing the boundaries of
-                                                            neuroscience and metabolism. In his upcoming lecture, he
-                                                            will discuss how his work on intermittent metabolic
-                                                            switching has enhanced our comprehension of its effect on
-                                                            brain health, paving the way for potential therapeutic
-                                                            interventions.</li>
-                                                        <li>His recent publication in Theranostics, titled
-                                                            "Time-restricted feeding modulates the DNA methylation
-                                                            landscape, attenuates hallmark neuropathology and cognitive
-                                                            impairment in a mouse model of vascular dementia," has
-                                                            presented novel insights into the therapeutic potential of
-                                                            intermittent metabolic switching, offering promising
-                                                            strategies for managing and potentially reversing cognitive
-                                                            impairment in dementia.</li>
-                                                        <li>Further expanding our understanding, Professor Arumugam's
-                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
-                                                            Adaptive and Pathological Modification by Metabolic States,"
-                                                            continues to revolutionize our perspective on the role of
-                                                            metabolism in brain aging.</li>
+                                                        <li>In this session, Dr. Elmquist, Dean of Research at UT-Southwestern Medical Center and Director of the Center for Hypothalamic Research, will introduce a new platform for identifying key factors in obesity and metabolic regulation through the hypothalamus. He will explain the identified factors and present the latest research on how these factors influence whole-body homeostasis. This presentation will provide crucial insights into the mechanisms of hypothalamic function and the regulation of obesity and metabolic disorders, greatly benefiting conference attendees.
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Coordination of metabolism, arousal, and reward by orexin/hypocretin neurons<br />2. Leptin and brain-adipose crosstalks</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -2684,32 +2654,15 @@ echo '<script type="text/javascript">
                                                         <span class="bold">Sang-Yong Kim</span> (Chosun University,
                                                         Republic of Korea)
                                                     </p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Sang Youk Rhee (Kyung Hee University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Sang Youl Rhee (Kyung Hee University, Korea)</p>
                                                     <ul>
-                                                        <li>This session aims to explore the latest status of
-                                                            intervention methodology based on Information and
-                                                            Communication Technologies (ICTs) for the management of
-                                                            diverse chronic diseases, such as obesity and metabolic
-                                                            syndrome. First, Professor Ki-Hyun Jeon from Seoul National
-                                                            University will open the session by introducing the latest
-                                                            research advancements in the related field, including his
-                                                            own studies. Doctor Laura Falvey from Reset Health will then
-                                                            present highly reliable evidence for the remarkable effects
-                                                            of digital treatment methods based on the results of
-                                                            randomized controlled trials (RCTs) from the Roczen
-                                                            Programme, which were recently released at the European
-                                                            Congress on Obesity. Lastly, Professor Sang Youl Rhee from
-                                                            Kyung Hee University will discuss the effectiveness of the
-                                                            ICT-based intervention and the necessary approaches for
-                                                            their wide use in various chronic disease patients in the
-                                                            future, drawing on a wealth of literature introduced thus
-                                                            far, including systematic literature reviews.</li>
+                                                        <li>This session will explore how digital therapeutics can contribute to treating and managing metabolic diseases. Prof. Sang Youl Rhee from Kyung Hee University will discuss the possibilities of digital therapeutics, Prof. Hyung Jin Choi from Seoul National University will delve into the psychological basis of their effectiveness, and Dr. Min Kyu Han from Kakao Healthcare will suggest ways to integrate digital therapeutics into conventional medical settings.
+                                                        </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -3282,6 +3235,84 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+                            <li name="easo_presidential_lecture">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="dark_pink_bg">
+                                                <td>18:05-18:40</td>
+                                                <td>
+                                                    <p class="font_20 bold">EASO Presidential Lecture</p>
+                                                    <!-- <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon
+                                                        University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
+                                                        Korea, Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
+                                                            the fields of physiology and pharmacology at La Trobe
+                                                            University, Australia, is pushing the boundaries of
+                                                            neuroscience and metabolism. In his upcoming lecture, he
+                                                            will discuss how his work on intermittent metabolic
+                                                            switching has enhanced our comprehension of its effect on
+                                                            brain health, paving the way for potential therapeutic
+                                                            interventions.</li>
+                                                        <li>His recent publication in Theranostics, titled
+                                                            "Time-restricted feeding modulates the DNA methylation
+                                                            landscape, attenuates hallmark neuropathology and cognitive
+                                                            impairment in a mouse model of vascular dementia," has
+                                                            presented novel insights into the therapeutic potential of
+                                                            intermittent metabolic switching, offering promising
+                                                            strategies for managing and potentially reversing cognitive
+                                                            impairment in dementia.</li>
+                                                        <li>Further expanding our understanding, Professor Arumugam's
+                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
+                                                            Adaptive and Pathological Modification by Metabolic States,"
+                                                            continues to revolutionize our perspective on the role of
+                                                            metabolism in brain aging.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>18:05-18:35</td>
+                                                                    <td class="bold">
+                                                                  
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Volkan Yumuk</p>(Turkish Association for the Study of Obesity, Turkey)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>09:00-09:10</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
@@ -3624,40 +3655,19 @@ echo '<script type="text/javascript">
                                                     <!-- <p><span class="bold">Chairpersons : Kee-Hyoung Lee</span> (Korea
                                                         University, Republic of Korea), <br><span class="bold">So
                                                             ChungChung</span> (Konkuk University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Jae Hyun Kim (Seoul National University,
-                                                        Republic of Korea), Yong Hee Hong (Soonchunhyang University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer: Jaehyun Kim (Seoul National University, Korea), Yong Hee Hong (Soonchunhyang University, Korea)</p>
                                                     <ul>
-                                                        <li>As obesity in children and adolescents increases, we should
-                                                            take note of its development into obesity in adults, as well
-                                                            as its connection with type 2 diabetes in adolescents and
-                                                            young adults. In this session, we will explore the lifecycle
-                                                            perspective of obesity and type 2 diabetes, starting from
-                                                            childhood to adulthood, and gain an understanding of glucose
-                                                            patterns in children and adolescents with obesity and
-                                                            diabetes through continuous glucose measurement.
-                                                            Additionally, we will discuss recent advancements in new
-                                                            biomarkers associated with type 2 diabetes in obese children
-                                                            and adolescents.</li>
+                                                        <li>Pediatric obesity is a chronic disease that requires long-term management throughout life and must be managed according to the special characteristics of children and adolescents. First, we would like to find out how the prevention and management of obesity in children and adolescents is performing in Korea and how it should be managed. Next, we will figure out nutritional intervention strategies for obesity in children and adolescents and the role of nutritionists, and finally, we will look at adolescent obesity, which is difficult to manage and requires a complex approach from multiple aspects.
+                                                        </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Choi D, Kim S, Woo J, et al. Weight Change Alters the
-                                                            Small RNA Profile of Urinary Extracellular Vesicles in
-                                                            Obesity. Obes Facts. 2022;15(2):292-301.<br /> 2. Choi IH,
-                                                            Yeom SW, Kim SY, You J, Kim JS, Kim M. Analysis of
-                                                            Cause-of-Death Mortality in Children and Young Adults with
-                                                            Diabetes: A Nationwide 10-Year Follow-Up Cohort Study.
-                                                            Children (Basel). 2023;10(2):358.<br /> 3. Leister KR,
-                                                            Cilhoroz BT, Rosenberg J, Brown EC, Kim JY. Metabolic
-                                                            syndrome: Operational definitions and aerobic and resistance
-                                                            training benefits on physical and metabolic health in
-                                                            children and adolescents. Diabetes Metab Syndr.
-                                                            2022;16(6):102530.
+                                                            1. Bensignor MO, Arslanian S, Vajravelu ME. Semaglutide for management of obesity in adolescents: efficacy, safety, and considerations for clinical practice. Curr Opin Pediatr. 2024 May 16. doi: 10.1097/MOP.0000000000001365.<br />2. Hannon TS, Arslanian SA. Obesity in Adolescents. N Engl J Med. 2023 Jul 20;389(3):251-261
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -4586,32 +4596,19 @@ echo '<script type="text/javascript">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 5</p>
-                                                    <!-- <p><span class="bold">Chairperson : Soon-Jib Yoo</span> (The
-                                                        Catholic University of Korea, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Korea)</p>
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Hyung Jin Choi (Seoul National
-                                                        University, Republic of Korea)</p>
+                                                    <p class="bold">Organizer: Il-Young Kim (Gachon University School of Medicine, Korea)</p>
                                                     <ul>
-                                                        <li>Professor Zachary Knight is a pioneer in the field of
-                                                            elucidating the neural mechanisms of appetite, homeostasis,
-                                                            and obesity, having published some of the finest research in
-                                                            Nature, Cell, and elsewhere over the past few years. His use
-                                                            of potent neuroscience tools is always accompanied by a
-                                                            profound understanding of concepts related to appetite. In
-                                                            this keynote lecture, he will present his most recent
-                                                            findings regarding the function of neural circuits in the
-                                                            brainstem in regulating eating behavior.</li>
+                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this keynote lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
+                                                        </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Nature. Dopamine subsystems that track internal states.
-                                                            2022<br />
-                                                            2. Cell. Genetic identification of vagal sensory neurons
-                                                            that control feeding. 2019
-                                                        </li>
+                                                            1. Evans WJ, Cawthon PM. D(3)Creatine Dilution as a Direct, Non-invasive and Accurate Measurement of Muscle Mass for Aging Research. Calcif Tissue Int. 2023<br />2. Cawthon PM, Blackwell T, Cummings SR, et al. Muscle mass assessed by D3-Creatine dilution method and incident self-reported disability and mortality in a prospective observational study of community dwelling ol0der men. J Gerontol A Biol Sci Med Sci. 2020 <br />3. Orwoll ES, Peters KE, Hellerstein M, Cummings SR, Evans WJ, Cawthon PM. The Importance of Muscle Versus Fat Mass in Sarcopenic Obesity: A Re-evaluation Using D3-Creatine Muscle Mass Versus DXA Lean Mass Measurements. J Gerontol A Biol Sci Med Sci. 2020 </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -5336,32 +5333,19 @@ echo '<script type="text/javascript">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 5</p>
-                                                    <!-- <p><span class="bold">Chairperson : Soon-Jib Yoo</span> (The
-                                                        Catholic University of Korea, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Korea)</p>
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Hyung Jin Choi (Seoul National
-                                                        University, Republic of Korea)</p>
-                                                    <ul>
-                                                        <li>Professor Zachary Knight is a pioneer in the field of
-                                                            elucidating the neural mechanisms of appetite, homeostasis,
-                                                            and obesity, having published some of the finest research in
-                                                            Nature, Cell, and elsewhere over the past few years. His use
-                                                            of potent neuroscience tools is always accompanied by a
-                                                            profound understanding of concepts related to appetite. In
-                                                            this keynote lecture, he will present his most recent
-                                                            findings regarding the function of neural circuits in the
-                                                            brainstem in regulating eating behavior.</li>
+                                                <p class="bold">Organizer: Il-Young Kim (Gachon University School of Medicine, Korea)</p>
+                                                        <ul>
+                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this keynote lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
+                                                        </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Nature. Dopamine subsystems that track internal states.
-                                                            2022<br />
-                                                            2. Cell. Genetic identification of vagal sensory neurons
-                                                            that control feeding. 2019
-                                                        </li>
+                                                            1. Evans WJ, Cawthon PM. D(3)Creatine Dilution as a Direct, Non-invasive and Accurate Measurement of Muscle Mass for Aging Research. Calcif Tissue Int. 2023<br />2. Cawthon PM, Blackwell T, Cummings SR, et al. Muscle mass assessed by D3-Creatine dilution method and incident self-reported disability and mortality in a prospective observational study of community dwelling ol0der men. J Gerontol A Biol Sci Med Sci. 2020 <br />3. Orwoll ES, Peters KE, Hellerstein M, Cummings SR, Evans WJ, Cawthon PM. The Importance of Muscle Versus Fat Mass in Sarcopenic Obesity: A Re-evaluation Using D3-Creatine Muscle Mass Versus DXA Lean Mass Measurements. J Gerontol A Biol Sci Med Sci. 2020 </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -6130,32 +6114,19 @@ echo '<script type="text/javascript">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 5</p>
-                                                    <!-- <p><span class="bold">Chairperson : Soon-Jib Yoo</span> (The
-                                                        Catholic University of Korea, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Korea)</p>
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Hyung Jin Choi (Seoul National
-                                                        University, Republic of Korea)</p>
-                                                    <ul>
-                                                        <li>Professor Zachary Knight is a pioneer in the field of
-                                                            elucidating the neural mechanisms of appetite, homeostasis,
-                                                            and obesity, having published some of the finest research in
-                                                            Nature, Cell, and elsewhere over the past few years. His use
-                                                            of potent neuroscience tools is always accompanied by a
-                                                            profound understanding of concepts related to appetite. In
-                                                            this keynote lecture, he will present his most recent
-                                                            findings regarding the function of neural circuits in the
-                                                            brainstem in regulating eating behavior.</li>
+                                                <p class="bold">Organizer: Il-Young Kim (Gachon University School of Medicine, Korea)</p>
+                                                        <ul>
+                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this keynote lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
+                                                        </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Nature. Dopamine subsystems that track internal states.
-                                                            2022<br />
-                                                            2. Cell. Genetic identification of vagal sensory neurons
-                                                            that control feeding. 2019
-                                                        </li>
+                                                            1. Evans WJ, Cawthon PM. D(3)Creatine Dilution as a Direct, Non-invasive and Accurate Measurement of Muscle Mass for Aging Research. Calcif Tissue Int. 2023<br />2. Cawthon PM, Blackwell T, Cummings SR, et al. Muscle mass assessed by D3-Creatine dilution method and incident self-reported disability and mortality in a prospective observational study of community dwelling ol0der men. J Gerontol A Biol Sci Med Sci. 2020 <br />3. Orwoll ES, Peters KE, Hellerstein M, Cummings SR, Evans WJ, Cawthon PM. The Importance of Muscle Versus Fat Mass in Sarcopenic Obesity: A Re-evaluation Using D3-Creatine Muscle Mass Versus DXA Lean Mass Measurements. J Gerontol A Biol Sci Med Sci. 2020 </li>
                                                     </ul>
                                                 </td>
                                             </tr>

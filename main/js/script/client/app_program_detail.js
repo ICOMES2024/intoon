@@ -201,7 +201,7 @@ function selectProgram(){
 function createHTMLList(program_list, active){
     let _html = "";
 
-    const abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'];
+    const abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20', '21'];
 
     if($(".program_detail_ul .loading_list").length > 0){
         $(".program_detail_ul .loading_list").detach();
