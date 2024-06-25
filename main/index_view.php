@@ -126,29 +126,37 @@
 		<!-- <h3 class="title">Plenary &amp; Keynote Lecture Speakers</h3> -->
 		<div class="key_speaker_wrap">
 			<!-- <div class="main_speaker_wrap"> -->
-				<li>
+				<li class="pointer" name="presidential_lecture" data-id="day_3">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_8-1.png"/>
+					<input type="hidden" name="e" value="room1">
 				</li>
-				<li>
+				<li class="pointer" name="keynote_lecture_2" data-id="day_2">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_1-6.png"/>
+					<input type="hidden" name="e" value="room1">
 				</li>
-				<li>
+				<li class="pointer" name="keynote_lecture_3" data-id="day_2">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_2-6.png"/>
+					<input type="hidden" name="e" value="room1">
 				</li>
-				<li>
+				<li class="pointer" name="keynote_lecture_5" data-id="day_3">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_3-6.png"/>
+					<input type="hidden" name="e" value="room1">
 				</li>
-				<li>
+				<li class="pointer" name="keynote_lecture_7" data-id="day_3">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_4-6.png"/>
+					<input type="hidden" name="e" value="room1">
 				</li>
-				<li>
+				<li class="pointer" name="keynote_lecture_1" data-id="day_2">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-6.png"/>
+					<input type="hidden" name="e" value="room1">
 				</li>
-				<li>
+				<li class="pointer" name="keynote_lecture_6" data-id="day_3">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_6-6.png"/>
+					<input type="hidden" name="e" value="room1">
 				</li>
-				<li>
+				<li class="pointer" name="keynote_lecture_4" data-id="day_3">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_7-6.png"/>
+					<input type="hidden" name="e" value="room1">
 				</li>
 			<!-- <div class="main_btn_wrap">
 				<button type="button" class="btn_circle_arrow"></button>
@@ -353,6 +361,8 @@
  -->
 
  <script>
+
+		//[240626] sujeong / main page key speaker
 		$('.key_speaker_wrap').slick({
 			dots: false,
 			infinite: true,
@@ -382,4 +392,20 @@
 					}
 			]
 		});
+
+
+		$("li.pointer").click(function() {
+			var e = $(this).find("input[name=e]").val();
+			var day = $(this).data('id');
+			var target = $(this)
+			var this_name = $(this).attr("name");
+
+			table_location(event, target, e, day, this_name);
+    });
+
+
+	function table_location(event, _this, e, day, this_name) {
+	 	window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+
+}
  </script>

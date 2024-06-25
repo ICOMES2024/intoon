@@ -514,7 +514,7 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="key_lecture_4" colspan="3" data-id="44">
+								<td class="dark_pink_bg pointer" name="keynote_lecture_4" colspan="3" data-id="44">
 									Keynote Lecture 4
 									<p class="bold">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
 									<p>Jean-Pierre Després</p>
