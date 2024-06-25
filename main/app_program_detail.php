@@ -136,7 +136,7 @@ echo '<script type="text/javascript">
 
     $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18 ORDER BY sort_num ASC";
     $category_list = get_data($select_category_sql);
-    $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'];
+    $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'. '21'];
 
     $select_program_query = "
                             SELECT @rownum := @rownum+1 AS rownum, P.*
@@ -276,8 +276,8 @@ echo '<script type="text/javascript">
                             <option value="5" class="day2 day3">Pleanary Lecture</option>
                             <option value="6" class="day2 day3">Keynote Lecture</option>
                             <option value="8" class="day2 day3">Symposium</option>
-                            <option value="15" class="day1 day2">Joint Symposium</option>
-                            <option value="9" class="day1">Obesity Treatment Guidelines Symposium</option>
+                            <option value="15" class="day1 day2 day3">Joint Symposium</option>
+                            <!-- <option value="9" class="day1">Obesity Treatment Guidelines Symposium</option> -->
                             <option value="7" class="day1">Best Articles in JOMES</option>
                             <!-- <option value="10" class="day1">Pre-congress Symposium</option> -->
                             <option value="11" class="day2 day3">Breakfast Symposium</option>
@@ -288,6 +288,7 @@ echo '<script type="text/javascript">
                             <option value="17" class="day2 day3">Guided Poster Presentation</option>
                             <option value="19" class="day1">Committee Session</option>
                             <option value="20" class="day3">Presidential Lecture</option>
+                            <option value="21" class="day1 day2">Special Session</option>
                             <option value="1" class="day2">Opening Address</option>
                             <option value="2" class="day3">Closing & Award Ceremony</option>
                             <option value="3" class="day1">Welcome Cocktail Party</option>
