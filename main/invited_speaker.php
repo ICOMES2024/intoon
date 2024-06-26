@@ -18,7 +18,7 @@
                         <li>
                                 <div class="top_wrap">
                                 <!-- [240424] sujeong / 임시 오픈 / style4.css //.invited_speaker .speaker_list > li h2:before border 주석 해제 필요 -->
-                                     <h2></h2>
+                                     <h2>Presidential Lecture</h2>
                                     <span class="date text_r">11:00-11:40,<br class="br_530_only"> Sep. 7 (Sat)</span>
                                 </div>
                                 <div class="bottom_wrap">

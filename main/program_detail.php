@@ -634,7 +634,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:00-15:15</td>
                                                                     <td class="bold">
-                                                                      
+                                                                    2023 Obesity Fact Sheet: Prevalence of Obesity and Abdominal Obesity in Adults, Adolescents, and Children in Korea from 2012 to 2021
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Su-Min Jeong</p>(Seoul National University, Korea)
@@ -643,7 +643,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">
-                                                                      
+                                                                    Association between Sleep Duration and Metabolic Disorders among Filipino Immigrant Women: The Filipino Women’s Diet and Health Study (FiLWHEL)
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jung Eun Lee</p>(Seoul National University, Korea)
@@ -652,6 +652,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:30-15:45</td>
                                                                     <td class="bold">
+                                                                    Effects of Cardiorespiratory Fitness on Cardiovascular Disease Risk Factors and Telomere Length by Age and Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yun-A Shin</p>(Dankook University, Korea)
@@ -660,6 +661,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:45-16:00</td>
                                                                     <td class="bold">
+                                                                    Temporal Trends of the Prevalence of Abdominal Obesity and Metabolic Syndrome in Korean Children and Adolescents between 2007 and 2020
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jieun Lee</p>(Inje University Ilsan Paik Hospital, Korea)
@@ -1224,7 +1226,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="break" class="border_bottom_70">
+                            <li name="keynote_lecture_8">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -1232,10 +1234,76 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="light_gray_bg">
-                                                <td>13:00-14:00</td>
+                                            <tr class="dark_pink_bg">
+                                                <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Break</p>
+                                                    <p class="font_20 bold">Keynote Lecture </p>
+                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
+                                                        National University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
+                                                        Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
+                                                            Adults at the University of Leipzig Department of Medicine
+                                                            in Leipzig, Germany. He is Professor of Molecular
+                                                            Endocrinology, with board certifications in Internal
+                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
+                                                            Professor Blüher served as Head of the Clinical Research
+                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
+                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        </li>
+                                                        <li>Professor Blüher has won several awards, including the
+                                                            Obesity Research Award of the German Society for the Study
+                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
+                                                            Diabetes Association, and the Rising Star Lecture at the
+                                                            44th European Association for the Study of Diabetes (EASD)
+                                                            meeting. More recently, he received the Hans Christian
+                                                            Hagedorn Award from the German Diabetes Association in 2011
+                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
+                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
+                                                            insights into the treatment of obesity. Diabetes Obes Metab.
+                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
+                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
+                                                            May 1;41(3):bnaa004.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>13:00-13:30</td>
+                                                                    <td class="bold">
+                                                                       
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11:40-11:50</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -2084,7 +2152,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="break" class="border_bottom_70">
+                            <li name="keynote_lecture_8_2">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -2092,10 +2160,76 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="light_gray_bg">
-                                                <td>13:00-14:00</td>
+                                            <tr class="dark_pink_bg">
+                                                <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Break</p>
+                                                    <p class="font_20 bold">Keynote Lecture </p>
+                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
+                                                        National University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
+                                                        Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
+                                                            Adults at the University of Leipzig Department of Medicine
+                                                            in Leipzig, Germany. He is Professor of Molecular
+                                                            Endocrinology, with board certifications in Internal
+                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
+                                                            Professor Blüher served as Head of the Clinical Research
+                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
+                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        </li>
+                                                        <li>Professor Blüher has won several awards, including the
+                                                            Obesity Research Award of the German Society for the Study
+                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
+                                                            Diabetes Association, and the Rising Star Lecture at the
+                                                            44th European Association for the Study of Diabetes (EASD)
+                                                            meeting. More recently, he received the Hans Christian
+                                                            Hagedorn Award from the German Diabetes Association in 2011
+                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
+                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
+                                                            insights into the treatment of obesity. Diabetes Obes Metab.
+                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
+                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
+                                                            May 1;41(3):bnaa004.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>13:00-13:30</td>
+                                                                    <td class="bold">
+                                                                       
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11:40-11:50</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -2905,7 +3039,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <li name="break" class="border_bottom_70">
+                            <li name="keynote_lecture_8_3">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -2913,10 +3047,76 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="light_gray_bg">
-                                                <td>13:00-14:00</td>
+                                            <tr class="dark_pink_bg">
+                                                <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Break</p>
+                                                    <p class="font_20 bold">Keynote Lecture </p>
+                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
+                                                        National University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
+                                                        Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
+                                                            Adults at the University of Leipzig Department of Medicine
+                                                            in Leipzig, Germany. He is Professor of Molecular
+                                                            Endocrinology, with board certifications in Internal
+                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
+                                                            Professor Blüher served as Head of the Clinical Research
+                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
+                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        </li>
+                                                        <li>Professor Blüher has won several awards, including the
+                                                            Obesity Research Award of the German Society for the Study
+                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
+                                                            Diabetes Association, and the Rising Star Lecture at the
+                                                            44th European Association for the Study of Diabetes (EASD)
+                                                            meeting. More recently, he received the Hans Christian
+                                                            Hagedorn Award from the German Diabetes Association in 2011
+                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
+                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
+                                                            insights into the treatment of obesity. Diabetes Obes Metab.
+                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
+                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
+                                                            May 1;41(3):bnaa004.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>13:00-13:30</td>
+                                                                    <td class="bold">
+                                                                       
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11:40-11:50</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -4583,7 +4783,90 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                          
+                            <li name="ksso_scientific_session">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="dark_pink_bg">
+                                                <td>12:50-13:30</td>
+                                                <td>
+                                                    <p class="font_20 bold">KSSO Scientific Session</p>
+                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
+                                                        National University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
+                                                        Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
+                                                            Adults at the University of Leipzig Department of Medicine
+                                                            in Leipzig, Germany. He is Professor of Molecular
+                                                            Endocrinology, with board certifications in Internal
+                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
+                                                            Professor Blüher served as Head of the Clinical Research
+                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
+                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        </li>
+                                                        <li>Professor Blüher has won several awards, including the
+                                                            Obesity Research Award of the German Society for the Study
+                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
+                                                            Diabetes Association, and the Rising Star Lecture at the
+                                                            44th European Association for the Study of Diabetes (EASD)
+                                                            meeting. More recently, he received the Hans Christian
+                                                            Hagedorn Award from the German Diabetes Association in 2011
+                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
+                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
+                                                            insights into the treatment of obesity. Diabetes Obes Metab.
+                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
+                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
+                                                            May 1;41(3):bnaa004.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>12:50-13:20</td>
+                                                                    <td class="bold">
+                                                                    Diversity in the Definition of Obesity
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>13:20-13:30</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="keynote_lecture_5">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -5320,7 +5603,90 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            
+                            <li name="ksso_scientific_session">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="dark_pink_bg">
+                                                <td>12:50-13:30</td>
+                                                <td>
+                                                    <p class="font_20 bold">KSSO Scientific Session</p>
+                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
+                                                        National University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
+                                                        Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
+                                                            Adults at the University of Leipzig Department of Medicine
+                                                            in Leipzig, Germany. He is Professor of Molecular
+                                                            Endocrinology, with board certifications in Internal
+                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
+                                                            Professor Blüher served as Head of the Clinical Research
+                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
+                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        </li>
+                                                        <li>Professor Blüher has won several awards, including the
+                                                            Obesity Research Award of the German Society for the Study
+                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
+                                                            Diabetes Association, and the Rising Star Lecture at the
+                                                            44th European Association for the Study of Diabetes (EASD)
+                                                            meeting. More recently, he received the Hans Christian
+                                                            Hagedorn Award from the German Diabetes Association in 2011
+                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
+                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
+                                                            insights into the treatment of obesity. Diabetes Obes Metab.
+                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
+                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
+                                                            May 1;41(3):bnaa004.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>12:50-13:20</td>
+                                                                    <td class="bold">
+                                                                    Diversity in the Definition of Obesity
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>13:20-13:30</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="keynote_lecture_5_2">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -6101,7 +6467,90 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                           
+                            <li name="ksso_scientific_session">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="dark_pink_bg">
+                                                <td>12:50-13:30</td>
+                                                <td>
+                                                    <p class="font_20 bold">KSSO Scientific Session</p>
+                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
+                                                        National University, Republic of Korea)</p> -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
+                                                        Republic of Korea)</p>
+                                                    <ul>
+                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
+                                                            Adults at the University of Leipzig Department of Medicine
+                                                            in Leipzig, Germany. He is Professor of Molecular
+                                                            Endocrinology, with board certifications in Internal
+                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
+                                                            Professor Blüher served as Head of the Clinical Research
+                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
+                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        </li>
+                                                        <li>Professor Blüher has won several awards, including the
+                                                            Obesity Research Award of the German Society for the Study
+                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
+                                                            Diabetes Association, and the Rising Star Lecture at the
+                                                            44th European Association for the Study of Diabetes (EASD)
+                                                            meeting. More recently, he received the Hans Christian
+                                                            Hagedorn Award from the German Diabetes Association in 2011
+                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
+                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
+                                                            insights into the treatment of obesity. Diabetes Obes Metab.
+                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
+                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
+                                                            May 1;41(3):bnaa004.
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>12:50-13:20</td>
+                                                                    <td class="bold">
+                                                                    Diversity in the Definition of Obesity
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>13:20-13:30</td>
+                                                                    <td class="bold">Q&A</td>
+                                                                    <td class="text_r"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="keynote_lecture_5_3">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">

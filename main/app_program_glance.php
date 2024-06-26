@@ -341,9 +341,13 @@
 								<td>
 									<div class="colons_div">13:00-14:00</div>
 								</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="dark_pink_bg pointer" name="keynote_lecture_8" colspan="3">
+									Keynote Lecture
+									<p class="bold">Management of Obesity from Cardiometabolic Perspective</p>
+									<p>Ania Jastreboff</p>
+									<p>Yale University, USA</p>
+									<input type="hidden" name="e" value="room1">
+								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_1">
 									Oral presentation 1
 									<input type="hidden" name="e" value="room4">
@@ -617,9 +621,13 @@
 								<td>
 									<div class="colons_div">12:50-13:50</div>
 								</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="dark_pink_bg pointer" name="keynote_lecture_8" colspan="3">
+									KSSO Scientific Session
+									<p class="bold">Diversity in the Definition of Obesity</p>
+									<p>Soo Lim</p>
+									<p>Seoul National University, Korea</p>
+									<input type="hidden" name="e" value="room1">
+								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_3">
 									Oral Presentation 3
 									<input type="hidden" name="e" value="room4">
