@@ -337,9 +337,13 @@
 								<td>
 									<div class="colons_div">13:00-14:00</div>
 								</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="dark_pink_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
+									Keynote Lecture
+									<p class="bold">Management of Obesity from Cardiometabolic Perspective</p>
+									<p>Ania Jastreboff</p>
+									<p>Yale University, USA</p>
+									<input type="hidden" name="e" value="room1">
+								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26">
 									Oral presentation 1
 									<input type="hidden" name="e" value="room4">
@@ -611,9 +615,13 @@
 								<td>
 									<div class="colons_div">12:50-13:50</div>
 								</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="dark_pink_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
+								KSSO Scientific Session
+									<p class="bold">Diversity in the Definition of Obesity</p>
+									<p>Soo Lim</p>
+									<p>Seoul National University, Korea</p>
+									<input type="hidden" name="e" value="room1">
+								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_3" data-id="54">
 									Oral Presentation 3
 									<input type="hidden" name="e" value="room4">
@@ -1040,23 +1048,23 @@ function writeModal(data){
         contents.className = "content";
 
         //좌장 한 명일 경우
-        if(!t.chairpersons?.includes(",")){
-            const chairperson = t.chairpersons?.split("(")[0];
-            const chairperson_org = t.chairpersons?.split("(")[1]?.split(")")[0];
+        // if(!t.chairpersons?.includes(",")){
+        //     const chairperson = t.chairpersons?.split("(")[0];
+        //     const chairperson_org = t.chairpersons?.split("(")[1]?.split(")")[0];
 
-            chairpersonHtml = `<span class="bold">${chairperson}</span>(${chairperson_org})`;
-        }
-        //좌장 두 명일 경우
-        else if(t.chairpersons?.includes(",")){
-            const first_chairperson = t.chairpersons.split("(")[0];
-            const first_chairperson_org = t.chairpersons.split("(")[1].split(")")[0];
+        //     chairpersonHtml = `<span class="bold">${chairperson}</span>(${chairperson_org})`;
+        // }
+        // //좌장 두 명일 경우
+        // else if(t.chairpersons?.includes(",")){
+        //     const first_chairperson = t.chairpersons.split("(")[0];
+        //     const first_chairperson_org = t.chairpersons.split("(")[1].split(")")[0];
 
-            const second_chairperson = t.chairpersons.split("(")[1].split(", ")[1];
-            const second_chairperson_org = t.chairpersons.split("(")[2].split(")")[0]
+        //     const second_chairperson = t.chairpersons.split("(")[1].split(", ")[1];
+        //     const second_chairperson_org = t.chairpersons.split("(")[2].split(")")[0]
 
-           chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<br class="mb_only"/><span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
-        }
-
+        //    chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<br class="mb_only"/><span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
+        // }
+		chairpersonHtml = `<span class="bold">${t.chairpersons}</span>`;
 
         /**speaker가 있을 경우 */
         if(t.speaker){
