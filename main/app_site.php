@@ -11,8 +11,8 @@
 	<div class="contents_box">
 		<div class="schedule_area">
 			<ul class="site_ul">
-				<li><a href="https://www.kosso.or.kr/eng/" target="_blank"><img src="https://image.webeon.net/icomes2024/app/2024_site_01.png"/></a></li>
-				<li><a href="https://www.jomes.org/main.html" target="_blank"><img src="https://image.webeon.net/icomes2024/app/2024_site_02.png"/></a></li>
+				<li><a href="https://www.kosso.or.kr/eng/" target="_blank"><img src="https://image.webeon.net/icomes2024/app/2024_ksso_icon.png"/></a></li>
+				<li><a href="https://www.jomes.org/main.html" target="_blank"><img src="https://image.webeon.net/icomes2024/app/2024_jomes_icon.png"/></a></li>
 			<!--	<li><a href="https://youtube.com/@allobesity" target="_blank"><img src="https://image.webeon.net/icomes2024/app/2024_site_03.png"/></a></li> 
 				<li><a href="https://www.instagram.com/ksso_official/" target="_blank"><img src="https://image.webeon.net/icomes2024/app/2024_site_04.png"/></a></li>
 			<li><a href="https://www.kosso.or.kr/board/view.html?num=1884&start=0&code=notice_list&comm=&key=&keyword=%BE%DB&left=&left_comm=" target="_blank"><img src="https://image.webeon.net/icomes2024/app/2024_site_05.png"/></a></li>
@@ -20,7 +20,9 @@
         </ul>
 		</div>
 	</div>
-</section>
+
+	<img class="ksso_background" src="https://image.webeon.net/icomes2024/app/2024_ksso_back.png" alt="background"/>
+	</section>
 <script>
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");

@@ -25,7 +25,7 @@
             <img src="https://image.webeon.net/icomes2024/app/app_main_backBtn.png" alt="">
             </div>
 			<div class="app_main_txt">
-				<img src="https://image.webeon.net/icomes2024/app/2024_app_main_txt.svg" alt="">
+				<img src="https://image.webeon.net/icomes2024/app/2024_app_main_txt-1.svg" alt="">
 				<!-- <p>Sep. 7(Thu) ~ Sep. 9(Sat)</p>
 				<p>CONRAD Seoul Hotel, Korea</p> -->
 			</div>
