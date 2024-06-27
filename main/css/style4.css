@@ -2250,3 +2250,30 @@ section.coming img {width: 100%;}
 	margin-top: 12px;
 	margin-bottom: 70px;
 }
+
+@media screen and (max-width:1230px) {
+	.welcome_title{
+		font-size: 50px;
+	}
+	.welcome_txt, .welcome_txt span {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:890px) {
+	.welcome_title{
+		font-size: 35px;
+	}
+	.welcome_txt, .welcome_txt span {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width:630px) {
+	.welcome_title{
+		font-size: 28px;
+	}
+	.welcome_txt, .welcome_txt span {
+		font-size: 14px;
+	}
+}
