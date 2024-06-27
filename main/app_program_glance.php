@@ -259,7 +259,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_4">
-									Symposium 4 <p></p>
+									Symposium 4 <p>International Collaboration</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_1">
@@ -426,7 +426,7 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_10">
-									Symposium 10 <p>Obesity and Other Disease</p>
+									Symposium 10 <p>Obesity and Cancer</p>
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_11">

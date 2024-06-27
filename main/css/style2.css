@@ -505,12 +505,12 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 /*.abstract_submission_award .section1 > div:not(:first-of-type) {margin-top: 140px;}*/
 .abstract_submission_award .section1 > div:not(:first-of-type) {margin-top: 60px;}
 /*.abstract_submission_award .section1 > div:nth-of-type(2) {margin-top: 95px;}*/
-.award_list {max-width:100%; margin:0 auto;}
+.award_list {max-width:100%; margin:0 auto; display: flex; flex-wrap: wrap;}
 .award_list:after {content:''; display:block; clear:both;}
 .award_list li {width:20%; text-align:center; max-width:100%;}
 /*.award_list li {width:305px; text-align:center; max-width:100%;}*/
-.award_list li:nth-child(odd) {float:left;}
-.award_list li:nth-child(even) {float:right;}
+/* .award_list li:nth-child(odd) {float:left;}
+.award_list li:nth-child(even) {float:right;} */
 .award_list li img {max-width:100%;}
 .award_list li p {font-size:16px;}
 .award_list li p.award_title {font-size:18px; font-weight:bold; margin:23px 0 11px;}
@@ -834,8 +834,8 @@ br.br_530_only {display: none;}
 	.accommodation .useful_list .detail_table th, .useful_list .detail_table td {white-space:initial;}
 	/*Submission Guidelines - Awards & Grants*/
 	.award_list li {width:50%;}
-	.award_list li:nth-child(n+3) {margin-top:30px;}
-
+	/* .award_list li:nth-child(n+3) {margin-top:30px;} */
+	.award_list li{margin-top: 20px;}
 	/*invited_speaker2*/
 	.invited_speaker .speaker_list .top_wrap {background: linear-gradient(-45deg, #F8F8F8 45%, #efefef 45%);}
 }

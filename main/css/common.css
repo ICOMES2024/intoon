@@ -1196,7 +1196,7 @@ section.container.sponsor {padding-top: 164px;}
 .ft_menu .qr_blue {width:49px; height:49px; background-color:#000066; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:6px;}
 .ft_menu .qr_blue img {max-height:25px; margin-bottom:0;}
 .rolling_wrap {position:absolute; bottom:65px; width:100%; display:none;}
-.rolling_wrap > div {padding:8px 23px 4px 40px;}
+.rolling_wrap > div {padding:8px 23px 12px 40px;}
 .rolling_wrap > div a {font-size:12px; font-weight:bold;}
 .rolling_wrap .schedule {color:#fff; background:rgba(0,102,204,0.63);}
 .rolling_wrap .schedule a {color:#fff; position:relative;}

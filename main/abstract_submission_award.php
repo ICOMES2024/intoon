@@ -184,21 +184,21 @@
 						<!-- <p>4 persons</p> -->
 						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p>
 					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-						<img src="./img/icons/icon_award02.png" alt="">
-						<p class="award_title">Excellent Poster Presentation</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
-					</li>
-					<li>
+                    <li>
 						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
 						<img src="./img/icons/icon_award01.png" alt="">
 						<p class="award_title">Best Poster Presentation</p>
 						<!-- <p>2 persons</p> -->
 						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
 					</li>
-					<li>
+                    <li>
+						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
+						<img src="./img/icons/icon_award01.png" alt="">
+						<p class="award_title">Best Poster Exhibition</p>
+						<!-- <p>2 persons</p> -->
+						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p>
+					</li>
+                    <li>
 						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
 						<img src="./img/icons/icon_award02.png" alt="">
 						<p class="award_title">Excellent Oral Presentation</p>
@@ -206,11 +206,11 @@
 						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
 					</li>
 					<li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">Best Poster Exhibition</p>
+						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
+						<img src="./img/icons/icon_award02.png" alt="">
+						<p class="award_title">Excellent Poster Presentation</p>
 						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p>
+						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
 					</li>
 				</ul>
 			</div>
