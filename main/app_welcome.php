@@ -28,35 +28,37 @@
 			</ul>
 		</div>
 
-    <div>
+		<div>
 		<!-- <h1 class="page_title">Welcome Message</h1> -->
         <div class="inner">
             <div>
-				<h3 class="title icon_none">Respected colleagues,</h3>
+				<h1 class="welcome_title">Welcome Message for ICOMES 2024</h1>
+				<img class="welcome_line" src="https://image.webeon.net/icomes2024/icomes/2024%20ICOMES_welcome_line.png" alt="line"/>
+				<h3 class="title icon_none">Dear Esteemed Colleagues</h3>
 				<p class="welcome_txt">
-					We extend our warmest greetings and deepest appreciation to all the esteemed individuals dedicated to advancing academic research in the field of obesity and metabolic syndrome. As we emerge from the challenges of the COVID-19 pandemic, which profoundly impacted our lifestyles with reduced physical activity and changes in eating habits, we acknowledge the pressing concern of increased obesity. We gather here to renew our commitment to the fight against obesity. <br/><br/>The Korean Society for the Study of Obesity (KSSO) proudly presents the ‘International Congress on Obesity and MEtabolic Syndrome 2023 (ICOMES 2023)’ under the theme of ‘Now is the Time to Conquer Obesity.’ The conference will take place at the Conrad Seoul Hotel from September 7th to September 9th. Building upon the success of previous conferences, ‘ICOMES’ has evolved into a prominent international platform for exchanging insights and advancing obesity-related research. Our aim is to foster collaboration and knowledge exchange among obesity specialists, driving advancements in the field.  <br/><br/>This year, we are honored to introduce a distinguished group of Plenary Lecture speakers who will enlighten us with their invaluable expertise. Please join us in welcoming Thiruma V. Arumugam from La Trobe University (Australia), Robert R. Wolfe from the University of Arkansas for Medical Sciences (USA), Tamas Horvath from Yale University (USA), and John Wilding from the University of Liverpool (UK). <br/><br/>Additionally, we are privileged to present our esteemed Keynote Lecture speakers who bring a wealth of expertise and fresh perspectives to the forefront of research. Their captivating presentations will undoubtedly enhance our understanding of cutting-edge advancements in the field. Let us extend a warm welcome to Matthias Blüher from the University of Leipzig (Germany), Jae Myoung Suh from KAIST (Korea), Zachary Knight from the University of California (USA), and Jae-Heon Kang from Sungkyunkwan University (Korea). <br/><br/>At the beginning of this year, KSSO reaffirmed its determination to delve deeper into the field and embrace new challenges through cooperation with other international societies. We had the great opportunity to generously host three Joint Symposia at ICOMES 2023 with the world's most prestigious obesity associations: The Asia Oceania Association for the Study of Obesity (AOASO) as well as the European Association for the Study of Obesity (EASO) and The Obesity Society (TOS). <br/><br/>‘ICOMES 2023’ offers a remarkable opportunity to engage with experts, exchange knowledge, and foster collaborations. We encourage you to seize this chance to contribute to the advancement of obesity-related research and patient care. Now is the time to conquer obesity! <br/><br/>We eagerly anticipate your active participation and presence at ‘ICOMES 2023’.<br/><br/><br/>Best regards,
+					We are pleased to welcome you to the <span>I</span>nternational <span>C</span>ongress on <span>O</span>besity and <span>ME</span>tabolic <span>S</span>yndrome 2024 (ICOMES 2024), themed <span>‘Integrating Cutting-Edge Insights in Obesity Management.’</span> The conference will take place from September 5 (Thursday) to September 7 (Saturday), 2024, at the CONRAD Seoul, Korea.<br/><br/>Held annually, ICOMES gathers professionals from diverse fields to develop comprehensive strategies for diagnosing and treating obesity, aiming to improve the quality of life for those affected. Over the past decade, ICOMES has grown into one of Asia's largest obesity-focused conferences, striving to lead the region and influence the global community.<br/><br/>Thanks to your steadfast support, the Scientific Committee has worked diligently to develop a scientific program developing an <span>‘Integrating Cutting-Edge Insights’</span> encompassing the latest research in obesity management.<br/><br/>This year, we are honored to introduce a distinguished group of Plenary & Keynote Lecture speakers who will share their invaluable expertise: Joel K. Elmquist (USA), William Evans (USA), Jean-Pierre Després (Canada), Michael A. Nauck (Germany), Michael D. Jensen (USA), W. Timothy Garvey (USA). <br/><br/>We hope all participants will deepen their knowledge of obesity understanding and treatment through engaging discussions with distinguished speakers and fellow colleagues.<br/><br/>ICOMES serves as a vital platform to shape a brighter future for patients worldwide. We encourage you to actively engage, network, and spark transformative discussions that will drive significant advancements in obesity-related research and patient care.<br/><br/>We eagerly anticipate your active participation and presence at ICOMES 2024.<br/><br/><br/>Thank you.<br/><br/><br/>Sincerely, 
 
 				</p>
 			</div>
             <div class="head_profile">
 				<div class="headman">
-					<div class="headman_l"><img src="./img/headman_img1.png" alt=""></div>
+					<div class="headman_l"><img src="https://image.webeon.net/icomes2024/icomes/2024%20ICOMES_chair-1.png" alt=""></div>
 					<div class="headman_r">
-						<!-- <h5>Name</h5> -->
+						<!-- <h5>Name</h5>
 						<h1>Sung Soo Kim, M.D., Ph.D</h1>
 						<h5>Chairman</h5>
 						<p>Korea Society for Study of Obesity</p>
-						<div class="headman_sign"><img src="./img/headman_sign1.png" alt=""></div>
+						<div class="headman_sign"><img src="./img/headman_sign1.png" alt=""></div> -->
 					</div>
 				</div>
 				<div class="headman">
-					<div class="headman_l"><img src="./img/headman_img2.png" alt=""></div>
+					<div class="headman_l"><img src="https://image.webeon.net/icomes2024/icomes/2024%20ICOMES_chair-2.png" alt=""></div>
 					<div class="headman_r">
 						<!-- <h5>Name</h5> -->
-						<h1>Cheol-Young Park, M.D., Ph.D</h1>
+						<!-- <h1>Cheol-Young Park, M.D., Ph.D</h1>
 						<h5>President</h5>
 						<p>Korea Society for Study of Obesity</p>
-						<div class="headman_sign"><img src="./img/headman_sign2_1.png" alt=""></div>
+						<div class="headman_sign"><img src="./img/headman_sign2_1.png" alt=""></div> -->
 					</div>
 				</div>
 			</div>

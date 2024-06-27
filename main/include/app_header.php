@@ -27,7 +27,8 @@
 				<li class="on">
 					<a href="javascript:;">ICOMES 2024</a>
 					<ul class="app_sub">
-						<li><a href="/main/app_welcome.php" class="get_ready_alert">Welcome Message</a></li>
+						<li><a href="/main/app_welcome.php">Welcome Message</a></li>
+						<!-- <li><a href="/main/app_welcome.php" class="get_ready_alert">Welcome Message</a></li> -->
 						<li><a href="/main/app_organizing_committee.php">Organization</a></li>
 						<li><a href="/main/app_overview.php">Overview</a></li>
 						<li><a href="/main/app_venue.php">Venue</a></li>
