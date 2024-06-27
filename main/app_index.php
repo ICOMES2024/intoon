@@ -57,6 +57,11 @@
 			</li>
 			<li>
 				<a>
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-04.png" class="text" alt="">
+				</a>
+			</li>
+			<li>
+				<a>
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-02.png" class="text" alt="">
 				</a>
 			</li>
@@ -67,7 +72,7 @@
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-04.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-07.png" class="text" alt="">
 				</a>
 			</li>
 			<li>
@@ -77,12 +82,12 @@
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-06.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-08.png" class="text" alt="">
 				</a>
 			</li>
 			<li>
 				<a>
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-07.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-06.png" class="text" alt="">
 				</a>
 			</li>
 		</div>
@@ -90,7 +95,7 @@
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
 			<li class="app_menu_img">
-				<a href="/main/app_overview.php" >
+				<a href="/main/app_welcome.php" >
                 <!-- overview 로 번경 -->   
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu01.svg" alt="">
 					<!-- <span>ICOMES 2023</span> -->
@@ -134,7 +139,8 @@
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_notice.php">
+				<a href="/main/app_newsletter.php">
+				<!-- <a href="/main/app_notice.php"> -->
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu08.svg" alt="">
 					<!-- <span>NOTICE</span> -->
 				</a>
