@@ -79,7 +79,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session">
-									Best Article in JOMES<p></p>
+									Best Articles in JOMES<p></p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -343,9 +343,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_8" colspan="3">
 									Keynote Lecture
-									<p class="bold">Management of Obesity from Cardiometabolic Perspective</p>
+									<!-- <p class="bold">Management of Obesity from Cardiometabolic Perspective</p>
 									<p>Ania Jastreboff</p>
-									<p>Yale University, USA</p>
+									<p>Yale University, USA</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_1">
@@ -357,7 +357,7 @@
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1">
-									Guided Poster1
+									Guided Poster Presentation 1
 									<input type="hidden" name="e" value="room7">
 									</td>
 								<td></td>
@@ -623,9 +623,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_8" colspan="3">
 									KSSO Scientific Session
-									<p class="bold">Diversity in the Definition of Obesity</p>
+									<!-- <p class="bold">Diversity in the Definition of Obesity</p>
 									<p>Soo Lim</p>
-									<p>Seoul National University, Korea</p>
+									<p>Seoul National University, Korea</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_3">
@@ -637,7 +637,7 @@
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2">
-									Guided Poster 2
+									Guided Poster Presentation 2
 									<input type="hidden" name="e" value="room7">
 									</td>
 								<td></td>
