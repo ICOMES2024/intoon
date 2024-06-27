@@ -601,7 +601,7 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>15:00-16:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Best Article in JOMES</p>
+                                                    <p class="font_20 bold">Best Articles in JOMES</p>
                                                     <!-- <p><span class="bold">Chairpersons : 김성수</span> (대한비만학회 회장), <span
                                                             class="bold">김종화</span> (부천세종병원 내분비내과)</p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
@@ -1024,10 +1024,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Jae Hyun Bae</p>(Korea
-                                                                        University, Republic of Korea),<br>
-                                                                        <p class="bold">You-Bin Lee</p>(Sungkyunkwan
-                                                                        University, Republic of Korea) -->
+                                                                        <p class="bold">Tae Nyun Kim</p>(Inje University, Korea),<br>
+                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1292,8 +1290,8 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Ania Jastreboff</p>
-                                                                        (Yale University, USA)
+                                                                        <!-- <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1596,7 +1594,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jang Won Son</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1613,7 +1611,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jonathan Bennett</p>(University of Hawaii Cancer Center, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2218,8 +2216,8 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Ania Jastreboff</p>
-                                                                        (Yale University, USA)
+                                                                        <!-- <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3105,8 +3103,8 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Ania Jastreboff</p>
-                                                                        (Yale University, USA)
+                                                                        <!-- <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4846,11 +4844,11 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:50-13:20</td>
                                                                     <td class="bold">
-                                                                    Diversity in the Definition of Obesity
+                                                                    <!-- Diversity in the Definition of Obesity -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Soo Lim</p>
-                                                                        (Seoul National University, Korea)
+                                                                        <!-- <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5666,11 +5664,11 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:50-13:20</td>
                                                                     <td class="bold">
-                                                                    Diversity in the Definition of Obesity
+                                                                    <!-- Diversity in the Definition of Obesity -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Soo Lim</p>
-                                                                        (Seoul National University, Korea)
+                                                                        <!-- <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6530,11 +6528,11 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:50-13:20</td>
                                                                     <td class="bold">
-                                                                    Diversity in the Definition of Obesity
+                                                                    <!-- Diversity in the Definition of Obesity -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Soo Lim</p>
-                                                                        (Seoul National University, Korea)
+                                                                        <!-- <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

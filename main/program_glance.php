@@ -84,7 +84,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
-									Best Article in JOMES
+									Best Articles in JOMES
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -339,9 +339,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
 									Keynote Lecture
-									<p class="bold">Management of Obesity from Cardiometabolic Perspective</p>
+									<!-- <p class="bold">Management of Obesity from Cardiometabolic Perspective</p>
 									<p>Ania Jastreboff</p>
-									<p>Yale University, USA</p>
+									<p>Yale University, USA</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26">
@@ -353,7 +353,7 @@
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28">
-									Guided Poster1
+									Guided Poster Presentation 1
 									<input type="hidden" name="e" value="room7">
 									</td>
 								<td></td>
@@ -617,9 +617,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
 								KSSO Scientific Session
-									<p class="bold">Diversity in the Definition of Obesity</p>
+									<!-- <p class="bold">Diversity in the Definition of Obesity</p>
 									<p>Soo Lim</p>
-									<p>Seoul National University, Korea</p>
+									<p>Seoul National University, Korea</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_3" data-id="54">
@@ -631,7 +631,7 @@
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56">
-									Guided Poster 2
+									Guided Poster Presentation 2
 									<input type="hidden" name="e" value="room7">
 									</td>
 								<td></td>

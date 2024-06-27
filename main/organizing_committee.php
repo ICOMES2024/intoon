@@ -419,7 +419,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : 
                         </tr>
                         <tr>
                             <td>Japan</td>
-                            <td>Geeta Appannah</td>
+                            <td>Koutaro Yokote</td>
                             <td>JASSO<br/>(Japan Society for the Study of Obesity)</td>
                         </tr>
                         <tr>
