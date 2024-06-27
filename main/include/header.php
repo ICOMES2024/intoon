@@ -72,7 +72,7 @@ $locale = locale($language);
             <div class="nav_wrap pc_only">
                 <ul class="depth01 clearfix">
                     <li>
-                        <a href="/main/overview.php">ICOMES 2024</a>
+                        <a href="/main/welcome.php">ICOMES 2024</a>
                         <ul class="sub_nav">
                             <li><a href="/main/welcome.php">Welcome Message</a></li>
                             <li><a href="/main/organizing_committee.php">Organization</a></li>

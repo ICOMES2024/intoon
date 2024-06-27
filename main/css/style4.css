@@ -2246,9 +2246,9 @@ section.coming img {width: 100%;}
 }
 
 .welcome_line{
-	width: 100%;
-	margin-top: 12px;
-	margin-bottom: 70px;
+	display: block;
+	width: 800px;
+	margin: 12px auto 70px auto;
 }
 
 @media screen and (max-width:1230px) {
@@ -2256,16 +2256,26 @@ section.coming img {width: 100%;}
 		font-size: 50px;
 	}
 	.welcome_txt, .welcome_txt span {
-		font-size: 20px;
+		font-size: 18px;
+	}
+	.welcome_line{
+		width: 795px;
 	}
 }
+
+@media screen and (max-width:1020px) {
+	.welcome_line{
+		width: 620px;
+	}
+}
+
 
 @media screen and (max-width:890px) {
 	.welcome_title{
 		font-size: 35px;
 	}
 	.welcome_txt, .welcome_txt span {
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 
