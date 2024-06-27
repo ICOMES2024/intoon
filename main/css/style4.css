@@ -1816,7 +1816,9 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
   }
   
   .app_main_wrap{
-	width: 100%;
+	/* width: 100%; */
+	width: calc(100% + 34px);
+	transform: translateX(-17px);
 	margin-top: 10px;
 	margin-bottom: 20px;
   }
@@ -1827,7 +1829,7 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
 
   .app_main_wrap li a img{	
 	width: 100%;
-	border-radius: 8px;
+	/* border-radius: 8px; */
 	/* padding: 0 20px; */
   }
 
@@ -1847,7 +1849,14 @@ section.container.login .page_title {color:#fff; text-align:center; margin-botto
   }
 
   .site_ul > li > a > img{
+	width: 60%;
+	margin: 20px auto;
+  }
+
+  .ksso_background{
 	width: 100%;
+	position: absolute;
+	bottom: 0;
   }
 
   /* .site_ul > li > a > img:nth-child(1){
@@ -2183,4 +2192,61 @@ section.coming img {width: 100%;}
 	.key_speaker_wrap img{
 		width: 90%;
 	}
+}
+
+
+.event_container{
+	width: 100%;
+	/* height: 400px; */
+	/* position: absolute;
+	bottom: 0px;
+	left: 0px; */
+}
+
+.event_container .event_wrap{
+	border: 1px solid #DDD;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.event_container .event_wrap .event_box{
+	width: 80%;
+	margin: 8px auto;
+}
+
+.event_container .input_wrap, .event_container .event_wrap{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.event_container .input_wrap{
+	margin-top: 20px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.event_container .input_wrap input {
+	border: 1px solid #eee;
+	padding: 8px;
+	width: 75%;
+	height: 100%;
+}
+
+.event_container .input_wrap button{
+	border: 1px solid #e6e6e6;
+	padding: 4px 8px;
+	height: 100%;
+}
+
+.welcome_title{
+	font-size: 68px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.welcome_line{
+	width: 100%;
+	margin-top: 12px;
+	margin-bottom: 70px;
 }
