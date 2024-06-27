@@ -819,7 +819,7 @@ section.visa .table_vertical th {color: #000;}
 br.br_530_only {display: none;}
 	
 @media screen and (max-width: 1200px){
-	.welcome_txt {text-align: left;}
+	/* .welcome_txt {text-align: left;} */
 	.g_h_top {padding:18px 0;}
 	.m_nav_wrap {display: block; overflow: hidden;}
 	.nav_wrap, .dday_wrap, .g_h_tool, .dday_box {display:none !important;}
