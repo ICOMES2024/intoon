@@ -150,14 +150,14 @@ $price = get_data($sql_price);
 								?>
 								<tr class="text_center">
 									<td>Certified M.D., Professor</td>
-									<td class="closed_td">USD 150<br/>KRW 150,000
+									<td class="closed_td">USD 130<br/>KRW 150,000
 
 										<!-- <img src="./img/icons/icon_closed.png" alt=""> -->
 									</td>
 									<td>USD 180<br>KRW 180,000</td>
-									<td>USD 180<br>KRW 180,000</td>
+									<td>USD 160<br>KRW 180,000</td>
 									<td>USD 210<br>KRW 210,000</td>
-									<td>USD 220<br>KRW 220,000</td>
+									<td>USD 200<br>KRW 220,000</td>
 									<td>USD 250<br>KRW 250,000</td>
 								</tr>
 								<tr class="text_center">
@@ -169,11 +169,11 @@ $price = get_data($sql_price);
 										Public Health Doctor,<br>
 										Corporate Member, Others
 									</td>
-									<td>USD 85<br>KRW 85,000</td>
+									<td>USD 65<br>KRW 85,000</td>
 									<td>USD 115<br>KRW 115,000</td>
-									<td>USD 105<br>KRW 105,000</td>
+									<td>USD 85<br>KRW 105,000</td>
 									<td>USD 135<br>KRW 135,000</td>
-									<td>USD 140<br>KRW 140,000</td>
+									<td>USD 120<br>KRW 140,000</td>
 									<td>USD 170<br>KRW 170,000</td>
 								</tr>
 								<tr class="text_center">

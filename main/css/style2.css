@@ -185,10 +185,11 @@ section.container.login.bg {border: 0px;}
 /* welcome_new */
 .head_profile {display: flex; justify-content: space-between;margin-top: 80px;}
 .headman {width: calc(50% - 20px); display: flex;}
+.headman .headman_l img {width: 100%;}
 .headman:first-child {margin-right: 20px;}
 .headman_l {/*width: 186px; */height: 220px; margin-right: 24px;}
-.headman_l img {width: 100%;}
-.headman_r {width: calc(100% - 210px); padding: 22px 0; /* padding-top: 6px; */}
+
+/* .headman_r {width: calc(100% - 210px); padding: 22px 0; padding-top: 6px;} */
 .headman_r h1 {font-size: 20px; font-weight: 900; color: #000000; margin-bottom: 26px;}
 /* .headman_r h5 {font-size:14px; font-weight: 400; color: #00CC99; padding: 3px 10px; border: 1px solid #62C99C; border-radius: 23px; width: max-content; margin-bottom: 6px;} */
 .headman_r h5 {font-style:italic; margin-bottom:8px;}
@@ -1177,7 +1178,8 @@ br.br_530_only {display: none;}
 
 	/* welcome_new */
 	.headman_l {/*width: 140px;*/ height: auto;}
-	.headman_r {width: calc(100% - 164px);}
+	.headman_l img {width: 100%;}
+	/* .headman_r {width: calc(100% - 164px);} */
 	.headman_r h1 {font-size: 18px; margin-bottom: 10px;}
 /* 	.headman_r h5 {padding: 1px 6px;} */
 	.headman_r p {margin-bottom: 10px;}
@@ -1319,7 +1321,7 @@ br.br_530_only {display: none;}
 @media screen and (max-width: 375px){
 	/* welcome_new */
 	.headman {flex-direction: column;}
-	.headman_r {width: 100%; margin-top:12px;}
+	/* .headman_r {width: 100%; margin-top:12px;} */
 	
 	/* 22.04.12 - 사전등록 확인증(pre_registration_confirm.php) */
 	.pre_cont {padding-top: 15%;}
