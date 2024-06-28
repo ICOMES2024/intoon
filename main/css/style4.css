@@ -2228,10 +2228,37 @@ section.coming img {width: 100%;}
 	padding: 8px 16px;
 }
 
-.event_container .event_wrap .event_box{
+.event_container .event_wrap > div{
 	width: 80%;
 	margin: 8px auto;
 	font-size: 14px;
+}
+
+
+.event_container .event_wrap .my_event{
+	width: 100%;
+	/* background-image: url('https://image.webeon.net/icomes2024/app/2024_app_my_comment.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain; */
+	background-color: #EEE;
+	padding: 4px 8px 16px 8px;
+	border-radius: 8px;
+}
+
+/* .event_container .event_wrap .my_event::before{
+	content: '';
+	position: absolute;
+    right: 17%;
+    top: 55%;
+    border-top: 20px solid #CC3366;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+} */
+
+.event_container .event_wrap .event_box{
+	background-color: #FFF;
 }
 
 .event_container .input_wrap, .event_container .event_wrap{
@@ -2251,12 +2278,14 @@ section.coming img {width: 100%;}
 	padding: 8px;
 	width: 75%;
 	height: 100%;
+	border-radius: 8px;
 }
 
 .event_container .input_wrap button{
 	border: 1px solid #e6e6e6;
 	padding: 4px 8px;
 	height: 100%;
+	border-radius: 8px;
 }
 
 .welcome_title{

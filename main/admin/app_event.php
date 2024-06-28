@@ -31,7 +31,7 @@
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$number.'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$l["register_date"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$l["comment"].'</td>';
-		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["username"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$l["username"].'</td>';
 		$html .= '</tr>';
 
         $number++;

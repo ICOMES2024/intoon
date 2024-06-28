@@ -1,6 +1,6 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
-
+<?php $member_idx = isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : null; ?>
 <!-- HUBDNCLHJ : app survey 페이지 -->
 <section class="container app_survey app_version">
 	<div class="app_title_box">
@@ -18,7 +18,6 @@
 				</div>
 				<div class="event_container">
                     <div class="event_wrap">
-                        <div class="event_box"></div>
                     </div>
                     <div class="input_wrap">
                         <input class="comment" placeholder="Please write your thoughts!"/>
@@ -29,10 +28,50 @@
 	</div>
 </section>
 <script>
+    const member_idx =  <?php echo json_encode($member_idx); ?>;
+    const myEventBox = document.querySelector(".my_event");
+    const eventWrap = document.querySelector(".event_wrap");
+    console.log(member_idx);
+
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");
-        getComments();
+        getUserComment();
     })
+
+    function getUserComment(){
+
+        if(!member_idx){
+            myEventBox.innerHTML = "";
+        }else{
+            getMyComments();
+        }
+    }
+
+    function getMyComments(){
+        $.ajax({
+                url: PATH + "ajax/client/ajax_app_event.php",
+                type: "POST",
+                data: {
+                    flag: "my_commnet",
+                    user_idx : member_idx
+                },
+                dataType: "JSON",
+                success: function(res) {
+                    if (res.code == 200) {
+                       // console.log(res.data)
+                      showMyComments(res.data[0]);
+                    } 
+                    else {
+                      
+                    }
+                }
+            });
+    }
+
+    function showMyComments(data){
+        eventWrap.innerHTML += `<div class="my_event"> **My Comments <br/>${data.username} <br/>${data.comment}<br/>${data.register_date}</div>`
+        getComments();
+    }
 
     function getComments(){
         $.ajax({
@@ -43,8 +82,8 @@
                 },
                 dataType: "JSON",
                 success: function(res) {
+                    //console.log(res)
                     if (res.code == 200) {
-                      //console.log(res)
                       showComments(res.data);
                     } 
                     else {
@@ -55,8 +94,6 @@
     }
 
     function showComments(dataList){
-        const eventWrap = document.querySelector(".event_wrap");
-
         dataList.map((data)=>{
             eventWrap.innerHTML += `<div class="event_box">${data.username.slice(0,4)}*** | ${data.register_date}</div>`
         })  
@@ -64,9 +101,15 @@
 
     //제출하기 버튼 눌렀을 때 
     const submitButton = document.querySelector('.submit');
+    const comment = document.querySelector(".comment")
+
+    //input 조건문
+    comment.addEventListener('input', ()=>{
+        comment.value = comment.value.replace(/[\'\"\\;\\\\]/g, "");
+    })
 
     submitButton.addEventListener("click", ()=>{
-        const comment = document.querySelector(".comment").value
+        const commentValue = comment.value;
         if(comment === ""){
             alert("Please write your comment!")
         }else{

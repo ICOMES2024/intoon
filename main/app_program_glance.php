@@ -705,7 +705,7 @@
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="violet_bg pointer best_jomes" name="joint_symposium_4">
-									Joint Symposium<br>KSSO-TOS
+									Joint Symposium<br>KSSO-TOS<p>Real Word Experience of anti-obesity medications</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
