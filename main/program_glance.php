@@ -699,7 +699,7 @@
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="violet_bg pointer best_jomes" name="joint_symposium_5" data-id="63">
-									Joint Symposium<br>KSSO-TOS
+									Joint Symposium<br>KSSO-TOS<p>Real Word Experience of anti-obesity medications</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
@@ -766,10 +766,10 @@
 					<p class="modal_title_room"></p>
 				</div>
 				<div>
-					<p class="program_modal_chair"></p>
+					<!-- <p class="program_modal_chair"></p> -->
 					
 					<!-- [240607] sujeong / 학회팀 요청 모달 오픈 & 좌장 미확정 주석처리 -->
-					<!-- <p class="program_modal_chair">Chairperson : </p> -->
+					<p class="program_modal_chair">Chairperson : </p>
 					<p class="program_modal_person"></p>
 				</div>
 			</div>
@@ -1064,7 +1064,11 @@ function writeModal(data){
 
         //    chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<br class="mb_only"/><span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
         // }
-		chairpersonHtml = `<span class="bold">${t.chairpersons}</span>`;
+		if(t.chairpersons){
+			chairpersonHtml = `<span class="bold">${t.chairpersons}</span>`;
+		}else{
+			chairpersonHtml = `<span class="bold">TBD</span>`;
+		}
 
         /**speaker가 있을 경우 */
         if(t.speaker){
@@ -1124,7 +1128,7 @@ function writeModal(data){
     modalTitleRoom.innerText = "• "+ titleRoom;
 
 	//[240607] sujeong / 학회팀 요청 모달 오픈 & 좌장 미확정 주석처리
-    //modalChairPerson.innerHTML = chairpersonHtml;
+    modalChairPerson.innerHTML = chairpersonHtml;
     modalPreview.innerText = preview;
 }
 

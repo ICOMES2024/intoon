@@ -8,8 +8,8 @@ if($_POST["flag"]==="submit"){
     //1. 로그인 확인하기
     $search_name_query = "
                     SELECT  CONCAT(last_name,' ',first_name) AS `name`
-                    FROM member
-                    WHERE idx = {$member_idx}
+                    FROM request_registration
+                    WHERE register = {$member_idx} AND status IN (2,5)
                                 ";
     $search_name = sql_fetch($search_name_query);
 
@@ -99,6 +99,37 @@ else if ($_POST["flag"]==="commnets"){
         exit;
     }
 }
+
+
+//[240628] 내 댓글 조회
+else if ($_POST["flag"]==="my_commnet"){
+    $member_idx = $_POST["user_idx"];
+
+    $search_my_comments_query = "
+            SELECT  *
+            FROM comments
+            WHERE is_deleted = 'N' AND member_idx = {$member_idx}
+                ";
+    $search_my_comments = get_data($search_my_comments_query);
+    
+    if (!$search_my_comments) {
+        $res = [
+            'code' => 401,
+            'msg' => "select-error"
+        ];
+        echo json_encode($res);
+        exit;
+    } else {
+        $res = [
+            'code' => 200,
+            'msg' => "success",
+            'data' =>  $search_my_comments
+        ];
+        echo json_encode($res);
+        exit;
+    }
+}
+
 
 
 //[240628] 댓글 삭제
