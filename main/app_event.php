@@ -13,32 +13,12 @@
 	</div>
 	<div class="inner">
 		<div class="contents_box">
-				<div class="survey_box box_top">
-						<p class="center_t">
-							<span class="bold">ICOMES 2024 <br/> live event</span>
-						</p>
+				<div class="event_img">
+                    <img src="https://image.webeon.net/icomes2024/app/2024_app_event.png" alt="event_img"/>
 				</div>
 				<div class="event_container">
                     <div class="event_wrap">
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
-                        <div class="event_box">신수정 | 2024-06-27 13:14:58</div>
+                        <div class="event_box"></div>
                     </div>
                     <div class="input_wrap">
                         <input class="comment" placeholder="Please write your thoughts!"/>
@@ -51,8 +31,38 @@
 <script>
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");
+        getComments();
     })
 
+    function getComments(){
+        $.ajax({
+                url: PATH + "ajax/client/ajax_app_event.php",
+                type: "POST",
+                data: {
+                    flag: "commnets"
+                },
+                dataType: "JSON",
+                success: function(res) {
+                    if (res.code == 200) {
+                      //console.log(res)
+                      showComments(res.data);
+                    } 
+                    else {
+                      
+                    }
+                }
+            });
+    }
+
+    function showComments(dataList){
+        const eventWrap = document.querySelector(".event_wrap");
+
+        dataList.map((data)=>{
+            eventWrap.innerHTML += `<div class="event_box">${data.username.slice(0,4)}*** | ${data.register_date}</div>`
+        })  
+    }
+
+    //제출하기 버튼 눌렀을 때 
     const submitButton = document.querySelector('.submit');
 
     submitButton.addEventListener("click", ()=>{
@@ -70,7 +80,22 @@
                 dataType: "JSON",
                 success: function(res) {
                     if (res.code == 200) {
-                    } else {
+                        alert("Event participation is complete.")
+                        window.location.reload();
+                    } 
+                    //로그인 안 한 경우
+                    else if(res.code == 402){
+                        if(window.confirm('Login required. Would you like to log in?')){ 
+                            window.location.href = '/main/app_login.php';
+                        }else{
+                            window.history.back();
+                        }
+                    }
+                    //이벤트 중복 참여한 경우
+                    else if(res.code == 401){
+                        alert('You have already participated in the event.')
+                    }
+                    else {
                         alert("error");
                         return false;
                     }

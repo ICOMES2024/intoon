@@ -326,29 +326,7 @@
 		}
 
 		$register_path = "";
-		/*
-		if($rl["register_path"] == "ICOMES 2022 promotional mail") {
-			$register_path = "ICOMES 2022 프로모션 메일";
-		} else if ($rl["register_path"] == "ICOMES 2022 website") {
-			$register_path = "ICOMES 2022 웹사이트";
-		} else if ($rl["register_path"] == "Bulletin board on the website of the relevant society") {
-			$register_path = "해당 학회 홈페이지 게시판";
-		} else if ($rl["register_path"] == "Korean Society of Obesity website bulletin board") {
-			$register_path = "대한비만학회 홈페이지 게시판";
-		} else if ($rl["register_path"] == "Recommendation from an acquaintance") {
-			$register_path = "지인의 추천";
-		} else if ($rl["register_path"] == "Professor recommendation") {
-			$register_path = "교수의 추천";
-		} else if ($rl["register_path"] == "Medical newspaper") {
-			$register_path = "의료 신문";
-		} else if ($rl["register_path"] == "Pharmaceutical company") {
-			$register_path = "제약 회사";
-		} else if ($rl["register_path"] == "Other (subjective)") {
-			$register_path = "기타 주관적 ".$rl["etc1"];
-		} else {
-			$register_path = "-";
-		}
-		*/
+	
 		$conference_info = ($rl['conference_info'] != '-') ? str_replace('*', ',', $rl['conference_info']) : '-';		
 		
 		$licence_number = $rl['licence_number'] ?? 'Not applicable';
