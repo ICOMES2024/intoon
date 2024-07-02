@@ -95,7 +95,8 @@
 	<div class="app_main_inner">
 		<ul class="app_index_menu">
 			<li class="app_menu_img">
-				<a href="/main/app_welcome.php" >
+				<!-- <a href="/main/app_welcome.php" > -->
+				<a href="/main/app_organizing_committee.php" >
                 <!-- overview 로 번경 -->   
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu01.svg" alt="">
 					<!-- <span>ICOMES 2023</span> -->

@@ -1,11 +1,23 @@
 <?php
 $member_idx = $_SESSION["USER"]["idx"];
+
+//[240702] sujeong / 기존코드 - app notice -> type 3
+// $select_notice_query = "
+//                             SELECT idx, type, title_en
+//                             FROM board
+//                             WHERE is_deleted='N'
+//                             AND type=3
+//                         ";
+
+
+//[240702] sujeong / 수정코드 - app newsletter -> type 4
 $select_notice_query = "
-                            SELECT idx, type, title_en
-                            FROM board
-                            WHERE is_deleted='N'
-                            AND type=3
-                        ";
+						SELECT idx, type, title_en
+						FROM board
+						WHERE is_deleted='N'
+						AND type=4
+					";
+
 $notice_list = get_data($select_notice_query);
 
 //[240417] sujeong / app login 페이지 구분 위해
@@ -53,7 +65,10 @@ if(empty($member_idx)){
                     <?php
                         foreach ($notice_list as $notice){
                     ?>
-							<li><a href="/main/app_notice_detail.php?idx=<?=$notice['idx']?>">[NOTICE] <?=$notice['title_en']?> </a></li>
+							<!-- [240702] sujeong / 기존 코드 -> 제목 앞에 [NOTICE] & app notice detail 로 이동 -->
+							<!-- <li><a href="/main/app_notice_detail.php?idx=<?=$notice['idx']?>">[NOTICE] <?=$notice['title_en']?> </a></li> -->
+							 <!-- [240702] sujeong / 현재 코드 -> 제목 앞에 [NOTICE] 제거 & app newsletter detail 로 이동 -->
+							<li><a href="/main/app_newsletter_detail.php?idx=<?=$notice['idx']?>"><?=$notice['title_en']?> </a></li>
                     <?php
 						}
                     ?>

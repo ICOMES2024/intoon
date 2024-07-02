@@ -175,28 +175,6 @@ if (empty($_SESSION["USER"])) {
 						}
 					?>
 
-					<!--
-                    <li class="poster">
-                        <p>Poster Zone</p>
-                        <div>1</div>
-                    </li>
-                    <li class="platinum">
-                        <p>Platinum</p>
-                        <div>1</div>
-                    </li>
-                    <li class="gold">
-                        <p>Gold</p>
-                        <div>1</div>
-                    </li>
-                    <li class="silver">
-                        <p>silver</p>
-                        <div>1</div>
-                    </li>
-                    <li class="bronze">
-                        <p>Bronze</p>
-                        <div>1</div>
-                    </li>
-					-->
                 </ul>
 				<div class="stamps_crown_info clearfix">
 					<img src="./img/crown.png" class="info_icon"/>
