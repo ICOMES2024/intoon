@@ -281,7 +281,7 @@
 									<div class="colons_div">11:00-11:10</div>
 								</td>
 								<td colspan="3" class="white_yellow_bg pointer" name="opening_address">
-									Opening Address
+									Opening Ceremony
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -457,7 +457,7 @@
 								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="3">
 									EASO Presidential Lecture
 									<p>Volkan Yumuk</p>
-									<p>Turkish Association for the Study of Obesity, Turkey</p>
+									<p>Istanbul University-Cerrahpaşa, Turkey</p>
 									<input type="hidden" name="e" value="room1~3">
 								</td>
 								<td></td>

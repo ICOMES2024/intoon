@@ -256,7 +256,7 @@ function createHTMLList(program_list, active){
             //abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
         }
 
-        if(pl.chairpersons!=null){
+        if(pl.chairpersons != ""){
             var chairperson = "";
             if((pl.chairpersons.split(',').length-1)>=2){
                 chairperson = "Chairpersons: ";
@@ -264,7 +264,12 @@ function createHTMLList(program_list, active){
                 chairperson = "Chairperson: "
             }
             //[240424] sujeong / 임시 주석 / 좌장 숨기기
-            //chairpersons_html += '<p class="chairperson"><span class="bold">'+chairperson+'</span>'+pl.chairpersons+'</p>'
+            //[240628] sujeong / 좌장 열기
+            chairpersons_html += '<p class="chairperson"><span class="bold">'+chairperson+'</span>'+pl.chairpersons+'</p>'
+
+            //[240628] sujeong / 좌장 TBD 추가
+        }else if(pl.chairpersons == ""){
+            chairpersons_html += '<p class="chairperson"><span class="bold">Chairperson: </span>TBD</p>'
         }
 
         if(pl.preview != ""){

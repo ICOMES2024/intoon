@@ -155,7 +155,7 @@
 					<h4 class="title">Download Application Form</h4>
 				</div>
 				<div class="download_wrap">
-					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Travel_Grant_Application_Form.docx" class="btn long_btn type2 text_long font_16" target="_blank">
+					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Travel_Grant_Application.docx" class="btn long_btn type2 text_long font_16" target="_blank">
 						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Travel Grant Application Form Download (Overseas)
 					</a>
 					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Application_for_travel_subsidy_Non-MD.docx" class="btn long_btn type2 text_long font_16" target="_blank">

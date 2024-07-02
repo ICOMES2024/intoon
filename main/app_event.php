@@ -73,6 +73,8 @@
         getComments();
     }
 
+
+
     function getComments(){
         $.ajax({
                 url: PATH + "ajax/client/ajax_app_event.php",
@@ -146,6 +148,10 @@
             });
         }
     })
+
+    function getHint(){
+     
+    }
 
 </script>
 

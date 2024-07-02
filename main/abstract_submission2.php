@@ -210,11 +210,12 @@ $abstract_idx = $_GET["idx"];
                         <!-- <p class="label"><?= $locale("abstract_item_title") ?> *</p> -->
                         <div>
                             <select name="presentation_type" id="presentation_type">
+                                <option value="1">Poster Exhibition</option>
                                 <?php
-									$i_count = 0;
-									if (!$presentation_type) {
-										echo '<option value="" hidden>Choose</option>';
-									}
+									// $i_count = 0;
+									// if (!$presentation_type) {
+									// 	echo '<option value="" hidden>Choose</option>';
+									// }
 									// $presentation_type_arr = array("Oral Presentation", "Poster Exhibition", "Guided Poster Presentation", "Any of them");
 									// foreach ($presentation_type_arr as $value) {
 									// 	if ($presentation_type == $i_count) {
@@ -224,15 +225,15 @@ $abstract_idx = $_GET["idx"];
 									// 	}
 									// 	$i_count++;
 									// }
-                                    $presentation_type_arr = array("Poster Exhibition");
-									foreach ($presentation_type_arr as $value) {
-										if ($presentation_type == $i_count) {
-											echo '<option value=' . ($i_count) . ' selected>' . $value . '</option>';
-										} else {
-											echo '<option value=' . ($i_count) . '>' . $value . '</option>';
-										}
-										$i_count++;
-									}
+                                    // $presentation_type_arr = array("Poster Exhibition");
+									// foreach ($presentation_type_arr as $value) {
+									// 	if ($presentation_type == $i_count) {
+									// 		echo '<option value=' . 1 . ' selected>' . $value . '</option>';
+									// 	} else {
+									// 		echo '<option value=' . 1 . '>' . $value . '</option>';
+									// 	}
+									// 	$i_count++;
+									// }
 
 									?>
                             </select>
