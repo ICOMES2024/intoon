@@ -57,7 +57,7 @@
 			</div>
             <div class="head_profile">
 				<div class="headman">
-					<div class="headman_l"><img src="https://image.webeon.net/icomes2024/icomes/2024_ICOMES_chair-1.png" alt=""></div>
+					<div class="headman_l"><img src="https://image.webeon.net/icomes2024/icomes/2024_ICOMES_chair-1-1.png" alt=""></div>
 					<div class="headman_r">
 						<!-- <h5>Name</h5>
 						<h1>Sung Soo Kim, M.D., Ph.D</h1>
@@ -67,7 +67,7 @@
 					</div>
 				</div>
 				<div class="headman">
-					<div class="headman_l"><img src="https://image.webeon.net/icomes2024/icomes/2024_ICOMES_chair-2.png" alt=""></div>
+					<div class="headman_l"><img src="https://image.webeon.net/icomes2024/icomes/2024_ICOMES_chair-2-1.png" alt=""></div>
 					<div class="headman_r">
 						<!-- <h5>Name</h5> -->
 						<!-- <h1>Cheol-Young Park, M.D., Ph.D</h1>
