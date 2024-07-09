@@ -19,7 +19,7 @@
                          <li class="bold p_indent purple_txt">• Application Period: July 5<sup class="bold font_12 purple_txt">th</sup> to July 11<sup class="bold font_12 purple_txt">th</sup>, 2024</li>
                          <li class="bold p_indent purple_txt">• Notification of the Result: July 12<sup class="bold font_12 purple_txt">th</sup>, 2024</li>
                          <li class="p_indent"><span class="bold purple_txt">• Eligibility : </span> Authors of Accepted Abstract</li>
-                         <li class="p_indent">ICOMES support the Travel Grants <span class="bold purple_txt">for one author</span> per an accepted abstract.</li>
+                         <li class="p_indent"><span class="bold purple_txt">•</span> ICOMES support the Travel Grants <span class="bold purple_txt">for one author</span> per an accepted abstract.</li>
                          <li class="bold p_indent purple_txt">* All timelines are based on KST (UTC+9).</li>
 					</ul>
 				</div>
@@ -75,16 +75,16 @@
 				<!-- <div class="section_title_wrap2">
                     <h4 class="round_title">Apply for the Travel Grants</h4>
 				</div> -->
-				<h4 class="top_text_box violet_bg2">Apply for the Travel Grants</h4>
+				<h4 class="top_text_box violet_bg2">Travel Grant for Overseas Participants</h4>
 				<div class="table_wrap detail_table_common x_scroll">
 					<table class="c_table detail_table">
 						<colgroup>
-							<col class="submission_col">
+							<col width='40%'>
 							<col>
 						</colgroup>
 						<thead>
 							<tr>
-								<th class="text_center">Target</th>
+								<th class="text_center">Presentation Type</th>
 								<th class="text_center">Amount</th>
 								<!-- <th class="text_center">Remarks</th> -->
 							</tr>
@@ -121,9 +121,9 @@
                 <div class="remark_box">
                     <p class="p_indent font_20 bold mt10"> Remark</p>
                     <p class="mt10 p_indent ">• <span class="bold purple_txt ">Payment for travel grants</span> will be processed <span class="bold purple_txt ">on-site only for International participants.</span></p>
-                    <p class="mt10 p_indent ">• <span class="bold purple_txt ">Payment for travel grants</span>are expected to be processed on <span class="bold purple_txt ">September 6th to 7th at the designated location.</span>
+                    <p class="mt10 p_indent ">• <span class="bold purple_txt ">Payment for travel grants</span> are expected to be processed on <span class="bold purple_txt ">September 6<sup class="bold font_12 purple_txt">th</sup> to 7<sup class="bold font_12 purple_txt">th</sup> at the designated location.</span>
                     </p>
-                    <p class="mt10 p_indent ">• <span class="bold purple_txt ">For presenters participating in 'Oral presentation' or 'Guided Poster presentation', </span>travel grants will be disbursed upon the successful completion of your presentation. <span class="bold purple_txt ">Successful completion of the presentation is a requirement for eligibility to receive the travel grant.</span></p>
+                    <p class="mt10 p_indent ">• <span class="bold purple_txt ">For presenters participating in 'Oral presentation' or 'Guided Poster presentation', </span>travel grants will be disbursed upon the successful completion of your presentation. <span class="bold purple_txt ">Successful completion of the presentation is a requirement for the eligibility to receive the travel grant.</span></p>
                     <p class="mt10 p_indent ">• Proxy receipt or duplicate receipt is prohibited on-site.</p>
                     <p class="mt10 p_indent ">• All recipients must sign a receipt, which will be prepared on-site.</p>
                 </div>
@@ -233,7 +233,7 @@
                             <li>
                                 <!-- <img src="./img/icons/icon_award02.svg" alt="">-->
                                 <img src="https://image.webeon.net/icomes2024/logo/2024_best_award.svg" alt="">
-                                <p class="award_title best">Best<br/>Poster Presentation</p>
+                                <p class="award_title best">Best<br/>Poster Exhibition</p>
                                 <!-- <p>2 persons</p> -->
                                 <!-- <p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p> -->
                             </li>

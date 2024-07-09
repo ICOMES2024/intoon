@@ -112,7 +112,7 @@ $locale = locale($language);
                             <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
                             <li><a class="" href="/main/abstract_submission.php">Online Submission</a></li>
                             <li><a href="/main/abstract_submission_oral.php">Presentation Guidelines</a></li>
-                            <li><a href="/main/comingsoon.php">Awards & Grants</a></li>
+                            <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
 
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
@@ -269,7 +269,7 @@ $(document).ready(function() {
                     <li><a class="" href="/main/abstract_submission.php">Online Submission</a>
                     </li>
                     <li><a href="/main/abstract_submission_oral.php">Presentation Guidelines</a></li>
-                    <li><a href="/main/comingsoon.php">Awards & Grants</a></li>
+                    <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m4"]) ? "show" : "") ?>">
