@@ -2376,12 +2376,12 @@ section.coming img {width: 100%;}
 	}
 }
 
-.purlpe_table thead th{
+.purple_table thead th{
 	background : #AA9CBA;
 	color: #FFF;
 }
-.purlpe_table thead tr:last-of-type th{border-bottom: none;}
-.purlpe_table {border-top: none;}
+.purple_table thead tr:last-of-type th{border-bottom: none;}
+.purple_table {border-top: none;}
 
 .regi_key_dates {width: 100%; display: flex; align-items: center; justify-content: center; gap: 60px; margin-bottom: 80px; flex-wrap: wrap;} 
 .regi_key_dates > img {max-width: 475px; width: 100%;}
@@ -2440,26 +2440,26 @@ section.coming img {width: 100%;}
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	padding-top: 49px;
-	padding-left: 33px;
-	padding-bottom: 27px;
+	padding-top: 25px;
+    padding-left: 33px;
+    padding-bottom: 27px;
 }
 
 .abstract_key_dates > .key_date:nth-child(2){
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-2.png");
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-2-1.png");
 }
 
 .abstract_key_dates > .key_date:nth-child(3){
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-3.png");
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-3-1.png");
 }
 .abstract_key_dates > .key_date:nth-child(4){
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-4.png");
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-4-1.png");
 }
 .abstract_key_dates > .key_date:nth-child(5){
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-5.png");
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-5-1.png");
 }
 .abstract_key_dates > .key_date:nth-child(6){
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-6.png");
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-6-1.png");
 }
 
 .abstract_key_dates > .key_date > div{
@@ -2474,8 +2474,14 @@ section.coming img {width: 100%;}
 	margin-top: 0;
 }
 
-.abstract_key_dates > .key_date > div *{
+.abstract_key_dates > .key_date *{
 	color: #FFF;
+}
+
+.abstract_key_dates > .key_date h4{
+	font-size: 17px;
+	font-weight: 600;
+	/* margin-bottom: 14px; */
 }
 
 .abstract_key_dates > .key_date > div h3{
@@ -2583,8 +2589,8 @@ section.coming img {width: 100%;}
 
 	.abstract_key_dates > .key_date > div p{font-size: 14px;}
 	.abstract_key_dates > .key_date > div h6{font-size: 20px;}
-	.abstract_key_dates > .key_date > div h3{font-size: 60px;}
-	.abstract_key_dates > .key_date{    padding-top: 44px;}
+	.abstract_key_dates > .key_date > div h3{font-size: 42px;}
+	.abstract_key_dates > .key_date{ padding-top: 24px;}
 }
 
 

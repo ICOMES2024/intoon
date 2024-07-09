@@ -68,8 +68,10 @@ $info = sql_fetch($sql_info);
                     </div>
 
 				<div class="abstract_key_dates">
-					<div class="key_date"></div>
 					<div class="key_date">
+                    </div>
+					<div class="key_date">
+                        <h4>Abstract Submission Deadline</h4>
 						<div>
 							<h3>20</h3>
 							<div>
@@ -79,6 +81,7 @@ $info = sql_fetch($sql_info);
 						</div>
 					</div>
 					<div class="key_date">
+                        <h4>Notification of Abstract Acceptance</h4>
 						<div>
 							<h3>10</h3>
 							<div>
@@ -90,6 +93,7 @@ $info = sql_fetch($sql_info);
 						<p><span class="star">*</span> Abstracts submitted by June 20 will be notified of acceptance <br/>&nbsp;&nbsp;&nbsp;on July 10.</p>
 					</div>
 					<div class="key_date">
+                    <h4>Late-breaking Abstract Submission Deadline</h4> 
 					<div>
 							<h3>11</h3>
 							<div>
@@ -101,6 +105,7 @@ $info = sql_fetch($sql_info);
                         <p><span class="star">*</span> Late-breaking abstracts may not be eligible for Travel Grants.</p>
 					</div>
 					<div class="key_date">
+                    <h4>Notification of Late-breaking Abstract<br/>Acceptance</h4> 
 						<div>
 							<h3>30</h3>
 							<div>
@@ -110,6 +115,7 @@ $info = sql_fetch($sql_info);
 						</div>
 					</div>
 					<div class="key_date">
+                    <h4>Registration Deadline for Approved<br/>Abstract Presenters</h4>  
 						<div>
 							<h3>08</h3>
 							<div>

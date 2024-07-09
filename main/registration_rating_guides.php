@@ -56,7 +56,7 @@
 		<h3 class="title">제공 평점 <!--<span class="red_txt font_inherit">(예정)</span>--></h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
-				<table class="c_table2 detail_table center purlpe_table">
+				<table class="c_table2 detail_table center purple_table">
 					<thead>
 						<tr>
 							<th>구분</th>

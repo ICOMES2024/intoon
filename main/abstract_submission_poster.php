@@ -47,12 +47,16 @@ $info = sql_fetch($sql_info);
             </div> -->
             <!--keydate-->
             <div>
-                <div class="section_title_wrap2">
-                    <h3 class="title">Key Dates</h3>
-                </div>
+                    <div class="section_title_wrap2">
+                        <h3 class="title" style="padding-bottom: 0;"><!--<?= $locale("keydate") ?>-->Key Dates</h3>
+                        <p class="text_r bold">*KST (UTC+9)</p>
+                    </div>
+
 				<div class="abstract_key_dates">
-					<div class="key_date"></div>
 					<div class="key_date">
+                    </div>
+					<div class="key_date">
+                        <h4>Abstract Submission Deadline</h4>
 						<div>
 							<h3>20</h3>
 							<div>
@@ -62,6 +66,7 @@ $info = sql_fetch($sql_info);
 						</div>
 					</div>
 					<div class="key_date">
+                        <h4>Notification of Abstract Acceptance</h4>
 						<div>
 							<h3>10</h3>
 							<div>
@@ -73,17 +78,19 @@ $info = sql_fetch($sql_info);
 						<p><span class="star">*</span> Abstracts submitted by June 20 will be notified of acceptance <br/>&nbsp;&nbsp;&nbsp;on July 10.</p>
 					</div>
 					<div class="key_date">
+                    <h4>Late-breaking Abstract Submission Deadline</h4> 
 					<div>
 							<h3>11</h3>
 							<div>
-								<p>Thursday    ,</p>
+								<p>Thursday,</p>
 								<h6>July</h6>
 							</div>
 						</div>
 						<p><span class="star">*</span> Late-breaking abstracts can only be submitted as poster exhibitions.</p>
-						<p><span class="star">*</span> Late-breaking abstracts may not be eligible for Travel Grants.</p>
+                        <p><span class="star">*</span> Late-breaking abstracts may not be eligible for Travel Grants.</p>
 					</div>
 					<div class="key_date">
+                    <h4>Notification of Late-breaking Abstract<br/>Acceptance</h4> 
 						<div>
 							<h3>30</h3>
 							<div>
@@ -93,6 +100,7 @@ $info = sql_fetch($sql_info);
 						</div>
 					</div>
 					<div class="key_date">
+                    <h4>Registration Deadline for Approved<br/>Abstract Presenters</h4>  
 						<div>
 							<h3>08</h3>
 							<div>
@@ -102,6 +110,7 @@ $info = sql_fetch($sql_info);
 						</div>
 					</div>
 				</div>
+            </div>
                 <!-- <div class="table_wrap detail_table_common">
                     <table class="c_table detail_table">
                         <colgroup>
@@ -190,7 +199,7 @@ $info = sql_fetch($sql_info);
 					</ul>
 				</div>
 				<div class="text_center btn_box mt25">
-                <a href="https://image.webeon.net/icomes2024/template/ICOMES_Guided_Poster_Presentation_Template.pptx" target="_blank" class="btn long_btn" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a>
+                <a href="https://image.webeon.net/icomes2024/template/ICOMES_Guided_Poster_Presentation_Template.pptx" target="_blank" class="btn long_btn" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Guided Poster Template Download</a>
 
 					<!-- [240514] sujeong / 기존 다운로드 버튼 / 파일 전달받지 못해 not_yet으로 대체 -->
 					<!-- <a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a> -->
