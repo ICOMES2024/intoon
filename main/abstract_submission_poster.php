@@ -110,7 +110,7 @@ $info = sql_fetch($sql_info);
 						</div>
 					</div>
 				</div>
-            </div>
+        
                 <!-- <div class="table_wrap detail_table_common">
                     <table class="c_table detail_table">
                         <colgroup>

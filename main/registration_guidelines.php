@@ -40,22 +40,22 @@ $price = get_data($sql_price);
             </h3>
             <div class="regi_key_dates">
 					<div class="key_date">
-                        <h2>Registration Open</h2>
-                        <div>
-							<h3>19</h3>
-							<div>
-								<p>Tuesday,</p>
-								<h6>March</h6>
-							</div>
-						</div>
-                    </div>
-					<div class="key_date">
                         <h2>Early-bird Registration Deadline</h2>
-						<div>
+                        <div>
 							<h3>25</h3>
 							<div>
 								<p>Thursday,</p>
 								<h6>July</h6>
+							</div>
+						</div>
+                    </div>
+					<div class="key_date">
+                        <h2>Pre-registration Deadline</h2>
+						<div>
+							<h3>8</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>August</h6>
 							</div>
 						</div>
 					</div>	

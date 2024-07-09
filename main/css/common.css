@@ -121,10 +121,12 @@ html::-webkit-scrollbar-thumb:hover{
 .border_bottom_70 {border-bottom:1px solid #B2B2B2;}
 .mt10 {margin-top:10px;}
 .mt20 {margin-top:20px;}
+.mt50{margin-top: 50px;}
 .mt4 {margin-top:4px;}
 .mb_0 {margin-bottom: 0 !important;}
 .mb10 {margin-bottom: 10px;}
 .mb20 {margin-bottom: 20px;}
+.mb50{margin-bottom: 50px;}
 .has_right_border{margin-right:10px;position:relative;}
 .has_right_border:after{content:"";display:inline-block;position:absolute;right:-6px;top:50%;transform:translateY(-50%);width:1px;height:12px;background:rgba(0,0,0,0.7);}
 .has_bar{position:relative;text-align:center;}
