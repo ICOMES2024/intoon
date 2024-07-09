@@ -2608,9 +2608,9 @@ section.coming img {width: 100%;}
 .abstract_submission_award .poster_td {color: #5C0378;}
 .abstract_submission_award .md_bg{background-color: #BBAFC7 !important; opacity: 0.8; color: #FFF;}
 .abstract_submission_award .yellow_btn{background-color: #F59F39;}
-.abstract_submission_award .round_title{background-color: #8157BA; width: 100%; height: 50px; display: flex;align-items: center;justify-content: center; color: #FFF;border-radius: 26px; font-weight: bold; font-size: 28px; margin: 44px auto;}
+.abstract_submission_award .round_title{background-color: #9150A4; width: 100%; height: 50px; display: flex;align-items: center;justify-content: center; color: #FFF;border-radius: 26px; font-weight: bold; font-size: 28px; margin: 44px auto;}
 
-.abstract_submission_award .round_title.purple{background-color: #9150A4;}
+.abstract_submission_award .round_title.purple{background-color: #8157BA;}
 
 .abstract_submission_award .download_wrap{display: flex; align-items: center; justify-content: center; margin-bottom: 44px; flex-wrap: wrap;}
 
@@ -2665,6 +2665,11 @@ section.coming img {width: 100%;}
 	text-align: center;
 }
 
+.remark_box > p, .remark_box span{
+	line-height: 1.6;
+	font-size: 18px;
+}
+
 @media screen and (max-width:1200px) {
 	.abstract_submission_award .award_list > div > .awards_title{
 		font-size: 16px;
@@ -2698,6 +2703,8 @@ section.coming img {width: 100%;}
 
 	/* .abstract_submission_award .award_list > div > div:nth-child(2){display: block;} */
 	.abstract_submission_award .award_list > div{width: 100%;}
+
+	.top_text_box{font-size: 20px;}
 }
 
 .registration_rating_guides .more_btn {
@@ -2721,6 +2728,9 @@ section.coming img {width: 100%;}
 	.abstract_key_dates > .key_date:nth-child(5) > div,.abstract_key_dates > .key_date:nth-child(6) > div{
 		margin-top: 24px;
 	}
+	.remark_box > p, .remark_box span{
+		font-size: 14px;
+	}
 }
 
 .guide_gray_box{
@@ -2741,3 +2751,11 @@ section.coming img {width: 100%;}
 		bottom: -6px;
 	}
 }
+
+.tab_green.award li.on a{
+	padding: 12px 55px;
+}
+.tab_green.award li a{
+	padding: 12px 68px 12px 46px;
+}
+

@@ -5,7 +5,7 @@
 <section class="abstract_submission_award container">
     <h1 class="page_title">Awards & Grants</h1>
     <div class="inner">
-        <ul class="tab_green long abstract_submission">
+        <ul class="tab_green long abstract_submission award">
             <li class="on"><a href="./abstract_submission_award.php">Overseas</a></li>
             <li><a class="" href="./abstract_submission_award_kor.php">Domestic</a></li>
         </ul>
@@ -15,22 +15,67 @@
 				<div class="text_box">
 					<ul class="">
 						<!-- <li class="bold font_26">The organizing committee of ICOMES 2024 has made the decision to offer benefits to all researchers who have accepted abstracts and will be participating in the on-site congress.</li> -->
-                         <li class="bold font_24">Updated Procedure for Travel Grants</li>
-                         <li class="bold p_indent">• Application Period: July 5<sup class="bold font_12">th</sup> to July 11<sup class="bold font_12">th</sup>, 2024</li>
-                         <li class="bold p_indent">• Notification of the Result: 12<sup class="bold font_12">th</sup> July</li>
-                         <li class="p_indent"><span class="bold">• Eligibility : </span> Authors of Accepted Abstract</li>
-                         <li class="p_indent">ICOMES support the Travel Grants <span class="bold">for one author</span> per an accepted abstract.</li>
-                         <li class="bold p_indent">* All timelines are based on KST (UTC+9).</li>
+                         <li class="bold ">Updated Procedure for Travel Grants</li>
+                         <li class="bold p_indent purple_txt">• Application Period: July 5<sup class="bold font_12 purple_txt">th</sup> to July 11<sup class="bold font_12 purple_txt">th</sup>, 2024</li>
+                         <li class="bold p_indent purple_txt">• Notification of the Result: July 12<sup class="bold font_12 purple_txt">th</sup>, 2024</li>
+                         <li class="p_indent"><span class="bold purple_txt">• Eligibility : </span> Authors of Accepted Abstract</li>
+                         <li class="p_indent">ICOMES support the Travel Grants <span class="bold purple_txt">for one author</span> per an accepted abstract.</li>
+                         <li class="bold p_indent purple_txt">* All timelines are based on KST (UTC+9).</li>
 					</ul>
 				</div>
 			</div>
-			<!--Travel Grants start-->
+            		<!-- download start -->
+			<div>
+				<!-- <div class="section_title_wrap2">
+					<h4 class="round_title purple">Download Application Form</h4>
+				</div> -->
+				<div class="download_wrap">
+					<a href="https://forms.gle/VcHcEspujF5k6u499" class="btn long_btn type2 text_long font_16 yellow_btn" target="_blank">
+						Go to the Application Form
+					</a>
+				</div>
+			</div>
+			<!-- download end -->
+            <!--step start-->
 			<div>
 				<div class="section_title_wrap2">
-					<!-- <h3 class="title">Travel Grants</h3> -->
-                    <h4 class="round_title">Apply for the Travel Grants</h4>
+					<h4 class="round_title">Steps to Apply for Travel Grants</h4>
 				</div>
-				<h4 class="top_text_box">Overseas</h4>
+				<div class="steps_area five_steps travel_step">
+					<ul class="clearfix">
+						<li>
+							<p></p>
+							<p class="sm_txt">Submit the abstract <br>through the website.</p>
+						</li>
+						<li>
+							<p></p>
+							<p class="sm_txt">Receive notification <br>of abstract selection.</p>
+						</li>
+						<li>
+							<p></p>
+							<p class="sm_txt">Fill in the Application<br/>Form and Submit It via<br/>the Following Online<br/>Application Link
+                            <br><span class="purple_txt font_inherit">5<sup class="purple_txt font_inherit font_12">th</sup>to 11<sup class="purple_txt font_inherit font_12">th</sup> July</span></p>
+						</li>
+						<li>
+							<p></p>
+							<p class="sm_txt">Receive a Notification of the<br/>Status Result of the Travel<br/>Grant via Personal Email.<br/>(Acceptance or Rejection).
+                            <br><span class="purple_txt font_inherit">12<sup class="purple_txt font_inherit font_12">th</sup>July</span></p>
+						</li>
+						<li>
+							<p></p>
+							<p class="sm_txt">Participate<br/>in ICOMES 2024
+                            <br><span class="purple_txt font_inherit">5<sup class="purple_txt font_inherit font_12">th</sup> to 7<sup class="purple_txt font_inherit font_12">th</sup>September</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--step end-->
+			<!--Travel Grants start-->
+			<div>
+				<!-- <div class="section_title_wrap2">
+                    <h4 class="round_title">Apply for the Travel Grants</h4>
+				</div> -->
+				<h4 class="top_text_box violet_bg2">Apply for the Travel Grants</h4>
 				<div class="table_wrap detail_table_common x_scroll">
 					<table class="c_table detail_table">
 						<colgroup>
@@ -73,16 +118,16 @@
 						</tbody>
 					</table>
                 </div>
-                <div class="text_box">
-                    <p class="p_indent font_18 bold mt10">* Remark</p>
-                    <p class="mt10 p_indent">• <span class="bold">Payment for travel grants</span> will be processed <span class="bold">on-site only for International participants.</span></p>
-                    <p class="mt10 p_indent">• <span class="bold">Payment for travel grants</span>are expected to be processed on <span class="bold">September 6th to 7th at the designated location.</span>
+                <div class="remark_box">
+                    <p class="p_indent font_20 bold mt10"> Remark</p>
+                    <p class="mt10 p_indent ">• <span class="bold purple_txt ">Payment for travel grants</span> will be processed <span class="bold purple_txt ">on-site only for International participants.</span></p>
+                    <p class="mt10 p_indent ">• <span class="bold purple_txt ">Payment for travel grants</span>are expected to be processed on <span class="bold purple_txt ">September 6th to 7th at the designated location.</span>
                     </p>
-                    <p class="mt10 p_indent">• <span class="bold">For presenters participating in 'Oral presentation' or 'Guided Poster presentation', </span>travel grants will be disbursed upon the successful completion of your presentation. <span class="bold">Successful completion of the presentation is a requirement for eligibility to receive the travel grant.</span></p>
-                    <p class="mt10 p_indent">• Proxy receipt or duplicate receipt is prohibited on-site.</p>
-                    <p class="mt10 p_indent">• All recipients must sign a receipt, which will be prepared on-site.</p>
+                    <p class="mt10 p_indent ">• <span class="bold purple_txt ">For presenters participating in 'Oral presentation' or 'Guided Poster presentation', </span>travel grants will be disbursed upon the successful completion of your presentation. <span class="bold purple_txt ">Successful completion of the presentation is a requirement for eligibility to receive the travel grant.</span></p>
+                    <p class="mt10 p_indent ">• Proxy receipt or duplicate receipt is prohibited on-site.</p>
+                    <p class="mt10 p_indent ">• All recipients must sign a receipt, which will be prepared on-site.</p>
                 </div>
-			</div>
+            </div>
 			<!--Travel Grants end-->
 			<!--Contact for Abstract start-->
 			<!-- <div>
@@ -130,53 +175,8 @@
 				<!-- <p class="mt10 p_indent">• 지원금 신청과 기타 필요한 정보에 대한 안내는 초록 채택자에 한하여 별도로 사무국에서 이메일을 통해 연락드릴 예정입니다.</p> -->
 			<!-- </div> -->
 			<!--Contact for Abstract end-->
-			<!--step start-->
-			<div>
-				<div class="section_title_wrap2">
-					<h4 class="round_title">Steps to Apply for Travel Grants</h4>
-				</div>
-				<div class="steps_area five_steps travel_step">
-					<ul class="clearfix">
-						<li>
-							<p></p>
-							<p class="sm_txt">Submit the abstract <br>through the website.</p>
-						</li>
-						<li>
-							<p></p>
-							<p class="sm_txt">Receive notification <br>of abstract selection.</p>
-						</li>
-						<li>
-							<p></p>
-							<p class="sm_txt">Attend and present at <br>ICOMES 2024 on-site.</p>
-						</li>
-						<li>
-							<p></p>
-							<p class="sm_txt">Complete the travel <br>grant application form <br>and apply via email <br><span class="red_t font_inherit">(Application period: <br>Sep 8<sup class="red_t font_inherit font_12">th</sup> ~ Sep 14<sup class="red_t font_inherit font_12">th</sup>)</span></p>
-						</li>
-						<li>
-							<p></p>
-							<p class="sm_txt">Receive notification of <br>application results <br>(within seven days after the <br>application deadline).</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!--step end-->
-			<!-- download start -->
-			<div>
-				<div class="section_title_wrap2">
-					<h4 class="round_title purple">Download Application Form</h4>
-				</div>
-				<div class="download_wrap">
-					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Travel_Grant_Application.docx" class="btn long_btn type2 text_long font_16 yellow_btn" target="_blank">
-						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Travel Grant Application Form Download (Overseas)
-					</a>
-					<!-- <a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Application_for_travel_subsidy_Non-MD.docx" class="btn long_btn type2 text_long font_16 yellow_btn kor" target="_blank">
-						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Non-MD 지방 참석자 여비 보조금 지원 양식 다운로드(Domestic)
-					</a> -->
-				</div>
-                <!-- <p class="mt10 p_indent kor">• MD 지방 참석자: 지원 양식 별도 없음. 초록채택자 공지 후 대한비만학회 개별 공지 예정</p> -->
-			</div>
-			<!-- download end -->
+			
+	
 			<!--Oral Presentation start-->
 			<div>
 				<div class="section_title_wrap2">
@@ -185,7 +185,7 @@
 				<div class="mb20 text_box indent">
 					<ul>
 						<li>• Outstanding oral and poster presentations will be recognized and awarded during the closing ceremony.</li>
-						<li>• The winners will be notified individually of the results, and their attendance at the ceremony is mandatory.</li>
+						<li>• The winners will be notified individually of the results, and their attendance at the closing ceremony is mandatory.</li>
 					</ul>
 				</div>	
 				<ul class="award_list">
