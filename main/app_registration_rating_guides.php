@@ -29,7 +29,7 @@
 		<button class="more_btn"></button>
 		<!-- 1. 연수 평점 안내 start -->
 		<div class="korean_cme">
-		<h3 class="title">연수 평점 안내</h3>
+		<!-- <h3 class="title">연수 평점 안내</h3>
 		<div class="details text_box">
 			<ul class="indent_ul">
 				<li>• 'ICOMES 2024' 참가에 따른 평점을 아래와 같이 안내해 드립니다.</li>
@@ -37,14 +37,14 @@
 				<li>• 면허번호 및 자격번호 오류 시 평점 이수 명단에서 누락될 수 있습니다.</li>
 				<li>• 교육 시간이 중복될 경우 중복되는 시간의 평점은 인정되지 않습니다.</li>
 			</ul>
-		</div>
+		</div> -->
 	    <!-- 1. 연수 평점 안내 end -->
 
 		<!-- 2. 제공 평점 start -->
 		<h3 class="title">제공 평점 <!--<span class="red_txt font_inherit">(예정)</span>--></h3>
 		<div class="details">
 			<div class="table_wrap x_scroll">
-				<table class="c_table2 detail_table center purlpe_table">
+				<table class="c_table2 detail_table center purple_table">
 					<thead>
 						<tr>
 							<th>구분</th>

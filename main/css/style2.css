@@ -146,7 +146,15 @@ section.container.login.bg {border: 0px;}
 .dates_area li:nth-of-type(2) p, .dates_area li:nth-of-type(2) h2 span {color: #9150A4;}
 
 @media screen and (max-width:1880px) {
-	.dates_area{display: none;}
+	.dates_area{
+		width: calc(50% - 32px);
+	}
+}
+
+@media screen and (max-width:1320px) {
+	.dates_area{
+		width: calc(70% - 32px);
+	}
 }
 
 /* main > News&Notice */
