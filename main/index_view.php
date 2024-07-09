@@ -74,47 +74,42 @@
 		<div class="container">
 			<!-- <img src="https://image.webeon.net/icomes2024/main/2024_img_vsl_text_2.png" class="pc_only img_vsl_text" alt="">
 			<img src="https://image.webeon.net/icomes2024/main/2024_main_img.png" class="pc_only main_img" alt=""> -->
-			<img src="https://image.webeon.net/icomes2024/main/2024_icomes_main_v2.png" class="pc_only main_img"/>
+			<img src="https://image.webeon.net/icomes2024/main/2024_title.png" class="pc_only main_img"/>
 			<div class="mb_only img_vsl_text" style="">
+			<img src="https://image.webeon.net/icomes2024/main/2024_title.png" class="mb_only"/>
 			</div>
 			<!-- 상단 타이틀 -->
 			<div class="txt_wrap">
 			</div>
 		</div>
-		<div class="main_btn_wrap">
-			<button type="button" class="btn_circle_arrow"></button>
-		</div>
+	
 		<div class="dates_area">
 			<p class="kst">*KST (UTC+9)</p>
 			<ul>
 				<li>
 					<a href="/main/abstract_submission_guideline.php">
-						<h2>July 11 <span>(Thu)</span></h2>
-						<!-- <i><img src="/main/img/icons/icon_report.svg" alt=""></i> -->
 						<p>Late-breaking-Abstract Submission <br/>Deadline</p>
+						<h2>July <span>11</span></h2>
 					</a>
 				</li>
-				<!-- <li>
-					 <a href="/main/abstract_submission_guideline.php"> 
-						<h2>End of Every Month <span>(until June)</span></h2>
-						<p style="margin-top: 10px;">Notification of<br/>Acceptance</p>
-					</a>
-				</li> -->
 				<li>
 					<a href="/main/registration_guidelines.php">
-						<h2>July 12 <span>(Fri)</span></h2>
-						<!-- <i><img src="/main/img/icons/icon_calendar.svg" alt=""></i> -->
 						<p>Early-bird Registration <br/>Deadline</p>
+						<h2>July <span>25</span></h2>
+						
 					</a>
 				</li>
 				<li>
-					 <a href="/main/abstract_submission_award.php"> 
+					 <a href="" class="not_yet"> 
 						<!-- <h2>2 Jun</h2>  -->
-						<h2>Awards &amp;<br/>Grants</h2>
-						<i><img src="https://image.webeon.net/icomes2024/main/img_trophy.svg" alt=""></i>
+						<!-- <h2>Awards &amp;<br/>Grants</h2> -->
+						<img src="https://image.webeon.net/icomes2024/main/2024_main_awards.svg" alt="">
 					</a>
 				</li>
 			</ul>
+		</div>
+		<div class="main_btn_wrap">
+			<button type="button" class="btn_circle_arrow"></button>
 		</div>
 	</div>
 </section>
@@ -127,7 +122,7 @@
 		<div class="key_speaker_wrap">
 			<!-- <div class="main_speaker_wrap"> -->
 				<li class="pointer" name="presidential_lecture" data-id="day_3">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_8-1.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_8-2.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_2" data-id="day_2">

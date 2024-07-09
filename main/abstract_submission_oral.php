@@ -50,7 +50,59 @@ $info = sql_fetch($sql_info);
                 <div class="section_title_wrap2">
                     <h3 class="title">Key Dates</h3>
                 </div>
-                <div class="table_wrap detail_table_common">
+				<div class="abstract_key_dates">
+					<div class="key_date"></div>
+					<div class="key_date">
+						<div>
+							<h3>20</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>Jun</h6>
+							</div>
+						</div>
+					</div>
+					<div class="key_date">
+						<div>
+							<h3>10</h3>
+							<div>
+								<p>Wednesday,</p>
+								<h6>July</h6>
+							</div>
+						</div>
+						<p><span class="star">*</span> Details regarding presentation type and guidelines will be provided.</p>
+						<p><span class="star">*</span> Abstracts submitted by June 20 will be notified of acceptance <br/>&nbsp;&nbsp;&nbsp;on July 10.</p>
+					</div>
+					<div class="key_date">
+					<div>
+							<h3>11</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>July</h6>
+							</div>
+						</div>
+						<p><span class="star">*</span> Late-breaking abstracts can only be submitted as poster exhibitions.</p>
+						<p><span class="star">*</span> Late-breaking abstracts may not be eligible for Travel Grants.</p>
+					</div>
+					<div class="key_date">
+						<div>
+							<h3>30</h3>
+							<div>
+								<p>Tuesday,</p>
+								<h6>July</h6>
+							</div>
+						</div>
+					</div>
+					<div class="key_date">
+						<div>
+							<h3>08</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>August</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+                <!-- <div class="table_wrap detail_table_common">
                     <table class="c_table detail_table">
                         <colgroup>
                             <col class="submission_col">
@@ -61,7 +113,6 @@ $info = sql_fetch($sql_info);
 								<td class="f_bold">Mid-February</td>
 							</tr>
 							<tr>
-								<!-- <th class="close_th">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th> -->
 								<th class="close_th">Abstract Submission<br class="br_mb_only"> Deadline</th>
 								<td><span class="font_inherit f_bold red_t">June 20 (Thu)</span></td>
 							</tr>
@@ -75,7 +126,6 @@ $info = sql_fetch($sql_info);
                             </tr>
                             <tr>
 								<th>Notification of<br class="br_mb_only"> Late-breaking Abstract Acceptance</th>
-								<!-- <td><span class="font_inherit f_bold">End of every month</span><br>*The scientific committee will conduct a qualification examination at the end of each month <br>to facilitate attendee's pre-registration.</td> -->
                                  <td><span class="font_inherit f_bold">July 30 (Tue)</span></td>
 							</tr>
 							<tr>
@@ -83,7 +133,7 @@ $info = sql_fetch($sql_info);
 								<td>August 1 (Thu)</td>
 							</tr>
                     </table>
-                </div>
+                </div> -->
             </div>
 			<!--session information-->
             <div>
@@ -98,19 +148,19 @@ $info = sql_fetch($sql_info);
                         </colgroup>
                         <tr>
                             <th class="centerT f_bold text_center">Session</th>
-                            <th class="centerT f_bold">Oral Presentation 1</th>
-                            <th class="centerT f_bold">Oral Presentation 2</th>
-                            <th class="centerT f_bold">Oral Presentation 3</th>
-                            <th class="centerT f_bold">Oral Presentation 4</th>
+                            <th class="centerT f_bold skyblue_bg_th">Oral Presentation 1</th>
+                            <th class="centerT f_bold skyblue_bg_th">Oral Presentation 2</th>
+                            <th class="centerT f_bold darkblue_bg_th">Oral Presentation 3</th>
+                            <th class="centerT f_bold darkblue_bg_th">Oral Presentation 4</th>
                         </tr>
 						<tr>
-							<td class="text_center">Date & Time</td>
-							<td class="text_center" colspan="2">13:00 - 14:00<br>Sep. 6 (Fri)</td>
-							<td class="text_center" colspan="2">12:50 - 13:50<br>Sep. 7 (Sat)</td>
+							<td class="text_center bold">Date & Time</td>
+							<td class="text_center" colspan="2"><span class="bold">13:00 - 14:00</span><br>Sep. 6 (Fri)</td>
+							<td class="text_center" colspan="2"><span class="bold">12:50 - 13:50</span><br>Sep. 7 (Sat)</td>
 							
 						</tr>
 						<tr>
-							<td class="text_center">Location</td>
+							<td class="text_center bold">Location</td>
 							<td class="text_center">Room 4, 5F</td>
 							<td class="text_center">Room 5, 5F</td>
 							<td class="text_center">Room 4, 5F</td>
@@ -126,8 +176,8 @@ $info = sql_fetch($sql_info);
 				</div>
 				<div class="text_box indent">
 					<ul>
-						<li>• Language: English</li>
-						<li>• Each presenter will be given 10 minutes. (7 minutes talk / 3 minutes Q&A)</li>
+						<li>• Language: <span class="purple_txt bold">English</span></li>
+						<li>• Each presenter will be given <span class="purple_txt bold">10 minutes.</span> (7 minutes talk / 3 minutes Q&A)</li>
 					</ul>
 				</div>
 			</div>
@@ -148,19 +198,15 @@ $info = sql_fetch($sql_info);
                            </colgroup>
                            <tr>
                                <th></th>
-<!--                                <th class="f_bold text_center">Sep. 7 (Thu)</th> -->
                                <th class="f_bold text_center">Sep. 6 (Fri)</th>
                                <th class="f_bold text_center">Sep. 7 (Sat)</th>
                            </tr>
-						<tr>
+						<!-- <tr>
 							<td class="text_center">Location</td>
-<!-- 							<td class="text_center">Dressing Room, 3F</td> -->
 							<td class="text_center" colspan="2">Park Studio, 5F</td>
-							<!-- <td class="text_center">Park Studio, 5F</td> -->
-						</tr>
+						</tr> -->
 						<tr>
 							<td class="text_center">Operating Hour</td>
-<!-- 							<td class="text_center">14:00 - 19:00</td> -->
 							<td class="text_center">07:30 - 18:00</td>
 							<td class="text_center">07:30 - 17:00</td>
 						</tr>
@@ -185,6 +231,10 @@ $info = sql_fetch($sql_info);
 						<li>• Operating staff will be assigned to each room to assist you with any technical issues.</li>
 					</ul>
 				</div>
+				<div class="text_center btn_box mt25">
+                <a href="https://image.webeon.net/icomes2024/template/ICOMES_Oral_Presentation_Template.pptx" target="_blank" class="btn long_btn" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a>
+
+                </div>
 			</div>
             <?php
             }

@@ -276,6 +276,12 @@ $(document).ready(function(){
 			} else {
 				$(".section_bg").css({"padding-top":"117px", "height":win_height, "min-height":"850px"})
 			}
+			//[240705] sujeong / 기존 padding -> margin
+			// if (win_width <= 1024) {
+			// 	$(".section_bg").css({"margin-top":"0", "height":win_height, "min-height":"auto"})
+			// } else {
+			// 	$(".section_bg").css({"margin-top":"117px", "height":win_height, "min-height":"850px"})
+			// }
 		}
 	});
 	$(window).trigger("resize");

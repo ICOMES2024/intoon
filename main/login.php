@@ -13,7 +13,9 @@
 	<!-- 백그라운드 이미지 slick -->
 	<!--container -->
 	<div>
-		<a href="./index.php" class="login_img"><img src="https://image.webeon.net/icomes2024/main/2024_login_img.png"></a>
+		<a href="./index.php" class="login_img">
+			<img src="https://image.webeon.net/icomes2024/main/2024_title_row.png">
+		</a>
 		<form>
 			<ul>
 				<li>

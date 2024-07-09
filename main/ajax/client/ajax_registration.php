@@ -790,30 +790,30 @@
 
 	function calcFee($user_idx, $category, $country){
 		// // 회원검증
-		// $sql = "SELECT 
-		// 			m.idx, 
-		// 			IF(korea_nation.idx IS NOT NULL, 1, 0) AS is_korean, 
-		// 			ksola_member_status 
-		// 		FROM member AS m
-		// 		LEFT JOIN(
-		// 			SELECT idx FROM nation WHERE nation_tel = '82'
-		// 		)AS korea_nation
-		// 		ON m.nation_no = korea_nation.idx
-		// 		WHERE m.is_deleted = 'N' 
-		// 		AND m.`status` = 'Y' 
-		// 		AND m.idx = {$user_idx}
-		// 	   ";
+		$sql = "SELECT 
+					m.idx, 
+					IF(korea_nation.idx IS NOT NULL, 1, 0) AS is_korean, 
+					ksola_member_status 
+				FROM member AS m
+				LEFT JOIN(
+					SELECT idx FROM nation WHERE nation_tel = '82'
+				)AS korea_nation
+				ON m.nation_no = korea_nation.idx
+				WHERE m.is_deleted = 'N' 
+				AND m.`status` = 'Y' 
+				AND m.idx = {$user_idx}
+			   ";
 
 	// 회원검증
-	$sql = "SELECT 
-				m.idx, 
-				IF(korea_nation.idx IS NOT NULL, 1, 0) AS is_korean, 
-				ksola_member_status 
-			FROM member AS m
-			WHERE m.is_deleted = 'N' 
-			AND m.`status` = 'Y' 
-			AND m.idx = {$user_idx}
-			";
+	// $sql = "SELECT 
+	// 			m.idx, 
+	// 			IF(korea_nation.idx IS NOT NULL, 1, 0) AS is_korean, 
+	// 			ksola_member_status 
+	// 		FROM member AS m
+	// 		WHERE m.is_deleted = 'N' 
+	// 		AND m.`status` = 'Y' 
+	// 		AND m.idx = {$user_idx}
+	// 		";
 
 		$member = sql_fetch($sql);
 

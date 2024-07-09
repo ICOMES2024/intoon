@@ -5,7 +5,7 @@
         <ul class="toolbar_wrap">
             <li>
                 <a href="/main/program_glance.php">
-                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_program-1.svg" alt="">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_program-2.svg" alt="">
                 </a>
             </li>
             <?php
@@ -14,12 +14,12 @@
 
              <li>
                 <button type="button" onClick="location.href='/main/registration_guidelines.php'">
-                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist-1.svg" alt="">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist-2.svg" alt="">
                 </button>
             </li>
             <li>
                 <button type="button" onClick="location.href='/main/abstract_submission_guideline.php'">
-                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract-1.svg" alt="">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract-2.svg" alt="">
                 </button>
             </li>
             <!-- [240205] sujeong / 프로그램북, 초록집 다운로드 주석 -->
@@ -53,12 +53,12 @@
             ?>
             <li>
                 <button type="button" onClick="location.href='/main/registration_guidelines.php'">
-                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist-1.svg" alt="">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist-2.svg" alt="">
                 </button>
             </li>
             <li>
                 <button type="button" onClick="location.href='/main/abstract_submission_guideline.php'">
-                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract-1.svg" alt="">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract-2.svg" alt="">
                 </button>
             </li>
             <?php
@@ -67,13 +67,13 @@
             <?php
             if ($_SESSION["USER"]["idx"] == "") {
             ?>
-            <li><button type="button" onClick="alert('Need to login.')"><img src="https://image.webeon.net/icomes2024/logo/2024_tool_mypage-1.svg"
+            <li><button type="button" onClick="alert('Need to login.')"><img src="https://image.webeon.net/icomes2024/logo/2024_tool_mypage-2.svg"
                             alt=""></button></li>
             <?php
             } else {
             ?>
             <li><button type="button" onClick="location.href='/main/mypage.php'"><img
-                            src="https://image.webeon.net/icomes2024/logo/2024_tool_mypage-1.svg" alt=""></button></li>
+                            src="https://image.webeon.net/icomes2024/logo/2024_tool_mypage-2.svg" alt=""></button></li>
             <?php
             }
             ?>

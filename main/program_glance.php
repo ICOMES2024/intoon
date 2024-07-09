@@ -39,8 +39,8 @@
 
 				<!-- <button class="btn blue_btn nowrap not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
 				<!-- [240118] sujeong / not_yet 버튼으로 변경 -->
-					<!-- <button onclick="javascript:window.open('./download/2023 ICOMES_Program at a glance_0901.pdf')"
-						class="btn blue_btn nowrap"><img src="./img/icons/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
+					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/ICOMES_2024_PAG_v.0705.pdf')"
+						class="btn blue_btn nowrap"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button>
 				</div>
 
 				<div class="program_table_wrap">
@@ -52,7 +52,7 @@
 							<col class="program_first_col">
 						</colgroup>
 						<thead>
-							<tr>
+							<tr class="border_white">
 								<th class="font_big program_time program_room">Time/Location</th>
 								<th class="program_room">Room 1</th>
 								<th class="program_room">Room 2</th>
@@ -62,8 +62,8 @@
 								<th class="program_room">Room 6</th>
 								<th class="program_room">Room 7</th>
 							</tr>
-							<tr>
-								<th colspan="8" class="dark_gray_bg font_big day_tbody day_1">
+							<tr class="border_none">
+								<th colspan="8" class="purple_bg_2024 font_16 day_tbody day_1">
 									<!-- <div class="dots_div">Day 1 - 2024<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />5 (Thu)</div> -->
 									<div class="dots_div">Day 1 - Thursday, September 5, 2024</div>
 								</th>
@@ -92,7 +92,7 @@
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="break_time">
 									<div class="colons_div">16:30-16:40</div>
 								</td>
@@ -101,10 +101,10 @@
                                 <td class="break_time light_gray_bg"></td>
                                 <td class="break_time light_gray_bg"></td>
                                 <td class="break_time light_gray_bg"></td>
-							</tr>
+							</tr> -->
 							<tr>
 								<td>
-									<div class="colons_div">16:40-18:10</div>
+									<div class="colons_div">16:30-18:00</div>
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="skyblue_bg pointer" name="committee_session_2" data-id="67">
@@ -131,7 +131,7 @@
 							</tr>
                             <tr>
 								<td rowspan="2">
-									<div class="colons_div">18:10-19:10</div>
+									<div class="colons_div">18:00-19:00</div>
 								</td>
 								<td class="dark_sky_bg pointer" name="satellite_symposium_1" data-id="7">
 									Satellite<br />Symposium 1
@@ -167,12 +167,12 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">19:10-21:00</div>
+									<div class="colons_div">19:00-21:00</div>
 								</td>
 								<td></td>
 								<td></td>
 								<td class="white_yellow_bg pointer" name="welcome_cocktail_party" data-id="10" style="letter-spacing: -0.8px;"> 
-									Textbook Publication Inauguration Ceremony & Welcome Cocktail Party
+								Textbook Publication Inauguration Ceremony & Welcome Reception
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -183,8 +183,8 @@
 						</tbody>
 						<!---------- DAY 2 ---------->
 						<thead>
-							<tr>
-								<th colspan="8" class="dark_gray_bg font_big day_tbody day_2">
+							<tr class="border_none">
+								<th colspan="8" class="purple_bg_2024 font_16 day_tbody day_2">
 									<!-- <div class="dots_div">Day 2 - 2023<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />6 (Fri)</div> -->
 									<div class="dots_div">Day 2 - Friday, September 6, 2024</div>
 								</th>
@@ -223,8 +223,8 @@
 									<div class="colons_div">08:30-09:10</div>
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_1" data-id="14">
-									Keynote Lecture 1 
-									<p class="bold">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
+									Keynote Lecture 
+									<p class="">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
 									<p>Joel K. Elmquist</p>
 									<p>UT Southwestern Medical Center, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -292,8 +292,8 @@
 									<div class="colons_div">11:10-11:50</div>
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2" data-id="21">
-									Keynote Lecture 2
-									<p class="bold">GLP-1 Based Therapy of Obesity</p>
+									Keynote Lecture
+									<p class="">GLP-1 Based Therapy of Obesity</p>
 									<p>Michael A. Nauck</p>
 									<p>Ruhr-University Bochum, Germany</p>
 									<input type="hidden" name="e" value="room1">
@@ -355,6 +355,7 @@
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28">
 									Guided Poster Presentation 1
 									<input type="hidden" name="e" value="room7">
+									<div class="guide_gray_box"></div>
 									</td>
 								<td></td>
 							</tr>
@@ -375,11 +376,11 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_8" data-id="32">
-									Symposium 8 <p></p>
+									Symposium 8 <p>Medical Condition Change After Bariatric Surgery</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_2" data-id="33">
-									Sponsored Session 2 <p></p>
+									Sponsored Session 2 <p>Obesity Management with Combination Phentermine Plus Topiramate from Strategy to Practice</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
@@ -396,8 +397,8 @@
 									<div class="colons_div">15:40-16:20</div>
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_3" data-id="34">
-									Keynote Lecture 3
-									<p class="bold">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
+									Keynote Lecture
+									<p class="">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
 									<p>Silva Arslanian</p>
 									<p>University of Pittsburgh, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -480,8 +481,8 @@
 						</tbody>
 						<!---------- DAY 3 ---------->
 						<thead>
-							<tr>
-								<th colspan="8" class="dark_gray_bg font_big day_tbody day_3">
+							<tr class="border_none">
+								<th colspan="8" class="purple_bg_2024 font_16 day_tbody day_3">
 									<div class="dots_div">Day 3 - Saturday, September 7, 2024</div>
 								</th>
 							</tr>
@@ -519,8 +520,8 @@
 									<div class="colons_div">08:30-09:10</div>
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_4" colspan="3" data-id="44">
-									Keynote Lecture 4
-									<p class="bold">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
+									Keynote Lecture
+									<p class="">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
 									<p>Jean-Pierre Després</p>
 									<p>VITAM - Research Centre on Sustainable Health, Canada</p>
 									<input type="hidden" name="e" value="room1">
@@ -557,7 +558,7 @@
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_3" data-id="49">
-									Sponsored Session 3 <p></p>
+									Sponsored Session 3 <p>Optimization of Glycemic Control in Obese Diabetes Patients With CGM</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
                                 <td></td>
@@ -575,6 +576,7 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="presidential_lecture" colspan="3" data-id="50">
 								Presidential Lecture
+								<p class="">Obesity and Fatty Liver: Common but Ignored</p>
 								<p>Cheol-Young Park</p>
 								<p>Sungkyunkwan University, Korea</p>
 									<input type="hidden" name="e" value="room1">
@@ -633,6 +635,7 @@
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56">
 									Guided Poster Presentation 2
 									<input type="hidden" name="e" value="room7">
+									<div class="guide_gray_box"></div>
 									</td>
 								<td></td>
 							</tr>
@@ -641,8 +644,8 @@
 									<div class="colons_div">13:50-14:30</div>
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_5" colspan="3" data-id="57">
-									Keynote Lecture 5
-									<p class="bold">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
+									Keynote Lecture
+									<p class="">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
 									<p>William Evans</p>
 									<p>University of California, Berkeley, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -657,8 +660,8 @@
 									<div class="colons_div">14:30-15:10</div>
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_6" colspan="3" data-id="58">
-									Keynote Lecture 6
-									<p class="bold">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
+									Keynote Lecture
+									<p class="">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
 									<p>Michael D. Jensen</p>
 									<p>Mayo College of Medicine,USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -716,8 +719,8 @@
 									<div class="colons_div">17:00-17:40</div>
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
-									Keynote Lecture 7
-									<p class="bold">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
+									Keynote Lecture
+									<p class="">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
 									<p>W. Timothy Garvey</p>
 									<p>University of Alabama at Birmingham, USA</p>
 									<input type="hidden" name="e" value="room1">

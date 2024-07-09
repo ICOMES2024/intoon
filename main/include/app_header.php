@@ -74,7 +74,7 @@
 					</ul>
 				</li> -->
 				<li>
-					<a href="/main/app_registration_rating_guides.php">평점 안내<br/>(Korean Only)</a>
+					<a href="/main/app_registration_rating_guides.php">CME Credits<br/>(Korean Only)</a>
 				</li>
 				<li>
 					<a href="/main/app_notice.php">Notice</a>
