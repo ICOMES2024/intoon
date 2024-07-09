@@ -112,7 +112,7 @@ $locale = locale($language);
                             <li><a href="/main/abstract_submission_guideline.php">Submission Guidelines</a></li>
                             <li><a class="" href="/main/abstract_submission.php">Online Submission</a></li>
                             <li><a href="/main/abstract_submission_oral.php">Presentation Guidelines</a></li>
-                            <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
+                            <li><a href="/main/comingsoon.php">Awards & Grants</a></li>
 
                             <!-- <li><a href="/main/abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
                             <!-- <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
@@ -128,7 +128,7 @@ $locale = locale($language);
                         <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
                             <li><a href="/main/registration.php">Online Registration</a></li>
-                            <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
+                            <li><a href="/main/registration_rating_guides.php">CME Credits (Korean Only) </a></li>
                             <!-- <li><a href="/main/registration_guidelines.php">Registration Guidelines
                                 </a></li>
                             <li><a href="/main/registration.php">Online Registration</a></li>
@@ -269,7 +269,7 @@ $(document).ready(function() {
                     <li><a class="" href="/main/abstract_submission.php">Online Submission</a>
                     </li>
                     <li><a href="/main/abstract_submission_oral.php">Presentation Guidelines</a></li>
-                    <li><a href="/main/abstract_submission_award.php">Awards & Grants</a></li>
+                    <li><a href="/main/comingsoon.php">Awards & Grants</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m4"]) ? "show" : "") ?>">
@@ -277,7 +277,7 @@ $(document).ready(function() {
                 <ul class="m_sub_nav" style="display:<?= (in_array($_page, $_page_config["m4"]) ? "block" : "none") ?>">
                     <li><a href="/main/registration_guidelines.php">Registration Guidelines</a></li>
                     <li><a href="/main/registration.php">Online Registration</a></li>
-                    <li><a href="/main/registration_rating_guides.php">평점 안내</a></li>
+                    <li><a href="/main/registration_rating_guides.php">CME Credits (Korean Only)</a></li>
                 </ul>
             </li>
             <li class="m_nav_li" class="<?= (in_array($_page, $_page_config["m5"]) ? "show" : "") ?>">

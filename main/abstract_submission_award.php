@@ -6,26 +6,31 @@
     <h1 class="page_title">Awards & Grants</h1>
     <div class="inner">
         <ul class="tab_green long abstract_submission">
-            <li><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
-            <li><a class="" href="./abstract_submission.php">Online Submission</a></li>
-            <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
-            <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
-            <li class="on"><a href="./abstract_submission_award.php">Awards & Grants</a></li>
+            <li class="on"><a href="./abstract_submission_award.php">Overseas</a></li>
+            <li><a class="" href="./abstract_submission_award_kor.php">Domestic</a></li>
         </ul>
 		<div class="section section1">
+        <h3 class="title">Travel Grants</h3>
 			<div>
 				<div class="text_box">
-					<ul>
-						<li>The organizing committee of ICOMES 2024 has made the decision to offer benefits to all researchers who have accepted abstracts and will be participating in the on-site congress.</li>
+					<ul class="">
+						<!-- <li class="bold font_26">The organizing committee of ICOMES 2024 has made the decision to offer benefits to all researchers who have accepted abstracts and will be participating in the on-site congress.</li> -->
+                         <li class="bold font_24">Updated Procedure for Travel Grants</li>
+                         <li class="bold p_indent">• Application Period: July 5<sup class="bold font_12">th</sup> to July 11<sup class="bold font_12">th</sup>, 2024</li>
+                         <li class="bold p_indent">• Notification of the Result: 12<sup class="bold font_12">th</sup> July</li>
+                         <li class="p_indent"><span class="bold">• Eligibility : </span> Authors of Accepted Abstract</li>
+                         <li class="p_indent">ICOMES support the Travel Grants <span class="bold">for one author</span> per an accepted abstract.</li>
+                         <li class="bold p_indent">* All timelines are based on KST (UTC+9).</li>
 					</ul>
 				</div>
 			</div>
 			<!--Travel Grants start-->
 			<div>
 				<div class="section_title_wrap2">
-					<h3 class="title">Travel Grants</h3>
+					<!-- <h3 class="title">Travel Grants</h3> -->
+                    <h4 class="round_title">Apply for the Travel Grants</h4>
 				</div>
-				<h4 class="title">Overseas</h4>
+				<h4 class="top_text_box">Overseas</h4>
 				<div class="table_wrap detail_table_common x_scroll">
 					<table class="c_table detail_table">
 						<colgroup>
@@ -36,20 +41,20 @@
 							<tr>
 								<th class="text_center">Target</th>
 								<th class="text_center">Amount</th>
-								<th class="text_center">Remarks</th>
+								<!-- <th class="text_center">Remarks</th> -->
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td class="text_center">Oral Presenter</td>
-								<td class="text_center">USD 700</td>
-								<td rowspan="2" class="text_center">On-site attendance and presentation are required.</td>
+								<td class="text_center oral_th">Oral Presenter</td>
+								<td class="text_center bold oral_td ">USD 700</td>
+								<!-- <td rowspan="2" class="text_center">On-site attendance and presentation are required.</td> -->
 							</tr>
 							<tr>
                                 <!-- [240402] sujeong / 학회팀 요청 문구 수정 -->
-								<td class="text_center">Poster Presenter</td>
+								<td class="text_center poster_th">Poster Presenter</td>
 								<!-- <td class="text_center">Guided Poster Presenter<br>Poster Exhibitior</td> -->
-								<td class="text_center border_r">USD 500</td>
+								<td class="text_center  bold poster_td">USD 500</td>
 							</tr>
 							<!--<tr>
 								<td class="text_center">Oral Presenter</td>
@@ -68,15 +73,21 @@
 						</tbody>
 					</table>
                 </div>
-				<p class="mt10 p_indent">• Only the presenter is eligible to apply for the travel grant (duplicate applications are not allowed).</p>
-				<p class="mt10 p_indent">• The Secretariat will notify you of the results via email after the evaluation process.</p>
-				<p class="mt10 p_indent">• Please ensure accurate information is provided in the application form. <br>The Secretariat may request additional documents if any missing information or errors are found.</p>
+                <div class="text_box">
+                    <p class="p_indent font_18 bold mt10">* Remark</p>
+                    <p class="mt10 p_indent">• <span class="bold">Payment for travel grants</span> will be processed <span class="bold">on-site only for International participants.</span></p>
+                    <p class="mt10 p_indent">• <span class="bold">Payment for travel grants</span>are expected to be processed on <span class="bold">September 6th to 7th at the designated location.</span>
+                    </p>
+                    <p class="mt10 p_indent">• <span class="bold">For presenters participating in 'Oral presentation' or 'Guided Poster presentation', </span>travel grants will be disbursed upon the successful completion of your presentation. <span class="bold">Successful completion of the presentation is a requirement for eligibility to receive the travel grant.</span></p>
+                    <p class="mt10 p_indent">• Proxy receipt or duplicate receipt is prohibited on-site.</p>
+                    <p class="mt10 p_indent">• All recipients must sign a receipt, which will be prepared on-site.</p>
+                </div>
 			</div>
 			<!--Travel Grants end-->
 			<!--Contact for Abstract start-->
-			<div>
+			<!-- <div>
 				<div class="section_title_wrap2">
-					<h4 class="title">지방 참석자 여비 보조금 지원(Domestic Only) <span> ICOMES 2024는 채택된 초록의 발표저자를 위하여 여비 보조금을 지원합니다. (서울/인천/경기 제외 지방 소속만 해당)</span></h4>
+					<h4 class="top_text_box violet_bg2"><span class="kor">지방 참석자 여비 보조금 지원</span>(Domestic Only) </h4>
 				</div>
 				<div class="table_wrap detail_table_common x_scroll">
 					<table class="c_table detail_table">
@@ -86,63 +97,64 @@
 						</colgroup>
 						<thead>
 							<tr>
-								<th class="text_center"></th>
-								<th class="text_center">MD</th>
-								<th class="text_center">Non-MD</th>
+								<td class="text_center"></td>
+								<th class="text_center md_bg">MD</th>
+								<th class="text_center md_bg">Non-MD</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td class="text_center">지원 내용</td>
-								<td class="text_center">KRPIA/KPBMA 공정규약에 의거하여 지원</td>
-								<td class="text_center">300,000원(기타소득세 제외 후 지급)</td>
+								<th class="text_center kor">지원 내용</th>
+								<td class="text_center kor bold">KRPIA/KPBMA 공정규약에 의거하여 지원</td>
+								<td class="text_center kor bold">300,000원(기타소득세 제외 후 지급)</td>
 							</tr>
 							<tr>
-								<td class="text_center">지원자격</td>
-								<td class="text_center">두 가지 모두 충족 시<br>1. 대한비만학회 정회원 및 평생회원<br>2. 의사 면허 소지자</td>
-								<td class="text_center">영양사, 운동사 등</td>
+								<th class="text_center kor">지원자격</th>
+								<td class="text_center kor"><span class="bold kor">두 가지 모두 충족 시</span><br>1. 대한비만학회 정회원 및 평생회원<br>2. 의사 면허 소지자</td>
+								<td class="text_center kor bold">영양사, 운동사 등</td>
 							</tr>
 							<tr>
-								<td class="text_center">지원범위</td>
-								<td class="text_center">학회 등록비, 왕복 교통비, 숙박비</td>
+								<th class="text_center kor">지원범위</th>
+								<td class="text_center kor bold">학회 등록비, 왕복 교통비, 숙박비</td>
 								<td class="text_center"></td>
 							</tr>
 							<tr>
-								<td class="text_center">신청방식</td>
-								<td class="text_center">지원대상자 대한비만학회 개별 공지</td>
-								<td class="text_center">1. 지원 양식 다운로드 및 작성 <br>2. 이메일을 통한 양식 제출</td>
+								<th class="text_center kor">신청방식</th>
+								<td class="text_center kor bold">지원대상자 대한비만학회 개별 공지</td>
+								<td class="text_center kor bold">1. 지원 양식 다운로드 및 작성 <br>2. 이메일을 통한 양식 제출</td>
 							</tr>
 						</tbody>
 					</table>
                 </div>
+                <p class="kor font_16 mt10">• ICOMES 2024는 채택된 초록의 발표저자를 위하여 여비 보조금을 지원합니다. (서울/인천/경기 제외 지방 소속만 해당)</p> -->
 				<!-- <p class="mt10 p_indent">• 지원금 신청과 기타 필요한 정보에 대한 안내는 초록 채택자에 한하여 별도로 사무국에서 이메일을 통해 연락드릴 예정입니다.</p> -->
-			</div>
+			<!-- </div> -->
 			<!--Contact for Abstract end-->
 			<!--step start-->
 			<div>
 				<div class="section_title_wrap2">
-					<h4 class="title">Steps to Apply for Travel Grants</h4>
+					<h4 class="round_title">Steps to Apply for Travel Grants</h4>
 				</div>
-				<div class="steps_area five_steps">
+				<div class="steps_area five_steps travel_step">
 					<ul class="clearfix">
 						<li>
-							<p>Step 1</p>
+							<p></p>
 							<p class="sm_txt">Submit the abstract <br>through the website.</p>
 						</li>
 						<li>
-							<p>Step 2</p>
+							<p></p>
 							<p class="sm_txt">Receive notification <br>of abstract selection.</p>
 						</li>
 						<li>
-							<p>Step 3</p>
+							<p></p>
 							<p class="sm_txt">Attend and present at <br>ICOMES 2024 on-site.</p>
 						</li>
 						<li>
-							<p>Step 4</p>
+							<p></p>
 							<p class="sm_txt">Complete the travel <br>grant application form <br>and apply via email <br><span class="red_t font_inherit">(Application period: <br>Sep 8<sup class="red_t font_inherit font_12">th</sup> ~ Sep 14<sup class="red_t font_inherit font_12">th</sup>)</span></p>
 						</li>
 						<li>
-							<p>Step 5</p>
+							<p></p>
 							<p class="sm_txt">Receive notification of <br>application results <br>(within seven days after the <br>application deadline).</p>
 						</li>
 					</ul>
@@ -152,17 +164,17 @@
 			<!-- download start -->
 			<div>
 				<div class="section_title_wrap2">
-					<h4 class="title">Download Application Form</h4>
+					<h4 class="round_title purple">Download Application Form</h4>
 				</div>
 				<div class="download_wrap">
-					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Travel_Grant_Application.docx" class="btn long_btn type2 text_long font_16" target="_blank">
+					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Travel_Grant_Application.docx" class="btn long_btn type2 text_long font_16 yellow_btn" target="_blank">
 						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Travel Grant Application Form Download (Overseas)
 					</a>
-					<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Application_for_travel_subsidy_Non-MD.docx" class="btn long_btn type2 text_long font_16" target="_blank">
+					<!-- <a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Application_for_travel_subsidy_Non-MD.docx" class="btn long_btn type2 text_long font_16 yellow_btn kor" target="_blank">
 						<img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Non-MD 지방 참석자 여비 보조금 지원 양식 다운로드(Domestic)
-					</a>
+					</a> -->
 				</div>
-				<p class="mt10 p_indent">• MD 지방 참석자: 지원 양식 별도 없음. 초록채택자 공지 후 대한비만학회 개별 공지 예정</p>
+                <!-- <p class="mt10 p_indent kor">• MD 지방 참석자: 지원 양식 별도 없음. 초록채택자 공지 후 대한비만학회 개별 공지 예정</p> -->
 			</div>
 			<!-- download end -->
 			<!--Oral Presentation start-->
@@ -177,42 +189,59 @@
 					</ul>
 				</div>	
 				<ul class="award_list">
-					<li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt=""> -->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">Best Oral Presentation </p>
-						<!-- <p>4 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p>
-					</li>
-                    <li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">Best Poster Presentation</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
-					</li>
-                    <li>
-						<!-- <img src="./img/icons/icon_award01.svg" alt="">-->
-						<img src="./img/icons/icon_award01.png" alt="">
-						<p class="award_title">Best Poster Exhibition</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p>
-					</li>
-                    <li>
-						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-						<img src="./img/icons/icon_award02.png" alt="">
-						<p class="award_title">Excellent Oral Presentation</p>
-						<!-- <p>4 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
-					</li>
-					<li>
-						<!-- <img src="./img/icons/icon_award02.svg" alt="">-->
-						<img src="./img/icons/icon_award02.png" alt="">
-						<p class="award_title">Excellent Poster Presentation</p>
-						<!-- <p>2 persons</p> -->
-						<p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p>
-					</li>
+                    <div>
+                        <div class="awards_title">Oral Presentation</div>
+                        <div>
+                            <li>
+                                <!-- <img src="./img/icons/icon_award01.svg" alt=""> -->
+                                <img src="https://image.webeon.net/icomes2024/logo/2024_best_award.svg" alt="">
+                                <p class="award_title best">Best<br/>Oral Presentation</p>
+                                <!-- <p>4 persons</p> -->
+                                <!-- <p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p> -->
+                            </li>
+                            <li>
+                                <!-- <img src="./img/icons/icon_award01.svg" alt="">-->
+                                <img src="https://image.webeon.net/icomes2024/logo/2024_excellent_award.svg" alt="">
+                                <p class="award_title excellent">Excellent<br/>Oral Presentation</p>
+                                <!-- <p>2 persons</p> -->
+                                <!-- <p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p> -->
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="awards_title">Guided Poster Presentation</div>
+                        <div>
+                            <li>
+                                <!-- <img src="./img/icons/icon_award01.svg" alt="">-->
+                                <img src="https://image.webeon.net/icomes2024/logo/2024_best_award.svg" alt="">
+                                <p class="award_title best">Best<br/>Poster Presentation</p>
+                                <!-- <p>2 persons</p> -->
+                                <!-- <p class="point3_txt">Single-digit Number of Winners<br/>Free Registration for ICOMES 2025</p> -->
+                            </li>
+                            <li>
+                                <!-- <img src="./img/icons/icon_award02.svg" alt="">-->
+                                <img src="https://image.webeon.net/icomes2024/logo/2024_excellent_award.svg" alt="">
+                                <p class="award_title excellent">Excellent<br/>Poster Presentation</p>
+                                <!-- <p>4 persons</p> -->
+                                <!-- <p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p> -->
+                            </li>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="awards_title">Poster Exhibition</div>
+                        <div>
+                            <li>
+                                <!-- <img src="./img/icons/icon_award02.svg" alt="">-->
+                                <img src="https://image.webeon.net/icomes2024/logo/2024_best_award.svg" alt="">
+                                <p class="award_title best">Best<br/>Poster Presentation</p>
+                                <!-- <p>2 persons</p> -->
+                                <!-- <p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p> -->
+                            </li>
+                        </div>
+                    </div>
 				</ul>
+                <div class="gray_div">Each award is given to a single-digit number of winners.<br/>Winners will receive the benefit of Free Registration for ICOMES 2025
+                </div>
 			</div>
 			
 			<!--Oral Presentation end-->

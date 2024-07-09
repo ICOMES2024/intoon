@@ -48,7 +48,7 @@
 						</colgroup>
 						<thead>
 							<tr>
-								<th class="font_big program_room">Time/Location</th>
+								<th class="font_16 program_room">Time/Location</th>
 								<th class="program_room">Room 1<br> </th>
 								<th class="program_room">Room 2</th>
 								<th class="program_room">Room 3</th>
@@ -58,7 +58,7 @@
 								<th class="program_room">Room 7</th>
 							</tr>
 							<tr>
-								<th colspan="8" class="dark_gray_bg font_big day_tbody day_1">
+								<th colspan="8" class="dark_gray_bg font_16 day_tbody day_1">
 									<!-- <div class="dots_div">Day 1 - 2024<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />5 (Thu)</div> -->
 									<div class="dots_div">Day 1 - Thursday, September 5, 2024</div>
 								</th>
@@ -87,7 +87,7 @@
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<td class="break_time">
 									<div class="colons_div">16:30-16:40</div>
 								</td>
@@ -96,10 +96,10 @@
                                 <td class="break_time light_gray_bg"></td>
                                 <td class="break_time light_gray_bg"></td>
                                 <td class="break_time light_gray_bg"></td>
-							</tr>
+							</tr> -->
 							<tr>
 								<td>
-									<div class="colons_div">16:40-18:10</div>
+									<div class="colons_div">16:30-18:00</div>
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="skyblue_bg pointer" name="committee_session_2" data-id="">
@@ -130,7 +130,7 @@
 							</tr>
                             <tr>
 								<td rowspan="2">
-									<div class="colons_div">18:10-19:10</div>
+									<div class="colons_div">18:00-19:00</div>
 								</td>
 								<td class="dark_sky_bg pointer" name="satellite_symposium_1">
 									Satellite<br />Symposium 1
@@ -167,12 +167,12 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">19:10-21:00</div>
+									<div class="colons_div">19:00-21:00</div>
 								</td>
 								<td></td>
 								<td></td>
 								<td class="white_yellow_bg pointer" name="welcome_cocktail_party">
-								Textbook Publication Inauguration Ceremony & Welcome Cocktail Party
+								Textbook Publication Inauguration Ceremony & Welcome Reception
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -184,7 +184,7 @@
 						<!---------- DAY 2 ---------->
 						<thead>
 							<tr>
-								<th colspan="8" class="dark_gray_bg font_big day_tbody day_2">
+								<th colspan="8" class="dark_gray_bg font_16 day_tbody day_2">
 									<!-- <div class="dots_div">Day 2 - 2023<img src="./img/icons/icon_dots.svg" class="dots_img" />9<img src="./img/icons/icon_dots.svg" class="dots_img" />6 (Fri)</div> -->
 									<div class="dots_div">Day 2 - Friday, September 6, 2024</div>
 								</th>
@@ -226,7 +226,7 @@
 									Keynote Lecture 1 
 									<!-- <p class="bold">Intermittent Metabolic Switching and Brain Health</p>
 									<p>Thiruma V. Arumugam (La Trobe University, Australia)</p> -->
-									<p class="bold">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
+									<p class="">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
 									<p>Joel K. Elmquist</p>
 									<p>UT Southwestern Medical Center, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -295,7 +295,7 @@
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2">
 									Keynote Lecture 2
-									<p class="bold">GLP-1 Based Therapy of Obesity</p>
+									<p class="">GLP-1 Based Therapy of Obesity</p>
 									<p>Michael A. Nauck</p>
 									<p>Ruhr-University Bochum, Germany</p>
 									<!-- <p class="bold">Adipose Tissue – A Treasure Box for Discoveries</p>
@@ -379,11 +379,11 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_8">
-									Symposium 8 <p></p>
+									Symposium 8 <p>Medical Condition Change After Bariatric Surgery</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_2">
-									Sponsored Session 2 <p></p>
+									Sponsored Session 2 <p>Obesity Management with Combination Phentermine Plus Topiramate from Strategy to Practice</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
@@ -401,7 +401,7 @@
 								</td>
 								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_3">
 									Keynote Lecture 3
-									<p class="bold">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
+									<p class="">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
 									<p>Silva Arslanian</p>
 									<p>University of Pittsburgh, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -485,7 +485,7 @@
 						<!---------- DAY 3 ---------->
 						<thead>
 							<tr>
-								<th colspan="8" class="dark_gray_bg font_big day_tbody day_3">
+								<th colspan="8" class="dark_gray_bg font_16 day_tbody day_3">
 									<div class="dots_div">Day 3 - Saturday, September 7, 2024</div>
 								</th>
 							</tr>
@@ -524,7 +524,7 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_4" colspan="3">
 									Keynote Lecture 4
-									<p class="bold">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
+									<p class="">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
 									<p>Jean-Pierre Després</p>
 									<p>VITAM - Research Centre on Sustainable Health, Canada</p>
 									<!-- <p class="bold">The Role of Hunger-promoting Hypothalamic Neurons in Obesity Therapeutics</p>
@@ -563,7 +563,7 @@
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_3">
-									Sponsored Session 3 <p></p>
+									Sponsored Session 3 <p>Optimization of Glycemic Control in Obese Diabetes Patients With CGM</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
                                 <td></td>
@@ -581,6 +581,7 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="presidential_lecture_1" colspan="3">
 									Presidential Lecture
+									<p class="">Obesity and Fatty Liver: Common but Ignored</p>
 									<p>Cheol-Young Park</p>
 									<p>Sungkyunkwan University, Korea</p>
 									<input type="hidden" name="e" value="room1">
@@ -648,7 +649,7 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_5" colspan="3">
 									Keynote Lecture 5
-									<p class="bold">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
+									<p class="">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
 									<p>William Evans</p>
 									<p>University of California, Berkeley, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -664,7 +665,7 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_6" colspan="3">
 									Keynote Lecture 6
-									<p class="bold">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
+									<p class="">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
 									<p>Michael D. Jensen</p>
 									<p>Mayo College of Medicine,USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -723,7 +724,7 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="keynote_lecture_7" colspan="3">
 									Keynote Lecture 7
-									<p class="bold">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
+									<p class="">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
 									<p>W. Timothy Garvey</p>
 									<p>University of Alabama at Birmingham, USA</p>
 									<input type="hidden" name="e" value="room1">

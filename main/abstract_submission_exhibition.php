@@ -50,7 +50,59 @@ $info = sql_fetch($sql_info);
                 <div class="section_title_wrap2">
                     <h3 class="title">Key Dates</h3>
                 </div>
-                <div class="table_wrap detail_table_common">
+				<div class="abstract_key_dates">
+					<div class="key_date"></div>
+					<div class="key_date">
+						<div>
+							<h3>20</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>Jun</h6>
+							</div>
+						</div>
+					</div>
+					<div class="key_date">
+						<div>
+							<h3>10</h3>
+							<div>
+								<p>Wednesday,</p>
+								<h6>July</h6>
+							</div>
+						</div>
+						<p><span class="star">*</span> Details regarding presentation type and guidelines will be provided.</p>
+						<p><span class="star">*</span> Abstracts submitted by June 20 will be notified of acceptance <br/>&nbsp;&nbsp;&nbsp;on July 10.</p>
+					</div>
+					<div class="key_date">
+					<div>
+							<h3>11</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>July</h6>
+							</div>
+						</div>
+						<p><span class="star">*</span> Late-breaking abstracts can only be submitted as poster exhibitions.</p>
+						<p><span class="star">*</span> Late-breaking abstracts may not be eligible for Travel Grants.</p>
+					</div>
+					<div class="key_date">
+						<div>
+							<h3>30</h3>
+							<div>
+								<p>Tuesday,</p>
+								<h6>July</h6>
+							</div>
+						</div>
+					</div>
+					<div class="key_date">
+						<div>
+							<h3>08</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>August</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+                <!-- <div class="table_wrap detail_table_common">
                     <table class="c_table detail_table">
                         <colgroup>
                             <col class="submission_col">
@@ -61,7 +113,6 @@ $info = sql_fetch($sql_info);
 								<td class="f_bold">Mid-February</td>
 							</tr>
 							<tr>
-								<!-- <th class="close_th">Late-breaking-Abstract Submission<br class="br_mb_only"> Deadline</th> -->
 								<th class="close_th">Abstract Submission<br class="br_mb_only"> Deadline</th>
 								<td><span class="font_inherit f_bold red_t">June 20 (Thu)</span></td>
 							</tr>
@@ -75,7 +126,6 @@ $info = sql_fetch($sql_info);
                             </tr>
                             <tr>
 								<th>Notification of<br class="br_mb_only"> Late-breaking Abstract Acceptance</th>
-								<!-- <td><span class="font_inherit f_bold">End of every month</span><br>*The scientific committee will conduct a qualification examination at the end of each month <br>to facilitate attendee's pre-registration.</td> -->
                                  <td><span class="font_inherit f_bold">July 30 (Tue)</span></td>
 							</tr>
 							<tr>
@@ -83,7 +133,7 @@ $info = sql_fetch($sql_info);
 								<td>August 1 (Thu)</td>
 							</tr>
                     </table>
-                </div>
+                </div> -->
             </div>
 			<!--Schedule of Poster Exhibition-->
             <div>
@@ -99,15 +149,15 @@ $info = sql_fetch($sql_info);
 					   </colgroup>
 					   <tr>
 						   <th></th>
-						   <th class="f_bold text_center">Sep. 6 (Fri)</th>
-						   <th class="f_bold text_center">Sep. 7 (Sat)</th>
+						   <th class="f_bold text_center skyblue_bg_th">Sep. 6 (Fri)</th>
+						   <th class="f_bold text_center darkblue_bg_th">Sep. 7 (Sat)</th>
 					   </tr>
 					<tr>
-						<td class="text_center">Location</td>
+						<th class="text_center f_bold">Location</th>
 						<td class="text_center" colspan="2">Poster Zone, 6F</td>
 					</tr>
 					<tr>
-						<td class="text_center">Time</td>
+						<th class="text_center f_bold">Time</th>
 						<td class="text_center">07:30 - 18:00</td>
 						<td class="text_center">07:30 - 17:00</td>
 					</tr>
@@ -123,13 +173,13 @@ $info = sql_fetch($sql_info);
 				<div class="text_box indent">
 					<ul>
 						<li>• The ICOMES secretariat will be responsible for the printing and displaying of posters on behalf of the presenter.</li>
-						<li>• All presenters of posters must submit their final presentation materials, including PPT and PDF formats, to the secretariat via email <a href="mailto:icomes_abstracts@into-on.com" class="parentheses">(<span class="font_inherit link">icomes_abstracts@into-on.com</span>)</a> before the deadline of <span class="f_bold ">August 8 (Thu).</span></li>
-						<li class="f_bold">• Please download the designated poster template below.</li>
+						<li>• All presenters of posters must submit their final presentation materials, including PPT and PDF formats, to the secretariat via email <a href="mailto:icomes_abstracts@into-on.com" class="parentheses">(<span class="font_inherit link">icomes_abstracts@into-on.com</span>)</a> before the deadline of <span class="f_bold purple_txt">August 8 (Thu).</span></li>
+						<li class="f_bold purple_txt">• Please download the designated poster template below.</li>
 						<li>• If presenters fail to submit their posters before the designated deadlines, they may face penalties such as automatic withdrawal of their accepted abstracts. Therefore, it is strongly advised that presenters keep this in mind and submit their posters in a timely manner.</li>
 					</ul>
 				</div>
 				<div class="text_center btn_box mt25">
-					<a href="" class="btn long_btn not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a>
+					<a href="https://image.webeon.net/icomes2024/template/ICOMES_Poster_Exhibition_Template.pptx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a>
 
 					<!-- [240514] sujeong / 기존 다운로드 버튼 / 파일 전달받지 못해 not_yet으로 대체 -->
 					<!-- <a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a> -->

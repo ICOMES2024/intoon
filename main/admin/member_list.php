@@ -55,6 +55,7 @@
 												WHEN m.ksola_member_status = 1 THEN '정회원'
 												WHEN m.ksola_member_status = 2 THEN '평생회원'
 												WHEN m.ksola_member_status = 3 THEN '인터넷회원'
+												WHEN m.ksola_member_status = 4 THEN '회원신청'
 												WHEN m.ksola_member_status IS NULL THEN '비회원'
 											END
 										)AS ksola_member_status,

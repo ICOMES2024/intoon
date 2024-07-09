@@ -38,8 +38,30 @@ $price = get_data($sql_price);
             <h3 class="title">Key Dates
                 <p class="text_r bold">*KST (UTC+9)</p>
             </h3>
-            <div class="table_wrap detail_table_common details">
-                <table class="c_table detail_table">
+            <div class="regi_key_dates">
+					<div class="key_date">
+                        <h2>Registration Open</h2>
+                        <div>
+							<h3>19</h3>
+							<div>
+								<p>Tuesday,</p>
+								<h6>March</h6>
+							</div>
+						</div>
+                    </div>
+					<div class="key_date">
+                        <h2>Early-bird Registration Deadline</h2>
+						<div>
+							<h3>25</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>July</h6>
+							</div>
+						</div>
+					</div>	
+				</div>
+            <!-- <div class="table_wrap detail_table_common details"> -->
+                <!-- <table class="c_table detail_table">
                     <colgroup>
                         <col class="submission_col">
                         <col>
@@ -51,13 +73,13 @@ $price = get_data($sql_price);
                     <tr>
                         <th>Early-bird Registration<br class="br_mb_only"> Deadline</th>
                         <td class="f_bold">July 12 (Fri)</td>
-                    </tr>
+                    </tr> -->
                     <!-- <tr>
                         <th>Pre-registration<br class="br_mb_only"> Deadline</th>
                         <td class="f_bold">August 24 (Thu)</td>
                     </tr> -->
-                </table>
-            </div>
+                <!-- </table> -->
+            <!-- </div> -->
 
             <?php
             if (count($price) > 0) {
@@ -105,25 +127,26 @@ $price = get_data($sql_price);
 						<table class="c_table2 detail_table center">
 							<thead>
 								<tr>
-									<th rowspan=" 2">Category</th>
-									<th colspan="2">
+									<th rowspan="3" class="font_21">Category</th>
+									<th class="early_reg_th font_21 p12" colspan="2">
                                         Early-bird Registration
-                                    <br/><span class="red_txt bold">~ Friday, July 12, 2024 </span>
                                     </th>
-									<th colspan="2">
+									<th class="pre_reg_th p12 font_21" colspan="2">
                                         Pre-registration
-                                        <br/><span class="red_txt bold">Saturday, July 13, 2024
-                                        <br/>~ Thursday, August 1, 2024</span>
                                     </th>
-									<th colspan="2">On-site Registration</th>
+									<th colspan="2" rowspan="2" class="white_bg font_21">On-site Registration</th>
 								</tr>
+                                <tr>
+                                    <th class="early_reg_td font_16" colspan="2">~ Thursday, July 25, 2024</th>
+                                    <th class="pre_reg_td font_16" colspan="2">Friday, July 26, 2024 ~ Thursday, August 8, 2024</th>
+                                </tr>
 								<tr>
-									<th><?= $locale("member") ?></th>
-									<th><?= $locale("non_member") ?></th>
-									<th><?= $locale("member") ?></th>
-									<th><?= $locale("non_member") ?></th>
-									<th><?= $locale("member") ?></th>
-									<th><?= $locale("non_member") ?></th>
+									<th class="early_member font_light font_20"><?= $locale("member") ?></th>
+									<th class="early_member font_light font_20"><?= $locale("non_member") ?></th>
+									<th class="pre_member font_light font_20"><?= $locale("member") ?></th>
+									<th class="pre_member font_light font_20"><?= $locale("non_member") ?></th>
+									<th class="font_light font_20"><?= $locale("member") ?></th>
+									<th class="font_light font_20"><?= $locale("non_member") ?></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -149,47 +172,47 @@ $price = get_data($sql_price);
 									//}
 								?>
 								<tr class="text_center">
-									<td>Certified M.D., Professor</td>
-									<td class="closed_td">USD 130<br/>KRW 150,000
+									<td class="font_19 bold">Certified M.D., Professor</td>
+									<td class="early_reg_th font_20">USD 130<br/>KRW 150,000
 
 										<!-- <img src="./img/icons/icon_closed.png" alt=""> -->
 									</td>
-									<td>USD 180<br>KRW 180,000</td>
-									<td>USD 160<br>KRW 180,000</td>
-									<td>USD 210<br>KRW 210,000</td>
-									<td>USD 200<br>KRW 220,000</td>
-									<td>USD 250<br>KRW 250,000</td>
+									<td class="early_reg_th font_20">USD 180<br>KRW 180,000</td>
+									<td class="pre_reg_th font_20">USD 160<br>KRW 180,000</td>
+									<td class="pre_reg_th font_20">USD 210<br>KRW 210,000</td>
+									<td class="font_20">USD 200<br>KRW 220,000</td>
+									<td class="font_20">USD 250<br>KRW 250,000</td>
 								</tr>
 								<tr class="text_center">
-									<td>
+									<td class="font_19 bold">
 										Fellow, Resident, Researcher,<br>
 										Nutritionist, Pharmacist, Nurse,<br>
 										Exercise Specialist, Military<br>
-										Surgeon(군의관),<br>
+										Surgeon(<span class="kor bold">군의관</span>),<br>
 										Public Health Doctor,<br>
 										Corporate Member, Others
 									</td>
-									<td>USD 65<br>KRW 85,000</td>
-									<td>USD 115<br>KRW 115,000</td>
-									<td>USD 85<br>KRW 105,000</td>
-									<td>USD 135<br>KRW 135,000</td>
-									<td>USD 120<br>KRW 140,000</td>
-									<td>USD 170<br>KRW 170,000</td>
+									<td class="early_reg_th font_20">USD 65<br>KRW 85,000</td>
+									<td class="early_reg_th font_20">USD 115<br>KRW 115,000</td>
+									<td class="pre_reg_th font_20">USD 85<br>KRW 105,000</td>
+									<td class="pre_reg_th font_20">USD 135<br>KRW 135,000</td>
+									<td class="font_20">USD 120<br>KRW 140,000</td>
+									<td class="font_20">USD 170<br>KRW 170,000</td>
 								</tr>
 								<tr class="text_center">
-									<td>Student<!--, Surgeon (Military),<br>Public Health Doctor--></td>
-									<td colspan="6">USD 50 / KRW 50,000<br/>*Student ID cards required</td>
+									<td class="font_19 bold">Student<!--, Surgeon (Military),<br>Public Health Doctor--></td>
+									<td colspan="6" class="font_20">USD 50 / KRW 50,000<br/><span class="font_16 bold">*Student ID cards required</span</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<div class="mt10">
 						<ul class="indent_ul">
-							<li>• A registration confirmation will be sent to your registered email address once you have completed your registration with full payment. If you have not received it, please contact the congress secretariat.</li>
-							<li>• For wire transfers, the automatically generated confirmation letter may indicate the payment status as 'unpaid.' If you need to confirm the payment completion, you can check the payment status on 'my page.' (Please be aware that it may take some time for the payment confirmation to be updated.)</li>
-							<li>• Registration will not be considered complete until the full registration fee has been paid.</li>
-							<li>• The online registration page is optimized for Google Chrome and Microsoft Edge. If you encounter any issues with online registration, please reach out to the congress secretariat for assistance.</li>
-							<li>• If you would like to modify your registration information, please contact the congress secretariat at <a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a></li>
+							<li class="font_20">• A registration confirmation will be sent to your registered email address once you have completed your registration with full payment. If you have not received it, please contact the congress secretariat.</li>
+							<li class="font_20">• For wire transfers, the automatically generated confirmation letter may indicate the payment status as 'unpaid.' If you need to confirm the payment completion, you can check the payment status on 'my page.' (Please be aware that it may take some time for the payment confirmation to be updated.)</li>
+							<li class="font_20">• Registration will not be considered complete until the full registration fee has been paid.</li>
+							<li class="font_20">• The online registration page is optimized for Google Chrome and Microsoft Edge. If you encounter any issues with online registration, please reach out to the congress secretariat for assistance.</li>
+							<li class="font_20">• If you would like to modify your registration information, please contact the congress secretariat at <a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a></li>
 						</ul>
 					</div>
                 </div>
@@ -207,8 +230,8 @@ $price = get_data($sql_price);
 					<!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
 					 <div>
 						<ul class="indent_ul">
-							<li>• Credit Card : Master / VISA</li>
-							<li>• Wire Transfer</li>
+							<li class="font_20">• Credit Card : Master / VISA</li>
+							<li class="font_20">• Wire Transfer</li>
 						</ul>
 					</div>
 					<div class="table_wrap detail_table_common x_scroll">
@@ -219,28 +242,28 @@ $price = get_data($sql_price);
 							</colgroup>
 							<tbody>
 								<tr>
-									<th>Name of Bank</th>
+									<th class="center_t">Name of Bank</th>
 									<td>Hana Bank</td>
 								</tr>
 								<tr>
-									<th>Branch</th>
+									<th class="center_t">Branch</th>
 									<td>HANA BANK, HEAD OFFICE</td>
 								</tr>
 								<tr>
-									<th>Bank Address</th>
+									<th class="center_t">Bank Address</th>
 									<td>35, EULJI-RO, JUNG-GU, Seoul, Korea</td>
 								</tr>
 								<tr>
-									<th>Account Number</th>
+									<th class="center_t">Account Number</th>
 									<td>584-910003-16504</td>
 								</tr>
 								<tr>
-									<th>SWIFT CODE(BIC)</th>
+									<th class="center_t">SWIFT CODE(BIC)</th>
 									<td>KOEXKRSE</td>
 								</tr>
 								<tr>
-									<th>Account Holder</th>
-									<td>대한비만학회 등록비 <br>(International Congress on Obesity and Metabolic Syndrome)</td>
+									<th class="center_t">Account Holder</th>
+									<td><span class="kor">대한비만학회 등록비</span> <br>(International Congress on Obesity and Metabolic Syndrome)</td>
 								</tr>
 								<!--
 								<tr>
@@ -264,10 +287,10 @@ $price = get_data($sql_price);
 
             <!--3. Cancellation & Refund Policy start-->
             <h3 class="title">Cancellation & Refund Policy</h3>
-			<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Registration_Cancellation_Request_Form.docx" class="btn long_btn text_long" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Cancellation & Refund  Form Download</a>
+			<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Registration_Cancellation_Request_Form.docx" class="cancellation_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/2024_download.svg" alt="">Cancellation & Refund  Form Download</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
-                <div class="">
+                <div class="text_box">
                     <ul class="indent_ul">
                         <li>• The cancellation of full payment registration and reimbursement will only be accepted in written form and must be submitted via email to the secretariat.<br>(<a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a>)</li>
                         <li>• Prior to making a payment, it is possible to cancel registration through "My page - Registration". However, payment has already been processed, it is necessary to contact the secretariat for further assistance.</li>

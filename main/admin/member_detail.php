@@ -21,6 +21,7 @@ if($member_idx) {
 												WHEN ksola_member_status = 1 THEN '정회원'
 												WHEN ksola_member_status = 2 THEN '평생회원'
 												WHEN ksola_member_status = 3 THEN '인터넷회원'
+												WHEN ksola_member_status = 4 THEN '회원신청'
 												WHEN ksola_member_status IS NULL THEN '비회원'
 											END
 										) AS ksola_member_type,
@@ -199,13 +200,15 @@ $is_hide = ($nation_no == 25) ? '' : 'hidden';
                         <tr>
                             <th>대한비만학회 회원 여부</th>
                             <td>
-                                <div id="ksola_member_status" class="<?= $is_hide ?>">
-                                    <input <?= (!$ksola_member_status ? "" : "checked") ?> type="radio" class="new_radio" name="user" id="user1" value="1">
+                                <div id="ksola_member_status">
+                                    <input <?= ($ksola_member_status == 1 ? "checked" : "") ?> type="radio" class="new_radio" name="user" id="user1" value="1">
                                     <label for="user1"><i></i>회원</label>
-                                    <input <?= (!$ksola_member_status ? "checked" : "") ?> type="radio" class="new_radio" name="user" id="user2" value="0">
+                                    <input <?= ($ksola_member_status == 0 ? "checked" : "") ?> type="radio" class="new_radio" name="user" id="user2" value="0">
                                     <label for="user2"><i></i>비회원</label>
+                                    <input <?= ($ksola_member_status == 4 ? "checked" : "") ?> type="radio" class="new_radio" name="user" id="user3" value="0">
+                                    <label for="user3"><i></i>회원신청</label>
                                 </div>
-                                <span class="<?= $is_hide == "" ? "hidden" : "" ?>"><?= $ksola_member_type ?></span>
+                                <!-- <span class="<?= $is_hide == "" ? "hidden" : "" ?>"><?= $ksola_member_type . $ksola_member_status ?></span> -->
                             </td>
                             <th>생년월일</th>
                             <td>

@@ -46,49 +46,47 @@
 			<!-- <img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt=""> -->
 			<!-- [240523] sujeong / 학회팀 요청 순서 수정 -->
 			<li>
-				<a>
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-01.png" class="text" alt="">
-				</a>
 			</li>		
-			<li>
-				<a>
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-09.png" class="text" alt="">
-				</a>
+			<li class="pointer" name="presidential_lecture_1">
+				<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-09-1.png" class="text" alt="">
+				<input type="hidden" name="e" value="room1~3">
+				<input type="hidden" name="day" value="day_3">
 			</li>
-			<li>
-				<a>
+			<li class="pointer"  name="keynote_lecture_1">
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-04.png" class="text" alt="">
-				</a>
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_2">
 			</li>
-			<li>
-				<a>
+			<li class="pointer"  name="keynote_lecture_2">
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-02.png" class="text" alt="">
-				</a>
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_2">
 			</li>
-			<li>
-				<a>
+			<li class="pointer"  name="keynote_lecture_3">
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-03.png" class="text" alt="">
-				</a>
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_2">
 			</li>
-			<li>
-				<a>
+			<li class="pointer"  name="keynote_lecture_4" >
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-07.png" class="text" alt="">
-				</a>
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_3">
 			</li>
-			<li>
-				<a>
+			<li class="pointer"  name="keynote_lecture_5">
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-05.png" class="text" alt="">
-				</a>
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_3">
 			</li>
-			<li>
-				<a>
+			<li class="pointer" name="keynote_lecture_6"  >
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-08.png" class="text" alt="">
-				</a>
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_3">
 			</li>
-			<li>
-				<a>
+			<li class="pointer"  name="keynote_lecture_7" >
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-06.png" class="text" alt="">
-				</a>
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_3">
 			</li>
 		</div>
 	<!-- </div> -->
@@ -269,7 +267,22 @@
 			});
 		});
 
+	//수정필요~~~!!!
+	/* td 클릭 시 페이지 이동 */
+	$("li.pointer").click(function() {
+        var e = $(this).find("input[name=e]").val();
+        var day = $(this).find("input[name=day]").val();
+        var target = $(this)
+        var this_name = $(this).attr("name");
 
+        table_location(event, target, e, day, this_name);
+    });
+
+
+	//[240418] sujeong / 이동 주석
+	function table_location(event, _this, e, day, this_name) {
+		window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+	}
 
 
 	//[240423] sujeong / 로그인 없이 토큰 받기
