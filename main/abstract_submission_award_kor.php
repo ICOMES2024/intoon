@@ -19,7 +19,7 @@
                          <li class="bold p_indent purple_txt">• Application Period: July 5<sup class="bold font_12 purple_txt">th</sup> to July 11<sup class="bold font_12 purple_txt">th</sup>, 2024</li>
                          <li class="bold p_indent purple_txt">• Notification of the Result: July 12<sup class="bold font_12 purple_txt">th</sup>, 2024</li>
                          <li class="p_indent"><span class="bold purple_txt">• Eligibility : </span> Authors of Accepted Abstract</li>
-                         <li class="p_indent">ICOMES support the Travel Grants <span class="bold purple_txt">for one author</span> per an accepted abstract.</li>
+                         <li class="p_indent"><span class="bold purple_txt">•</span> ICOMES support the Travel Grants <span class="bold purple_txt">for one author</span> per an accepted abstract.</li>
                          <li class="bold p_indent purple_txt">* All timelines are based on KST (UTC+9).</li>
 					</ul>
 				</div>
@@ -198,7 +198,7 @@
                             <li>
                                 <!-- <img src="./img/icons/icon_award02.svg" alt="">-->
                                 <img src="https://image.webeon.net/icomes2024/logo/2024_best_award.svg" alt="">
-                                <p class="award_title best">Best<br/>Poster Presentation</p>
+                                <p class="award_title best">Best<br/>Poster Exhibition</p>
                                 <!-- <p>2 persons</p> -->
                                 <!-- <p class="point3_txt">Single-digit Number of Winners<br/>Free Registartion for ICOMES 2025</p> -->
                             </li>

@@ -169,9 +169,9 @@ input[type="file"].file_input + .file_label {display: inline-block; line-height:
 
 .steps_area.five_steps.travel_step li p:first-of-type{background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-1.svg"); border: none;}
 .steps_area.five_steps.travel_step li:nth-child(2) p:first-of-type { background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-2.svg"); border: none;}
-.steps_area.five_steps.travel_step li:nth-child(3) p:first-of-type { background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-3.svg"); border: none;}
-.steps_area.five_steps.travel_step li:nth-child(4) p:first-of-type {background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-4.svg"); border: none;}
-.steps_area.five_steps.travel_step li:nth-child(5) p:first-of-type { background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-5.svg"); border: none;}
+.steps_area.five_steps.travel_step li:nth-child(3) p:first-of-type { background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-3-1.svg"); border: none;}
+.steps_area.five_steps.travel_step li:nth-child(4) p:first-of-type {background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-4-1.svg"); border: none;}
+.steps_area.five_steps.travel_step li:nth-child(5) p:first-of-type { background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-5-1.svg"); border: none;}
 
 
 .steps_area.five_steps li .sm_txt {font-size:16px; padding:0 6px;}
