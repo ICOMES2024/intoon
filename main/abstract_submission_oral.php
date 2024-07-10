@@ -241,7 +241,7 @@ $info = sql_fetch($sql_info);
 					</ul>
 				</div>
 				<div class="text_center btn_box mt25">
-                <a href="https://image.webeon.net/icomes2024/template/ICOMES_Oral_Presentation_Template.pptx" target="_blank" class="btn long_btn" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Presentation Template Download</a>
+                <a href="https://image.webeon.net/icomes2024/template/(ICOMES)Oral_Presentation_Template.pptx" target="_blank" class="btn long_btn" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Presentation Template Download</a>
 
                 </div>
 			</div>

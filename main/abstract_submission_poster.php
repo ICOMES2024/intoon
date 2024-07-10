@@ -199,7 +199,7 @@ $info = sql_fetch($sql_info);
 					</ul>
 				</div>
 				<div class="text_center btn_box mt25">
-                <a href="https://image.webeon.net/icomes2024/template/ICOMES_Guided_Poster_Presentation_Template.pptx" target="_blank" class="btn long_btn" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Guided Poster Template Download</a>
+                <a href="https://image.webeon.net/icomes2024/template/(ICOMES)Guided_Poster_Presentation_Template.pptx" target="_blank" class="btn long_btn" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Guided Poster Template Download</a>
 
 					<!-- [240514] sujeong / 기존 다운로드 버튼 / 파일 전달받지 못해 not_yet으로 대체 -->
 					<!-- <a href="./download/ICOMES_2023_Poster_template.pptx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Poster Form Download</a> -->
