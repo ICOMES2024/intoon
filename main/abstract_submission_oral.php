@@ -149,7 +149,7 @@ $info = sql_fetch($sql_info);
                 <div class="section_title_wrap2">
                     <h3 class="title">Session Information</h3>
                 </div>
-                <div class="table_wrap detail_table_common x_scroll">
+                <div class="table_wrap detail_table_common x_scroll table18">
                      <table class="c_table">
                         <colgroup>
                             <col class="submission_col">
@@ -183,7 +183,7 @@ $info = sql_fetch($sql_info);
 				<div class="section_title_wrap2">
 					<h3 class="title">Language & Length of Presentation</h3>
 				</div>
-				<div class="text_box indent">
+				<div class="text_box indent text_box20">
 					<ul>
 						<li>• Language: <span class="purple_txt bold">English</span></li>
 						<li>• Each presenter will be given <span class="purple_txt bold">10 minutes.</span> (7 minutes talk / 3 minutes Q&A)</li>
@@ -199,7 +199,7 @@ $info = sql_fetch($sql_info);
 					</p>
 				</div>
 				<div class="table_wrap detail_table_common">
-                       <table class="c_table detail_table">
+                       <table class="c_table detail_table table18">
                            <colgroup>
                                <col>
                                <col>
@@ -227,7 +227,7 @@ $info = sql_fetch($sql_info);
 				<div class="section_title_wrap2">
 					<h3 class="title">Presentation Material</h3>
 				</div>
-				<div class="text_box indent">
+				<div class="text_box indent text_box20">
 					<ul>
 						<li>• Please use MS Office PowerPoint.</li>
 						<li>• We recommend the slide ratio to be 16:9.</li>

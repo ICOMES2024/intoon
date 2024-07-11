@@ -18,7 +18,7 @@
 <section class="container visa">
     <h1 class="page_title">VISA & K-ETA</h1>
     <div class="inner">
-        <div class="visa_desc text_box">
+        <div class="visa_desc text_box text_box20">
             <p>Foreign visitors who wish to enter the Republic of Korea must have a valid passport and obtain a Korean visa before the visitation. However, people from some countries who wish to visit Korea temporarily are permitted to enter without a visa according to visa-exemption agreements or in accordance with principles of reciprocity or national interest.</p>
         </div>
         <div class="section">

@@ -235,7 +235,7 @@ $price = get_data($sql_price);
 						</ul>
 					</div>
 					<div class="table_wrap detail_table_common x_scroll">
-						<table class="c_table detail_table">
+						<table class="c_table detail_table table18">
 							<colgroup>
 								<col>
 								<col>
@@ -290,7 +290,7 @@ $price = get_data($sql_price);
 			<a href="https://image.webeon.net/icomes2024/download/ICOMES_2024_Registration_Cancellation_Request_Form.docx" class="cancellation_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/2024_download.svg" alt="">Cancellation & Refund  Form Download</a>
             <div class="details payment_detail mt10">
                 <!-- <p class="pre"><?= $locale("registration_notice_txt") ?></p> -->
-                <div class="text_box">
+                <div class="text_box text_box20">
                     <ul class="indent_ul">
                         <li>• The cancellation of full payment registration and reimbursement will only be accepted in written form and must be submitted via email to the secretariat.<br>(<a href="mailto:icomes@into-on.com" class="font_inherit link">icomes@into-on.com</a>)</li>
                         <li>• Prior to making a payment, it is possible to cancel registration through "My page - Registration". However, payment has already been processed, it is necessary to contact the secretariat for further assistance.</li>
@@ -299,7 +299,7 @@ $price = get_data($sql_price);
                     </ul>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
-					<table class="c_table detail_table">
+					<table class="c_table detail_table table20">
 						<colgroup>
 							<col class="submission_col type2">
 							<col>

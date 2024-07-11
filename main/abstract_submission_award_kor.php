@@ -12,10 +12,10 @@
 		<div class="section section1">
         <h3 class="title">Travel Grants</h3>
 			<div>
-				<div class="text_box">
+				<div class="text_box text_box20">
 					<ul class="">
 						<!-- <li class="bold font_26">The organizing committee of ICOMES 2024 has made the decision to offer benefits to all researchers who have accepted abstracts and will be participating in the on-site congress.</li> -->
-                         <li class="bold  ">Updated Procedure for Travel Grants</li>
+                         <li class="bold font_22">Updated Procedure for Travel Grants</li>
                          <li class="bold p_indent purple_txt">• Application Period: July 5<sup class="bold font_12 purple_txt">th</sup> to July 11<sup class="bold font_12 purple_txt">th</sup>, 2024</li>
                          <li class="bold p_indent purple_txt">• Notification of the Result: July 12<sup class="bold font_12 purple_txt">th</sup>, 2024</li>
                          <li class="p_indent"><span class="bold purple_txt">• Eligibility : </span> Authors of Accepted Abstract</li>
@@ -116,8 +116,8 @@
 						</tbody>
 					</table>
                 </div>
-                <div class="remark_box">
-                    <p class="p_indent font_20 bold mt10">Remark</p>
+                <div class="remark_box text_box20">
+                    <p class="p_indent bold mt20 ">Remark</p>
                     <p class="mt10 p_indent">• <span class="bold purple_txt">Travel grants for Domestic Participants </span> are available to individuals who are based on their affiliation, <span class="bold purple_txt">excluding those based in Seoul, Incheon, and Gyeonggi-do.</span></p>
                     <p class="mt10 p_indent">• <span class="bold purple_txt">For Domestic Participants, </span>payment will be processed by wire-transfer <span class="bold purple_txt">after the congress.</span>
                     </p>
@@ -147,7 +147,7 @@
 				<div class="section_title_wrap2">
 					<h3 class="title">Awards</h3>
 				</div>
-				<div class="mb20 text_box indent">
+				<div class="mb20 text_box indent text_box20">
 					<ul>
 						<li>• Outstanding oral and poster presentations will be recognized and awarded during the closing ceremony.</li>
 						<li>• The winners will be notified individually of the results, and their attendance at the closing ceremony is mandatory.</li>
@@ -205,14 +205,14 @@
                         </div>
                     </div>
 				</ul>
-                <div class="gray_div mb20">Each award is given to a single-digit number of winners.<br/>Winners will receive the benefit of Free Registration for ICOMES 2025
+                <div class="gray_div mb20 font_18">Each award is given to a single-digit number of winners.<br/>Winners will receive the benefit of Free Registration for ICOMES 2025
                 </div>
 			</div>
 			
 			<!--Oral Presentation end-->
 			<div>
 				<h3 class="title">Registration Support for Accepted Abstracts</h3>
-				<div class="text_box indent">
+				<div class="text_box indent text_box20">
 					<ul>
 						<li>• Free registration for one person is offered for accepted abstracts.</li>
 						<li>• Registration fees will be fully refunded after the congress.</li>

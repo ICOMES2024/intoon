@@ -590,7 +590,8 @@ section.terms .details p {text-align: justify;}
 .accommodation .useful_list li:nth-child(3) .imgs {background-image:url("../img/hotel_img7.jpg");}
 /*.accommodation .useful_list li:nth-child(4) .imgs {background-image:url("../img/hotel_img4.jpg");}*/
 .accommodation .useful_list .c_table2 th {border-right: 0;}
-.accommodation .useful_list .detail_table th, .useful_list .detail_table td {padding: 19.5px 30px; font-size: 16px; white-space:normal;}
+.accommodation .useful_list .detail_table th, .useful_list .detail_table td {padding: 19.5px 30px; white-space:normal;}
+.accommodation .useful_list .detail_table th, .useful_list .detail_table td, .useful_list .detail_table td span{ font-size: 18px;}
 .accommodation .useful_list .detail_table .small_padding th, .useful_list .detail_table .small_padding td {padding: 15px 40px;}
 .accommodation .useful_list .detail_table .small_padding span {display:block; margin-top:7px; font-size:14px; font-weight:bold;}
 /* .accommodation .useful_list .detail_table .col_th {width: 200px;} */
@@ -1288,7 +1289,7 @@ br.br_530_only {display: none;}
 	/* accommodation */
 	.accommodation .useful_list a {display:block;}
 	.accommodation .useful_list .detail_table .col_th {width: 85px;}
-	.accommodation .useful_list .detail_table th, .accommodation .useful_list .detail_table td {font-size:12px;}
+	.accommodation .useful_list .detail_table th, .accommodation .useful_list .detail_table td,  .accommodation .useful_list .detail_table td span {font-size:12px;}
 	
 	/*abstract_submission_award.php*/
 	.pop_top_banner > p {font-size:16px;}

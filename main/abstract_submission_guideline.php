@@ -37,7 +37,7 @@ $info = sql_fetch($sql_info);
         <div class="section section1">
             <div>
                 <div class="text_box">
-                    <ul class="center_t">
+                    <ul class="center_t text_box20">
                         <li>The ICOMES 2024 organizing committee cordially invites you to submit abstracts<br/>for <span class="purple_txt bold">oral presentations, guided poster presentations</span> and <span class="purple_txt bold">poster exhibitions.</span></li>
                         <li>All abstracts must be submitted via the online submission system.
 <br/>Please read the guidelines before submitting your abstract(s).</li>
@@ -185,7 +185,7 @@ $info = sql_fetch($sql_info);
                 <div class="top_text_box">
                     Topic Categories
                 </div>
-                <div class="text_box">
+                <div class="text_box text_box20">
                     <ul>
                         <li class="f_bold"><span class="bold">1. </span>Behavior and Public Health for Obesity</li>
                         <li class="f_bold"><span class="bold">2. </span>Nutrition, Education and Exercise for Obesity
@@ -214,7 +214,7 @@ $info = sql_fetch($sql_info);
                     <h3 class="title"><?= $locale("instructions") ?></h3>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
-                    <table class="c_table detail_table">
+                    <table class="c_table detail_table table20">
                         <colgroup>
                             <col class="submission_col type2">
                             <col>

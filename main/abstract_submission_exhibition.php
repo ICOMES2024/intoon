@@ -179,7 +179,7 @@ $info = sql_fetch($sql_info);
 				<div class="section_title_wrap2">
 					<h3 class="title">Submission of Presentation Material</h3>
 				</div>
-				<div class="text_box indent">
+				<div class="text_box indent text_box20">
 					<ul>
 						<li>• The ICOMES secretariat will be responsible for the printing and displaying of posters on behalf of the presenter.</li>
 						<li>• All presenters of posters must submit their final presentation materials, including PPT and PDF formats, to the secretariat via email <a href="mailto:icomes_abstracts@into-on.com" class="parentheses">(<span class="font_inherit link">icomes_abstracts@into-on.com</span>)</a> before the deadline of <span class="f_bold purple_txt">August 8 (Thu).</span></li>
