@@ -174,7 +174,7 @@ input[type="file"].file_input + .file_label {display: inline-block; line-height:
 .steps_area.five_steps.travel_step li:nth-child(5) p:first-of-type { background-image: url("https://image.webeon.net/icomes2024/logo/2024_travel-5-1.svg"); border: none;}
 
 
-.steps_area.five_steps li .sm_txt {font-size:16px; padding:0 6px;}
+.steps_area.five_steps li .sm_txt {font-size:18px; padding:0 6px;}
 
 /* 220331 HUBDNC LJH2 */
 /*abstract_submission2.php*/

@@ -150,7 +150,7 @@ $info = sql_fetch($sql_info);
                     <h3 class="title">Session Information</h3>
                 </div>
                 <div class="table_wrap detail_table_common x_scroll">
-                     <table class="c_table detail_table ">
+                     <table class="c_table detail_table table18">
                         <colgroup>
                             <col>
                             <col>
@@ -178,7 +178,7 @@ $info = sql_fetch($sql_info);
 				<div class="section_title_wrap2">
 					<h3 class="title">Language & Length of Presentation</h3>
 				</div>
-				<div class="text_box indent">
+				<div class="text_box indent text_box20">
 					<ul>
 						<li>• Language: <span class="purple_txt bold">English</span></li>
 						<li>• Each presenter will be given <span class="purple_txt bold">7 minutes.</span> (5 minutes talk / 2 minutes Q&A)</li>
@@ -190,7 +190,7 @@ $info = sql_fetch($sql_info);
 				<div class="section_title_wrap2">
 					<h3 class="title">Submission of Presentation Material</h3>
 				</div>
-				<div class="text_box indent">
+				<div class="text_box indent text_box20">
 					<ul>
 						<li>• The ICOMES secretariat will be responsible for the printing and displaying of posters on behalf of the presenter.</li>
 						<li>•  All presenters of posters must submit their final presentation materials, including PPT and PDF formats, to the secretariat via email <a href="mailto:icomes_abstracts@into-on.com" class="parentheses">(<span class="font_inherit link">icomes_abstracts@into-on.com</span>)</a> before <span class="f_bold purple_txt">August 8 (Thu).</span></li>

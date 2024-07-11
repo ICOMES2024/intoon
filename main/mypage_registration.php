@@ -534,7 +534,7 @@
             <div class="table_wrap detail_table_common x_scroll mt10">
 				<table class="c_table detail_table fixed_table" style="min-width:400px;">
 					<colgroup>
-						<col width="190px">
+						<col width="230px">
 						<col>
 					</colgroup>
 					<tbody>
@@ -624,7 +624,7 @@
 				</table>
 			</div>
             <div class="btn_wrap">
-			<button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">Refund</button>
+			<!-- <button type="button" class="btn refund_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">Refund</button> -->
                 <button type="button" class="btn" style="position:static; width:auto; height:auto; padding:8px 30px;" onclick="window.location.href ='/main/mypage_registration_modify.php'">Modify</button>
 				<button type="button" class="btn review_close" style="position:static; width:auto; height:auto; padding:8px 30px;">Close</button>
                 <!-- <button type="button" class="btn cancel_btn" name="registration_cancel_pop_btn" style="position:static; width:auto; height:auto; padding:8px 30px;">Cancel</button> -->

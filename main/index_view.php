@@ -122,7 +122,7 @@
 		<div class="key_speaker_wrap">
 			<!-- <div class="main_speaker_wrap"> -->
 				<li class="pointer" name="presidential_lecture" data-id="day_3">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_8-2.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_8-3.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_2" data-id="day_2">

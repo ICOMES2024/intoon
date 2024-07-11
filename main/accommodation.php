@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div>
-                    <p>Conrad Seoul 
+                    <p class="font_22">Conrad Seoul 
                  <span class="font_16">(Special rate for ICOMES participants applied)</span> 
                     </p>
                     <div class="table_wrap x_scroll">
@@ -108,7 +108,7 @@ with Special Rate</a> -->
                     </div>
                 </div>
                 <div>
-                    <p>Lotte City Hotel Mapo <span class="font_16">(Special rate for ICOMES participants applied)</span></p>
+                    <p class="font_22">Lotte City Hotel Mapo <span class="font_16">(Special rate for ICOMES participants applied)</span></p>
                     <div class="table_wrap x_scroll">
                         <table class="c_table2 detail_table layout_fixed">
                             <colgroup>
@@ -181,7 +181,7 @@ with Special Rate</a> -->
                     </div>
                 </div>
                 <div>
-                    <p>Fairfield by Marriott Seoul</p>
+                    <p class="font_22">Fairfield by Marriott Seoul</p>
                     <div class="table_wrap x_scroll">
                         <table class="c_table2 detail_table layout_fixed">
                             <colgroup>
@@ -249,7 +249,7 @@ with Special Rate</a> -->
                         onClick="javascript:window.open('https://www.shillastay.com/mapo/index.do')">Go to Website</button>
                 </div>
                 <div>
-                    <p>Shilla Stay Mapo</p>
+                    <p class="font_22">Shilla Stay Mapo</p>
                     <div class="table_wrap x_scroll">
                         <table class="c_table2 detail_table layout_fixed">
                             <colgroup>

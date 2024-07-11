@@ -560,7 +560,7 @@
 								<input class="tel_number tel_phone" name="tel_nation_tel" type="text" maxlength="60" readonly>
 								<input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60">
 								<input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60">
-								<
+								
 							</td>
 						</tr>
 						<tr>

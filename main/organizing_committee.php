@@ -51,7 +51,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : 
         <div class="inner">
             <h3 class="title">Organizing Committee</h3>
             <div class="table_wrap">
-                <table class="c_table2 center_table fixed_table">
+                <table class="c_table2 center_table fixed_table table_type1">
                     <colgroup>
                         <col width="26%">
                         <col width="200px">
@@ -261,7 +261,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : 
            
 			<h3 class="title">Scientific Program Committee</h3>
             <div class="table_wrap">
-                <table class="c_table2">
+                <table class="c_table2 table_type1">
                     <colgroup>
                         <col width="26%">
                         <col width="200px">
@@ -384,7 +384,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : 
             </div>
             <h3 class="title">International Advisory Board</h3>
             <div class="table_wrap">
-                <table class="c_table2">
+                <table class="c_table2 table_type1">
                     <colgroup>
                         <col width="26%">
                         <col width="*">

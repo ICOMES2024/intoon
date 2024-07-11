@@ -8,7 +8,7 @@ include_once('./include/header.php');
     <div class="inner">
         <div class="section section1">
             <div>
-                <div class="text_box">
+                <div class="text_box text_box20">
                     <ul>
                         <li>ICOMES organized by KSSO(Korean Society for the Study of Obesity) offers an exceptional opportunity for international participants.</li>
                         <li><br>Join our comprehensive program, featuring situational analysis workshops, visits to healthcare system sites, and the opportunity 
@@ -46,60 +46,60 @@ to gain invaluable insights while advancing your career in the healthcare field.
                         </tr>
                         <tr>
                             <th class=" center_t bold" rowspan="9">Program</th>
-                            <th class="bold center_t dark_along_th font_small">Date</th>
-                            <th class="bold center_t dark_along_th font_small">Program</th>
-                            <th class="bold center_t dark_along_th font_small">Time</th>
-                            <th class="bold center_t dark_along_th font_small">Title</th>
-                            <th class="bold center_t dark_along_th font_small">Speaker</th>
-                            <th class="bold center_t dark_along_th font_small">Affliation</th>
+                            <th class="bold center_t dark_along_th ">Date</th>
+                            <th class="bold center_t dark_along_th ">Program</th>
+                            <th class="bold center_t dark_along_th ">Time</th>
+                            <th class="bold center_t dark_along_th ">Title</th>
+                            <th class="bold center_t dark_along_th ">Speaker</th>
+                            <th class="bold center_t dark_along_th ">Affliation</th>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small" rowspan="7">September 4<br/>(Wed.)</td>
-                            <td class="center_t p4 font_small" rowspan="6">Workshop</td>
-                            <td class="center_t p4 font_small">14:00-14:10</td>
-                            <td class="center_t p4 font_small">Opening Remarks</td>
-                            <td class="center_t p4 font_small">Chang Hee Jung</td>
-                            <td class="center_t p4 font_small">University of Ulsan, Korea</td>
+                            <td class="center_t p4 " rowspan="7">September 4<br/>(Wed.)</td>
+                            <td class="center_t p4 " rowspan="6">Workshop</td>
+                            <td class="center_t p4 ">14:00-14:10</td>
+                            <td class="center_t p4 ">Opening Remarks</td>
+                            <td class="center_t p4 ">Chang Hee Jung</td>
+                            <td class="center_t p4 ">University of Ulsan, Korea</td>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small">14:10-14:40</td>
-                            <td class="center_t p4 font_small">Novel Anti-Obesity Drugs:<br/>Advances and Challenges</td>
-                            <td class="center_t p4 font_small">Jang Won Son</td>
-                            <td class="center_t p4 font_small">The Catholic University of Korea, Korea</td>
+                            <td class="center_t p4 ">14:10-14:40</td>
+                            <td class="center_t p4 ">Novel Anti-Obesity Drugs:<br/>Advances and Challenges</td>
+                            <td class="center_t p4 ">Jang Won Son</td>
+                            <td class="center_t p4 ">The Catholic University of Korea, Korea</td>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small">14:40-15:10</td>
-                            <td class="center_t p4 font_small">Key Insights from 2023 Nutrition Research:<br/>A Comprehensive Review</td>
-                            <td class="center_t p4 font_small">Yoon-Ju Song</td>
-                            <td class="center_t p4 font_small">The Catholic University of Korea, Korea</td>
+                            <td class="center_t p4 ">14:40-15:10</td>
+                            <td class="center_t p4 ">Key Insights from 2023 Nutrition Research:<br/>A Comprehensive Review</td>
+                            <td class="center_t p4 ">Yoon-Ju Song</td>
+                            <td class="center_t p4 ">The Catholic University of Korea, Korea</td>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small">15:10-15:20</td>
-                            <td class="center_t p4 font_small" colspan="3">Break</td>
+                            <td class="center_t p4 ">15:10-15:20</td>
+                            <td class="center_t p4 " colspan="3">Break</td>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small">15:20-16:20</td>
-                            <td class="center_t p4 font_small">Group Discussion</td>
-                            <td class="center_t p4 font_small" colspan="2">ALONG Participants</td>
+                            <td class="center_t p4 ">15:20-16:20</td>
+                            <td class="center_t p4 ">Group Discussion</td>
+                            <td class="center_t p4 " colspan="2">ALONG Participants</td>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small">16:20-16:30</td>
-                            <td class="center_t p4 font_small">Closing Remarks</td>
-                            <td class="center_t p4 font_small">Chang Hee Jung</td>
-                            <td class="center_t p4 font_small">University of Ulsan, Korea</td>
+                            <td class="center_t p4 ">16:20-16:30</td>
+                            <td class="center_t p4 ">Closing Remarks</td>
+                            <td class="center_t p4 ">Chang Hee Jung</td>
+                            <td class="center_t p4 ">University of Ulsan, Korea</td>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small">Dinner</td>
-                            <td class="center_t p4 font_small">18:00 ~</td>
-                            <td class="center_t p4 font_small">Dinner Time</td>
-                            <td class="center_t p4 font_small" colspan="2">ALONG Participants</td>
+                            <td class="center_t p4 ">Dinner</td>
+                            <td class="center_t p4 ">18:00 ~</td>
+                            <td class="center_t p4 ">Dinner Time</td>
+                            <td class="center_t p4 " colspan="2">ALONG Participants</td>
                         </tr>
                         <tr>
-                            <td class="center_t p4 font_small">September 5<br/>(Thu.)</td>
-                            <td class="center_t p4 font_small">Hospital Tour</td>
-                            <td class="center_t p4 font_small">08:00 ~</td>
-                            <td class="center_t p4 font_small" colspan="2">-</td>
-                            <td class="center_t p4 font_small" colspan="2">-</td>
+                            <td class="center_t p4 ">September 5<br/>(Thu.)</td>
+                            <td class="center_t p4 ">Hospital Tour</td>
+                            <td class="center_t p4 ">08:00 ~</td>
+                            <td class="center_t p4 " colspan="2">-</td>
+                            <td class="center_t p4 " colspan="2">-</td>
                         </tr>
                     </table>
                 </div>
@@ -150,7 +150,7 @@ to gain invaluable insights while advancing your career in the healthcare field.
       for selection into the ALONG Program.)<br/>
                             </span>
                                 - Upon application, a curriculum vitae is required.<br/>
-                                - <span class="bold">Acceptance notification will be informed via personal email at <span class="point3_txt bold">the beginning of July</span></span>                
+                                - <span class="bold">Acceptance notification will be informed via personal email at <span class="purple_txt bold">the beginning of July</span></span>                
                             </td>
                         </tr>
                     </table>
