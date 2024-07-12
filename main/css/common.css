@@ -249,7 +249,7 @@ a.btn{line-height:50px; text-align: center;}
 .blue_btn {/*background-color:#0066CC !important; border-color:#0066CC !important; */ background-color: #9150A4; border-color: #9150A4; color:#fff !important;}
 .yellow_btn {background-color:#FFEB00; border-color:#FFEB00; color:#000;}
 .gray_btn {background-color:#999999; border-color: #999999; color: #fff;}
-.gray2_btn {background-color:#707070; border-color: #707070; color: #fff;}
+.gray2_btn {background-color:#b6b6b6; border-color: #707070; color: #fff;}
 .long_btn {font-size: 22px; color: #FFF; border: 0; border-radius: 25px; background-color: #0066CC; width: 100%; max-width: 400px;}  /*guideline에 들어가는 버튼*/
 a.long_btn {max-width: max-content; padding: 0 40px; line-height: 50px; text-align: center;} /* download 버튼 */
 a.long_btn + a.long_btn {margin-left: 24px;}

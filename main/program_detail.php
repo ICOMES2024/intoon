@@ -883,7 +883,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
@@ -1083,7 +1083,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>11:10-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
@@ -1232,7 +1232,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="special_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Session 1</p>
@@ -1446,7 +1446,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
@@ -1758,7 +1758,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
@@ -1953,7 +1953,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>11:10-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
@@ -2102,7 +2102,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="special_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Session 1</p>
@@ -2303,7 +2303,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
@@ -2606,7 +2606,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 1</p>
@@ -2803,7 +2803,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>11:10-11:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
@@ -2951,7 +2951,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="special_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Session 1 </p>
@@ -3136,7 +3136,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>15:40-16:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 2</p>
@@ -4260,7 +4260,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
@@ -4625,7 +4625,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="special_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Session 2</p>
@@ -4709,7 +4709,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 3</p>
@@ -4767,7 +4767,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>14:30-15:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
@@ -4943,7 +4943,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
@@ -5086,7 +5086,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
@@ -5419,7 +5419,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="special_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Session 2</p>
@@ -5503,7 +5503,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 3</p>
@@ -5561,7 +5561,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>14:30-15:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
@@ -5751,7 +5751,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
@@ -5896,7 +5896,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
@@ -6276,7 +6276,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="special_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Session 2</p>
@@ -6360,7 +6360,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>13:50-14:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 3</p>
@@ -6418,7 +6418,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="keynote_bg">
                                                 <td>14:30-15:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
@@ -6606,7 +6606,7 @@ echo '<script type="text/javascript">
                                             <col>
                                         </colgroup>
                                         <tbody>
-                                            <tr class="dark_pink_bg">
+                                            <tr class="plenary_bg">
                                                 <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
