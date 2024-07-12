@@ -659,6 +659,7 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 .invited_speaker .speaker_list > li h2:before {content:''; display: block; width: 6px;height: 6px; background: transparent; /*border:4px solid #5699F8;*/ border-radius:50%;}
 .invited_speaker .speaker_list > li h2 > p {font-size:16px; }
 .invited_speaker .speaker_list .desc_wrap div {margin-top: 60px;font-size:16px; display:flex; flex-direction:column; justify-content:space-between; }
+/* .invited_speaker .speaker_list li:nth-child(3) .desc_wrap div {margin-top: 45px;} */
 .invited_speaker .speaker_list li:nth-child(1) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_1.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
 
 .invited_speaker .speaker_list li:nth-child(2) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(5) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(6) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(7) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_2.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
@@ -856,6 +857,9 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 	.invited_speaker .speaker_list > li{height: 520px;}
 	.speaker_list > li .flex{height: 520px;}
 	.speaker_list .profile_wrap img{height: auto; width: 80%;}
+	/*invited_speaker*/
+	.speaker_list li {width:100% !important;}
+	.speaker_list > li:nth-child(even), .speaker_list > li:nth-child(n+3) {margin-left:0 !important; margin-top:0;}
 }
 
 @media screen and (max-width: 1024px) {
@@ -1023,10 +1027,6 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 	.mp_pop .pop_cont {padding: 30px 20px;}
 	.mp_pop .tab_pager li a {font-size:14px;}
 	.mp_pop .tab_cont {padding: 30px 0;}
-
-	/*invited_speaker*/
-	.speaker_list li {width:100% !important;}
-	.speaker_list > li:nth-child(even), .speaker_list > li:nth-child(n+3) {margin-left:0 !important; margin-top:0;}
 
 	/*Online Registration*/
 	.online_register .basic_ul > li#chk_org {margin-top: 50px;}
@@ -2840,7 +2840,7 @@ section.coming img {width: 100%;}
 }
 
 .login_form .background_white{
-	max-width: 2000px !important;
+	max-width: 9000px !important;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(255,255,255,0.65);
