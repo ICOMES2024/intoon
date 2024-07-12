@@ -588,16 +588,16 @@ section.container.organizing {padding-bottom: 190px;}
 .light_orange_bg {background-color:#FFEDD5 !important;}
 /* 2024 bg */
 .yellow_green_bg {background-color: #d8e4bc !important;}
-.violet_bg{background-color: #ccc0da !important;}
-.skyblue_bg{background-color: #dce6f1 !important;}
+.violet_bg{background-color: #f9bab5 !important;}
+.skyblue_bg{background-color: #c5c5d5 !important;}
 .light_yellow_bg{background-color: yellow !important;}
 .light_gray_bg_2{background-color: #eeece1 !important;}
-.dark_sky_bg{background-color: #b7dee8 !important;}
+.dark_sky_bg{background-color:  #97b6d7 !important;;}
 .white_yellow_bg{background-color: #ffffe7 !important;}
 .light_sky_bg{background-color: #b7dee8 !important;}
 .dark_pink_bg{background-color: #E6B8B7 !important;}
-.dark_green_bg{background-color: #d8e4bc !important;}
-.dark_orange_bg{background-color: #fcd5b4 !important;}
+.dark_green_bg{background-color: #8bcecf !important;}
+.dark_orange_bg{background-color: #f3d3e5 !important;}
 .dark_gray_bg{background-color: #7f7f7f !important;}
 .dark_gray_bg > div{ color: white; font-weight: 700;}
 .purple_bg_2024{background-color: #9150A4 !important; border: none !important;}
@@ -607,6 +607,9 @@ section.container.organizing {padding-bottom: 190px;}
 .darkblue_bg_th{background-color:  #004AA7 !important; color: #FFF !important;opacity: 0.5; border-right:0.4pt solid #FFFFFF !important;}
 
 .break_time{padding: 4px !important;}
+.plenary_bg{background-color: #fedbac !important;}
+.keynote_bg{background-color: #fcc281 !important;}
+.special_bg{background-color: #cddfa8 !important;}
 
 /*230705 HUBDNC AJY 추가*/
 .dots_div {font:inherit; display:flex; align-items:flex-end; justify-content:center;}
@@ -1439,7 +1442,7 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 
 @media screen and (max-width:1100px) {
 	.login_img img {
-		width: 80%;
+		width: 100%;
 	}
 }
 
@@ -2414,7 +2417,7 @@ section.coming img {width: 100%;}
 
 .top_text_box.violet_bg2{
 	background-color:#8157BA;
-	font-weight: 600;
+	font-weight: bold;
 }
 
 .top_text_box.violet_bg2 span{
@@ -2450,10 +2453,10 @@ section.coming img {width: 100%;}
 }
 
 .abstract_key_dates > .key_date:nth-child(3){
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-3-1.png");
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-3-2.png");
 }
 .abstract_key_dates > .key_date:nth-child(4){
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-4-1.png");
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-4-2.png");
 }
 .abstract_key_dates > .key_date:nth-child(5){
 	background-image: url("https://image.webeon.net/icomes2024/logo/2024_abstract_key-5-1.png");
@@ -2520,7 +2523,7 @@ section.coming img {width: 100%;}
 }
 
 .regi_key_dates > .key_date {
-	width: 475px;
+	width: 420px;
 	height: 196px;
 	background-image: url("https://image.webeon.net/icomes2024/logo/2024_regi_keydate-1.png");
 	background-position: center;
@@ -2540,8 +2543,8 @@ section.coming img {width: 100%;}
 	align-items: center;
 	justify-content: flex-start;
 	gap: 23px;
-	margin-top: 14px;
-	padding-left: 104px;
+    margin-top: -5px;
+    padding-left: 82px;
 }
 
 .regi_key_dates > .key_date > div *{
@@ -2615,9 +2618,9 @@ section.coming img {width: 100%;}
 
 .abstract_submission_award .oral_td {color: #8A0579;}
 .abstract_submission_award .poster_td {color: #5C0378;}
-.abstract_submission_award .md_bg{background-color: #BBAFC7 !important; opacity: 0.8; color: #FFF;}
+.abstract_submission_award .md_bg{background-color: #BBAFC7 !important; opacity: 0.8; color: #FFF;    border-color: #fff;}
 .abstract_submission_award .yellow_btn{background-color: #F59F39; font-size: 22px !important;}
-.abstract_submission_award .round_title{background-color: #9150A4; width: 100%; height: 50px; display: flex;align-items: center;justify-content: center; color: #FFF;border-radius: 26px; font-weight: bold; font-size: 28px; margin: 44px auto;}
+.abstract_submission_award .round_title{background-color: #9150A4; width: 100%; height: 50px; display: flex;align-items: center;justify-content: center; color: #FFF;border-radius: 26px; font-weight: bold; font-size: 26px; margin: 44px auto;}
 
 .abstract_submission_award .round_title.purple{background-color: #8157BA;}
 
@@ -2628,7 +2631,7 @@ section.coming img {width: 100%;}
 	border-radius: 20px;
 	width: 90%;
 	height: 40px;
-	font-size: 25px;
+	font-size: 23px;
 	text-align: center;
 	font-weight: bold;
 	display: flex;
@@ -2747,11 +2750,15 @@ section.coming img {width: 100%;}
 .guide_gray_box{
     width: 116%;
     height: 17px;
-    background-color: #f4f4f4;
+    background-color: #fff;
     position: relative;
     z-index: 1;
     left: -10px;
-    bottom: -11px;
+    bottom: -13px;
+}
+
+.guide_gray_box.second_gray{
+	bottom: -11px;
 }
 
 
@@ -2832,3 +2839,98 @@ section.coming img {width: 100%;}
 	}
 }
 
+.login_form .background_white{
+	max-width: 2000px !important;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.65);
+	position: absolute !important;
+	top:0;
+	left:0;
+	z-index: 100;
+}
+
+.login_form span{
+	font-size: 18px;
+	font-weight: 700;
+	margin-right: 24px;
+}
+
+.login_form input{
+	height: 50px !important;
+	margin-right: 8px;
+	width: 422px !important;
+}
+
+.login_form .login_btn_wrap{
+	width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 28px auto;
+	padding-right: 32px;
+}
+
+
+.login_form .find_pw_btn {
+	background-color: #B2B2B2 !important;
+	border: none;
+	font-size: 20px;
+	font-weight: 600;
+	height: 47px !important;
+	border-radius: 26px !important;
+	width: 233px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+
+.login_form .signup_btn {
+	border: none;
+	font-size: 20px;
+	font-weight: 600;
+	height: 47px !important;
+	border-radius: 26px !important;
+	width: 137px !important;
+}
+
+@media screen and (max-width:800px) {
+	.login_form .login_box{
+		display: block;
+	}
+
+	.login_form.style_2023.login_form .btn{
+		margin-top: 20px;
+		width: 80% !important;
+		height: 50px !important;
+		border-radius: 26px;
+	}
+}
+
+@media screen and (max-width:486px) {
+	.login_form .login_btn_wrap{
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		margin: 28px auto;
+		padding-right: 0px;
+		flex-direction: column;
+	}
+	.login_form.style_2023.login_form .btn{
+		margin-top: 0px;
+	}
+
+	.login_form .icomes_2024_login_btn{
+		margin-top: 7px !important;
+	}
+
+	.login_form span{
+		margin-right: 16px;
+	}
+
+	.login_form span.pw_txt{
+		margin-right: 12px;
+	}
+}

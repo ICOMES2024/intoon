@@ -15,7 +15,7 @@ header .btn{padding:0 12px;height:38px;line-height:36px;font-size:17px;margin-to
 /*header .top{padding:48px 0 30px;}*/
 header .depth01{/*display:flex;flex-direction:row;justify-content:space-between;border-top:1px solid #F7F7F7;*/}
 header .depth01>li{width: 14.28%;}
-header .depth01>li>a{font-weight:bold;/*padding:30px 0;*/line-height:45px;width:100%;display:block;text-align:center; position:relative; z-index:10; font-size: 20px;}
+header .depth01>li>a{font-weight:600;/*padding:30px 0;*/line-height:45px;width:100%;display:block;text-align:center; position:relative; z-index:10; font-size: 18px;}
 /*header .depth01>li:hover>a span{color:#ADF002 !important;}*/
 header .depth01>li>a span{font-size:20px;font-weight:600;color:#fff;}
 /*header .depth01 li a img{margin-left:10px;}*/
@@ -269,9 +269,10 @@ section.faq .select_box {width: 100%; text-align: right; margin-bottom: 27px;}
 .container.login .logo {max-width: 400px; margin-bottom: 10px;}
 .container.login .logo img{width: 100%; height: 100%;}
 .container.form_layout > div {max-width:570px; margin:0 auto; position:relative; z-index:1; text-align:center;}
-.container.form_layout > div ul {margin-bottom:70px;}
+/* .container.form_layout > div ul {margin-bottom:70px;} */
 .container.form_layout > div li:not(:first-child) {margin-top:22px;}
-.container.form_layout > div input, .container.form_layout > div button {width:100%;}
+.container.form_layout > div input {width:400px;}
+.container.form_layout > div button{width: 135px;}
 .container.form_layout form > button + button {margin-top:26px;}
 .container.form_layout .btn_wrap {margin-top:26px;}
 .container.form_layout .btn_wrap:after {content:''; display:block; clear:both;}
@@ -360,7 +361,7 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 .mb_only .sign_list label {height:20px;}
 .mb_only .sign_list label input {width:100px; margin-top:-8px;}
 .sign_up .table_wrap {overflow:visible;}
-.page_title {font-size:44px; font-weight:900; color:#000; text-align:center; margin-bottom:52px; position: relative; line-height:1;}
+.page_title {font-size:40px; font-weight:900; color:#000; text-align:center; margin-bottom:52px; position: relative; line-height:1;}
 .page_title p {font-size:22px; font-weight:bold; margin-top:14px;}
 /*.form_section input{width:100%;}
 .signup_list select, .basic_ul select {width:100%; height:60px; border-radius:30px; padding:0 40px; border-color:#B2B2B2; background-position:center right 40px; background-image:url("../img/icons/icon_form_arrow.svg");}
@@ -770,9 +771,9 @@ section.visa .table_vertical th {color: #000;}
 .program_detail_ul li .caption span:first-child {font-size:24px;}
 .program_detail_ul .detail_table_common {margin-top:10px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:last-child > td {padding:0; border-bottom:none;}
-.program_detail_ul .detail_table th, .program_detail_ul .detail_table td, .overview td {padding:10px 30px; line-height: 1.6;}
+.program_detail_ul .detail_table th, .program_detail_ul .detail_table td, .overview td {padding:10px 28px; line-height: 1.6;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child {cursor:pointer;}
-.program_detail_ul .detail_table_common > table > tbody > tr:first-child > td {padding:14px 30px;}
+.program_detail_ul .detail_table_common > table > tbody > tr:first-child > td {padding:14px 28px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td:last-child {padding:14px 100px 14px 20px;}
 .program_detail_ul .detail_table_common > table > tbody > tr:first-child > td:last-child p:nth-of-type(2) {margin-top:8px; padding-left: 106px; text-indent: -106px;}
 .program_detail_ul .font_20 {font-size:20px; /*margin-bottom:10px;*/ color: #292929; font-weight: 900;}
@@ -976,7 +977,7 @@ br.br_530_only {display: none;}
 	.signup_list select, .basic_ul select, input[type="text"], input[type="password"], .container.form_layout > div button, .file_input label, .file_input .btn, .affiliation_add, .affiliation_delete, .affiliation_wrap li div, .btn.online_btn {height:40px; font-size:16px;}
 	.file_input label, .file_input .btn {line-height:38px;}
 	.container.form_layout form > button + button {margin-top:16px;}
-	.container.form_layout > div ul {margin-bottom:40px;}
+	/* .container.form_layout > div ul {margin-bottom:40px;} */
 	.container.form_layout > div li:not(:first-child) {margin-top: 12px;}
 	.container.form_layout .btn_wrap {margin-top: 16px;}
 

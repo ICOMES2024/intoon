@@ -33,15 +33,15 @@ to gain invaluable insights while advancing your career in the healthcare field.
                             <col>
                         </colgroup>
                         <tr>
-                            <th class=" center_t bold">Goals</th>
+                            <th class=" center_t bold border_right">Goals</th>
                             <td class="" colspan="6">Develop Outstanding Relationships with APAC Countries, and Establish Obesity as a Priority in Their Individual Countries</td>
                         </tr>
                         <tr>
-                            <th class=" center_t bold">Date</th>
+                            <th class=" center_t bold border_right">Date</th>
                             <td class="" colspan="6">September 4 (Wed.) ~ 5 (Thu.), 2024</td>
                         </tr>
                         <tr>
-                            <th class=" center_t bold">Place</th>
+                            <th class=" center_t bold border_right">Place</th>
                             <td class="" colspan="6">CONRAD Seoul Hotel</td>
                         </tr>
                         <tr>
@@ -117,34 +117,34 @@ to gain invaluable insights while advancing your career in the healthcare field.
                             <col>
                         </colgroup>
                         <tr>
-                            <th class=" center_t">Qualification</th>
+                            <th class=" center_t border_right">Qualification</th>
                             <td class="">For APEC residents interested in ASIA Leaders Obesity Network Group <span style="font-weight:900; color:#000" >(For Foreigners Only)</span></td>
                         </tr>
                         <tr>
-                            <th class=" center_t">Participant limit</th>
+                            <th class=" center_t border_right">Participant limit</th>
                             <td class="">## people</td>
                         </tr>
                         <tr>
-                            <th class=" center_t">Participation Fee</th>
+                            <th class=" center_t border_right">Participation Fee</th>
                             <td class="">Complimentary</td>
                         </tr>
                         <tr>
-                            <th class=" center_t">Benefit</th>
+                            <th class=" center_t border_right">Benefit</th>
                             <td class="">Offering 1 day accommodation at CONRAD SEOUL on September 4, 2024</td>
                         </tr>
                         <tr>
-                            <th class=" center_t">Application Deadline</th>
+                            <th class=" center_t border_right">Application Deadline</th>
                             <td class="">June 12, 2024 (Wed.)</td>
                         </tr>   
                         <tr>
-                            <th class="center_t">How to Apply</th>
+                            <th class="center_t border_right">How to Apply</th>
                             <td class="">1. Download and fill out the Curriculum vitae template<br>
                                 2. Access the below link ”Apply for ALONG Program”<br>
                                 3. Complete the form and submit it along with your CV
                             </td>
                         </tr>   
                         <tr>
-                            <th class="center_t" >Remark</th>
+                            <th class="center_t border_right">Remark</th>
                             <td class="bold">- This program is available to all, irrespective of ICOMES 2024 participation<span class="font_12"><br/>
                             (* Participants and abstract submitters who have completed ICOMES registration <br/>will receive additional points 
       for selection into the ALONG Program.)<br/>

@@ -162,11 +162,11 @@ $info = sql_fetch($sql_info);
 						   <th class="f_bold text_center darkblue_bg_th">Sep. 7 (Sat)</th>
 					   </tr>
 					<tr>
-						<th class="text_center f_bold">Location</th>
+						<th class="text_center f_bold border_right">Location</th>
 						<td class="text_center" colspan="2">Poster Zone, 6F</td>
 					</tr>
 					<tr>
-						<th class="text_center f_bold">Time</th>
+						<th class="text_center f_bold border_right">Time</th>
 						<td class="text_center">07:30 - 18:00</td>
 						<td class="text_center">07:30 - 17:00</td>
 					</tr>

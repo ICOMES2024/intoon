@@ -275,24 +275,25 @@ echo '<script type="text/javascript">
 
                             <option value="5" class="day2 day3">Pleanary Lecture</option>
                             <option value="6" class="day2 day3">Keynote Lecture</option>
+                            <option value="20" class="day2 day3">Presidential Lecture</option>
+                            <option value="22" class="day2 day3">Special Scientific Session </option>
                             <option value="8" class="day2 day3">Symposium</option>
                             <option value="15" class="day1 day2 day3">Joint Symposium</option>
-                            <!-- <option value="9" class="day1">Obesity Treatment Guidelines Symposium</option> -->
-                            <option value="7" class="day1">Best Articles in JOMES</option>
-                            <!-- <option value="10" class="day1">Pre-congress Symposium</option> -->
+                            <option value="21" class="day1 day2 day3">Special Session</option>
                             <option value="11" class="day2 day3">Breakfast Symposium</option>
                             <option value="12" class="day2 day3">Luncheon Symposium</option>
                             <option value="13" class="day1">Satellite Symposium</option>
                             <option value="14" class="day2 day3">Sponsored Session</option>
                             <option value="16" class="day2 day3">Oral Presentation</option>
                             <option value="17" class="day2 day3">Guided Poster Presentation</option>
-                            <option value="19" class="day1">Committee Session</option>
-                            <option value="20" class="day3">Presidential Lecture</option>
-                            <option value="21" class="day1 day2">Special Session</option>
+                            <option value="3" class="day1">Textbook Publication Inauguration Ceremony & Welcome Reception</option>
                             <option value="1" class="day2">Opening Address</option>
-                            <option value="2" class="day3">Closing & Award Ceremony</option>
-                            <option value="3" class="day1">Welcome Cocktail Party</option>
                             <option value="4" class="day2">Congress Banquet</option>
+                            <option value="2" class="day3">Closing & Award Ceremony</option>
+                            
+                            <!-- <option value="7" class="day1">Best Articles in JOMES</option> -->
+                            <!-- <option value="10" class="day1">Pre-congress Symposium</option> -->
+                            <!-- <option value="19" class="day1">Committee Session</option> -->
 						</select>
 					</li>
 				</ul>
