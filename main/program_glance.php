@@ -39,7 +39,7 @@
 
 				<!-- <button class="btn blue_btn nowrap not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
 				<!-- [240118] sujeong / not_yet 버튼으로 변경 -->
-					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_Glance_0712.pdf')"
+					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_Glance_0712_v2.pdf')"
 						class="btn blue_btn nowrap"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button>
 				</div>
 
@@ -131,8 +131,8 @@
                                 <td class="break_time light_gray_bg"></td>
 							</tr> 
                             <tr>
-								<td rowspan="2">
-									<div class="colons_div">18:10-19:10</div>
+								<td>
+									<div class="colons_div">18:10-18:40</div>
 								</td>
 								<td class="dark_sky_bg pointer" name="satellite_symposium_1" data-id="7">
 									Satellite<br />Symposium 1
@@ -149,9 +149,9 @@
 								<td class="light_gray_bg"></td>
 							</tr>
 							<tr>
-								<!-- <td>
-									<div class="colons_div">18:30-19:00</div>
-								</td> -->
+								<td>
+									<div class="colons_div">18:40-19:10</div>
+								</td>
 								<td class="dark_sky_bg pointer" name="satellite_symposium_2" data-id="9">
 									Satellite<br />Symposium 2
 									<input type="hidden" name="e" value="room1">

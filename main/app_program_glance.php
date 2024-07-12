@@ -41,8 +41,10 @@
             <div class="scroll_table">
 				<!-- HUBDNCHYJ : App 일때 하위 마크업 주석처리 필요 -->
 				<div class="program_table_wrap">
+					<p class="text_r bold mb10">*KST (UTC+9)</p>
 					<table class="program_table main-table">
 						<colgroup>
+							<col class="program_time">
 							<col class="program_first_col">
 							<col class="program_first_col">
 						</colgroup>
@@ -126,8 +128,8 @@
                                 <td class="break_time light_gray_bg"></td>
 							</tr> 
                             <tr>
-								<td rowspan="2">
-									<div class="colons_div">18:10-19:10</div>
+								<td>
+									<div class="colons_div">18:10-18:40</div>
 								</td>
 								<td class="dark_sky_bg pointer" name="satellite_symposium_1" data-id="7">
 									Satellite<br />Symposium 1
@@ -144,9 +146,9 @@
 								<td class="light_gray_bg"></td>
 							</tr>
 							<tr>
-								<!-- <td>
-									<div class="colons_div">18:30-19:00</div>
-								</td> -->
+								<td>
+									<div class="colons_div">18:40-19:10</div>
+								</td>
 								<td class="dark_sky_bg pointer" name="satellite_symposium_2" data-id="9">
 									Satellite<br />Symposium 2
 									<input type="hidden" name="e" value="room1">
@@ -168,7 +170,7 @@
 								<td></td>
 								<td></td>
 								<td class="white_yellow_bg pointer" name="welcome_cocktail_party" data-id="10" style="letter-spacing: -0.8px;"> 
-								Textbook Publication Inauguration Ceremony & Welcome Reception
+								Textbook Launch Ceremony & Welcome Reception
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -218,7 +220,7 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_1" data-id="14">
+								<td colspan="3" class="keynote_bg pointer" name="keynote_lecture_1" data-id="14">
 									Keynote Lecture 1
 									<p class="">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
 									<p>Joel K. Elmquist</p>
@@ -287,7 +289,7 @@
 								<td>
 									<div class="colons_div">11:10-11:50</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2" data-id="21">
+								<td colspan="3" class="plenary_bg pointer" name="keynote_lecture_2" data-id="21">
 									Plenary Lecture 1
 									<p class="">GLP-1 Based Therapy of Obesity</p>
 									<p>Michael A. Nauck</p>
@@ -333,7 +335,7 @@
 								<td>
 									<div class="colons_div">13:00-14:00</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
+								<td class="special_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
 									Special Scientific Session 1
 									<p class="">Management of Obesity from Cardiometabolic Perspective</p>
 									<p>Ania Jastreboff</p>
@@ -392,7 +394,7 @@
 								<td>
 									<div class="colons_div">15:40-16:20</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_3" data-id="34">
+								<td colspan="3" class="plenary_bg pointer" name="keynote_lecture_3" data-id="34">
 									Plenary Lecture 2
 									<p class="">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
 									<p>Silva Arslanian</p>
@@ -516,7 +518,7 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_4" colspan="3" data-id="44">
+								<td class="keynote_bg pointer" name="keynote_lecture_4" colspan="3" data-id="44">
 									Keynote Lecture 2
 									<p class="">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
 									<p>Jean-Pierre Després</p>
@@ -614,7 +616,7 @@
 								<td>
 									<div class="colons_div">12:50-13:50</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
+								<td class="special_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
 									Special Scientific Session 2
 									<!-- <p class="bold">Diversity in the Definition of Obesity</p> -->
 									<p>Soo Lim</p>
@@ -632,7 +634,7 @@
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56">
 									Guided Poster Presentation 2
 									<input type="hidden" name="e" value="room7">
-									<div class="guide_gray_box"></div>
+									<div class="guide_gray_box second_gray"></div>
 									</td>
 								<td></td>
 							</tr>
@@ -640,7 +642,7 @@
 								<td>
 									<div class="colons_div">13:50-14:30</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_5" colspan="3" data-id="57">
+								<td class="plenary_bg pointer" name="keynote_lecture_5" colspan="3" data-id="57">
 									Plenary Lecture 3
 									<p class="">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
 									<p>William Evans</p>
@@ -656,11 +658,11 @@
 								<td>
 									<div class="colons_div">14:30-15:10</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_6" colspan="3" data-id="58">
+								<td class="keynote_bg pointer" name="keynote_lecture_6" colspan="3" data-id="58">
 									Keynote Lecture 3
 									<p class="">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
 									<p>Michael D. Jensen</p>
-									<p>Mayo College of Medicine,USA</p>
+									<p>Mayo College of Medicine, USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -715,7 +717,7 @@
 								<td>
 									<div class="colons_div">17:00-17:40</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
+								<td class="plenary_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
 									Plenary Lecture 4
 									<p class="">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
 									<p>W. Timothy Garvey</p>

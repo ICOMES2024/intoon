@@ -2755,6 +2755,7 @@ section.coming img {width: 100%;}
     z-index: 1;
     left: -10px;
     bottom: -13px;
+	display: none;
 }
 
 .guide_gray_box.second_gray{
