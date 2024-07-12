@@ -84,7 +84,7 @@
 		</div>
 	
 		<div class="dates_area">
-			<p class="kst">*KST (UTC+9)</p>
+			
 			<ul>
 				<li>
 					<a href="/main/abstract_submission_guideline.php">
@@ -100,6 +100,7 @@
 					</a>
 				</li>
 				<li>
+					 <p class="kst">*KST (UTC+9)</p>
 					 <a href="/main/abstract_submission_award.php"> 
 						<!-- <h2>2 Jun</h2>  -->
 						<!-- <h2>Awards &amp;<br/>Grants</h2> -->
