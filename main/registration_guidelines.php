@@ -242,27 +242,27 @@ $price = get_data($sql_price);
 							</colgroup>
 							<tbody>
 								<tr>
-									<th class="center_t">Name of Bank</th>
+									<th class="center_t border_right">Name of Bank</th>
 									<td>Hana Bank</td>
 								</tr>
 								<tr>
-									<th class="center_t">Branch</th>
+									<th class="center_t border_right">Branch</th>
 									<td>HANA BANK, HEAD OFFICE</td>
 								</tr>
 								<tr>
-									<th class="center_t">Bank Address</th>
+									<th class="center_t border_right">Bank Address</th>
 									<td>35, EULJI-RO, JUNG-GU, Seoul, Korea</td>
 								</tr>
 								<tr>
-									<th class="center_t">Account Number</th>
+									<th class="center_t border_right">Account Number</th>
 									<td>584-910003-16504</td>
 								</tr>
 								<tr>
-									<th class="center_t">SWIFT CODE(BIC)</th>
+									<th class="center_t border_right">SWIFT CODE(BIC)</th>
 									<td>KOEXKRSE</td>
 								</tr>
 								<tr>
-									<th class="center_t">Account Holder</th>
+									<th class="center_t border_right">Account Holder</th>
 									<td><span class="kor">대한비만학회 등록비</span> <br>(International Congress on Obesity and Metabolic Syndrome)</td>
 								</tr>
 								<!--
@@ -306,11 +306,11 @@ $price = get_data($sql_price);
 						</colgroup>
 						<tbody>
 							<tr>
-								<th>Before Pre-Registration Deadline</th>
+								<th class="border_right">Before Pre-Registration Deadline</th>
 								<td>Full Refund</td>
 							</tr>
 							<tr>
-								<th>After Pre-Registration Deadline</th>
+								<th class="border_right">After Pre-Registration Deadline</th>
 								<td>No Refund</td>
 							</tr>
                         </tbody>

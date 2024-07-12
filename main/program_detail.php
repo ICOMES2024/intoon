@@ -89,7 +89,7 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>15:00-16:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Committee Session</p>
+                                                    <p class="font_20 bold">Committee Session 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
                                                         University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -139,24 +139,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <!-- <li name="break" class="border_bottom_70">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="light_gray_bg">
-                                                <td>16:30-16:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Break</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li> -->
+                            
                             <li name="committee_2">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -168,7 +151,7 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Committee Session</p>
+                                                    <p class="font_20 bold">Committee Session 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
                                                         University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -218,6 +201,26 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>18:00-18:10</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li> 
+
                             <li name="satellite_symposium_1">
                                 <!--
                                 <div class="clearfix2 caption">
@@ -233,7 +236,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="dark_sky_bg">
-                                                <td>18:00-18:30</td>
+                                                <td>18:10-18:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
                                                     <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul National University, Korea)</p>
@@ -266,7 +269,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr> -->
                                                                 <tr>
-                                                                    <td>18:00-18:30</td>
+                                                                    <td>18:10-18:40</td>
                                                                     <td class="bold">
                                                                      </td>
                                                                     <td class="text_r">
@@ -297,11 +300,10 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="dark_sky_bg">
-                                                <td>18:30-19:00</td>
+                                                <td>18:40-19:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
-                                                        National University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul National University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -320,10 +322,10 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>18:30-19:00</td>
+                                                                    <td>18:40-19:10</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Se Hee Min</p>(Asan Medical Center, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -412,24 +414,7 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
-                            <!-- <li name="break" class="border_bottom_70">
-                                <div class="table_wrap detail_table_common x_scroll">
-                                    <table class="c_table detail_table">
-                                        <colgroup>
-                                            <col class="col_date">
-                                            <col>
-                                        </colgroup>
-                                        <tbody>
-                                            <tr class="light_gray_bg">
-                                                <td>16:30-16:40</td>
-                                                <td>
-                                                    <p class="font_20 bold">Break</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </li> -->
+                         
                             <li name="joint_symposium_2">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -495,6 +480,24 @@ echo '<script type="text/javascript">
                                     </table>
                                 </div>
                             </li>
+                             <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>18:00-18:10</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li> 
                             <li name="satellite_symposium_3">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -504,7 +507,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="dark_sky_bg">
-                                                <td>18:00-18:30</td>
+                                                <td>18:10-18:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 3</p>
                                                     <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou University, Korea)</p>
@@ -526,7 +529,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>18:00-18:30</td>
+                                                                    <td>18:10-18:40</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
@@ -550,7 +553,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="violet_bg">
-                                                <td>18:30-19:00</td>
+                                                <td>18:40-19:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Session for Publication</p>
                                                     <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
@@ -573,10 +576,10 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>18:30-19:00</td>
+                                                                    <td>18:40-19:10</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Claire Greenhill</p>(Nature Reviews Endocrinology, UK)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -700,7 +703,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="violet_bg">
-                                                <td>16:30-18:00</td>
+                                                <td>16:20-17:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium</p>
                                                     <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
@@ -723,21 +726,21 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-17:00</td>
+                                                                    <td>16:20-16:50</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:00-17:30</td>
+                                                                    <td>16:50-17:20</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:30-18:00</td>
+                                                                    <td>17:20-17:50</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
@@ -746,6 +749,24 @@ echo '<script type="text/javascript">
                                                             </tbody>
                                                         </table>
                                                     </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>       
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>18:00-18:10</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -763,7 +784,7 @@ echo '<script type="text/javascript">
                                             <tr class="white_yellow_bg">
                                                 <td>19:00-21:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb_0">Textbook Publication Inauguration Ceremony & Welcome Reception</p>
+                                                    <p class="font_20 bold mb_0">Textbook Launch Ceremony & Welcome Reception</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -865,7 +886,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 1</p>
                                                      <p><span class="bold">Chairperson : Min-Seon Kim</span> (University of Ulsan, Korea)</p> 
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -944,7 +965,7 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 1 : Precision Medicine for Obesity and Diabetes </p>
-                                                    <p><span class="bold">Chairpersons : Leonie Kaye Heiboronn</span> (University of Adelaide, Australia), <br><span class="bold">Soon-Jib Yoo</span> (The Catholic University of Korea, Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Leonie Kaye Heilbronn</span> (University of Adelaide, Australia), <br><span class="bold">Soon-Jib Yoo</span> (The Catholic University of Korea, Korea)</p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -1065,7 +1086,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>11:10-11:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Jeong Taek Woo</span> (Kyung Hee University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -1214,7 +1235,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture </p>
+                                                    <p class="font_20 bold">Special Scientific Session 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -1269,8 +1290,8 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Ania Jastreboff</p>
-                                                                        (Yale University, USA) -->
+                                                                        <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1299,7 +1320,7 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 5 : Current Perspectives on Health Inequity in Obesity</p>
-                                                    <!-- <p><span class="bold">Chairperson : Young Seol Kim</span> (Kyung Hee University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairpersons : Young Seol Kim</span> (Kyung Hee University, Korea), <br><span class="bold">Kyung-Hee Park</span> (Hallym University, Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1428,7 +1449,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>15:40-16:20</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kee-Hyoung Lee</span> (Korea University, Korea)</p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -1542,7 +1563,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jang Won Son</p>(The Catholic University of Korea, Korea)
+                                                                        <p class="bold">Richard Kibbey</p>(Yale University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1699,7 +1720,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Young Sang Lyu</p>(Chosun University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1740,7 +1761,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Min-Seon Kim</span> (University of Ulsan, Korea)</p> 
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -1935,7 +1956,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>11:10-11:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Jeong Taek Woo</span> (Kyung Hee University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -2084,7 +2105,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture </p>
+                                                    <p class="font_20 bold">Special Scientific Session 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -2139,8 +2160,8 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Ania Jastreboff</p>
-                                                                        (Yale University, USA) -->
+                                                                        <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2285,7 +2306,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>15:40-16:20</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kee-Hyoung Lee</span> (Korea University, Korea)</p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -2523,7 +2544,7 @@ echo '<script type="text/javascript">
                                                 <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 3</p>
-                                                    <p><span class="bold">Chairperson : Sang-Yeop Yi</span> (Catholic Kwandong University, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Sang Yeoup Lee</span> (Pusan National University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -2588,7 +2609,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Min-Seon Kim</span> (University of Ulsan, Korea)</p> 
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -2785,7 +2806,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>11:10-11:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Jeong Taek Woo</span> (Kyung Hee University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -2933,7 +2954,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture </p>
+                                                    <p class="font_20 bold">Special Scientific Session 1 </p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -2988,8 +3009,8 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Ania Jastreboff</p>
-                                                                        (Yale University, USA) -->
+                                                                        <p class="bold">Ania Jastreboff</p>
+                                                                        (Yale University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3118,7 +3139,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>15:40-16:20</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Kee-Hyoung Lee</span> (Korea University, Korea)</p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -3363,10 +3384,9 @@ echo '<script type="text/javascript">
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 4 : International Collaboration</p>
-                                                    <!-- <p><span class="bold">Chairpersons : Hyuk-Sang Kwon</span> (The
-                                                        Catholic University of Korea, Republic of Korea), <br><span
-                                                            class="bold">Jee-Hyun Kang</span> (Konyang University,
-                                                        Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairpersons : Kun-Ho Yoon</span> (The Catholic University of Korea, Korea)
+                                                    <!-- , <br><span class="bold">Jee-Hyun Kang</span> (Konyang University, Republic of Korea) -->
+                                                    </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -3417,7 +3437,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    Sex Differences in Adipose Tissue Metabolism as It Relates to Risk of Diabetes
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Michael D. Jensen</p>(Mayo College of Medicine, USA)
@@ -3601,10 +3621,8 @@ echo '<script type="text/javascript">
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 8 : Medical Condition Change After Bariatric Surgery</p>
-                                                    <!-- <p><span class="bold">Chairpersons : Sang Kwon Lee</span> (Daejeon
-                                                        Catholic University, Republic of Korea), <br><span
-                                                            class="bold">Seung-Wan Ryu</span> (Keimyung University,
-                                                        Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairpersons : In Ju Kim</span> (Pusan National University, Korea), <br><span
+                                                            class="bold">Sung Il Choi</span> (Kyung Hee University, Korea)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -3774,7 +3792,7 @@ echo '<script type="text/javascript">
                                             <tr class="light_sky_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Sponsored Session 1</p>
+                                                    <p class="font_20 bold">Sponsored Session 1 : SELECT the Outcome Beyond Weight Loss</p>
                                                     <p><span class="bold">Chairpersons : Jae-Heon Kang</span> (Sungkyunkwan University, Korea), 
                                                     <br><span class="bold">Sang Yong Kim</span> (Chosun University, Korea)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
@@ -3801,7 +3819,7 @@ echo '<script type="text/javascript">
                                                                       
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Filip K. Knop</p>(University of Copenhagen, Denmark)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3810,7 +3828,7 @@ echo '<script type="text/javascript">
                                                                      
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Sang Yeoup Lee</p>(Pusan National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3818,7 +3836,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Darae Kim</p>(Sungkyunkwan University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4139,7 +4157,7 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="white_yellow_bg">
-                                                <td>18:30-20:30</td>
+                                                <td>18:40-</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Congress Banquet <span
                                                             class="font_inherit red_txt">*</span>Invited Only</p>
@@ -4245,7 +4263,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -4610,7 +4628,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">KSSO Scientific Session</p>
+                                                    <p class="font_20 bold">Special Scientific Session 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -4665,8 +4683,8 @@ echo '<script type="text/javascript">
                                                                     <!-- Diversity in the Definition of Obesity -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Soo Lim</p>
-                                                                        (Seoul National University, Korea) -->
+                                                                        <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4694,7 +4712,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>13:50-14:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Korea)</p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -4752,7 +4770,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>14:30-15:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -4928,7 +4946,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>17:00-17:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang
                                                         University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -5071,7 +5089,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -5381,7 +5399,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sang Mo Hong</p>(Hanyang University Guri Hospital, Korea)
+                                                                        <!-- <p class="bold">Sang Mo Hong</p>(Hanyang University Guri Hospital, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -5404,7 +5422,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">KSSO Scientific Session</p>
+                                                    <p class="font_20 bold">Special Scientific Session 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -5459,8 +5477,8 @@ echo '<script type="text/javascript">
                                                                     <!-- Diversity in the Definition of Obesity -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Soo Lim</p>
-                                                                        (Seoul National University, Korea) -->
+                                                                        <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5488,7 +5506,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>13:50-14:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Korea)</p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -5546,7 +5564,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>14:30-15:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -5663,7 +5681,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                    Hypothalamic Function of IRX3 and IRX5: Genetic Determinants of Human Obesity
+                                                                    Hypothalamic Function of IRX3 and IRX5, Genetic Determinants of Human Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Joe Eun Son</p>(Kyungpook National University, Korea)
@@ -5736,7 +5754,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>17:00-17:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang
                                                         University, Republic of Korea)</p> -->
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
@@ -5840,7 +5858,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Seung-Hwan Lee</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -5881,7 +5899,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>08:30-09:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -6238,7 +6256,7 @@ echo '<script type="text/javascript">
                                                                      
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Yong-Ho Lee</p>(Yonsei University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6261,7 +6279,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">KSSO Scientific Session</p>
+                                                    <p class="font_20 bold">Special Scientific Session 2</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -6316,8 +6334,8 @@ echo '<script type="text/javascript">
                                                                     <!-- Diversity in the Definition of Obesity -->
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Soo Lim</p>
-                                                                        (Seoul National University, Korea) -->
+                                                                        <p class="bold">Soo Lim</p>
+                                                                        (Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6345,7 +6363,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>13:50-14:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Kwan Woo Lee</span> (Ajou University, Korea)</p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -6403,7 +6421,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>14:30-15:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -6489,7 +6507,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 19 : Expanding Horizons in Pediatric Obesity</p>
                                                     <p><span class="bold">Chairpersons : Sochung Chung</span> (Konkuk University, Korea)
-                                                    <!-- , <br><span class="bold">Yong Hee Hong</span> (Soonchunhyang University, Republic of Korea) -->
+                                                    , <br><span class="bold">Junga Lee</span> (Kyung Hee University, Korea)
                                                     </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -6549,8 +6567,8 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Junga Lee</p>(Kyung Hee University, Korea)<br />
-                                                                        <!-- <p class="bold">Eungu Kang</p>(Korea University, Republic of Korea) -->
+                                                                        <p class="bold">Jisun Park</p>(Inha University, Korea)<br />
+                                                                        <p class="bold">Kyoung Huh</p>(Kium Pediatric Hospital, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6591,7 +6609,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_pink_bg">
                                                 <td>17:00-17:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Keynote Lecture</p>
+                                                    <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang
                                                         University, Republic of Korea)</p> -->
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
@@ -6705,7 +6723,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Dror Dicker</p>(Tel Aviv University, Israel)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6713,7 +6731,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6975,7 +6993,7 @@ echo '<script type="text/javascript">
                                                     <p class="font_20 bold">Oral Presentation 4</p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Oh Yoen Kim</span> (Dong A University, Korea)
-                                                        <!-- , <br><span class="bold">Ji Won Yun</span> (Seoul National University, Republic of Korea) -->
+                                                      , <br><span class="bold">Bo-Yeon Kim</span> (Soonchunhyang University, Korea)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->

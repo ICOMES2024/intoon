@@ -10,6 +10,7 @@
 	}
 ?>
 <section class="container login_form form_layout login bg style_2023">
+	<div class="background_white"></div>
 	<!-- 백그라운드 이미지 slick -->
 	<!--container -->
 	<div>
@@ -17,21 +18,26 @@
 			<img src="https://image.webeon.net/icomes2024/main/2024_title_row.png">
 		</a>
 		<form>
-			<ul>
-				<li>
-					<input type="text" name="email" placeholder="<?=$locale("id")?>">
-				</li>
-				<li>
-					<input type="password" name="password" placeholder="<?=$locale("password")?>">
-				</li>
-			</ul>
-			<!-- <div class="text_r"> -->
-			<!-- 	<a href="./find_password.php"><?=$locale("find_password")?> ></a> -->
-			<!-- </div> -->
-			<button type="button" class="btn login_btn main_btn icomes_2024_login_btn"><?=$locale("login")?></button>
-			<div class="btn_wrap clearfix2">
-				<button type="button" class="btn gray_line_btn" onclick="window.location.href='./find_password.php';"><?=$locale("find_password")?></button>
-				<button type="button" class="btn gray_line_btn" onclick="window.location.href='./signup.php';"><?=$locale("signup")?></button>
+			<div class="flex_between login_box">
+				<ul>
+					<li class="flex_between">
+						<span>ID(email)</span>
+						<input type="text" name="email" placeholder="<?=$locale("id")?>">
+					</li>
+					<li class="flex_between">
+						<span class="pw_txt">Password</span>
+						<input type="password" name="password" placeholder="<?=$locale("password")?>">
+					</li>
+				</ul>
+				<!-- <div class="text_r"> -->
+				<!-- 	<a href="./find_password.php"><?=$locale("find_password")?> ></a> -->
+				<!-- </div> -->
+				<button type="button" class="btn login_btn main_btn icomes_2024_login_btn"><?=$locale("login")?></button>
+			</div>
+			<div class="btn_wrap clearfix2 login_btn_wrap">
+				<button type="button" class="btn gray_line_btn find_pw_btn" onclick="window.location.href='./find_password.php';">
+					<img src="https://image.webeon.net/icomes2024/logo/2024_find.svg"/><?=$locale("find_password")?></button>
+				<button type="button" class="btn gray_line_btn signup_btn" onclick="window.location.href='./signup.php';"><?=$locale("signup")?></button>
 			</div>
 		</form>
 	</div>

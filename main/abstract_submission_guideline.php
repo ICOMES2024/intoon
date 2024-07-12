@@ -26,7 +26,7 @@ $info = sql_fetch($sql_info);
     <div class="inner">
         <ul class="tab_green long abstract_submission">
             <li class="on"><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
-            <li><a class="" href="./abstract_submission.php">Online Submission</a></li>
+            <li><a class="online_submission_alert" href="./abstract_submission.php">Online Submission</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
 
@@ -49,7 +49,7 @@ $info = sql_fetch($sql_info);
                 </div>
                 <div class="text_center btn_box mt25">
                      <a href="https://image.webeon.net/icomes2024/download/ICOMES2024_Abstract_template.docx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Abstract Form Download</a> 
-                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn ">Go to Abstract Submission</a>
+                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn online_submission_alert">Go to Abstract Submission</a>
                 </div>
         
             </div>
@@ -220,7 +220,7 @@ $info = sql_fetch($sql_info);
                             <col>
                         </colgroup>
                         <tr>
-                            <th class="center_t">Presentation Type </th>
+                            <th class="center_t border_right">Presentation Type </th>
                             <td>
                                 <p class="purple_txt bold">•  Oral Presentation</p>
                                 <p class="purple_txt bold">•  Guided Poster Presentation</p>
@@ -230,29 +230,29 @@ $info = sql_fetch($sql_info);
                             </td>
                         </tr>
                         <tr>
-                            <th class="center_t">Language</th>
+                            <th class="center_t border_right">Language</th>
                             <td>English</td>
                         </tr>
                         <tr>
-                            <th class="center_t">Length of Title</th>
+                            <th class="center_t border_right">Length of Title</th>
                             <td>No longer than 30 words</td>
                         </tr>
                         <tr>
-                            <th class="center_t">Method of Submission</th>
+                            <th class="center_t border_right">Method of Submission</th>
                             <td>Online submission via the website.</td>
                         </tr>
                         <tr>
-                            <th class="center_t">Format</th>
+                            <th class="center_t border_right">Format</th>
                             <td>
                                 <p>Download and use the official abstract form.<br />Contain 4 sections: background, methods & materials, results, and conclusions.<br />(Keywords are optional.)</p>
                             </td>
                         </tr>
                         <tr>
-                            <th class="center_t">Length of body</th>
+                            <th class="center_t border_right">Length of body</th>
                             <td>No longer than 300 words</td>
                         </tr>
                         <tr>
-                            <th class="center_t">Figure / Table</th>
+                            <th class="center_t border_right">Figure / Table</th>
                             <td>
                                 <p>- 1 figure in 1 abstract: <span class="dark_yellow_txt bold">Allowed</span></p>
                                 <p>- 1 table in 1 abstract: <span class="dark_yellow_txt bold">Allowed</span></p>
@@ -262,11 +262,11 @@ $info = sql_fetch($sql_info);
                             </td>
                         </tr>
                         <tr>
-                            <th class="center_t">Modification</th>
+                            <th class="center_t border_right">Modification</th>
                             <td>Abstract review or modification will be available until the abstract submission deadline.<br/>If submitted abstracts are under evaluation for acceptance, modification is prohibited.<br/>If you need to make any changes, please email the secretariat. </td>
                         </tr>
                         <tr>
-                            <th class="center_t">Withdrawal</th>
+                            <th class="center_t border_right">Withdrawal</th>
                             <td>Request to the secretariat via email (<a href="mailto:icomes_abstracts@into-on.com" class="link">icomes_abstracts@into-on.com</a>)</td>
                         </tr>
                     </table>

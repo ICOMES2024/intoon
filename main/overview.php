@@ -68,14 +68,14 @@ $floor = get_data($sql_floor);
                  <col width="*">
              </colgroup>
              <tr>
-                 <th class="center_t">Title</th>
+                 <th class="center_t border_right">Title</th>
                  <td>
                      <!--<?= htmlspecialchars_decode($info['title']) ?>-->
                      <b>ICOMES 2024</b>(2024 International Congress on Obesity and MEtabolic Syndrome)
                  </td>
              </tr>
              <tr>
-                 <th class="center_t">Date</th>
+                 <th class="center_t border_right">Date</th>
                  <td>
                      <!-- <?= date_format(date_create($info['period_event_start']), "M, j(D)") ?> ~
                      <?= date_format(date_create($info['period_event_end']), "M, j(D)  Y") ?> -->
@@ -83,34 +83,34 @@ $floor = get_data($sql_floor);
                  </td>
              </tr>
              <tr>
-                 <th class="center_t">Venue</th>
+                 <th class="center_t border_right">Venue</th>
                  <td>
                      <!--<?= htmlspecialchars_decode($info['venue_name']) ?>-->
                      Conrad Seoul Hotel, Republic of Korea
                  </td>
              </tr>
              <tr>
-                 <th class="center_t">Organized By</th>
+                 <th class="center_t border_right">Organized By</th>
                  <td>
 				 Korean Society for the Study of Obesity (KSSO)
                  </td>
              </tr>
 			 <!-- [240117] sujeong 테마 미정으로 주석 -->
              <tr>
-                 <th class="center_t">Theme</th>
+                 <th class="center_t border_right">Theme</th>
                  <td>
 				 	Integrating Cutting-Edge Insights in Obesity Management
                  </td>
              </tr>
              <tr>
-                 <th class="center_t">Official Language</th>
+                 <th class="center_t border_right">Official Language</th>
                  <td>
                      <?= htmlspecialchars_decode($info['overview_official_language']) ?>
                      <!--English	-->
                  </td>
              </tr>
              <tr>
-                 <th class="center_t">Secretariat</th>
+                 <th class="center_t border_right">Secretariat</th>
                  <td>
                      <!--<?= htmlspecialchars_decode($info['overview_secretariat']) ?>-->
                      A-Block Richensia 4F, 341 Baekbeom-ro, Yongsan-gu, Seoul 04315, Korea

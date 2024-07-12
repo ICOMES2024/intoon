@@ -76,7 +76,7 @@
 									<div class="colons_div">15:00-16:30</div>
 								</td>
 								<td class="skyblue_bg pointer" name="committee_session_1" data-id="3">
-									Committee Session 
+									Committee Session 1
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_1" data-id="2">
@@ -92,23 +92,14 @@
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>
 							</tr>
-							<!-- <tr>
-								<td class="break_time">
-									<div class="colons_div">16:30-16:40</div>
-								</td>
-								<td colspan="3" class="light_gray_bg break_time">Break</td>
-                                <td class="break_time light_gray_bg"></td>
-                                <td class="break_time light_gray_bg"></td>
-                                <td class="break_time light_gray_bg"></td>
-                                <td class="break_time light_gray_bg"></td>
-							</tr> -->
+					
 							<tr>
 								<td>
 									<div class="colons_div">16:30-18:00</div>
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="skyblue_bg pointer" name="committee_session_2" data-id="67">
-									Committee Session 
+									Committee Session 2
 									<input type="hidden" name="e" value="room3">
 								</td>
                                 <td class="violet_bg pointer" name="joint_symposium_2" data-id="5">
@@ -129,9 +120,19 @@
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>
 							</tr>
+							<tr>
+								<td class="break_time">
+									<div class="colons_div">18:00-18:10</div>
+								</td>
+								<td colspan="3" class="light_gray_bg break_time">Break</td>
+                                <td class="break_time light_gray_bg"></td>
+                                <td class="break_time light_gray_bg"></td>
+                                <td class="break_time light_gray_bg"></td>
+                                <td class="break_time light_gray_bg"></td>
+							</tr> 
                             <tr>
 								<td rowspan="2">
-									<div class="colons_div">18:00-19:00</div>
+									<div class="colons_div">18:10-19:10</div>
 								</td>
 								<td class="dark_sky_bg pointer" name="satellite_symposium_1" data-id="7">
 									Satellite<br />Symposium 1
@@ -167,12 +168,12 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">19:00-21:00</div>
+									<div class="colons_div">19:10-21:00</div>
 								</td>
 								<td></td>
 								<td></td>
 								<td class="white_yellow_bg pointer" name="welcome_cocktail_party" data-id="10" style="letter-spacing: -0.8px;"> 
-								Textbook Publication Inauguration Ceremony & Welcome Reception
+								Textbook Launch Ceremony & Welcome Reception
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -222,8 +223,8 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_1" data-id="14">
-									Keynote Lecture 
+								<td colspan="3" class="keynote_bg pointer" name="keynote_lecture_1" data-id="14">
+									Keynote Lecture 1
 									<p class="">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
 									<p>Joel K. Elmquist</p>
 									<p>UT Southwestern Medical Center, USA</p>
@@ -262,7 +263,7 @@
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_1" data-id="19">
 									Sponsored Session 1 
-									<!-- <p>Journey to the Combination Phentermine plus Topiramate ER from Clinical Trials to Practice</p> -->
+									<p>SELECT the Outcome Beyond Weight Loss</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
@@ -291,8 +292,8 @@
 								<td>
 									<div class="colons_div">11:10-11:50</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_2" data-id="21">
-									Keynote Lecture
+								<td colspan="3" class="plenary_bg pointer" name="keynote_lecture_2" data-id="21">
+									Plenary Lecture 1
 									<p class="">GLP-1 Based Therapy of Obesity</p>
 									<p>Michael A. Nauck</p>
 									<p>Ruhr-University Bochum, Germany</p>
@@ -337,11 +338,11 @@
 								<td>
 									<div class="colons_div">13:00-14:00</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
-									Keynote Lecture
-									<!-- <p class="bold">Management of Obesity from Cardiometabolic Perspective</p>
+								<td class="special_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
+									Special Scientific Session 1
+									<p class="">Management of Obesity from Cardiometabolic Perspective</p>
 									<p>Ania Jastreboff</p>
-									<p>Yale University, USA</p> -->
+									<p>Yale University, USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26">
@@ -396,8 +397,8 @@
 								<td>
 									<div class="colons_div">15:40-16:20</div>
 								</td>
-								<td colspan="3" class="dark_pink_bg pointer" name="keynote_lecture_3" data-id="34">
-									Keynote Lecture
+								<td colspan="3" class="plenary_bg pointer" name="keynote_lecture_3" data-id="34">
+									Plenary Lecture 2
 									<p class="">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
 									<p>Silva Arslanian</p>
 									<p>University of Pittsburgh, USA</p>
@@ -453,6 +454,7 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="3">
 									EASO Presidential Lecture
+									<p class="">Management of Obesity in Older Adults</p>
 									<p>Volkan Yumuk</p>
 									<p>Istanbul University-Cerrahpaşa, Turkey</p>
 									<input type="hidden" name="e" value="room1">
@@ -519,8 +521,8 @@
 								<td>
 									<div class="colons_div">08:30-09:10</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_4" colspan="3" data-id="44">
-									Keynote Lecture
+								<td class="keynote_bg pointer" name="keynote_lecture_4" colspan="3" data-id="44">
+									Keynote Lecture 2
 									<p class="">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
 									<p>Jean-Pierre Després</p>
 									<p>VITAM - Research Centre on Sustainable Health, Canada</p>
@@ -617,11 +619,11 @@
 								<td>
 									<div class="colons_div">12:50-13:50</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
-								KSSO Scientific Session
-									<!-- <p class="bold">Diversity in the Definition of Obesity</p>
+								<td class="special_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
+									Special Scientific Session 2
+									<!-- <p class="bold">Diversity in the Definition of Obesity</p> -->
 									<p>Soo Lim</p>
-									<p>Seoul National University, Korea</p> -->
+									<p>Seoul National University, Korea</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_3" data-id="54">
@@ -635,7 +637,7 @@
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56">
 									Guided Poster Presentation 2
 									<input type="hidden" name="e" value="room7">
-									<div class="guide_gray_box"></div>
+									<div class="guide_gray_box second_gray"></div>
 									</td>
 								<td></td>
 							</tr>
@@ -643,8 +645,8 @@
 								<td>
 									<div class="colons_div">13:50-14:30</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_5" colspan="3" data-id="57">
-									Keynote Lecture
+								<td class="plenary_bg pointer" name="keynote_lecture_5" colspan="3" data-id="57">
+									Plenary Lecture 3
 									<p class="">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
 									<p>William Evans</p>
 									<p>University of California, Berkeley, USA</p>
@@ -659,11 +661,11 @@
 								<td>
 									<div class="colons_div">14:30-15:10</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_6" colspan="3" data-id="58">
-									Keynote Lecture
+								<td class="keynote_bg pointer" name="keynote_lecture_6" colspan="3" data-id="58">
+									Keynote Lecture 3
 									<p class="">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
 									<p>Michael D. Jensen</p>
-									<p>Mayo College of Medicine,USA</p>
+									<p>Mayo College of Medicine, USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -718,8 +720,8 @@
 								<td>
 									<div class="colons_div">17:00-17:40</div>
 								</td>
-								<td class="dark_pink_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
-									Keynote Lecture
+								<td class="plenary_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
+									Plenary Lecture 4
 									<p class="">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
 									<p>W. Timothy Garvey</p>
 									<p>University of Alabama at Birmingham, USA</p>

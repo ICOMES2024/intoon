@@ -93,23 +93,23 @@
 						</thead>
 						<tbody>
 							<tr>
-								<th class="text_center kor">Amount</th>
+								<th class="text_center kor border_right">Amount</th>
 								<td class="text_center kor bold">Based on KRPIA/ KPBMA<br/>Fair Regulations </td>
 								<td class="text_center kor bold">KRW 300,000 (Including tax)
                                 </td>
 							</tr>
 							<tr>
-								<th class="text_center kor">Qualification for<br/>application</th>
+								<th class="text_center kor border_right">Qualification for<br/>application</th>
 								<td class="text_center kor"><span class="bold font_18">Prerequisites</span><br>1. KSSO Full or Lifetime Membership<br>2. Medical Doctor</td>
 								<td class="text_center kor bold">Researcher, Nutritionist,<br/>Exercise Specialist etc. </td>
 							</tr>
 							<tr>
-								<th class="text_center kor">Support range</th>
+								<th class="text_center kor border_right">Support range</th>
 								<td class="text_center kor bold">Costs of Accommodation,<br/>Round-Trip Transportation and Registration fee</td>
 								<td class="text_center"></td>
 							</tr>
 							<tr>
-								<th class="text_center kor">Application<br/>instructions</th>
+								<th class="text_center kor border_right">Application<br/>instructions</th>
 								<td class="text_center kor bold">KSSO will contact recipient personally.</td>
 								<td class="text_center kor bold">Apply via the Online Application Form</td>
 							</tr>
