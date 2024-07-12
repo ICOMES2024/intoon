@@ -23,7 +23,7 @@
                     <div class="btn_wrap">
                          <button class="btn green_btn"
                         onClick="javascript:window.open('https://www.hilton.com/en/hotels/selcici-conrad-seoul/')">Go to Website</button>
-                        <a href="https://image.webeon.net/icomes2024/download/Reservation_Form_ICOMES_2024.doc" class="btn green_btn" style="text-decoration: none;" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
+                        <a href="https://image.webeon.net/icomes2024/venue/Reservation_Form_2024_ICOMES_V2.doc" class="btn green_btn" style="text-decoration: none;" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
                     <!-- <a href="./download/ICOMES_2023_Conrad_Seoul_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
                      -->
                     </div>

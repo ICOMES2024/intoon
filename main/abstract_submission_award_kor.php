@@ -544,9 +544,9 @@ $(document).ready(function() {
         $(".domestic_pop").show();
     });
 
-	$(".download_wrap .btn").click(function(){
-		alert("[ Note!! Application period: Sep 8th ~ Sep 14th ]")
-	});
+	// $(".download_wrap .btn").click(function(){
+	// 	alert("[ Note!! Application period: Sep 8th ~ Sep 14th ]")
+	// });
 });
 </script>
 <?php include_once('./include/footer.php');?>
