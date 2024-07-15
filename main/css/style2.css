@@ -135,7 +135,7 @@ section.container.login.bg {border: 0px;}
 .dates_area li:nth-of-type(3) {background-color: #01408F;}
 .dates_area li:nth-of-type(4) {background-color: #0181C8;} */
 .dates_area li:last-child a {text-align:right;}
-.dates_area li:last-child a img{height: 100%;}
+.dates_area li:last-child a img{/*height: 100%;*/ max-width: 130px; width: 100%;display: block;margin: 4px auto 0px;}
 .dates_area li:last-child a h2 {text-align:left; line-height:1.2;}
 .dates_area li a {width: 100%; height: 100%; /*padding: 21px 5px 25px;*/ display: flex; justify-content: space-between; /*align-items: center;*/ flex-direction: column;}
 .dates_area li h2 {font-size: 34px; font-weight: 900; color: #b2b2b2; }

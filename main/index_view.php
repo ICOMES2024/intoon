@@ -76,7 +76,7 @@
 			<img src="https://image.webeon.net/icomes2024/main/2024_main_img.png" class="pc_only main_img" alt=""> -->
 			<img src="https://image.webeon.net/icomes2024/main/2024_title.png" class="pc_only main_img"/>
 			<div class="mb_only img_vsl_text" style="">
-			<img src="https://image.webeon.net/icomes2024/main/2024_title.png" class="mb_only"/>
+				<img src="https://image.webeon.net/icomes2024/main/2024_icomes_mo_title.png" class="mb_only main_img"/>
 			</div>
 			<!-- 상단 타이틀 -->
 			<div class="txt_wrap">
@@ -123,35 +123,47 @@
 		<div class="key_speaker_wrap">
 			<!-- <div class="main_speaker_wrap"> -->
 				<li class="pointer" name="presidential_lecture" data-id="day_3">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_8-3.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_8-4.png"/>
+					<input type="hidden" name="e" value="room1">
+				</li>
+				<li class="pointer" name="easo_presidential_lecture" data-id="day_2">
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_9.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_2" data-id="day_2">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_1-6.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_1-7.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_3" data-id="day_2">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_2-6.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_2-7.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_5" data-id="day_3">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_3-6.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_3-7.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_7" data-id="day_3">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_4-6.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_4-7.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_1" data-id="day_2">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-6.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-7.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_6" data-id="day_3">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_6-6.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_6-7.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_4" data-id="day_3">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_7-6.png"/>
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_7-7.png"/>
+					<input type="hidden" name="e" value="room1">
+				</li>
+				<li class="pointer" name="keynote_lecture_8" data-id="day_2">
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_10.png"/>
+					<input type="hidden" name="e" value="room1">
+				</li>
+				<li class="pointer" name="ksso_scientific_session" data-id="day_3">
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_11.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 			<!-- <div class="main_btn_wrap">
