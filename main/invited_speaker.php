@@ -57,7 +57,49 @@
                                     </div>
                                 <div class="gray_box"></div>
                             </li>
-						
+                            <li>
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_05-3.png">
+                                            <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_05-1.jpg"> -->
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <div>
+                                                <p class="">Plenary Lecture 1</p> 
+                                                <p class="">11:10-11:50, Sep. 6 (Fri)</p> 
+                                                <p class="">GLP-1 Based Therapy of obesity</p> 
+                                            </div>
+                                            <div>
+                                                <h4 class="title">Michael A. Nauck</h4>
+                                                <h5>Ruhr-University Bochum</h5>
+                                                <h6>(Germany)</h6>
+                                            </div>
+                                        </div>
+                                        </div>
+                                <div class="gray_box"></div>
+                            </li>
+                            <li>
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_03-3.png">
+                                            <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_03-1.jpg"> -->
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <div>
+                                                <p class="">Plenary Lecture 2</p> 
+                                                <p class="">15:40-16:20, Sep. 6 (Fri)</p> 
+                                                <p class="">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p> 
+                                            </div>
+                                            <div>
+                                                <h4 class="title">Silva Arslanian</h4>
+                                                <h5>University of Pittsburgh</h5>
+                                                <h6>(USA)</h6>
+                                            </div>
+                                        </div>
+                                     </div>
+                                <div class="gray_box"></div>
+                            </li>
+                              
                             <li>
                                 
                                     <div class="flex">
@@ -67,7 +109,7 @@
                                         </div>
                                         <div class="desc_wrap flex1">
                                             <div>
-                                                <p class="">Plenary Lecture 1</p> 
+                                                <p class="">Plenary Lecture 3</p> 
                                                 <p class="">13:50-14:30, Sep. 7 (Sat)</p> 
                                                 <p class="">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p> 
                                             </div>
@@ -88,7 +130,7 @@
                                         </div>
                                         <div class="desc_wrap flex1">
                                             <div>
-                                                <p class="">Plenary Lecture 2</p> 
+                                                <p class="">Plenary Lecture 4</p> 
                                                 <p class="">17:00-17:40, Sep. 7 (Sat)</p> 
                                                 <p class="">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p> 
                                             </div>
@@ -101,69 +143,28 @@
                                         </div>
                                 <div class="gray_box"></div>
                             </li>
-							<li>
-                                    <div class="flex">
-                                        <div class="profile_wrap">
-                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_03-3.png">
-                                            <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_03-1.jpg"> -->
-                                        </div>
-                                        <div class="desc_wrap flex1">
-                                            <div>
-                                                <p class="">Plenary Lecture 3</p> 
-                                                <p class="">15:40-16:20, Sep. 6 (Fri)</p> 
-                                                <p class="">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p> 
-                                            </div>
-                                            <div>
-                                                <h4 class="title">Silva Arslanian</h4>
-                                                <h5>University of Pittsburgh</h5>
-                                                <h6>(USA)</h6>
-                                            </div>
-                                        </div>
-                                     </div>
-                                <div class="gray_box"></div>
-                            </li>
                             <li>
-                                    <div class="flex">
-                                        <div class="profile_wrap">
-                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_05-3.png">
-                                            <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_05-1.jpg"> -->
+                                <div class="flex">
+                                    <div class="profile_wrap">
+                                        <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-3.png">
+                                        <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-1.jpg"> -->
+                                    </div>
+                                    <div class="desc_wrap flex1">
+                                        <div>
+                                            <p class="">Keynote Lecture 1</p> 
+                                            <p class="">08:30-09:10, Sep. 6 (Fri)</p> 
+                                            <p class="">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p> 
                                         </div>
-                                        <div class="desc_wrap flex1">
-                                            <div>
-                                                <p class="">Plenary Lecture 4</p> 
-                                                <p class="">11:10-11:50, Sep. 6 (Fri)</p> 
-                                                <p class="">GLP-1 Based Therapy of obesity</p> 
-                                            </div>
-                                            <div>
-                                                <h4 class="title">Michael A. Nauck</h4>
-                                                <h5>Ruhr-University Bochum</h5>
-                                                <h6>(Germany)</h6>
-                                            </div>
+                                        <div>
+                                            <h4 class="title">Joel K. Elmquist</h4>
+                                            <h5>UT Southwestern Medical Center</h5>
+                                            <h6>(USA)</h6>
                                         </div>
-                                        </div>
+                                    </div>
+                                </div>
                                 <div class="gray_box"></div>
                             </li>
-                            <li>
-                                    <div class="flex">
-                                        <div class="profile_wrap">
-                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_06-3.png">
-                                            <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_06-1.jpg"> -->
-                                        </div>
-                                        <div class="desc_wrap flex1">
-                                            <div>
-                                                <p class="">Keynote Lecture 1</p> 
-                                                <p class="">14:30-15:10,Sep. 7 (Sat)</p> 
-                                                <p class="">Human Adipose Tissue Metabolism: What Happens with Obesity</p> 
-                                            </div>
-                                            <div>
-                                                <h4 class="title">Michael D. Jensen</h4>
-                                                <h5>Mayo College of Medicine</h5>
-                                                <h6>(USA)</h6>
-                                            </div>
-                                        </div>
-                                        </div>
-                                <div class="gray_box"></div>
-                            </li>
+						
 							<li>
                                     <div class="flex">
                                         <div class="profile_wrap">
@@ -185,25 +186,27 @@
                                         </div>
                                 <div class="gray_box"></div>
                             </li>
+                           
+                          
                             <li>
-                                <div class="flex">
-                                    <div class="profile_wrap">
-                                        <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-3.png">
-                                        <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-1.jpg"> -->
-                                    </div>
-                                    <div class="desc_wrap flex1">
-                                        <div>
-                                            <p class="">Keynote Lecture 3</p> 
-                                            <p class="">08:30-09:10, Sep. 6 (Fri)</p> 
-                                            <p class="">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p> 
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_06-3.png">
+                                            <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_06-1.jpg"> -->
                                         </div>
-                                        <div>
-                                            <h4 class="title">Joel K. Elmquist</h4>
-                                            <h5>UT Southwestern Medical Center</h5>
-                                            <h6>(USA)</h6>
+                                        <div class="desc_wrap flex1">
+                                            <div>
+                                                <p class="">Keynote Lecture 3</p> 
+                                                <p class="">14:30-15:10,Sep. 7 (Sat)</p> 
+                                                <p class="">Human Adipose Tissue Metabolism: What Happens with Obesity</p> 
+                                            </div>
+                                            <div>
+                                                <h4 class="title">Michael D. Jensen</h4>
+                                                <h5>Mayo College of Medicine</h5>
+                                                <h6>(USA)</h6>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                        </div>
                                 <div class="gray_box"></div>
                             </li>
                         </ul>
