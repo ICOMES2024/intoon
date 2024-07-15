@@ -46,45 +46,60 @@
 			<!-- <img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt=""> -->
 			<!-- [240523] sujeong / 학회팀 요청 순서 수정 -->
 			<li>
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-01.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-01.png" class="text" alt="">
 			</li>		
 			<li class="pointer" name="presidential_lecture_1">
-				<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-09-1.png" class="text" alt="">
+				<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-02.png" class="text" alt="">
 				<input type="hidden" name="e" value="room1~3">
 				<input type="hidden" name="day" value="day_3">
 			</li>
-			<li class="pointer"  name="keynote_lecture_1">
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-04.png" class="text" alt="">
+			<li class="pointer"  name="easo_presidential">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-03.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_2">
 			</li>
 			<li class="pointer"  name="keynote_lecture_2">
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-02.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-04.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_2">
 			</li>
 			<li class="pointer"  name="keynote_lecture_3">
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-03.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-05.png" class="text" alt="">
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_2">
+			</li>
+			<li class="pointer"  name="keynote_lecture_5" >
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-06.png" class="text" alt="">
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_3">
+			</li>
+			<li class="pointer"  name="keynote_lecture_7">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-07.png" class="text" alt="">
+					<input type="hidden" name="e" value="room1~3">
+					<input type="hidden" name="day" value="day_3">
+			</li>
+			<li class="pointer" name="keynote_lecture_1"  >
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-08.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_2">
 			</li>
 			<li class="pointer"  name="keynote_lecture_4" >
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-07.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-09.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_3">
 			</li>
-			<li class="pointer"  name="keynote_lecture_5">
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-05.png" class="text" alt="">
+			<li class="pointer"  name="keynote_lecture_6">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-10.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_3">
 			</li>
-			<li class="pointer" name="keynote_lecture_6"  >
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-08.png" class="text" alt="">
+			<li class="pointer" name="keynote_lecture_8"  >
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-11.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
-					<input type="hidden" name="day" value="day_3">
+					<input type="hidden" name="day" value="day_2">
 			</li>
-			<li class="pointer"  name="keynote_lecture_7" >
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures_240626-06.png" class="text" alt="">
+			<li class="pointer"  name="ksso_scientific_session" >
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-12.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_3">
 			</li>

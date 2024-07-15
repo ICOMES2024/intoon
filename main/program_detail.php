@@ -271,6 +271,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>18:10-18:40</td>
                                                                     <td class="bold">
+                                                                    Insulin Therapy Optimization: Unlocking the Potential for Better Diabetes Treatment
                                                                      </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Eun Young Lee</p>(The Catholic University of Korea, Korea)
@@ -3679,7 +3680,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:25-14:50</td>
                                                                     <td class="bold">
-                                                                     
+                                                                    Gastrointestinal Motility and Function Change After Bariatric Surgery
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jong-Han Kim</p>(Korea University, Korea)
@@ -4030,7 +4031,7 @@ echo '<script type="text/javascript">
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Joint Symposium KSSO-EASO</p>
-                                                    <!-- <p><span class="bold">Chairpersons : Chong Hwa Kim</span> (Sejong General Hospital, Bucheon, Republic of Korea), <br><span class="bold">Hyuktae Kwon</span> (Seoul National University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairpersons : Volkan Yumuk</span> (Istanbul University-Cerrahpaşa, Turkey), <br><span class="bold">Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -4046,9 +4047,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55</td>
                                                                     <td class="bold">
+                                                                    ACTION Teens: Barriers for Adolescents Living with Obesity to Weight Management in the UK
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jason Halford</p> (European Association for the Study of Obesity)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4056,7 +4058,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Chang Hee Jung</p> (University of Ulsan, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4064,7 +4066,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Barbara McGowan</p> (Guy's and St Thomas' NHS Foundation Trust, UK)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5201,7 +5203,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 14 : Understanding Aging Skeletal Muscle and Dynamics </p>
                                                     <p><span class="bold">Chairpersons : Kijin Kim</span> (Keimyung University, Korea), 
-                                                    <br><span class="bold">Il-Young Kim</span> (Gachon University, Korea)
+                                                    <br><span class="bold">Jae Myoung Suh</span> (KAIST, Korea)
                                                     </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -5263,8 +5265,8 @@ echo '<script type="text/javascript">
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jae Myoung Suh</p>(KAIST, Korea), <br>
                                                                         <p class="bold">Justin Y. Jeon</p>(Yonsei University, Korea)
+                                                                        <!-- , <br><p class="bold">Justin Y. Jeon</p>(Yonsei University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
