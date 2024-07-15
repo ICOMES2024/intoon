@@ -592,11 +592,11 @@ section.container.organizing {padding-bottom: 190px;}
 .skyblue_bg{background-color: #CFCDDC !important;}
 .light_yellow_bg{background-color: yellow !important;}
 .light_gray_bg_2{background-color: #eeece1 !important;}
-.dark_sky_bg{background-color:  #A4BCDB !important;;}
+.dark_sky_bg{background-color:  #A5C3DF !important;;}
 .white_yellow_bg{background-color: #ffffe7 !important;}
 .light_sky_bg{background-color: #A4BCDB !important;}
 .dark_pink_bg{background-color: #E6B8B7 !important;}
-.dark_green_bg{background-color: #98CFD1 !important;}
+.dark_green_bg{background-color: #B9DBC9 !important;}
 .dark_orange_bg{background-color: #F5DBEB !important;}
 .dark_gray_bg{background-color: #7f7f7f !important;}
 .dark_gray_bg > div{ color: white; font-weight: 700;}
@@ -607,9 +607,9 @@ section.container.organizing {padding-bottom: 190px;}
 .darkblue_bg_th{background-color:  #004AA7 !important; color: #FFF !important;opacity: 0.5; border-right:0.4pt solid #FFFFFF !important;}
 
 .break_time{padding: 4px !important;}
-.plenary_bg{background-color: #FDDFB3 !important;}
+.plenary_bg{background-color: #FDE298 !important;}
 .keynote_bg{background-color: #FAC683 !important;}
-.special_bg{background-color: #D6E1AA !important;}
+.special_bg{background-color: #BFE5E7 !important;}
 
 /*230705 HUBDNC AJY 추가*/
 .dots_div {font:inherit; display:flex; align-items:flex-end; justify-content:center;}
@@ -651,7 +651,7 @@ h3.title:before {content:'';display: inline-block;  width: 20px;height: 13px; ba
 h3.title.icon_none {padding-left:0;}
 h3.title.icon_none:before {display:none;}
 section.container.login .page_title {    color: #5C0378; text-align:center; margin-bottom:52px; position: relative; line-height:1; background: transparent;}
-.invited_speaker .speaker_list > li {height: 440px;padding: 0px; /*box-shadow:0px 3px 6px rgba(0,0,0,0.16);*/}
+.invited_speaker .speaker_list > li {height: 390px;padding: 0px; /*box-shadow:0px 3px 6px rgba(0,0,0,0.16);*/}
 .invited_speaker .speaker_list .top_wrap {padding: 22px; background:linear-gradient(-45deg, #F8F8F8 40%, #efefef 40%);margin-bottom: 0; display:flex; align-items:center; justify-content:space-between;}
 .invited_speaker .speaker_list .bottom_wrap {background: #fff;}
 .invited_speaker .speaker_list h5 {/*margin: 10px 0 0 0; font-size: 16px;*/}
@@ -660,20 +660,22 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 .invited_speaker .speaker_list > li h2 > p {font-size:16px; }
 .invited_speaker .speaker_list .desc_wrap div {margin-top: 60px;font-size:16px; display:flex; flex-direction:column; justify-content:space-between; }
 /* .invited_speaker .speaker_list li:nth-child(3) .desc_wrap div {margin-top: 45px;} */
-.invited_speaker .speaker_list li:nth-child(1) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_1.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
+.invited_speaker .speaker_list li:nth-child(1) .desc_wrap div > p:nth-child(1):before, .invited_speaker .speaker_list li:nth-child(2) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_1.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
 
-.invited_speaker .speaker_list li:nth-child(2) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(5) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(6) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(7) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_2.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
+.invited_speaker .speaker_list li:nth-child(7) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(8) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(9) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_2.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
 
 
-.invited_speaker .speaker_list li:nth-child(3) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(4) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(8) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_3.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
+.invited_speaker .speaker_list li:nth-child(3) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(4) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(5) .desc_wrap div > p:nth-child(1):before,.invited_speaker .speaker_list li:nth-child(6) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_3.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
 
-.invited_speaker .speaker_list .desc_wrap div > p:nth-child(1){font-size: 23px; font-weight: bold; position: relative; left: -20px;}
-.invited_speaker .speaker_list .desc_wrap div > p:nth-child(2){margin-top: 8px; font-size: 17px;}
-.invited_speaker .speaker_list .desc_wrap div > p:nth-child(3){margin-top: 20px; font-size: 17px;}
+.invited_speaker .speaker_list.special li:nth-child(1) .desc_wrap div > p:nth-child(1):before, .invited_speaker .speaker_list.special li:nth-child(2) .desc_wrap div > p:nth-child(1):before {content:''; display: inline-block; width: 19px; height:12px; background-image:url('https://image.webeon.net/icomes2024/program/2024_invited_title_4.png'); background-position: center; background-size: cover; background-repeat: no-repeat; margin-top: 8px; flex-shrink:0;    position: relative; left: -10px;}
 
-.invited_speaker .speaker_list .desc_wrap div h4{font-size: 24px; font-weight: bold; line-height: 1.4;}
-.invited_speaker .speaker_list .desc_wrap div h5{font-size: 16px; font-weight: bold;line-height: 1.4;}
-.invited_speaker .speaker_list .desc_wrap div h6{font-size: 16px;line-height: 1.6;}
+.invited_speaker .speaker_list .desc_wrap div > p:nth-child(1){font-size: 20px; font-weight: bold; position: relative; left: -20px;}
+.invited_speaker .speaker_list .desc_wrap div > p:nth-child(2){margin-top: 8px; font-size: 15px;}
+.invited_speaker .speaker_list .desc_wrap div > p:nth-child(3){margin-top: 20px; font-size: 15px;}
+
+.invited_speaker .speaker_list .desc_wrap div h4{font-size: 20px; font-weight: bold; line-height: 1.4;}
+.invited_speaker .speaker_list .desc_wrap div h5{font-size: 14px; font-weight: bold;line-height: 1.4;}
+.invited_speaker .speaker_list .desc_wrap div h6{font-size: 14px;line-height: 1.6;}
 
 .invited_speaker .speaker_list .desc_wrap > p {display:flex;}
 .invited_speaker .speaker_list > li .flex {margin-top: 0; padding:15px;}
@@ -854,9 +856,13 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 }
 
 @media screen and (max-width:1170px) {
-	.invited_speaker .speaker_list > li{height: 520px;}
-	.speaker_list > li .flex{height: 520px;}
+	.speaker_list{gap:0;}
+	.speaker_list:nth-child(2) {margin-top: 0;}
+	.invited_speaker .speaker_list > li{height: auto;}
+	.speaker_list > li .flex{height: auto;}
 	.speaker_list .profile_wrap img{height: auto; width: 80%;}
+	.speaker_list .profile_wrap{height: auto;}
+
 	/*invited_speaker*/
 	.speaker_list li {width:100% !important;}
 	.speaker_list > li:nth-child(even), .speaker_list > li:nth-child(n+3) {margin-left:0 !important; margin-top:0;}
@@ -1033,13 +1039,25 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 	.invited_speaker .speaker_list > li{height: auto;}
 	.speaker_list > li .flex{height: auto;}
 	.speaker_list .profile_wrap img{height: auto; width: 80%;}
+
+	.invited_speaker .speaker_list .desc_wrap div:nth-child(2){
+		margin-top: 40px;
+	}
 }
 
 @media screen and (max-width: 530px) {
+
+	.speaker_list .profile_wrap img {width: 100%;}
+	.invited_speaker .speaker_list .profile_wrap{width: 70%;margin: 0 auto;}
+	.speaker_list > li .flex{display: block;}
+	.invited_speaker .speaker_list .desc_wrap div{width: 70%; margin: 60px auto 0;}
+	.invited_speaker .speaker_list .desc_wrap div:nth-child(2){margin-top: 20px;}
+	.speaker_list h5{margin-bottom: 0;}
+
 	section.container .page_title {padding: 42px 0 48px !important;}
 	.speaker_list .profile_wrap{height: auto;}
-	.invited_speaker .speaker_list .desc_wrap div > p:nth-child(1),.invited_speaker .speaker_list .desc_wrap div h4{font-size: 18px;}
-	.invited_speaker .speaker_list .desc_wrap div > p:nth-child(2), .invited_speaker .speaker_list .desc_wrap div > p:nth-child(3),.invited_speaker .speaker_list .desc_wrap div h5,.invited_speaker .speaker_list .desc_wrap div h6 {font-size: 14px;}
+	.invited_speaker .speaker_list .desc_wrap div > p:nth-child(1),.invited_speaker .speaker_list .desc_wrap div h4{font-size: 16px;}
+	.invited_speaker .speaker_list .desc_wrap div > p:nth-child(2), .invited_speaker .speaker_list .desc_wrap div > p:nth-child(3),.invited_speaker .speaker_list .desc_wrap div h5,.invited_speaker .speaker_list .desc_wrap div h6 {font-size: 12px;}
 }
 
 @media screen and (max-width: 983px) {
@@ -1310,7 +1328,7 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 	/*invited_speaker*/
 	.speaker_list > li .flex {flex-wrap:wrap;}
 	.speaker_list .profile_wrap {width:100%; margin-bottom:16px;}
-	.speaker_list .desc_wrap {padding-left:14px;}
+	.speaker_list .desc_wrap {padding-left:36px;}
 }
 
 @media screen and (max-width: 480px) {
@@ -2409,7 +2427,7 @@ section.coming img {width: 100%;}
 .top_text_box{
 	background-color: #9150A4;
 	color: #FFF;
-	font-size: 28px;
+	font-size: 26px;
 	text-align: center;
 	border-radius: 20px 20px 0px 0px;
 	padding: 8px;

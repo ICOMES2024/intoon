@@ -16,8 +16,6 @@
                     <div class="tab_cont on">
                         <ul class="speaker_list">
                         <li>
-                            <!-- [240424] sujeong / 임시 오픈 / style4.css //.invited_speaker .speaker_list > li h2:before border 주석 해제 필요 -->
-
                                     <div class="flex">
                                         <div class="profile_wrap">
                                             <img src="https://image.webeon.net/icomes2024/program/2024_invited_08-1.png">
@@ -27,12 +25,33 @@
                                             <div>
                                                 <p class="">Presidential Lecture</p> 
                                                 <p class="">11:00-11:40, Sep. 7 (Sat)</p> 
-                                                <p class="">Obesity and Fatty Liver<br/>: Common but Ignored</p> 
+                                                <p class="">Obesity and Fatty Liver<br class="pc_only"/>: Common but Ignored</p> 
                                             </div>
                                             <div>
                                                 <h4 class="title">Cheol-Young Park</h4>
                                                 <h5>Sungkyunkwan University</h5>
                                                 <h6>(Korea)</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="gray_box"></div>
+                            </li>
+                            <li>
+                                    <div class="flex">
+                                        <div class="profile_wrap">
+                                            <img src="https://image.webeon.net/icomes2024/program/2024_invited_09.png">
+                                            <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-1.jpg"> -->
+                                        </div>
+                                        <div class="desc_wrap flex1">
+                                            <div>
+                                                <p class="">EASO Presidential Lecture</p> 
+                                                <p class="">18:05-18:40, Sep. 6 (Fri)</p> 
+                                                <p class="">Management of Obesity in Older Adults</p> 
+                                            </div>
+                                            <div>
+                                                <h4 class="title">Volkan Yumuk</h4>
+                                                <h5>Istanbul University-Cerrahpaşa</h5>
+                                                <h6>(Turkey)</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -182,6 +201,50 @@
                                             <h4 class="title">Joel K. Elmquist</h4>
                                             <h5>UT Southwestern Medical Center</h5>
                                             <h6>(USA)</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gray_box"></div>
+                            </li>
+                        </ul>
+                        <ul class="speaker_list special">
+                         <li>
+                                <div class="flex">
+                                    <div class="profile_wrap">
+                                        <img src="https://image.webeon.net/icomes2024/program/2024_invited_10.png">
+                                        <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-1.jpg"> -->
+                                    </div>
+                                    <div class="desc_wrap flex1">
+                                        <div>
+                                            <p class="">Special Scientific Session 1</p> 
+                                            <p class="">13:00-14:00, Sep. 6 (Fri)</p> 
+                                            <p class="">Management of Obesity from Cardiometabolic Perspective</p> 
+                                        </div>
+                                        <div>
+                                            <h4 class="title">Ania Jastreboff</h4>
+                                            <h5>Yale University</h5>
+                                            <h6>(USA)</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gray_box"></div>
+                            </li>
+                            <li>
+                                <div class="flex">
+                                    <div class="profile_wrap">
+                                        <img src="https://image.webeon.net/icomes2024/program/2024_invited_11.png">
+                                        <!-- <img src="https://image.webeon.net/icomes2024/program/2024_invited_01-1.jpg"> -->
+                                    </div>
+                                    <div class="desc_wrap flex1">
+                                        <div>
+                                            <p class="">Special Scientific Session 2</p> 
+                                            <p class="">12:50-13:50, Sep. 7 (Sat)</p> 
+                                            <p class="">TBD</p> 
+                                        </div>
+                                        <div>
+                                            <h4 class="title">Soo Lim</h4>
+                                            <h5>Seoul National University</h5>
+                                            <h6>(Korea)</h6>
                                         </div>
                                     </div>
                                 </div>
