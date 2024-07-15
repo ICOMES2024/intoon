@@ -87,7 +87,8 @@ $initial_list = get_data($select_initial_query);
                     <?php
                         foreach ($invited_speaker_list as $isl){
                             if($isl['favorite_check']==='Y'){
-								$is_profile_img = ($isl['image_path'] ?? '/main/img/profile_empty.png');
+								$url = 'https://image.webeon.net/icomes2024/app_speaker';
+								$is_profile_img = ($url.$isl['image_path'] ?? $url.'/profile_empty.png');
                     ?>
 								<li>
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">

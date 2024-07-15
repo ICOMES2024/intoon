@@ -150,12 +150,12 @@
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_5-7.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
-				<li class="pointer" name="keynote_lecture_6" data-id="day_3">
-					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_6-7.png"/>
-					<input type="hidden" name="e" value="room1">
-				</li>
 				<li class="pointer" name="keynote_lecture_4" data-id="day_3">
 					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_7-7.png"/>
+					<input type="hidden" name="e" value="room1">
+				</li>
+				<li class="pointer" name="keynote_lecture_6" data-id="day_3">
+					<img src="https://image.webeon.net/icomes2024/main/2024_main_speaker_6-7.png"/>
 					<input type="hidden" name="e" value="room1">
 				</li>
 				<li class="pointer" name="keynote_lecture_8" data-id="day_2">
