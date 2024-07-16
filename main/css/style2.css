@@ -340,13 +340,13 @@ div.phone input:last-child {width:calc(100% - 102px); margin-left:6px;}
 
 /*ksola_signup*/
 .ksola_signup p.green_t {font-size:18px; font-weight:bold; margin-bottom:10px; font-family:"Noto Sans", sans-serif;}
-.ksola_signup ul {margin:16px 0 8px;}
+.ksola_signup ul, .non_ksola_signup ul {margin:16px 0 8px;}
 /* .ksola_signup li {width:calc(50% - 96px); max-width:360px; margin-right:10px;} */
-.ksola_signup li {width:calc(50% - 103px); max-width:360px; margin-right:10px;}
-.ksola_signup li:last-child {width:100px; margin-right:0;}
-.ksola_signup li label {display:block; margin-bottom:8px; font-size:18px; font-weight:bold;}
-.ksola_signup li input {border:none; background-color:#EDEDED; height:46px;}
-.ksola_signup li .btn {width:185px; height:46px; font-size: 18px; font-weight: bold; min-width: 100px; margin-top:30px; background-color:#000066; color:#fff;}
+.ksola_signup li, .non_ksola_signup li{width:calc(50% - 103px); max-width:360px; margin-right:10px;}
+.ksola_signup li:last-child, .non_ksola_signup li:last-child  {width:100px; margin-right:0;}
+.ksola_signup li label, .non_ksola_signup li label {display:block; margin-bottom:8px; font-size:18px; font-weight:bold;}
+.ksola_signup li input, .non_ksola_signup li input {border:none; background-color:#EDEDED; height:46px;}
+.ksola_signup li .btn, .non_ksola_signup li .btn {width:185px; height:46px; font-size: 18px; font-weight: bold; min-width: 100px; margin-top:30px; background-color:#000066; color:#fff;}
 .ksola_signup .red_txt {display:inline-block; margin-left:8px; font-size:14px;}
 .id_pw_find {width:185px; padding:0 10px; font-size:16px; font-weight:600; border:1px solid #000066; color:#000066; border-radius:14px;}
 .mb_only .ksola_signup p.green_t {font-size:16px;}
