@@ -724,7 +724,7 @@ echo '<script type="text/javascript">
                                             <tr class="violet_bg">
                                                 <td>16:20-17:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Joint Symposium</p>
+                                                    <p class="font_20 bold">Joint Symposium KSSO-KSoLA-KDA</p>
                                                     <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
                                                         University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -748,21 +748,21 @@ echo '<script type="text/javascript">
                                                                     <td>16:20-16:45</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Seo Young Kang</p>(Eulji University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:45-17:10</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Dong-Hyuk Cho</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:10-17:35</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jae-Han Jeon</p>(Kyungpook National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -771,7 +771,9 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jong Chan Youn</p>(The Catholic University of Korea, Korea),<br/>
+                                                                        <p class="bold">Jun Sung Moon</p>(Yeungnam University, Korea),<br/>
+                                                                        <p class="bold">Eun Young Lee</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3540,7 +3542,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
-                                                                       
+                                                                       Real World Evidence of Phentermine Plus Topiramate ER in Korean : Efficacy and Safety
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Kyoung Min Kim</p>(Yonsei University, Korea)

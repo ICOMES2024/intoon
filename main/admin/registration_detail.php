@@ -261,6 +261,8 @@
 	$str_now = strtotime($timenow);
 	$str_target = strtotime($timetarget);
 
+
+
 	if($str_now < $str_target || $str_now == $str_target) {
 
 		//if($us_price == 100) {
@@ -344,8 +346,29 @@
 
 	if($attendance_type_no != 0) {
 		$us_price = 0;
-	} 
-	
+	}
+
+	//[240716] sujeong / 결제 email 발송 위한 쿼리문 추가
+	$regustration_query = "SELECT
+			idx, attendance_type, is_score, is_score1, is_score2, is_score3, is_score4, nation_no, phone,
+			member_type, ksso_member_status, registration_type, affiliation, department,
+			licence_number, specialty_number, nutritionist_number, dietitian_number,etc5, academy_number, register_path,
+			etc4, welcome_reception_yn, day2_breakfast_yn, day2_luncheon_yn, day3_breakfast_yn, day3_luncheon_yn, 
+			conference_info, price, payment_no, payment_methods,
+			DATE_FORMAT(register_date, '%m-%d-%Y %H:%i:%s') AS register_date
+		FROM request_registration
+		WHERE idx= {$registration_idx}";
+
+$email_data = sql_fetch($regustration_query);
+
+if(!$email_data["payment_no"] && $total_price < 1){
+	$email_data["pay_type"] = "free";
+}else{
+	$email_data["pay_type"] = $email_data['payment_methods']== 0 ? "card" : "bank";
+
+	$email_data["name_title"] = "";
+	$email_data["payment_date"] = date("Y-m-d H:i:s");
+}
 ?>
 <style>
 	.rs2_hidden{display: none;margin-top: 10px;width: calc(100% - 180px);}
@@ -660,7 +683,10 @@
 						</tr>
 						<tr>
                             <th>결제일 / 결제금액</th>
-                            <td><?=$payment_date." / ".$payment_price?></td>
+                            <td>
+								<?=$payment_date." / ".$payment_price?>
+							<button type="button" class="btn email_btn" data-type="email">결제 이메일 발송</button>
+							</td>
                             <?php
                             }
                             ?>
@@ -819,6 +845,7 @@ $(document).ready(function(){
         else if (submit_type === "update_memo") {
             data["etc6"] = $("input[name=etc6]").val();
         }
+		
 		if(confirm("입력하신 내용으로 저장하시겠습니까?")) {
 			$.ajax({
 			url : "../ajax/admin/ajax_payment.php",
@@ -846,9 +873,34 @@ $(document).ready(function(){
 				}
 			}
 		});
-		}
+	}
 	});
 	
+	//[240716] sujeong / 등록 결제 완료 메일 발송 추가
+	$('.email_btn').on("click", ()=>{
+		if(window.confirm("등록 결제 완료 메일을 발송하시겠습니까?")){
+			const nickName = "<?php echo $member_name; ?>";
+			const memberEmail =  "<?php echo $member_email; ?>";
+			const emailData =  <?php  echo json_encode($email_data); ?>;
+
+		$.ajax({
+			url:"../ajax/client/ajax_gmail.php",
+			type:"POST",
+			data:{
+				"flag":"payment",
+				"name":nickName,
+				"email":memberEmail,
+				"data":emailData
+			},
+			dataType:"JSON",
+			complete : (res)=>{
+				alert('메일 발송이 완료되었습니다.')
+			}
+		});
+		}
+			
+	})
+
 });
 </script>
 <?php include_once('./include/footer.php');?>
