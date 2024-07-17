@@ -546,7 +546,7 @@
 							<th>채택번호</th>
 							<th>사전등록</th>
 							<th>심사</th>
-							<th>메모</th>ㄴ
+							<th>메모</th>
 							<th>ID(Email)</th>
 							<th>Country</th>
 							<th>Name</th>
@@ -581,8 +581,8 @@
 								$registration_yn = 'Y';
 							} 
 							?>
-							<td><?php echo $registration_yn; ?></td>
 							<td><?php echo $list["etc3"]?></td>
+							<td><?php echo $registration_yn; ?></td>
 							<td><?php echo $list["etc1"]?></td>
 							<td><?php if($list["etc2"]){
 								echo "Y";

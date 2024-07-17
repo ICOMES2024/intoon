@@ -10,6 +10,10 @@
 				<img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
 			</button>
 		</h2>
+        <ul class="app_menu_tab langth_2">
+				<li><a href="./app_event_guidelines.php">Guidelines</a></li>
+				<li class="on"><a href="./app_event.php">LIVE EVENT</a></li>
+			</ul>
 	</div>
 	<div class="inner">
 		<div class="contents_box">
@@ -31,7 +35,7 @@
     const member_idx =  <?php echo json_encode($member_idx); ?>;
     const myEventBox = document.querySelector(".my_event");
     const eventWrap = document.querySelector(".event_wrap");
-    console.log(member_idx);
+    //console.log(member_idx);
 
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");
@@ -103,16 +107,17 @@
 
     //제출하기 버튼 눌렀을 때 
     const submitButton = document.querySelector('.submit');
-    const comment = document.querySelector(".comment")
+    const commentInput = document.querySelector(".comment");
 
     //input 조건문
-    comment.addEventListener('input', ()=>{
-        comment.value = comment.value.replace(/[\'\"\\;\\\\]/g, "");
+    commentInput.addEventListener('input', ()=>{
+        commentInput.value = commentInput.value.replace(/[\'\"\\;\\\\]/g, "");
     })
 
     submitButton.addEventListener("click", ()=>{
-        const commentValue = comment.value;
-        if(comment === ""){
+        const commentValue = commentInput.value;
+        
+        if(commentValue === ""){
             alert("Please write your comment!")
         }else{
             $.ajax({
@@ -120,7 +125,7 @@
                 type: "POST",
                 data: {
                     flag: "submit",
-                    comment: comment
+                    comment: commentValue
                 },
                 dataType: "JSON",
                 success: function(res) {

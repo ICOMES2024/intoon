@@ -89,13 +89,19 @@
 				</li>
 				<!-- [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ -->
 				<!-- app_header // Tour Map(기존) => Stamp List(현재) -->
-				<li>
+				<!-- <li>
 					<a href="javascript:;" class="get_ready_alert">Booth Tour</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
 						<li><a href="/main/app_my_stamp.php">My Stamp</a></li>
 						<li><a href="/main/app_stamp_list.php">Stamp List</a></li>
-						<!-- <li><a href="/main/app_tour_map.php">Tour Map</a></li> -->
+					</ul>
+				</li>  -->
+				<li>
+					<a href="javascript:;" class="get_ready_alert">Event</a>
+					<ul class="app_sub">
+						<li><a href="/main/app_stamp_guidelines.php">Booth Tour</a></li>
+						<li><a href="/main/app_event_guidelines.php">Comment Event</a></li>
 					</ul>
 				</li> 
 				<!-- <li>
