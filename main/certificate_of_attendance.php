@@ -31,20 +31,20 @@ $nation_en=sql_fetch($sql)["nation_en"];
 </style>
 <body style="width:1121px; height:792px; margin:0; padding:0; border:0;">
 <div style="width:100%; height:100%; box-sizing:border-box; padding:71px 50px 66px; margin:0; position:relative;" id="pdfDiv">
-    <img src="./img/certificate_of_attendance.svg" alt="" style="width:100%; height:100%; position:absolute; left:0; top:0; z-index:-1;">
+    <img src="https://image.webeon.net/icomes2024/logo/2024_certificate_of_attendance.png" alt="" style="width:100%; height:100%; position:absolute; left:0; top:0; z-index:-1;">
     <div style="text-align:center;">
-        <img src="./img/certificate_of_attendance_logo.svg" alt="ICOMES 2023 로고">
-        <p style="font-family: 'Montserrat', sans-serif; font-size:48px; line-height:58px; font-weight:800; letter-spacing:0.216; color:#0F64AF; margin:23px 0 6px;">CERTIFICATE OF ATTENDANCE</p>
+        <img src="./img/certificate_of_attendance_logo.svg" alt="ICOMES 2023 로고" style="opacity: 0;">
+        <p style="font-family: 'Montserrat', sans-serif; font-size:48px; line-height:58px; font-weight:800; letter-spacing:0.216; color:#0F64AF; margin:23px 0 6px;opacity: 0;">CERTIFICATE OF ATTENDANCE</p>
         <div style="display:inline-block; position:relative;">
-            <img src="./img/certificate_of_attendance_line.svg" alt="" style="position:absolute; top:55%; transform:translate(calc(-100% - 7px), -50%);">
-            <span style="font-family: 'Montserrat', sans-serif; font-size:18px; line-height:22px; font-weight:500; letter-spacing:1.288; color:#0F64AF;">This certificate is presented to</span>
-            <img src="./img/certificate_of_attendance_line.svg" alt="" style="position:absolute; top:55%; transform:translate(7px, -50%);">
+            <img src="./img/certificate_of_attendance_line.svg" alt="" style="position:absolute; top:55%; transform:translate(calc(-100% - 7px), -50%);opacity: 0;">
+            <span style="font-family: 'Montserrat', sans-serif; font-size:18px; line-height:22px; font-weight:500; letter-spacing:1.288; color:#0F64AF;opacity: 0;">This certificate is presented to</span>
+            <img src="./img/certificate_of_attendance_line.svg" alt="" style="position:absolute; top:55%; transform:translate(7px, -50%);opacity: 0;">
         </div>
     </div>
     <div style="text-align:center; margin:41px 0 47px;">
         <p style="font-family: 'Open Sans', sans-serif; font-size:47px; line-height:64px; font-weight:700; letter-spacing:-0.35; color:#000000; margin:0;"><!--성명--><?=$first_name?> <?=$last_name?></p>
         <p style="font-family: 'Open Sans', sans-serif; font-size:27px; line-height:37px; font-weight:700; letter-spacing:-0.405; color:#000000; margin:11px 0 40px;"><!--소속--><?=$affiliation?>,<br/><!--국가--><?=$nation_en?></p>
-        <p style="font-family: 'Montserrat', sans-serif; font-size:18px; line-height:28px; font-weight:600; letter-spacing:-0.72; color:#000000; margin:0;">
+        <p style="font-family: 'Montserrat', sans-serif; font-size:18px; line-height:28px; font-weight:600; letter-spacing:-0.72; color:#000000; margin:0;opacity: 0;">
             The Korea Society for the Study of Obesity (KSSO) is delighted to present this Certificate to you, <br/>
             acknowledging your participation in ICOMES 2024 (International Congress on Obesity <br/>
             and MEtabolic Syndrome) in Seoul, Korea from September 5 to 7, 2024.
@@ -53,7 +53,7 @@ $nation_en=sql_fetch($sql)["nation_en"];
     <table style="border-collapse: collapse;border-spacing: 0; margin:0 auto;">
         <tbody>
         <tr>
-            <td style="width:34%; padding:0;">
+            <td style="width:34%; padding:0;opacity: 0;">
                 <div style="display:inline-block; vertical-align:middle;">
                     <img src="./img/headman_sign1.png" alt="김성수 서명" style="width:86px; vertical-align:middle; margin-right:25px;">
                     <div style="display:inline-block; text-align:left; vertical-align:middle;">
@@ -66,10 +66,10 @@ $nation_en=sql_fetch($sql)["nation_en"];
                     </div>
                 </div>
             </td>
-            <td style="width:32%; padding:0; text-align:center;">
+            <td style="width:32%; padding:0; text-align:center;opacity: 0;">
                 <img src="./img/certificate_of_attendance_emblem.svg" alt="ICOMES 2023 엠블럼" style="margin:0 auto;">
             </td>
-            <td style="width:34%; padding:0;">
+            <td style="width:34%; padding:0;opacity: 0;">
                 <div style="display:inline-block;">
                     <img src="./img/headman_sign2_1.png" alt="박철영 서명" style="width:116px; vertical-align:middle; margin-right:6px;">
                     <div style="display:inline-block; text-align:left; vertical-align:middle;">

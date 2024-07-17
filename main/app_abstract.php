@@ -44,7 +44,7 @@ if($category_idx!==''){
 
 $select_category_sql = " SELECT idx, title 
                          FROM program_category 
-                         WHERE idx IN(5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+                         WHERE idx IN(5,6,8,11,12,13,14,15,16,17,18,20,21,22)
                          ORDER BY sort_num ASC;
                          ";
 $category_list = get_data($select_category_sql);

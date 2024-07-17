@@ -46,7 +46,7 @@
 
 	$abstract_list_query =  "
 								SELECT
-                                    ra.submission_code, ra.idx AS abstract_idx, ra.abstract_title, ra.etc1, ra.etc2,
+                                    ra.submission_code, ra.idx AS abstract_idx, ra.abstract_title, ra.etc1, ra.etc2, ra.etc3,
                                     DATE_FORMAT(ra.register_date, '%y-%m-%d') AS register_date, ra.oral_presentation,
                                     m.idx AS member_idx, m.email, m.name, m.nation_ko, m.nation_en, m.affiliation, m.department,
                                     f.original_name AS abstract_file_name, CONCAT(f.path,'/',f.save_name) AS path, CONCAT(m.last_name_kor,'',m.first_name_kor) AS name_kor,
@@ -275,6 +275,7 @@
 	$html .= '<th>NO</th>';
 	$html .= '<th>Date of Submission</th>';
 	$html .= '<th>Submission No.</th>';
+	$html .= '<th>초록채택번호</th>';
 	$html .= '<th>사전 등록 여부</th>';
 	$html .= '<th>심사 여부</th>';
     $html .= '<th>메모</th>';
@@ -366,6 +367,7 @@
 		$html .= '<td>'.$no.'</td>';
 		$html .= '<td>'.$al["register_date"].'</td>';
 		$html .= '<td>'.$al["submission_code"].'</td>';
+		$html .= '<td>'.$al["etc3"].'</td>';
 
 		//[240220] sujeong / 초록 제출자 등록 여부 파악하기
 		$reg_count = get_register($al["member_idx"]);
@@ -541,9 +543,10 @@
 					<thead>
 						<tr class="tr_center">
 							<th>논문번호</th>
-							<th>사전등록여부</th>
-							<th>심사여부</th>
-							<th>메모여부</th>
+							<th>채택번호</th>
+							<th>사전등록</th>
+							<th>심사</th>
+							<th>메모</th>ㄴ
 							<th>ID(Email)</th>
 							<th>Country</th>
 							<th>Name</th>
@@ -579,6 +582,7 @@
 							} 
 							?>
 							<td><?php echo $registration_yn; ?></td>
+							<td><?php echo $list["etc3"]?></td>
 							<td><?php echo $list["etc1"]?></td>
 							<td><?php if($list["etc2"]){
 								echo "Y";

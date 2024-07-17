@@ -551,7 +551,7 @@ echo '<script type="text/javascript">
                                                                     <td>18:10-18:40</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jung Hwan Park</p>(Hanyang University Seoul Hospital, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3098,7 +3098,7 @@ echo '<script type="text/javascript">
                                                                     Role of Lipid Droplets in Health and Cardiometabolic Disease
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Mottillo Emilio</p>
+                                                                        <p class="bold">Emilio Mottillo</p>
                                                                         (Wayne State University, USA)
                                                                     </td>
                                                                 </tr>
@@ -3412,7 +3412,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 4 : International Collaboration</p>
+                                                    <p class="font_20 bold">Symposium 4 : International Collaboration 1</p>
                                                     <p><span class="bold">Chairpersons : Kun-Ho Yoon</span> (The Catholic University of Korea, Korea)
                                                     <!-- , <br><span class="bold">Jee-Hyun Kang</span> (Konyang University, Republic of Korea) -->
                                                     </p>
@@ -3890,8 +3890,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 2</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Jun Hwa Hong</span> (Eulji university, Korea)
-                                                        <!-- , <br><span class="bold">Jung Hwan Park</span> (Hanyang University, Republic of Korea) -->
+                                                        <span class="bold">Chairpersons : Jung Hwan Park</span> (Hanyang University Seoul Hospital, Korea)
+                                                        , <br><span class="bold">Jun Hwa Hong</span> (Eulji university, Korea)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -5733,7 +5733,7 @@ echo '<script type="text/javascript">
                                                                     Roles of Brainstem Catecholaminergic Neurons in Control of Energy Homeostasis
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Zhan Cheng</p>(University of Science and Technology of China, China)
+                                                                        <p class="bold">Cheng Zhan</p>(University of Science and Technology of China, China)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6719,7 +6719,7 @@ echo '<script type="text/javascript">
                                             <tr class="dark_green_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium 16 : International Collaboration</p>
+                                                    <p class="font_20 bold">Symposium 16 : International Collaboration 2</p>
                                                     <p><span class="bold">Chairpersons : Eun-Jung Rhee</span> (Sungkyunkwan University, Korea)
                                                         , <br><span class="bold">Chang Hee Jung</span> (University of Ulsan, Korea)
                                                     </p>
@@ -6745,7 +6745,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Dror Dicker</p>(Tel Aviv University, Israel)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6753,7 +6753,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Dror Dicker</p>(Tel Aviv University, Israel)
+                                                                        <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6761,7 +6761,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
+                                                                        <p class="bold">Erika Bezerra Parente</p>(Boehringer Ingelheim, Germany)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -7123,7 +7123,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:20-15:45</td>
                                                                     <td class="bold">
-                                                                    Pharmacological Advances for the Management of Obesity
+                                                                    Real-World Experience with Novel Anti-Obesity Medications
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Marc-Andre Cornier</p>(Medical University of South Carolina, USA)
@@ -7135,7 +7135,7 @@ echo '<script type="text/javascript">
                                                                        
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Yumi Kang</p>(Harvard Medical School, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

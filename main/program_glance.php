@@ -108,7 +108,7 @@
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="violet_bg pointer" name="joint_symposium_3" data-id="68">
-									Joint Symposium
+									Joint Symposium<br>KSSO-KSoLA-KDA
 									<input type="hidden" name="e" value="room2">
 								</td>
                                 <!-- <td class="light_gray_bg_2">
@@ -258,7 +258,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_4" data-id="18">
-									Symposium 4 <p>International Collaboration</p>
+									Symposium 4 <p>International Collaboration 1</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_1" data-id="19">
@@ -556,7 +556,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_16" data-id="48">
-									Symposium 16 <p>International Collaboration </p>
+									Symposium 16 <p>International Collaboration 2</p>
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_3" data-id="49">

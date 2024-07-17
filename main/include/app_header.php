@@ -49,11 +49,11 @@
 					<ul class="app_sub">
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
+						<li><a href="/main/app_abstract.php?category_idx=20">Presidential Lecture</a></li>
+						<li><a href="/main/app_abstract.php?category_idx=22">Special Scientific Session</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=8">Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=15">Joint Symposium</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=9">Obesity Treatment Guidelines Symposium</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=7">Best Article in JOMES</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=10">Pre-congress Symposium</a></li>
+						<li><a href="/main/app_abstract.php?category_idx=21">Special Session</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=11">Breakfast Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=12">Luncheon Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=13">Satellite Symposium</a></li>
@@ -61,6 +61,11 @@
 						<li><a href="/main/app_abstract.php?category_idx=16">Oral Presentation</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=17">Guided Poster Presentation</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=18">Poster Exhibition</a></li>
+
+
+						<!-- <li><a href="/main/app_abstract.php?category_idx=9">Obesity Treatment Guidelines Symposium</a></li>
+						<li><a href="/main/app_abstract.php?category_idx=7">Best Article in JOMES</a></li>
+						<li><a href="/main/app_abstract.php?category_idx=10">Pre-congress Symposium</a></li> -->
 					</ul>
 				</li>
 				<li>
