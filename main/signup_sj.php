@@ -436,7 +436,6 @@
 							<th></th>
 							<td>
 							<div class=" mt20">
-							
 										<ul class="simple_join clearfix">
 												<li>
 													<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
@@ -450,13 +449,19 @@
 													<button onclick="non_kor_api()" type="button" class="btn">Membership Verification</button>
 												</li>
 										</ul>
-										<input type="checkbox" class="checkbox" id="privacy1">
-										<label for="privacy1">
-											I agree to the collection of personal information by third parties.
-										</label>
+										<div class="clearfix2">
+											<div>
+												<input type="checkbox" class="checkbox" id="privacy1">
+												<label for="privacy1">
+													I agree to the collection of personal information by third parties.
+												</label>
+											</div>
+											<!-- 외국 사이트 id/pw 찾기 -->
+											<a href="" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
+										</div>
+										
 							
-										<!-- 외국 사이트 id/pw 찾기 -->
-									<a href="" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
+										
 								</div>
 							</td>
 						</tr>
@@ -642,7 +647,7 @@
 								<input class="tel_number tel_phone" name="tel_nation_tel" type="text" maxlength="60" readonly>
 								<input class="tel_numbers tel_phone" name="telephone1" type="text" maxlength="60">
 								<input class="tel_numbers tel_phone2" name="telephone2" type="text" maxlength="60">
-								<
+								
 							</td>
 						</tr>
 						<tr>
