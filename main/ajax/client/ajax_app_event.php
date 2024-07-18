@@ -31,7 +31,7 @@ if($_POST["flag"]==="submit"){
                     WHERE member_idx = {$member_idx} AND is_deleted = 'N'
                     ";
         $search_member = sql_fetch($search_member_query);
-        if ($search_name) {
+        if ($search_member) {
             $res = [
                 'code' => 401,
                 'msg' => "duplicate participation error"

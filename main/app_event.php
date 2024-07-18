@@ -1,6 +1,19 @@
 <?php include_once('./include/head.php');?>
 <?php include_once('./include/app_header.php');?>
 <?php $member_idx = isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : null; ?>
+
+<style>
+    .my_event{
+        position: relative;
+    }
+
+    .del_btn{
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        border: 1px solid #DDD;
+    }
+</style>
 <!-- HUBDNCLHJ : app survey 페이지 -->
 <section class="container app_survey app_version">
 	<div class="app_title_box">
@@ -43,12 +56,8 @@
     })
 
     function getUserComment(){
-
-        if(!member_idx){
-            myEventBox.innerHTML = "";
-        }else{
-            getMyComments();
-        }
+        getMyComments();
+        getComments();
     }
 
     function getMyComments(){
@@ -62,7 +71,7 @@
                 dataType: "JSON",
                 success: function(res) {
                     if (res.code == 200) {
-                       // console.log(res.data)
+                      //console.log(res.data)
                       showMyComments(res.data[0]);
                     } 
                     else {
@@ -73,8 +82,11 @@
     }
 
     function showMyComments(data){
-        eventWrap.innerHTML += `<div class="my_event"> **My Comments <br/>${data.username} <br/>${data.comment}<br/>${data.register_date}</div>`
-        getComments();
+        if(!member_idx){
+            eventWrap.innerHTML = "";
+        }else{     
+            eventWrap.innerHTML += `<div class="my_event">${data.comment}<br/>${data.register_date}<br/><button class='del_btn' onclick="deleteComment(${data.idx})">Delete</button></div>`
+        }
     }
 
 
@@ -88,7 +100,7 @@
                 },
                 dataType: "JSON",
                 success: function(res) {
-                    //console.log(res)
+                    console.log(res)
                     if (res.code == 200) {
                       showComments(res.data);
                     } 
@@ -119,6 +131,8 @@
         
         if(commentValue === ""){
             alert("Please write your comment!")
+        }else if(commentValue.length >= 100){
+            alert("Please write within 100 characters.")
         }else{
             $.ajax({
                 url: PATH + "ajax/client/ajax_app_event.php",
@@ -155,7 +169,43 @@
     })
 
     function getHint(){
-     
+   
+    }
+
+    function deleteComment(idx){
+        if(window.confirm('Do you want to delete the comment?')){
+        $.ajax({
+                url: PATH + "ajax/client/ajax_app_event.php",
+                type: "POST",
+                data: {
+                    flag: "comment_delete",
+                    comment_idx : idx
+                },
+                dataType: "JSON",
+                success: function(res) {
+                    if (res.code == 200) {
+                        alert("Event participation is complete.")
+                        window.location.reload();
+                    } 
+                    //로그인 안 한 경우
+                    else if(res.code == 402){
+                        if(window.confirm('Login required. Would you like to log in?')){ 
+                            window.location.href = '/main/app_login.php';
+                        }else{
+                            window.history.back();
+                        }
+                    }
+                    //이벤트 중복 참여한 경우
+                    else if(res.code == 401){
+                        alert('You have already participated in the event.')
+                    }
+                    else {
+                        alert("error");
+                        return false;
+                    }
+                }
+            });
+     }
     }
 
 </script>

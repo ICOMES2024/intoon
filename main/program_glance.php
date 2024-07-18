@@ -80,7 +80,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_1" data-id="2">
-									Joint Symposium<br>KSSO-JKT (Basic)
+									Joint Symposium<br>KSSO-JKT (Clinical)
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
@@ -103,7 +103,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
                                 <td class="violet_bg pointer" name="joint_symposium_2" data-id="5">
-									Joint Symposium<br>KSSO-JKT (Clinical)
+									Joint Symposium<br>KSSO-JKT (Basic)
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->

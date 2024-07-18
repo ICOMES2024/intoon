@@ -356,12 +356,10 @@ echo '<script type="text/javascript">
                                             <tr class="violet_bg">
                                                 <td>15:00-16:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Joint Symposium KSSO-JKT (Basic)</p>
-                                                    <!-- <p>
-                                                        <span class="bold">Chairpersons : Kyu Rae Lee</span> (Gachon
-                                                        University, Republic of Korea), <br><span class="bold">Koutaro
-                                                            Yokote</span> (Chiba University, Japan)
-                                                    </p> -->
+                                                    <p class="font_20 bold">Joint Symposium KSSO-JKT (Clinical)</p>
+                                                    <p>
+                                                        <span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Korea), <br><span class="bold">Jun Wada</span> (Okayama University, Japan)
+                                                    </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -380,41 +378,40 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
-                                                                    <td>15:00-15:25</td>
+                                                            <tr>
+                                                                    <td>15:00-15:30</td>
                                                                     <td class="bold">
-                                                                    MASLD and Cardio-Renal-Metabolic Syndrome
-                                                                    </td></td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">Masato Furuhashi</p>(Sapporo Medical University School of Medicine, Japan)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>15:25-15:50</td>
-                                                                    <td class="bold">
-                                                                    Effects of Exercise Intervention in Subjects with Steatotic Liver Disease
-                                                                    </td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University Hospital, Taipei, Taiwan)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>15:50-16:15</td>
-                                                                    <td class="bold">
+                                                                    Noninvasive Approaches to Monitor Liver Fibrosis in Metabolic-Associated Steatotic Liver Disease
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hye Won Lee</p>(Yonsei University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:15-16:30</td>
+                                                                    <td>15:30-16:00</td>
+                                                                    <td class="bold">Effects of Exercise Intervention in Subjects with Steatotic Liver Disease</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University Hospital, Taipei, Taiwan)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:00-16:30</td>
+                                                                    <td class="bold">
+                                                                    MASLD and Cardio-Renal-Metabolic Syndrome
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Masato Furuhashi</p>(Sapporo Medical University School of Medicine, Japan)
+                                                                    </td>
+                                                                </tr>
+                                                                <!-- <tr>
+                                                                    <td>17:45-18:00</td>
                                                                     <td class="bold">
                                                                     Panel Discussion 
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -436,9 +433,10 @@ echo '<script type="text/javascript">
                                             <tr class="violet_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Joint Symposium KSSO-JKT (Clinical)</p>
-                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
-                                                        University, Republic of Korea)</p> -->
+                                                    <p class="font_20 bold">Joint Symposium KSSO-JKT (Basic)</p>
+                                                    <p>
+                                                        <span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Korea), <br><span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
+                                                    </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -456,33 +454,35 @@ echo '<script type="text/javascript">
                                                                 <col>
                                                             </colgroup>
                                                             <tbody>
-                                                                <tr>
-                                                                    <td>16:30-16:55</td>
+                                                            <tr>
+                                                                    <td>16:30-17:00</td>
                                                                     <td class="bold">
                                                                     Molecular Pathophysiology Underlying MASH Complicated by Diabetes
-                                                                    </td>
+                                                                    </td></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Hisanori Goto</p>(Kanazawa University Graduate School of Medical Sciences, Japan)
+                                                                        <p class="bold">Hisanori Goto</p>(Kanazawa University, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:55-17:20</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">Chia-Wen Lu</p>(National Taiwan Sport University, Taoyuan, Taiwan)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>17:20-17:45</td>
+                                                                    <td>17:00-17:30</td>
                                                                     <td class="bold">
-                                                                        Therapeutic Approaches for Non-Alcoholic Steatohepatitis Utilizing Diverse Metabolites
+                                                                    Effects of Exercise Intervention in Subjects with Steatotic Liver Disease
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University Hospital, Taipei, Taiwan)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:30-18:00</td>
+                                                                    <td class="bold">
+                                                                    Therapeutic Approaches for Non-Alcoholic Steatohepatitis Utilizing Diverse Metabolites
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Eun Hee Koh</p>(University of Ulsan College of Medicine, Korea)
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>17:45-18:00</td>
+                                                                <!-- <tr>
+                                                                    <td>16:15-16:30</td>
                                                                     <td class="bold">
                                                                     Panel Discussion 
                                                                     </td>
@@ -490,6 +490,7 @@ echo '<script type="text/javascript">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
+                                                                 -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -629,7 +630,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Best Articles in JOMES</p>
                                                     <p><span class="bold">Chairpersons : You-Cheol Hwang</span> (Kyung Hee University, Korea)
-                                                    <!-- , <br/><span class="bold">김종화</span> (부천세종병원 내분비내과) -->
+                                                    , <br/><span class="bold">Yong-Ho Lee</span> (Yonsei University, Korea)
                                                 </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -746,7 +747,9 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:20-16:45</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Interim Report for 2024 Update of Clinical Practice Guidelines for Obesity by the Korean Society for the Study of Obesity
+                                                                    </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seo Young Kang</p>(Eulji University, Korea)
                                                                     </td>
@@ -1035,7 +1038,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                    Recent Advances in Nutrigenomics of Obesity and Weight Management
+                                                                    Nutrigenomics of Obesity and Weight management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yoon Jung Park</p>(Ewha Womans University, Korea)
@@ -1555,10 +1558,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 9 : Obesity and Cardiovascular Health
                                                     </p>
-                                                    <!-- <p><span class="bold">Chairpersons : Moon-Kyu Lee</span> (Eulji
-                                                        University, Republic of Korea), <br><span class="bold">In Ju
-                                                            Kim</span> (Pusan National University, Republic of Korea)
-                                                    </p> -->
+                                                    <p><span class="bold">Chairpersons : Yoon-Sok Chung</span> (Ajou University, Korea), <br><span class="bold">Do Thi Ngoc Diep</span> (Vietnam Nutrition Association, Vietnam)
+                                                    </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1747,6 +1748,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
+                                                                    Efficacy and Safety of Naltrexone-Bupropion in Korean Adults with Obesity: Post-Marketing Surveillance Study
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Young Sang Lyu</p>(Chosun University, Korea)
@@ -3069,7 +3071,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 7 : Lipid Remodeling and Adipocyte Biology in Metabolic Health and Disease</p>
                                                     <p><span class="bold">Chairpersons : Yun-Hee Lee</span> (Seoul National University, Korea)
-                                                        <!-- , <br><span class="bold">Yun-Hee Lee</span> (Seoul National University, Republic of Korea) -->
+                                                        , <br><span class="bold">Dae Ho Lee</span> (Gachon University, Korea)
                                                     </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -3414,7 +3416,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 4 : International Collaboration 1</p>
                                                     <p><span class="bold">Chairpersons : Kun-Ho Yoon</span> (The Catholic University of Korea, Korea)
-                                                    <!-- , <br><span class="bold">Jee-Hyun Kang</span> (Konyang University, Republic of Korea) -->
+                                                    , <br><span class="bold">Michele Mae Ann Yuen</span> (Queen Mary Hospital, Hong Kong, China)
                                                     </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -3673,7 +3675,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                        
+                                                                    Cardiovascular Disease and Hypertension Change After Bariatric Surgery
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Kanokkan Tepmalai</p>(Chiang Mai University, Thailand)
@@ -3691,7 +3693,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:50-15:15</td>
                                                                     <td class="bold">
-                                                                        
+                                                                    Bariatric Surgery and its Impact on Cancer Risk Reduction
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Moon-Won Yoo</p>(University of Ulsan, Korea)
@@ -3854,7 +3856,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:50-10:20</td>
                                                                     <td class="bold">
-                                                                     
+                                                                    STEPping Forward: Managing Weight for East Asian Population with Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sang Yeoup Lee</p>(Pusan National University, Korea)
@@ -3990,7 +3992,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>14:00-14:30</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    A FAQ-Based Approach to Prescription of Combination Phentermine Plus Topiramate
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jee Hyun Kang</p>(Konyang University Hospital, Korea)
@@ -4453,7 +4455,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    GDF15 and Fatty Liver
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hua Wang</p>
@@ -4710,7 +4712,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:50-13:20</td>
                                                                     <td class="bold">
-                                                                    <!-- Diversity in the Definition of Obesity -->
+                                                                    Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Soo Lim</p>
@@ -4918,9 +4920,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>15:45-16:10</td>
                                                                     <td class="bold">
+                                                                    Incretin-Based Therapy after Bariatric-Metabolic Surgery: When and How Long?
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Po-Chih Chang</p>(National Sun Yat-Sen University, Kaohsiung, Taiwan)
+                                                                        <p class="bold">Po-Chih Chang</p>(National Sun Yat-Sen University, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4934,7 +4937,7 @@ echo '<script type="text/javascript">
                                                                     <td>16:35-16:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Chang Hee Jung</p>(University of Ulsan, Korea),<br>
+                                                                        <p class="bold">Kyung-Soo Kim</p>(CHA University, Korea),<br>
                                                                         <p class="bold">Jun Sung Moon</p>(Yeungnam University, Korea)
                                                                     </td>
                                                                 </tr>
@@ -4977,8 +4980,7 @@ echo '<script type="text/javascript">
                                                 <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
-                                                    <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang
-                                                        University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -5504,7 +5506,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:50-13:20</td>
                                                                     <td class="bold">
-                                                                    <!-- Diversity in the Definition of Obesity -->
+                                                                    Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Soo Lim</p>
@@ -5785,8 +5787,7 @@ echo '<script type="text/javascript">
                                                 <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
-                                                    <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang
-                                                        University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -6361,7 +6362,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:50-13:20</td>
                                                                     <td class="bold">
-                                                                    <!-- Diversity in the Definition of Obesity -->
+                                                                    Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Soo Lim</p>
@@ -6640,8 +6641,7 @@ echo '<script type="text/javascript">
                                                 <td>17:00-17:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
-                                                    <!-- <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang
-                                                        University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -6874,8 +6874,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium 20 : Exercise and Cardiometabolic Dysfunction
                                                     </p>
-                                                    <p><span class="bold">Chairpersons : Sewon Lee</span> (Incheon National University, Korea)
-                                                    <!-- , <br> <span class="bold">Kae Won Cho</span> (Soonchunhyang University, Korea) -->
+                                                    <p><span class="bold">Chairpersons : Jong-Hee Kim</span> (Hanyang University, Korea)
+                                                    , <br> <span class="bold">Sewon Lee</span> (Incheon National University, Korea)
                                                 </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -6988,9 +6988,11 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>09:50-10:20</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Life Style Modification with CGM, How To Do?
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sunjoon Moon</p>(Kangbuk Samsung Hospital, Korea)
+                                                                        <p class="bold">Sun-Joon Moon</p>(Kangbuk Samsung Hospital, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
