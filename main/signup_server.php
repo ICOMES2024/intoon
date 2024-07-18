@@ -46,6 +46,7 @@
 		*/
 		$server_data = http_build_query($data);
 
+		// curl_setopt($ch, CURLOPT_URL, "http://3.36.138.44/pro_inc/check_mem.php"); 
 		curl_setopt($ch, CURLOPT_URL, "http://3.36.138.44/pro_inc/check_mem.php"); 
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE); 
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); 

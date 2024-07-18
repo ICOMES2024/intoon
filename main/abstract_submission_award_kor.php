@@ -21,6 +21,7 @@
                          <li class="p_indent"><span class="bold purple_txt">• Eligibility : </span> Authors of Accepted Abstract</li>
                          <li class="p_indent"><span class="bold purple_txt">•</span> ICOMES support the Travel Grants <span class="bold purple_txt">for one author</span> per an accepted abstract.</li>
                          <li class="bold p_indent purple_txt">* All timelines are based on KST (UTC+9).</li>
+                         <li class="bold p_indent purple_txt">* Late-breaking abstracts may not be eligible for Travel Grants.</li>
 					</ul>
 				</div>
 			</div>
@@ -29,9 +30,11 @@
 				<!-- <div class="section_title_wrap2">
 					<h4 class="round_title purple">Download Application Form</h4>
 				</div> -->
-				<div class="download_wrap">
-					<a href="https://forms.gle/VcHcEspujF5k6u499" class="btn long_btn type2 text_long font_16 yellow_btn" target="_blank">
-						Go to the Application Form
+                <div class="download_wrap">
+					<!-- <a href="https://forms.gle/VcHcEspujF5k6u499" class="btn long_btn type2 text_long font_16 yellow_btn" target="_blank"> -->
+					<a href="" class="btn long_btn type2 text_long font_16 yellow_btn">
+                    The application for the travel grants has been finalized.
+
 					</a>
 				</div>
 			</div>
