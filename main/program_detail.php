@@ -239,7 +239,7 @@ echo '<script type="text/javascript">
                                                 <td>18:10-18:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
-                                                    <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul National University, Korea)</p>
+                                                    <!-- <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul National University, Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -3790,7 +3790,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yeo-Jin Hong</p>(Korea University, Korea)
+                                                                        <p class="bold">Yeo-Jin Hong</p>(Korea University Ansan Hospital, Korea)
                                                                          ,<br />
                                                                         <p class="bold">Hwal Rim Jeong</p>(Soonchunhyang University, Korea)
                                                                     </td>

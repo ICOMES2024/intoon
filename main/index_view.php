@@ -104,7 +104,7 @@
 					 <a href="/main/abstract_submission_award.php"> 
 						<!-- <h2>2 Jun</h2>  -->
 						<!-- <h2>Awards &amp;<br/>Grants</h2> -->
-						<img src="https://image.webeon.net/icomes2024/main/2024_main_awards.svg" alt="">
+						<img src="https://image.webeon.net/icomes2024/main/2024_main_awards.png" alt="">
 					</a>
 				</li>
 			</ul>
