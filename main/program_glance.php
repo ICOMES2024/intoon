@@ -39,7 +39,7 @@
 
 				<!-- <button class="btn blue_btn nowrap not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
 				<!-- [240118] sujeong / not_yet 버튼으로 변경 -->
-					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_Glance_0712_v2.pdf')"
+					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_Glance_0718.pdf')"
 						class="btn blue_btn nowrap"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button>
 				</div>
 

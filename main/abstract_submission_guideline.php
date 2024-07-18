@@ -95,10 +95,10 @@ $info = sql_fetch($sql_info);
 					<div class="key_date">
                     <h4>Late-breaking Abstract Submission Deadline</h4> 
 					<div>
-							<h3>11</h3>
+							<h3>01</h3>
 							<div>
 								<p>Thursday,</p>
-								<h6>July</h6>
+								<h6>August</h6>
 							</div>
 						</div>
 						<p><span class="star">*</span> Late-breaking abstracts can only be submitted as poster exhibitions.</p>
@@ -107,10 +107,10 @@ $info = sql_fetch($sql_info);
 					<div class="key_date">
                     <h4>Notification of Late-breaking Abstract<br/>Acceptance</h4> 
 						<div>
-							<h3>30</h3>
+							<h3>07</h3>
 							<div>
-								<p>Tuesday,</p>
-								<h6>July</h6>
+								<p>Wednesday,</p>
+								<h6>August</h6>
 							</div>
 						</div>
 					</div>
@@ -295,7 +295,7 @@ $info = sql_fetch($sql_info);
                 <div class="text_box indent">
                     <ul class="indent_ul">
                         <li>• Following the evaluation of all abstract submissions by the Scientific Committee, the presenting author and the corresponding author will receive an email notification regarding the acceptance of their submission.</li>
-                        <li>• It is mandatory for all presenters to complete the registration process and pay the full registration fee by the registration deadline of <span class="bold purple_txt">August 1, 2024</span>.
+                        <li>• It is mandatory for all presenters to complete the registration process and pay the full registration fee by the registration deadline of <span class="bold purple_txt">August 8, 2024</span>.
                         The registration fee will be fully refunded after the conference.</li>
                         <li>• If the submission deadline changes, the acceptance notification will also change. The secretariat will be notified via ICOMES website or newsletter.</li>
                     </ul>

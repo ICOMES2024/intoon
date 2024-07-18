@@ -89,7 +89,7 @@
 				<li>
 					<a href="/main/abstract_submission_guideline.php">
 						<p>Late-breaking-Abstract Submission <br/>Deadline</p>
-						<h2>July <span>11</span></h2>
+						<h2>August <span>01</span></h2>
 					</a>
 				</li>
 				<li>
