@@ -12,8 +12,8 @@
 					<input type="text" name="email" placeholder="<?= $locale("id") ?>">
 				</li>
 			</ul>
-			<button type="button" class="btn submit_btn gray_line_btn"><?= $locale("get_temporary_password_btn") ?></button>
-			<button type="button" class="btn login_btn main_btn" onclick="javascript:window.location.href='./login.php';"><?= $locale("login") ?></button>
+			<button type="button" class="btn submit_btn gray_line_btn pw_btn"><?= $locale("get_temporary_password_btn") ?></button>
+			<button type="button" class="btn login_btn main_btn login_2024" onclick="javascript:window.location.href='./login.php';"><?= $locale("login") ?></button>
 		</form>
 	</div>
 </section>

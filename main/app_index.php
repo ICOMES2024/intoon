@@ -99,7 +99,7 @@
 					<input type="hidden" name="day" value="day_2">
 			</li>
 			<li class="pointer"  name="ksso_scientific_session" >
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-12.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-12-1.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_3">
 			</li>
@@ -109,9 +109,9 @@
 		<ul class="app_index_menu">
 			<li class="app_menu_img">
 				<a href="/main/app_welcome.php" >
+					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu01.svg" alt="">
 				<!-- <a href="/main/app_organizing_committee.php" > -->
                 <!-- overview 로 번경 -->   
-					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu01.svg" alt="">
 					<!-- <span>ICOMES 2023</span> -->
 				</a>
 			</li>

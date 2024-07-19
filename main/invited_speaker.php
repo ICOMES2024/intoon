@@ -242,7 +242,7 @@
                                         <div>
                                             <p class="">Special Scientific Session 2</p> 
                                             <p class="">12:50-13:50, Sep. 7 (Sat)</p> 
-                                            <p class="">TBD</p> 
+                                            <p class="">Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective</p> 
                                         </div>
                                         <div>
                                             <h4 class="title">Soo Lim</h4>

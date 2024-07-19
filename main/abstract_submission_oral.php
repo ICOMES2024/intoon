@@ -78,6 +78,16 @@ $info = sql_fetch($sql_info);
 						<p><span class="star">*</span> Abstracts submitted by June 20 will be notified of acceptance <br/>&nbsp;&nbsp;&nbsp;on July 10.</p>
 					</div>
 					<div class="key_date">
+                    <h4>Registration Deadline for Approved<br/>Abstract Presenters</h4>  
+						<div>
+							<h3>08</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>August</h6>
+							</div>
+						</div>
+					</div>
+					<div class="key_date">
                     <h4>Late-breaking Abstract Submission Deadline</h4> 
 					<div>
 							<h3>01</h3>
@@ -99,18 +109,8 @@ $info = sql_fetch($sql_info);
 							</div>
 						</div>
 					</div>
-					<div class="key_date">
-                    <h4>Registration Deadline for Approved<br/>Abstract Presenters</h4>  
-						<div>
-							<h3>08</h3>
-							<div>
-								<p>Thursday,</p>
-								<h6>August</h6>
-							</div>
-						</div>
-					</div>
+					
 				</div>
-       
                 <!-- <div class="table_wrap detail_table_common">
                     <table class="c_table detail_table">
                         <colgroup>

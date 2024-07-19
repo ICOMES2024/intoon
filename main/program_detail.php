@@ -358,7 +358,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium KSSO-JKT (Clinical)</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Korea), <br><span class="bold">Jun Wada</span> (Okayama University, Japan)
+                                                        <span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Korea), <br><span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -435,7 +435,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium KSSO-JKT (Basic)</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Korea), <br><span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
+                                                        <span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Korea), <br><span class="bold">Jun Wada</span> (Okayama University, Japan)
                                                     </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -466,10 +466,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:00-17:30</td>
                                                                     <td class="bold">
-                                                                    Effects of Exercise Intervention in Subjects with Steatotic Liver Disease
+                                                                    Effects of Exercise Intervention in Obese Mice with Steatotic Liver Disease
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University Hospital, Taipei, Taiwan)
+                                                                        <p class="bold">Chia-Wen Lu</p>(National Taiwan Sport University, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -726,8 +726,9 @@ echo '<script type="text/javascript">
                                                 <td>16:20-17:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium KSSO-KSoLA-KDA</p>
-                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
-                                                        University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Korea)
+                                                    , <br/><span class="bold">Woo Je Lee</span> (University of Ulsan, Korea)
+                                                </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -876,9 +877,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
+                                                                    The Ideal Combination therapy for T2D Including Original Dapagliflozin
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jae-Han Jeon</p>(Kyungbook National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3696,7 +3698,7 @@ echo '<script type="text/javascript">
                                                                     Bariatric Surgery and its Impact on Cancer Risk Reduction
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Moon-Won Yoo</p>(University of Ulsan, Korea)
+                                                                        <p class="bold">Moon-Won Yoo</p>(Asan Medical Center, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3867,7 +3869,7 @@ echo '<script type="text/javascript">
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Darae Kim</p>(Sungkyunkwan University, Korea)
+                                                                        <p class="bold">Darae Kim</p>(Samsung Medical Center, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4049,7 +4051,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-16:55</td>
+                                                                    <td>16:30-17:00</td>
                                                                     <td class="bold">
                                                                     ACTION Teens: Barriers for Adolescents Living with Obesity to Weight Management in the UK
                                                                     </td>
@@ -4058,7 +4060,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:55-17:20</td>
+                                                                    <td>17:00-17:30</td>
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
@@ -4066,25 +4068,14 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:45</td>
+                                                                    <td>17:30-18:00</td>
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Barbara McGowan</p> (Guy's and St Thomas' NHS Foundation Trust, UK)
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>17:45-18:00</td>
-                                                                    <td class="bold">
-                                                                        Panel Discussion
-                                                                    </td>
-                                                                    <td class="text_r">
-                                                                        <!-- <p class="bold">Jun Hwa Hong</p>(Eulji
-                                                                        University, Republic of Korea),<br />
-                                                                        <p class="bold">Yang-Im Hur</p>(CHA University,
-                                                                        Republic of Korea) -->
-                                                                    </td>
-                                                                </tr>
+                                                          
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -6915,10 +6906,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">
-                                                                 
+                                                                    Movement Function Improvement Exercise Algorithm for Obese Individuals
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Min-Hwa Suk</p>(Seoul National University of Education, Korea)
+                                                                        <p class="bold">Min-Hwa Suk</p>(Hanyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6998,9 +6989,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>10:20-10:50</td>
                                                                     <td class="bold">
+                                                                    The Expanding Role of CGM in Wellness: From Glycemic Control to Holistic Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Korea)
+                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University Anam Hospital, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -7123,7 +7115,7 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:20-15:45</td>
+                                                                    <td>15:20-15:50</td>
                                                                     <td class="bold">
                                                                     Real-World Experience with Novel Anti-Obesity Medications
                                                                     </td>
@@ -7132,7 +7124,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:45-16:10</td>
+                                                                    <td>15:50-16:20</td>
                                                                     <td class="bold">
                                                                        
                                                                     </td>
@@ -7141,7 +7133,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:10-16:35</td>
+                                                                    <td>16:20-16:50</td>
                                                                     <td class="bold">
                                                                     Real World Mental Health Implications of Anti-Obesity Medication Use
                                                                     </td>
@@ -7149,7 +7141,7 @@ echo '<script type="text/javascript">
                                                                         <p class="bold">Robyn Pashby</p>(Health Psychology Partners, USA)
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td>16:35-16:50</td>
                                                                     <td class="bold">
                                                                     Panel Discussion
@@ -7157,7 +7149,7 @@ echo '<script type="text/javascript">
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>

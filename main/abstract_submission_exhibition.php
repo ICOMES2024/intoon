@@ -78,6 +78,16 @@ $info = sql_fetch($sql_info);
 						<p><span class="star">*</span> Abstracts submitted by June 20 will be notified of acceptance <br/>&nbsp;&nbsp;&nbsp;on July 10.</p>
 					</div>
 					<div class="key_date">
+                    <h4>Registration Deadline for Approved<br/>Abstract Presenters</h4>  
+						<div>
+							<h3>08</h3>
+							<div>
+								<p>Thursday,</p>
+								<h6>August</h6>
+							</div>
+						</div>
+					</div>
+					<div class="key_date">
                     <h4>Late-breaking Abstract Submission Deadline</h4> 
 					<div>
 							<h3>01</h3>
@@ -99,16 +109,7 @@ $info = sql_fetch($sql_info);
 							</div>
 						</div>
 					</div>
-					<div class="key_date">
-                    <h4>Registration Deadline for Approved<br/>Abstract Presenters</h4>  
-						<div>
-							<h3>08</h3>
-							<div>
-								<p>Thursday,</p>
-								<h6>August</h6>
-							</div>
-						</div>
-					</div>
+					
 				</div>
        
      
@@ -198,13 +199,14 @@ $info = sql_fetch($sql_info);
 			<!--Poster Panel-->
 			<div class="poster_panel">
 				<div class="section_title_wrap2">
-					<h3 class="title">Poster Panel</h3>
+					<h3 class="title">Poster Display</h3>
 				</div>
 				<div class="text_box indent">
-					<img src="./img/poster_panel.png" alt="Poster Panel">
+					<!-- <img src="./img/poster_panel.png" alt="Poster Panel"> -->
 					<ul>
-						<li>• Poster Panel Size: W100 x H250</li>
-						<li>• Paper Size: A0 (W84.1 X H118.9)</li>
+						<!-- <li>• Poster Panel Size: W100 x H250</li>
+						<li>• Paper Size: A0 (W84.1 X H118.9)</li> -->
+						<li>• The posters for the exhibition will be displayed on a 50-inch monitor with a 3:4 aspect ratio in the Poster Zone.</li>
 					</ul>
 				</div>
 			</div>
