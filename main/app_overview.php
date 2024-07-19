@@ -8,13 +8,15 @@
 			ICOMES 2024
 			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
-		<ul class="app_menu_tab">
-			<li><a href="./app_welcome.php">Welcome Message</a></li>
-			<!-- <li><a href="./app_welcome.php" class="get_ready_alert">Welcome Message</a></li> -->
-			<li><a href="./app_organizing_committee.php">Organization</a></li>
-			<li class="on"><a href="./app_overview.php">Overview</a></li>
-			<li><a href="./app_venue.php">Venue</a></li>
-		</ul>
+        <div class="app_menu_box">
+			<ul class="app_menu_tab">
+				<li><a href="./app_welcome.php">Welcome Message</a></li>
+				<!-- <li><a href="./app_welcome.php" class="get_ready_alert">Welcome Message</a></li> -->
+				<li><a href="./app_organizing_committee.php">Organization</a></li>
+				<li class="on"><a href="./app_overview.php">Overview</a></li>
+				<li><a href="./app_venue.php">Venue</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="inner">
 		<div class="contents_box">

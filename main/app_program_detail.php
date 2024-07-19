@@ -239,11 +239,13 @@ echo '<script type="text/javascript">
 			PROGRAM
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
-		<ul class="app_menu_tab langth_2">
-			<li><a href="./app_program_glance.php">Program at a Glance</a></li>
-			<li class="on"><a href="./app_program_detail.php">Scientific Program</a></li>
-		</ul>
-	</div>
+			<div class="app_menu_box">
+                <ul class="app_menu_tab langth_2">
+                    <li><a href="./app_program_glance.php">Program at a Glance</a></li>
+                    <li class="on"><a href="./app_program_detail.php">Scientific Program</a></li>
+                </ul>
+	    </div>
+    </div>
     <form name="select_form">
 	<ul class="app_tab program center_t fix_cont">
 		<li value="1"><a href="javascript:;">Sep.5(Thu)</a></li>

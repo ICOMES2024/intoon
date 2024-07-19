@@ -57,6 +57,35 @@
                     AND m.is_deleted = 'N'
                     ";
     $member_data = sql_fetch($sql_info);
+
+
+    $select_user_registration_query = "
+            SELECT
+                reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, reg.occupation_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score, reg.is_score1, reg.is_score2, reg.is_score3,reg.is_score4,
+                reg.attendance_type, reg.etc5, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number,
+                reg.conference_info, reg.etc4, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food, reg.promotion_code_number,
+                reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
+                (
+                    CASE
+                        WHEN reg.ksso_member_status IS NULL OR reg.ksso_member_status = 0 THEN 'Non-member'
+                        WHEN reg.ksso_member_status > 0 THEN 'Member'
+                    END
+                ) AS ksso_member_status,
+                p.idx AS payment_idx, p.`type` AS payment_type, p.total_price_kr, p.total_price_us,
+                p.etc2, DATE_FORMAT(p.register_date, '%Y-%m-%d %H:%i:%s') AS payment_register_date
+            FROM request_registration reg
+            LEFT JOIN payment p
+            ON reg.payment_no = p.idx
+            LEFT JOIN (
+                SELECT idx, nation_en, nation_tel FROM nation
+            )AS nation
+            ON reg.nation_no = nation.idx
+            WHERE reg.register = {$user_idx}
+            AND reg.is_deleted = 'N'
+            ORDER BY reg.register_date DESC
+        ";
+
+        $registration_list = sql_fetch($select_user_registration_query);
     //[240315] sujeong / 등록번호 4자리수 만들기
     $register_no = "";
     if($member_data["r_idx"]< 10){
@@ -177,11 +206,11 @@
     if($info_html == "") $info_html = "-";
 
     // 결제정보
-    $payment_methods = $list["payment_methods"];
+    $payment_methods = $registration_list["payment_methods"];
     $payment_methods = $payment_methods == 1 ? "bank" : "card";
 
     if($payment_methods == "card"){
-        if($list["price"] == 0){
+        if($registration_list["price"] == 0){
             $payment_methods = "Free";
         }else{
             $payment_methods = "Credit card";
@@ -200,16 +229,18 @@
 			My Page
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
-        <ul class="app_menu_tab langth_2">
-			<li class="on"><a href="./app_registration.php">Registration</a></li>
-			<li><a href="./app_mypage_abstract.php">Abstract</a></li>
-			<!-- <li><a href="./app_schedule.php">My Schedule</a></li> -->
-		</ul>
+        <div class="app_menu_box">
+            <ul class="app_menu_tab langth_2">
+                <li class="on"><a href="./app_registration.php">Registration</a></li>
+                <li><a href="./app_mypage_abstract.php">Abstract</a></li>
+                <!-- <li><a href="./app_schedule.php">My Schedule</a></li> -->
+            </ul>
+        </div>
 	</div>
 	<div class="inner">
 		<div class="contents_box">
 			<div class="contents_wrap">
-                <p class="mypage_registration_txt">Review of Registration</p>
+                <p class="mypage_registration_txt">Registration information</p>
                 <table class="mypage_registration_table">
                     <tr>
                         <th>Registration No.</th>
@@ -248,7 +279,7 @@
                         <td><?=$member_data["occupation_type"]?></td>
                     </tr>
                     <tr>
-                        <th>Type of<br/>Occupation</th>
+                        <th>Category</th>
                         <td><?=$member_data["member_type"]?></td>
                     </tr>
                     <?php if($member_data["nation_no"] == 25){?>
@@ -266,7 +297,7 @@
                             </tr>
                             <tr>
                                 <th>한국영양교육평가원 <br/>평점신청</th>
-                                <td><?=$lmember_dataist["is_score1"] == 1 ? "필요" : "불필요"?></td>
+                                <td><?=$member_data["is_score1"] == 1 ? "필요" : "불필요"?></td>
                             </tr>
                             <tr>
                                 <th>영양사 면허번호</th>
@@ -279,6 +310,18 @@
                             <tr>
                                 <th>운동사 평점신청</th>
                                 <td><?=$member_data["is_score2"] == 1 ? "필요" : "불필요"?></td>
+                            </tr>
+                            <tr>
+                                <th>내과전공의 외부학술회의 평점신청</th>
+                                <td><?=$member_data["is_score3"] == 1 ? "필요" : "불필요"?></td>
+                            </tr>
+                            <tr>
+                                <th>내과전문의 번호</th>
+                                <td><?=$member_data["etc5"] ?? "Not applicable"?></td>
+                            </tr>
+                            <tr>
+                                <th>내과분과전문의 시험/갱신 평점신청</th>
+                                <td><?=$member_data["is_score4"] == 1 ? "필요" : "불필요"?></td>
                             </tr>
                     <?php }?>
                     <tr>
@@ -296,16 +339,16 @@
                     <!-- Credit Card 선택 시 -->
                     <tr class="tr_bg">
                         <th>Registration fee</th>
-                        <td><?=$list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-"?></td>
+                        <td><?=$registration_list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$registration_list["price"] || $registration_list["price"] == 0 ? number_format($registration_list["price"]) : "-"?></td>
                     </tr>
                     <tr class="tr_bg">
                         <th>Total fee</th>
-                        <td><?=$list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$list["price"] || $list["price"] == 0 ? number_format($list["price"]) : "-"?></td>
+                        <td><?=$registration_list["is_korea"] == 1 ? "KRW" : "USD"?> <?=$registration_list["price"] || $registration_list["price"] == 0 ? number_format($registration_list["price"]) : "-"?></td>
                     </tr>
-                    <?php if(!empty($list["promotion_code_number"])){ ?>
+                    <?php if(!empty($registration_list["promotion_code_number"])){ ?>
                         <tr class="tr_bg">
                         <th>Promotion Code</th>
-                        <td><?=$list["promotion_code_number"]?></td>
+                        <td><?=$registration_list["promotion_code_number"]?></td>
                     </tr>
                     <?php } ?>
                     <tr class="tr_bg">

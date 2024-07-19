@@ -96,7 +96,7 @@
 .app_version.app_overview {padding-bottom: 60px !important;}
 .app_overview_ul li {border-top:1px solid #383484;}
 .app_overview_ul li:last-child {border-bottom:1px solid #999999;}
-.app_overview_ul li > p {padding:10px 16px; background-color:#EDEDED; font-size:22px; font-weight:bold; color:#000000; border-bottom:1px solid #999999;}
+.app_overview_ul li > p {padding:10px 16px; background-color:#EDEDED; font-size:16px; font-weight:bold; color:#000000; border-bottom:1px solid #999999;}
 .app_overview_ul li > div {padding:16px; font-size:14px; line-height:1.3; color:#000000;}
 .app_overview_ul li > div * {font-size:18px; color:inherit;}
 .app_overview_ul li > div b {font-size:16px; display:block;}

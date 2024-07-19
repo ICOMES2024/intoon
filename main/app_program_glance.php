@@ -21,10 +21,12 @@
 
 		<div class="app_title_box">
 			<h2 class="app_title">Program<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-			<ul class="app_menu_tab langth_2">
-				<li class="on"><a href="./app_program_glance.php">Program at a Glance</a></li>
-				<li><a href="./app_program_detail.php">Scientific Program</a></li>
-			</ul>
+			<div class="app_menu_box">
+				<ul class="app_menu_tab langth_2">
+					<li class="on"><a href="./app_program_glance.php">Program at a Glance</a></li>
+					<li><a href="./app_program_detail.php">Scientific Program</a></li>
+				</ul>
+			</div>
 		</div>
 	<!-- HUBDNCHYJ : App 에서는 이 클래스 사용하시면 됩니다. -->
 		<div class="app_tab_wrap fix_cont">
@@ -77,7 +79,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_1" data-id="2">
-									Joint Symposium<br>KSSO-JKT (Basic)
+									Joint Symposium<br>KSSO-JKT (Clinical)
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
@@ -100,7 +102,7 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
                                 <td class="violet_bg pointer" name="joint_symposium_2" data-id="5">
-									Joint Symposium<br>KSSO-JKT (Clinical)
+									Joint Symposium<br>KSSO-JKT (Basic)
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->

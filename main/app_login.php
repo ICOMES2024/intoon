@@ -19,10 +19,9 @@
 <section class="container app_main app_login app_version">
 	<div class="app_main_inner">
 		<div class="app_main_box">
-            <div class="app_main_backBtn">
-                
-            <!-- a href="/main/app_index.php"><img src="https://image.webeon.net/icomes2024/app/app_main_backBtn.png" alt=""></a -->
-            <img src="https://image.webeon.net/icomes2024/app/app_main_backBtn.png" alt="">
+            <div class="app_main_backBtn">               
+                <a href="/main/app_index.php"><img src="https://image.webeon.net/icomes2024/app/app_main_backBtn.png" alt=""></a>
+            <!-- <img src="https://image.webeon.net/icomes2024/app/app_main_backBtn.png" alt=""> -->
             </div>
 			<div class="app_main_txt">
 				<img src="https://image.webeon.net/icomes2024/app/2024_app_main_txt-1.svg" alt="">
@@ -65,9 +64,9 @@ $(document).ready(function(){
         login();
     });
 
-    $('.app_main_backBtn').on('click', function() {
-        history.go(-2); // confirm 창 없이 바로 2단계 전 페이지로 이동
-    });
+    // $('.app_main_backBtn').on('click', function() {
+    //     history.go(-2); // confirm 창 없이 바로 2단계 전 페이지로 이동
+    // });
 
 
     if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
