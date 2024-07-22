@@ -23,10 +23,12 @@
 				<img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
 			</button>
 		</h2>
-        <ul class="app_menu_tab langth_2">
-				<li><a href="./app_event_guidelines.php">Guidelines</a></li>
-				<li class="on"><a href="./app_event.php">LIVE EVENT</a></li>
-			</ul>
+		<div class="app_menu_box">
+            <ul class="app_menu_tab langth_2">
+                    <li><a href="./app_event_guidelines.php">Guidelines</a></li>
+                    <li class="on"><a href="./app_event.php">LIVE EVENT</a></li>
+                </ul>
+        </div>
 	</div>
 	<div class="inner">
 		<div class="contents_box">
