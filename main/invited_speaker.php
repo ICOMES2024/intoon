@@ -153,7 +153,8 @@
                                         <div>
                                             <p class="">Keynote Lecture 1</p> 
                                             <p class="">08:30-09:10, Sep. 6 (Fri)</p> 
-                                            <p class="">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p> 
+                                            <p class="">SF-1 Targets in the Hypothalamus: Novel Pathways Regulating Energy Balance
+and Metabolism</p> 
                                         </div>
                                         <div>
                                             <h4 class="title">Joel K. Elmquist</h4>
@@ -221,7 +222,7 @@
                                         <div>
                                             <p class="">Special Scientific Session 1</p> 
                                             <p class="">13:00-14:00, Sep. 6 (Fri)</p> 
-                                            <p class="">Management of Obesity from Cardiometabolic Perspective</p> 
+                                            <p class="">Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!</p> 
                                         </div>
                                         <div>
                                             <h4 class="title">Ania Jastreboff</h4>
@@ -254,6 +255,7 @@
                                 <div class="gray_box"></div>
                             </li>
                         </ul>
+                        <!-- <img src="../main/img/test.svg"/> -->
                     </div>
                 </div>
             </div>

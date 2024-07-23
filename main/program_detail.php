@@ -239,7 +239,7 @@ echo '<script type="text/javascript">
                                                 <td>18:10-18:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul National University, Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Suk Chon</span> (Kyung Hee University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -391,7 +391,7 @@ echo '<script type="text/javascript">
                                                                     <td>15:30-16:00</td>
                                                                     <td class="bold">Effects of Exercise Intervention in Subjects with Steatotic Liver Disease</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University Hospital, Taipei, Taiwan)
+                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University Hospital, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -576,8 +576,7 @@ echo '<script type="text/javascript">
                                                 <td>18:40-19:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Session for Publication</p>
-                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
-                                                        University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : You-Cheol Hwang</span> (Kyung Hee University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -764,7 +763,9 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:10-17:35</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    The Impact of Anti-Obesity Agents on Glucose Metabolism
+                                                                    </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jae-Han Jeon</p>(Kyungpook National University, Korea)
                                                                     </td>
@@ -950,7 +951,8 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>08:30-09:00</td>
                                                                     <td class="bold">
-                                                                    A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism
+                                                                    SF-1 Targets in the Hypothalamus: Novel Pathways Regulating Energy Balance
+and Metabolism
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Joel K. Elmquist</p>(UT Southwestern Medical Center, USA)
@@ -1245,6 +1247,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
+                                                                    Optimal Combination Therapy for Diabetes Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Bukyung Kim</p>(Kosin University, Korea)
@@ -1322,7 +1325,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>13:00-13:30</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ania Jastreboff</p>
@@ -1594,6 +1597,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:30-16:55</td>
                                                                     <td class="bold">
+                                                                    Reconsidering the Role of Mitochondria in Nutrient Sensing
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Richard Kibbey</p>(Yale University, USA)
@@ -1602,7 +1606,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>16:55-17:20</td>
                                                                     <td class="bold">
-                                                                     
+                                                                    Bariatric Surgery in Patients with Advanced Heart Failure
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Kyung-Hee Kim</p>(Incheon Sejong Hospital, Korea)
@@ -1611,6 +1615,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>17:20-17:45</td>
                                                                     <td class="bold">
+                                                                    Body Composition and Its Associations with Disease Risk: Measures, Assessment Techniques, and Future Directions
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jonathan Bennett</p>(University of Hawaii Cancer Center, USA)
@@ -1823,7 +1828,8 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>08:30-09:00</td>
                                                                     <td class="bold">
-                                                                    A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism
+                                                                    SF-1 Targets in the Hypothalamus: Novel Pathways Regulating Energy Balance
+and Metabolism
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Joel K. Elmquist</p>(UT Southwestern Medical Center, USA)
@@ -2112,7 +2118,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    DPP-IV inhibitor and SGLT2 Inhibitor Combination Therapy for the Treatment of T2DM
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Joonyub Lee</p>(The Catholic University of Korea, Korea)
@@ -2190,7 +2196,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>13:00-13:30</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ania Jastreboff</p>
@@ -2671,7 +2677,8 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>08:30-09:00</td>
                                                                     <td class="bold">
-                                                                    A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism
+                                                                    SF-1 Targets in the Hypothalamus: Novel Pathways Regulating Energy Balance
+                                                                    and Metabolism
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Joel K. Elmquist</p>(UT Southwestern Medical Center, USA)
@@ -3039,7 +3046,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>13:00-13:30</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ania Jastreboff</p>
@@ -3103,7 +3110,7 @@ echo '<script type="text/javascript">
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Emilio Mottillo</p>
-                                                                        (Wayne State University, USA)
+                                                                        (Henry Ford Hospital, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3849,7 +3856,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>09:20-09:50</td>
                                                                     <td class="bold">
-                                                                      
+                                                                    SELECTing the Clinical Outcome of Semaglutide 2.4mg from its Physiological Benefits
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Filip K. Knop</p>(University of Copenhagen, Denmark)
@@ -5878,6 +5885,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
+                                                                    TRUE-BUDDY Combination Therapy: Benefits for Beta Cells, Insulin Resistance and Diabetic Complications
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung-Hwan Lee</p>(The Catholic University of Korea, Korea)
@@ -6275,7 +6283,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>11:50-12:50</td>
                                                                     <td class="bold">
-                                                                     
+                                                                    SGLT2i: Beyond Glucose Lowering Effects
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yong-Ho Lee</p>(Yonsei University, Korea)
