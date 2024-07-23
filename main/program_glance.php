@@ -340,7 +340,7 @@
 								</td>
 								<td class="special_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
 									Special Scientific Session 1
-									<p class="">Management of Obesity from Cardiometabolic Perspective</p>
+									<p class="">Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!</p>
 									<p>Ania Jastreboff</p>
 									<p>Yale University, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -474,7 +474,7 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td class="white_yellow_bg " name="congress_banquet_ceremony" data-id="40">
+								<td class="white_yellow_bg pointer" name="congress_banquet_ceremony" data-id="40">
 									Congress Banquet 
 									<p><span class="red_txt">*</span>Invited Only</p>
 									<input type="hidden" name="e" value="room6">
@@ -621,7 +621,7 @@
 								</td>
 								<td class="special_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
 									Special Scientific Session 2
-									<!-- <p class="bold">Diversity in the Definition of Obesity</p> -->
+									<p class="">Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective</p>
 									<p>Soo Lim</p>
 									<p>Seoul National University, Korea</p>
 									<input type="hidden" name="e" value="room1">
@@ -774,7 +774,7 @@
 					<!-- <p class="program_modal_chair"></p> -->
 					
 					<!-- [240607] sujeong / 학회팀 요청 모달 오픈 & 좌장 미확정 주석처리 -->
-					<p class="program_modal_chair">Chairperson : </p>
+					<p class="program_modal_chair"> </p>
 					<p class="program_modal_person"></p>
 				</div>
 			</div>
@@ -998,6 +998,7 @@ function writeModal(data){
     const modalTitleTime = document.querySelector(".modal_title_time");
     const modalTitleRoom = document.querySelector(".modal_title_room");
     const modalChairPerson = document.querySelector(".program_modal_person");
+	const modalChair = document.querySelector('.program_modal_chair');
     const contentsWrap =  document.querySelector(".content_container");
     const modalPreview = document.querySelector(".modal_preview")
 
@@ -1008,10 +1009,11 @@ function writeModal(data){
     let titleRoom = "";
     let chairpersonHtml = "";
     let preview = "";
+	let chairTxt = "";
 
 
     data.map((t, i)=>{
-   
+		console.log(t)
         const contents = document.createElement("div")
         title = t.title;
         subTitle = t.program_name;
@@ -1052,31 +1054,23 @@ function writeModal(data){
         titleTime = "• " + startTime + '~' + t.end_time;
         contents.className = "content";
 
-        //좌장 한 명일 경우
-        // if(!t.chairpersons?.includes(",")){
-        //     const chairperson = t.chairpersons?.split("(")[0];
-        //     const chairperson_org = t.chairpersons?.split("(")[1]?.split(")")[0];
-
-        //     chairpersonHtml = `<span class="bold">${chairperson}</span>(${chairperson_org})`;
-        // }
-        // //좌장 두 명일 경우
-        // else if(t.chairpersons?.includes(",")){
-        //     const first_chairperson = t.chairpersons.split("(")[0];
-        //     const first_chairperson_org = t.chairpersons.split("(")[1].split(")")[0];
-
-        //     const second_chairperson = t.chairpersons.split("(")[1].split(", ")[1];
-        //     const second_chairperson_org = t.chairpersons.split("(")[2].split(")")[0]
-
-        //    chairpersonHtml = `<span class="bold">${first_chairperson}</span>(${first_chairperson_org}),<br class="mb_only"/><span class="bold">${second_chairperson}</span>(${second_chairperson_org})`;
-        // }
-		if(t.chairpersons){
-			chairpersonHtml = `<span class="bold">${t.chairpersons}</span>`;
+		if(t.idx != 10 && t.idx != 20 && t.idx != 40 && t.idx != 65){
+			if(t.chairpersons){
+				chairTxt= "Chairperson :";
+				chairpersonHtml = `<span class="bold">${t.chairpersons}</span>`;
+			}
+			
+			else{
+				chairTxt= "Chairperson :";
+				chairpersonHtml = `Chairperson :<span class="bold">TBD</span>`;
+			}
 		}else{
-			chairpersonHtml = `<span class="bold">TBD</span>`;
+			chairpersonHtml = `<span class="bold"></span>`;
 		}
+		
 
         /**speaker가 있을 경우 */
-        if(t.speaker){
+        if(t.speaker && t.program_idx){
              /**speaker가 한 명일 경우 */
             if(t.speaker?.split(',').length <= 3){
                 contents.innerHTML =  `
@@ -1091,18 +1085,7 @@ function writeModal(data){
             /**speaker가 여러 명일 경우 */
             else if(t.speaker?.split(',').length > 3){
                 /***240222 hyojun수정 심사위원일경우 시간 X***/
-                if(t.contents_title =="심사위원")
-                {
-                    contents.innerHTML =  `
-                                        <div class="content_time"></div>
-                                        <div>${t.contents_title}</div>
-                                        <div class="content_1 content_person">
-                                            <p>${t.speaker}</p>
-                                        </div>
-                                    `
-                }
-                else
-                {
+              
                     contents.innerHTML =  `
                                         <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
                                         <div>${t.contents_title}</div>
@@ -1110,11 +1093,12 @@ function writeModal(data){
                                             <p>${t.speaker}</p>
                                         </div>
                                     `
-                }
+                
             }
+			contentsWrap.append(contents)
         }
          /**speaker가 없을 경우 */
-        else{
+        else if(!t.speaker && t.program_idx){
             contents.innerHTML =  `
                                     <div class="content_time">${t.contents_start_time}-${t.contents_end_time}</div>
                                     <div>${t.contents_title}</div>
@@ -1122,8 +1106,11 @@ function writeModal(data){
                                         <p> </p>
                                     </div>
                                 `
-        }
-        contentsWrap.append(contents)
+			contentsWrap.append(contents)
+        }else if(!t.program_idx){
+			
+		}
+       
     })
 
     modalTitle.innerText = subTitle;
@@ -1135,6 +1122,7 @@ function writeModal(data){
 	//[240607] sujeong / 학회팀 요청 모달 오픈 & 좌장 미확정 주석처리
 	//[240628] sujeong / 학회팀 요청 주석 풀기
     modalChairPerson.innerHTML = chairpersonHtml;
+	modalChair.innerHTML = chairTxt;
     modalPreview.innerText = preview;
 }
 

@@ -154,6 +154,18 @@ if (empty($_SESSION["USER"])) {
 	<div class="inner">
 		<div class="contents_box">
 			<div class="app_contents_wrap type2">
+				<div class="gift_wrap">
+					<div class="gift_top">
+						Mandatory Requirement<br/>
+						For Gift Exchange
+					</div>
+					<div class="gift_bottom">
+						<div class="jomes">JOMES <p>1</p></div>
+						<div class="diamond">Diamond <p>1</p></div>
+						<div class="platinum">Platinum <p>3</p></div>
+						<div class="gold">Gold <p>6</p></div>
+					</div>
+				</div>
                 <ul class="stamp_list">
 					<?php
 						foreach($boothList as $k => $v){
@@ -166,34 +178,53 @@ if (empty($_SESSION["USER"])) {
 							$isCrown = $totalReqCnt > 0 && $totalReqCnt == $reqCnt ? true : false;
 							
 					?>
-						<li class="<?=$boothInfo["medal_class"]?>">
+						<li class="<?= $boothInfo['medal_class'] ?> <?= $isCrown ? 'open' : '' ?>">
 							<p><?=$boothInfo["name"]?></p>
 							<?php if($isCrown){?>
-								<i><img src="./img/crown.png" class="info_icon"/></i>
+								<!-- <i><img src="./img/crown.png" class="info_icon"/></i> -->
 							<?php }?>
-							<div class="<?=$boothInfo["name"]?>"><?=number_format($v['cnt'])?></div>
+							<div class="<?=$boothInfo["name"]?>"><h4><?=number_format($v['cnt'])?></h4></div>
 						</li>
 					<?php
 						}
 					?>
 
                 </ul>
-				<div class="stamps_crown_info clearfix">
+				<!-- <div class="stamps_crown_info clearfix">
 					<img src="./img/crown.png" class="info_icon"/>
 					<p class="info_text">Once you have visited the required number of booths, the crown will be displayed.</p>
-				</div>
-                <div class="stamps_count">
-                    <!-- <p>Remaining Booths for Lucky Draw <p><span><?= number_format($myStampCnt) ?></span></p></p> -->
+				</div> -->
+               <!-- <div class="stamps_count">
+                     <p>Remaining Booths for Lucky Draw <p><span><?= number_format($myStampCnt) ?></span></p></p> 
                     <p>Remaining Booths for Lucky Draw <p><span class="lunck_count"></span></p></p>
-                </div>
+                </div>-->
+				<div class="lucky_box">
+					<div class="lucky_ball lunck_count"></div>
+					<div class="lucky_top">
+						Remaining Booths<br/>
+						for Lucky Draw
+					</div>
+					<div class="lucky_bottom">
+						<div class="require_booth">
+							<div class="jomes">JOMES <p>1</p></div>
+							<div class="diamond">Diamond <p>1</p></div>
+							<div class="platinum">Platinum <p>3</p></div>
+							<div class="gold">Gold <p>6</p></div>
+						</div>
+						<div>+</div>
+						<div class="red_box">
+							<span class="silver_t">Silver</span> & <span class="bronze_t">Bronze</span> more than 5
+						</div>
+					</div>
+				</div>
 			</div> 
 		</div>
 	</div>
 	<div class="qr_code_fixed">
 		<a href="javascript:;">	
-		<p class="qr_code_fixed_txt">Scan the <span>QR CODE</span> at each booth.</p>
+			<p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each booth.</p>
 			<!-- <p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each loacation</p> -->
-			<p class="qr_code_fixed_txt">“Click here to scan!”</p>
+			<!-- <p class="qr_code_fixed_txt">“Click here to scan!”</p> -->
 			<div class="qr_code_fixed_wrap">SCANNER</div>
 		</a>	
 	</div>
@@ -213,14 +244,14 @@ if (empty($_SESSION["USER"])) {
 	function getLuckyNum(){
 		let luckyCount = 0;
 		//필수 스탬프 숫자
-		const requireNum = 10;
+		const requireNum = 11;
 		//태깅한 필수 스탬프 숫자
 		const checkRequireNum = Number(diamond.innerText) +  Number(platinum.innerText) +  Number(gold.innerText);
 		//필수에서 부족한 숫자
 		luckyCount += requireNum - checkRequireNum;
 
 		//선택 스탬프 숫자
-		const silverNum = 6;
+		const silverNum = 5;
 		//태깅한 선택 스탬프 숫자
 		const checkSilverNum =  Number(sliver.innerText) + Number(bronze.innerText);
 
@@ -236,10 +267,21 @@ if (empty($_SESSION["USER"])) {
 		luckyCountTag.innerText = luckyCount;
 	}
 
+
+
 </script>
 <script>
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");
+		$(".app_footer_img").addClass("footer_gray");
+
+		if($('.Silver').text() == 6){
+			$('.Silver').addClass("open");
+		}
+
+		if($('.Bronze').text() == 9){
+			$('.Bronze').addClass("open");
+		}
     })
 </script>
 

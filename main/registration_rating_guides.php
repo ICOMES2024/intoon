@@ -68,30 +68,30 @@
 					<tbody>
 						<tr>
 							<td>대한의사협회</td>
-							<td>최대 3평점<span class="purple_txt bold">(예정)</span></td>
-							<td>최대 6평점<span class="purple_txt bold">(예정)</span></td>
-							<td>최대 6평점<span class="purple_txt bold">(예정)</span></td>
+							<td>최대 3평점</td>
+							<td>최대 6평점</td>
+							<td>최대 6평점</td>
 						</tr>
 						<tr>
 							<td>내과전공의 외부학술회의(학술대회)</td>
 							<td>없음</td>
-							<td colspan="2">최대 2평점<span class="purple_txt bold">(예정)</span></td>
+							<td colspan="2">최대 2평점</td>
 						</tr>
 						<tr>
 							<td>대한비만학회(비만전문인정의) <br/>*별도 신청 없음. 모든 참석자 제공</td>
 							<!-- <td>대한비만학회(비만전문인정의) <br/><span class="font_small">*별도 신청 없음</span></td> -->
-							<td>최대 1평점<span class="purple_txt bold">(예정)</span></td>
-							<td>최대 6평점<span class="purple_txt bold">(예정)</span></td>
-							<td>최대 6평점<span class="purple_txt bold">(예정)</span></td>
+							<td>최대 3평점</td>
+							<td>최대 6평점</td>
+							<td>최대 6평점</td>
 						</tr>
 						<tr>
 							<td>한국영양교육평가원 임상영양사 <br/>전문연수교육(CPD)</td>
-							<td colspan="3">5평점<span class="purple_txt bold">(예정)</span> <br/><span class="font_small">* 5시간 이상 참석 필수</span></td>
+							<td colspan="3">5평점<br/><span class="font_small">* 5시간 이상 참석 필수</span></td>
 						</tr>
 						<tr>
 							<td>대한운동사협회</td>
 							<td>없음</td>
-							<td colspan="2">40평점<span class="purple_txt bold">(예정)</span><br/><span class="font_small">* 부분 평점 없음. 6시간 참석 필수</span></td>
+							<td colspan="2">40평점<br/><span class="font_small">* 부분 평점 없음. 6시간 참석 필수</span></td>
 						</tr>
 						<tr>
 							<td>대한내과학회 분과전문의 자격갱신</td>

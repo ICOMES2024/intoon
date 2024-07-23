@@ -2577,7 +2577,7 @@ function gradeBoothInfo($grade){
 		return array(
 			"name"=>"JOMES",
 			"class"=>"green_bg06",
-			"medal_class"=>"poster"
+			"medal_class"=>"jomes"
 		);
 	}
 	if($grade == 1){		// Diamond
