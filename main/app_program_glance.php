@@ -224,7 +224,7 @@
 								</td>
 								<td colspan="3" class="keynote_bg pointer" name="keynote_lecture_1" data-id="14">
 									Keynote Lecture 1
-									<p class="">A Novel Platform to Identify Hypothalamic Targets Regulating Energy Balance and Metabolism</p>
+									<p class="">SF-1 Targets in the Hypothalamus: Novel Pathways Regulating Energy Balance</p>
 									<p>Joel K. Elmquist</p>
 									<p>UT Southwestern Medical Center, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -339,7 +339,7 @@
 								</td>
 								<td class="special_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
 									Special Scientific Session 1
-									<p class="">Management of Obesity from Cardiometabolic Perspective</p>
+									<p class="">Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!</p>
 									<p>Ania Jastreboff</p>
 									<p>Yale University, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -620,7 +620,7 @@
 								</td>
 								<td class="special_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
 									Special Scientific Session 2
-									<!-- <p class="bold">Diversity in the Definition of Obesity</p> -->
+									<p class="">Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective</p>
 									<p>Soo Lim</p>
 									<p>Seoul National University, Korea</p>
 									<input type="hidden" name="e" value="room1">

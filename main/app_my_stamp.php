@@ -172,7 +172,7 @@
 <!-- 					<button type="button" class="refresh_btn"><img src="./img/icons/icon_refresh.png" alt="새로고침"></button> -->
 				</div>
 			</div>
-			<div class="sponsor_grade">
+			<div class="sponsor_grade" style="transform: translateY(-16px);">
 				<?php
 					// [240314] hub 스탬프 투어 소스 코드 !@#$^
 					// image 서버로 url 수정 필요 !!!
