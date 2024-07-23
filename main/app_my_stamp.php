@@ -153,11 +153,13 @@
 <section class="container app_version app_my_stamp">
 	<div class="app_title_box">
 		<h2 class="app_title">STAMP TOUR<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-		<ul class="app_menu_tab langth_3">
-			<li><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
-			<li class="on"><a href="./app_my_stamp.php">My Stamp</a></li>
-			<li><a href="./app_stamp_list.php">Stamp List</a></li>
-		</ul>
+		<div class="app_menu_box">
+			<ul class="app_menu_tab langth_3">
+				<li><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
+				<li class="on"><a href="./app_my_stamp.php">My Stamp</a></li>
+				<li><a href="./app_stamp_list.php">Stamp List</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="inner">
 		<input type="hidden" name="mn" value="<?=$_SESSION["USER"]["idx"]?>"/>
@@ -165,7 +167,8 @@
 			<div class="stamp_count">
 				<div class="stamp_collect">
 					<!-- [240419] sujeong / 학회팀 요청 주석 /총 스탬프 카운트 -->
-					<!-- <p class="f_bold">Count of stamps collected: <span class="f_inherit red_txt"><?= number_format($myStampCnt) ?></span></p> -->
+					<p class="f_bold">Count of stamps collected</p> 
+					<h4 class=""><?= number_format($myStampCnt) ?></h4>
 <!-- 					<button type="button" class="refresh_btn"><img src="./img/icons/icon_refresh.png" alt="새로고침"></button> -->
 				</div>
 			</div>
@@ -188,16 +191,24 @@
 						$boothType = $k;
 
 						$boothInfo = gradeBoothInfo($boothType);
-			
-						echo "<p class='grade_title ".$boothInfo["class"]."'>".$boothInfo["name"]."</p>";
-						echo "<ul class='grade_wrap length_".count($v)."'>";
+
+
+						echo "<p class='grade_title app ".$boothInfo["class"]."'>".$boothInfo["name"]."</p>";
+						echo "<ul class='grade_wrap app length_".count($v)."'>";
 
 						for($a = 0; $a < count($v); $a++){
 							$booth = $v[$a];
 							$companyName = $booth["name"];
 							$complate = $booth["is_stamp"] ?? 0;
-
-							echo "<li class='e_booth ".($complate == 1 ? "complete_stamp" : "")."' data-id='".$booth["idx"]."'>";
+								
+							$booth_num = 0;					
+							if($booth["idx"] < 10){
+								$booth_num = 0 . $booth["idx"];
+							}else{
+								$booth_num = $booth["idx"];
+							}
+						
+							echo "<li class='e_booth ".($complate == 1 ? "complete_stamp" : "")."' data-id='".$booth_num."'>";
 				?>
 								<a href="javascript:;" class="<?=strtolower($companyName)?>" style="background-image: url('<?=imageUrlManager($booth["logo_card_path"])?>')"><?=$companyName?></a>
 				<?php
@@ -222,132 +233,14 @@
 				?>
 					<!-- 부스 정보가 없을 때 노데이터 처리 -->
 				<?php }?>
-
-				<!--
-				<p class="grade_title pink_bg">Diamond</p>
-				<ul class="grade_wrap length_1">
-					<li>
-						<a href="javascript:;" class="alvogen">Alvogen</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-				</ul>
-				<p class="grade_title green_bg05">Platinum</p>
-				<ul class="grade_wrap length_1">
-					<li class="complete_stamp">
-						<a href="javascript:;" class="novo_nordisk">novo nordisk</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-				</ul> 
-				<p class="grade_title gold_bg">Gold</p>
-				<ul class="grade_wrap length_3">
-					<li>
-						<a href="javascript:;" class="handok">HANDOK</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="yuhan">YUHAN</a>
-						<div class="location on">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="dong_a">Dong-A ST</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="msd">MSD</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li class="small">
-						<a href="javascript:;" class="inno_n">inno N</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li class="small">
-						<a href="javascript:;" class="hanmi_pharm">Hanmi Pharm</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="chong_kun_dang">Chong Kun Dang</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="daewoong">DAEWOONG</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="astra_zeneca">Astra Zeneca</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-				</ul>
-				<p class="grade_title silver_bg">Silver</p>
-				<ul class="grade_wrap length_4">
-					<li>
-						<a href="javascript:;" class="lg_chem">LG Chem</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="celltrion">CELLTRION</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="gc_biopharma">GC Niopharma</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="sanofi">sanofi</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-				</ul>
-				<p class="grade_title bronze_bg">Bronze</p>
-				<ul class="grade_wrap length_5">
-					<li>
-						<a href="javascript:;" class="aju_pharm">AJU PHARM</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="kwangdong">Kwangdong</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="daiichi_sankyo">Daiichi Sankyo</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="organon">ORGANON</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="boryung">BORYUNG</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="boehringer">Boehringer INgelheim</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="dalimbiotech">dalimbiotech</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li class="small">
-						<a href="javascript:;" class="daewon">Daewon</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li class="small">
-						<a href="javascript:;" class="lilly">Lilly</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-					<li>
-						<a href="javascript:;" class="jw_pharm">jw Pharmaceutical</a>
-						<div class="location">Location: Lobby, 3F<br>Booth No. 13 ~ 15</div>
-					</li>
-				</ul>
-				-->
 			</div>
 		</div>
 	</div>
 	<div class="qr_code_fixed">
 		<a href="javascript:;">	
-			<p class="qr_code_fixed_txt">Scan the <span>QR CODE</span> at each booth.</p>
+			<p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each booth.</p>
 			<!-- <p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each loacation</p> -->
-			<p class="qr_code_fixed_txt">“Click here to scan!”</p>
+			<!-- <p class="qr_code_fixed_txt">“Click here to scan!”</p> -->
 			<div class="qr_code_fixed_wrap">SCANNER</div>
 		</a>	
 	</div>
@@ -363,6 +256,16 @@
 <script>
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");
+		$(".app_footer_img").addClass("footer_gray");
     })
+
+	const completeList = document.querySelectorAll('.complete_stamp');
+
+	completeList.forEach((completed) => {
+		const id = completed.dataset.id;
+		console.log()
+		completed.children[0].style.backgroundImage = `url('https://image.webeon.net/icomes2024/app_sponsor/2024_logo${id}-4.png')`;
+	});
+
 </script>
 <?php include_once('./include/app_footer.php');?>

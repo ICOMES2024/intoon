@@ -78,8 +78,8 @@ section.container.overview {padding-bottom: 200px; /*326px;*/}
 /*organizing*/
 .organizing .fixed_table *{white-space: normal;}
 section.container.organizing {padding-bottom: 190px;}
-.organizing .cat1 th{ /* background-color: rgba(16,191,153,0.4); */ background-color:#f4f4f4; /*text-align: center;*/ border-right: 0.4px solid #B2B2B2;}
-.organizing .cat2 th{background-color: #f4f4f4; border-right: 0.4px solid #B2B2B2;}
+.organizing .cat1 th{ /* background-color: rgba(16,191,153,0.4); */ background-color:#f4f4f4; /*text-align: center;*/ border-right: 1px solid #B2B2B2;}
+.organizing .cat2 th{background-color: #f4f4f4; border-right: 1px solid #B2B2B2;}
 /*.organizing .cat2 th{background-color: rgba(255,235,0,0.4);}*/
 /* .organizing .c_table2 th, .organizing .c_table2 td {padding: 9px 4px; text-align:center;} */
 .organizing .c_table2 th, .organizing .c_table2 td {padding: 9px 28px; text-align:center;}
@@ -2665,7 +2665,7 @@ section.coming img {width: 100%;}
 	opacity: 0.45;
 	color: #FFF;
 	font-weight: 600;
-	border-bottom: 0.4px solid #FFF !important;
+	border-bottom: 1px solid #FFF !important;
 }
 .abstract_submission_award .poster_th {
 	background-color:#4D0086;
@@ -2989,4 +2989,15 @@ section.coming img {width: 100%;}
 	.login_form span.pw_txt{
 		margin-right: 12px;
 	}
+}
+
+.footer_gray{
+	background: #F1F1F1;
+}
+
+.app_contents_wrap .guide_img {
+	width: 100%;
+    position: absolute;
+    left: 0;
+    padding-bottom: 100px;
 }
