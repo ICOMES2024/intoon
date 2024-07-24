@@ -1340,6 +1340,7 @@ h2.app_title {width: 100%; font-size: 16px; background: #CC3366; text-align: cen
 .app_menu_box .app_menu_tab li {width:calc(25%); text-align: center; }
 .app_menu_box .app_menu_tab li a {width:100%; height: 100%; font-size: 14px; padding:8px; display:flex; align-items:center; justify-content:center; background-color:#F3F3F3; color: #989898; border-radius: 32px;}
 .app_menu_box .app_menu_tab li.on a {color:#FFF; font-weight: bold; background: #592583;}
+.app_menu_box .app_menu_tab li.on.event a {color:#FFF; font-weight: bold; background: #FBB03B;}
 .app_menu_box .app_menu_tab.langth_2 li {width:50%;}
 .app_menu_box .app_menu_tab.langth_3 li {width:calc(100% / 3);}
 

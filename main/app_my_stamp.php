@@ -155,22 +155,22 @@
 		<h2 class="app_title">STAMP TOUR<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		<div class="app_menu_box">
 			<ul class="app_menu_tab langth_3">
-				<li><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
-				<li class="on"><a href="./app_my_stamp.php">My Stamp</a></li>
-				<li><a href="./app_stamp_list.php">Stamp List</a></li>
+				<li class="event"><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
+				<li class="on event"><a href="./app_my_stamp.php">Stamp List</a></li>
+				<li class="event"><a href="./app_stamp_list.php">My Stamp</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="inner">
+	<div class="inner" style="padding-top: 30px !important;">
 		<input type="hidden" name="mn" value="<?=$_SESSION["USER"]["idx"]?>"/>
 		<div class="contents_box">
 			<div class="stamp_count">
-				<div class="stamp_collect">
-					<!-- [240419] sujeong / 학회팀 요청 주석 /총 스탬프 카운트 -->
+				<!-- [240419] sujeong / 학회팀 요청 주석 /총 스탬프 카운트 -->
+				<!-- <div class="stamp_collect">
 					<p class="f_bold">Count of stamps collected</p> 
 					<h4 class=""><?= number_format($myStampCnt) ?></h4>
-<!-- 					<button type="button" class="refresh_btn"><img src="./img/icons/icon_refresh.png" alt="새로고침"></button> -->
-				</div>
+				</div> -->
+				<!-- 					<button type="button" class="refresh_btn"><img src="./img/icons/icon_refresh.png" alt="새로고침"></button> -->
 			</div>
 			<div class="sponsor_grade" style="transform: translateY(-16px);">
 				<?php
