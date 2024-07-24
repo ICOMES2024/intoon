@@ -72,7 +72,15 @@
 		$response = curl_exec($ch);
 		$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		curl_close($ch);
-		if($status_code == 200) { //정상
+		
+		echo '$response ' . $response;
+		echo '$status_code' .$status_code;
+
+		$dataObject = json_decode($response);
+
+		$code = $dataObject->code;
+
+		if($code == 200) { //정상
 			return_value(200, "ok", ["value" => $response, "ksola_member_check" => $data['id']]);
 		}
 		else {

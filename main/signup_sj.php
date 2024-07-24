@@ -419,7 +419,7 @@
 									
 									<span class="red_t">* If you are not a member of KSSO, please select the non-member option.</span>
 									<!-- 외국 사이트 회원가입 -->
-									<a href=""  class="join_btn">Join KSSO as a Member</a>
+									<a href="http://eng.kosso.or.kr/account/join_1.php"  class="join_btn">Join KSSO as a Member</a>
 									<div class="flex_top_between mt20">
 										<div><p class="bold underline">For KSSO members</p></div>
 										<div>
@@ -457,7 +457,7 @@
 												</label>
 											</div>
 											<!-- 외국 사이트 id/pw 찾기 -->
-											<a href="" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
+											<a href="http://eng.kosso.or.kr/account/find_info.php" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
 										</div>
 										
 							
@@ -700,6 +700,8 @@
 							<input type="radio" class="new_radio" name="mo_user1" id="mo_user4">
 							<label for="mo_user4"><i></i>Non-Member</label>
 							<span class="red_t"><br/>* If you are not a member of KSSO,<br/>please select the non-member option.</span>
+							<!-- 외국 사이트 회원가입 -->
+							<a href="http://eng.kosso.or.kr/account/join_1.php" class="join_btn" target="_blank">Join KSSO as a Member</a>
 							<div class=" mt20">
 										<div><p class="bold underline">For KSSO members</p></div>
 										<div>
@@ -739,7 +741,7 @@
 									I agree to the collection of personal information by third parties.
 								</label>
 							</div>
-							<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
+							<a href="http://eng.kosso.or.kr/account/join_1.php" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
 						</div>
 						<div>
 			
@@ -2183,7 +2185,7 @@ function mo_non_kor_api(){
 	};
 
 	$.ajax({
-		url			: 'signup_server.php',
+		url			: 'signup_api_eng.php',
 		type		: "POST",
 		data		: data,
 		dataType	: "JSON",
@@ -2354,7 +2356,7 @@ function non_kor_api(){
 	};
 
 	$.ajax({
-		url			: 'signup_server.php',
+		url			: 'signup_api_eng.php',
 		type		: "POST",
 		data		: data,
 		dataType	: "JSON",
