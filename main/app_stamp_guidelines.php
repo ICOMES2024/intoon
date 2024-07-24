@@ -7,10 +7,10 @@
 		<h2 class="app_title">STAMP TOUR<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		<div class="app_menu_box">
 			<ul class="app_menu_tab langth_3">
-				<li class="on"><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
-				<li><a href="./app_my_stamp.php">My Stamp</a></li>
+				<li class="on event"><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
+				<li class="event"><a href="./app_my_stamp.php">Stamp List</a></li>
 				<!-- [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ -->
-				<li><a href="./app_stamp_list.php">Stamp List</a></li>
+				<li class="event"><a href="./app_stamp_list.php">My Stamp</a></li>
 				<!-- <li><a href="./app_tour_map.php">Tour Map</a></li> -->
 			</ul>
 		</div>

@@ -326,7 +326,7 @@ echo '<script type="text/javascript">
                                                                     <td>18:40-19:10</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Se Hee Min</p>(Asan Medical Center, Korea)
+                                                                        <p class="bold">Se Hee Min</p>(Ulsan University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -400,7 +400,7 @@ echo '<script type="text/javascript">
                                                                     MASLD and Cardio-Renal-Metabolic Syndrome
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Masato Furuhashi</p>(Sapporo Medical University School of Medicine, Japan)
+                                                                        <p class="bold">Masato Furuhashi</p>(Sapporo Medical University, Japan)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -469,7 +469,7 @@ echo '<script type="text/javascript">
                                                                     Effects of Exercise Intervention in Obese Mice with Steatotic Liver Disease
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Chia-Wen Lu</p>(National Taiwan Sport University, Taiwan)
+                                                                        <p class="bold">Chia-Wen Lu</p>(National Taiwan University Hospital, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -478,7 +478,7 @@ echo '<script type="text/javascript">
                                                                     Therapeutic Approaches for Non-Alcoholic Steatohepatitis Utilizing Diverse Metabolites
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Eun Hee Koh</p>(University of Ulsan College of Medicine, Korea)
+                                                                        <p class="bold">Eun Hee Koh</p>(University of Ulsan, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -552,7 +552,7 @@ echo '<script type="text/javascript">
                                                                     <td>18:10-18:40</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jung Hwan Park</p>(Hanyang University Seoul Hospital, Korea)
+                                                                        <p class="bold">Jung Hwan Park</p>(Hanyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -691,7 +691,7 @@ echo '<script type="text/javascript">
                                                                     Temporal Trends of the Prevalence of Abdominal Obesity and Metabolic Syndrome in Korean Children and Adolescents between 2007 and 2020
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jieun Lee</p>(Inje University Ilsan Paik Hospital, Korea)
+                                                                        <p class="bold">Jieun Lee</p>(Inje University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1418,7 +1418,7 @@ and Metabolism
                                                                     Obesity Related Health Disparities - A Specific Case of Low- and Middle-Income Countries
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Monika Chaudhary</p>(IIHMR University,India)
+                                                                        <p class="bold">Monika Chaudhary</p>(Johns Hopkins Gupta-Klinsky India Institute, India)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2097,7 +2097,7 @@ and Metabolism
                                                 <td>12:00-13:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
-                                                    <p><span class="bold">Chairperson : Gyeong-Su Kim</span> (Catholic University of Korea, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Gyeong-Su Kim</span> (The Catholic University of Korea, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -2779,7 +2779,7 @@ and Metabolism
                                                                     Suggestions for Integrating Digital Therapeutics into Conventional Medical Settings
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Min Kyu Han</p>(Kakao Healthcare, Korea)
+                                                                        <p class="bold">Min Kyu Han</p>(Kakao Healthcare Corp., Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3297,7 +3297,7 @@ and Metabolism
                                                                     Exploring the Landscape of Telenutrition in Obesity Management
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Melissa Ventura Marra</p>(West Virginia University, USA)
+                                                                        <p class="bold">Melissa Ventura-Marra</p>(West Virginia University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3705,7 +3705,7 @@ and Metabolism
                                                                     Bariatric Surgery and its Impact on Cancer Risk Reduction
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Moon-Won Yoo</p>(Asan Medical Center, Korea)
+                                                                        <p class="bold">Moon-Won Yoo</p>(Ulsan University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3876,7 +3876,7 @@ and Metabolism
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Darae Kim</p>(Samsung Medical Center, Korea)
+                                                                        <p class="bold">Darae Kim</p>(Sungkyunkwwan University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3901,7 +3901,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 2</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Jung Hwan Park</span> (Hanyang University Seoul Hospital, Korea)
+                                                        <span class="bold">Chairpersons : Jung Hwan Park</span> (Hanyang University, Korea)
                                                         , <br><span class="bold">Jun Hwa Hong</span> (Eulji university, Korea)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
@@ -4004,7 +4004,7 @@ and Metabolism
                                                                     A FAQ-Based Approach to Prescription of Combination Phentermine Plus Topiramate
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jee Hyun Kang</p>(Konyang University Hospital, Korea)
+                                                                        <p class="bold">Jee-Hyun Kang</p>(Konyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4063,7 +4063,7 @@ and Metabolism
                                                                     ACTION Teens: Barriers for Adolescents Living with Obesity to Weight Management in the UK
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jason Halford</p> (European Association for the Study of Obesity)
+                                                                        <p class="bold">Jason Halford</p> (University of Leeds, UK)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4229,7 +4229,7 @@ and Metabolism
                                                 <td>07:30-08:20</td>
                                                 <td>
                                                     <p class="font_20 bold">Breakfast Symposium 4</p>
-                                                    <p><span class="bold">Chairperson : Sung Ho Han</span> (Dong-A University Hospital, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Sung Ho Han</span> (Dong-A University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -4635,7 +4635,7 @@ and Metabolism
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4928,7 +4928,7 @@ and Metabolism
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">Incretin-Based Therapy—Will It Be Better Than Bariatric Surgery Alone</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">McGowan Barbara</p>(Guy's and St Thomas' NHS Foundation Trust, UK)
+                                                                        <p class="bold">Barbara McGowan</p>(Guy's and St Thomas' NHS Foundation Trust, UK)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5429,7 +5429,7 @@ and Metabolism
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Sang Mo Hong</p>(Hanyang University Guri Hospital, Korea) -->
+                                                                        <p class="bold">Sang Mo Hong </p>(Hanyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6089,7 +6089,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                  
+                                                                    Functional Supplements: Their Fat Controls and Molecular Mechanisms
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yuri Kim</p>(Ewha Womans University, Korea)
@@ -6101,7 +6101,7 @@ and Metabolism
                                                                         Optimal Diets for Body Weight Management
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yang Hu</p>(Harvard University, USA)
+                                                                        <p class="bold">Yang Hu</p>(Harvard T.H. Chan School of Public Health, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6991,7 +6991,7 @@ and Metabolism
                                                                     Life Style Modification with CGM, How To Do?
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sun-Joon Moon</p>(Kangbuk Samsung Hospital, Korea)
+                                                                        <p class="bold">Sun-Joon Moon</p>(Sungkyunkwan University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -7000,7 +7000,7 @@ and Metabolism
                                                                     The Expanding Role of CGM in Wellness: From Glycemic Control to Holistic Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University Anam Hospital, Korea)
+                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -7025,7 +7025,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 4</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Oh Yoen Kim</span> (Dong A University, Korea)
+                                                        <span class="bold">Chairpersons : Oh Yoen Kim</span> (Dong-A University, Korea)
                                                       , <br><span class="bold">Bo-Yeon Kim</span> (Soonchunhyang University, Korea)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->

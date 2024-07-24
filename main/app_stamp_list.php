@@ -145,9 +145,9 @@ if (empty($_SESSION["USER"])) {
 		<h2 class="app_title">STAMP TOUR<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		<div class="app_menu_box">
 			<ul class="app_menu_tab langth_3">
-				<li><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
-				<li><a href="./app_my_stamp.php">My Stamp</a></li>
-				<li class="on"><a href="./app_stamp_list.php">Stamp List</a></li>
+				<li class="event"><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
+				<li class="event"><a href="./app_my_stamp.php">Stamp List</a></li>
+				<li class="on event"><a href="./app_stamp_list.php">My Stamp</a></li>
 			</ul>
 		</div>
 	</div>
@@ -156,8 +156,7 @@ if (empty($_SESSION["USER"])) {
 			<div class="app_contents_wrap type2">
 				<div class="gift_wrap">
 					<div class="gift_top">
-						Mandatory Requirement<br/>
-						For Gift Exchange
+						Mandatory Requirement <br/>for Gift Exchange
 					</div>
 					<div class="gift_bottom">
 						<div class="jomes">JOMES <p>1</p></div>
@@ -201,8 +200,7 @@ if (empty($_SESSION["USER"])) {
 				<div class="lucky_box">
 					<div class="lucky_ball lunck_count"></div>
 					<div class="lucky_top">
-						Remaining Booths<br/>
-						for Lucky Draw
+						Remaining Booths for Lucky Draw
 					</div>
 					<div class="lucky_bottom">
 						<div class="require_booth">
@@ -276,11 +274,11 @@ if (empty($_SESSION["USER"])) {
 		$(".app_footer_img").addClass("footer_gray");
 
 		if($('.Silver').text() == 6){
-			$('.Silver').addClass("open");
+			$('.silver').addClass("open");
 		}
 
 		if($('.Bronze').text() == 9){
-			$('.Bronze').addClass("open");
+			$('.bronze').addClass("open");
 		}
     })
 </script>
