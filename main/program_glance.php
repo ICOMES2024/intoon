@@ -1055,12 +1055,14 @@ function writeModal(data){
         contents.className = "content";
 
 		if(t.idx != 10 && t.idx != 20 && t.idx != 40 && t.idx != 65){
-			if(t.chairpersons){
+			if(t.chairpersons && t.chairpersons.includes('<br/>')){
+				chairTxt= "Chairpersons :";
+				chairpersonHtml = `<span class="bold">${t.chairpersons}</span>`;
+			}else if(t.chairpersons && !t.chairpersons.includes('<br/>')){
 				chairTxt= "Chairperson :";
 				chairpersonHtml = `<span class="bold">${t.chairpersons}</span>`;
 			}
-			
-			else{
+			else if(!t.chairpersons){
 				chairTxt= "Chairperson :";
 				chairpersonHtml = `Chairperson :<span class="bold">TBD</span>`;
 			}

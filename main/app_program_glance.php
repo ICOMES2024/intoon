@@ -2,6 +2,7 @@
 	include_once('./include/head.php'); 
 	// HUBDNCHYJ : app 일 경우 전용 헤더 app_header 사용필요 
 	$session_user = $_SESSION['USER'] ?? NULL;
+	//$session_device = 
 	$session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
 
 	include_once('./include/app_header.php');
@@ -41,10 +42,9 @@
     <div class="inner">
         <div class="program_wrap section">
             <div class="scroll_table">
-				<!-- HUBDNCHYJ : App 일때 하위 마크업 주석처리 필요 -->
-				<div class="program_table_wrap">
-					<p class="text_r bold mb10">*KST (UTC+9)</p>
-					<table class="program_table main-table">
+				<p class="text_r bold mb10">*KST (UTC+9)</p>
+				<div class="program_table_wrap" id="screen">
+					<table class="program_table main-table" id="program_table">
 						<colgroup>
 							<col class="program_time">
 							<col class="program_first_col">
@@ -69,7 +69,7 @@
 							</tr>
 						</thead>
 						<!---------- DAY 1 ---------->
-						<tbody name="day" class="day_tbody day_1 app">
+						<tbody name="day" class="day_tbody day_1 app day1">
 							<tr>
 								<td>
 									<div class="colons_div">15:00-16:30</div>
@@ -190,7 +190,7 @@
 								</th>
 							</tr>
 						</thead>
-						<tbody name="day" class="day_tbody day_2 app">
+						<tbody name="day" class="day_tbody day_2 app day2">
 							<tr>
 								<td>
 									<div class="colons_div">07:30-08:20</div>
@@ -501,7 +501,7 @@
 								</th>
 							</tr>
 						</thead>
-						<tbody name="day" class="day_tbody day_3 app">
+						<tbody name="day" class="day_tbody day_3 app day3">
 							<tr>
 								<td>
 									<div class="colons_div">07:30-08:20</div>
@@ -901,7 +901,6 @@ $(document).ready(function() {
 		window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
 	}
 
-
 	/*$(window).resize(function(){
 		if ($(window).width() <= 480) {
 			var table_width = 1200 * 0.71;
@@ -944,98 +943,394 @@ $(document).ready(function() {
 	});
 
 
-	// Program At a Glance 줌 스크립트
+// 	Program At a Glance 줌 스크립트
+/**기존 코드 -> APP에서 확대 축소 속도가 느림 */
+// 	var height_array = [];
+// 	var tbody_height;
+// 	var table_width = $(".program_table").outerWidth();
 
-	var height_array = [];
-	var tbody_height;
-	var table_width = $(".program_table").outerWidth();
+// 	$(".program_table tbody").each(function(){
+// 		tbody_height = $(this).outerHeight();
+// 		height_array.push(tbody_height)
 
-	$(".program_table tbody").each(function(){
-		tbody_height = $(this).outerHeight();
-		height_array.push(tbody_height)
+// 		$(".app_tab.glance li").click(function(){
+// 			var i = $(this).index()-1;
+// 			$(".program_table").css({"width":"auto", "height":"auto"})
+// 			// $(".program_table").css({"width":table_width, "height":height_array[i]})
+// 			$(".program_table td, .program_table th").css({"font-size":"13px", "line-height":"12px"})
+// 			$(".program_table td p").css({"font-size":"12px", "line-height":"10px"})
 
-		$(".app_tab.glance li").click(function(){
-			var i = $(this).index()-1;
-			$(".program_table").css({"width":"auto", "height":"auto"})
-			// $(".program_table").css({"width":table_width, "height":height_array[i]})
-			$(".program_table td, .program_table th").css({"font-size":"14px", "line-height":"12px"})
-			$(".program_table td p").css({"font-size":"12px", "line-height":"10px"})
+// 			// $(".program_table").trigger("touchmove");
 
-			// $(".program_table").trigger("touchmove");
+// 			//alert(table_width)
+// 			//alert(table_Height)
+// 			//alert(table_font_size)
+// 			//alert(table_font_size_p)
+// 			console.log(height_array[i]);
 
-			//alert(table_width)
-			//alert(table_Height)
-			//alert(table_font_size)
-			//alert(table_font_size_p)
-			console.log(height_array[i]);
+// 		}); 
+// 	});
 
-		}); 
-	});
+// 	//pinch 진행 상태
+// 	let scaling  = false;
+// 	//pinch 초기 거리
+// 	let setDist = 0;
 
-	//pinch 진행 상태
-	let scaling  = false;
-	//pinch 초기 거리
-	let setDist = 0;
+// 	$(document).on("touchstart", ".program_table", function(event){
+// 		//터치 이벤트의 터치 포인트 수가 2개
+// 		if(event.originalEvent.touches.length  === 2){
+// 			scaling  = true;
+// 		}
+// 	})
 
-	$(document).on("touchstart", ".program_table", function(event){
-		//터치 이벤트의 터치 포인트 수가 2개
-		if(event.originalEvent.touches.length  === 2){
-			scaling  = true;
-		}
-	})
+// 	var table_font_size = $(".program_table td").css("font-size");
+// 	var table_font_size_p = $(".program_table td p").css("font-size")
+// 	var table_line_height = $(".program_table td").css("line-height");
 
-	var table_font_size = $(".program_table td").css("font-size");
-	var table_font_size_p = $(".program_table td p").css("font-size")
-	var table_line_height = $(".program_table td").css("line-height");
+// 	//APP 줌 이벤트
+// 	$(document).on("touchmove", ".program_table", function(event){
+// 		if(scaling){
 
-	//APP 줌 이벤트
-	$(document).on("touchmove", ".program_table", function(event){
-		if(scaling){
+// 			//두 점사이 계산
+// 			var dist = Math.hypot(
+// 				event.originalEvent.touches[0].pageX - event.originalEvent .touches[1].pageX,
+// 				event.originalEvent.touches[1].pageY - event.originalEvent.touches[1].pageY
+// 			);
 
-			//두 점사이 계산
-			var dist = Math.hypot(
-				event.originalEvent.touches[0].pageX - event.originalEvent .touches[1].pageX,
-				event.originalEvent.touches[1].pageY - event.originalEvent.touches[1].pageY
-			);
+// 			dist = Math.floor(dist/20);
 
-			dist = Math.floor(dist/20);
+// 			if(setDist == 0) setDist = dist;
 
-			if(setDist == 0) setDist = dist;
+// 			fontSize = $(".program_table td").css("font-size");
+// 			fontSizeP = $(".program_table td p").css("font-size")
+// 			imgWidth = $(".program_table")[0].clientWidth;
+// 			imgHeight = $(".program_table")[0].clientHeight;
+// 			// alert(parseInt(fontSize))
 
-			fontSize = $(".program_table td").css("font-size");
-			fontSizeP = $(".program_table td p").css("font-size")
-			imgWidth = $(".program_table")[0].clientWidth;
-			imgHeight = $(".program_table")[0].clientHeight;
-			// alert(parseInt(fontSize))
-
-			//화면 확대 (이전 거리보다 거리가 멀어질 때)
-			if(setDist < dist){
-				if (parseInt(fontSize) <= 16) {
-					$(this).css("width", 1.1*parseFloat(imgWidth));
-					$(this).css("height", 0.8*parseFloat(imgHeight));
-					$(this).find("td").css({"font-size": 1.1*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
-					$(this).find("th").css({"font-size": 1.1*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
-					$(this).find("td").find("p").css({"font-size": 1.1*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
-					setDist = dist;
-				}
-			} 
+// 			//화면 확대 (이전 거리보다 거리가 멀어질 때)
+// 			if(setDist < dist){
+// 				if (parseInt(fontSize) <= 18) {
+// 					$(this).css("width", 1.1*parseFloat(imgWidth));
+// 					$(this).css("height", 0.8*parseFloat(imgHeight));
+// 					$(this).find("td").css({"font-size": 1.1*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+// 					$(this).find("th").css({"font-size": 1.1*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+// 					$(this).find("td").find("p").css({"font-size": 1.1*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
+// 					setDist = dist;
+// 				}
+// 			} 
 			
-			//화면 축소 (이전 거리보다 거리가 가까워 질때)
-			else if(setDist > dist){
-				if (parseInt(fontSize) >= 8)	{
-					$(this).css("width", 0.9*parseFloat(imgWidth));
-					$(this).css("height", 0.5*parseFloat(imgHeight));
-					$(this).find("td").css({"font-size": 0.9*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
-					$(this).find("th").css({"font-size": 0.9*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
-					$(this).find("td").find("p").css({"font-size": 0.9*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
-					setDist = dist;
-				}
-			}
-		}
-	})
-});
+// 			//화면 축소 (이전 거리보다 거리가 가까워 질때)
+// 			else if(setDist > dist){
+// 				if (parseInt(fontSize) > 13)	{
+// 					$(this).css("width", 0.9*parseFloat(imgWidth));
+// 					$(this).css("height", 0.5*parseFloat(imgHeight));
+// 					$(this).find("td").css({"font-size": 0.9*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+// 					$(this).find("th").css({"font-size": 0.9*parseFloat(fontSize), "line-height": 2+parseFloat(fontSize)+"px"});
+// 					$(this).find("td").find("p").css({"font-size": 0.9*parseFloat(fontSizeP), "line-height": 2+parseFloat(fontSizeP)+"px"});
+// 					setDist = dist;
+// 				}
+// 			}
+// 		}
+// 	})
+// });
 
 
+//GPT - 기존 기능 개선 방향 -> 동작 X
+// var height_array = [];
+//     var tbody_height;
+//     var table_width = $(".program_table").outerWidth();
+
+//     $(".program_table tbody").each(function() {
+//         tbody_height = $(this).outerHeight();
+//         height_array.push(tbody_height);
+//     });
+
+//     $(".app_tab.glance li").click(function() {
+//         var i = $(this).index() - 1;
+//         $(".program_table").css({ "width": "auto", "height": "auto" });
+//         $(".program_table td, .program_table th").css({ "font-size": "13px", "line-height": "12px" });
+//         $(".program_table td p").css({ "font-size": "12px", "line-height": "10px" });
+//         console.log(height_array[i]);
+//     });
+
+//     let scaling = false;
+//     let setDist = 0;
+//     let startX = 0;
+//     let startY = 0;
+//     let translateX = 0;
+//     let translateY = 0;
+//     let isPanning = false;
+//     let requestId = null;
+
+//     function handleTouchStart(event) {
+//         if (event.touches.length === 2) {
+//             scaling = true;
+//             setDist = Math.hypot(
+//                 event.touches[0].pageX - event.touches[1].pageX,
+//                 event.touches[0].pageY - event.touches[1].pageY
+//             );
+//         } else if (event.touches.length === 1) {
+//             isPanning = true;
+//             const touch = event.touches[0];
+//             startX = touch.clientX;
+//             startY = touch.clientY;
+//             const state = getState();
+//             translateX = state.translateX;
+//             translateY = state.translateY;
+//         }
+//     }
+
+//     function handleTouchMove(event) {
+//         if (scaling && event.touches.length === 2) {
+//             var dist = Math.hypot(
+//                 event.touches[0].pageX - event.touches[1].pageX,
+//                 event.touches[0].pageY - event.touches[1].pageY
+//             );
+
+//             var scaleFactor = dist / setDist;
+
+//             var $programTable = $(".program_table");
+//             var fontSize = parseFloat($programTable.find("td").css("font-size"));
+//             var fontSizeP = parseFloat($programTable.find("td p").css("font-size"));
+//             var imgWidth = $programTable[0].clientWidth;
+//             var imgHeight = $programTable[0].clientHeight;
+
+//             if ((scaleFactor > 1 && fontSize <= 18) || (scaleFactor < 1 && fontSize > 13)) {
+//                 $programTable.css({
+//                     "width": imgWidth * scaleFactor,
+//                     "height": imgHeight * scaleFactor
+//                 });
+//                 $programTable.find("td, th").css({
+//                     "font-size": fontSize * scaleFactor,
+//                     "line-height": (fontSize * scaleFactor) + "px"
+//                 });
+//                 $programTable.find("td p").css({
+//                     "font-size": fontSizeP * scaleFactor,
+//                     "line-height": (fontSizeP * scaleFactor) + "px"
+//                 });
+//             }
+
+//             setDist = dist;
+//         } else if (isPanning && event.touches.length === 1) {
+//             const touch = event.touches[0];
+//             const deltaX = touch.clientX - startX;
+//             const deltaY = touch.clientY - startY;
+
+//             let newTranslateX = translateX + deltaX;
+//             let newTranslateY = translateY + deltaY;
+
+//             // 테이블이 화면 밖으로 나가지 않도록 제한
+//             const $programTable = $(".program_table")[0];
+//             const screenWidth = window.innerWidth;
+//             const screenHeight = window.innerHeight;
+//             const tableRect = $programTable.getBoundingClientRect();
+
+//             if (tableRect.left + newTranslateX > 0) {
+//                 newTranslateX = -tableRect.left;
+//             }
+//             if (tableRect.top + newTranslateY > 0) {
+//                 newTranslateY = -tableRect.top;
+//             }
+//             if (tableRect.right + newTranslateX < screenWidth) {
+//                 newTranslateX = screenWidth - tableRect.right;
+//             }
+//             if (tableRect.bottom + newTranslateY < screenHeight) {
+//                 newTranslateY = screenHeight - tableRect.bottom;
+//             }
+
+//             translateX = newTranslateX;
+//             translateY = newTranslateY;
+
+//             startX = touch.clientX;
+//             startY = touch.clientY;
+
+//             setState({ scale: getState().scale, translateX: newTranslateX, translateY: newTranslateY });
+//         }
+//         requestId = null;
+//     }
+
+//     function handleTouchEnd(event) {
+//         scaling = false;
+//         isPanning = false;
+//         setDist = 0;
+//         if (requestId) {
+//             cancelAnimationFrame(requestId);
+//             requestId = null;
+//         }
+//     }
+
+//     var programTable = document.querySelector('.program_table');
+//     programTable.addEventListener('touchstart', handleTouchStart, { passive: false });
+//     programTable.addEventListener('touchmove', function(event) {
+//         if (!requestId) {
+//             requestId = requestAnimationFrame(function() {
+//                 handleTouchMove(event);
+//             });
+//         }
+//     }, { passive: false });
+//     programTable.addEventListener('touchend', handleTouchEnd, { passive: false });
+//     programTable.addEventListener('touchcancel', handleTouchEnd, { passive: false });
+
+//     const state = {
+//         scale: 1,
+//         translateX: 0,
+//         translateY: 0,
+//     };
+
+//     const setState = ({ scale, translateX, translateY }) => {
+//         state.scale = scale;
+//         state.translateX = translateX;
+//         state.translateY = translateY;
+//         programTable.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+//     };
+
+//     const getState = () => {
+//         return state;
+//     };
+
+
+//접속기기 찾기 -> AOS => style(css) zoom 사용 // IOS => style(css) scale 사용
+function getMobileOperatingSystem() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if (/windows phone/i.test(userAgent)) {
+    return "Windows Phone";
+  }
+
+  if (/android/i.test(userAgent)) {
+    return "Android";
+  }
+
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    return "iOS";
+  }
+
+  return "unknown";
+}
+
+
+//바뀐 확대 축소 코드 -> AOS => style(css) zoom 사용 // IOS => style(css) scale 사용
+const screen = document.getElementById('screen');
+const target = document.getElementById('program_table');
+
+function touchInit(screen, target) {
+  // 타겟의 상태 값
+  const state = {
+    scale: 1,
+  };
+
+  const device = getMobileOperatingSystem();
+
+  // 타겟의 상태 값 수정 및 랜더링
+  const setState = ({ scale }) => {
+    state.scale = scale;
+	percentWidth = scale * 100;
+	if(device === "iOS"){
+		target.style.transform = `scale(${scale})`;
+	}else{
+		target.style.zoom = `${scale}`;
+	}
+    // target.style.transform = `scale(${scale})`;
+  };
+
+  // 상태 값을 가져오는 함수
+  const getState = () => {
+    return state;
+  };
+
+  pinchZoom({ screen, target, setState, getState });
+}
+
+function pinchZoom({ screen, target, setState, getState }) {
+  const handlePinch = ({ zoom }) => {
+    if (zoom === 0) {
+      return;
+    }
+
+    const { scale } = getState();
+    const zoomWeight = 0.018;		// zoom 속도 관련!!!
+    const nextScale = scale + (zoom > 0 ? zoomWeight : -zoomWeight);
+    const nextState = {
+      scale: Math.min(Math.max(nextScale, 0.5), 3), // 제한된 축소 및 확대 범위
+    };
+
+    setState(nextState);
+  };
+
+  screen.addEventListener('touchstart', ev => touchStartHandler({ ev }));
+  screen.addEventListener('touchmove', ev => touchMoveHandler({ ev, onPinch: handlePinch }));
+  screen.addEventListener('touchend', ev => touchEndHandler({ ev }));
+  screen.addEventListener('touchcancel', ev => touchEndHandler({ ev }));
+}
+
+let prevDiff = -1;
+const evHistory = [];
+let requestId = null;
+
+function touchStartHandler({ ev }) {
+  const touches = ev.changedTouches;
+  if (evHistory.length + touches.length <= 2) {
+    for (let i = 0; i < touches.length; i++) {
+      const touch = touches[i];
+      evHistory.push(touch);
+    }
+  }
+}
+
+// 터치 끝
+function touchEndHandler({ ev }) {
+  const touches = ev.changedTouches;
+  for (let i = 0; i < touches.length; i++) {
+    const touch = touches[i];
+    const index = evHistory.findIndex(cachedEv => cachedEv.identifier === touch.identifier);
+    if (index > -1) {
+      evHistory.splice(index, 1);
+    }
+  }
+  if (evHistory.length < 2) {
+    prevDiff = -1; // 핀치 줌 동작 초기화
+  }
+}
+
+function touchMoveHandler({ ev, onPinch }) {
+  // 두 개의 터치가 진행중인 경우에만 기본 터치 동작 방지
+  if (ev.cancelable && evHistory.length === 2) {
+    ev.preventDefault(); // 기본 터치 동작 방지 (예: 스크롤)
+  }
+
+  const touches = ev.changedTouches;
+  for (let i = 0; i < touches.length; i++) {
+    const touch = touches[i];
+    const index = evHistory.findIndex(cachedEv => cachedEv.identifier === touch.identifier);
+    if (index !== -1) {
+      evHistory[index] = touch;
+
+      // 두 개의 터치가 진행중인 경우 핀치 줌으로 판단한다
+      if (evHistory.length === 2) {
+        const xDiff = evHistory[0].clientX - evHistory[1].clientX;
+        const yDiff = evHistory[0].clientY - evHistory[1].clientY;
+        const curDiff = Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+
+        // 첫 핀치의 경우 비교군이 없으므로 prevDiff가 -1인 경우 생략한다.
+        if (prevDiff > 0) {
+          const zoom = curDiff - prevDiff;
+          if (!requestId) {
+            requestId = requestAnimationFrame(() => {
+              onPinch({ zoom });
+              requestId = null;
+            });
+          }
+        }
+        prevDiff = curDiff;
+      }
+    }
+  }
+}
+
+// 초기화 함수 호출
+touchInit(screen, target);
+
+})
 
 //[240418] sujeong / 이동 주석
 function table_location(event, _this, e, day, this_name) {
@@ -1046,8 +1341,8 @@ function table_location(event, _this, e, day, this_name) {
 	    window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 	}
 }
-</script>
 
+</script>
 <?php 
    include_once('./include/app_footer.php');
 ?>

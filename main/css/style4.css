@@ -567,7 +567,7 @@ section.container.organizing {padding-bottom: 190px;}
 .program_table tbody td{border-right:1px solid #999;font-size:14px;/*font-weight:bold; */position: relative; line-height:1.6;}
 
 .program_table tbody td.pointer:hover{text-decoration: underline; text-underline-position: under;}
-
+.app_version .program_table tbody td.pointer:hover {text-decoration: none;}
 /*.program_table tbody td:not(:first-child){vertical-align:top;}*/
 .program_table tbody .font_10_tr td:not(:first-child){font-size:10px; line-height:14px;}
 .program_table tbody .font_10_tr td:not(:first-child) p{font-size:10px; word-break: break-all;}
@@ -1361,7 +1361,7 @@ section.container.login .page_title {    color: #5C0378; text-align:center; marg
 	.program_table tbody td {font-size:8px; line-height:10px;}
 	.program_table tbody td p {font-size:6px;}
 
-	.program_table tbody.app td {font-size:14px; line-height:14px; padding: 12px 8px;}
+	.program_table tbody.app td {font-size:13px; line-height:14px; padding: 12px 8px;}
 	.program_table tbody.app td p {font-size:12px;}
 
 	.simple_signup.non_korea{
@@ -3120,3 +3120,6 @@ section.coming img {width: 100%;}
 	padding-top: 8px;
 }
 
+.app_invited_speakers.container, .app_invited_speaker.app_version {
+	padding-bottom: 0px !important;
+}

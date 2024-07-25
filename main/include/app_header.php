@@ -45,7 +45,8 @@
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:;" class="get_ready_alert">Abstract</a>
+					<a href="javascript:;" class="">Abstract</a>
+					<!-- <a href="javascript:;" class="get_ready_alert">Abstract</a> -->
 					<ul class="app_sub">
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
@@ -69,7 +70,8 @@
 					</ul>
 				</li>
 				<li>
-					<a href="/main/app_invited_speakers.php" class="get_ready_alert">Invited Speakers</a>
+					<a href="/main/app_invited_speakers.php" class="">Invited Speakers</a>
+					<!-- <a href="/main/app_invited_speakers.php" class="get_ready_alert">Invited Speakers</a> -->
 				</li>
 				<!-- <li>
 					<a href="javascript:;">Sponsorship</a>

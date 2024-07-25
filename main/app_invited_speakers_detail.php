@@ -42,10 +42,11 @@ $select_invited_speaker_query = "
                                 ";
 
 $invited_speaker = sql_fetch($select_invited_speaker_query);
+$url = 'https://image.webeon.net/icomes2024/app_speaker';
 
 //[240425] sujeong / 함수 수정
 if($invited_speaker['image_path'] ){
-	$is_profile_img = $invited_speaker['image_path'];
+	$is_profile_img = $url . $invited_speaker['image_path'];
 }else{
 	$is_profile_img = '/main/img/profile_empty.png';
 }
@@ -53,7 +54,7 @@ if($invited_speaker['image_path'] ){
 
 
 $select_program_query = "
-                            SELECT p.idx, isp.idx, first_name, last_name, contents_title, program_name,program_tag_name,p.chairpersons, p.preview, pp.program_place_name, program_category_idx, p.program_date,
+                            SELECT p.idx, isp.idx, first_name, last_name, contents_title, p.program_name,program_tag_name,p.chairpersons, p.preview, pp.program_place_name, program_category_idx, p.program_date,
                                    date_format(p.start_time, '%H:%i') as start_time, date_format(p.end_time, '%H:%i') as end_time,
                                    (CASE
                                        WHEN program_date = '2024-09-05' THEN 'day_1'

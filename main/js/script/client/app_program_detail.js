@@ -175,8 +175,8 @@ function selectProgram(){
         type : "POST",
         data :  {
             //[240523] sujeong / 임시 변경 / 로그인 없이 program detail 보기
-            //flag : "select",
-            flag : "select_1",
+            flag : "select",
+            //flag : "select_1",
             data : data
         },
         dataType : "JSON",
@@ -223,7 +223,7 @@ function createHTMLList(program_list, active){
 
             if(cl.speaker_idx!=null){
                 //[240424] sujeong / 임시 주석 / 연자정보 버튼 숨기기
-                //speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">Speakers info</a>';
+                speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">Speakers info</a>';
                 speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+', '+cl.nation+')'+'</p>';
             } else {
                 if(cl.speaker!=null){
@@ -253,7 +253,7 @@ function createHTMLList(program_list, active){
                 pl.path = 'javascript:void(0)';
             }
             //[240424] sujeong / 임시 주석 / 초록보기 버튼 숨기기
-            //abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
+            abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
         }
 
         if(pl.chairpersons != ""){
@@ -280,43 +280,43 @@ function createHTMLList(program_list, active){
         }
 
         // [240523] sujeong / 즐겨찾기 막기 /schedule 버튼 있는 원본!!!
-        // _html += `
-        //             <li name="${pl.program_tag_name}" class="${pl.program_place_name.toLowerCase()}">
-        //                 <div class="main">
-        //                     ${abstract_html}
-        //                     <p class="title">${pl.program_name}</p>
-        //                     ${chairpersons_html}
-        //                     <div class="info">
-        //                         <div>
-        //                             <button class="${schedule} schedule_btn" value="${pl.idx}"></button>
-        //                             <span class="time">${pl.start_time}-${pl.end_time}</span>
-        //                         </div>
-        //                         <span class="branch">${pl.program_place_name}</span>
-        //                     </div>
-        //                     ${preview_html}
-        //                 </div>
-        //                 ${detail_text_html}
-        //                 <div class="detail" style="display:${isActvie ? "block" : "none"}">${contents_html}</div>
-        //             </li>
-        //          `
-           _html += `
-                 <li name="${pl.program_tag_name}" class="${pl.program_place_name.toLowerCase()}">
-                     <div class="main">
-                         ${abstract_html}
-                         <p class="title">${pl.program_name}</p>
-                         ${chairpersons_html}
-                         <div class="info">
-                             <div>
-                                 <span class="time">${pl.start_time}-${pl.end_time}</span>
-                             </div>
-                             <span class="branch">${pl.program_place_name}</span>
-                         </div>
-                         ${preview_html}
-                     </div>
-                     ${detail_text_html}
-                     <div class="detail" style="display:${isActvie ? "block" : "none"}">${contents_html}</div>
-                 </li>
-              `
+        _html += `
+                    <li name="${pl.program_tag_name}" class="${pl.program_place_name.toLowerCase()}">
+                        <div class="main">
+                            ${abstract_html}
+                            <p class="title">${pl.program_name}</p>
+                            ${chairpersons_html}
+                            <div class="info">
+                                <div>
+                                    <button class="${schedule} schedule_btn" value="${pl.idx}"></button>
+                                    <span class="time">${pl.start_time}-${pl.end_time}</span>
+                                </div>
+                                <span class="branch">${pl.program_place_name}</span>
+                            </div>
+                            ${preview_html}
+                        </div>
+                        ${detail_text_html}
+                        <div class="detail" style="display:${isActvie ? "block" : "none"}">${contents_html}</div>
+                    </li>
+                 `
+        //    _html += `
+        //          <li name="${pl.program_tag_name}" class="${pl.program_place_name.toLowerCase()}">
+        //              <div class="main">
+        //                  ${abstract_html}
+        //                  <p class="title">${pl.program_name}</p>
+        //                  ${chairpersons_html}
+        //                  <div class="info">
+        //                      <div>
+        //                          <span class="time">${pl.start_time}-${pl.end_time}</span>
+        //                      </div>
+        //                      <span class="branch">${pl.program_place_name}</span>
+        //                  </div>
+        //                  ${preview_html}
+        //              </div>
+        //              ${detail_text_html}
+        //              <div class="detail" style="display:${isActvie ? "block" : "none"}">${contents_html}</div>
+        //          </li>
+        //       `
         index++;
     })
 
