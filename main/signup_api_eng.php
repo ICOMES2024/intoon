@@ -24,16 +24,16 @@
 			return_value(200, "ok", ["value" => '{"code":"N7"}']);
 		}
 		/* 23.05.26 HUBDNC 패스워드decode로 다시 치환 */
-		$result_data = array(
-			'id' => $data['id'],
-			'pw' => urldecode($data['pw'])
-		);
+		// $result_data = array(
+		// 	'id' => $data['id'],
+		// 	'pw' => urldecode($data['pw'])
+		// );
 
-		$request_data = array(
-			'command'=>'get_member_info',
-			'body' => $result_data
-		);
-		$json = json_encode($request_data);
+		// $request_data = array(
+		// 	'command'=>'get_member_info',
+		// 	'body' => $result_data
+		// );
+		//$json = json_encode($request_data);
 		 
 		/*
 		  curl = 원하는 url에 값을 넣고 리턴되는 값을 받아오는 함수
@@ -47,7 +47,7 @@
 		$server_data = http_build_query($data);
 
 		// curl_setopt($ch, CURLOPT_URL, "http://3.36.138.44/pro_inc/check_mem.php"); 
-		curl_setopt($ch, CURLOPT_URL, "http://3.36.138.44/pro_inc/check_mem.php"); 
+		curl_setopt($ch, CURLOPT_URL, "http://eng.kosso.or.kr/pro_inc/check_mem.php"); 
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE); 
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0); 
 		curl_setopt($ch, CURLOPT_HEADER, 0); 
@@ -55,6 +55,8 @@
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
 		curl_setopt($ch, CURLOPT_POST, 1); 
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $server_data);
+		
+		// curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); 
 		/*
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -73,14 +75,10 @@
 		$status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		curl_close($ch);
 		
-		echo '$response ' . $response;
-		echo '$status_code' .$status_code;
+		//echo '$response ' . $response;
+		//echo '$status_code' .$status_code;
 
-		$dataObject = json_decode($response);
-
-		$code = $dataObject->code;
-
-		if($code == 200) { //정상
+		if($status_code == 200) { //정상
 			return_value(200, "ok", ["value" => $response, "ksola_member_check" => $data['id']]);
 		}
 		else {

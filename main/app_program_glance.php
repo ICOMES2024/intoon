@@ -69,7 +69,7 @@
 							</tr>
 						</thead>
 						<!---------- DAY 1 ---------->
-						<tbody name="day" class="day_tbody day_1">
+						<tbody name="day" class="day_tbody day_1 app">
 							<tr>
 								<td>
 									<div class="colons_div">15:00-16:30</div>
@@ -190,7 +190,7 @@
 								</th>
 							</tr>
 						</thead>
-						<tbody name="day" class="day_tbody day_2">
+						<tbody name="day" class="day_tbody day_2 app">
 							<tr>
 								<td>
 									<div class="colons_div">07:30-08:20</div>
@@ -224,9 +224,9 @@
 								</td>
 								<td colspan="3" class="keynote_bg pointer" name="keynote_lecture_1" data-id="14">
 									Keynote Lecture 1
-									<p class="">SF-1 Targets in the Hypothalamus: Novel Pathways Regulating Energy Balance</p>
+									<!-- <p class="">SF-1 Targets in the Hypothalamus: Novel Pathways Regulating Energy Balance</p>
 									<p>Joel K. Elmquist</p>
-									<p>UT Southwestern Medical Center, USA</p>
+									<p>UT Southwestern Medical Center, USA</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -245,24 +245,28 @@
 									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_1" data-id="15">
-									Symposium 1 <p>Precision Medicine for Obesity and Diabetes </p>
+									Symposium 1
+									 <!-- <p>Precision Medicine for Obesity and Diabetes </p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_2" data-id="16">
-									Symposium 2 <p>Gut, Brain, and Obesity</p>
+									Symposium 2 
+									<!-- <p>Gut, Brain, and Obesity</p> -->
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_3" data-id="17">
-									Symposium 3 <p> Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
+									Symposium 3 
+									<!-- <p> Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p> -->
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_4" data-id="18">
-									Symposium 4 <p>International Collaboration</p>
+									Symposium 4 
+									<!-- <p>International Collaboration</p> -->
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_1" data-id="19">
 									Sponsored Session 1 
-									<p>SELECT the Outcome Beyond Weight Loss</p>
+									<!-- <p>SELECT the Outcome Beyond Weight Loss</p> -->
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
@@ -293,9 +297,9 @@
 								</td>
 								<td colspan="3" class="plenary_bg pointer" name="keynote_lecture_2" data-id="21">
 									Plenary Lecture 1
-									<p class="">GLP-1 Based Therapy of Obesity</p>
+									<!-- <p class="">GLP-1 Based Therapy of Obesity</p>
 									<p>Michael A. Nauck</p>
-									<p>Ruhr-University Bochum, Germany</p>
+									<p>Ruhr-University Bochum, Germany</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -339,9 +343,9 @@
 								</td>
 								<td class="special_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
 									Special Scientific Session 1
-									<p class="">Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!</p>
+									<!-- <p class="">Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!</p>
 									<p>Ania Jastreboff</p>
-									<p>Yale University, USA</p>
+									<p>Yale University, USA</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26">
@@ -364,23 +368,28 @@
 									<div class="colons_div">14:00-15:30</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_5" data-id="29">
-									Symposium 5 <p>Current Perspectives on Health Inequity in Obesity</p>
+									Symposium 5 
+									<!-- <p>Current Perspectives on Health Inequity in Obesity</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_6" data-id="30">
-									Symposium 6 <p>Holistic Approach to Obesity Management: Exploring Exercise, Metabolism, and Muscle Health</p>
+									Symposium 6 
+									<!-- <p>Holistic Approach to Obesity Management: Exploring Exercise, Metabolism, and Muscle Health</p> -->
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_7" data-id="31">
-									Symposium 7 <p>Lipid Remodeling and Adipocyte Biology in Metabolic Health and Disease</p>
+									Symposium 7 
+									<!-- <p>Lipid Remodeling and Adipocyte Biology in Metabolic Health and Disease</p> -->
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_8" data-id="32">
-									Symposium 8 <p>Medical Condition Change After Bariatric Surgery</p>
+									Symposium 8 
+									<!-- <p>Medical Condition Change After Bariatric Surgery</p> -->
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_2" data-id="33">
-									Sponsored Session 2 <p>Obesity Management with Combination Phentermine Plus Topiramate from Strategy to Practice</p>
+									Sponsored Session 2 
+									<!-- <p>Obesity Management with Combination Phentermine Plus Topiramate from Strategy to Practice</p> -->
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
@@ -398,9 +407,9 @@
 								</td>
 								<td colspan="3" class="plenary_bg pointer" name="keynote_lecture_3" data-id="34">
 									Plenary Lecture 2
-									<p class="">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
+									<!-- <p class="">Management of Youth Type 2 Diabetes: New Pharmacotherapeutic Modalities</p>
 									<p>Silva Arslanian</p>
-									<p>University of Pittsburgh, USA</p>
+									<p>University of Pittsburgh, USA</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -419,19 +428,23 @@
 									<div class="colons_div">16:30-18:00</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_9" data-id="35">
-									Symposium 9 <p>Obesity and Cardiovascular Health</p>
+									Symposium 9 
+									<!-- <p>Obesity and Cardiovascular Health</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_10" data-id="36">
-									Symposium 10 <p>Obesity and Cancer</p>
+									Symposium 10 
+									<!-- <p>Obesity and Cancer</p> -->
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_11" data-id="37">
-									Symposium 11 <p>Perspectives in Digital Nutrition Care for Obesity </p>
+									Symposium 11 
+									<!-- <p>Perspectives in Digital Nutrition Care for Obesity </p> -->
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_12" data-id="38">
-									Symposium 12 <p>Childhood Obesity is a Chronic Disease Demanding Specific Health Care</p>
+									Symposium 12 
+									<!-- <p>Childhood Obesity is a Chronic Disease Demanding Specific Health Care</p> -->
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_4" data-id="39">
@@ -453,9 +466,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="easo_presidential" data-id="66" colspan="3">
 									EASO Presidential Lecture
-									<p class="">Management of Obesity in Older Adults</p>
+									<!-- <p class="">Management of Obesity in Older Adults</p>
 									<p>Volkan Yumuk</p>
-									<p>Istanbul University-Cerrahpaşa, Turkey</p>
+									<p>Istanbul University-Cerrahpaşa, Turkey</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -488,7 +501,7 @@
 								</th>
 							</tr>
 						</thead>
-						<tbody name="day" class="day_tbody day_3">
+						<tbody name="day" class="day_tbody day_3 app">
 							<tr>
 								<td>
 									<div class="colons_div">07:30-08:20</div>
@@ -522,9 +535,9 @@
 								</td>
 								<td class="keynote_bg pointer" name="keynote_lecture_4" colspan="3" data-id="44">
 									Keynote Lecture 2
-									<p class="">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
+									<!-- <p class="">Cardiometabolic Health: Importance of Lifestyle Vital Signs</p>
 									<p>Jean-Pierre Després</p>
-									<p>VITAM - Research Centre on Sustainable Health, Canada</p>
+									<p>VITAM - Research Centre on Sustainable Health, Canada</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -543,23 +556,28 @@
 									<div class="colons_div">09:20-10:50</div>
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_13" data-id="45">
-									Symposium 13 <p>Obesity Related Comorbidity-Fatty Liver</p>
+									Symposium 13 
+									<!-- <p>Obesity Related Comorbidity-Fatty Liver</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_14" data-id="46">
-									Symposium 14 <p>Understanding Aging Skeletal Muscle and Dynamics</p>
+									Symposium 14 
+									<!-- <p>Understanding Aging Skeletal Muscle and Dynamics</p> -->
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_15" data-id="47">
-									Symposium 15 <p>Diet Quality and Weight Regulation</p>
+									Symposium 15 
+									<!-- <p>Diet Quality and Weight Regulation</p> -->
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_16" data-id="48">
-									Symposium 16 <p>International Collaboration </p>
+									Symposium 16 
+									<!-- <p>International Collaboration </p> -->
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_sky_bg pointer" name="sponsored_session_3" data-id="49">
-									Sponsored Session 3 <p>Optimization of Glycemic Control in Obese Diabetes Patients With CGM</p>
+									Sponsored Session 3 
+									<!-- <p>Optimization of Glycemic Control in Obese Diabetes Patients With CGM</p> -->
 									<input type="hidden" name="e" value="room5">
 								</td>
                                 <td></td>
@@ -577,9 +595,9 @@
 								</td>
 								<td class="dark_pink_bg pointer" name="presidential_lecture" colspan="3" data-id="50">
 								Presidential Lecture
-								<p class="">Obesity and Fatty Liver: Common but Ignored</p>
+								<!-- <p class="">Obesity and Fatty Liver: Common but Ignored</p>
 								<p>Cheol-Young Park</p>
-								<p>Sungkyunkwan University, Korea</p>
+								<p>Sungkyunkwan University, Korea</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -620,9 +638,9 @@
 								</td>
 								<td class="special_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
 									Special Scientific Session 2
-									<p class="">Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective</p>
+									<!-- <p class="">Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective</p>
 									<p>Soo Lim</p>
-									<p>Seoul National University, Korea</p>
+									<p>Seoul National University, Korea</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_3" data-id="54">
@@ -646,9 +664,9 @@
 								</td>
 								<td class="plenary_bg pointer" name="keynote_lecture_5" colspan="3" data-id="57">
 									Plenary Lecture 3
-									<p class="">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
+									<!-- <p class="">How Muscle Mass and Metabolism Affects Energy Metabolism and Functional Capacity</p>
 									<p>William Evans</p>
-									<p>University of California, Berkeley, USA</p>
+									<p>University of California, Berkeley, USA</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -662,9 +680,9 @@
 								</td>
 								<td class="keynote_bg pointer" name="keynote_lecture_6" colspan="3" data-id="58">
 									Keynote Lecture 3
-									<p class="">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
+									<!-- <p class="">Human Adipose Tissue Metabolism: What Happens with Obesity</p>
 									<p>Michael D. Jensen</p>
-									<p>Mayo College of Medicine, USA</p>
+									<p>Mayo College of Medicine, USA</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -684,26 +702,28 @@
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_17" data-id="59">
 									Symposium 17 
-									<p>Incretin Therapy from MARS, Bariatric Surgery from VENUS</p>
+									<!-- <p>Incretin Therapy from MARS, Bariatric Surgery from VENUS</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_18" data-id="60">
 									Symposium 18 
-									<p>Cracking the Neural Code: Understanding Obesity through the Hypothalamus, Brain Stem, and Vagus Pathways</p>
+									<!-- <p>Cracking the Neural Code: Understanding Obesity through the Hypothalamus, Brain Stem, and Vagus Pathways</p> -->
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_19" data-id="61">
 									Symposium 19 
-									<p>Expanding Horizons in Pediatric Obesity</p>
+									<!-- <p>Expanding Horizons in Pediatric Obesity</p> -->
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="dark_green_bg pointer" name="symposium_20" data-id="62">
 									Symposium 20
-									<p>Exercise and Cardiometabolic Dysfunction</p>
+									<!-- <p>Exercise and Cardiometabolic Dysfunction</p> -->
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="violet_bg pointer best_jomes" name="joint_symposium_5" data-id="63">
-									Joint Symposium<br>KSSO-TOS<p>Real Word Experience of anti-obesity medications</p>
+									Joint Symposium<br>KSSO-TOS<p>
+										<!-- Real Word Experience of anti-obesity medications -->
+									</p>
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td></td>
@@ -721,9 +741,9 @@
 								</td>
 								<td class="plenary_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
 									Plenary Lecture 4
-									<p class="">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
+									<!-- <p class="">Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease</p>
 									<p>W. Timothy Garvey</p>
-									<p>University of Alabama at Birmingham, USA</p>
+									<p>University of Alabama at Birmingham, USA</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td></td>
@@ -938,8 +958,8 @@ $(document).ready(function() {
 			var i = $(this).index()-1;
 			$(".program_table").css({"width":"auto", "height":"auto"})
 			// $(".program_table").css({"width":table_width, "height":height_array[i]})
-			$(".program_table td, .program_table th").css({"font-size":"8px", "line-height":"12px"})
-			$(".program_table td p").css({"font-size":"6px", "line-height":"10px"})
+			$(".program_table td, .program_table th").css({"font-size":"14px", "line-height":"12px"})
+			$(".program_table td p").css({"font-size":"12px", "line-height":"10px"})
 
 			// $(".program_table").trigger("touchmove");
 

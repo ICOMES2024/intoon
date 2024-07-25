@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php'); ?>
 <?php 
     $session_user = $_SESSION['USER'] ?? NULL;
-    $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+    $session_app_type = (!empty($_SESSION['APP']) ? 'N' : 'N');
 
     if(!empty($session_user) && $session_app_type == 'Y') {
         include_once('./include/app_header.php');
@@ -182,10 +182,7 @@
 ?>
 
 <?php 
-    if (!empty($session_app_type) && $session_app_type == 'Y') {
-        // mo일때
-        include_once('./include/app_footer.php'); 
-    }else {
+ 
         include_once('./include/footer.php');
-    }
+  
 ?>

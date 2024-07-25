@@ -153,6 +153,7 @@ if (empty($_SESSION["USER"])) {
 	</div>
 	<div class="inner">
 		<div class="contents_box">
+		<input type="hidden" name="mn" value="<?=$_SESSION["USER"]["idx"]?>"/>
 			<div class="app_contents_wrap type2">
 				<div class="gift_wrap">
 					<div class="gift_top">
@@ -218,16 +219,15 @@ if (empty($_SESSION["USER"])) {
 			</div> 
 		</div>
 	</div>
-	<div class="qr_code_fixed">
+	<!-- <div class="qr_code_fixed">
 		<a href="javascript:;">	
 			<p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each booth.</p>
-			<!-- <p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each loacation</p> -->
-			<!-- <p class="qr_code_fixed_txt">“Click here to scan!”</p> -->
 			<div class="qr_code_fixed_wrap">SCANNER</div>
 		</a>	
-	</div>
+	</div> -->
 </section>
 <script>
+	const jomes = document.querySelector(".JOMES")
 	const diamond = document.querySelector(".Diamond");
 	const platinum = document.querySelector(".Platinum");
 	const gold = document.querySelector(".Gold");
@@ -244,7 +244,7 @@ if (empty($_SESSION["USER"])) {
 		//필수 스탬프 숫자
 		const requireNum = 11;
 		//태깅한 필수 스탬프 숫자
-		const checkRequireNum = Number(diamond.innerText) +  Number(platinum.innerText) +  Number(gold.innerText);
+		const checkRequireNum = Number(jomes.innerText) + Number(diamond.innerText) +  Number(platinum.innerText) +  Number(gold.innerText);
 		//필수에서 부족한 숫자
 		luckyCount += requireNum - checkRequireNum;
 
@@ -271,7 +271,7 @@ if (empty($_SESSION["USER"])) {
 <script>
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");
-		$(".app_footer_img").addClass("footer_gray");
+		//$(".app_footer_img").addClass("footer_gray");
 
 		if($('.Silver').text() == 6){
 			$('.silver').addClass("open");

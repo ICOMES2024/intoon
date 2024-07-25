@@ -1229,7 +1229,7 @@ section.container.sponsor {padding-top: 164px;}
 .app_nav_top {height:59px; padding:19px 17px; display:flex; align-items:center; justify-content:flex-end; background-color:#FFFFFF;}
 .app_nav_top a {font-size:17px; font-weight:800; display:flex; align-items:center;}
 .app_nav_top img {width:15px; margin-right:4px;}
-.app_nav_bot {height:calc(100% - 60px); position:relative; background-color:#5C0778;}
+.app_nav_bot {height:calc(100% - 150px); position:relative; background-color:#5C0778;}
 .app_nav_menu {width:46%; height:100%; overflow-y:auto;}
 .app_nav_menu > li > a {display:block; padding:22px; font-size:16px; font-weight:bold; line-height:1.4; color:#FFFFFF; text-align:left;}
 .app_nav_menu > li.on > a {background-color:#EBE5ED; color:#5C0778;}
@@ -1399,7 +1399,8 @@ h2.app_title {width: 100%; font-size: 16px; background: #CC3366; text-align: cen
 .grade_wrap {display:flex; flex-wrap:wrap; gap:0.88rem 0; padding: 1.5rem 0.75rem 2.19rem; justify-content:space-between;}
 .no_padding_bottom{padding:1.5rem 0.75rem 0.88rem;}
 .no_padding_top {padding: 0 0.75rem 2.19rem;}
-.grade_wrap li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; /*border: 1px solid #f2f2f2; */}
+.grade_wrap li {width:calc(50% - 0.44rem); padding: 12px 18px; text-indent:-9999px; border: 1px solid #f2f2f2; }
+.app_my_stamp .grade_wrap li {border: none;}
 .grade_wrap li.small {padding: 30px;}
 .grade_wrap li a {width: 100%;height: 100%;background-repeat: no-repeat; background-position: center; background-size: contain; display: block;}
 
