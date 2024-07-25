@@ -37,7 +37,7 @@
 	}
 
 	if($submission_code != "") {
-		$where .= " AND ra.submission_code LIKE '%".$submission_code."%' ";
+		$where .= " AND ra.submission_code LIKE '%". trim($submission_code) ."%' ";
 	}
 
 	if($name_kor != "") {

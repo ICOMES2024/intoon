@@ -8,6 +8,7 @@
 
 	$id		= isset($_GET["id"])		? $_GET["id"]		: "";
 	$name	= isset($_GET["name"])		? $_GET["name"]		: "";
+	$kor_name	= isset($_GET["kor_name"])		? $_GET["kor_name"]		: "";
 	$phone	= isset($_GET["phone"])		? $_GET["phone"]	: "";
 	$s_date = isset($_GET["s_date"])	? $_GET["s_date"]	: "";
 	$e_date = isset($_GET["e_date"])	? $_GET["e_date"]	: "";
@@ -22,6 +23,10 @@
 
 	if($name != ""){
 		$where .= " AND CONCAT(m.first_name, ' ', m.last_name) LIKE '%".$name."%' ";
+	}
+
+	if($kor_name != ""){
+		$where .= " AND CONCAT(m.last_name_kor, m.first_name_kor) LIKE '%".$kor_name."%' ";
 	}
 
 	if($phone != ""){
@@ -224,6 +229,12 @@
 								</td>
 								<th>등록일</th>
 								<td class="input_wrap"><input type="text" class="datepicker-here" data-language="en" data-date-format="yyyy-mm-dd" name="s_date" value="<?=$s_date?>" data-type="date"> <span>~</span> <input type="text" class="datepicker-here" data-language="en" data-date-format="yyyy-mm-dd" name="e_date" value="<?=$e_date?>" data-type="date"></td>
+							</tr>
+							<tr>
+								<th>성함(한글)</th>
+								<td colspan="3" class="select_wrap clearfix2">
+									<input type="text" name="kor_name" value="<?=$kor_name?>" data-type="string">
+								</td>
 							</tr>
 						</tbody>
 					</table>

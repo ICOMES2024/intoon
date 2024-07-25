@@ -122,14 +122,16 @@
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_abstract.php" class="get_ready_alert">
+				<a href="/main/app_abstract.php" class="">
+				<!-- <a href="/main/app_abstract.php" class="get_ready_alert"> -->
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu03.svg" alt="">
 					<!-- <span>ABSTRACT</span> -->
                     <!-- 추후 get_ready_alert 삭제 -->
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_invited_speakers.php" class="get_ready_alert">
+				<a href="/main/app_invited_speakers.php" class="">
+				<!-- <a href="/main/app_invited_speakers.php" class="get_ready_alert"> -->
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu04.svg" alt="">
 					<!-- <span>INVITED<br/>SPEAKERS</span> -->
 				</a>

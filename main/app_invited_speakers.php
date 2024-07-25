@@ -87,8 +87,16 @@ $initial_list = get_data($select_initial_query);
                     <?php
                         foreach ($invited_speaker_list as $isl){
                             if($isl['favorite_check']==='Y'){
+
 								$url = 'https://image.webeon.net/icomes2024/app_speaker';
-								$is_profile_img = ($url.$isl['image_path'] ?? $url.'/profile_empty.png');
+								
+								$is_profile_img = '';
+
+								if($isl['image_path']){
+									$is_profile_img = $url . $isl['image_path'];
+								}else{
+									$is_profile_img = $url . '/profile_empty.png';
+								}
                     ?>
 								<li>
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
@@ -121,8 +129,11 @@ $initial_list = get_data($select_initial_query);
 								$favorite = "";
 							}
 							$is_profile_img = "";
+							
+							$url = 'https://image.webeon.net/icomes2024/app_speaker';
+
 							if($isl['image_path']){
-								$is_profile_img = $isl['image_path'];
+								$is_profile_img = $url . $isl['image_path'];
 							}else{
 								$is_profile_img = '/main/img/profile_empty.png';
 							}
@@ -161,7 +172,7 @@ $initial_list = get_data($select_initial_query);
 
 		$(".favorite_btn").click(function(e){
 			//[240424] sujeong / 함수 주석 처리 / DB 변경 예정
-            //favorite(e);
+            favorite(e);
 		})
 
         $(".search_icon").click(function(){
