@@ -94,10 +94,10 @@
 				</li>
 				<li>
 					<a href="/main/registration_guidelines.php">
-						<p>Early-bird Registration <br/>Deadline</p>
-						<h2>July<span>25</span></h2>
-						<!-- <p>Pre-registration <br/>Deadline<br/>&nbsp;</p>
-						<h2>August <span>08</span></h2> -->
+						<!-- <p>Early-bird Registration <br/>Deadline</p>
+						<h2>July<span>25</span></h2> -->
+						<p>Pre-registration <br/>Deadline<br/>&nbsp;</p>
+						<h2>August <span>08</span></h2>
 						
 					</a>
 				</li>

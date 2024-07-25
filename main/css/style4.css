@@ -2583,9 +2583,9 @@ section.coming img {width: 100%;}
 .regi_key_dates > .key_date {
 	width: 420px;
 	height: 196px;
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_regi_keydate-1.png");
+	/* background-image: url("https://image.webeon.net/icomes2024/logo/2024_regi_keydate-1.png"); */
 	/* closed img */
-	/* background-image: url("https://image.webeon.net/icomes2024/logo/2024_regi_keydate-1-1.png"); */
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_regi_keydate-1-1.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
