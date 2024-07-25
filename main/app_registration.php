@@ -240,7 +240,7 @@
 	<div class="inner">
 		<div class="contents_box">
 			<div class="contents_wrap">
-                <p class="mypage_registration_txt">Registration information</p>
+                <p class="mypage_registration_txt">Registration Information</p>
                 <table class="mypage_registration_table">
                     <tr>
                         <th>Registration No.</th>

@@ -2378,7 +2378,7 @@ function non_kor_api(){
 			const user_value = kor_sign.value
 			if(user_value.status == '승인'){
 				$("input[name=ksola_member_check]").val(user_value.email);
-
+				alert('Membership verified.')
 			}
 		}
 	}

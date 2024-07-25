@@ -119,12 +119,12 @@
 					if(res.code == 200) {
 						const dom = $(`.e_booth[data-id=${booth}]`)
 						
-						let cnt = parseInt($(".stamp_collect .red_txt").text().replace(/[^0-9]/gi, ""))
-							cnt = isNaN(cnt) ? 0 : cnt
+						//let cnt = parseInt($(".stamp_collect .red_txt").text().replace(/[^0-9]/gi, ""))
+							//cnt = isNaN(cnt) ? 0 : cnt
 
 						dom.addClass("complete_stamp");
 						
-						$(".stamp_collect .red_txt").text(cnt + 1);
+						//$(".stamp_collect .red_txt").text(cnt + 1);
 
 						window.scrollTo({top: (dom.offset().top - 200), left:0, behavior:'smooth'});
 
@@ -155,24 +155,23 @@
 		<h2 class="app_title">STAMP TOUR<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
 		<div class="app_menu_box">
 			<ul class="app_menu_tab langth_3">
-				<li class="event"><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
-				<li class="on event"><a href="./app_my_stamp.php">Stamp List</a></li>
-				<li class="event"><a href="./app_stamp_list.php">My Stamp</a></li>
+				<li><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
+				<li class="on"><a href="./app_my_stamp.php">My Stamp</a></li>
+				<li><a href="./app_stamp_list.php">Stamp List</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="inner" style="padding-top: 30px !important;">
+	<div class="inner">
 		<input type="hidden" name="mn" value="<?=$_SESSION["USER"]["idx"]?>"/>
 		<div class="contents_box">
 			<div class="stamp_count">
-				<!-- [240419] sujeong / 학회팀 요청 주석 /총 스탬프 카운트 -->
-				<!-- <div class="stamp_collect">
-					<p class="f_bold">Count of stamps collected</p> 
-					<h4 class=""><?= number_format($myStampCnt) ?></h4>
-				</div> -->
-				<!-- 					<button type="button" class="refresh_btn"><img src="./img/icons/icon_refresh.png" alt="새로고침"></button> -->
+				<div class="stamp_collect">
+					<!-- [240419] sujeong / 학회팀 요청 주석 /총 스탬프 카운트 -->
+					<!-- <p class="f_bold">Count of stamps collected: <span class="f_inherit red_txt"><?= number_format($myStampCnt) ?></span></p> -->
+<!-- 					<button type="button" class="refresh_btn"><img src="./img/icons/icon_refresh.png" alt="새로고침"></button> -->
+				</div>
 			</div>
-			<div class="sponsor_grade" style="transform: translateY(-16px);">
+			<div class="sponsor_grade">
 				<?php
 					// [240314] hub 스탬프 투어 소스 코드 !@#$^
 					// image 서버로 url 수정 필요 !!!
@@ -191,8 +190,7 @@
 						$boothType = $k;
 
 						$boothInfo = gradeBoothInfo($boothType);
-
-
+			
 						echo "<p class='grade_title app ".$boothInfo["class"]."'>".$boothInfo["name"]."</p>";
 						echo "<ul class='grade_wrap app length_".count($v)."'>";
 
@@ -200,15 +198,8 @@
 							$booth = $v[$a];
 							$companyName = $booth["name"];
 							$complate = $booth["is_stamp"] ?? 0;
-								
-							$booth_num = 0;					
-							if($booth["idx"] < 10){
-								$booth_num = 0 . $booth["idx"];
-							}else{
-								$booth_num = $booth["idx"];
-							}
-						
-							echo "<li class='e_booth ".($complate == 1 ? "complete_stamp" : "")."' data-id='".$booth_num."'>";
+
+							echo "<li class='e_booth ".($complate == 1 ? "complete_stamp" : "")."' data-id='".$booth["idx"]."'>";
 				?>
 								<a href="javascript:;" class="<?=strtolower($companyName)?>" style="background-image: url('<?=imageUrlManager($booth["logo_card_path"])?>')"><?=$companyName?></a>
 				<?php
@@ -233,12 +224,13 @@
 				?>
 					<!-- 부스 정보가 없을 때 노데이터 처리 -->
 				<?php }?>
+
 			</div>
 		</div>
 	</div>
 	<div class="qr_code_fixed">
 		<a href="javascript:;">	
-			<p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each booth.</p>
+		<p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each booth.</p>
 			<!-- <p class="qr_code_fixed_txt">Please scan the <span>QR CODE</span> of each loacation</p> -->
 			<!-- <p class="qr_code_fixed_txt">“Click here to scan!”</p> -->
 			<div class="qr_code_fixed_wrap">SCANNER</div>
@@ -256,16 +248,6 @@
 <script>
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");
-		$(".app_footer_img").addClass("footer_gray");
     })
-
-	const completeList = document.querySelectorAll('.complete_stamp');
-
-	completeList.forEach((completed) => {
-		const id = completed.dataset.id;
-		console.log()
-		completed.children[0].style.backgroundImage = `url('https://image.webeon.net/icomes2024/app_sponsor/2024_logo${id}-4.png')`;
-	});
-
 </script>
 <?php include_once('./include/app_footer.php');?>
