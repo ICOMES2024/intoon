@@ -121,7 +121,7 @@ foreach($program_list as $pl){
 ?>
 
 <!-- HUBDNCHYJ : App - My Schedule 페이지 -->
-<section class="container app_version app_scientific">
+<section class="container app_version app_scientific app_schedule">
 	<div class="app_title_box">
 		<h2 class="app_title">
 			My Schedule

@@ -42,6 +42,9 @@
 
 /* .app_scientific .info {display:flex; align-items:center;} */
 .app_scientific .info {display:flex; align-items: flex-start;flex-direction: column; gap: 8px;}
+
+.app_schedule .info{display: block;}
+
 .app_scientific .info button:not(.preview_btn) {width: 17px; height: 17px; border-radius:3px; border:1px solid #F5AA02; margin-right: 6px; background:url("../img/icons/icon_star_line.svg") no-repeat center / 11px;}
 /* .app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg.svg");} */
 .app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg_wh.svg"); background-color:#F5AA02;}

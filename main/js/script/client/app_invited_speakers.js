@@ -84,9 +84,10 @@ function selectKeywords(){
 							} else {
 								check_favorite = '';
 							}
+                            
+                            const url = 'https://image.webeon.net/icomes2024/app_speaker';
 
-
-							let is_img_path = ((kl.data[k]['image_path'] != null) ? kl.data[k]['image_path'] : '/main/img/profile_empty.png');
+							let is_img_path = ((kl.data[k]['image_path'] != null) ? url + kl.data[k]['image_path'] : '/main/img/profile_empty.png');
 						
 							if (k == 0) {
 								_html += '<p class="category">'+kl.initial+'</p>';

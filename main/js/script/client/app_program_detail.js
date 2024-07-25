@@ -82,7 +82,7 @@ $(document).ready(function (){
         //$(this).toggleClass("on");
         
         //[240424] sujeong / 임시 주석 / 즐겨찾기 막기 / DB 수정 예정
-        //Schedule(event);
+        Schedule(event);
     });
 
     $(".app_scientific .program_detail_ul").on("click", ".program_detail_btn", function(event){

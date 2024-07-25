@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/app_header.php'); ?>
 
-<script src="./js/script/client/app_program_detail.js?v=0.93"></script>
+<script src="./js/script/client/app_program_detail.js?v=0.94"></script>
 <style>
     /*230830 안재현 로딩화면 추가 */
     .loading_list{text-align: center; padding:30%; border-bottom:none !important;}
