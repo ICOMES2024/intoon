@@ -45,9 +45,9 @@
 
 .app_schedule .info{display: block;}
 
-.app_scientific .info button:not(.preview_btn) {width: 17px; height: 17px; border-radius:3px; border:1px solid #F5AA02; margin-right: 6px; background:url("../img/icons/icon_star_line.svg") no-repeat center / 11px;}
+.app_scientific .info button:not(.preview_btn) {width: 24px; height: 24px; border-radius:3px; border:1px solid #F5AA02; margin-right: 6px; /*background:url("../img/icons/icon_star_line.svg") no-repeat center / 11px;  */background:url("../img/icons/icon_star_bg_wh.svg") no-repeat center;opacity: 0.3;background-color: #F5AA02;}
 /* .app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg.svg");} */
-.app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg_wh.svg"); background-color:#F5AA02;}
+.app_scientific .info button.on {background-image:url("../img/icons/icon_star_bg_wh.svg"); background-color:#F5AA02; opacity: 1;}
 .app_scientific .info button + span {margin-right:18px;}
 .app_scientific .info span {margin-right:18px; padding-left: 14px; /*font-size:14px;*/ font-size: 13px; background: no-repeat center left /10px;}
 .app_scientific .info .time {background-image:url("../img/icons/icon_clock_line.svg"); background-size: 13px;}
