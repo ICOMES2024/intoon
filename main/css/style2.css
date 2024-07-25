@@ -138,8 +138,8 @@ section.container.login.bg {border: 0px;}
 .dates_area li:last-child a img{/*height: 100%;*/ max-width: 130px; width: 100%;display: block;margin: 4px auto 0px;}
 .dates_area li:last-child a h2 {text-align:left; line-height:1.2;}
 .dates_area li a {width: 100%; height: 100%; /*padding: 21px 5px 25px;*/ display: flex; justify-content: space-between; /*align-items: center;*/ flex-direction: column;}
-.dates_area li h2 {font-size: 34px; font-weight: 900; color: #b2b2b2; }
-.dates_area li:nth-child(1) h2 {font-size: 23px; font-weight: 900; color: #b2b2b2; }
+/* .dates_area li h2 {font-size: 34px; font-weight: 900; color: #b2b2b2; } */
+.dates_area li h2 {font-size: 23px; font-weight: 900; color: #b2b2b2; }
 .dates_area li h2 span {font:inherit; color:#f59f39; font-size:80px;}
 .dates_area li i {display: inline-block; /*width: max-content; height: max-content; margin: 30px 0 18px; margin-top:18px;*/ position:absolute; bottom:24px; right:30px;}
 .dates_area li p {font-size: 18px; font-weight: 900; color: #f59f39; line-height: 1.4;/*margin-top:35px; line-height:24px;*/ /*text-align: center;*/}
