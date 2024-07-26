@@ -31,7 +31,7 @@ $nation_en=sql_fetch($sql)["nation_en"];
 </style>
 <body style="width:1121px; height:792px; margin:0; padding:0; border:0;">
 <div style="width:100%; height:100%; box-sizing:border-box; padding:71px 50px 66px; margin:0; position:relative;" id="pdfDiv">
-    <img src="https://image.webeon.net/icomes2024/logo/2024_certificate_of_attendance.png" alt="" style="width:100%; height:100%; position:absolute; left:0; top:0; z-index:-1;">
+    <img src="https://image.webeon.net/icomes2024/logo/2024_certificate_of_attendance-1.png" alt="" style="width:100%; height:100%; position:absolute; left:0; top:0; z-index:-1;">
     <div style="text-align:center;">
         <img src="./img/certificate_of_attendance_logo.svg" alt="ICOMES 2023 로고" style="opacity: 0;">
         <p style="font-family: 'Montserrat', sans-serif; font-size:48px; line-height:58px; font-weight:800; letter-spacing:0.216; color:#0F64AF; margin:23px 0 6px;opacity: 0;">CERTIFICATE OF ATTENDANCE</p>
