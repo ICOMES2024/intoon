@@ -95,13 +95,15 @@
 			const memberNo = $("input[name=mn]").val() ?? "";
 
 			if(!memberNo){
-				alert('세션 연결이 끊어졌습니다.');
+				alert('Session connection has been lost.');
+				// alert('세션 연결이 끊어졌습니다.');
 				window.location.replace('./app_login.php');
 				return
 			}
 
 			if(!booth || isNaN(booth)){
-				alert('지원하지 않는 QR Code 규칙입니다.');
+				alert('This QR Code not supported.');
+				// alert('지원하지 않는 QR Code 규칙입니다.');
 				return
 			}
 
@@ -120,7 +122,7 @@
 						const dom = $(`.e_booth[data-id=${booth}]`)
 						
 						//let cnt = parseInt($(".stamp_collect .red_txt").text().replace(/[^0-9]/gi, ""))
-							//cnt = isNaN(cnt) ? 0 : cnt
+						//cnt = isNaN(cnt) ? 0 : cnt
 
 						dom.addClass("complete_stamp");
 						
