@@ -391,7 +391,7 @@ echo '<script type="text/javascript">
                                                                     <td>15:30-16:00</td>
                                                                     <td class="bold">Effects of Exercise Intervention in Subjects with Steatotic Liver Disease</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University Hospital, Taiwan)
+                                                                        <p class="bold">Chun-Jen Liu</p>(National Taiwan University, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

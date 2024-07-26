@@ -1064,7 +1064,7 @@ function writeModal(data){
 			}
 			else if(!t.chairpersons){
 				chairTxt= "Chairperson :";
-				chairpersonHtml = `Chairperson :<span class="bold">TBD</span>`;
+				chairpersonHtml = `<span class="bold">TBD</span>`;
 			}
 		}else{
 			chairpersonHtml = `<span class="bold"></span>`;

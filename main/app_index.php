@@ -149,7 +149,7 @@
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_stamp_guidelines.php" class="get_ready_alert">
+				<a href="/main/app_stamp_guidelines.php" class="">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu07.svg" alt="">
 					<!-- <span>Booth Tour</span> -->
 				</a>
