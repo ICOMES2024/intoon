@@ -156,7 +156,7 @@
 		<div class="app_menu_box">
 			<ul class="app_menu_tab langth_3">
 				<li><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
-				<li class="on"><a href="./app_my_stamp.php">My Stamp</a></li>
+				<li class="on event"><a href="./app_my_stamp.php">My Stamp</a></li>
 				<li><a href="./app_stamp_list.php">Stamp List</a></li>
 			</ul>
 		</div>
@@ -239,7 +239,7 @@
 </section>
 
 <!-- Stamp Tour > My Stamp 최종 완료 팝업 -->
-<div class="pop_wrap stamp_complete_pop on">
+<div class="pop_wrap stamp_complete_pop">
 	<div class="pop_dim"></div>	
 	<div class="pop_cont transparent">
 		<p class="white_t center_t">Thank you for your participation!</p>
@@ -248,6 +248,11 @@
 <script>
 	$(document).ready(function(){
         $(".app_header").removeClass("simple");
+
+		//[240726] sujeong / 학회팀 요청 / 모두 찍었을 경우 pop up 
+		if($(".complete_stamp").length == 26){
+			$(".stamp_complete_pop").addClass("on");
+		}
     })
 </script>
 <?php include_once('./include/app_footer.php');?>

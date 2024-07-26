@@ -1967,6 +1967,7 @@ $(document).on("click", "#submit", function(){
 
 	if(ksola_member_type == "인터넷회원"){
 		ksola_member_status = 3;
+		ksola_member_check = '';
 	}else if(ksola_member_type == "평생회원"){
 		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
