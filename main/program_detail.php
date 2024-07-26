@@ -326,7 +326,7 @@ echo '<script type="text/javascript">
                                                                     <td>18:40-19:10</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Se Hee Min</p>(Ulsan University, Korea)
+                                                                        <p class="bold">Se Hee Min</p>(University of Ulsan, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -469,7 +469,7 @@ echo '<script type="text/javascript">
                                                                     Effects of Exercise Intervention in Obese Mice with Steatotic Liver Disease
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Chia-Wen Lu</p>(National Taiwan University Hospital, Taiwan)
+                                                                        <p class="bold">Chia-Wen Lu</p>(National Taiwan University, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1042,7 +1042,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                    Nutrigenomics of Obesity and Weight management
+                                                                    Nutrigenomics of Obesity and Weight Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yoon Jung Park</p>(Ewha Womans University, Korea)
@@ -1418,7 +1418,7 @@ and Metabolism
                                                                     Obesity Related Health Disparities - A Specific Case of Low- and Middle-Income Countries
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Monika Chaudhary</p>(Johns Hopkins Gupta-Klinsky India Institute, India)
+                                                                        <p class="bold">Monika Chaudhary</p>(Johns Hopkins University, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1936,7 +1936,7 @@ and Metabolism
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Obin Kwon</p>(Seoul National University, Korea), <br>
-                                                                        <p class="bold">Jaemin Lee</p>(Daegu Gyeongbuk Institute of Science & Technology, Korea)
+                                                                        <p class="bold">Jaemin Lee</p>(DGIST, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2118,7 +2118,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
-                                                                    DPP-IV inhibitor and SGLT2 Inhibitor Combination Therapy for the Treatment of T2DM
+                                                                    DPP-IV Inhibitor and SGLT2 Inhibitor Combination Therapy for the Treatment of T2DM
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Joonyub Lee</p>(The Catholic University of Korea, Korea)
@@ -2969,6 +2969,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>12:00-13:00</td>
                                                                     <td class="bold">
+                                                                    The Earlier Use of SGLT2i, The Better Clinical Outcome in Obese T2D
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jun Hwa Hong</p>(Eulji University, Korea)
@@ -3254,14 +3255,14 @@ and Metabolism
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 11 : Perspectives in Digital Nutrition Care for Obesity </p>
-                                                     <p><span class="bold">Chairpersons : Jeong Hyun Lim</span> (Seoul National University Hospital, Korea)
+                                                     <p><span class="bold">Chairpersons : Jeong Hyun Lim</span> (Seoul National University, Korea)
                                                    , <br><span class="bold">Yoonju Song</span> (The Catholic University of Korea, Korea) 
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                <p class="bold">Organizer : JeongHyun Lim (Seoul National University Hospital, Korea), SuJin Song (Hannam University, Korea), Oh Yoen Kim (Dong-A University, Korea), Hyunjung Lim (Kyung Hee University, Korea)</p>
+                                                <p class="bold">Organizer : Jeong Hyun Lim (Seoul National University, Korea), SuJin Song (Hannam University, Korea), Oh Yoen Kim (Dong-A University, Korea), Hyunjung Lim (Kyung Hee University, Korea)</p>
                                                     <ul>
                                                         <li>In this session, we will discuss the effective application of digital health care and telenutrition for the prevention and management of obesity. The first speaker, Prof. Wen Peng of Qinghai University, will review relevant studies conducted in Asia, and the second speaker, Prof. Melissa Ventura Marra of West Virginia University, will introduce the effects of telenutrition based on the results of clinical studies in the United States. The last speaker, Dr. Shin Ok Park of Noom Korea, will give a lecture on the pros and cons of applying telenutrition in weight management and future prospects.
 
@@ -3495,7 +3496,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
-                                                                      
+                                                                    Treatment of Metabolic Syndrome Complications with Adiponectin Therapeutics
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Gary Sweeney</p>(York University, Canada)
@@ -3705,7 +3706,7 @@ and Metabolism
                                                                     Bariatric Surgery and its Impact on Cancer Risk Reduction
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Moon-Won Yoo</p>(Ulsan University, Korea)
+                                                                        <p class="bold">Moon-Won Yoo</p>(University of Ulsan, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3801,7 +3802,7 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yeo-Jin Hong</p>(Korea University Ansan Hospital, Korea)
+                                                                        <p class="bold">Yeo-Jin Hong</p>(Korea University, Korea)
                                                                          ,<br />
                                                                         <p class="bold">Hwal Rim Jeong</p>(Soonchunhyang University, Korea)
                                                                     </td>
@@ -4010,6 +4011,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>14:30-15:00</td>
                                                                     <td class="bold">
+                                                                    Weight Maintenance Strategy for Obesity Drug Therapy; Combination Phentermine Plus Topiramate
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yoon Jeong Cho</p>(Daegu Catholic University, Korea)
@@ -4069,6 +4071,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>17:00-17:30</td>
                                                                     <td class="bold">
+                                                                    Ectopic Fat Dynamics: Unraveling the Interplay Between Myosteatosis and Cardio-Metabolic Health
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Chang Hee Jung</p> (University of Ulsan, Korea)
@@ -4250,6 +4253,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
+                                                                    TRUE-BUDDY Combination Therapy: Benefits for Beta Cells, Insulin Resistance and Diabetic Complications
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Chang Hee Jung</p>(University of Ulsan, Korea)
@@ -4463,6 +4467,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
+                                                                    TZD and SGLT2i Combination for Fatty Liver Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jun Hwa Hong </p>
@@ -5076,6 +5081,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
+                                                                        Revolutionizing Obesity Care
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jang Won Son</p>(The Catholic University of Korea, Korea)
@@ -5267,8 +5273,8 @@ and Metabolism
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Justin Y. Jeon</p>(Yonsei University, Korea)
-                                                                        <!-- , <br><p class="bold">Justin Y. Jeon</p>(Yonsei University, Korea) -->
+                                                                        <p class="bold">Seung-Hwan Lee</p>(The Catholic University of Korea, Korea)
+                                                                        , <br><p class="bold">Justin Y. Jeon</p>(Yonsei University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -5427,9 +5433,10 @@ and Metabolism
                                                                 <tr>
                                                                     <td>11:50-12:50</td>
                                                                     <td class="bold">
+                                                                    The Review of Combination Phentermine Plus Topiramate for Chronic Weight Management
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sang Mo Hong </p>(Hanyang University, Korea)
+                                                                        <p class="bold">Kyung Soo Kim </p>(CHA University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6027,7 +6034,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Symposium 15 : Diet Quality and Weight Regulation</p>
                                                     <p><span class="bold">Chairpersons : Doo-Man Kim</span> (Hallym University, Korea)
-                                                         , <br><span class="bold">Eun Mi Kim</span> (Kangbuk Samsung Hospital, Korea) 
+                                                         , <br><span class="bold">Eun Mi Kim</span> (Sungkyunkwan University, Korea) 
                                                     </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -6119,10 +6126,8 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">SuJin Song</p>(Hannam
-                                                                        University, Republic of Korea),<br />
-                                                                        <p class="bold">Hannah Oh</p>(Korea University,
-                                                                        Republic of Korea) -->
+                                                                        <p class="bold">SuJin Song</p>(Hannam University, Korea),<br />
+                                                                        <p class="bold">Hyun Ju You</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6750,17 +6755,18 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
+                                                                    GLP1+Glucagon Dual Agonist
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
-                                                                    </td>
-                                                                </tr>
+                                                                        <p class="bold">Erika Bezerra Parente</p>(Boehringer Ingelheim, Germany)
+                                                                        </td>
+                                                                    </tr>
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Erika Bezerra Parente</p>(Boehringer Ingelheim, Germany)
+                                                                    <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6914,7 +6920,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>16:10-16:35</td>
                                                                     <td class="bold">
-                                                                    Movement Function Improvement Exercise Algorithm for Obese Individuals
+                                                                    Exercise Recommendation Algorithm for Improving Functional Movement: Focusing on Individuals with Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Min-Hwa Suk</p>(Hanyang University, Korea)
@@ -7134,7 +7140,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>15:50-16:20</td>
                                                                     <td class="bold">
-                                                                       
+                                                                    GLP1 Receptor Agonists from Asian Perspective
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yumi Kang</p>(Harvard Medical School, USA)

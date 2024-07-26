@@ -571,8 +571,8 @@ if ($during_yn !== "Y") {
                         <ul class="chk_list info_check_list">
 							<?php
 								$conference_info_arr = array(
-									"Website of the Korea Society of Obesity",
-									"Promotional email from the Korea Society of Obesity",
+									"Website of the Korean Society for the Study of Obesity",
+									"Promotional email from the Korean Society for the Study of Obesity",
 									"Advertising email or the bulletin board from the relevant society",
 									"Information about affiliated companies/organizations",
 									"Invited as a speaker, moderator, and panelist",

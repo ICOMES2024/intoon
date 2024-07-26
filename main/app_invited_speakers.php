@@ -35,7 +35,7 @@ if (empty($_SESSION["USER"])) {
 $member_idx = $_SESSION["USER"]["idx"];
 
 $select_invited_speaker_query = "
-                                SELECT DISTINCT LEFT(first_name, 1) AS initial, isp.idx, program_contents_idx, last_name, first_name, affiliation, 
+                                SELECT DISTINCT LEFT(last_name, 1) AS initial, isp.idx, program_contents_idx, last_name, first_name, affiliation, 
                                     (CASE
                                          WHEN fisp.idx IS NULL THEN 'N'
                                          ELSE 'Y'
@@ -56,7 +56,7 @@ $select_invited_speaker_query = "
 $invited_speaker_list = get_data($select_invited_speaker_query);
 
 $select_initial_query = "
-                            SELECT DISTINCT LEFT(first_name, 1) AS initial
+                            SELECT DISTINCT LEFT(last_name, 1) AS initial
                             FROM invited_speaker
                             WHERE is_deleted='N'
                             ORDER BY initial ASC;
