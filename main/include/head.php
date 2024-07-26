@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+	<!-- [240118]sujeong / 확대, 축소 meta tag 수정 -->
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=5.0, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover" />
     <title>ICOMES 2024</title>
 
     <meta property="og:type" content="website">

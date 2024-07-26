@@ -304,7 +304,7 @@ echo '<script type="text/javascript">
                                                 <td>18:40-19:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
-                                                    <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul National University, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul Happiness Clinic of Internal Medicine, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>

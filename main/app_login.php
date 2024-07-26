@@ -10,7 +10,7 @@
 <script src="./js/script/client/app_login.js"></script>
 <style>
 	html, body {overflow:hidden; background: #000f32 url("../img/app_login_bg2.jpg") no-repeat center bottom /cover;}
-	.app_main_box {min-height:700px;}
+	.app_main_box {height:700px;}
     .app_main_backBtn{position: absolute; left:5%; top:2%; width:50px; padding:10px;}
     .app_main_backBtn img{ width:100%; }
 </style>
@@ -51,6 +51,27 @@ $(document).ready(function(){
 //	if ( varUA.indexOf('android') > -1) {
 //		alert("Please update the app.")
 //	}
+
+    var originalSize = jQuery(window).width() + jQuery(window).height();
+     
+     // 창의 사이즈 변화가 일어났을 경우 실행된다.
+     jQuery(window).resize(function() {
+        
+       // 처음 사이즈와 현재 사이즈가 변경된 경우
+       // 키보드가 올라온 경우
+       if(jQuery(window).width() + jQuery(window).height() != originalSize) {
+        $('.app_main_txt').hide();
+       }
+      
+       // 처음 사이즈와 현재 사이즈가 동일한 경우
+       // 키보드가 다시 내려간 경우
+       else {
+        $('.app_main_txt').show();
+       }
+     });
+
+
+
 
     let icomes_device = null;
     let icomes_token = null;
