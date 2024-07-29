@@ -34,9 +34,9 @@
 						<li><a href="/main/app_venue.php">Venue</a></li>
 					</ul>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="/main/app_floor_plan.php" class="get_ready_alert">Floor Plan</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="javascript:;">Program</a>
 					<ul class="app_sub">
@@ -86,9 +86,9 @@
 				<li>
 					<a href="/main/app_notice.php">Notice</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="/main/app_survey.php" class="get_ready_alert">Survey</a>
-				</li>
+				</li> -->
 				<!-- [240314] hub 스탬프 투어 소스 코드 수정 !@#$^ -->
 				<!-- app_header // Tour Map(기존) => Stamp List(현재) -->
 				<!-- <li>

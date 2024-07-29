@@ -1906,7 +1906,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                    Gut Hormone, Brain, and Obesity
+                                                                    Gut Hormone and Brain in Obesity
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Chih-Yen Chen</p>(National Yang Ming Chiao Tung University, Taiwan)
