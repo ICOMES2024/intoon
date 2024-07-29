@@ -2320,7 +2320,7 @@ section.coming img {width: 100%;}
 }
 
 .event_container .event_wrap{
-	border: 1px solid #DDD;
+	/* border: 1px solid #DDD; */
 	border-radius: 28px;
 	/* height: 300px; */
 	height: 100%;
@@ -2328,9 +2328,32 @@ section.coming img {width: 100%;}
 	padding: 8px 16px;
 }
 
+.event_container .event_wrap::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+.event_container .event_wrap::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    /* background: #5C0378; 스크롤바의 색상 */
+    background: #a8a8a8; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.event_container .event_wrap::-webkit-scrollbar-track {
+    background: rgba(183, 183, 183, 0.1);  /*스크롤바 뒷 배경 색상*/
+}
+.event_container .event_wrap::-webkit-scrollbar-thumb:active{
+	background: #a8a8a8;
+}
+.event_container .event_wrap::-webkit-scrollbar-thumb:hover{
+	background: #a8a8a8;
+}
+
+
 .event_container .event_wrap > div{
 	width: 80%;
-	margin: 8px auto;
+	margin: 0px auto;
 	font-size: 14px;
 }
 
@@ -2341,9 +2364,10 @@ section.coming img {width: 100%;}
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain; */
-	background-color: #EEE;
+	background-color: #f6f6f6;
 	padding: 4px 8px 16px 8px;
 	border-radius: 8px;
+	margin-bottom: 8px;
 }
 
 /* .event_container .event_wrap .my_event::before{
@@ -2358,7 +2382,18 @@ section.coming img {width: 100%;}
 } */
 
 .event_container .event_wrap .event_box{
-	background-color: #FFF;
+	background-color:  #F6F6F6;
+	text-align: center;
+	padding: 8px;
+	border-top: 1px solid #707070;
+}
+
+.event_container .event_wrap .event_box:nth-child(even){
+	background-color:#FFF;
+}
+
+.event_container .event_wrap .event_box:last-child{
+	border-bottom: 1px solid #707070;
 }
 
 .event_container .input_wrap, .event_container .event_wrap{
@@ -2370,7 +2405,8 @@ section.coming img {width: 100%;}
 	margin-top: 20px;
 	height: 40px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+    gap: 8px;
 }
 
 .event_container .input_wrap input {
@@ -2378,14 +2414,14 @@ section.coming img {width: 100%;}
 	padding: 8px;
 	width: 75%;
 	height: 100%;
-	border-radius: 8px;
+	/* border-radius: 8px; */
 }
 
 .event_container .input_wrap button{
 	border: 1px solid #e6e6e6;
 	padding: 4px 8px;
 	height: 100%;
-	border-radius: 8px;
+	/* border-radius: 8px; */
 }
 
 .welcome_title{
@@ -2988,6 +3024,10 @@ section.coming img {width: 100%;}
 	}
 	.login_form.style_2023.login_form .btn{
 		margin-top: 0px;
+	}
+
+	.container.login.bg{
+		background: url("https://image.webeon.net/icomes2024/main/2024_icomes_mobile-2.png") no-repeat top 60px center /cover;
 	}
 
 	.login_form .icomes_2024_login_btn{

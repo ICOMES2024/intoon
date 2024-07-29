@@ -419,13 +419,13 @@
 									
 									<span class="red_t">* If you are not a member of KSSO, please select the non-member option.</span>
 									<!-- 외국 사이트 회원가입 -->
-									<a href="http://eng.kosso.or.kr/account/join_1.php"  class="join_btn">Join KSSO as a Member</a>
-									<div class="flex_top_between mt20">
+									<a href="http://eng.kosso.or.kr/account/join_1.php"  class="join_btn" target="_blank">Join KSSO as a Member</a>
+									<!-- <div class="flex_top_between mt20">
 										<div><p class="bold underline">For KSSO members</p></div>
 										<div>
 											<p>1) please refrain from registration and proceed with sign-up only.</p>
 											<p class="mt10">2) Send your confirmation email back to secretariat for membership verification.</p>
-											<p class="mt10">3) Once Secretariat confirms your membership, they will send you an email requesting registration.</p>
+											<p class="mt10">3) Once Secretariat confirms your membership, they will send you an email requesting registration.</p> -->
 										</div>
 									</div>
 									
@@ -702,14 +702,14 @@
 							<span class="red_t"><br/>* If you are not a member of KSSO,<br/>please select the non-member option.</span>
 							<!-- 외국 사이트 회원가입 -->
 							<a href="http://eng.kosso.or.kr/account/join_1.php" class="join_btn" target="_blank">Join KSSO as a Member</a>
-							<div class=" mt20">
+							<!-- <div class=" mt20">
 										<div><p class="bold underline">For KSSO members</p></div>
 										<div>
 											<p class="mt10">1) please refrain from registration and proceed with sign-up only.</p>
 											<p class="mt10">2) Send your confirmation email back to secretariat for membership verification.</p>
 											<p class="mt10">3) Once Secretariat confirms your membership, they will send you an email requesting registration.</p>
 										</div>
-									</div>
+									</div> -->
 									<!-- <div class="clearfix2 mt20">
 									<div>
 										<input type="checkbox" class="checkbox" id="privacy2">
@@ -1685,6 +1685,7 @@ $(document).on("click", "#mo_submit", function(){
 
 	if(ksola_member_type == "인터넷회원"){
 		ksola_member_status = 3;
+		ksola_member_check = "";
 	}else if(ksola_member_type == "평생회원"){
 		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
@@ -2013,6 +2014,7 @@ $(document).on("click", "#submit", function(){
 
 	if(ksola_member_type == "인터넷회원"){
 		ksola_member_status = 3;
+		ksola_member_check = "";
 	}else if(ksola_member_type == "평생회원"){
 		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
@@ -2208,6 +2210,12 @@ function mo_non_kor_api(){
 			if(user_value.status == '승인'){
 				$("input[name=ksola_member_check]").val(user_value.email);
 
+				$("input[name=mo_email]").val(user_value.email);
+				// $("input[name=mo_phone]").val(user_value.cellnum);
+				// $("input[name=mo_first_name]").val(user_value["first name"]);
+				// $("input[name=mo_last_name]").val(user_value["last name"]);
+				// $("input[name=mo_affiliation]").val(user_value.sosok);
+				alert('Membership verified.')
 			}
 		}
 	}
@@ -2378,6 +2386,11 @@ function non_kor_api(){
 			const user_value = kor_sign.value
 			if(user_value.status == '승인'){
 				$("input[name=ksola_member_check]").val(user_value.email);
+				$("input[name=email]").val(user_value.email);
+				// $("input[name=phone]").val(user_value.cellnum);
+				// $("input[name=first_name]").val(user_value["first name"]);
+				// $("input[name=last_name]").val(user_value["last name"]);
+				// $("input[name=affiliation]").val(user_value.sosok);
 				alert('Membership verified.')
 			}
 		}

@@ -9,7 +9,7 @@ section.container.login.bg {margin-top: 0 !important;}
 
 </style>
 
-<section class="container login_form form_layout find_password login bg style_2023">
+<section class="container login_form form_layout find_password login bg style_2023" style='background: url("https://image.webeon.net/icomes2024/main/2024_icomes_mobile-2.png") no-repeat center /cover;'>
     <!-- <a href="./index.php" class="logo"><img src="./img/logo.png"></a> -->
     <h1 class="page_title">Find Password
         <p class="red_txt">Please enter your email.</p>
@@ -18,11 +18,11 @@ section.container.login.bg {margin-top: 0 !important;}
         <form name="find_password_form" onsubmit="return false;">
             <ul>
                 <li>
-                    <input type="text" name="email" placeholder="<?= $locale("id") ?>">
+                    <input type="text" name="email" placeholder="<?= $locale("id") ?>" style='width:280px !important;'>
                 </li>
             </ul>
-            <button type="button" class="btn submit_btn gray_line_btn"><?= $locale("get_temporary_password_btn") ?></button>
-            <button type="button" class="btn login_btn main_btn"><?= $locale("login") ?></button>
+            <button type="button" class="btn submit_btn gray_line_btn" style="margin-top: 12px;"><?= $locale("get_temporary_password_btn") ?></button>
+            <button type="button" class="btn login_btn main_btn" style="margin-top: 12px;"><?= $locale("login") ?></button>
         </form>
     </div>
 </section>

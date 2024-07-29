@@ -125,6 +125,7 @@
 						//cnt = isNaN(cnt) ? 0 : cnt
 
 						dom.addClass("complete_stamp");
+						dom.find('a').css('background-image', `url('https://image.webeon.net/icomes2024/app_sponsor/2024_logo${booth}-4.png')`);
 						
 						//$(".stamp_collect .red_txt").text(cnt + 1);
 
@@ -255,6 +256,13 @@
 		if($(".complete_stamp").length == 26){
 			$(".stamp_complete_pop").addClass("on");
 		}
+
+		const completedList = document.querySelectorAll('.complete_stamp');
+
+		completedList.forEach((completed)=>{
+			const boothNum = completed.dataset.id;
+			completed.children[0].style = `background-image : url('https://image.webeon.net/icomes2024/app_sponsor/2024_logo${boothNum}-4.png')`
+		})
     })
 </script>
 <?php include_once('./include/app_footer.php');?>

@@ -25,15 +25,15 @@
 		</h2>
 		<div class="app_menu_box">
             <ul class="app_menu_tab langth_2">
-                    <li><a href="./app_event_guidelines.php">Guidelines</a></li>
-                    <li class="on"><a href="./app_event.php">LIVE EVENT</a></li>
+                    <li><a href="./app_event_guidelines.php">Comment Event Guidelines</a></li>
+                    <li class="on event"><a href="./app_event.php">Question</a></li>
                 </ul>
         </div>
 	</div>
 	<div class="inner">
 		<div class="contents_box">
 				<div class="event_img">
-                    <img src="https://image.webeon.net/icomes2024/app/2024_app_event.png" alt="event_img"/>
+                    <img src="https://image.webeon.net/icomes2024/app_event/2024_app_quiz-01.png" alt="event_img"/>
 				</div>
 				<div class="event_container">
                     <div class="event_wrap">
