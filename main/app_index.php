@@ -395,7 +395,7 @@
 
     checkAppVersionCallback = (appVersion) =>{
 		const AOSver = 1.7;
-		const IOSver = 1.6;
+		const IOSver = 1.7;
 
         if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
             if(parseFloat(appVersion) < AOSver){
