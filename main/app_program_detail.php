@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/app_header.php'); ?>
 
-<script src="./js/script/client/app_program_detail.js?v=0.94"></script>
+<script src="./js/script/client/app_program_detail.js?v=0.10"></script>
 <style>
     /*230830 안재현 로딩화면 추가 */
     .loading_list{text-align: center; padding:30%; border-bottom:none !important;}
@@ -338,7 +338,7 @@ echo '<script type="text/javascript">
 
         $(".app_header").removeClass("simple");
 
-		$(".main .right_tag, .preview_btn").click(function(event) {
+		$(".main .right_tag, .preview_btn, .branch").click(function(event) {
             event.stopPropagation();
         });
 
@@ -380,6 +380,17 @@ echo '<script type="text/javascript">
         $(".right_tag").click(function(event){
             event.preventDefault();
         });
+
+        $(".branch").click(function(event){
+            event.preventDefault();
+        });
+
+        // $(document).on("click", ".branch", function(event) {
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        //     console.log("hello");
+        //     //window.location.href = `/main/app_floor_plan.php?room=${$(this).data("id")}`;
+        // });
     });
 
 </script>

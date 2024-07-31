@@ -2,14 +2,10 @@
 	include_once('./include/head.php');
 
 	$session_user = $_SESSION['USER'] ?? NULL;
-	$session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+	$session_app_type = (!empty($_SESSION['APP']) ? 'N' : 'N');
 
 	//230714 HUBDNC 앱 로그인 시 파라미터 추가 된 부분
-	if(!empty($session_user) && $session_app_type == 'Y') {
-		include_once('./include/app_header.php');
-	} else {
 		include_once('./include/header.php');
-	}
 
 	//$language
 	$sql_info = "SELECT
@@ -20,7 +16,7 @@
 						on fi_sign.idx = ig.overview_welcome_sign_" . $language . "_img";
 	$info = sql_fetch($sql_info);
 
-	$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
+	$add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : '';
 ?>
 
 <!-- app일때 section에 app_version 클래스 추가 -->
@@ -57,7 +53,7 @@
 			</div>
             <div class="head_profile">
 				<div class="headman">
-					<div class="headman_l"><img src="https://image.webeon.net/icomes2024/icomes/2024_ICOMES_chair-1-1.png" alt=""></div>
+					<div class="headman_l"><img src="https://image.webeon.net/icomes2024/icomes/2024_ICOMES_chair-1-2.png" alt=""></div>
 					<div class="headman_r">
 						<!-- <h5>Name</h5>
 						<h1>Sung Soo Kim, M.D., Ph.D</h1>

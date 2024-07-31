@@ -40,7 +40,7 @@
 </style>
 
 <!-- HUBDNCLHJ : app loading 페이지 -->
-<section class="container app_version main">
+<section class="container app_version main home">
 	<!-- <div class="app_vsl"> -->
 		<div class="app_main_wrap">
 			<!-- <img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt=""> -->
@@ -78,7 +78,7 @@
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_3">
 			</li>
-			<li class="pointer" name="keynote_lecture_1"  >
+			<li class="pointer" name="keynote_lecture_1">
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-08-1.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_2">
@@ -93,7 +93,7 @@
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_3">
 			</li>
-			<li class="pointer" name="keynote_lecture_8"  >
+			<li class="pointer" name="keynote_lecture_8">
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-11-1.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_2">
@@ -137,13 +137,13 @@
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_happening_now.php" class="get_ready_alert">
+				<a href="/main/app_happening_now.php" class="">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu05.svg" alt="">
 					<!-- <span>HAPPENING<br/>NOW</span> -->
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_floor_plan.php" class="get_ready_alert">
+				<a href="/main/app_floor_plan.php" class="">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu06.svg" alt="">
 					<!-- <span>FLOOR PLAN</span> -->
 				</a>
@@ -394,8 +394,8 @@
     }
 
     checkAppVersionCallback = (appVersion) =>{
-		const AOSver = 1.5;
-		const IOSver = 1.6;
+		const AOSver = 1.7;
+		const IOSver = 1.7;
 
         if (typeof(window.AndroidScript) != "undefined" && window.AndroidScript != null) {
             if(parseFloat(appVersion) < AOSver){

@@ -259,14 +259,24 @@
 		$member_status = ($rl["member_status"] == 0) ? "N" : "Y";
 
 		//[240315] sujeong / 등록번호 4자리수 만들기
-		if($rl["registration_idx"]< 10){
-			$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-000" .$rl["registration_idx"] : "-";
-		}else if($rl["registration_idx"] >= 10 && $list["registration_idx"] < 100){
-			$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-00" . $rl["registration_idx"] : "-";
-		}else if($rl["registration_idx"] >= 100 &&$list["idx"] < 1000){
-			$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-0" . $rl["registration_idx"] : "-";
-		}else if($rl["registration_idx"] >= 1000 ){
-			$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-" . $rl["registration_idx"] : "-";
+		// if($rl["registration_idx"]< 10){
+		// 	$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-000" .$rl["registration_idx"] : "-";
+		// }else if($rl["registration_idx"] >= 10 && $list["registration_idx"] < 100){
+		// 	$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-00" . $rl["registration_idx"] : "-";
+		// }else if($rl["registration_idx"] >= 100 &&$list["idx"] < 1000){
+		// 	$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-0" . $rl["registration_idx"] : "-";
+		// }else if($rl["registration_idx"] >= 1000 ){
+		// 	$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-" . $rl["registration_idx"] : "-";
+		// }
+
+		if(!$rl["registration_idx"]){
+			$code_number = $rl["registration_idx"];
+	
+			while (strlen("" . $code_number) < 4) {
+				$code_number = "0" . $code_number;
+			}
+	
+			$register_no = "ICOMES2024". "-" . $code_number;
 		}
 
 		//$register_no = !empty($rl["registration_idx"]) ? "ICOMES2023-".$rl["registration_idx"] : "-";

@@ -242,6 +242,10 @@
 			<div class="contents_wrap">
                 <p class="mypage_registration_txt">Registration Information</p>
                 <table class="mypage_registration_table">
+                    <colgroup>
+                        <col width="30%">
+                        <col>
+                    </colgroup>
                     <tr>
                         <th>Registration No.</th>
                         <td><?php echo $register_no; ?></td>
@@ -252,7 +256,7 @@
                     </tr>
                     <tr>
                         <th>Name</th>
-                        <td><?php echo $member_data['first_name'] . $member_data['last_name']; ?></td>
+                        <td><?php echo $member_data['last_name'] ." " .$member_data['first_name']; ?></td>
                     </tr>
                     <tr>
                         <th>Country</th>
@@ -333,7 +337,7 @@
                         <td><?=$special_request_food?></td>
                     </tr>
                     <tr>
-                        <th>Where did you get the <br/>information about<br/> the conference?</th>
+                        <th>Where did you get the information about the conference?</th>
                         <td><?=$info_html?></td>
                     </tr>
                     <!-- Credit Card 선택 시 -->

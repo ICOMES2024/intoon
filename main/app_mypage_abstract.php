@@ -93,7 +93,12 @@
 				
 				<?php 
 				//초록 채택 번호가 없는 경우로 조건 변경
-				// if(count($my_abstract_list) == 0){
+				if(count($my_abstract_list) == 0){ ?>
+						<div class="no_data_txt">
+							<p>Thank you for your participation.<p>
+							<p>We look forward to your abstract submission for the next ICOMES : )</p>
+						</div>
+				<?php }else{ 
 					foreach($my_abstract_list as $i => $submission) { 
 						if($submission['etc3']){?>
 								<table class="mypage_abstract_table">
@@ -124,7 +129,7 @@
 							<p>Thank you for your participation.<p>
 							<p>We look forward to your abstract submission for the next ICOMES : )</p>
 						</div>
-				<?php	}	}?>
+				<?php	}	}}?>
 			</div>			
 		</div> 
 	</div>

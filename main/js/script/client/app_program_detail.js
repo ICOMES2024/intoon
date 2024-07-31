@@ -102,6 +102,11 @@ $(document).ready(function (){
         event.preventDefault();
         event.stopPropagation();
     });
+
+    $(".app_scientific .program_detail_ul").on("click", ".branch", function(event){
+        event.preventDefault();
+        event.stopPropagation();
+    });
 });
 
 // [함수] 페이지 초기설정
@@ -291,7 +296,7 @@ function createHTMLList(program_list, active){
                                     <button class="${schedule} schedule_btn" value="${pl.idx}"></button>
                                     <span class="time">${pl.start_time}-${pl.end_time}</span>
                                 </div>
-                                <span class="branch">${pl.program_place_name}</span>
+                                <span class="branch" data-id='${pl.program_place_name}' onclick="goFloorPlan(event)">${pl.program_place_name}</span>
                             </div>
                             ${preview_html}
                         </div>
@@ -416,6 +421,12 @@ function openPDF(e){
             }
         }
     }
+}
+
+function goFloorPlan(e){
+    e.preventDefault();
+    const room = e.target.dataset.id;
+    window.location.href = `/main/app_floor_plan.php?room=${room}`;
 }
 
 function setAlarm(program_idx, is_push){

@@ -1690,8 +1690,8 @@ $(document).on("click", "#mo_submit", function(){
 		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
 		ksola_member_status = 1;
-	}else if($("#mo_user3").prop('checked') == true && nation_no !== 25) {
-		ksola_member_status = 4;
+	}else if($("#mo_user3").prop('checked') == true && nation_no !== 25 && ksola_member_check) {
+		ksola_member_status = 1;
 	}else {
 		ksola_member_status = 0;
 	}
@@ -2019,8 +2019,8 @@ $(document).on("click", "#submit", function(){
 		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
 		ksola_member_status = 1;
-	}else if($("#user3").prop('checked') == true && nation_no !== 25) {
-		ksola_member_status = 4;
+	}else if($("#user3").prop('checked') == true && nation_no !== 25 && ksola_member_check) {
+		ksola_member_status = 1;
 	}else{
 		ksola_member_status = 0;
 	}
@@ -2202,9 +2202,9 @@ function mo_non_kor_api(){
 		var user_row = kor_sign.user_row;
 
 		if(kor_sign.code == 100){
-			alert('please check KSSO ID and password')
+			alert('The information you provided does not match our registration records.')
 		}else if(kor_sign.code == 300){
-			alert('please check KSSO ID and password')
+			alert('The information you provided does not match our registration records.')
 		}else if(kor_sign.code == 200){
 			const user_value = kor_sign.value
 			if(user_value.status == '승인'){
@@ -2215,7 +2215,9 @@ function mo_non_kor_api(){
 				// $("input[name=mo_first_name]").val(user_value["first name"]);
 				// $("input[name=mo_last_name]").val(user_value["last name"]);
 				// $("input[name=mo_affiliation]").val(user_value.sosok);
-				alert('Membership verified.')
+				alert('Membership Verified')
+			}else{
+				alert('Your membership approval is currently pending.')
 			}
 		}
 	}
@@ -2379,9 +2381,9 @@ function non_kor_api(){
 		var user_row = kor_sign.user_row;
 
 		if(kor_sign.code == 100){
-			alert('please check KSSO ID and password')
+			alert('The information you provided does not match our registration records.')
 		}else if(kor_sign.code == 300){
-			alert('please check KSSO ID and password')
+			alert('The information you provided does not match our registration records.')
 		}else if(kor_sign.code == 200){
 			const user_value = kor_sign.value
 			if(user_value.status == '승인'){
@@ -2391,7 +2393,9 @@ function non_kor_api(){
 				// $("input[name=first_name]").val(user_value["first name"]);
 				// $("input[name=last_name]").val(user_value["last name"]);
 				// $("input[name=affiliation]").val(user_value.sosok);
-				alert('Membership verified.')
+				alert('Membership Verified')
+			}else{
+				alert('Your membership approval is currently pending.')
 			}
 		}
 	}

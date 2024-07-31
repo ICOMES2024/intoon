@@ -134,7 +134,8 @@ $program_list = get_data($select_program_query);
                                 ?>
 								<div class="info">
 									<span class="time"><?=$program['start_time']?>-<?=$program['end_time']?>, <?=$program['date']?></span>
-									<span class="branch"><?=$program['program_place_name']?></span>
+									<!-- <span class="branch"><?=$program['program_place_name']?></span> -->
+									<span class="branch" data-id='<?=$program['program_place_name']?>' onclick="goFloorPlan(event)"><?=$program['program_place_name']?></span>
 								</div>
 							</div>
 							<input type="hidden" name="e" value="<?=$program['program_place_name']?>">
@@ -212,6 +213,17 @@ $program_list = get_data($select_program_query);
 	function table_location(event, _this, e, day, this_name) {
 		// window.location.href = "./program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
 		window.location.href = "./app_program_detail.php?day=" + day + "&e=" + e + "&name=" + this_name;
+	}
+
+	$(".branch").click(function(event){
+            event.preventDefault();
+			event.stopPropagation();
+     });
+	 
+	function goFloorPlan(e){
+		e.preventDefault();
+		const room = e.target.dataset.id;
+		window.location.href = `/main/app_floor_plan.php?room=${room}`;
 	}
 
 /*

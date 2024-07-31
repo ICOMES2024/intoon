@@ -25,7 +25,7 @@
 		</h2>
 		<div class="app_menu_box">
             <ul class="app_menu_tab langth_2">
-                    <li><a href="./app_event_guidelines.php">Comment Event Guidelines</a></li>
+                    <li><a href="./app_event_guidelines.php">Comment Event<br/>Guidelines</a></li>
                     <li class="on event"><a href="./app_event.php">Question</a></li>
                 </ul>
         </div>
@@ -87,7 +87,9 @@
         if(!member_idx){
             eventWrap.innerHTML = "";
         }else{     
-            eventWrap.innerHTML += `<div class="my_event">${data.comment}<br/>${data.register_date}<br/><button class='del_btn' onclick="deleteComment(${data.idx})">Delete</button></div>`
+            // eventWrap.innerHTML += `<div class="my_event">${data.comment}<br/>${data.register_date}<br/><button class='del_btn' onclick="deleteComment(${data.idx})">Delete</button></div>`
+
+            eventWrap.innerHTML += `<div class="my_event">${data.comment}<br/>${data.register_date}<br/></div>`
         }
     }
 
@@ -130,6 +132,9 @@
 
     submitButton.addEventListener("click", ()=>{
         const commentValue = commentInput.value;
+
+        // [240709] sujeong !!! 수정 필요 !!! 첫번째 이벤트 q1
+        const quizNum = 'q1';
         
         if(commentValue === ""){
             alert("Please write your comment!")
@@ -141,7 +146,8 @@
                 type: "POST",
                 data: {
                     flag: "submit",
-                    comment: commentValue
+                    comment: commentValue,
+                    quizNum : quizNum
                 },
                 dataType: "JSON",
                 success: function(res) {

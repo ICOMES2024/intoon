@@ -93,7 +93,7 @@
 
 	$num = 0;
  	foreach($memberMap as $memberNo => $member){
-        $no = (int)$num+1;
+        $num = (int)$num+1;
 		$html .= '<tr class="tr_center">';
 		$html .= '<td>'.$no.'</td>';
 		$html .= '<td>'.$member["email"].'</td>';

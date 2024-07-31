@@ -119,7 +119,16 @@ foreach($program_list as $pl){
 }
 
 ?>
+<script>
+            
+    function goFloorPlan(e){
+        e.preventDefault();
+        const room = e.target.dataset.id;
+        window.location.href = `/main/app_floor_plan.php?room=${room}`;
+    }
 
+
+</script>
 <!-- HUBDNCHYJ : App - My Schedule 페이지 -->
 <section class="container app_version app_scientific app_schedule">
 	<div class="app_title_box">
@@ -172,7 +181,8 @@ foreach($program_list as $pl){
                             <div class="info">
                                 <button class="<?=$schedule?>" value="<?=$program['idx']?>"></button>
                                 <span class="time"><?=$program['start_time']?>-<?=$program['end_time']?></span>
-                                <span class="branch"><?=$program['program_place_name']?></span>
+                                <!-- <span class="branch"><?=$program['program_place_name']?></span> -->
+                                <span class="branch" data-id='<?=$program['program_place_name']?>' onclick="goFloorPlan(event)"><?=$program['program_place_name']?></span>
                             </div>
                             <?php
                             if($program['preview']!=null || $program['preview']!=""){
@@ -269,7 +279,8 @@ foreach($program_list as $pl){
                                 <div class="info">
                                     <button class="<?=$schedule?>" value="<?=$program['idx']?>"></button>
                                     <span class="time"><?=$program['start_time']?>-<?=$program['end_time']?></span>
-                                    <span class="branch"><?=$program['program_place_name']?></span>
+                                    <!-- <span class="branch"><?=$program['program_place_name']?></span> -->
+                                    <span class="branch" data-id='<?=$program['program_place_name']?>' onclick="goFloorPlan(event)"><?=$program['program_place_name']?></span>
                                 </div>
                                 <?php
                                 if($program['preview']!=null || $program['preview']!=""){
@@ -366,7 +377,8 @@ foreach($program_list as $pl){
                                 <div class="info">
                                     <button class="<?=$schedule?>" value="<?=$program['idx']?>"></button>
                                     <span class="time"><?=$program['start_time']?>-<?=$program['end_time']?></span>
-                                    <span class="branch"><?=$program['program_place_name']?></span>
+                                    <!-- <span class="branch"><?=$program['program_place_name']?></span> -->
+                                    <span class="branch" data-id='<?=$program['program_place_name']?>' onclick="goFloorPlan(event)"><?=$program['program_place_name']?></span>
                                 </div>
                                 <?php
                                 if($program['preview']!=null || $program['preview']!=""){
@@ -473,6 +485,12 @@ foreach($program_list as $pl){
             } else {
                 openPDF(path);
             }
+        });
+
+        
+        $(".branch").click(function(event){
+                event.preventDefault();
+                event.stopPropagation();
         });
 
         function Schedule(e){

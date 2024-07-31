@@ -208,8 +208,17 @@
 				VALUES
 					('{$booth_idx}', '{$member_idx}', ".($agent ? "'{$agent}'" : "NULL").")
 				";
+		
+		$sql_name = "
+				SELECT name AS company_name
+				FROM	e_booth
+				WHERE idx = {$booth_idx}
+		";
+
+		$booth_name = get_data($sql_name);
+
 		if (sql_query($sql)) {
-			return_value(200, "Completed.");
+			return_value(200, "Completed.", $booth_name);
 		} else {
 			return_value(500, "Error during checking whether draw is possible.\nContact your administrator. [02-2039-7802]");
 		}
