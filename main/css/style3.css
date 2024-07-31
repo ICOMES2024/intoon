@@ -1178,13 +1178,13 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 ==========================*/
 /* STAMP TOUR > stamp_list */
 .stamp_list {display:flex; align-items:center; flex-wrap:wrap; justify-content: flex-start; margin-top:24px;}
-.stamp_list li {width:calc((100% / 3) - 12px); position: relative;}
-.stamp_list li:not(:first-of-type, :nth-child(3n + 4)) {margin-left: 18px;}
+.stamp_list li {width:calc((100% / 3) - 0px); position: relative;}
+/* .stamp_list li:not(:first-of-type, :nth-child(3n + 4)) {margin-left: 18px;} */
 .stamp_list li:nth-of-type(n + 4) {margin-top: 24px;}
 .stamp_list li p {width:80%;/* border-radius:999px;padding: 1px 8px; font-weight: 600; color:#fff;border: 1px solid;*/ padding: 8px; height: 20px; font-size: 12px; text-align: center; position: absolute; bottom: -12px; left: 50%; transform:translateX(-50%); white-space:nowrap;}
 .stamp_list li div {margin:8px auto 0;/* border: 2px solid; border-radius:50%;height: calc((60vw / 3) - 14px);*/text-align: center; width: 75%; height: auto;  }
 
-.stamp_list li div h4 {line-height: calc((80vw / 3) - 14px);font-weight: 700;color: #FFF;padding-top: 14px;font-size: 20px; transform: translateY(22px);}
+.stamp_list li div h4 {line-height: calc((80vw / 3) - 0px);font-weight: 700;color: #FFF;padding-top: 14px;font-size: 5vw; transform: translateY(7.5vw);}
 
 /* 기존 hub 코드 */
 /* .stamp_list li.poster p{background-color: #7030A0; border-color: #7030A0;} */

@@ -131,7 +131,7 @@
 
 						window.scrollTo({top: (dom.offset().top - 200), left:0, behavior:'smooth'});
 
-						alert(`No ${booth}. Complete Stamp.`)
+						alert(`Complete ${res["0"].company_name}.`)
 					} else if(res.code == 400) {
 						alert(locale(language.value)("not_matching_email"));
 						return false;

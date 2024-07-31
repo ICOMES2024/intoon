@@ -69,40 +69,40 @@
 	<?php
 		if (!$is_check_mobile) {
 	?>
-			<div style="max-width:100%; border:5px solid #004793">
+			<div style="max-width:100%;">
 				<div style="position:relative;">
 					<div>
 						<!-- <img src="https://image.webeon.net/icomes2024/receipt/2024_header.svg" alt="" style="width:100%; max-width:100%;"> -->
-						<img src="./img/2024_header.svg" alt="" style="width:100%; max-width:100%;">
+						<img src="https://image.webeon.net/icomes2024/receipt/2024_header-1.svg" alt="" style="width:100%; max-width:100%;">
 						<h1 style="font-size:66px; font-weight:900; color:#000000; text-align:center;">RECEIPT</h1>	
 					</div>
 					<div style="padding:0 50px; margin-top:30px;">
 						<table style="border-collapse:collapse; border-spacing:0; width:100%;">
 							<tbody>
 								<tr>
-									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-top:3px solid #000066; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">Payment Date</th>
-									<td style="padding:16px 20px; font-size:16px; color:#000000; border-top:3px solid #000066; border-bottom:1px solid #000066;"><?= $payment_date ?></td>
+									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#F6F6F6; border-top:3px solid #B2B2B2; border-right:1px solid #B2B2B2; border-bottom:1px solid #B2B2B2; text-align:left;">Payment Date</th>
+									<td style="padding:16px 20px; font-size:16px; color:#000000; border-top:3px solid #B2B2B2; border-bottom:1px solid #B2B2B2;"><?= $payment_date ?></td>
 								</tr>
 								<tr>
-									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">Registration No.</th>
-									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;"><?= $register_no ?></td>
+									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #B2B2B2; border-bottom:1px solid #B2B2B2; text-align:left;">Registration No.</th>
+									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #B2B2B2;"><?= $register_no ?></td>
 								</tr>
 								<tr>
-									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">Name</th>
-									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;"><?= $name ?></td>
+									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #B2B2B2; border-bottom:1px solid #B2B2B2; text-align:left;">Name</th>
+									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #B2B2B2;"><?= $name ?></td>
 								</tr>
 								<tr>
-									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">Country</th>
-									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;"><?= $nation ?></td>
+									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #B2B2B2; border-bottom:1px solid #B2B2B2; text-align:left;">Country</th>
+									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #B2B2B2;"><?= $nation ?></td>
 								</tr>
 								<tr>
-									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:1px solid #000066; text-align:left;">Registration Fee</th>
-									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;"><?php echo $total_price ?></td>
+									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #B2B2B2; border-bottom:1px solid #B2B2B2; text-align:left;">Registration Fee</th>
+									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #B2B2B2;"><?php echo $total_price ?></td>
 									<!-- <td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:1px solid #000066;"><?= number_format($data['price']) ?></td> -->
 								</tr>
 								<tr>
-									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#DEEAF6; border-right:1px solid #000066; border-bottom:3px solid #000066; text-align:left;">Payment Method</th>
-									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:3px solid #000066;"><?= $payment_method ?></td>
+									<th width="180" style="width:180px; padding:16px 20px; font-size:16px; font-weight:800; color:#000000; background-color:#F6F6F6; border-right:1px solid #B2B2B2; border-bottom:3px solid #B2B2B2; text-align:left;">Payment Method</th>
+									<td style="padding:16px 20px; font-size:16px; color:#000000; border-bottom:3px solid #B2B2B2;"><?= $payment_method ?></td>
 								</tr>
 							</tbody>
 						</table>

@@ -23,6 +23,24 @@
 		}
 	}
 
+	else if ($flag === "result") {
+		$idx = $_POST["commentId"];
+		$value = $_POST["value"];
+
+		$sql = "
+				UPDATE comments
+				SET
+					is_prize = '{$value}'
+				WHERE idx = {$idx}
+		";
+
+		if (sql_query($sql)) {
+			return_value(200, "완료되었습니다.");
+		} else {
+			return_value(500, "오류가 발생했습니다.\n관리자에게 문의하세요.");
+		}
+	}
+
 	// 결과값 반환 공통화
 	function return_value($code, $msg, $arr=array()){
 		$arr["code"] = $code;

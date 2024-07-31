@@ -312,7 +312,7 @@ if($_POST["flag"] === "onsite") {
                             attendance_type = '{$participation_type}',
                             member_type = '{$member_type}',
                             occupation_type = '{$occupation}',
-                            member_status = '{$ksso_member_status_text}',
+                            member = '{$ksso_member_status_text}',
                             fee = '{$fee}',
                             is_score = '{$is_score_text}',
                             is_score1 = '{$is_score1_text}',

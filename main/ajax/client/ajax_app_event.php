@@ -23,12 +23,13 @@ if($_POST["flag"]==="submit"){
     } else {
         $user_name =  $search_name['name'];
         $comment = $_POST["comment"];
+        $quiz_num = $_POST["quizNum"];
 
-        //2. 중복 참여 제외
+        //2. 중복 참여 제외 (!!! 수정필요 !!! 첫번째 이벤트 q1 !!!)
         $search_member_query = "
                     SELECT *
                     FROM comments
-                    WHERE member_idx = {$member_idx} AND is_deleted = 'N'
+                    WHERE member_idx = {$member_idx} AND is_deleted = 'N' AND quiz_num = 'q1'
                     ";
         $search_member = sql_fetch($search_member_query);
         if ($search_member) {
@@ -40,7 +41,7 @@ if($_POST["flag"]==="submit"){
             exit;
         }else{
 
-            //3. DB에 insert 시키기
+            //3. DB에 insert 시키기 (!!! quiz_num 수정 필요 !!!)
             $comments_insert_query = "
             INSERT comments
             SET
@@ -48,7 +49,8 @@ if($_POST["flag"]==="submit"){
                 username = '{$user_name}',
                 comment =  '{$comment}',
                 register_date = NOW(),
-                is_deleted = 'N'
+                is_deleted = 'N',
+                quiz_num = 'q1'
             ";
 
             $insert_comments = sql_query($comments_insert_query);
@@ -108,7 +110,7 @@ else if ($_POST["flag"]==="my_commnet"){
     $search_my_comments_query = "
             SELECT  *
             FROM comments
-            WHERE is_deleted = 'N' AND member_idx = {$member_idx}
+            WHERE is_deleted = 'N' AND member_idx = {$member_idx} AND quiz_num = 'q1'
                 ";
     $search_my_comments = get_data($search_my_comments_query);
     

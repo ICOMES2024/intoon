@@ -41,7 +41,7 @@
 .app_scientific .chairperson span {font:inherit;}
 
 /* .app_scientific .info {display:flex; align-items:center;} */
-.app_scientific .info {display:flex; align-items: flex-start;flex-direction: column; gap: 8px;}
+.app_scientific .info {display:flex; align-items: center;flex-direction: row; gap: 8px;}
 
 .app_schedule .info{display: block;}
 
@@ -52,6 +52,7 @@
 .app_scientific .info span {margin-right:18px; padding-left: 14px; /*font-size:14px;*/ font-size: 13px; background: no-repeat center left /10px;}
 .app_scientific .info .time {background-image:url("../img/icons/icon_clock_line.svg"); background-size: 13px;}
 .app_scientific .info .branch {background-image:url("../img/icons/icon_branch.svg"); background-size: 10px;}
+.app_scientific .info .branch {background:#F2F2F2 url("../img/icons/icon_branch.svg")no-repeat center left 6px / 12px; padding: 2px 6px 2px 24px;border-radius: 8px;}
 /*detail*/
 .app_scientific .detail {display:none;}
 .app_scientific .detail > div {background-color:#DEDDDD; border-top:1px solid #989898;}
