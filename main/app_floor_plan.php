@@ -221,19 +221,19 @@
                     <ul class="pop_text">
                                             <li></li>
                     </ul> -->
-					<a href="javascript:;"></a>
+					<!-- <a href="javascript:;"></a>
 					<ul class="pop_text">
-                        <li class="floor_pop_title">[Poster Zone]</li>
-                        <!-- <li class="floor_pop_title">September 8 (Fri)</li>
+                     <li class="floor_pop_title">[VIP Room]</li> 
+                        <li class="floor_pop_title">September 8 (Fri)</li>
                         <li>- Exhibition Hours: 07:30-18:00</li>
                         <li class="floor_pop_title">September 9 (Sat)</li>
-                        <li>- Exhibition Hours: 07:30-17:00</li> -->
-					</ul>
+                        <li>- Exhibition Hours: 07:30-17:00</li> 
+					</ul> -->
 				</div>
 				<div class="a_wrap floor_6_3">
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
-                        <li class="floor_pop_title">[Poster Zone]</li>
+                        <li class="floor_pop_title">[Exhibition]</li>
                         <!-- <li class="floor_pop_title">September 8 (Fri)</li>
                         <li>- Exhibition Hours: 07:30-18:00</li>
                         <li class="floor_pop_title">September 9 (Sat)</li>
@@ -241,7 +241,7 @@
 					</ul>
 					<a href="javascript:;"></a>
 					<ul class="pop_text">
-                        <li class="floor_pop_title">[Poster Zone]</li>
+                        <li class="floor_pop_title">[Exhibition]</li>
                         <!-- <li class="floor_pop_title">September 8 (Fri)</li>
                         <li>- Exhibition Hours: 07:30-18:00</li>
                         <li class="floor_pop_title">September 9 (Sat)</li>

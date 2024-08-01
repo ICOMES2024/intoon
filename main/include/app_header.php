@@ -34,9 +34,9 @@
 						<li><a href="/main/app_venue.php">Venue</a></li>
 					</ul>
 				</li>
-				<!-- <li>
-					<a href="/main/app_floor_plan.php" class="get_ready_alert">Floor Plan</a>
-				</li> -->
+				<li>
+					<a href="/main/app_floor_plan.php" class="">Floor Plan</a>
+				</li>
 				<li>
 					<a href="javascript:;">Program</a>
 					<ul class="app_sub">
@@ -106,14 +106,14 @@
 						<!-- <li><a href="/main/app_event_guidelines.php" class="get_ready_alert">Comment Event</a></li> -->
 					</ul>
 				</li> 
-				<!-- <li>
+				<li>
 					<a href="javascript:;">My Page</a>
 					<ul class="app_sub">
 						<li><a href="/main/app_registration.php">Registration</a></li>
 						<li><a href="/main/app_mypage_abstract.php">Abstract</a></li>
 						<li><a href="/main/app_schedule.php">My Schedule</a></li>
 					</ul>
-				</li>  -->
+				</li> 
 				<!--
                 <li>
 					<a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">Program Book <br/>Download</a>

@@ -64,9 +64,9 @@ $select_program_query = "
                                        END
                                    ) as day,
                                    (CASE
-                                       WHEN program_date = '2024-09-07' THEN 'Sep.7(Thu)'
-                                       WHEN program_date = '2024-09-08' THEN 'Sep.8(Fri)'
-                                       WHEN program_date = '2024-09-09' THEN 'Sep.9(Sat)'
+                                       WHEN program_date = '2024-09-05' THEN 'Sep.5(Thu)'
+                                       WHEN program_date = '2024-09-06' THEN 'Sep.6(Fri)'
+                                       WHEN program_date = '2024-09-07' THEN 'Sep.7(Sat)'
                                        ELSE ''
                                        END
                                    ) as date
