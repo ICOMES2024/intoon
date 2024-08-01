@@ -23,28 +23,28 @@
 	.red_alert_option {
 		/*display:none;*/
 	}
-	.korea_only, .korea_radio, .non_korea_only, .non_korea_radio{
+	.korea_only, .korea_radio{
 		display:none;
 	}
-	.korea_only.on, .korea_radio.on, .non_korea_only.on, .non_korea_radio.on{
+	.korea_only.on, .korea_radio.on{
 		display:revert;
 	}
-	.mo_korea_only, .korea_radio, .mo_non_korea_only{
+	.mo_korea_only, .korea_radio{
 		display:none;
 	}
-	.mo_korea_only.on, .korea_radio.on, .mo_non_korea_only.on{
+	.mo_korea_only.on, .korea_radio.on{
 		display:revert;
 	}
-	.ksola_signup, .non_ksola_signup {
+	.ksola_signup {
 		display:none;
 	}
-	.mo_ksola_signup, .mo_non_ksola_signup {
+	.mo_ksola_signup {
 		display:none;
 	}
-	.ksola_signup.on, .non_ksola_signup.on  {
+	.ksola_signup.on {
 		display:revert;
 	}
-	.mo_ksola_signup.on, .mo_non_ksola_signup.on{
+	.mo_ksola_signup.on{
 		display:revert;
 	}
 	/*태그 오른쪽 정렬*/
@@ -87,24 +87,6 @@
 		.mb_only input.tel_number, .mb_only input.tel_numbers.tel_phone {width: calc(50% - 5px);}
 		.mb_only input.tel_numbers.tel_phone2 {width: 100%; margin: 10px 0 0;}
 	}
-
-	.join_btn{
-		width: 190px;
-		border: 1px solid #DDD;
-		font-weight: 700;
-		display: flex;
-		align-items: center;
-		justify-content: center; 
-		margin-top: 12px;
-		background-color: #FFF;
-		padding: 8px;
-		border-radius: 4px;
-		cursor: pointer;
-	}
-
-	.join_btn:hover{
-		background-color: #DDD;
-	}
 </style>
 <script>
 	$(document).ready(function(){
@@ -122,18 +104,6 @@
 			}
 		});
 
-		$("#user3").change(function(){
-			if($("#user3").prop('checked') == true) {
-				$(".non_ksola_signup").addClass("on");
-			}
-		});
-		$("#user4").change(function(){
-			if($("#user4").prop('checked') == true) {
-				$(".non_ksola_signup").removeClass("on");
-				$("input[name=ksola_member_type]").val("");
-			}
-		});
-
 		$("select[name=nation_no]").change(function(){
 
 			var value = $(this).val();
@@ -144,11 +114,6 @@
 				$(".red_alert").eq(2).html("");
 				$(".red_alert").eq(3).html("");
 				$(".red_alert").eq(4).html("");
-				
-				//[240703] sujeong / 해외 멤버인증 추가
-				$(".non_korea_radio").removeClass("on");
-				$(".non_korea_only").removeClass("on");
-				$(".non_ksola_signup").removeClass("on");
 
 				$(".korea_only").addClass("on");
 				$(".korea_radio").addClass("on");
@@ -160,16 +125,8 @@
 				$(".korea_only").removeClass("on");
 				$(".ksola_signup").removeClass("on");
 
-				//[240703] sujeong / 해외 멤버인증 추가
-				$(".non_korea_radio").addClass("on");
-				// $(".non_korea_only").addClass("on");
-			
-				if($("#user3").prop('checked') == true) {
-				  $(".non_ksola_signup").addClass("on");
-				}
-
 				remove_value();
-				//$("#user2").prop('checked', true);
+				$("#user2").prop('checked', true);
 			}
 
 			var nt = $("#nation_no option:selected").data("nt");
@@ -187,6 +144,7 @@
 
 
 		$("input[name=food]").change(function(){
+			
 			var this_chk = $(this).val();
 			if (this_chk == "Others"){
 				$(".other_radio").next("label").find("input").addClass("on");
@@ -195,6 +153,16 @@
 			}
 		});
 
+		//$(".select_others").change(function(){
+		//	
+		//	var this_chk = $(this).val();
+		//	if (this_chk == "Others"){
+		//		$(this).next().attr("style", "display:block;");
+		//	} else {
+		//		$(this).next().attr("style", "display:none;");
+		//		$(this).next().val("");
+		//	}
+		//});
 		
 		// Title 변경 시 (230518)
 		$("select[name=title], select[name=mo_title]").on("change", function(){
@@ -221,6 +189,18 @@
 			}
 		});
 
+		//$("input[name=phone]").change(function(){
+
+		//	var nation_tel = $("input[name=nation_tel]").val();
+		//	var phone_num = $("input[name=phone]").val();
+		//	if (nation_tel == "82"){
+		//		if(!phone_num.includes('-') || phone_num.length < 9){
+		//			alert("Please Check phone format\n ex) 0000-0000");
+		//			$("input[name=phone]").val("");
+		//		}
+		//	}
+
+		//});
 	});
 
 	function remove_value() {
@@ -241,7 +221,17 @@
 
 
 	$(document).ready(function(){
+		//$("#category").change(function(){
+		//	var value = $(this).val();
+		//	if (value == "Others"){
+		//		$(this).addClass("on");
+		//		$(this).next("input").addClass("on");
+		//	} else {
+		//		$(this).removeClass("on");
+		//		$(this).next("input").removeClass("on");
+		//	}
 
+		//});
 		$("#mo_user1").change(function(){
 			if($("#mo_user1").prop('checked') == true) {
 				$(".mo_ksola_signup").addClass("on");
@@ -254,20 +244,6 @@
 				$("input[name=ksola_member_type]").val("");
 			}
 		});
-
-		$("#mo_user3").change(function(){
-			if($("#mo_user3").prop('checked') == true) {
-				$(".mo_non_ksola_signup").addClass("on");
-				
-			}
-		});
-		$("#mo_user4").change(function(){
-			if($("#mo_user4").prop('checked') == true) {
-				$(".mo_non_ksola_signup").removeClass("on");
-				$("input[name=ksola_member_type]").val("");
-			}
-		});
-
 		$("select[name='mo_nation_no']").change(function(){
 
 			var value = $(this).val();
@@ -285,26 +261,13 @@
 				if($("#mo_user1").prop('checked') == true) {
 					$(".mo_ksola_signup").addClass("on");
 				}
-
-				$(".mo_non_korea_radio").removeClass("on");
-				$(".mo_non_korea_only").removeClass("on");
-				$(".mo_non_ksola_signup").removeClass("on")
 			}else {
 				$(".mo_korea_radio").removeClass("on");
 				$(".mo_korea_only").removeClass("on");
 				$(".mo_ksola_signup").removeClass("on");
 
-				$(".mo_non_korea_radio").addClass("on");
-				$(".mo_non_korea_only").addClass("on");
-				$(".mo_non_ksola_signup").addClass("on")
-
-				if($("#mo_user3").prop('checked') == true) {
-					$(".mo_non_ksola_signup").addClass("on");
-				}
-
-
 				remove_value();
-				//$("#mo_user2").prop('checked', true);
+				$("#mo_user2").prop('checked', true);
 			}
 
 			var nt = $("#mo_nation_no option:selected").data("nt");
@@ -355,6 +318,15 @@
 	<div class="inner">
 		<div class="sub_background_box">
 		<div class="sub_inner">
+			<div>
+				<!-- 브래드스크럼
+				<ul>
+					<li>Home</li>
+					<li>Sign Up</li>
+					<li>Sign Up</li>
+				</ul>
+				-->
+			</div>
 			<div class="term_wrap">
 				<h3 class="title">Use of Personal Information</h3>
 				<div class="term_box">
@@ -403,65 +375,6 @@
 									?>
 									</select>
 									<!-- <span class="mini_alert red_txt red_alert_option"></span> -->
-								</div>
-							</td>
-						</tr>
-						<!-- [240703] sujeong / 해외 멤버인증 추가 -->
-						<tr class="non_korea_radio">
-							<th class="nowrap"><span class="red_txt">*</span>KSSO Membership Status<br/><span class="font_small">(Korean Society for the Study of Obesity)</span></th>
-							<td>
-								<div class="label_wrap">
-									<input checked type="radio" class="new_radio" name="user_non_korea" id="user3">
-									<label for="user3"><i></i>Member</label>	
-									
-									<input type="radio" class="new_radio" name="user_non_korea" id="user4">
-									<label for="user4"><i></i>Non-Member</label>	
-									
-									<span class="red_t">* If you are not a member of KSSO, please select the non-member option.</span>
-									<!-- 외국 사이트 회원가입 -->
-									<a href="https://eng.kosso.or.kr/account/join_1.php"  class="join_btn" target="_blank">Join KSSO as a Member</a>
-									<!-- <div class="flex_top_between mt20">
-										<div><p class="bold underline">For KSSO members</p></div>
-										<div>
-											<p>1) please refrain from registration and proceed with sign-up only.</p>
-											<p class="mt10">2) Send your confirmation email back to secretariat for membership verification.</p>
-											<p class="mt10">3) Once Secretariat confirms your membership, they will send you an email requesting registration.</p> -->
-										</div>
-									</div>
-									
-								</div>
-							</td>
-						</tr>
-						<tr class="non_ksola_signup">
-							<th></th>
-							<td>
-							<div class=" mt20">
-										<ul class="simple_join clearfix">
-												<li>
-													<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
-													<input id="ksso_id" class="email_id" name="kor_id" type="text" maxlength="60">
-												</li>
-												<li>
-													<label for="ksso_pw">KSSO PW<span class="red_txt">*</span></label>
-													<input id="ksso_pw" class="passwords" name="kor_pw" type="password" maxlength="60">
-												</li>
-												<li>
-													<button onclick="non_kor_api()" type="button" class="btn">Membership Verification</button>
-												</li>
-										</ul>
-										<div class="clearfix2">
-											<div>
-												<input type="checkbox" class="checkbox" id="privacy1">
-												<label for="privacy1">
-													I agree to the collection of personal information by third parties.
-												</label>
-											</div>
-											<!-- 외국 사이트 id/pw 찾기 -->
-											<a href="https://eng.kosso.or.kr/account/find_info.php" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
-										</div>
-										
-							
-										
 								</div>
 							</td>
 						</tr>
@@ -666,9 +579,7 @@
 					</tbody>
 				</table>	
 			</div>
-	
-			<!-- MB(mobile!!!) -->
-	
+		
 			<div class="mb_only">
 				<ul class="sign_list">
 					<li>
@@ -692,61 +603,6 @@
 							<!-- <span class="mini_alert red_txt mo_red_alert_option"></span> -->
 					 	</div>
 					</li>
-					<li class="non_korea_radio mo_non_korea_radio">
-						<p class="label"><span class="red_txt">*</span>KSSO Membership Status<br/><span class="font_small">(Korean Society for the Study of Obesity)</span></p>
-						<div class="label_wrap">
-							<input checked type="radio" class="new_radio" name="mo_user1" id="mo_user3">
-							<label for="mo_user3"><i></i>Member</label>	
-							<input type="radio" class="new_radio" name="mo_user1" id="mo_user4">
-							<label for="mo_user4"><i></i>Non-Member</label>
-							<span class="red_t"><br/>* If you are not a member of KSSO,<br/>please select the non-member option.</span>
-							<!-- 외국 사이트 회원가입 -->
-							<a href="https://eng.kosso.or.kr/account/join_1.php" class="join_btn" target="_blank">Join KSSO as a Member</a>
-							<!-- <div class=" mt20">
-										<div><p class="bold underline">For KSSO members</p></div>
-										<div>
-											<p class="mt10">1) please refrain from registration and proceed with sign-up only.</p>
-											<p class="mt10">2) Send your confirmation email back to secretariat for membership verification.</p>
-											<p class="mt10">3) Once Secretariat confirms your membership, they will send you an email requesting registration.</p>
-										</div>
-									</div> -->
-									<!-- <div class="clearfix2 mt20">
-									<div>
-										<input type="checkbox" class="checkbox" id="privacy2">
-										<label for="privacy2" class="font_small">
-										I agree to the collection of personal information<br/>by third parties.
-										</label>
-									</div>
-								</div> -->
-						</div>
-					</li>
-					<li class="mo_non_ksola_signup">
-						<ul class="simple_signup non_korea mb10">
-							<li>
-								<label for="ksso_id_mo" class="bold">KSSO ID<span class="red_txt">*</span></label>
-								<input id="ksso_id_mo" class="email_id passwords" name="mo_kor_id" type="text" maxlength="60">
-							</li>
-							<li>
-								<label for="ksso_pw_mo" class="bold">KSSO PW<span class="red_txt">*</span></label>
-								<input id="ksso_pw_mo" class="passwords" name="mo_kor_pw" type="password" maxlength="60">
-							</li>
-							<li>
-							</li>
-						</ul>
-						<button onclick="mo_non_kor_api()" type="button" class="btn btn_small">Membership Verification</button>
-						<div class="clearfix2">
-							<div>
-								<input type="checkbox" class="checkbox" id="mo_privacy1">
-								<label for="mo_privacy1">
-									I agree to the collection of personal information by third parties.
-								</label>
-							</div>
-							<a href="https://eng.kosso.or.kr/account/join_1.php" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
-						</div>
-						<div>
-			
-					</div>
-					</li>
 					<li class="korea_radio mo_korea_radio">
 						<p class="label"><span class="red_txt">*</span>대한비만학회(KSSO) 회원 여부</p>
 						<div class="label_wrap">
@@ -754,10 +610,11 @@
 							<label for="mo_user1"><i></i>회원</label>	
 							<input type="radio" class="new_radio" name="mo_user" id="mo_user2">
 							<label for="mo_user2"><i></i>비회원</label>
-							<span class="red_t"><br/>* 대한비만학회 회원이 아닐 경우,<br/>비회원을 선택해 주시기 바랍니다.</span>	
+							<span class="red_t">* 대한비만학회 회원이 아닐 경우, 비회원을 선택해 주시기 바랍니다.</span>	
 						</div>
 					</li>
 					<li class="mo_ksola_signup">
+						<!-- <button type="button" class="btn green_btn long_btn" onclick="javascript:window.open('https://www.lipid.or.kr/member/member_confirm.php')">한국지질동맥경화학회 회원정보로 간편 가입</button> -->
 						<p class="mb10">대한비만학회 회원 정보로 간편 가입</p>
 						<ul class="simple_signup mb10">
 							<li>
@@ -777,12 +634,13 @@
 								<input type="checkbox" class="checkbox" id="mo_privacy">
 								<label for="mo_privacy">
 									제 3자 개인정보 수집에 동의합니다.
+									<!-- <a href="javascript:;" class="red_txt"> Details ></a> -->
 								</label>
 							</div>
 							<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
 						</div>
 						<div>
-			
+						<!-- <span class="mini_alert red_txt mo_red_api"></span> -->
 					</div>
 					</li>
 					
@@ -790,7 +648,7 @@
 						<p class="label"><span class="red_txt">*</span><?=$locale("id")?></p>
 						<div>
 							<input type="text" name="mo_email" class="required" maxlength="50">
-	
+							<!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
 						</div>
 						<p class="mini_alert">Please make sure you have entered your ID correctly as you can't modify it later.</p>
 					</li>
@@ -798,14 +656,14 @@
 						<p class="label"><span class="red_txt">*</span><?=$locale("password")?></p>
 						<div>
 							<input class="passwords" type="password" name="mo_password" class="required" maxlength="60">
-			
+							<!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
 						</div>
 					</li>
 					<li>
 						<p class="label"><span class="red_txt">*</span>Verify password</p>
 						<div>
 							<input class="passwords" type="password" name="mo_password2" class="required" maxlength="60">
-	
+							<!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
 						</div>
 					</li>
 					<li class="name_li">
@@ -813,14 +671,15 @@
 						<div class="clearfix">
 							<div class="">
 								<input name="mo_first_name" type="text" placeholder="First name" maxlength="60" class="en_check">
-				
+								<!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
 							</div>
 							<div class="">
 								<input name="mo_last_name" type="text" placeholder="Last name" maxlength="60" class="en_check">
-							
+								<!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
 							</div>
 						</div>
-					
+						<!--
+						<p class="font_small brown_txt">Note.<br/>your name will appear on your name badge exactly as it is entered in these fields.<br/>It you wish your name to appear in a specific way, please contact the Secretariat via<br/>e-mail(secretariat@icola2022.org)</p> -->
 					</li>
 					<li class="mo_korea_only">
 						<p class="label"><span class="red_txt">*</span>성명</p>
@@ -841,7 +700,15 @@
 						<div>
 							<ul class="half_ul">
 								<li>
-							
+									<!--
+									<select name="mo_title" id="mo_title">
+										<option value="Professor">Professor</option>
+										<option value="Dr.">Dr.</option>
+										<option value="Mr.">Mr.</option>
+										<option value="Ms.">Ms.</option>
+										<option value="Others">Others</option>
+									</select>
+									-->
 									<select name="mo_title" id="mo_title" class="title_select">
 										<option value="0">Professor</option>
 										<option value="1">Dr.</option>
@@ -860,7 +727,7 @@
 						<p class="label"><span class="red_txt">*</span><?=$locale("affiliation")?></p>
 						<div>
 							<input type="text" name="mo_affiliation" maxlength="100" class="en_check">
-						
+							<!-- <span class="mini_alert red_txt mo_red_alert"></span> -->
 						</div>
 					</li>
 					<li class="mo_korea_only">
@@ -876,7 +743,30 @@
 							<input type="text" name="mo_department" maxlength="100">
 							<span class="mini_alert red_txt mo_red_alert">good</span>
 						</div>
-						
+						<!--
+						<div>
+							<select name="mo_department" id="mo_department">
+								<option value="" selected hidden>Choose</option>
+								<option value="Cardiology">Cardiology</option>
+								<option value="Endocrinology">Endocrinology</option>
+								<option value="Internal Medicine">Internal Medicine</option>
+								<option value="Family Medicine">Family Medicine</option>
+								<option value="Nursing">Nursing</option>
+								<option value="Basic Science">Basic Science</option>
+								<option value="Pediatric">Pediatric</option>
+								<option value="Food & Nutrition">Food & Nutrition</option>
+								<option value="Neurology">Neurology</option>
+								<option value="Nephrology">Nephrology</option>
+								<option value="Pharmacology">Pharmacology</option>
+								<option value="Pharmacy">Pharmacy</option>
+								<option value="Preventive Medicine">Preventive Medicine</option>
+								<option value="Exercise Physiology">Exercise Physiology</option>
+								<option value="Clinical Pathology">Clinical Pathology</option>
+								<option value="Other Professiona">Other Professional</option>
+							</select>
+							<!-- <span class="mini_alert red_txt mo_red_alert_option"></span>
+						</div> -->
+						<!-- <p class="mini_alert">Endocrinology, Cardiology, Internal Medicine, Family Medicine, Nursing, Basic Science, Pediatric, Food & Nutrition, Neurology, Nephrology, Pharmacology, Pharmacy, Preventive Medicine, Exercise Physiology, Clinical Pathology, Other Professional )</p> -->
 					</li>
 					<li class="mo_korea_only">
 						<p class="label"><span class="red_txt">*</span>부서</p>
@@ -884,7 +774,34 @@
 							<input type="text" name="mo_department_kor" maxlength="100" class="kor_check">
 							<span class="mini_alert red_txt mo_red_alert">good</span>
 						</div>
-					
+						<!--
+						<div>
+							<select name="mo_department_kor" id="mo_department_kor">
+								<option value="" selected hidden>Choose</option>
+								<option value="Cardiology">Cardiology</option>
+								<option value="Endocrinology">Endocrinology</option>
+								<option value="Internal Medicine">Internal Medicine</option>
+								<option value="Family Medicine">Family Medicine</option>
+								<option value="Nursing">Nursing</option>
+								<option value="Basic Science">Basic Science</option>
+								<option value="Pediatric">Pediatric</option>
+								<option value="Food & Nutrition">Food & Nutrition</option>
+								<option value="Neurology">Neurology</option>
+								<option value="Nephrology">Nephrology</option>
+								<option value="Pharmacology">Pharmacology</option>
+								<option value="Pharmacy">Pharmacy</option>
+								<option value="Preventive Medicine">Preventive Medicine</option>
+								<option value="Exercise Physiology">Exercise Physiology</option>
+								<option value="Clinical Pathology">Clinical Pathology</option>
+								<option value="Other Professiona">Other Professional</option>
+							</select>
+							<!-- <span class="mini_alert red_txt mo_red_alert_option"></span>
+						</div>
+						<!-- <div>
+						<!-- 	<span class="mini_alert red_txt mo_red_alert"></span> 
+						<!-- 	<span class="mini_alert red_txt mo_red_alert"></span>
+						<!-- </div>
+						-->
 					</li>
 					<li>
 						<p class="label"><span class="red_txt">*</span>Mobile Phone Number</p>
@@ -893,7 +810,10 @@
 							<input name="mo_phone" type="text">
 						</div>
 						<p class="mini_alert font_small brown_txt">Please enter your phone number including the country codes.<br/>(Example: 82 1012341234)</p>
-		
+						<!-- <div> -->
+						<!-- 	<span class="mini_alert red_txt mo_red_alert"></span> -->
+						<!-- 	<span class="mini_alert red_txt mo_red_alert"></span> -->
+						<!-- </div> -->
 					</li>
 					<li>
 						<p class="label">Telephone Number</p>
@@ -903,17 +823,55 @@
 							<input class="tel_numbers tel_phone2" name="mo_telephone2" type="text" maxlength="60">
 						</div>
 						<p class="mini_alert font_small brown_txt">Please enter your telephone number including the country and area codes.<br/>(Example: 82 2 12345678)</p>
-
+						<!-- <div> -->
+						<!-- 	<span class="mini_alert red_txt mo_red_alert"></span> -->
+						<!-- 	<span class="mini_alert red_txt mo_red_alert"></span> -->
+						<!-- </div> -->
 					</li>
 					<li>
 						<p class="label"><span class="red_txt">*</span>Date of Birth</p>
 						<div>
 							<input pattern="^[0-9]+$" name="mo_date_of_birth" type="text" placeholder="dd-mm-yyyy" id="mb_datepicker" onKeyup="birthChk(this)"/>
+							<!-- <span class="mini_alert red_txt mo_red_alert">good</span> -->
 						</div>
 					</li>
-				
+					<!--
+					<li>
+						<p class="label"><span class="red_txt"></span>Special Request for Food</p>
+						<div class="label_wrap">
+							<input checked value="None" type="radio" id="mb_none" class="radio" name="mo_food">
+							<label for="mb_none">None</label>
+							<input value="Vegetarian" type="radio" id="mb_vegetarian" class="radio" name="mo_food">
+							<label for="mb_vegetarian">Vegetarian</label>
+							<input value="Halal" type="radio" id="mb_halal" class="radio" name="mo_food">
+							<label for="mb_halal">Halal</label>
+							<input value="Others" type="radio" id="mo_others" class="radio" name="mo_food">
+							<label for="mo_others">Others
+								<input name="mo_short_input" type="text" class="short_input mo_other_radio en_check" maxlength="60">
+							</label>
+						</div>
+					</li>
+					-->
 				</ul>
 			</div>
+			<!--
+			<div class="checkbox_wrap mb_only">
+				<ul>
+					<li>
+						<input type="checkbox" class="checkbox input required" data-name="terms 1" id="mo_terms1" name="mo_terms1" value="Y">
+						<label for="mo_terms1">Terms & Conditions
+							<a href="javascript:;" class="term1_btn red_txt"> Details ></a>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" class="checkbox input required" data-name="terms 2" id="mo_terms2" name="mo_terms2" value="Y">
+						<label for="mo_terms2"> Privacy Policy 
+							<a href="javascript:;" class="term2_btn red_txt"> Details ></a>
+						</label>
+					</li>
+				</ul>
+			</div>
+			-->
 			<input type="hidden" name="ksola_member_check">
 			<input type="hidden" name="ksola_member_type">
 		</form>
@@ -1685,12 +1643,9 @@ $(document).on("click", "#mo_submit", function(){
 
 	if(ksola_member_type == "인터넷회원"){
 		ksola_member_status = 3;
-		ksola_member_check = "";
 	}else if(ksola_member_type == "평생회원"){
 		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
-		ksola_member_status = 1;
-	}else if($("#mo_user3").prop('checked') == true && nation_no !== 25 && ksola_member_check) {
 		ksola_member_status = 1;
 	}else {
 		ksola_member_status = 0;
@@ -1986,8 +1941,6 @@ $(document).on("click", "#submit", function(){
 	if($("#user1").prop('checked') == true) {
 		ksola_member_status = 1;
 	}
-
-
 	
 	var email = $("input[name=email]").val();
 
@@ -2014,14 +1967,12 @@ $(document).on("click", "#submit", function(){
 
 	if(ksola_member_type == "인터넷회원"){
 		ksola_member_status = 3;
-		ksola_member_check = "";
+		ksola_member_check = '';
 	}else if(ksola_member_type == "평생회원"){
 		ksola_member_status = 2;
 	}else if(ksola_member_type == "정회원"){
 		ksola_member_status = 1;
-	}else if($("#user3").prop('checked') == true && nation_no !== 25 && ksola_member_check) {
-		ksola_member_status = 1;
-	}else{
+	}else {
 		ksola_member_status = 0;
 	}
 
@@ -2158,82 +2109,6 @@ function kor_api_check(name, value, mo) {
 	//	$(".mo_red_api").eq(0).html("");
 	//}
 }
-function mo_non_kor_api(){
-	var kor_id = $("input[name=mo_kor_id]").val().trim();
-	var kor_pw = $("input[name=mo_kor_pw]").val().trim();
-	//제 3자 개인정보 수집에 동의 여부
-	var privacy = $("#mo_privacy1").is(":checked");
-
-	if(!kor_id) {
-		alert("Invalid id");
-		//$(".red_api").eq(0).html("format_id");
-		return;
-	}
-	if(!kor_pw) {
-		alert("Invalid password");
-		//$(".red_api").eq(0).html("format_password");
-		return;
-	}
-	
-	if(privacy == false) {
-		alert("Please agree to the collection of personal information.");
-		$(".red_api").eq(0).html("Please agree to the collection of personal information.");
-		return;
-	}
-
-	var data = {
-		'id' : kor_id,
-		'pw' : kor_pw 
-	};
-
-	$.ajax({
-		url			: 'signup_api_eng.php',
-		type		: "POST",
-		data		: data,
-		dataType	: "JSON",
-		success		: success,
-		fail		: fail,
-		error		: error
-	});
-
-	function success(res) {
-		var kor_sign = JSON.parse(res.value);
-		console.log(kor_sign); 
-		var user_row = kor_sign.user_row;
-
-		if(kor_sign.code == 100){
-			alert('The information you provided does not match our registration records.')
-		}else if(kor_sign.code == 300){
-			alert('The information you provided does not match our registration records.')
-		}else if(kor_sign.code == 200){
-			const user_value = kor_sign.value
-			if(user_value.status == '승인'){
-				$("input[name=ksola_member_check]").val(user_value.email);
-
-				$("input[name=mo_email]").val(user_value.email);
-				// $("input[name=mo_phone]").val(user_value.cellnum);
-				// $("input[name=mo_first_name]").val(user_value["first name"]);
-				// $("input[name=mo_last_name]").val(user_value["last name"]);
-				// $("input[name=mo_affiliation]").val(user_value.sosok);
-				alert('Membership Verified')
-			}
-			else{
-				alert('Your membership approval is currently pending.')
-			}
-		}else if(kor_sign.code == 'N7'){
-			alert('This account is already bring used \n This ID is already valid')
-		}
-	}
-	function fail(res) {
-		alert("Failed.\nPlease try again later.");
-		return false;
-	}
-	function error(res) {
-		alert("An error has occurred. \nPlease try again later.");
-		return false;
-	}
-}
-
 
 //한국 회원 인증시 api호출
 function mo_kor_api() {
@@ -2339,83 +2214,6 @@ function mo_kor_api() {
 		return false;
 	}
 }
-
-function non_kor_api(){
-	var kor_id = $("input[name=kor_id]").val().trim();
-	var kor_pw = $("input[name=kor_pw]").val().trim();
-	//제 3자 개인정보 수집에 동의 여부
-	var privacy = $("#privacy1").is(":checked");
-
-	if(!kor_id) {
-		alert("Invalid id");
-		//$(".red_api").eq(0).html("format_id");
-		return;
-	}
-	if(!kor_pw) {
-		alert("Invalid password");
-		//$(".red_api").eq(0).html("format_password");
-		return;
-	}
-	
-	if(privacy == false) {
-		alert("Please agree to the collection of personal information.");
-		$(".red_api").eq(0).html("Please agree to the collection of personal information.");
-		return;
-	}
-
-	var data = {
-		'id' : kor_id,
-		'pw' : kor_pw 
-	};
-
-	$.ajax({
-		url			: 'signup_api_eng.php',
-		type		: "POST",
-		data		: data,
-		dataType	: "JSON",
-		success		: success,
-		fail		: fail,
-		error		: error
-	});
-
-	function success(res) {
-		var kor_sign = JSON.parse(res.value);
-		console.log(kor_sign); 
-		var user_row = kor_sign.user_row;
-
-		if(kor_sign.code == 100){
-			alert('The information you provided does not match our registration records.')
-		}else if(kor_sign.code == 300){
-			alert('The information you provided does not match our registration records.')
-		}else if(kor_sign.code == 200){
-			const user_value = kor_sign.value
-			if(user_value.status && user_value.status == '승인'){
-				$("input[name=ksola_member_check]").val(user_value.email);
-				$("input[name=email]").val(user_value.email);
-				// $("input[name=phone]").val(user_value.cellnum);
-				// $("input[name=first_name]").val(user_value["first name"]);
-				// $("input[name=last_name]").val(user_value["last name"]);
-				// $("input[name=affiliation]").val(user_value.sosok);
-				alert('Membership Verified')
-			}
-			else{
-				alert('Your membership approval is currently pending.')
-			}
-		}else if(kor_sign.code == 'N7'){
-			alert('This account is already bring used \n This ID is already valid')
-		}
-	}
-	function fail(res) {
-		alert("Failed.\nPlease try again later.");
-		return false;
-	}
-	function error(res) {
-		alert("An error has occurred. \nPlease try again later.");
-		return false;
-	}
-}
-
-
 function kor_api() {
 	var kor_id = $("input[name=kor_id]").val().trim();
 	var kor_pw = $("input[name=kor_pw]").val().trim();

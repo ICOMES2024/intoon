@@ -35,11 +35,12 @@
 				<div class="event_img">
                     <img src="https://image.webeon.net/icomes2024/app_event/2024_app_quiz-01.png" alt="event_img"/>
 				</div>
+                <div class="mycomment_wrap"></div>
 				<div class="event_container">
                     <div class="event_wrap">
                     </div>
                     <div class="input_wrap">
-                        <input class="comment" placeholder="Please write your thoughts!"/>
+                        <input class="comment" placeholder="Please write down the correct answer" autofocus/>
                         <button class="submit">Submit</button>
                     </div>
 				</div>
@@ -50,6 +51,7 @@
     const member_idx =  <?php echo json_encode($member_idx); ?>;
     const myEventBox = document.querySelector(".my_event");
     const eventWrap = document.querySelector(".event_wrap");
+    const mycommentWrap = document.querySelector('.mycomment_wrap')
     //console.log(member_idx);
 
 	$(document).ready(function(){
@@ -85,11 +87,19 @@
 
     function showMyComments(data){
         if(!member_idx){
-            eventWrap.innerHTML = "";
+            mycommentWrap.innerHTML = "";
         }else{     
             // eventWrap.innerHTML += `<div class="my_event">${data.comment}<br/>${data.register_date}<br/><button class='del_btn' onclick="deleteComment(${data.idx})">Delete</button></div>`
 
-            eventWrap.innerHTML += `<div class="my_event">${data.comment}<br/>${data.register_date}<br/></div>`
+            mycommentWrap.innerHTML += `<div class="my_event">
+                                        <div class='mycomment_header'>
+                                            <div class="my_comment"><img src='https://image.webeon.net/icomes2024/app/2024_hamberver.svg'/>Comment</div>
+                                            <div class="date">${data.register_date}</div>
+                                        </div>
+                                        <div class="mycomment_body">
+                                            ${data.comment}
+                                        </div>
+                                    </div>`
         }
     }
 
@@ -133,8 +143,13 @@
     submitButton.addEventListener("click", ()=>{
         const commentValue = commentInput.value;
 
+        if(commentValue.length > 100){
+            alert("Please write in 100 characters or less.");
+            return;
+        }
+
         // [240709] sujeong !!! 수정 필요 !!! 첫번째 이벤트 q1
-        const quizNum = 'q1';
+        const quizNum = 'q2';
         
         if(commentValue === ""){
             alert("Please write your comment!")

@@ -29,7 +29,7 @@ if($_POST["flag"]==="submit"){
         $search_member_query = "
                     SELECT *
                     FROM comments
-                    WHERE member_idx = {$member_idx} AND is_deleted = 'N' AND quiz_num = 'q1'
+                    WHERE member_idx = {$member_idx} AND is_deleted = 'N' AND quiz_num = 'q2'
                     ";
         $search_member = sql_fetch($search_member_query);
         if ($search_member) {
@@ -50,7 +50,7 @@ if($_POST["flag"]==="submit"){
                 comment =  '{$comment}',
                 register_date = NOW(),
                 is_deleted = 'N',
-                quiz_num = 'q1'
+                quiz_num = 'q2'
             ";
 
             $insert_comments = sql_query($comments_insert_query);
@@ -103,14 +103,14 @@ else if ($_POST["flag"]==="commnets"){
 }
 
 
-//[240628] 내 댓글 조회
+//[240628] 내 댓글 조회 !!!
 else if ($_POST["flag"]==="my_commnet"){
     $member_idx = $_POST["user_idx"];
 
     $search_my_comments_query = "
             SELECT  *
             FROM comments
-            WHERE is_deleted = 'N' AND member_idx = {$member_idx} AND quiz_num = 'q1'
+            WHERE is_deleted = 'N' AND member_idx = {$member_idx} AND quiz_num = 'q2'
                 ";
     $search_my_comments = get_data($search_my_comments_query);
     
