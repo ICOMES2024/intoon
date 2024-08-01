@@ -287,10 +287,10 @@ function other_change(value) {
 }*/
 $(document).ready(function() {
     //[240117] sujeong / 마감 알림창 막기
-    //  alert("The abstract submission has expired.\nAbstract submission is not available.");
-    //  window.history.back();
-    //  window.location.href = "/main/index.php";
-    //  return;
+     alert("The abstract submission has expired.\nAbstract submission is not available.");
+     window.history.back();
+     window.location.href = "/main/index.php";
+     return;
 
     $(document).on("click", ".blue_btn", function() {
         var idx = $(this).data("idx");

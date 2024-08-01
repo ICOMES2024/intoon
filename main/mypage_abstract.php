@@ -175,8 +175,8 @@
 			<div class="pagination">
 			</div>
 			<div class="centerT">
-     		<!-- <button class="btn blue_btn long online_submission_aler">Make a new submission</button> -->
-				<button class="btn blue_btn long " onclick="javascript:window.location.href='./abstract_submission.php';">Make a new submission</button> 
+     		<button class="btn blue_btn long online_submission_alert">Make a new submission</button>
+				<!-- <button class="btn blue_btn long " onclick="javascript:window.location.href='./abstract_submission.php';">Make a new submission</button>  -->
 			</div>
 		</div> 
 	</div>
