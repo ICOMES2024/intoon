@@ -313,6 +313,7 @@ section.visa .circle_title + .details {margin-bottom: 72px;}
 .main_pop_btn {display:block; margin:10px auto 0; width:calc(100% - 50px); height:43px; background:url('../img/travel_btn.png') no-repeat center; font-size:18px; font-family:'', sans-serif; font-weight:bold; color:#fff; border-radius:30px;}
 .main_pop_btn img {margin-left:5px;}
 .close_area {position:absolute; left:0; bottom:-20px; width:100%; background-color:#fff; padding:6px 10px;}
+.close_area.modal {position:absolute; left:0; bottom:0px; width:100%; background-color:#fff; padding:6px 10px;}
 .close_area .checkbox + label:before {border-radius:2px;}
 
 /*메인페이지 초록접수 마감 연장 팝업 추가*/
