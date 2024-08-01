@@ -26,7 +26,7 @@ $info = sql_fetch($sql_info);
     <div class="inner">
         <ul class="tab_green long abstract_submission">
             <li class="on"><a href="./abstract_submission_guideline.php">Submission Guidelines</a></li>
-            <li><a class="" href="./abstract_submission.php">Online Submission</a></li>
+            <li><a class="online_submission_alert" href="./abstract_submission.php">Online Submission</a></li>
             <!-- <li><a href="./abstract_submission_oral.php">Oral Presenters</a></li> -->
             <!-- <li><a href="./abstract_submission_exhibition.php">Poster Exhibition</a></li> -->
 
@@ -49,7 +49,7 @@ $info = sql_fetch($sql_info);
                 </div>
                 <div class="text_center btn_box mt25">
                      <a href="https://image.webeon.net/icomes2024/download/ICOMES2024_Abstract_template.docx" class="btn long_btn" target="_blank" download><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Abstract Form Download</a> 
-                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn ">Go to Abstract Submission</a>
+                    <a href="./abstract_submission.php" class="btn long_btn yellow_btn online_submission_alert">Go to Abstract Submission</a>
                 </div>
         
             </div>
