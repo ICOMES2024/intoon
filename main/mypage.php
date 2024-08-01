@@ -107,17 +107,39 @@
     color: #10BF99;
 }
 
-.ksola_signup {
+.ksola_signup, .non_ksola_signup {
 		display:none;
 	}
-	.mo_ksola_signup {
+	.mo_ksola_signup, .mo_non_ksola_signup  {
 		display:none;
 	}
-	.ksola_signup.on {
+	.ksola_signup.on, .non_ksola_signup.on {
 		display:revert;
 	}
-	.mo_ksola_signup.on{
+	.mo_ksola_signup.on, .mo_non_ksola_signup.on {
 		display:revert;
+	}
+
+	.join_btn{
+		width: 190px;
+		border: 1px solid #DDD;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		justify-content: center; 
+		margin-top: 12px;
+		background-color: #FFF;
+		padding: 8px;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.join_btn:hover{
+		background-color: #DDD;
+	}
+
+	table .btn{
+		height: 30px !important;
 	}
 </style>
 <script>
@@ -144,6 +166,114 @@ function email_check(email) {
 		}
 	});
 }
+
+
+function mo_non_kor_api() {
+	var kor_id = $("input[name=mo_non_kor_id]").val().trim();
+	var kor_pw = $("input[name=mo_non_kor_pw]").val().trim();
+	//제 3자 개인정보 수집에 동의 여부
+	var privacy = $("#mo_privacy1").is(":checked");
+
+	if(!kor_id) {
+		//$(".mo_red_api").eq(0).html("format_id");
+		alert("Invalid id");
+		return;
+	}
+	if(!kor_pw) {
+		//$(".mo_red_api").eq(0).html("Invalid_password");
+		alert("Invalid password");
+		return;
+	}
+	
+	if(privacy == false) {
+		alert("Please agree to the collection of personal information.");
+		$(".mo_red_api").eq(0).html("Please agree to the collection of personal information.");
+		return;
+	}
+
+	var data = {
+		'id' : kor_id,
+		'pw' : kor_pw 
+	};
+
+
+	$.ajax({
+		url			: 'signup_api_eng.php',
+		type		: "POST",
+		data		: data,
+		dataType	: "JSON",
+		success		: success,
+		fail		: fail,
+		error		: error
+	});
+
+	function success(res) {
+		var kor_sign = JSON.parse(res.value);
+		console.log(kor_sign); 
+		var user_row = kor_sign.user_row;
+
+		if(kor_sign.code == 100){
+			alert('The information you provided does not match our registration records.')
+		}else if(kor_sign.code == 300){
+			alert('The information you provided does not match our registration records.')
+		}else if(kor_sign.code == 'N7'){
+			alert('This account is already bring used \n This ID is already valid')
+		}
+		else if(kor_sign.code == 200){
+			const user_value = kor_sign.value
+			if(user_value.status && user_value.status == '승인'){
+				$("input[name=ksola_member_check]").val(user_value.email);
+				//alert('Membership Verified')
+				ksola_member_status = 1;
+
+				const data = {
+					email : $("[name=email]").val(),
+					ksola_member_status : ksola_member_status,
+					ksola_member_check : user_value.email
+				}
+
+			if( ksola_member_status != 0 && window.confirm("Would you like to authenticate as a KSSO member with your current ID for ICOMES 2024?")){
+				$.ajax({
+					url:"/main/ajax/client/ajax_member.php",
+					type: "POST",
+					data: {
+						flag: "memeber_update",
+						data
+					},
+					dataType: "JSON",
+					success: function (res) {
+						// console.log(res)
+						if (res.code == 200) {
+							alert('Membership Verified')
+							$('#mo_membership_status3').prop('checked',true);
+							$('#mo_membership_status4').prop('checked',false);
+							return;
+						} else {
+						
+							return;
+						}
+					}
+				});
+			}
+			}
+			else{
+				alert('Your membership approval is currently pending.')
+				// $("input[name=ksola_member_status]").val(0);
+			}
+		}
+	}
+	function fail(res) {
+		alert("Failed.\nPlease try again later.");
+		return false;
+	}
+	function error(res) {
+		alert("An error has occurred. \nPlease try again later.");
+		return false;
+	}
+}
+
+
+
 
 //한국 회원 인증시 api호출
 function mo_kor_api() {
@@ -275,6 +405,110 @@ function mo_kor_api() {
 		return false;
 	}
 }
+
+
+function non_kor_api(){
+	var kor_id = $("input[name=non_kor_id]").val().trim();
+	var kor_pw = $("input[name=non_kor_pw]").val().trim();
+	//제 3자 개인정보 수집에 동의 여부
+	var privacy = $("#privacy1").is(":checked");
+
+	if(!kor_id) {
+		alert("Invalid id");
+		//$(".red_api").eq(0).html("format_id");
+		return;
+	}
+	if(!kor_pw) {
+		alert("Invalid password");
+		//$(".red_api").eq(0).html("format_password");
+		return;
+	}
+	
+	if(privacy == false) {
+		alert("Please agree to the collection of personal information.");
+		$(".red_api").eq(0).html("Please agree to the collection of personal information.");
+		return;
+	}
+
+	var data = {
+		'id' : kor_id,
+		'pw' : kor_pw 
+	};
+
+	$.ajax({
+		url			: 'signup_api_eng.php',
+		type		: "POST",
+		data		: data,
+		dataType	: "JSON",
+		success		: success,
+		fail		: fail,
+		error		: error
+	});
+
+	function success(res) {
+		var kor_sign = JSON.parse(res.value);
+		console.log(kor_sign); 
+		var user_row = kor_sign.user_row;
+
+		if(kor_sign.code == 100){
+			alert('The information you provided does not match our registration records.')
+		}else if(kor_sign.code == 300){
+			alert('The information you provided does not match our registration records.')
+		}else if(kor_sign.code == 'N7'){
+			alert('This account is already bring used \n This ID is already valid')
+		}else if(kor_sign.code == 200){
+			const user_value = kor_sign.value
+			if(user_value.status == '승인'){
+				$("input[name=ksola_member_check]").val(user_value.email);
+				//alert('Membership Verified')
+
+				ksola_member_status = 1;
+
+				const data = {
+					email : $("[name=email]").val(),
+					ksola_member_status : ksola_member_status,
+					ksola_member_check : user_value.email
+				}
+
+			if( ksola_member_status != 0 && window.confirm("Would you like to authenticate as a KSSO member with your current ID for ICOMES 2024?")){
+			$.ajax({
+                url:"/main/ajax/client/ajax_member.php",
+                type: "POST",
+                data: {
+                    flag: "memeber_update",
+                    data
+                },
+                dataType: "JSON",
+                success: function (res) {
+                    // console.log(res)
+                    if (res.code == 200) {
+						alert('Membership Verified')
+						$('#membership_status3').prop('checked',true);
+						$('#membership_status4').prop('checked',false);
+                        return;
+                    } else {
+                       
+                        return;
+                    }
+                }
+            });
+		}
+			}else{
+				alert('Your membership approval is currently pending.')
+				// $("input[name=ksola_member_status]").val(0);
+			}
+		}
+	}
+	function fail(res) {
+		alert("Failed.\nPlease try again later.");
+		return false;
+	}
+	function error(res) {
+		alert("An error has occurred. \nPlease try again later.");
+		return false;
+	}
+}
+
 	
 function kor_api() {
 	var kor_id = $("input[name=kor_id]").val().trim();
@@ -505,6 +739,7 @@ function kor_api() {
 							<th style="background-color:transparent"></th>
 							<td>
 								<p>대한비만학회 회원 인증하기</p>
+								
 								<ul class="simple_join clearfix">
 									<li>
 										<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
@@ -526,15 +761,67 @@ function kor_api() {
 											<!-- <a href="javascript:;" class="term2_btn red_txt"> Details ></a> -->
 										</label>
 									</div>
-									<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
+									<a href="https://eng.kosso.or.kr/account/find_info.php" target="_blank" class="id_pw_find">Find KSSO membership ID/PW</a>
 								</div>
 								<input hidden name="ksola_member_type"/>
-								<input hidden name="ksola_member_check"/>
+								<input hidden name="ksola_member_check" value="<?=$user_info["ksola_member_check"]?>" />
 							</td>
 						</tr> 
 						<?php 
-							}
-						?>
+							}else{ 
+								if($user_info["ksola_member_status"] == "1" || $user_info["ksola_member_status"] == "2"){
+									$mem_chk = "checked";
+									$mem_chk2 = "";
+								}else{
+									$mem_chk = "";
+									$mem_chk2 = "checked";
+								}
+								?>
+							<tr name="non_ksola_tr" id="non_ksola_tr"> 
+									<th class="nowrap">KSSO Membership Status</th> 
+									<td>
+										<div class="max_normal">
+											<input type="checkbox" class="checkbox" id="membership_status3" disabled <?=$mem_chk ?>> 
+											<label for="membership_status3"><i></i>Member </label> 
+											<input type="checkbox" class="checkbox" id="membership_status4" disabled <?=$mem_chk2 ?>> 
+											<label for="membership_status4"><i></i>Non-Member</label> 
+											<button type="button" class="btn" id="user_check1" style="height:40px;">Membership Verification</button>
+										</div> 
+									</td> 
+								 </tr>
+							<tr class="non_ksola_signup">
+							<th style="background-color:transparent"></th>
+							<td>
+								<p>Membership Verification</p>
+								<a href="https://eng.kosso.or.kr/account/join_1.php"  class="join_btn" target="_blank">Join KSSO as a Member</a>
+								<ul class="simple_join clearfix">
+									<li>
+										<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
+										<input id="ksso_id" class="email_id" name="non_kor_id" type="text" maxlength="60">
+									</li>
+									<li>
+										<label for="ksso_pw">KSSO PW<span class="red_txt">*</span></label>
+										<input id="ksso_pw" class="passwords" name="non_kor_pw" type="password" maxlength="60">
+									</li>
+									<li>
+										<button onclick="non_kor_api()" type="button" class="btn" style="height:46px !important;">Membership Verification</button>
+									</li>
+								</ul>
+								<div class="clearfix2">
+									<div>
+										<input type="checkbox" class="checkbox" id="privacy1">
+										<label for="privacy1">
+											I agree to the collection of personal information by third parties.
+											<!-- <a href="javascript:;" class="term2_btn red_txt"> Details ></a> -->
+										</label>
+									</div>
+									<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find" style="text-align: center;">Find KSSO membership ID/PW</a>
+								</div>
+								<input hidden name="ksola_member_type"/>
+								<input hidden name="ksola_member_check" value="<?=$user_info["ksola_member_check"]?>" />
+							</td>
+						</tr>	
+						<?php 	} ?>
 						<tr id='name_tr' name="name_tr">
 							<th class="nowrap"><span class="red_txt">*</span><?=$locale("name")?></th>
 							<td>
@@ -681,8 +968,64 @@ function kor_api() {
 						</div>
 					</li>
 					<?php 
-						if($user_info["nation_no"] == "25"){
+						if($user_info["nation_no"] != "25"){
+							if($user_info["ksola_member_status"] == "1" || $user_info["ksola_member_status"] == "2"){
+								$mem_chk = "checked";
+								$mem_chk2 = "";
+							}else{
+								$mem_chk = "";
+								$mem_chk2 = "checked";
+							}
 					?>
+							<li id="non_ksola_li">
+								<p class="label">KSSO Membership Status</p>
+								<div>
+									<input type="checkbox" class="checkbox" id="mo_membership_status3" disabled <?=$mem_chk ?>>
+									<label for="membership_status3"><i></i>Member</label>
+									<input type="checkbox" class="checkbox" id="mo_membership_status4" disabled <?=$mem_chk2 ?>>
+									<label for="membership_status4"><i></i>Non-Member</label>
+									<button type="button" class="btn" id="mo_user_check1" style="height: 36px;">Membership Verification</button>
+								</div>
+							</li>
+							<li class="mo_non_ksola_signup">
+								<p>Membership Verification</p>
+								<a href="https://eng.kosso.or.kr/account/join_1.php" class="join_btn" target="_blank">Join KSSO as a Member</a>
+								<ul class="simple_join clearfix">
+									<li>
+										<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
+										<input id="ksso_id" class="email_id" name="mo_non_kor_id" type="text" maxlength="60">
+									</li>
+									<li>
+										<label for="ksso_pw">KSSO PW<span class="red_txt">*</span></label>
+										<input id="ksso_pw" class="passwords" name="mo_non_kor_pw" type="password" maxlength="60">
+									</li>
+									<li>
+										<button onclick="mo_non_kor_api()" type="button" class="btn" style="height: 36px;">Membership Verification</button>
+									</li>
+								</ul>
+								<div class="clearfix2">
+									<div>
+										<input type="checkbox" class="checkbox" id="mo_privacy1">
+										<label for="mo_privacy1">
+										I agree to the collection of personal information by third parties.
+											<!-- <a href="javascript:;" class="term2_btn red_txt"> Details ></a> -->
+										</label>
+									</div>
+									<a href="https://eng.kosso.or.kr/account/join_1.php" target="_blank" class="id_pw_find">Find KSSO membership ID/PW</a>
+								</div>
+								<input hidden name="ksola_member_type"/>
+								<input hidden name="ksola_member_check" value='<?$user_info["ksola_member_check"]?>'/>
+							</li>
+					<?php
+						}else{ 
+							if($user_info["ksola_member_status"] == "1" || $user_info["ksola_member_status"] == "2"){
+								$mem_chk = "checked";
+								$mem_chk2 = "";
+							}else{
+								$mem_chk = "";
+								$mem_chk2 = "checked";
+							}
+							?>
 							<li id="ksola_li">
 								<p class="label">대한비만학회 회원 여부</p>
 								<div>
@@ -719,11 +1062,9 @@ function kor_api() {
 									<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
 								</div>
 								<input hidden name="ksola_member_type"/>
-								<input hidden name="ksola_member_check"/>
+								<input hidden name="ksola_member_check" value='<?$user_info["ksola_member_check"]?>'/>
 							</li>
-					<?php
-						}
-					?>
+					<?php	}?>
 					<li>
 						<p class="label"><span class="red_txt">*</span><?=$locale("name")?></p>
 						<div>
@@ -836,7 +1177,7 @@ function kor_api() {
 					<button type="button" class="btn green_btn long_btn submit_btn" id="mo_submit"><?=$locale("edit_btn")?></button>
 				</div>
 			</div>
-			<input type="hidden" name="ksola_member_check">
+			<input type="hidden" name="ksola_member_check"  value='<?$user_info["ksola_member_check"]?>'>
 		</form>
 			<input type="hidden" name="nation_tel" value="<?= $nation_tel ?>">	
 			<input type="hidden" name="check_type" value="1">	
@@ -860,6 +1201,14 @@ $(document).ready(function() {
 		$(".mo_ksola_signup").toggleClass("on");
 	})
 	
+
+	$('#user_check1').on("click", ()=>{
+		$(".non_ksola_signup").toggleClass("on");
+	})
+
+	$('#mo_user_check1').on("click", ()=>{
+		$(".mo_non_ksola_signup").toggleClass("on");
+	})
 
     //비밀번호 입력 시 비밀번호 필수값으로 전환
     $("#password, #re_password").on("change", function() {
@@ -1014,9 +1363,18 @@ $(document).ready(function() {
 			check = name_check("department_kor");
 			if(check == false) return;	
 			
+			const membership_status1 = $("#membership_status1").prop("checked");
+			const mo_membership_status1 = $("#mo_membership_status1").prop("checked");
+
+			const membership_status3 = $("#membership_status3").prop("checked");
+			const mo_membership_status3 = $("#mo_membership_status3").prop("checked");
+
 			var ksola_member_type = $("input[name=ksola_member_type]").val();	
 			var ksola_member_check = $("input[name=ksola_member_check]").val();	
-			var ksola_member_status = 0;
+
+			if(membership_status1 || mo_membership_status1 || membership_status3 || mo_membership_status3){
+				ksola_member_status = 1;
+			}else{
 				if(ksola_member_type == "인터넷회원"){
 					ksola_member_status = 3;
 				}else if(ksola_member_type == "평생회원"){
@@ -1026,6 +1384,7 @@ $(document).ready(function() {
 				}else {
 					ksola_member_status = 0;
 				}
+			}	
 		}
 		var titleInput = $("[name=title_input]").val();
 		if ((title == 4) && titleInput == "") {
@@ -1196,9 +1555,19 @@ $(document).ready(function() {
 			var department_kor = $("input[name=mo_department_kor]").val();
 			check = name_check("mo_department_kor");
 			if(check == false) return;
-			
+
+			const membership_status1 = $("#membership_status1").prop("checked");
+			const mo_membership_status1 = $("#mo_membership_status1").prop("checked");
+
+			const membership_status3 = $("#membership_status3").prop("checked");
+			const mo_membership_status3 = $("#mo_membership_status3").prop("checked");
+
 			var ksola_member_type = $("input[name=ksola_member_type]").val();	
 			var ksola_member_check = $("input[name=ksola_member_check]").val();	
+
+			if(membership_status1 || mo_membership_status1 || membership_status3 || mo_membership_status3){
+				ksola_member_status = 1;
+			}else{
 				if(ksola_member_type == "인터넷회원"){
 					ksola_member_status = 3;
 				}else if(ksola_member_type == "평생회원"){
@@ -1208,6 +1577,7 @@ $(document).ready(function() {
 				}else {
 					ksola_member_status = 0;
 				}
+			}	
 		}
 		var titleInput = $("[name=title_input]").val();
 		if ((title == 4) && titleInput == "") {
