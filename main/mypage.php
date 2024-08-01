@@ -401,76 +401,6 @@ function kor_api() {
 	}
 }
 
-
-function non_kor_api(){
-	var kor_id = $("input[name=kor_id]").val().trim();
-	var kor_pw = $("input[name=kor_pw]").val().trim();
-	//제 3자 개인정보 수집에 동의 여부
-	var privacy = $("#privacy1").is(":checked");
-
-	if(!kor_id) {
-		alert("Invalid id");
-		//$(".red_api").eq(0).html("format_id");
-		return;
-	}
-	if(!kor_pw) {
-		alert("Invalid password");
-		//$(".red_api").eq(0).html("format_password");
-		return;
-	}
-	
-	if(privacy == false) {
-		alert("Please agree to the collection of personal information.");
-		$(".red_api").eq(0).html("Please agree to the collection of personal information.");
-		return;
-	}
-
-	var data = {
-		'id' : kor_id,
-		'pw' : kor_pw 
-	};
-
-	$.ajax({
-		url			: 'signup_api_eng.php',
-		type		: "POST",
-		data		: data,
-		dataType	: "JSON",
-		success		: success,
-		fail		: fail,
-		error		: error
-	});
-
-	function success(res) {
-		var kor_sign = JSON.parse(res.value);
-		console.log(kor_sign); 
-		var user_row = kor_sign.user_row;
-
-		if(kor_sign.code == 100){
-			alert('The information you provided does not match our registration records.')
-		}else if(kor_sign.code == 300){
-			alert('The information you provided does not match our registration records.')
-		}else if(kor_sign.code == 200){
-			const user_value = kor_sign.value
-			if(user_value.status == '승인'){
-				$("input[name=ksola_member_check]").val(user_value.email);
-				$("input[name=ksola_member_type]").val(1)
-				alert('Membership Verified');
-			}else{
-				alert('Your membership approval is currently pending.')
-			}
-		}
-	}
-	function fail(res) {
-		alert("Failed.\nPlease try again later.");
-		return false;
-	}
-	function error(res) {
-		alert("An error has occurred. \nPlease try again later.");
-		return false;
-	}
-}
-
-
 </script>
 
 <section class="container form_section mypage">
@@ -560,21 +490,21 @@ function non_kor_api(){
 								}
 						?>
 								<tr name="ksola_tr" id="ksola_tr"> 
-									<th class="nowrap">KSSO Membership Status</th> 
+									<th class="nowrap">대한비만학회 회원 여부</th> 
 									<td>
 										<div class="max_normal">
 											<input type="checkbox" class="checkbox" id="membership_status1" disabled <?=$mem_chk ?>> 
-											<label for="membership_status1"><i></i>Member</label> 
+											<label for="membership_status1"><i></i>회원</label> 
 											<input type="checkbox" class="checkbox" id="membership_status2" disabled <?=$mem_chk2 ?>> 
-											<label for="membership_status2"><i></i>Non-Member</label> 
-											<button type="button" class="btn" id="user_check">Membership Verification</button>
+											<label for="membership_status2"><i></i>비회원</label> 
+											<button type="button" class="btn" id="user_check">대한비만학회 회원 인증하기</button>
 										</div> 
 									</td> 
 								 </tr>
 							<tr class="ksola_signup">
 							<th style="background-color:transparent"></th>
 							<td>
-								<p>Membership Verification</p>
+								<p>대한비만학회 회원 인증하기</p>
 								<ul class="simple_join clearfix">
 									<li>
 										<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
@@ -585,68 +515,26 @@ function non_kor_api(){
 										<input id="ksso_pw" class="passwords" name="kor_pw" type="password" maxlength="60">
 									</li>
 									<li>
-										<button onclick="kor_api()" type="button" class="btn">Membership Verification</button>
+										<button onclick="kor_api()" type="button" class="btn">회원인증</button>
 									</li>
 								</ul>
 								<div class="clearfix2">
 									<div>
 										<input type="checkbox" class="checkbox" id="privacy">
 										<label for="privacy">
-											I agree to the collection of personal information by third parties.
+											제 3자 개인정보 수집에 동의합니다.
+											<!-- <a href="javascript:;" class="term2_btn red_txt"> Details ></a> -->
 										</label>
 									</div>
-									<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">Find KSSO membership ID/PW</a>
+									<a href="https://www.kosso.or.kr/join/search_id.html" target="_blank" class="id_pw_find">KSSO 회원 ID/PW 찾기</a>
 								</div>
 								<input hidden name="ksola_member_type"/>
 								<input hidden name="ksola_member_check"/>
 							</td>
 						</tr> 
 						<?php 
-							//외국인의 경우
-							}else{ ?>
-							<tr name="ksola_tr" id="ksola_tr"> 
-									<th class="nowrap">KSSO Membership Status</th> 
-									<td>
-										<div class="max_normal">
-											<input type="checkbox" class="checkbox" id="membership_status3" disabled <?=$mem_chk ?>> 
-											<label for="membership_status3"><i></i>Member</label> 
-											<input type="checkbox" class="checkbox" id="membership_status4" disabled <?=$mem_chk2 ?>> 
-											<label for="membership_status4"><i></i>Non-Member</label> 
-											<button type="button" class="btn" id="user_check">Membership Verification</button>
-										</div> 
-									</td> 
-								 </tr>
-							<tr class="ksola_signup">
-							<th style="background-color:transparent"></th>
-							<td>
-								<p>Membership Verification</p>
-								<ul class="simple_join clearfix">
-									<li>
-										<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
-										<input id="ksso_id" class="email_id" name="kor_id" type="text" maxlength="60">
-									</li>
-									<li>
-										<label for="ksso_pw">KSSO PW<span class="red_txt">*</span></label>
-										<input id="ksso_pw" class="passwords" name="kor_pw" type="password" maxlength="60">
-									</li>
-									<li>
-										<button onclick="non_kor_api()" type="button" class="btn">Membership Verification</button>
-									</li>
-								</ul>
-								<div class="clearfix2">
-									<div>
-										<input type="checkbox" class="checkbox" id="privacy">
-										<label for="privacy">
-											I agree to the collection of personal information by third parties.
-										</label>
-									</div>
-									<a href="http://eng.kosso.or.kr/account/find_info.php" target="_blank" class="id_pw_find">Find KSSO membership ID/PW</a>
-								</div>
-								<input hidden name="ksola_member_type"/>
-								<input hidden name="ksola_member_check"/>
-							</td>
-						</tr>
-							<?php 	}?>
+							}
+						?>
 						<tr id='name_tr' name="name_tr">
 							<th class="nowrap"><span class="red_txt">*</span><?=$locale("name")?></th>
 							<td>

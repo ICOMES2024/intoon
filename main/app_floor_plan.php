@@ -204,13 +204,13 @@
 							<div class='pulse'></div>
 						</div>
 					</a>
-					<!-- <ul class="pop_text">
-                        <li class="floor_pop_title">[Room 6]</li>
-                        <li class="floor_pop_title">September 6 (Fri)</li>
+					<ul class="pop_text">
+                        <li class="floor_pop_title">[Room 7]</li>
+                        <!-- <li class="floor_pop_title">September 6 (Fri)</li>
                         <li>- Guided Poster Presentation 1</li>
 						<li class="floor_pop_title">September 7 (Sat)</li>
-                        <li>- Guided Poster Presentation 2</li>
-					</ul> -->
+                        <li>- Guided Poster Presentation 2</li> -->
+					</ul>
 				</div>
 				<div class="a_wrap floor_6_2">
 					<!-- <a href="javascript:;"></a>
