@@ -51,7 +51,7 @@
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=20">Presidential Lecture</a></li>
-						<li><a href="/main/app_abstract.php?category_idx=22">Special Scientific Session</a></li>
+						<li><a href="/main/app_abstract.php?category_idx=22">Special Scientific Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=8">Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=15">Joint Symposium</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=21">Special Session</a></li>

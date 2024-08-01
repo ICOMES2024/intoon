@@ -79,7 +79,8 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_1" data-id="2">
-									Joint Symposium<br>KSSO-JKT (Clinical)
+									Joint Symposium-JKT (Clinical)
+									<!-- <br>New Clinical Insights into the MASLD -->
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
@@ -102,7 +103,8 @@
 									<input type="hidden" name="e" value="room3">
 								</td>
                                 <td class="violet_bg pointer" name="joint_symposium_2" data-id="5">
-									Joint Symposium<br>KSSO-JKT (Basic)
+									Joint Symposium-JKT (Basic)
+									<!-- <br>Novel Mechanisms and Therapeutic Approaches for MASLD -->
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
@@ -342,7 +344,7 @@
 									<div class="colons_div">13:00-14:00</div>
 								</td>
 								<td class="special_bg pointer" name="keynote_lecture_8" colspan="3" data-id="70">
-									Special Scientific Session 1
+									Special Scientific Lecture 1
 									<!-- <p class="">Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!</p>
 									<p>Ania Jastreboff</p>
 									<p>Yale University, USA</p> -->
@@ -637,7 +639,7 @@
 									<div class="colons_div">12:50-13:50</div>
 								</td>
 								<td class="special_bg pointer" name="ksso_scientific_session" colspan="3" data-id="71">
-									Special Scientific Session 2
+									Special Scientific Lecture 2
 									<!-- <p class="">Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective</p>
 									<p>Soo Lim</p>
 									<p>Seoul National University, Korea</p> -->

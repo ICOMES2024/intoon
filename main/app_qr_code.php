@@ -75,11 +75,13 @@
 		<div class="contents_box">
 			<div class="contents_wrap">
                 <p class="app_qr_num">No. <?=$member_data['r_idx']?></p>
-                <div class="app_qr_area" id="qrcode" data-encrypt="<?=$register_no?>"></div>
-                <!-- <div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no']?>"></div> -->
-                <div class="app_txt_area">
-                    <strong class="app_qr_name"><?=$member_data['first_name']." ".$member_data['last_name']?></strong>
-                    <p class="app_qr_affiliation"><?=$member_data['affiliation']?> <span><?=$member_data['nation_en']?></span></p>
+                <div class="qrcode_wrap">
+                    <div class="app_qr_area" id="qrcode" data-encrypt="<?=$register_no?>"></div>
+                    <!-- <div class="app_qr_area" id="qrcode" data-encrypt="<?=$member_data['registration_no']?>"></div> -->
+                    <div class="app_txt_area">
+                        <strong class="app_qr_name"><?=$member_data['first_name']." ".$member_data['last_name']?></strong>
+                        <p class="app_qr_affiliation"><?=$member_data['affiliation']?> <span><?=$member_data['nation_en']?></span></p>
+                    </div>
                 </div>
             </div>
             <!-- 성함, 소속 2줄일 경우 확인을 위한 예시 마크업 -->
@@ -102,8 +104,8 @@
         // qrcode 생성
         var qrcode = new QRCode(document.getElementById("qrcode"), {
             text: document.getElementById("qrcode").dataset.encrypt,
-            width: 220,
-            height: 220,
+            width: 120,
+            height: 120,
             colorDark : "#000000",
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H

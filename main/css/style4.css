@@ -3354,3 +3354,14 @@ section.coming img {width: 100%;}
   .stamp_modal > p:nth-child(1){
 	font-size: 1.5rem;
   }
+
+  section.app_version.app_qr_code{
+	padding: 0 !important;
+  }
+
+  .app_qr_code .qrcode_wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
