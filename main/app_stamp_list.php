@@ -229,9 +229,15 @@ if (empty($_SESSION["USER"])) {
 	<!-- 이벤트 완료 모달 -->
 	<div onclick="closeModal()" class="modal_background" style="display: none;"></div>
 	<div class="stamp_modal" style="display: none;">
-		<img onclick="closeModal()" class="close_btn" src="https://image.webeon.net/icomes2024/app/icon_x.png"/>
+		<img onclick="closeModal()" class="close_btn" src="https://image.webeon.net/icomes2024/app/icon_x.png" />
 		<p class="bold center_t">Booth Tour Success!</p>
 		<p class="center_t">* Please collect your souvenir at the Gift Distribution Counter (6F).</p>
+		<div class="close_area modal clearfix2">
+			<div>
+				<input type="checkbox" id="today_check" class="checkbox input required">
+				<label for="today_check">Do not open this window for 24 hours.</label>
+			</div>
+		</div>	
 	</div>
 </section>
 <script>
@@ -284,18 +290,40 @@ if (empty($_SESSION["USER"])) {
 	}
 
 	function showModal(){
-		if(!localStorage.getItem('showmodal')){
-			modalBackground.style.display = "";
+		const cookiedata = document.cookie;
+		if(cookiedata.indexOf("close=Y")<0){
+            modalBackground.style.display = "";
 			modalBox.style.display = "";
-		}
+        }	
 	}
 
 	function closeModal(){
+		if($("#today_check").is(":checked") == true){
+            setCookie("close","Y",1);   //기간( ex. 1은 하루, 7은 일주일)
+        }
 		modalBackground.style.display = "none";
 		modalBox.style.display = "none";
-		localStorage.setItem('showmodal', 'true');
 	}
 
+    // 쿠키 가져오기
+    var getCookie = function (cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+
+    // 24시간 기준 쿠키 설정하기  
+    var setCookie = function (cname, cvalue, exdays) {
+        var todayDate = new Date();
+        todayDate.setTime(todayDate.getTime() + (exdays*24*60*60*1000));    
+        var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
 
 </script>
 <script>

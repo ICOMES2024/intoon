@@ -3345,6 +3345,7 @@ section.coming img {width: 100%;}
 	position: absolute;
 	top:8%;
 	right: 4%;
+	width: 16px;
   }
 
   .stamp_modal > p{
