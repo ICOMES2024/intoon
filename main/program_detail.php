@@ -7198,7 +7198,7 @@ and Metabolism
                                                 <td>12:50-13:25</td>
                                                 <td>
                                                     <p class="font_20 bold mb0">Guided Poster Presentation 2</p>
-                                                    <p><span class="bold">Chairpersons : Kyung-Soo Kim</span> (CHA University, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Kyung-Soo Kim</span> (CHA University, Korea)</p>
                                                 </td>
                                             </tr>
                                             <tr>
