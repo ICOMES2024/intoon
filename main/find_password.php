@@ -9,11 +9,11 @@
 		<form name="find_password_form" onsubmit="return false;">
 			<ul>
 				<li>
-					<input type="text" name="email" placeholder="<?= $locale("id") ?>">
+					<input class="find_pw" type="text" name="email" placeholder="<?= $locale("id") ?>">
 				</li>
 			</ul>
-			<button type="button" class="btn submit_btn gray_line_btn pw_btn"><?= $locale("get_temporary_password_btn") ?></button>
-			<button type="button" class="btn login_btn main_btn login_2024" onclick="javascript:window.location.href='./login.php';"><?= $locale("login") ?></button>
+			<button type="button" class="btn submit_btn gray_line_btn pw_btn find_pw"><?= $locale("get_temporary_password_btn") ?></button>
+			<button type="button" class="btn login_btn main_btn login_2024 find_pw" onclick="javascript:window.location.href='./login.php';"><?= $locale("login") ?></button>
 		</form>
 	</div>
 </section>

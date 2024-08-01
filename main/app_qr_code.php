@@ -14,8 +14,7 @@
                             window.history.back();
                         }
                     }
-                
-                
+
                         try{
                             if (window.webkit?.messageHandlers!=null) {
                                 window.webkit.messageHandlers.logout.postMessage('');
@@ -112,6 +111,13 @@
         });
     });
 
+    const qrcodeBox = document.querySelector('.app_qr_area');
+
+    const colorList = ["#c1121f", "#f77f00", "#FBB03B", "#283618", "#669bbc", "#003049", "#67338C"];
+
+    const randomColor = colorList[Math.floor(Math.random() * colorList.length)];
+
+    qrcodeBox.style.borderColor = randomColor;
 </script>
 
 <?php include_once('./include/app_footer.php');?>
