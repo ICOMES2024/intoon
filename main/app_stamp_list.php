@@ -257,7 +257,6 @@ if (empty($_SESSION["USER"])) {
 
 	window.onload = () =>{
 		getLuckyNum();
-		showModal()
 	}
 
 	function getLuckyNum(){
@@ -291,6 +290,7 @@ if (empty($_SESSION["USER"])) {
 	}
 
 	function showModal(){
+		const cookiedata = document.cookie;
 		if(cookiedata.indexOf("close=Y")<0){
             modalBackground.style.display = "";
 			modalBox.style.display = "";
@@ -324,7 +324,6 @@ if (empty($_SESSION["USER"])) {
         var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
         document.cookie = cname + "=" + cvalue + "; " + expires;
     }
-    
 
 </script>
 <script>
