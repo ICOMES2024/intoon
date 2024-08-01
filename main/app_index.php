@@ -94,12 +94,12 @@
 					<input type="hidden" name="day" value="day_3">
 			</li>
 			<li class="pointer" name="keynote_lecture_8">
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-11-1.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-11-2.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_2">
 			</li>
 			<li class="pointer"  name="ksso_scientific_session" >
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-12-1.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-12-2.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_3">
 			</li>

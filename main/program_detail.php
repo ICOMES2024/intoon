@@ -110,22 +110,29 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>15:00-15:30</td>
+                                                                    <td>15:00-15:25</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>15:30-16:00</td>
+                                                                    <td>15:25-15:50</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:00-16:30</td>
+                                                                    <td>15:50-16:15</td>
                                                                     <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:15-16:30</td>
+                                                                    <td class="bold">Panel Discussion </td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
@@ -152,8 +159,10 @@ echo '<script type="text/javascript">
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Committee Session 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
-                                                        University, Republic of Korea)</p> -->
+                                                    <p>
+                                                        <span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Korea), 
+                                                        <br><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Korea)
+                                                    </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -172,24 +181,32 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-17:00</td>
+                                                                    <td>16:30-16:55</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Ga Eun Nam</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:00-17:30</td>
+                                                                    <td>16:55-17:20</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Yeongkeun Kwon</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:30-18:00</td>
+                                                                    <td>17:20-17:45</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Ah-Ram Sul</p>(NECA, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>17:45-18:00</td>
+                                                                    <td class="bold">Panel Discussion</td>
+                                                                    <td class="text_r">
+                                                                    <p class="bold">Yong Hee Hong</p>(Soonchunhyang University, Korea),<br/>
+                                                                        <p class="bold">Hyun-Young Shin</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -356,7 +373,7 @@ echo '<script type="text/javascript">
                                             <tr class="violet_bg">
                                                 <td>15:00-16:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Joint Symposium KSSO-JKT (Clinical)</p>
+                                                    <p class="font_20 bold">Joint Symposium-JKT (Clinical) : New Clinical Insights into the MASLD</p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Korea), <br><span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
                                                     </p>
@@ -433,7 +450,7 @@ echo '<script type="text/javascript">
                                             <tr class="violet_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Joint Symposium KSSO-JKT (Basic)</p>
+                                                    <p class="font_20 bold"> Joint Symposium-JKT (Basic) : Novel Mechanisms and Therapeutic Approaches for MASLD</p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Ki Woo Kim</span> (Yonsei University, Korea), <br><span class="bold">Jun Wada</span> (Okayama University, Japan)
                                                     </p>
@@ -596,9 +613,11 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:40-19:10</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Publishing at Nature Reviews
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Claire Greenhill</p>(Nature Reviews Endocrinology, UK)
+                                                                        <p class="bold">Claire Greenhill</p>(Springer Nature, UK)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -878,10 +897,10 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                    The Ideal Combination therapy for T2D Including Original Dapagliflozin
+                                                                    The Ideal Combination therapy for T2D Including Dapagliflozin
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jae-Han Jeon</p>(Kyungbook National University, Korea)
+                                                                        <p class="bold">Jae-Han Jeon</p>(Kyungpook National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1042,7 +1061,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                    Nutrigenomics of Obesity and Weight Management
+                                                                    Nutrigenomics of Obesity & Weight Control: Macronutrient Ratios
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yoon Jung Park</p>(Ewha Womans University, Korea)
@@ -1063,8 +1082,8 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Tae Nyun Kim</p>(Inje University, Korea),<br>
-                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Korea)
+                                                                        <p class="bold">Tae Nyun Kim</p>(Inje University, Korea)
+                                                                        <!--,<br><p class="bold">Jae Hyun Bae</p>(Korea University, Korea) -->
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1273,7 +1292,7 @@ and Metabolism
                                             <tr class="special_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Special Scientific Session 1</p>
+                                                    <p class="font_20 bold">Special Scientific Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -1359,46 +1378,21 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Symposium 5 : Current Perspectives on Health Inequity in Obesity</p>
                                                     <p><span class="bold">Chairpersons : Young Seol Kim</span> (Kyung Hee University, Korea), <br><span class="bold">Kyung-Hee Park</span> (Hallym University, Korea)</p>
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Kyung Hee Park (Hallym University,
-                                                        Republic of Korea), Jin-Wook Kim (Hippocrata Clinic), Yoon Jeong
-                                                        Cho (Daegu Catholic University, Republic of Korea)</p>
+                                                    <p class="bold">Organizer: Kyung Hee Park (Hallym University, Korea), Jin-Wook Kim (Hippocrata clinic, Korea), Yoon Jeong Cho (Daegu Catholic University, Korea)</p>
                                                     <ul>
-                                                        <li>The development of new drugs for treating obesity is
-                                                            ongoing, and more potent medications are being introduced.
-                                                            Among them, semaglutide and tirzepatide will soon be
-                                                            available in Korea, and their efficacy has been proven based
-                                                            on various clinical trials. In Symposium 5, we will discuss
-                                                            the efficacy of semaglutide and tirzepatide, as well as
-                                                            expectations and side effects associated with their use. In
-                                                            line with this, we will explore the safety and status of
-                                                            drug abuse when using anti-obesity drugs, which should be
-                                                            considered as important as their efficacy. This symposium
-                                                            will provide an opportunity for us to collectively
-                                                            contemplate the direction for optimal treatment in this
-                                                            field.</li>
+                                                        <li>In this session, we will discuss health inequalities in obesity. We will delve into the impact of socioeconomic factors among various aspects related to obesity, particularly examining cases from low-income countries. We will explore food insecurity and consider strategies to address it. Additionally, we will discuss qualitative case studies on weight management in urban areas, linking environmental factors.</li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. J Obes Metab Syndr. 2023 Jun 30; 32(2): 121–129.
-                                                            Diagnosis of Obesity: 2022 Update of Clinical Practice
-                                                            Guidelines for Obesity by the Korean Society for the Study
-                                                            of Obesity<br />
-                                                            2. Lancet Diabetes Endocrinol 2022; 10: 193–206. Semaglutide
-                                                            once a week in adults with overweight or obesity, with or
-                                                            without type 2 diabetes in an east Asian population (STEP
-                                                            6): a randomised, double-blind, double-dummy,
-                                                            placebo-controlled, phase 3a trial<br />
-                                                            3. Diabetes Obes Metab. 2023 Apr;25(4):1056-1067. Safety and
-                                                            efficacy analyses across age and body mass index subgroups
-                                                            in East Asian participants with type 2 diabetes in the phase
-                                                            3 tirzepatide studies (SURPASS programme)<br />
-                                                            4. Diabetes Obes Metab.2021;23:1232–1241.Cardiovascular
-                                                            safety of evogliptin in patients with type 2 diabetes: A
-                                                            nationwide cohort study.
+                                                            1. Abdominal obesity in India: analysis of the National Family Health Survey-5 (2019-2021) data.  Lancet Reg Health Southeast Asia.2023 May 12:14:100208. doi: 10.1016/j.lansea.2023.100208. eCollection 2023 Jul
+                                                            <br />
+                                                            2. Regional disparities in food security and depression among single-person households in the Republic of Korea. BMC Public Health. 2023 Oct 19;23(1):2047. doi: 10.1186/s12889-023-16874-3
+<br />
+3. Daily life activities of young adults with obesity living in highly accessible and compact urban environments in Seoul, South Korea: a spatiotemporal qualitative study protocol. BMJ Open. 2024 Mar 19;14(3):e080895. doi: 10.1136/bmjopen-2023-080895
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -2144,7 +2138,7 @@ and Metabolism
                                             <tr class="special_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Special Scientific Session 1</p>
+                                                    <p class="font_20 bold">Special Scientific Lecture 1</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -2423,15 +2417,28 @@ and Metabolism
                                                     <p><span class="bold">Chairpersons : Hyuk-Sang Kwon</span> (The Catholic University of Korea, Korea)
                                                     , <br><span class="bold">Elaine Rush</span> (Auckland University of Technology, New Zealand)
                                                     </p> 
-													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-													<p class="bold">Organizer: Hyung Jin Choi (Seoul National University, Republic of Korea)</p>
+													<p class="bold">Organizer: Ga Eun Nam (Korea University, Korea), Ji Won Yun (Seoul National University, Korea)</p>
 													<ul>
-														<li>In this session, we will delve into the intricate interplay between neuropsychology and obesity. Dr. Yun Ha Jeong from the Korea Brain Research Institute will discuss the impact of obesity and HDL concentration on the pathology of Alzheimer's disease (AD). Through an analysis of AD pathological changes in 5XFAD mice after obesity induction through a high-fat diet, Dr. Jeong presents a noteworthy phenomenon where the increase in HDL and APOA-I serum levels mitigates AD features, offering a potential avenue for novel therapeutic strategies.</li>
-														<li>Subsequently, Professor Kwang Wei Tham from  Singapore Woodlands Health will elucidate how weight-related biases affect the physical, mental health, and obesity management of individuals. Lastly, Professor Youn Huh from Eulji University will explore the link between type 2 diabetes and dementia, emphasizing the growing relevance of preventing and managing these conditions, and discussing how type 2 diabetes escalates dementia risks, urging the derivation of preventive strategies based on research findings in light of the increasing prevalence of both diseases.</li>
+														<li>Recent studies have highlighted the associations of obesity and metabolic disorders with the increased risk of various types of cancer. Symposium 10 on ‘Obesity and Cancer’ aims to delve into the complex relationship between obesity and the risk of cancer based on research utilizing big data from both domestic and international sources. This session will feature cutting-edge research exploring how obesity and metabolic disturbances influence cancer development. Dr. Emma Fontvieille will discuss the independent and combined effects of BMI and cardiometabolic conditions on cancer risk. Professor Mai Thi Xuan Tran will examine how metabolic health, with a focus on body composition and waist circumference, affects the risk of breast cancer. Finally, professor Wonsock Kim will provide a comprehensive explanation of the relationship between lifestyles, obesity, and the occurrence of cancer. These presentations promise to deepen our understanding of the complex interplay between obesity and cancer, offering insights into potential preventive and therapeutic strategies.
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Body mass index and cancer risk among adults with and without cardiometabolic diseases: evidence from the EPIC and UK Biobank prospective cohort studies. BMC Med 2023;21:418
+                                                            <br />
+                                                            2. Mammographic breast density, body mass index and risk of breast cancer in Korean women aged 75 years and older. Int J Cancer 2022;151:869-877
+                                                            <br />
+                                                            3. Association of the Interaction Between Mammographic Breast Density, Body Mass Index, and Menopausal Status With Breast Cancer Risk Among Korean Women. JAMA Netw Open 2021;4:e2139161
+                                                            <br />
+                                                            4. Body Weight Variability and the Risk of Cardiovascular Outcomes and Mortality in Patients With Type 2 Diabetes: A Nationwide Cohort Study. Diabetes Care 2020;43:2234-2241
+                                                            <br />
+                                                            5. Impact of waist circumference on the risk of vertebral fracture: A nationwide cohort study in South Korea. Bone 2021:145:115870
+
+                                                        </li>
 													</ul>
 												</td>
                                             </tr>
@@ -2459,7 +2466,7 @@ and Metabolism
                                                                     Metabolic Health and Risk of Breast Cancer: A Focus on Impact of Body Composition and Waist Circumference
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Mai Thi Xuan Tran</p>(Hanyang University, Korea)
+                                                                        <p class="bold">Thi Xuan Mai Tran</p>(Hanyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -2607,7 +2614,7 @@ and Metabolism
                                                                    
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Ga Eun Nam</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -2730,9 +2737,7 @@ and Metabolism
                                                     <p class="font_20 bold">Symposium 3 : Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Won-Young Lee</span>(Sungkyunkwan University, Korea)
-                                                        <!-- ,<br />
-                                                        <span class="bold">Sang-Yong Kim</span> (Chosun University,
-                                                        Republic of Korea) -->
+                                                        ,<br /><span class="bold">Jung Hwan Kim</span> (Eulji University, Korea)
                                                     </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -2995,7 +3000,7 @@ and Metabolism
                                             <tr class="special_bg">
                                                 <td>13:00-13:40</td>
                                                 <td>
-                                                    <p class="font_20 bold">Special Scientific Session 1 </p>
+                                                    <p class="font_20 bold">Special Scientific Lecture 1 </p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -3315,10 +3320,8 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Oh Yoen Kim</p>(Dong-A
-                                                                        University, Republic of Korea),<br />
-                                                                        <p class="bold">Min-Jeong Shin</p>(Korea
-                                                                        University, Republic of Korea) -->
+                                                                        <p class="bold">Hyunjung Lim</p>(Kyung Hee University, Korea),<br />
+                                                                        <p class="bold">Oh Yoen Kim</p>(Dong-A University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3875,9 +3878,10 @@ and Metabolism
                                                                 <tr>
                                                                     <td>10:20-10:50</td>
                                                                     <td class="bold">
+                                                                    SELECTing the Future: Cardiovascular Outcome in Patients with Obesity/Overweight without Type 2 Diabetes
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Darae Kim</p>(Sungkyunkwwan University, Korea)
+                                                                        <p class="bold">Darae Kim</p>(Sungkyunkwan University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4020,6 +4024,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>15:00-15:30</td>
                                                                     <td class="bold">
+                                                                    The Role of Combination Phentermine Plus Topiramate in Obese Patients with T2DM
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jong Han Choi</p>(Konkuk University, Korea)
@@ -4253,7 +4258,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                    TRUE-BUDDY Combination Therapy: Benefits for Beta Cells, Insulin Resistance and Diabetic Complications
+                                                                    Latest Treatment Trend for Diabetic Kidney Disease
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Chang Hee Jung</p>(University of Ulsan, Korea)
@@ -4396,41 +4401,23 @@ and Metabolism
                                                     <p class="font_20 bold">Symposium 13 : Obesity Related Comorbidity-Fatty Liver</p>
                                                     <p><span class="bold">Chairpersons : Chang Beom Lee</span> (Hanyang University, Korea), 
                                                     <br><span class="bold">Geeta Appannah</span> (University Putra Malaysia, Malaysia)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : Jun Hwa Hong (Eulji University, Republic
-                                                        of Korea)</p>
+                                                    <p class="bold">Organizer : Jun Hwa Hong (Eulji University, Korea), Ga Eun Nam (Korea University, Korea)</p>
                                                     <ul>
-                                                        <li>In this session, we will explore the relationship between
-                                                            fatty liver associated with obesity and its diverse
-                                                            complications. Considering the recently increasing
-                                                            prevalence and growing interest in treatment of chronic
-                                                            kidney disease due to the introduction of SGLT2i, Professor
-                                                            Sang-Man Jin from Sungkyunkwan University School of Medicine
-                                                            will present data analyzing non-alcoholic fatty liver
-                                                            disease (NAFLD) and metabolic dysfunction-associated fatty
-                                                            liver disease (MAFLD) in relation to the cause of incident
-                                                            chronic kidney disease.</li>
-                                                        <li>Professor Ming-Hua Zheng from China will analyze and present
-                                                            differences in implications for cardiovascular risk based on
-                                                            the cause of fatty liver. Particularly, Professor Bo-Kyung
-                                                            Koo from Seoul National University College of Medicine will
-                                                            explore data on factors related to the prognosis of
-                                                            cardiovascular and kidney disease, given the diverse impacts
-                                                            that complications in NAFLD patients have on cardiovascular
-                                                            and kidney conditions as well as liver condition.</li>
-                                                        <li> We hope this session will assist you in managing the
-                                                            complications associated with MAFLD.</li>
+                                                        <li>In this session, there are recent results from experimental to clinical study about obesity related liver disease. Prof. Kim from Kangwon National University is major on metabolism biochemistry, and professional in adipose tissue, liver disease and related cancer. He will introduce the impact of adipocyte death on steatotic liver disease. Prof. Hua Wang from Anhui Medical University investigated the role of Growth differentiation factor 15 (GDF15) on amelioration of liver fibrosis. He will introduce the result of GDF15 and fatty liver. Prof. Hong from Eulji University will present the clinical results of combination therapy of Thiazolidinedione and SGLT2 inhibitor on improvement of fatty liver. 
+                                                        </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br>
-                                                            1. MAFLD and NAFLD in the prediction of incident chronic
-                                                            kidney disease. Sci Rep. 2023 Jan 31;13(1):1796.<br>
-                                                            2. Metabolic dysfunction-associated fatty liver disease and
-                                                            implications for cardiovascular risk and disease prevention.
-                                                            Cardiovasc Diabetol. 2022 Dec 3;21(1):270.
+                                                            1. Overexpression of Interleukin-8 Promotes the Progression of Fatty Liver to Nonalcoholic Steatohepatitis in Mice. Int J Mol Sci. 2023 Oct 23;24(20):15489
+                                                            <br>
+                                                            2. GDF15 Ameliorates Liver Fibrosis by Metabolic Reprogramming of Macrophages to Acquire Anti-Inflammatory Properties. Cell Mol Gastroenterol Hepatol. 2023;16(5):711-734
+                                                            <br/>
+                                                            3. Pioglitazone as Add-on THERAPY in Patients with Type 2 Diabetes Mellitus Inadequately Controlled with Dapagliflozin and Metformin: Double-Blind, Randomized, Placebo-Controlled Trial. Diabetes Metab J. 2024 Feb 2
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -4663,9 +4650,8 @@ and Metabolism
                                             <tr class="special_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Special Scientific Session 2</p>
-                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
-                                                        National University, Republic of Korea)</p> -->
+                                                    <p class="font_20 bold">Special Scientific Lecture 2</p>
+                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -4894,12 +4880,29 @@ and Metabolism
                                                         (Sungkyunkwan University, Republic of Korea), <br><span
                                                             class="bold">Chang Hee Jung</span> (Univeristy of Ulsan,
                                                         Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                    <p class="bold">Organizer : Chang Hee Jung (University of Ulsan, Korea), Jun Sung Moon (Yeungnam University, Korea)</p>
+                                                    <ul>
+                                                        <li>This session will explore the optimal strategy for effective weight loss how incretin-based pharmacotherapy and bariatric surgery are combined. The latest clinical evidence and the experience of the speakers will touch on the benefits of using pharmacotherapy before, after, or in adjunction with bariatric surgery. This will hopefully lead to the most effective, safe, and long-term treatment strategies for the peoples with obesity.
+
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br>
+                                                            1. Kim MK, Kim HS. Strategies to Maintain the Remission of Diabetes Following Metabolic Surgery. J Metab Bariatr Surg . 2023 Dec;12(2):26-34
+
+                                                            <br>
+                                                            2. Chang PC, Huang YW, Huang CK, Chang TW. Exploring the Need for Sustained GLP-1 Agonist Therapy: a Perspective on Weight Regain After Bariatric Surgery. Obes Surg. 2024 Jun;34(6):2259-2260
+
+                                                            <br/>
+                                                            3. Coelho C, Dobbie LJ, Crane J, Douiri A, Learoyd AE, Okolo O, Panagiotopoulos S, Pournaras DJ, Ramar S, Rubino F, Singhal R, le Roux CW, Taheri S, McGowan B. Laparoscopic adjustable gastric banding with liraglutide in adults with obesity and type 2 diabetes (GLIDE): a pilot randomised placebo controlled trial. Int J Obes (Lond) . 2023 Nov;47(11):1132-1142
+
+
+                                                        </li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -5253,7 +5256,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                    Understanding Skeletal Muscle Mass, Protein Dynamics, Regulation and Function Using New Tracer Techniques
+                                                                    Understanding Skeletal Muscle Protein Dynamics, Regulation and Function Using New Tracer Techniques
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Marc Hellerstein</p>
@@ -5459,7 +5462,8 @@ and Metabolism
                                             <tr class="special_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Special Scientific Session 2</p>
+                                                    <p class="font_20 bold">Special Scientific Lecture 2</p>
+                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -6314,7 +6318,8 @@ and Metabolism
                                             <tr class="special_bg">
                                                 <td>12:50-13:30</td>
                                                 <td>
-                                                    <p class="font_20 bold">Special Scientific Session 2</p>
+                                                    <p class="font_20 bold">Special Scientific Lecture 2</p>
+                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -6603,7 +6608,7 @@ and Metabolism
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jisun Park</p>(Inha University, Korea)<br />
-                                                                        <p class="bold">Kyoung Huh</p>(Kium Pediatric Hospital, Korea)
+                                                                        <p class="bold">Kyoung Huh</p>(Kium Growth Clinic, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6747,6 +6752,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
+                                                                    Bariatric Metabolic Surgery vs Glucagon-Like Peptide-1 Receptor Agonists as a Treatment for People Living with Obesity and Diabetes
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Dror Dicker</p>(Tel Aviv University, Israel)
@@ -6986,6 +6992,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:20-09:50</td>
                                                                     <td class="bold">
+                                                                    Current Evidence of CGM Use in Weight Management
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jun Sung Moon</p>(Yeungnam University, Korea)
@@ -7140,10 +7147,10 @@ and Metabolism
                                                                 <tr>
                                                                     <td>15:50-16:20</td>
                                                                     <td class="bold">
-                                                                    GLP1 Receptor Agonists from Asian Perspective
+                                                                    Advancing Obesity Treatment in Individuals of Asian Descent: Clinical Implications of GLP-1 Receptor Agonists in Asia
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yumi Kang</p>(Harvard Medical School, USA)
+                                                                        <p class="bold">Yu Mi Kang</p>(Harvard Medical School, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

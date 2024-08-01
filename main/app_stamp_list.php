@@ -225,6 +225,14 @@ if (empty($_SESSION["USER"])) {
 			<div class="qr_code_fixed_wrap">SCANNER</div>
 		</a>	
 	</div> -->
+
+	<!-- 이벤트 완료 모달 -->
+	<div onclick="closeModal()" class="modal_background" style="display: none;"></div>
+	<div class="stamp_modal" style="display: none;">
+		<img onclick="closeModal()" class="close_btn" src="https://image.webeon.net/icomes2024/app/icon_x.png"/>
+		<p class="bold center_t">Booth Tour Success!</p>
+		<p class="center_t">* Please collect your souvenir at the Gift Distribution Counter (6F).</p>
+	</div>
 </section>
 <script>
 	const jomes = document.querySelector(".JOMES")
@@ -237,7 +245,13 @@ if (empty($_SESSION["USER"])) {
 
 	const luckyCountTag = document.querySelector(".lunck_count");
 
-	window.onload = () =>{getLuckyNum()}
+	const modalBackground = document.querySelector('.modal_background');
+	const modalBox = document.querySelector('.stamp_modal');
+	const closeBtn = document.querySelector('.close_btn')
+
+	window.onload = () =>{
+		getLuckyNum();
+	}
 
 	function getLuckyNum(){
 		let luckyCount = 0;
@@ -247,6 +261,10 @@ if (empty($_SESSION["USER"])) {
 		const checkRequireNum = Number(jomes.innerText) + Number(diamond.innerText) +  Number(platinum.innerText) +  Number(gold.innerText);
 		//필수에서 부족한 숫자
 		luckyCount += requireNum - checkRequireNum;
+
+		if(requireNum === checkRequireNum){
+			showModal();
+		}
 
 		//선택 스탬프 숫자
 		const silverNum = 5;
@@ -265,6 +283,18 @@ if (empty($_SESSION["USER"])) {
 		luckyCountTag.innerText = luckyCount;
 	}
 
+	function showModal(){
+		if(!localStorage.getItem('showmodal')){
+			modalBackground.style.display = "";
+			modalBox.style.display = "";
+		}
+	}
+
+	function closeModal(){
+		modalBackground.style.display = "none";
+		modalBox.style.display = "none";
+		localStorage.setItem('showmodal', 'true');
+	}
 
 
 </script>
