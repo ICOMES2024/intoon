@@ -1363,10 +1363,10 @@ h2.app_title {width: 100%; font-size: 16px; background: #CC3366; text-align: cen
 .app_version.app_qr_code .container_inner.inner, .app_version.app_floor_plan .container_inner.inner {padding: 0 1rem;}
 .app_qr_code .app_qr_num {text-align:right; font-weight: bold;  margin-bottom: 1rem;}
 /* .app_qr_code .app_qr_area {width: 100%; height: 18rem; background: #f2f2f2; margin: 0 auto 1rem;} */ /*min-width:20rem;*/
-.app_qr_code .app_qr_area {width: 220px; height:220px; margin: 0 auto; display: flex; align-items: center; justify-content: center;}
+.app_qr_code .app_qr_area {width: 120px; height: 120px;padding: 8px;display: flex;align-items: center; justify-content: center; border: 4px solid #FBB03B;}
 .app_qr_code .app_qr_area canvas {width:100%; height:100%;}
-.app_qr_code .app_qr_area img {max-width:100%;}
-.app_qr_code .app_txt_area {text-align: center;}
+.app_qr_code .app_qr_area img {max-width:100%; width: 120px;}
+.app_qr_code .app_txt_area {text-align: center; margin-top: 2rem;}
 .app_qr_code .app_txt_area .app_qr_name {font-size: 28px; color:#000;}
 .app_qr_code .app_txt_area .app_qr_affiliation {font-size: 20px; color:#666; margin-top: 0.5rem; font-weight: bold;}
 .app_qr_code .app_txt_area .app_qr_affiliation span {font-size: inherit; color:inherit; display: block; font-weight: inherit;}
