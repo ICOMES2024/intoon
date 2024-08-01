@@ -3325,3 +3325,32 @@ section.coming img {width: 100%;}
 	position: relative;
   }
   
+  .stamp_modal{
+	width: 80vw;
+	height: 20vh;
+	background-color: #FFF;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999999999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 4px solid #67338C;
+  }
+
+  .stamp_modal img{
+	position: absolute;
+	top:8%;
+	right: 4%;
+  }
+
+  .stamp_modal > p{
+	word-break: keep-all;
+  }
+
+  .stamp_modal > p:nth-child(1){
+	font-size: 1.5rem;
+  }

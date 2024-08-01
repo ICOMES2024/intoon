@@ -220,7 +220,7 @@ and Metabolism</p>
                                     </div>
                                     <div class="desc_wrap flex1">
                                         <div>
-                                            <p class="">Special Scientific Session 1</p> 
+                                            <p class="">Special Scientific Lecture 1</p> 
                                             <p class="">13:00-14:00, Sep. 6 (Fri)</p> 
                                             <p class="">Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!</p> 
                                         </div>
@@ -241,7 +241,7 @@ and Metabolism</p>
                                     </div>
                                     <div class="desc_wrap flex1">
                                         <div>
-                                            <p class="">Special Scientific Session 2</p> 
+                                            <p class="">Special Scientific Lecture 2</p> 
                                             <p class="">12:50-13:50, Sep. 7 (Sat)</p> 
                                             <p class="">Clinical Implication of GLP-1 Receptor Agonists and SGLT2 Inhibitors from a Cardiometabolic Perspective</p> 
                                         </div>
