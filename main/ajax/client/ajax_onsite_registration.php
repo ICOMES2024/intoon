@@ -201,7 +201,7 @@ if($_POST["flag"] === "onsite") {
     if(!empty($registration_idx)){
         $code_number = $registration_idx;
 
-        while (strlen("" . $code_number) < 4) {
+        while (strlen("" . $code_number) < 5) {
             $code_number = "0" . $code_number;
         }
 

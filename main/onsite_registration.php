@@ -11,10 +11,10 @@
 ?>
 <script src="./js/script/client/onsite_registration.js"></script>
 <style>
-	.ksola_signup {
+	.ksola_signup, .non_ksola_signup {
 		display:none;
 	}
-	.ksola_signup.on {
+	.ksola_signup.on, .non_ksola_signup.on {
 		display:revert;
 	}
 	.radio_list li:not(:first-child){
@@ -23,16 +23,16 @@
 	.section_div {
 		margin-top:60px;
 	}
-    .korea_only, .korea_radio{
+    .korea_only, .korea_radio, .non_korea_radio{
         display:none;
     }
-    .korea_only.on, .korea_radio.on{
+    .korea_only.on, .korea_radio.on, .non_korea_radio.on{
         display:revert;
     }
-    .mo_korea_only, .korea_radio{
+    .mo_korea_only, .korea_radio, .non_korea_radio{
         display:none;
     }
-    .mo_korea_only.on, .korea_radio.on{
+    .mo_korea_only.on, .korea_radio.on, .non_korea_radio.on{
         display:revert;
     }
 
@@ -61,7 +61,7 @@
 
 </style>
 
-<img src="https://image.webeon.net/icomes2024/mail/2024_ICOMES_mail_header.jpg" class="w100" alt="">
+<img src="https://image.webeon.net/icomes2024/icomes/2024_onsite_header.png" class="onsite_header" alt="">
 <section class="container window_open onsite_register">
 	<div class="">
 		<div class="term_wrap">
@@ -151,6 +151,49 @@
 								</div>
 							</td>
 						</tr>
+			
+						<tr class="non_korea_radio">
+							<th class="nowrap"><span class="red_txt">*</span> KSSO Membership Status</th>
+							<td>
+								<div class="label_wrap">
+									<input type="radio" class="new_radio" name="user1" id="user3" value="1">
+									<label for="user3"><i></i>Member </label>
+									<input type="radio" class="new_radio" name="user1" id="user4" value="0" checked>
+									<label for="user4"><i></i>Non-Member</label>
+                                    <input type="hidden" name="ksso_member_check">
+                                    <input type="hidden" name="ksso_member_type">
+								</div>
+							</td>
+						</tr>
+						<tr class="non_ksola_signup">
+							<th style="background-color:transparent"></th>
+							<td>
+								<p></p>
+								<ul class="simple_join clearfix">
+									<li>
+										<label for="">KSSO ID<span class="red_txt">*</span></label>
+										<input class="email_id" name="non_kor_id" type="text" maxlength="60">
+									</li>
+									<li>
+										<label for="">KSSO PW<span class="red_txt">*</span></label>
+										<input class="passwords" name="non_kor_pw" type="password" maxlength="60">
+									</li>
+									<li></li>
+								</ul>
+									<div>
+										<input type="checkbox" class="checkbox" id="privacy1">
+										<label for="privacy1">
+											I agree to the collection of personal information by third parties.
+										</label>
+									</div>
+								<div class="onsite_non_kor_box">
+									<button onclick="non_kor_api()" type="button" class="btn">Membership Verification</button>
+									<a href="https://eng.kosso.or.kr/account/join_1.php" target="_blank" class="id_pw_find center_t">Find KSSO membership ID/PW</a>
+								</div>
+							</td>
+						</tr>
+			
+
 						<tr>
 							<th><span class="red_txt">*</span> ID(email)</th>
 							<td>
@@ -496,8 +539,8 @@
 								<ul class="radio_list">
                                     <?php
                                         $conference_info_arr = array(
-                                            "Website of the Korea Society of Obesity",
-                                            "Promotional email from the Korea Society of Obesity",
+                                            "Website of the Korean Society for the Study of Obesity",
+                                            "Promotional email from the Korean Society for the Study of Obesity",
                                             "Advertising email or the bulletin board <br/>from the relevant society",
                                             "Information about affiliated companies/organizations",
                                             "Invited as a speaker, moderator, and panelist",
@@ -636,10 +679,16 @@
 
                 $(".korea_only").addClass("on");
                 $(".korea_radio").addClass("on");
+
+				$(".non_korea_radio").removeClass("on");
+
             } else {
                 $(".korea_radio").removeClass("on");
                 $(".korea_only").removeClass("on");
                 $(".ksola_signup").removeClass("on");
+
+				$(".non_korea_radio").addClass("on");
+
 
                 remove_value();
                 $("#user2").prop('checked', true);
@@ -667,6 +716,18 @@
 		$("#user2").change(function(){
 			if($("#user2").prop('checked') == true) {
 				$(".ksola_signup").removeClass("on");
+				$("input[name=ksola_member_type]").val("");
+			}
+		});
+
+		$("#user3").change(function(){
+			if($("#user3").prop('checked') == true) {
+				$(".non_ksola_signup").addClass("on");
+			}
+		});
+		$("#user4").change(function(){
+			if($("#user4").prop('checked') == true) {
+				$(".non_ksola_signup").removeClass("on");
 				$("input[name=ksola_member_type]").val("");
 			}
 		});

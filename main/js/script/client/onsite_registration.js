@@ -155,7 +155,7 @@ function calc_fee(){
 
         if(ksso_member_type == "평생회원"){
             ksso_member_status = 2;
-        }else if(ksso_member_type == "정회원"){
+        }else if(ksso_member_type == "정회원" || ksso_member_type == "승인"){
             ksso_member_status = 1;
         }else {
             ksso_member_status = 0; //비회원
@@ -266,13 +266,22 @@ function onsite_submit(){
     var ksso_member_type = $("input[name=ksso_member_type]").val();
     var ksso_member_status = 0;
 
-    if(ksso_member_type == "평생회원"){
-        ksso_member_status = 2;
-    }else if(ksso_member_type == "정회원"){
-        ksso_member_status = 1;
-    }else {
-        ksso_member_status = 0; //비회원
+    if(nation_no == 25){
+        if(ksso_member_type == "평생회원"){
+            ksso_member_status = 2;
+        }else if(ksso_member_type == "정회원"){
+            ksso_member_status = 1;
+        }else {
+            ksso_member_status = 0; //비회원
+        }
+    }else if(nation_no !== 25){
+        if(ksso_member_type == "승인"){
+            ksso_member_status = 1;
+        }else{
+            ksso_member_status = 0;
+        }
     }
+  
 
     var data = {
         nation_no : nation_no,
@@ -584,4 +593,74 @@ function kor_api() {
         alert("An error has occurred. \nPlease try again later.");
         return false;
     }
+}
+
+function non_kor_api() {
+    var kor_id = $("input[name=non_kor_id]").val().trim();
+    var kor_pw = $("input[name=non_kor_pw]").val().trim();
+    //제 3자 개인정보 수집에 동의 여부
+    var privacy = $("#privacy1").is(":checked");
+
+    if(!kor_id) {
+        alert("Invalid id");
+        //$(".red_api").eq(0).html("format_id");
+        return;
+    }
+    if(!kor_pw) {
+        alert("Invalid password");
+        //$(".red_api").eq(0).html("format_password");
+        return;
+    }
+
+    if(privacy == false) {
+        alert("Please agree to the collection of personal information.");
+        return;
+    }
+
+    var data = {
+        'id' : kor_id,
+        'pw' : kor_pw
+    };
+    $.ajax({
+		url			: 'signup_api_eng.php',
+		type		: "POST",
+		data		: data,
+		dataType	: "JSON",
+		success		: success,
+		fail		: fail,
+		error		: error
+	});
+
+	function success(res) {
+		var kor_sign = JSON.parse(res.value);
+		console.log(kor_sign); 
+
+		if(kor_sign.code == 100){
+			alert('The information you provided does not match our registration records.')
+		}else if(kor_sign.code == 300){
+			alert('The information you provided does not match our registration records.')
+		}else if(kor_sign.code == 'N7'){
+			alert('This account is already bring used \n This ID is already valid')
+		}
+		else if(kor_sign.code == 200){
+			const user_value = kor_sign.value
+			if(user_value.status == '승인'){
+				$("input[name=ksso_member_check]").val(user_value.email);
+				$("input[name=ksso_member_type]").val(user_value.status);
+				    alert('Membership Verified')
+			    }
+			else{
+				alert('Your membership approval is currently pending.')
+				// $("input[name=ksola_member_status]").val(0);
+			}
+        }
+	}
+	function fail(res) {
+		alert("Failed.\nPlease try again later.");
+		return false;
+	}
+	function error(res) {
+		alert("An error has occurred. \nPlease try again later.");
+		return false;
+	}
 }
