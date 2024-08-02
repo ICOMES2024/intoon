@@ -43,7 +43,7 @@
 						<li>- Plenary Lecture 1,2</li>
 						<li>- Keynote Lecture 1</li>
 						<li>- EASO Presidential Lecture</li>
-						<li>- Special Scientific Session 1</li>
+						<li>- Special Scientific Lecture 1</li>
 						<li>- Symposium 1,5,9</li>
 						<li>- Breakfast Symposium 1</li>
 						<li>- Luncheon Symposium 1</li>
@@ -52,7 +52,7 @@
                         <li>- Plenary Lecture 3,4</li>
                         <li>- Keynote Lecture 2,3</li>
                         <li>- Presidential Lecture</li>
-						<li>- Special Scientific Session 2</li>
+						<li>- Special Scientific Lecture 2</li>
                         <li>- Symposium 13,17</li>
                         <li>- Breakfast Symposium 4</li>
                         <li>- Luncheon Symposium 5</li>
@@ -67,15 +67,15 @@
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 2]</li>
 						<li class="floor_pop_title">September 5 (Thu)</li>
-                        <li>- Joint Symposium KSSO-JKT (Clinical)</li>
-                        <li>- Joint Symposium KSSO-JKT (Basic)</li>
+                        <li>- Joint Symposium-JKT (Clinical)</li>
+                        <li>- Joint Symposium-JKT (Basic)</li>
                         <li>- Satellite Symposium 3</li>
                         <li>- Special Session for Publication</li>
 						<li class="floor_pop_title">September 6 (Fri)</li>
 						<li>- Plenary Lecture 1,2</li>
 						<li>- Keynote Lecture 1</li>
 						<li>- EASO Presidential Lecture</li>
-						<li>- Special Scientific Session 1</li>
+						<li>- Special Scientific Lecture 1</li>
                         <li>- Symposium 2,6,10</li>
                         <li>- Breakfast Symposium 2</li>
                         <li>- Luncheon Symposium 2</li>
@@ -84,7 +84,7 @@
 						<li>- Plenary Lecture 3,4</li>
                         <li>- Keynote Lecture 2,3</li>
                         <li>- Presidential Lecture</li>
-						<li>- Special Scientific Session 2</li>
+						<li>- Special Scientific Lecture 2</li>
                         <li>- Symposium 14,18</li>
                         <li>- Breakfast Symposium 5</li>
                         <li>- Luncheon Symposium 6</li>
@@ -106,7 +106,7 @@
 						<li>- Plenary Lecture 1,2</li>
 						<li>- Keynote Lecture 1</li>
 						<li>- EASO Presidential Lecture</li>
-						<li>- Special Scientific Session 1</li>
+						<li>- Special Scientific Lecture 1</li>
                         <li>- Symposium 3,7,11</li>
                         <li>- Breakfast Symposium 3</li>
                         <li>- Luncheon Symposium 3</li>
@@ -115,7 +115,7 @@
 						<li>- Plenary Lecture 3,4</li>
                         <li>- Keynote Lecture 2,3</li>
                         <li>- Presidential Lecture</li>
-						<li>- Special Scientific Session 2</li>
+						<li>- Special Scientific Lecture 2</li>
                         <li>- Symposium 15,19</li>
                         <li>- Breakfast Symposium 6</li>
                         <li>- Luncheon Symposium 7</li>
