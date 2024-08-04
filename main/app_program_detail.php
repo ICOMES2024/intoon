@@ -278,7 +278,7 @@ echo '<script type="text/javascript">
                             <option value="5" class="day2 day3">Pleanary Lecture</option>
                             <option value="6" class="day2 day3">Keynote Lecture</option>
                             <option value="20" class="day2 day3">Presidential Lecture</option>
-                            <option value="22" class="day2 day3">Special Scientific Session </option>
+                            <option value="22" class="day2 day3">Special Scientific Lecture</option>
                             <option value="8" class="day2 day3">Symposium</option>
                             <option value="15" class="day1 day2 day3">Joint Symposium</option>
                             <option value="21" class="day1 day2 day3">Special Session</option>

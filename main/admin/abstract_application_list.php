@@ -13,6 +13,7 @@
 	$e_date = $_GET["e_date"] ?? "";
 	$submission_code = $_GET["submission_code"] ?? "";
 	$name_kor = $_GET["name_kor"] ?? "";
+	$category -  $_GET["category"] ?? "";
 
 	$where = "";
 	
@@ -43,13 +44,17 @@
 	if($name_kor != "") {
 		$where .= " AND CONCAT(m.last_name_kor,m.first_name_kor) LIKE '%".$name_kor."%' ";
 	}
+	
+	if($category != "") {
+		$where .= " AND ra.abstract_category = ". $category ."";
+	}
 
 	$abstract_list_query =  "
 								SELECT
                                     ra.submission_code, ra.idx AS abstract_idx, ra.abstract_title, ra.etc1, ra.etc2, ra.etc3,
-                                    DATE_FORMAT(ra.register_date, '%y-%m-%d') AS register_date, ra.oral_presentation,
+                                    DATE_FORMAT(ra.register_date, '%y-%m-%d') AS register_date, ra.oral_presentation, ra.abstract_category AS category_num,
                                     m.idx AS member_idx, m.email, m.name, m.nation_ko, m.nation_en, m.affiliation, m.department,
-                                    f.original_name AS abstract_file_name, CONCAT(f.path,'/',f.save_name) AS path, CONCAT(m.last_name_kor,'',m.first_name_kor) AS name_kor,
+                                    f.original_name AS abstract_file_name, CONCAT(f.path,'/',f.save_name) AS path, CONCAT(m.last_name_kor,m.first_name_kor) AS name_kor,
                                     c.title_en AS category,
                                     (
                                         CASE ra.presentation_type
@@ -526,6 +531,25 @@
 								<th>한국어 이름</th>
 								<td><input type="text" name="name_kor" value="<?= $name_kor; ?>"/></td>
 							</tr>
+							<tr>
+								<th>초록 카테고리</th>
+								<td colspan="3">
+									<select name="category">
+										<option value="">카테고리를 선택해주세요.</option>
+										<option value="1">1. Behavior and Public Health for Obesity</option>
+										<option value="2">2. Nutrition, Education and Exercise for Obesity</option>
+										<option value="3">3. Epidemiology of Obesity and Metabolic Syndrome</option>
+										<option value="4">4. Digital Therapeutics and Big Data Study</option>
+										<option value="5">5. Diabetes and Obesity</option>
+										<option value="6,">6. Dyslipidemia, Hypertension and Obesity</option>
+										<option value="7">7. Other Comorbidities of Obesity and Metabolic Syndrome</option>
+										<option value="8">8. Pathophysiology of Obesity and Metabolic Syndrome</option>
+										<option value="9">9. Therapeutics of Obesity and Metabolic Syndrome</option>
+										<option value="10">10. Metabolic and Bariatric Surgery</option>
+										<option value="11">11. Obesity and Metabolic Syndrome in Children and Adolescents</option>
+									</select>
+								</td>
+							</tr>
 						</tbody>
 					</table>
 					<button type="button" class="btn search_btn">검색</button>
@@ -649,5 +673,5 @@
 		}
 	}
 </script>
-<script src="./js/common.js?v=0.1"></script>
+<script src="./js/common.js?v=0.3"></script>
 <?php include_once('./include/footer.php');?>

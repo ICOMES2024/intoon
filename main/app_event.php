@@ -15,7 +15,7 @@
     }
 </style>
 <!-- HUBDNCLHJ : app survey 페이지 -->
-<section class="container app_survey app_version">
+<section class="container app_survey app_version app_comment">
 	<div class="app_title_box">
 		<h2 class="app_title">
 			LIVE EVENT
@@ -35,14 +35,15 @@
 				<div class="event_img">
                     <img src="https://image.webeon.net/icomes2024/app_event/2024_app_quiz-01.png" alt="event_img"/>
 				</div>
+                <div class="input_wrap">
+                        <input class="comment" placeholder="Please write down the correct answer" autofocus/>
+                        <button class="submit">Submit</button>
+                    </div>
                 <div class="mycomment_wrap"></div>
 				<div class="event_container">
                     <div class="event_wrap">
                     </div>
-                    <div class="input_wrap">
-                        <input class="comment" placeholder="Please write down the correct answer" autofocus/>
-                        <button class="submit">Submit</button>
-                    </div>
+                   
 				</div>
 		</div>
 	</div>
@@ -149,7 +150,7 @@
         }
 
         // [240709] sujeong !!! 수정 필요 !!! 첫번째 이벤트 q1
-        const quizNum = 'q2';
+        const quizNum = 'q1';
         
         if(commentValue === ""){
             alert("Please write your comment!")

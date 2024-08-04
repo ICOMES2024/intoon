@@ -2434,40 +2434,40 @@ section.coming img {width: 100%;}
 	background-color:#FFF;
 }
 
-.event_container .event_wrap .event_box:last-child{
+.app_comment .event_wrap .event_box:last-child{
 	border-bottom: 1px solid #707070;
 }
 
-.event_container .input_wrap, .event_container .event_wrap{
+.app_comment .input_wrap, .event_container .event_wrap{
 	width: 90%;
 	margin: 0 auto;
 }
 
-.event_container .input_wrap{
+.app_comment .input_wrap{
 	margin-top: 20px;
 	height: 40px;
 	display: flex;
 	justify-content: center;
-    gap: 8px;
+    /* gap: 8px; */
 }
 
-.event_container .input_wrap input {
-	border: 1px solid #662D90;
+.app_comment .input_wrap input {
+	border: 2px solid #662D90;
 	padding: 8px;
-	width: 60%;
+	width: 66.5%;
 	height: 100%;
 	/* border-radius: 8px; */
 }
 
-.event_container .input_wrap input:focus{
+.app_comment .input_wrap input:focus{
 	outline: none;
 }
 
-.event_container .input_wrap input::placeholder{
+.app_comment .input_wrap input::placeholder{
 	font-size: 11px;
 }
 
-.event_container .input_wrap button{
+.app_comment .input_wrap button{
 	border: 1px solid #662D90;
 	padding: 4px 8px;
 	height: 100%;
@@ -3330,7 +3330,7 @@ section.coming img {width: 100%;}
 	height: 20vh;
 	background-color: #FFF;
 	position: absolute;
-	top: 40%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 999999999999;
