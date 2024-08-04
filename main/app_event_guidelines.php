@@ -21,7 +21,7 @@
     <div class="contents_box">
 			<div class="app_contents_wrap type3">   
                 <!-- [240717] sujeong / 임시!!! 스탬프 투어 가이드로!!! 댓글 이벤트 가이드로 변경해야 함  -->
-				<img style="width: 100%;" src="https://image.webeon.net/icomes2024/app/2024_event_guide-1.png"/>
+				<img style="width: 100%;" src="https://image.webeon.net/icomes2024/app/2024_event_guide-2.png"/>
 			</div> 
 		</div>
 	</div>
