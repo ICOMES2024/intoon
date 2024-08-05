@@ -541,7 +541,7 @@
 										<option value="3">3. Epidemiology of Obesity and Metabolic Syndrome</option>
 										<option value="4">4. Digital Therapeutics and Big Data Study</option>
 										<option value="5">5. Diabetes and Obesity</option>
-										<option value="6,">6. Dyslipidemia, Hypertension and Obesity</option>
+										<option value="6">6. Dyslipidemia, Hypertension and Obesity</option>
 										<option value="7">7. Other Comorbidities of Obesity and Metabolic Syndrome</option>
 										<option value="8">8. Pathophysiology of Obesity and Metabolic Syndrome</option>
 										<option value="9">9. Therapeutics of Obesity and Metabolic Syndrome</option>

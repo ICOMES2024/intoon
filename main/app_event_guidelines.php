@@ -5,7 +5,7 @@
 <section class="container app_survey app_version">
 	<div class="app_title_box">
 		<h2 class="app_title">
-			LIVE EVENT
+		Comment EVENT
 			<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';">
 				<img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동">
 			</button>
