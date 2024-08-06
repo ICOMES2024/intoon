@@ -46,6 +46,11 @@
 			<!-- <img src="https://image.webeon.net/icomes2024/app/2024_img_app_vsl_text2.svg" class="text" alt=""> -->
 			<!-- [240523] sujeong / 학회팀 요청 순서 수정 -->
 			<li>
+				<a href="/main/app_event_guidelines.php">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-13.png" class="text" alt="">
+				</a>
+			</li>	
+			<li>
 					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-01.png" class="text" alt="">
 			</li>		
 			<li class="pointer" name="presidential_lecture_1">

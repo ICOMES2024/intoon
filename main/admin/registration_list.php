@@ -268,8 +268,10 @@
 		// }else if($rl["registration_idx"] >= 1000 ){
 		// 	$register_no = !empty($rl["registration_idx"]) ? "ICOMES2024-" . $rl["registration_idx"] : "-";
 		// }
-
-		if(!$rl["registration_idx"]){
+		
+		$register_no = "";
+		
+		if($rl["registration_idx"]){
 			$code_number = $rl["registration_idx"];
 	
 			while (strlen("" . $code_number) < 4) {
@@ -334,6 +336,11 @@
 				}
 			}
 		}
+        /*** hyojun 수정(특정인 금액수정) ***/
+        if($rl["email"] == 'jifujuehenniubi@163.com')
+        {
+            $price = "50000원";
+        }
 
 		$register_path = "";
 	

@@ -2324,7 +2324,7 @@ section.coming img {width: 100%;}
 
 .event_container .event_wrap{
 	/* border: 1px solid #DDD; */
-	border-radius: 28px;
+	/* border-radius: 28px; */
 	/* height: 300px; */
 	height: 100%;
 	overflow-y: scroll;
@@ -2360,9 +2360,14 @@ section.coming img {width: 100%;}
 	font-size: 14px;
 }
 
+.contents_box .mycomment_wrap{
+	width: 90%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
 
  .my_event{
-	width: 80%;
+	width: 100%;
 	/* background-image: url('https://image.webeon.net/icomes2024/app/2024_app_my_comment.png');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -2438,9 +2443,15 @@ section.coming img {width: 100%;}
 	border-bottom: 1px solid #707070;
 }
 
-.app_comment .input_wrap, .event_container .event_wrap{
+.app_comment .input_wrap{
 	width: 90%;
-	margin: 0 auto;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.event_container .event_wrap{
+	width: 90%;
+    margin: 0 auto;
 }
 
 .app_comment .input_wrap{
@@ -2454,7 +2465,7 @@ section.coming img {width: 100%;}
 .app_comment .input_wrap input {
 	border: 2px solid #662D90;
 	padding: 8px;
-	width: 66.5%;
+	width: 75%;
 	height: 100%;
 	/* border-radius: 8px; */
 }
@@ -2474,6 +2485,7 @@ section.coming img {width: 100%;}
 	background-color: #662D90;
 	color : #FFF;
 	font-weight: 600;
+	width: 25%;
 	/* border-radius: 8px; */
 }
 
