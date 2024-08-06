@@ -71,6 +71,7 @@
         <li class="main_nav"><a href="./app_newsletter.php"><i class="la la-clipboard"></i>App Newsletter 관리</a></li>
 		<!-- [240314] hub 스탬프 투어 소스 코드 추가 !@#$^ -->
 		<li class="main_nav"><a href="./stamp_list.php"><i class="la la-clipboard"></i>Stamp Tour 관리</a></li>
+		<li class="main_nav"><a href="./comment_list.php"><i class="la la-clipboard"></i>Comment Event 관리</a></li>
 	</ul>
 </nav>
 <script>

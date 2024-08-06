@@ -69,14 +69,14 @@ echo '<script type="text/javascript">
             <div class="tab_cont on">
                 <!-- <img class="coming" src="./img/coming.png" /> -->
                 <ul class="tab_li">
-                    <li id="tab1" class="on"><a href="javascript:;">Room1</a></li>
-                    <li id="tab2"><a href="javascript:;">Room2</a></li>
+                    <li id="tab1"><a href="javascript:;">Room1</a></li>
+                    <li id="tab2" class="on"><a href="javascript:;">Room2</a></li>
                     <li id="tab3"><a href="javascript:;">Room3</a></li>
                 </ul>
 
             <!-- !!! Day 1 - Room 1 -->
                 <div class="tab_wrap">
-                    <div class="tab_cont on">
+                    <div class="tab_cont">
                         <ul class="program_detail_ul">
                         <li name="committee_1">
                                 <div class="table_wrap detail_table_common x_scroll">
@@ -359,7 +359,7 @@ echo '<script type="text/javascript">
                     </div>
 
              <!-- !!! Day 1 - Room 2 -->
-                    <div class="tab_cont">
+                    <div class="tab_cont on">
                         <ul class="program_detail_ul">
                         
                             <li name="joint_symposium_1">

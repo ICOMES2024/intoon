@@ -2,7 +2,7 @@
 <?php include_once('./include/app_header.php');?>
 <?php $member_idx = isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : null; ?>
 <!-- HUBDNCLHJ : app survey 페이지 -->
-<section class="container app_survey app_version">
+<section class="container app_survey app_version" style="padding-bottom: 88px !important;">
 	<div class="app_title_box">
 		<h2 class="app_title">
 		Comment EVENT

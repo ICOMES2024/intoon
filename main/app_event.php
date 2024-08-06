@@ -2,6 +2,38 @@
 <?php include_once('./include/app_header.php');?>
 <?php $member_idx = isset($_SESSION["USER"]["idx"]) ? $_SESSION["USER"]["idx"] : null; ?>
 
+<?php
+if (empty($_SESSION["USER"])) {
+    echo "
+            <script>
+                if (typeof(window.AndroidScript) != 'undefined' && window.AndroidScript != null) {
+                    window.AndroidScript.logout();
+                    if(window.confirm('Login required. Would you like to log in?')){ 
+                        window.location.href = '/main/app_login.php';
+                    }else{
+                        window.history.back();
+                    }
+                }
+            
+            
+                    try{
+                        if (window.webkit?.messageHandlers!=null) {
+                            window.webkit.messageHandlers.logout.postMessage('');
+                            if(window.confirm('Login required. Would you like to log in?')){ 
+                                window.location.href = '/main/app_login.php';
+                            }else{
+                                window.history.back();
+                            }
+                        }
+                    } catch (err){
+                        console.log(err);
+                    }
+            </script>
+        ";
+}
+?>
+
+
 <style>
     .my_event{
         position: relative;
@@ -15,7 +47,7 @@
     }
 </style>
 <!-- HUBDNCLHJ : app survey 페이지 -->
-<section class="container app_survey app_version app_comment">
+<section class="container app_survey app_version app_comment" style="padding-bottom: 100px !important;">
 	<div class="app_title_box">
 		<h2 class="app_title">
         Comment EVENT
@@ -36,7 +68,7 @@
                     <img src="https://image.webeon.net/icomes2024/app_event/2024_app_quiz-01-1.png" alt="event_img"/>
 				</div>
                 <div class="input_wrap">
-                        <input class="comment" placeholder="Please write down the correct answer" autofocus/>
+                        <input class="comment" placeholder="Please write down the correct answer"/>
                         <button class="submit">Submit</button>
                     </div>
                 <div class="mycomment_wrap"></div>
