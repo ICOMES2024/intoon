@@ -359,6 +359,17 @@ if ($during_yn !== "Y") {
 										</div>
 									</div>
 						</li>
+                        <!-- [240809] hyojun / 내과전공의 외부학술회의 평점추가 -->
+                        <li class="review_sub_list_3 <?=($prev["is_score3"] == 1 ? "" : "hidden")?>">
+							<p class="label">
+								의사 면허번호 <span class="red_txt">*</span>
+								<input type="checkbox" id="app6" class="checkbox" <?=$prev["is_score3"] == 1  && ! $prev["licence_number2"] ? "checked" : ""?>>
+								<label for="app6">
+									<i></i> <?=$locale("not_applicable")?>
+								</label>
+							</p>
+							<input type="text" name="licence_number2" id="licence_number2" class="under_50 input_license" value="<?=$prev["is_score3"] == 1 ? $prev["licence_number2"] ?? "" : ""?>">
+						</li>
 
 						<!-- [240314] sujeong / 평점 신청 쪼개기 -->
 						<li>
@@ -776,6 +787,23 @@ if ($during_yn !== "Y") {
 				}
 			}
 		});
+
+        //[240809] hyojun / 내과전공의 외부학술회의 평점신청
+		$('input[name=review3]').on("change", function() {
+			if($('input[name=review3]:checked').val() == '1'){
+				$(".review_sub_list_3").removeClass("hidden");
+			}else{
+				// init
+				$(".review_sub_list_3 input[type=text]").val("");
+				$(".review_sub_list_3 input[type=checkbox]").prop("checked", false);
+
+				if(!$(".review_sub_list_3").hasClass("hidden")){
+					$(".review_sub_list_3").addClass("hidden");
+				}
+			}
+		});
+
+
 		//대한의사협회 평점신청
 		$(".review_sub_list input[type=checkbox]").on("change", function(){
 			const checked = $(this).is(":checked");
@@ -787,6 +815,15 @@ if ($during_yn !== "Y") {
 
 		//한국영양교육평가원 평점신청
 		$(".review_sub_list_1 input[type=checkbox]").on("change", function(){
+			const checked = $(this).is(":checked");
+
+			if(checked){
+				$(this).parent().next('input').val("");
+			}
+		});
+
+        //[240809] hyojun / 내과전공의 외부학술회의 평점신청
+		$(".review_sub_list_3 input[type=checkbox]").on("change", function(){
 			const checked = $(this).is(":checked");
 
 			if(checked){
@@ -821,6 +858,8 @@ if ($during_yn !== "Y") {
 			
 			$(this).val(v);
 		});
+
+
 
 		/*
 		$(".apply_btn").on("click", function(){

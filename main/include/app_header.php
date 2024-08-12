@@ -102,7 +102,7 @@
 				<li>
 					<a href="javascript:;">Event</a>
 					<ul class="app_sub">
-						<li><a href="/main/app_stamp_guidelines.php">Booth Tour</a></li>
+						<li><a href="/main/app_stamp_guidelines.php">Stamp Tour</a></li>
 						<li><a href="/main/app_event_guidelines.php">Comment Event</a></li>
 					</ul>
 				</li> 

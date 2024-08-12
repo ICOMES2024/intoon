@@ -77,6 +77,7 @@
 	$html .= '<th>문제</th>';
 	$html .= '<th>댓글</th>';
 	$html .= '<th>등록날짜</th>';
+	$html .= '<th>채택유무</th>';
 	$html .= '</tr>';
 	$html .= '</thead>';
 	$html .= '<tbody>';
@@ -85,7 +86,7 @@
  	foreach($logList as $memberNo => $member){
         $num = (int)$num+1;
 		$html .= '<tr class="tr_center">';
-		$html .= '<td>'.$no.'</td>';
+		$html .= '<td>'.$num.'</td>';
 		$html .= '<td>'.$member["email"].'</td>';
 		$html .= '<td>'.$member["first_name"].'</td>';
 		$html .= '<td>'.$member["last_name"].'</td>';
@@ -93,6 +94,7 @@
 		$html .= '<td>'.$member["quiz_num"].'</td>';
 		$html .= '<td>'.$member["comment"].'</td>';
 		$html .= '<td>'.$member["register_date"].'</td>';
+		$html .= '<td style="text-align:center;">'.$member["is_prize"].'</td>';
         $html .= '</tr>';
 	}
 	$html .= '</tbody>';
@@ -180,19 +182,38 @@
 	</section>
 <script>
 	var html = `<?=$html?>`;
+    window.onload = () => {
+        document.querySelector('#datatable').addEventListener('click', function(event) {
+            if (event.target.classList.contains('save_btn')) {
+                var parentTd = event.target.closest('td');
+                var selectElement = parentTd.querySelector('.result_select');
+                var selectedValue = selectElement.value;
+                //console.log('check Selected value1:', selectedValue);
+
+                var commentId = event.target.getAttribute('data-id');
+                //console.log('check Selected value2:', commentId);
+
+                saveSelectedValue(commentId, selectedValue);
+            }
+        });
+
+    /***hyojun 동적생성 인식못함 ***/
+    /* 
 	window.onload = () => {
     document.querySelectorAll('.save_btn').forEach(function(button) {
         button.addEventListener('click', function(event) {
             var parentTd = event.target.closest('td');
             var selectElement = parentTd.querySelector('.result_select');
             var selectedValue = selectElement.value;
-            //console.log('Selected value:', selectedValue);
+            console.log('check Selected value1:', selectedValue);
 
             var commentId = event.target.getAttribute('data-id');
+            console.log('check Selected value2:', commentId);
 
             saveSelectedValue(commentId, selectedValue);
         });
     });
+    */
 
     function saveSelectedValue(commentId, selectedValue) {
         console.log('Saving member ID:', commentId, 'with value:', selectedValue); 

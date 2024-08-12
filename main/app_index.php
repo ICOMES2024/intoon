@@ -155,7 +155,7 @@
 			</li>
 			<li class="app_menu_img">
 				<a href="/main/app_stamp_guidelines.php" class="">
-					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu07.svg" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu07_v2.svg" alt="">
 					<!-- <span>Booth Tour</span> -->
 				</a>
 			</li>
@@ -211,7 +211,7 @@
 					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu06-1.png"
 				}
 				else if(ImgUrl.includes("app_menu07")){
-					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07-1.png"
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07-1_v2.png"
 				}
 				else if(ImgUrl.includes("app_menu08")){
 					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu08-1.png"
@@ -244,7 +244,7 @@
 					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu06.svg"
 				}
 				else if(ImgUrl.includes("app_menu07")){
-					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07.svg"
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07_v2.svg"
 				}
 				else if(ImgUrl.includes("app_menu08")){
 					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu08.svg"
@@ -277,7 +277,7 @@
 					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu06.svg"
 				}
 				else if(ImgUrl.includes("app_menu07")){
-					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07.svg"
+					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu07_v2.svg"
 				}
 				else if(ImgUrl.includes("app_menu08")){
 					e.target.childNodes[1].src = "https://image.webeon.net/icomes2024/app/2024_app_menu08.svg"
