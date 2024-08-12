@@ -78,7 +78,7 @@ echo '<script type="text/javascript">
                 <div class="tab_wrap">
                     <div class="tab_cont">
                         <ul class="program_detail_ul">
-                        <li name="committee_1">
+                        <!-- <li name="committee_1">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
                                         <colgroup>
@@ -90,9 +90,6 @@ echo '<script type="text/javascript">
                                                 <td>15:00-16:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Committee Session 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : Bom Taeck Kim</span> (Ajou
-                                                        University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
                                             <tr>
@@ -145,7 +142,7 @@ echo '<script type="text/javascript">
                                         </tbody>
                                     </table>
                                 </div>
-                            </li>
+                            </li> -->
                             
                             <li name="committee_2">
                                 <div class="table_wrap detail_table_common x_scroll">
@@ -158,7 +155,7 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Committee Session 2 : Symposium on Health Insurance Coverage for Obesity Treatment</p>
+                                                    <p class="font_20 bold">Symposium on Health Insurance Coverage for Obesity Treatment <sapn class="bold purple_txt font_20">(K)</sapn></p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Korea), 
                                                         <br><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Korea)
@@ -181,33 +178,34 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-16:45</td>
+                                                                    <td>16:45-17:00</td>
                                                                     <td class="bold">Health Issues of Obesity and the Importance of Insurance Coverage for Obesity Treatment</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ga Eun Nam</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:45-17:00</td>
+                                                                    <td>17:00-17:15</td>
                                                                     <td class="bold">Pre- and Post-Operative Management of Metabolic Surgery: Importance and Strategies for Insurance Coverage</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yeongkeun Kwon</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:00-17:15</td>
+                                                                    <td>17:15-17:30</td>
                                                                     <td class="bold">Active Intervention Strategies for the Management of Obesity in Children and Adolescents</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ah-Ram Sul</p>(NECA, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:15-18:00</td>
+                                                                    <td>17:30-18:00</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
                                                                     <p class="bold">Yong Hee Hong</p>(Soonchunhyang University, Korea),<br/>
-                                                                    <p class="bold">Hyun-Young Shin</p>(The Catholic University of Korea, Korea)<br/>
-                                                                    <p class="bold">Hwan Beom Lee</p>(Kim & Chang, Korea)
+                                                                    <p class="bold">Hwan Beom Lee</p>(Kim & Chang, Korea),<br/>
+                                                                    <p class="bold">Chung-heon Lee</p>(KBS, Korea)<br/>
+                                                                    <p class="bold">Hyun-Young Shin</p>(The Catholic University of Korea, Korea)
                                                                     
                                                                     </td>
                                                                 </tr>
@@ -343,7 +341,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:40-19:10</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Reappraisal of TZD to Control Diabetes: Pioglitazone</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Se Hee Min</p>(University of Ulsan, Korea)
                                                                     </td>
@@ -569,7 +567,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:10-18:40</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Clinical Value of EPA (Lcosapentate Ethyl)</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jung Hwan Park</p>(Hanyang University, Korea)
                                                                     </td>
@@ -745,7 +743,7 @@ echo '<script type="text/javascript">
                                             <tr class="violet_bg">
                                                 <td>16:20-17:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Joint Symposium KSSO-KSoLA-KDA</p>
+                                                    <p class="font_20 bold">Joint Symposium KSSO-KSoLA-KDA <sapn class="bold purple_txt font_20">(K)</sapn></p>
                                                     <p><span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Korea)
                                                     , <br/><span class="bold">Woo Je Lee</span> (University of Ulsan, Korea)
                                                 </p>
@@ -899,7 +897,7 @@ echo '<script type="text/javascript">
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                    The Ideal Combination therapy for T2D Including Dapagliflozin
+                                                                    The Ideal Combination Therapy for T2D Including Dapagliflozin
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jae-Han Jeon</p>(Kyungpook National University, Korea)
@@ -1243,7 +1241,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_sky_bg">
-                                                <td>12:00-13:00</td>
+                                                <td>12:00-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 1</p>
                                                     <p><span class="bold">Chairperson : Hyung Joon Yoo</span> (CM Hospital, Korea)</p>
@@ -1266,7 +1264,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:00-13:00</td>
+                                                                    <td>12:00-12:50</td>
                                                                     <td class="bold">
                                                                     Optimal Combination Therapy for Diabetes Management
                                                                     </td>
@@ -1283,6 +1281,24 @@ and Metabolism
                                     </table>
                                 </div>
                             </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>12:50-13:00</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="keynote_lecture_8">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -1292,11 +1308,10 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="special_bg">
-                                                <td>13:00-13:40</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
-                                                        National University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -1344,7 +1359,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:30</td>
+                                                                    <td>13:00-13:50</td>
                                                                     <td class="bold">
                                                                     Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
@@ -1354,7 +1369,7 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:40-11:50</td>
+                                                                    <td>13:50-14:00</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -1414,7 +1429,7 @@ and Metabolism
                                                                     Obesity Related Health Disparities - A Specific Case of Low- and Middle-Income Countries
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Monika Chaudhary</p>(Johns Hopkins University, USA)
+                                                                        <p class="bold">Monika Chaudhary</p>(IIHMR University, India)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1621,8 +1636,8 @@ and Metabolism
                                                                     <td>17:45-18:00</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Bumjo Oh</p>(Seoul National
-                                                                        University, Republic of Korea), <br>
+                                                                        <p class="bold">Jun Hwa Hong</p>(Eulji university, Korea)
+                                                                        <!-- , <br>
                                                                         <p class="bold">Hyon-Seung Yi</p>(Chungnam
                                                                         National University, Republic of Korea) -->
                                                                     </td>
@@ -2090,7 +2105,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_sky_bg">
-                                                <td>12:00-13:00</td>
+                                                <td>12:00-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
                                                     <p><span class="bold">Chairperson : Gyeong-Su Kim</span> (The Catholic University of Korea, Korea)</p>
@@ -2112,7 +2127,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:00-13:00</td>
+                                                                    <td>12:00-12:50</td>
                                                                     <td class="bold">
                                                                     DPP-IV Inhibitor and SGLT2 Inhibitor Combination Therapy for the Treatment of T2DM
                                                                     </td>
@@ -2129,6 +2144,24 @@ and Metabolism
                                     </table>
                                 </div>
                             </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>12:50-13:00</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="keynote_lecture_8_2">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -2138,11 +2171,10 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="special_bg">
-                                                <td>13:00-13:40</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1</p>
-                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
-                                                        National University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -2190,7 +2222,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:30</td>
+                                                                    <td>13:00-13:50</td>
                                                                     <td class="bold">
                                                                     Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
@@ -2200,7 +2232,7 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:40-11:50</td>
+                                                                    <td>13:50-14:00</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -2952,7 +2984,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_sky_bg">
-                                                <td>12:00-13:00</td>
+                                                <td>12:00-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 3</p>
                                                     <p><span class="bold">Chairperson : Yong Sung Kim</span> (Design Hospital, Korea)</p>
@@ -2974,7 +3006,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:00-13:00</td>
+                                                                    <td>12:00-12:50</td>
                                                                     <td class="bold">
                                                                     The Earlier Use of SGLT2i, The Better Clinical Outcome in Obese T2D
                                                                     </td>
@@ -2991,6 +3023,24 @@ and Metabolism
                                     </table>
                                 </div>
                             </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>12:50-13:00</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="keynote_lecture_8_3">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -3000,11 +3050,10 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="special_bg">
-                                                <td>13:00-13:40</td>
+                                                <td>13:00-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1 </p>
-                                                    <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
-                                                        National University, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -3052,7 +3101,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:30</td>
+                                                                    <td>13:00-13:50</td>
                                                                     <td class="bold">
                                                                     Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
@@ -3062,7 +3111,7 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>11:40-11:50</td>
+                                                                    <td>13:50-14:00</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -3509,12 +3558,9 @@ and Metabolism
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-10:50</td>
-                                                                    <td class="bold">Panel Discussion</td>
+                                                                    <td class="bold"></td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Yun-Hee Lee</p>(Seoul National
-                                                                        University, Republic of Korea), <br>
-                                                                        <p class="bold">Kye-Yeung Park</p>(Hanyang
-                                                                        University, Republic of Korea) -->
+                                                                        <p class="bold">Sae Won Kim</p>(SL BiGen, Inc., Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3535,7 +3581,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_sky_bg">
-                                                <td>12:00-13:00</td>
+                                                <td>12:00-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 4</p>
                                                     <p><span class="bold">Chairperson : Hyun Ho Shin</span> (Asan Chungmu Hospital, Korea)</p>
@@ -3557,7 +3603,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>12:00-13:00</td>
+                                                                    <td>12:00-12:50</td>
                                                                     <td class="bold">
                                                                        Real World Evidence of Phentermine Plus Topiramate ER in Korean : Efficacy and Safety
                                                                     </td>
@@ -3719,8 +3765,7 @@ and Metabolism
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sungbae Lee</p>(Incheon Sejong Hospital, Korea)
-                                                                        <!-- , <br> <p class="bold">Sol Lee</p>(Seoul Medical
-                                                                        Center, Republic of Korea) -->
+                                                                        , <br> <p class="bold">Kye-Yeung Park</p>(Hanyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4603,7 +4648,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_sky_bg">
-                                                <td>11:50-12:50</td>
+                                                <td>11:50-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 5</p>
                                                     <p><span class="bold">Chairperson : Seung Joon Oh</span> (Kyung Hee University, Korea)</p>
@@ -4625,8 +4670,9 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:50-12:50</td>
+                                                                    <td>11:50-12:40</td>
                                                                     <td class="bold">
+                                                                    Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
@@ -4635,6 +4681,24 @@ and Metabolism
                                                             </tbody>
                                                         </table>
                                                     </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>12:40-12:50</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -5009,7 +5073,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>17:00-17:30</td>
                                                                     <td class="bold">
-                                                                    Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease
+                                                                    Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease: an Era of Drug Discovery that Constitutes a Landmark in the History of Medicine
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
@@ -5414,7 +5478,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_sky_bg">
-                                                <td>11:50-12:50</td>
+                                                <td>11:50-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 6</p>
                                                     <p><span class="bold">Chairperson : Sung-Soo Kim</span> (Chungnam National University, Korea)</p>
@@ -5436,7 +5500,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:50-12:50</td>
+                                                                    <td>11:50-12:40</td>
                                                                     <td class="bold">
                                                                     The Review of Combination Phentermine Plus Topiramate for Chronic Weight Management
                                                                     </td>
@@ -5447,6 +5511,24 @@ and Metabolism
                                                             </tbody>
                                                         </table>
                                                     </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>12:40-12:50</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -5821,7 +5903,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>17:00-17:30</td>
                                                                     <td class="bold">
-                                                                    Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease
+                                                                    Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease: an Era of Drug Discovery that Constitutes a Landmark in the History of Medicine
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
@@ -6268,7 +6350,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="light_sky_bg">
-                                                <td>11:50-12:50</td>
+                                                <td>11:50-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 7</p>
                                                     <!-- <p><span class="bold">Chairperson : Ho-Young Son</span> (The
@@ -6292,7 +6374,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>11:50-12:50</td>
+                                                                    <td>11:50-12:40</td>
                                                                     <td class="bold">
                                                                     SGLT2i: Beyond Glucose Lowering Effects
                                                                     </td>
@@ -6303,6 +6385,24 @@ and Metabolism
                                                             </tbody>
                                                         </table>
                                                     </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>12:40-12:50</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -6675,7 +6775,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>17:00-17:30</td>
                                                                     <td class="bold">
-                                                                    Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease
+                                                                    Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease: an Era of Drug Discovery that Constitutes a Landmark in the History of Medicine
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
@@ -6763,7 +6863,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:45-10:10</td>
                                                                     <td class="bold">
-                                                                    GLP1+Glucagon Dual Agonist
+                                                                    Beyond the Weight Metrics, a Deeper Look on Obesity Management with Survodutide: A Dual GCGR/GLP-1R Agonist
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Erika Bezerra Parente</p>(Boehringer Ingelheim, Germany)
@@ -6772,6 +6872,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>10:10-10:35</td>
                                                                     <td class="bold">
+                                                                    Adiposity-Based Chronic Disease and an International Consensus on a Complications-Centric Approach to Care
                                                                     </td>
                                                                     <td class="text_r">
                                                                     <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
@@ -6785,6 +6886,57 @@ and Metabolism
                                                                     <td class="text_r">
                                                                         <!-- <p class="bold">Ji Won Yoon</p>(Seoul National University, Republic of Korea), <br>
                                                                         <p class="bold">Jin Hwa Kim</p>(Chosun University, Republic of Korea)  -->
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li name="luncheon_symposium_7">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_sky_bg">
+                                                <td>11:50-12:40</td>
+                                                <td>
+                                                    <p class="font_20 bold">Luncheon Symposium 8</p>
+                                                    <!-- <p><span class="bold">Chairperson : Ho-Young Son</span> (The
+                                                        Catholic University of Korea, Republic of Korea)</p> -->
+                                                    <!-- [↓] 확정 시 까지 버튼 숨김 -->
+                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="program_detail_td">
+                                                    will be updated.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="on">
+                                                    <div>
+                                                        <table class="c_table detail_table padding_0">
+                                                            <colgroup>
+                                                                <col class="col_date">
+                                                                <col>
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>11:50-12:40</td>
+                                                                    <td class="bold">
+                                                                    
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

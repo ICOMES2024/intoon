@@ -39,7 +39,7 @@
 
 				<!-- <button class="btn blue_btn nowrap not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
 				<!-- [240118] sujeong / not_yet 버튼으로 변경 -->
-					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_glance_0807.pdf')"
+					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_glance_0812_v2.pdf')"
 						class="btn blue_btn nowrap"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button>
 				</div>
 
@@ -616,7 +616,10 @@
 									Luncheon<br />Symposium 7
 									<input type="hidden" name="e" value="room3">
 								</td>
-								<td></td>
+								<td class="light_sky_bg pointer" name="luncheon_symposium_8" data-id="72">
+									Luncheon<br />Symposium 8
+									<input type="hidden" name="e" value="room3">
+								</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -734,7 +737,7 @@
 								</td>
 								<td class="plenary_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
 									Plenary Lecture 4
-									<p class="">Adiposity-Based Chronic Disease and an International Consensus on a Complications-Centric Approach to Care</p>
+									<p class=""> Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease: an Era of Drug Discovery that Constitutes a Landmark in the History of Medicine</p>
 									<p>W. Timothy Garvey</p>
 									<p>University of Alabama at Birmingham, USA</p>
 									<input type="hidden" name="e" value="room1">
@@ -763,7 +766,8 @@
             </div>
         </div>
         <!--//section1-->
-
+		<p class="bold purple_txt ">* As an international academic congress, ICOMES 2024 conducts all sessions in English except for certain sessions indicated with (K) in their session names.
+		</p>
     </div>
 
 </section>
@@ -783,11 +787,19 @@
 					<p class="modal_title_room"></p>
 				</div>
 				<div>
+					
 					<!-- <p class="program_modal_chair"></p> -->
 					
 					<!-- [240607] sujeong / 학회팀 요청 모달 오픈 & 좌장 미확정 주석처리 -->
-					<p class="program_modal_chair"> </p>
-					<p class="program_modal_person"></p>
+					<div>
+						<p class="program_modal_chair"> </p>
+						<p class="program_modal_person"></p>
+					</div>
+					<div class="korean_session">
+						<p class="bold"><span class="underline bold">Language of Instruction</span>: Korean</p>
+						<p class="bold">*Distinctive registration required in addition to ICOMES 2024.</p>
+						<p><span class="bold purple_txt">Registration Link: </span><a href="https://forms.gle/8avYXpcEH9ABMZCj8" target="_blank" class="underline link">https://forms.gle/8avYXpcEH9ABMZCj8 </a></p>
+					</div>
 				</div>
 			</div>
             <p class="modal_preview"></p>
@@ -1012,7 +1024,8 @@ function writeModal(data){
     const modalChairPerson = document.querySelector(".program_modal_person");
 	const modalChair = document.querySelector('.program_modal_chair');
     const contentsWrap =  document.querySelector(".content_container");
-    const modalPreview = document.querySelector(".modal_preview")
+    const modalPreview = document.querySelector(".modal_preview");
+	const koreanSession = document.querySelector(".korean_session")
 
     let title = "";
     let subTitle = "";
@@ -1025,7 +1038,7 @@ function writeModal(data){
 
 
     data.map((t, i)=>{
-		console.log(t)
+		// console.log(t)
         const contents = document.createElement("div")
         title = t.title;
         subTitle = t.program_name;
@@ -1065,6 +1078,13 @@ function writeModal(data){
         // titleDay = `${startDay?.split("-")[0]}년 ${startDay?.split("-")[1]}월 ${startDay?.split("-")[2]}일`;
         titleTime = "• " + startTime + '~' + t.end_time;
         contents.className = "content";
+		
+		//sujeong / (k) 설명 요청
+		if(t.idx == 67 || t.idx == 68){
+			koreanSession.classList.add('on')
+		}else{
+			koreanSession.classList.remove('on')
+		}
 
 		if(t.idx != 10 && t.idx != 20 && t.idx != 40 && t.idx != 65){
 			if(t.chairpersons && t.chairpersons.includes('<br/>')){

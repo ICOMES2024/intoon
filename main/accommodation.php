@@ -23,14 +23,14 @@
                     <div class="btn_wrap">
                          <button class="btn green_btn"
                         onClick="javascript:window.open('https://www.hilton.com/en/hotels/selcici-conrad-seoul/')">Go to Website</button>
-                        <a href="https://image.webeon.net/icomes2024/venue/Reservation_Form_2024_ICOMES_V2.doc" class="btn green_btn" style="text-decoration: none;" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
+                        <!-- <a href="https://image.webeon.net/icomes2024/venue/Reservation_Form_2024_ICOMES_V2.doc" class="btn green_btn" style="text-decoration: none;" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a> -->
                     <!-- <a href="./download/ICOMES_2023_Conrad_Seoul_Reservation_Form.doc" class="btn green_btn download_btn" target="_blank" download=""><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Reservation Form Download</a>
                      -->
                     </div>
                 </div>
                 <div>
                     <p class="font_22">Conrad Seoul 
-                 <span class="font_16">(Special rate for ICOMES participants applied)</span> 
+                 <!-- <span class="font_16">(Special rate for ICOMES participants applied)</span>  -->
                     </p>
                     <div class="table_wrap x_scroll">
                         <table class="c_table2 detail_table layout_fixed">
@@ -69,7 +69,7 @@
                                             class="underline link">https://www.hilton.com</a>
                                     </td>
                                 </tr> -->
-                                 <tr>
+                                 <!-- <tr>
                                     <th>How to<br>reserve</th>
                                     <td colspan="3">
                                         1. <span class="">Download the reservation form.</span><br>
@@ -81,15 +81,8 @@
                                         5. CANCELLATION POLICY
 Reservation can be changed or amended 30 days prior (By August 5th) to the event date.
 Any cancellations or no shows after 30 days to the event date will be charged the entire period of stay.
-
-                                        <!-- <p class="font_small mt4 font_b">
-                                            * Reservation can be <span class="font_small underline bold">changed, canceled, or amended</span> <span class="font_small red_t font_b">up to 30 days before the congress date</span> within a special rate from ICOMES 2024.<br>
-                                            * Starting, the rate may vary, and it is non-refundable upon booking. For further information, please kindly contact the hotel directly.
-                                        </p>
-
-                                        <p class="font_small"><br>For further information, please kindly contact the hotel directly.</p> -->
                                     </td>
-                               </tr>
+                               </tr> -->
                             </tbody>
                         </table>
                     </div>
