@@ -79,7 +79,7 @@
 					<input type="hidden" name="day" value="day_3">
 			</li>
 			<li class="pointer"  name="keynote_lecture_7">
-					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-07.png" class="text" alt="">
+					<img src="https://image.webeon.net/icomes2024/app/ICOMES2024_APP_lectures-07-1.png" class="text" alt="">
 					<input type="hidden" name="e" value="room1~3">
 					<input type="hidden" name="day" value="day_3">
 			</li>
