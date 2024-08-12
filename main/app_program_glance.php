@@ -174,7 +174,7 @@
 								<td></td>
 								<td></td>
 								<td class="white_yellow_bg pointer" name="welcome_cocktail_party" data-id="10" style="letter-spacing: -0.8px;"> 
-								Textbook Launch Ceremony & Welcome Reception
+								    Welcome Reception
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>

@@ -21,7 +21,7 @@
     $select_user_registration_query = "
         SELECT
             reg.idx, reg.banquet_yn, reg.email, reg.nation_no, reg.first_name, reg.last_name, reg.affiliation, reg.phone, reg.department, reg.member_type, reg.occupation_type, DATE(reg.register_date) AS register_date, DATE_FORMAT(reg.register_date, '%m-%d-%Y %H:%i:%s') AS register_date2, reg.status, reg.is_score, reg.is_score1, reg.is_score2, reg.is_score3,reg.is_score4,
-			reg.attendance_type, reg.etc5, reg.licence_number, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number,
+			reg.attendance_type, reg.etc5, reg.licence_number, reg.licence_number2, reg.specialty_number, reg.nutritionist_number, reg.dietitian_number,
 			reg.conference_info, reg.etc4, reg.welcome_reception_yn, reg.day2_breakfast_yn, reg.day2_luncheon_yn, reg.day3_breakfast_yn, reg.day3_luncheon_yn, reg.special_request_food, reg.promotion_code_number,
 			reg.payment_methods, reg.price, nation.nation_en, IF(nation.nation_tel = 82, 1, 0) AS is_korea,
 			(

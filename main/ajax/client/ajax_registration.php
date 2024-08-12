@@ -85,6 +85,7 @@
 		$rating4              = isset($data["review4"]) ? $data["review4"] : "";											// 내과분과전문의 시험/갱신 평점신청
 
 		$licence_number      = isset($data["licence_number"]) && $data["licence_number"] != "" ? $data["licence_number"] : "";							// 의사면허번호
+        $licence_number2      = isset($data["licence_number2"]) && $data["licence_number2"] != "" ? $data["licence_number2"] : "";							// 의사면허번호2
 		$specialty_number    = isset($data["specialty_number"]) && $data["specialty_number"] != "" ? $data["specialty_number"] : "";						// 전문의번호
 		$nutritionist_number = isset($data["nutritionist_number"]) && $data["nutritionist_number"] != "" ? $data["nutritionist_number"] : "";					// 영양사면허번호
         $dietitian_number    = isset($data["dietitian_number"]) && $data["dietitian_number"] != "" ? $data["dietitian_number"] : "";                        // 임상영양사자격번호
@@ -305,6 +306,11 @@
 		}else{
 			$add_set .= ", licence_number = NULL ";
 		}
+        if($licence_number2 !== "") {
+			$add_set .= ", licence_number2 = '{$licence_number2}' ";
+		}else{
+			$add_set .= ", licence_number2 = NULL ";
+		}
 
 		if($specialty_number !== "") {
 			$add_set .= ", specialty_number = '{$specialty_number}' ";
@@ -433,7 +439,7 @@
 			$regustration_query = "SELECT
 										idx, attendance_type, is_score, is_score1, is_score2, is_score3, is_score4, nation_no, phone,
 										member_type, ksso_member_status, registration_type, affiliation, department,
-										licence_number, specialty_number, nutritionist_number, dietitian_number,etc5, academy_number, register_path,
+										licence_number, licence_number2, specialty_number, nutritionist_number, dietitian_number,etc5, academy_number, register_path,
 										etc4, welcome_reception_yn, day2_breakfast_yn, day2_luncheon_yn, day3_breakfast_yn, day3_luncheon_yn, 
 										conference_info, price, payment_no,
 										DATE_FORMAT(register_date, '%m-%d-%Y %H:%i:%s') AS register_date

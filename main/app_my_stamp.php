@@ -159,8 +159,8 @@
 		<div class="app_menu_box">
 			<ul class="app_menu_tab langth_3">
 				<li><a href="./app_stamp_guidelines.php">Stamp Tour Guidelines</a></li>
-				<li class="on event"><a href="./app_my_stamp.php">My Stamp</a></li>
-				<li><a href="./app_stamp_list.php">Stamp List</a></li>
+				<li class="on event"><a href="./app_my_stamp.php">Stamp List<br/>(Scanner)</a></li>
+				<li><a href="./app_stamp_list.php">My Stamp</a></li>
 			</ul>
 		</div>
 	</div>

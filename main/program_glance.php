@@ -39,7 +39,7 @@
 
 				<!-- <button class="btn blue_btn nowrap not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
 				<!-- [240118] sujeong / not_yet 버튼으로 변경 -->
-					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_glance_0801.pdf')"
+					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_glance_0807.pdf')"
 						class="btn blue_btn nowrap"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button>
 				</div>
 
@@ -173,7 +173,7 @@
 								<td></td>
 								<td></td>
 								<td class="white_yellow_bg pointer" name="welcome_cocktail_party" data-id="10" style="letter-spacing: -0.8px;"> 
-								Textbook Launch Ceremony & Welcome Reception
+								Welcome Reception
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>

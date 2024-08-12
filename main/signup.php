@@ -439,11 +439,11 @@
 										<ul class="simple_join clearfix">
 												<li>
 													<label for="ksso_id">KSSO ID<span class="red_txt">*</span></label>
-													<input id="ksso_id" class="email_id" name="kor_id" type="text" maxlength="60">
+													<input id="ksso_id" class="email_id" name="non_kor_id" type="text" maxlength="60">
 												</li>
 												<li>
 													<label for="ksso_pw">KSSO PW<span class="red_txt">*</span></label>
-													<input id="ksso_pw" class="passwords" name="kor_pw" type="password" maxlength="60">
+													<input id="ksso_pw" class="passwords" name="non_kor_pw" type="password" maxlength="60">
 												</li>
 												<li>
 													<button onclick="non_kor_api()" type="button" class="btn">Membership Verification</button>
@@ -724,11 +724,11 @@
 						<ul class="simple_signup non_korea mb10">
 							<li>
 								<label for="ksso_id_mo" class="bold">KSSO ID<span class="red_txt">*</span></label>
-								<input id="ksso_id_mo" class="email_id passwords" name="mo_kor_id" type="text" maxlength="60">
+								<input id="ksso_id_mo" class="email_id passwords" name="mo_non_kor_id" type="text" maxlength="60">
 							</li>
 							<li>
 								<label for="ksso_pw_mo" class="bold">KSSO PW<span class="red_txt">*</span></label>
-								<input id="ksso_pw_mo" class="passwords" name="mo_kor_pw" type="password" maxlength="60">
+								<input id="ksso_pw_mo" class="passwords" name="mo_non_kor_pw" type="password" maxlength="60">
 							</li>
 							<li>
 							</li>
@@ -2159,8 +2159,8 @@ function kor_api_check(name, value, mo) {
 	//}
 }
 function mo_non_kor_api(){
-	var kor_id = $("input[name=mo_kor_id]").val().trim();
-	var kor_pw = $("input[name=mo_kor_pw]").val().trim();
+	var kor_id = $("input[name=mo_non_kor_id]").val().trim();
+	var kor_pw = $("input[name=mo_non_kor_pw]").val().trim();
 	//제 3자 개인정보 수집에 동의 여부
 	var privacy = $("#mo_privacy1").is(":checked");
 
@@ -2341,8 +2341,8 @@ function mo_kor_api() {
 }
 
 function non_kor_api(){
-	var kor_id = $("input[name=kor_id]").val().trim();
-	var kor_pw = $("input[name=kor_pw]").val().trim();
+	var kor_id = $("input[name=non_kor_id]").val().trim();
+	var kor_pw = $("input[name=non_kor_pw]").val().trim();
 	//제 3자 개인정보 수집에 동의 여부
 	var privacy = $("#privacy1").is(":checked");
 

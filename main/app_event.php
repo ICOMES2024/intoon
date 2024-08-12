@@ -65,7 +65,7 @@ if (empty($_SESSION["USER"])) {
 	<div class="inner">
 		<div class="contents_box">
 				<div class="event_img">
-                    <img src="https://image.webeon.net/icomes2024/app_event/2024_app_quiz-01-1.png" alt="event_img"/>
+                    <img src="https://image.webeon.net/icomes2024/app_event/2024_app_quiz-02-1.png" alt="event_img"/>
 				</div>
                 <div class="input_wrap">
                         <input class="comment" placeholder="Please write down the correct answer"/>
@@ -182,7 +182,7 @@ if (empty($_SESSION["USER"])) {
         }
 
         // [240709] sujeong !!! 수정 필요 !!! 첫번째 이벤트 q1
-        const quizNum = 'q1';
+        const quizNum = 'q2';
         
         if(commentValue === ""){
             alert("Please write your comment!")

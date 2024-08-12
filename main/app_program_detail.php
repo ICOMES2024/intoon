@@ -288,7 +288,7 @@ echo '<script type="text/javascript">
                             <option value="14" class="day2 day3">Sponsored Session</option>
                             <option value="16" class="day2 day3">Oral Presentation</option>
                             <option value="17" class="day2 day3">Guided Poster Presentation</option>
-                            <option value="3" class="day1">Textbook Publication Inauguration Ceremony & Welcome Reception</option>
+                            <option value="3" class="day1">Welcome Reception</option>
                             <option value="1" class="day2">Opening Address</option>
                             <option value="4" class="day2">Congress Banquet</option>
                             <option value="2" class="day3">Closing & Award Ceremony</option>

@@ -95,7 +95,7 @@
  	foreach($memberMap as $memberNo => $member){
         $num = (int)$num+1;
 		$html .= '<tr class="tr_center">';
-		$html .= '<td>'.$no.'</td>';
+		$html .= '<td>'.$num.'</td>';
 		$html .= '<td>'.$member["email"].'</td>';
 		$html .= '<td>'.$member["first_name"].'</td>';
 		$html .= '<td>'.$member["last_name"].'</td>';

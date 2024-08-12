@@ -158,7 +158,7 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Committee Session 2</p>
+                                                    <p class="font_20 bold">Committee Session 2 : Symposium on Health Insurance Coverage for Obesity Treatment</p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Korea), 
                                                         <br><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Korea)
@@ -181,32 +181,34 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:30-16:55</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>16:30-16:45</td>
+                                                                    <td class="bold">Health Issues of Obesity and the Importance of Insurance Coverage for Obesity Treatment</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ga Eun Nam</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:55-17:20</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>16:45-17:00</td>
+                                                                    <td class="bold">Pre- and Post-Operative Management of Metabolic Surgery: Importance and Strategies for Insurance Coverage</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yeongkeun Kwon</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-17:45</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>17:00-17:15</td>
+                                                                    <td class="bold">Active Intervention Strategies for the Management of Obesity in Children and Adolescents</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ah-Ram Sul</p>(NECA, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:45-18:00</td>
+                                                                    <td>17:15-18:00</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
                                                                     <p class="bold">Yong Hee Hong</p>(Soonchunhyang University, Korea),<br/>
-                                                                        <p class="bold">Hyun-Young Shin</p>(The Catholic University of Korea, Korea)
+                                                                    <p class="bold">Hyun-Young Shin</p>(The Catholic University of Korea, Korea)<br/>
+                                                                    <p class="bold">Hwan Beom Lee</p>(Kim & Chang, Korea)
+                                                                    
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -321,7 +323,7 @@ echo '<script type="text/javascript">
                                                 <td>18:40-19:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Satellite Symposium 2</p>
-                                                    <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul Happiness Clinic of Internal Medicine, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Changhyun Lee</span> (Seoul Happiness Clinic, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -398,10 +400,10 @@ echo '<script type="text/javascript">
                                                             <tr>
                                                                     <td>15:00-15:30</td>
                                                                     <td class="bold">
-                                                                    Noninvasive Approaches to Monitor Liver Fibrosis in Metabolic-Associated Steatotic Liver Disease
+                                                                   
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Hye Won Lee</p>(Yonsei University, Korea)
+                                                                        <p class="bold">Jae Seung Lee</p>(Yonsei University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -838,7 +840,7 @@ echo '<script type="text/javascript">
                                             <tr class="white_yellow_bg">
                                                 <td>19:00-21:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb_0">Textbook Launch Ceremony & Welcome Reception</p>
+                                                    <p class="font_20 bold mb_0">Welcome Reception</p>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -1082,7 +1084,7 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Tae Nyun Kim</p>(Inje University, Korea)
+                                                                        <p class="bold">Hun Jee Choe</p>(Hallym University, Korea)
                                                                         <!--,<br><p class="bold">Jae Hyun Bae</p>(Korea University, Korea) -->
                                                                     </td>
                                                                 </tr>
@@ -3863,7 +3865,7 @@ and Metabolism
                                                                     SELECTing the Clinical Outcome of Semaglutide 2.4mg from its Physiological Benefits
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Filip K. Knop</p>(University of Copenhagen, Denmark)
+                                                                        <p class="bold">Filip K. Knop</p>(Novo Nordisk/ University of Copenhagen, Denmark)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4050,7 +4052,7 @@ and Metabolism
                                             <tr class="violet_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold mb0">Joint Symposium KSSO-EASO</p>
+                                                    <p class="font_20 bold mb0">Joint Symposium KSSO-EASO : Comprehensive Approaches to Understanding and Managing Obesity and Related Metabolic Health Issues</p>
                                                     <p><span class="bold">Chairpersons : Volkan Yumuk</span> (Istanbul University-Cerrahpaşa, Turkey), <br><span class="bold">Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
 													<!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -6752,10 +6754,10 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                    Bariatric Metabolic Surgery vs Glucagon-Like Peptide-1 Receptor Agonists as a Treatment for People Living with Obesity and Diabetes
+                                                                   
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Dror Dicker</p>(Tel Aviv University, Israel)
+                                                                        <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6968,7 +6970,7 @@ and Metabolism
                                             <tr class="light_sky_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Sponsored Session 3 : Optimization of Glycemic Control in Obese Diabetes Patients With CGM</p>
+                                                    <p class="font_20 bold">Sponsored Session 3 : Exploring the Potential CGM Use for Wellness Beyond Glycemic Control</p>
                                                     <p><span class="bold">Chairpersons : Young Sung Suh</span> (Keimyung University, Korea)
                                                     , <br><span class="bold">Kyoung Kon Kim</span> (Gachon University, Korea)
                                                 </p>
@@ -6992,6 +6994,15 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:20-09:50</td>
                                                                     <td class="bold">
+                                                                    The Expanding Role of CGM in Wellness: From Glycemic Control to Holistic Health
+                                                                    </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>09:50-10:20</td>
+                                                                    <td class="bold">
                                                                     Current Evidence of CGM Use in Weight Management
                                                                     </td>
                                                                     <td class="text_r">
@@ -6999,21 +7010,12 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:50-10:20</td>
+                                                                    <td>10:20-10:50</td>
                                                                     <td class="bold">
                                                                     Life Style Modification with CGM, How To Do?
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Sun-Joon Moon</p>(Sungkyunkwan University, Korea)
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>10:20-10:50</td>
-                                                                    <td class="bold">
-                                                                    The Expanding Role of CGM in Wellness: From Glycemic Control to Holistic Health
-                                                                    </td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
