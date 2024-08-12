@@ -74,8 +74,8 @@
 								<td>
 									<div class="colons_div">15:00-16:30</div>
 								</td>
-								<td class="skyblue_bg pointer" name="committee_session_1" data-id="3">
-									Committee Session 1
+								<td class="" name="committee_session_1" data-id="3">
+								
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_1" data-id="2">
@@ -99,7 +99,7 @@
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="skyblue_bg pointer" name="committee_session_2" data-id="67">
-									Committee Session 2
+									Symposium on Health Insurance Coverage for Obesity Treatment (K)
 									<input type="hidden" name="e" value="room3">
 								</td>
                                 <td class="violet_bg pointer" name="joint_symposium_2" data-id="5">
@@ -317,7 +317,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">12:00-13:00</div>
+									<div class="colons_div">12:00-12:50</div>
 								</td>
 								<td class="light_sky_bg pointer" name="luncheon_symposium_1" data-id="22">
 									Luncheon<br />Symposium 1
@@ -340,6 +340,12 @@
 								<td></td>
 							</tr>
 							<tr>
+								<td class="break_time">
+									<div class="colons_div">12:50-13:00</div>
+								</td>
+								<td colspan="7" class="light_gray_bg break_time">Break</td>
+							</tr>
+							<tr>
 								<td>
 									<div class="colons_div">13:00-14:00</div>
 								</td>
@@ -351,11 +357,11 @@
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26">
-									Oral presentation 1
+									Oral Presentation 1
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_2" data-id="27">
-									Oral presentation 2
+									Oral Presentation 2
 									<input type="hidden" name="e" value="room5">
 								</td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28">
@@ -615,7 +621,7 @@
 							</tr>
 							<tr>
 								<td>
-									<div class="colons_div">11:50-12:50</div>
+									<div class="colons_div">11:50-12:40</div>
 								</td>
 								<td class="light_sky_bg pointer" name="luncheon_symposium_5" data-id="51">
 									Luncheon<br />Symposium 5
@@ -633,6 +639,12 @@
 								<td></td>
 								<td></td>
 								<td></td>
+							</tr>
+							<tr>
+								<td class="break_time">
+									<div class="colons_div">12:40-12:50</div>
+								</td>
+								<td colspan="7" class="light_gray_bg break_time">Break</td>
 							</tr>
 							<tr>
 								<td>
