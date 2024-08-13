@@ -67,9 +67,18 @@ $(document).ready(function(){
 
 		regFee = regFee.toString().replace(/[^0-9.]/gi, "");
 		totalRegFee = totalRegFee.toString().replace(/[^0-9.]/gi, "");
-
+		//console.log(data)
 		data["reg_fee"] = regFee ? parseFloat(regFee) : 0;
 		data["total_reg_fee"] = totalRegFee ? parseFloat(totalRegFee) : 0;
+
+		//[240813] sujeong / 조건식 추가 - 일반참석자, 기자 아님, 프로모션 코드 없을 때 금액이 0원인 경우 reload
+		if(data.participation_type == "Participants" && data.category !== "Press" && data.promotion_code == 'N'){
+			if(data["reg_fee"] == 0){
+				alert('The network is unstable. Please try again.');
+				window.location.reload();
+				return false;
+			}
+		}
 
 		if(status == true) {
 			if(confirm(prevNo ? "Would you like to modify with the item you entered?" :locale(language.value)("confirm_msg"))) {

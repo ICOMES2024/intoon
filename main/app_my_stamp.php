@@ -210,7 +210,7 @@
 								$str = [];
 
 								if($booth["location"]) array_push($str, "Location: ".$booth["location"]);
-								if($booth["booth"]) array_push($str, "Booth No: ".$booth["booth"]);
+								// if($booth["booth"]) array_push($str, "Booth No: ".$booth["booth"]);
 
 								echo "<div class='location'>".implode("<br/>", $str)."</div>";
 							}else{

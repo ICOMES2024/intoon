@@ -77,7 +77,7 @@
 								</td>
 								<td class=" " name="committee_session_1" data-id="3">
 				
-									<input type="hidden" name="e" value="room3">
+									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_1" data-id="2">
 									Joint Symposium-JKT (Clinical)<br>New Clinical Insights into the MASLD
@@ -85,7 +85,7 @@
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
 									Best Articles in JOMES
-									<input type="hidden" name="e" value="room1">
+									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>
@@ -100,7 +100,7 @@
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="skyblue_bg pointer" name="committee_session_2" data-id="67">
 									Symposium on Health Insurance Coverage for Obesity Treatment (K)
-									<input type="hidden" name="e" value="room3">
+									<input type="hidden" name="e" value="room1">
 								</td>
                                 <td class="violet_bg pointer" name="joint_symposium_2" data-id="5">
 									Joint Symposium-JKT (Basic)<br>Novel Mechanisms and Therapeutic Approaches for MASLD
@@ -109,7 +109,7 @@
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="violet_bg pointer" name="joint_symposium_3" data-id="68">
 									Joint Symposium<br>KSSO-KSoLA-KDA (K)
-									<input type="hidden" name="e" value="room2">
+									<input type="hidden" name="e" value="room3">
 								</td>
                                 <!-- <td class="light_gray_bg_2">
 									기자간담회
@@ -158,7 +158,7 @@
 								</td>
 								<td class="violet_bg pointer" name="satellite_symposium_4" data-id="69">
 									Special Session<br />for Publication
-									<input type="hidden" name="e" value="room1">
+									<input type="hidden" name="e" value="room2">
 								</td>
 								<td></td>
 								<td class="light_gray_bg"></td>
@@ -361,7 +361,7 @@
 								</td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28">
 									Guided Poster Presentation 1
-									<input type="hidden" name="e" value="room7">
+									<input type="hidden" name="e" value="room6">
 									<div class="guide_gray_box"></div>
 									</td>
 								<td></td>
@@ -483,7 +483,7 @@
 								<td class="white_yellow_bg pointer" name="congress_banquet_ceremony" data-id="40">
 									Congress Banquet 
 									<p><span class="red_txt">*</span>Invited Only</p>
-									<input type="hidden" name="e" value="room6">
+									<input type="hidden" name="e" value="room7">
 								</td>
 							</tr>
 						</tbody>
@@ -618,7 +618,7 @@
 								</td>
 								<td class="light_sky_bg pointer" name="luncheon_symposium_8" data-id="72">
 									Luncheon<br />Symposium 8
-									<input type="hidden" name="e" value="room3">
+									<input type="hidden" name="e" value="room4">
 								</td>
 								<td></td>
 								<td></td>
@@ -651,7 +651,7 @@
 								</td>
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56">
 									Guided Poster Presentation 2
-									<input type="hidden" name="e" value="room7">
+									<input type="hidden" name="e" value="room6">
 									<div class="guide_gray_box second_gray"></div>
 									</td>
 								<td></td>
@@ -1147,7 +1147,7 @@ function writeModal(data){
        
     })
 
-    modalTitle.innerText = subTitle;
+    modalTitle.innerHTML = subTitle;
     // modalSubTitle.innerText = subTitle;
     modalTitleDay.innerText = titleDay;
     modalTitleTime.innerHTML = titleTime;

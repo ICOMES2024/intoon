@@ -155,7 +155,7 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium on Health Insurance Coverage for Obesity Treatment <sapn class="bold purple_txt font_20">(K)</sapn></p>
+                                                    <p class="font_20 bold">Symposium on Health Insurance Coverage for Obesity Treatment <sapn class="bold purple_txt font_20">(K)</sapn><br/><span class="kor">비만 진료 급여화를 위한 건강보험정책 심포지엄</span></p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Korea), 
                                                         <br><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Korea)
@@ -179,21 +179,21 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>16:45-17:00</td>
-                                                                    <td class="bold">Health Issues of Obesity and the Importance of Insurance Coverage for Obesity Treatment</td>
+                                                                    <td class="bold">Health Issues of Obesity and the Importance of Insurance Coverage for Obesity Treatment<br/><span class="kor">비만의 건강 문제와 비만 진료 급여화의 중요성</span></td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ga Eun Nam</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:00-17:15</td>
-                                                                    <td class="bold">Pre- and Post-Operative Management of Metabolic Surgery: Importance and Strategies for Insurance Coverage</td>
+                                                                    <td class="bold">Pre- and Post-Operative Management of Metabolic Surgery: Importance and Strategies for Insurance Coverage<br/><span class="kor">비만대사수술 전후 관리의 중요성과 급여화 방안</span></td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yeongkeun Kwon</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>17:15-17:30</td>
-                                                                    <td class="bold">Active Intervention Strategies for the Management of Obesity in Children and Adolescents</td>
+                                                                    <td class="bold">Active Intervention Strategies for the Management of Obesity in Children and Adolescents<br/><span class="kor">소아청소년 비만 진료 및 관리를 위한 적극 개입 전략</span></td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ah-Ram Sul</p>(NECA, Korea)
                                                                     </td>
@@ -5505,7 +5505,7 @@ and Metabolism
                                                                     The Review of Combination Phentermine Plus Topiramate for Chronic Weight Management
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Kyung Soo Kim </p>(CHA University, Korea)
+                                                                        <p class="bold">Kyung-Soo Kim </p>(CHA University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

@@ -512,7 +512,8 @@
 							echo "<tr><td class='no_data' colspan='8'>No Data</td></td>";
 						} else {
 							foreach($registration_list as $list) {
-
+								if($list["affiliation"] != 'into-on'){
+							
 								//[240315] sujeong / 등록번호 4자리수 만들기
 								if($list["registration_idx"]< 10){
 									$register_no = !empty($list["registration_idx"]) ? "ICOMES2024-000" .$list["registration_idx"] : "-";
@@ -564,7 +565,8 @@
 									<td><?=isset($list["register_date"]) ? $list["register_date"] : "-"?></td>
 								</tr>
 					<?php 
-							}
+							}	
+						}
 						}
 					?>
 					</tbody>
