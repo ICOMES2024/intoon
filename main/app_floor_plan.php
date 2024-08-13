@@ -37,7 +37,7 @@
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 1]</li>
 						<li class="floor_pop_title">September 5 (Thu)</li>
-						<li>- Committee Session 1,2</li>
+						<li>- Symposium on Health Insurance Coverage for Obesity Treatment</li>
 						<li>- Satellite Symposium 1,2</li>
 						<li class="floor_pop_title">September 6 (Fri)</li>
 						<li>- Plenary Lecture 1,2</li>
@@ -101,7 +101,7 @@
 						<li class="floor_pop_title">September 5 (Thu)</li>
                         <li>- Best Articles in JOMES</li>
                         <li>- Joint Symposium KSSO-KSoLA-KDA</li>
-                        <li>- Textbook Launch Ceremony & Welcome Reception</li>
+                        <li>- Welcome Reception</li>
 						<li class="floor_pop_title">September 6 (Fri)</li>
 						<li>- Plenary Lecture 1,2</li>
 						<li>- Keynote Lecture 1</li>
@@ -175,6 +175,7 @@
                         <li class="floor_pop_title">September 7 (Sat)</li>
                         <li>- Symposium 16,20</li>
                         <li>- Oral Presentation 3</li>
+                        <li>- Luncheon Symposium 8</li>
 					</ul>
 					<a href="javascript:;">
 						<div class="map_marker <?= ($room == 'Room5') ? 'Room5' : '' ?>">
@@ -206,9 +207,9 @@
 					</a>
 					<ul class="pop_text">
                         <li class="floor_pop_title">[Room 7]</li>
-                        <!-- <li class="floor_pop_title">September 6 (Fri)</li>
-                        <li>- Guided Poster Presentation 1</li>
-						<li class="floor_pop_title">September 7 (Sat)</li>
+                        <li class="floor_pop_title">September 6 (Fri)</li>
+                        <li>- Congress Banquet (Invited Only)</li>
+						<!-- <li class="floor_pop_title">September 7 (Sat)</li>
                         <li>- Guided Poster Presentation 2</li> -->
 					</ul>
 				</div>

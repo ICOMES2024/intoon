@@ -3629,7 +3629,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="dark_orange_bg">
-                                                <td>13:00-14:00</td>
+                                                <td>12:50-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 1</p>
                                                     <p>
@@ -3655,22 +3655,22 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:10</td>
+                                                                    <td>12:50-13:00</td>
                                                                     <td class="bold">
                                                                     </td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>13:00-13:10</td>
+                                                                    <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:10-13:20</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold"></p>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>13:20-13:30</td>
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
@@ -3678,14 +3678,14 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:30-13:40</td>
+                                                                    <td>13:20-13:30</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:40-13:50</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
@@ -3949,7 +3949,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="dark_orange_bg">
-                                                <td>13:00-14:00</td>
+                                                <td>12:50-14:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 2</p>
                                                     <p>
@@ -3975,6 +3975,13 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
+                                                                    <td>12:50-13:00</td>
+                                                                    <td class="bold"></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold"></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
                                                                     <td>13:00-13:10</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
@@ -3990,13 +3997,6 @@ and Metabolism
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:20-13:30</td>
-                                                                    <td class="bold"></td>
-                                                                    <td class="text_r">
-                                                                        <p class="bold"></p>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
@@ -4004,7 +4004,7 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:40-13:50</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold">
                                                                     </td>
                                                                     <td class="text_r">
@@ -4942,10 +4942,11 @@ and Metabolism
                                                 <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 17 : Incretin Therapy from MARS, Bariatric Surgery from VENUS</p>
-                                                    <!-- <p><span class="bold">Chairpersons : Cheol-Young Park</span>
-                                                        (Sungkyunkwan University, Republic of Korea), <br><span
-                                                            class="bold">Chang Hee Jung</span> (Univeristy of Ulsan,
-                                                        Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairpersons : Sung Rae Kim</span>
+                                                        (The Catholic University of Korea, Korea)
+                                                        <!-- , <br><span class="bold">Chang Hee Jung</span> (Univeristy of Ulsan,
+                                                        Republic of Korea)
+                                                    </p> -->
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
