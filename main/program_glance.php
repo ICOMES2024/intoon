@@ -338,7 +338,17 @@
 								<td class="break_time">
 									<div class="colons_div">12:50-13:00</div>
 								</td>
-								<td colspan="7" class="light_gray_bg break_time">Break</td>
+								<td colspan="3" class="light_gray_bg break_time">Break</td>
+								<td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26" rowspan="2">
+									Oral Presentation 1
+									<input type="hidden" name="e" value="room4">
+								</td>
+								<td class="dark_orange_bg pointer" name="oral_presentation_2" data-id="27" rowspan="2">
+									Oral Presentation 2
+									<input type="hidden" name="e" value="room5">
+								</td>
+								<td></td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>
@@ -351,14 +361,14 @@
 									<p>Yale University, USA</p>
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26">
+								<!-- <td class="dark_orange_bg pointer" name="oral_presentation_1" data-id="26">
 									Oral Presentation 1
 									<input type="hidden" name="e" value="room4">
 								</td>
 								<td class="dark_orange_bg pointer" name="oral_presentation_2" data-id="27">
 									Oral Presentation 2
 									<input type="hidden" name="e" value="room5">
-								</td>
+								</td> -->
 								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28">
 									Guided Poster Presentation 1
 									<input type="hidden" name="e" value="room6">
@@ -737,7 +747,7 @@
 								</td>
 								<td class="plenary_bg pointer" name="keynote_lecture_7" colspan="3" data-id="64">
 									Plenary Lecture 4
-									<p class=""> Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease: an Era of Drug Discovery that Constitutes a Landmark in the History of Medicine</p>
+									<p class="">Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease: an Era of Drug Discovery that Constitutes a Landmark in the History of Medicine</p>
 									<p>W. Timothy Garvey</p>
 									<p>University of Alabama at Birmingham, USA</p>
 									<input type="hidden" name="e" value="room1">
