@@ -646,7 +646,7 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>15:00-16:10</td>
                                                 <td>
-                                                    <p class="font_20 bold">Best Articles in JOMES</p>
+                                                    <p class="font_20 bold">Best Articles in JOMES<sapn class="bold purple_txt font_20"> (K)</sapn></p>
                                                     <p><span class="bold">Chairpersons : You-Cheol Hwang</span> (Kyung Hee University, Korea)
                                                     , <br/><span class="bold">Yong-Ho Lee</span> (Yonsei University, Korea)
                                                 </p>
@@ -1651,6 +1651,24 @@ and Metabolism
                                     </table>
                                 </div>
                             </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>18:00-18:05</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="easo_presidential_lecture">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -2529,6 +2547,24 @@ and Metabolism
                                     </table>
                                 </div>
                             </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>18:00-18:05</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
                             <li name="easo_presidential_lecture_1">
                                 <div class="table_wrap detail_table_common x_scroll">
                                     <table class="c_table detail_table">
@@ -3378,6 +3414,24 @@ and Metabolism
                                                             </tbody>
                                                         </table>
                                                     </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li name="break" class="border_bottom_70">
+                                <div class="table_wrap detail_table_common x_scroll">
+                                    <table class="c_table detail_table">
+                                        <colgroup>
+                                            <col class="col_date">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr class="light_gray_bg">
+                                                <td>18:00-18:05</td>
+                                                <td>
+                                                    <p class="font_20 bold">Break</p>
                                                 </td>
                                             </tr>
                                         </tbody>

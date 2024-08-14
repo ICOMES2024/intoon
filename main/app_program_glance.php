@@ -84,7 +84,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
-									Best Articles in JOMES
+									Best Articles in JOMES (K)
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -352,8 +352,8 @@
 									Oral Presentation 2
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td></td>
-								<td></td>
+								<td colspan="2" class="light_gray_bg break_time"></td>
+								<!-- <td></td> -->
 							</tr>
 							<tr>
 								<td>
