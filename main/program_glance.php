@@ -39,7 +39,7 @@
 
 				<!-- <button class="btn blue_btn nowrap not_yet"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button> -->
 				<!-- [240118] sujeong / not_yet 버튼으로 변경 -->
-					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_glance_0812_v2.pdf')"
+					<button onclick="javascript:window.open('https://image.webeon.net/icomes2024/program/Program_at_a_glance_0814.pdf')"
 						class="btn blue_btn nowrap"><img src="https://image.webeon.net/icomes2024/logo/icon_download_white.svg" alt="">Program at a Glance Download</button>
 				</div>
 
@@ -84,7 +84,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
-									Best Articles in JOMES
+									Best Articles in JOMES (K)
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -347,8 +347,8 @@
 									Oral Presentation 2
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td></td>
-								<td></td>
+								<td colspan="2" class="light_gray_bg break_time"></td>
+								<!-- <td></td> -->
 							</tr>
 							<tr>
 								<td>
@@ -1090,7 +1090,7 @@ function writeModal(data){
         contents.className = "content";
 		
 		//sujeong / (k) 설명 요청
-		if(t.idx == 67 || t.idx == 68){
+		if(t.idx == 67 || t.idx == 68 || t.idx == 1){
 			koreanSession.classList.add('on')
 		}else{
 			koreanSession.classList.remove('on')
