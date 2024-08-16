@@ -718,7 +718,7 @@ if ($during_yn !== "Y") {
     </div>
 </section>
 
-<script src="./js/script/client/registration.js?v=0.3"></script>
+<script src="./js/script/client/registration.js?v=0.5"></script>
 <script src="./js/script/client/promotion.js?v=0.3"></script>
 <!-- <script src="./js/script/client/registration.js"></script> -->
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
@@ -925,6 +925,24 @@ if ($during_yn !== "Y") {
 
 		
         $(".next_btn").on("click", function (){
+			if(!$("select[name=participation_type] option:selected").val()){
+				alert(locale(language.value)("check_registration_participation_type"))
+				$("#participation_type").focus();
+				return false;
+			}
+
+			if(!$("select[name=occupation] option:selected").val()){
+				alert('Please select the occupation type.')
+				$("#occupation").focus();
+				return false;
+			}
+
+			if(!$("select[name=category] option:selected").val()){
+				alert('Please select the category.')
+				$("#category").focus();
+				return false;
+			}
+
              if(!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
                  !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
                  !$("input[name=others5]").is(":checked")) {
@@ -932,6 +950,19 @@ if ($during_yn !== "Y") {
                  alert("Please confirm the 'Others' section");
                  return false;
              }
+
+			 
+			if(!$("input[name=list]").is(":checked")){
+				alert('Please check Where did you get the information about the conference.')
+				$("#list1").focus();
+				return false;
+			}
+
+			if(!$("input[name=payment_method]").is(":checked")){
+				alert('Please check payment method.')
+				$("#bank").focus();
+				return false;
+			}
         });
 
 		//[240314] sujeong / category sponsor 조건 추가

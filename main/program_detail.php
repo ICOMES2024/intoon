@@ -155,7 +155,7 @@ echo '<script type="text/javascript">
                                             <tr class="skyblue_bg">
                                                 <td>16:30-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium on Health Insurance Coverage for Obesity Treatment <sapn class="bold purple_txt font_20">(K)</sapn><br/><span class="kor">비만 진료 급여화를 위한 건강보험정책 심포지엄</span></p>
+                                                    <p class="font_20 bold">Symposium on Health Insurance Coverage for Obesity Treatment <sapn class="bold purple_txt font_20">(K)</sapn><br/><span class="kor">비만 진료 급여화를 위한 건강보험정책 심포지움</span></p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Korea), 
                                                         <br><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Korea)
@@ -1082,8 +1082,8 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Hun Jee Choe</p>(Hallym University, Korea)
-                                                                        <!--,<br><p class="bold">Jae Hyun Bae</p>(Korea University, Korea) -->
+                                                                        <p class="bold">Yoon Jeong Cho</p>(Daegu Catholic University, Korea)
+                                                                        ,<br><p class="b/old">Hun Jee Choe</p>(Hallym University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3612,9 +3612,11 @@ and Metabolism
                                                                 </tr>
                                                                 <tr>
                                                                     <td>10:35-10:50</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    PG-102, a Bispecific GLP-1/GLP-2 Receptor Agonist for the Treatment of Obesity and Type 2 Diabetes
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sae Won Kim</p>(SL BiGen, Inc., Korea)
+                                                                        <p class="bold">Sae Won Kim</p>(ProGen Co. Ltd., Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -4086,7 +4088,7 @@ and Metabolism
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 2 : Obesity Management with Combination Phentermine Plus Topiramate from Strategy to Practice</p>
-                                                    <p><span class="bold">Chairpersons : Ji A Seo</span> (Korea University, Korea), <br> <span class="bold">Bumjo Oh</span>(Seoul National University, Korea)</p>
+                                                    <p><span class="bold">Chairpersons : Ji A Seo</span> (Korea University, Korea), <br> <span class="bold">Bumjo Oh</span> (Seoul National University, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -4186,6 +4188,8 @@ and Metabolism
                                                                 <tr>
                                                                     <td>17:30-18:00</td>
                                                                     <td class="bold">
+                                                                    An EASO Framework for the Diagnosis, Staging, and Management of Obesity as a Chronic Disease
+
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Barbara McGowan</p> (Guy's and St Thomas' NHS Foundation Trust, UK)
@@ -4549,7 +4553,7 @@ and Metabolism
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hua Wang</p>
-                                                                        (First Affiliated Hospital of Anhui Medical University, China)
+                                                                        (The First Affiliated Hospital of Anhui Medical University, China)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6909,10 +6913,10 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                   
+                                                                    A New Era in Obesity Management: Emerging Anti-Obesity Medications in Asian Populations
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jang Won Son</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -6939,8 +6943,8 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <!-- <p class="bold">Ji Won Yoon</p>(Seoul National University, Republic of Korea), <br>
-                                                                        <p class="bold">Jin Hwa Kim</p>(Chosun University, Republic of Korea)  -->
+                                                                      <p class="bold">Sunyoung Kim</p>(Kyung Hee University, Korea)
+                                                                          <!--  , <br><p class="bold">Jin Hwa Kim</p>(Chosun University, Republic of Korea)  -->
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

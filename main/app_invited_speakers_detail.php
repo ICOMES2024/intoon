@@ -101,7 +101,7 @@ $program_list = get_data($select_program_query);
 				<div class="speakers_detail">
 					<img src="<?= $is_profile_img ?>" alt="profile img">
 					<div class="detail_box">
-						<p><?=$invited_speaker['first_name']?> <?=$invited_speaker['last_name']?><span><?=$invited_speaker['affiliation']?><br><?=$invited_speaker['nation']?></span></p>
+						<p><?=$invited_speaker['first_name']?> <?=$invited_speaker['last_name']?><span><?=$invited_speaker['affiliation']?></span></p>
 						<?php
 							if (!empty($invited_speaker['cv_path'])) {
 						?>
