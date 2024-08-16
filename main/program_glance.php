@@ -75,8 +75,7 @@
 								<td>
 									<div class="colons_div">15:00-16:30</div>
 								</td>
-								<td class=" " name="committee_session_1" data-id="3">
-				
+								<td class="" name="committee_session_1" data-id="3">
 									<input type="hidden" name="e" value="room1">
 								</td>
 								<td class="violet_bg pointer" name="joint_symposium_1" data-id="2">
@@ -84,7 +83,7 @@
 									<input type="hidden" name="e" value="room2">
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
-									Best Articles in JOMES (K)
+									Best Articles in JOMES <span class="bold">(K)</span>
 									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
@@ -99,7 +98,7 @@
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="skyblue_bg pointer" name="committee_session_2" data-id="67">
-									Symposium on Health Insurance Coverage for Obesity Treatment (K)
+									Symposium on Health Insurance Coverage for Obesity Treatment <span class="bold">(K)</span>
 									<input type="hidden" name="e" value="room1">
 								</td>
                                 <td class="violet_bg pointer" name="joint_symposium_2" data-id="5">
@@ -108,7 +107,7 @@
 								</td>
 								<!-- [240423] sujeong / 학회팀 요청 주석 -->
 								<td class="violet_bg pointer" name="joint_symposium_3" data-id="68">
-									Joint Symposium<br>KSSO-KSoLA-KDA (K)
+									Joint Symposium<br>KSSO-KSoLA-KDA <span class="bold">(K)</span>
 									<input type="hidden" name="e" value="room3">
 								</td>
                                 <!-- <td class="light_gray_bg_2">
@@ -1090,7 +1089,7 @@ function writeModal(data){
         contents.className = "content";
 		
 		//sujeong / (k) 설명 요청
-		if(t.idx == 67 || t.idx == 68 || t.idx == 1){
+		if(t.idx == 67){
 			koreanSession.classList.add('on')
 		}else{
 			koreanSession.classList.remove('on')

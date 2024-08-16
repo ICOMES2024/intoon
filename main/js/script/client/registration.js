@@ -22,8 +22,9 @@ $(document).ready(function(){
 
     $(".online_register, .abstract_online_submission").on("click", ".green_btn", function(){
 		const prevNo = $("input[name=prev_no]").val();	// 수정시
-
+		//console.log('hi')
 		var process = inputCheck();
+		//console.log(process)
 		var status = process.status;
 		var data = process.data;
 
@@ -38,7 +39,6 @@ $(document).ready(function(){
 		//if(data.license_checkbox == "on") {
 		//	data.licence_number = "Not applicable";
 		//}
-
 		// 0509
 		var temp_arr = document.getElementsByName("list");
 		var conference_info_arr = new Array();
@@ -282,7 +282,7 @@ function payment(){
 	}
 }
 
-function inputCheck(check_type) {
+function inputCheck() {
 	
 	var data = {};
 	var length_50 = ["email", "first_name", "last_name", "department", "licence_number"];
@@ -383,6 +383,7 @@ function inputCheck(check_type) {
 function requireChecked(){
 	// Type of Participation
 	if(!$("select[name=participation_type] option:selected").val()){
+		alert(locale(language.value)("check_registration_participation_type"))
 		return -1;
 	}
 

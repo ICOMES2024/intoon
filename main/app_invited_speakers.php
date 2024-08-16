@@ -102,7 +102,7 @@ $initial_list = get_data($select_initial_query);
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
 											<img src="<?= $is_profile_img ?>" alt="profile_img">
-											<p><?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span></p>
+											<p><?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?></span></p>
 										</div>
 									</a>
 									<button type="button" class="favorite_btn on" value="<?=$isl['idx']?>"></button>
@@ -145,7 +145,7 @@ $initial_list = get_data($select_initial_query);
 									<a href="./app_invited_speakers_detail.php?idx=<?=$isl['idx']?>">
 										<div class="speakers_info">
 											<img src="<?= $is_profile_img ?>" alt="profile_img">
-											<p><?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?>, <?=$isl['nation']?></span></p>
+											<p><?=$isl['first_name']?> <?=$isl['last_name']?> <span class="sub"><?=$isl['affiliation']?></span></p>
 										</div>
 									</a>
 									<button type="button" class="favorite_btn <?=$favorite?>" value="<?=$isl['idx']?>"></button>
