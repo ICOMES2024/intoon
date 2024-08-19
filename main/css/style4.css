@@ -2488,7 +2488,7 @@ section.coming img {width: 100%;}
 }
 
 .app_comment .input_wrap input {
-	border: 2px solid #b5379e;
+	border: 2px solid #0F9E98;
 	padding: 8px;
 	width: 75%;
 	height: 100%;
@@ -2504,10 +2504,10 @@ section.coming img {width: 100%;}
 }
 
 .app_comment .input_wrap button{
-	border: 1px solid #b5379e;
+	border: 1px solid #0F9E98;
 	padding: 4px 8px;
 	height: 100%;
-	background-color: #b5379e;
+	background-color: #0F9E98;
 	color : #FFF;
 	font-weight: 600;
 	width: 25%;

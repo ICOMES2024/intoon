@@ -2681,7 +2681,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                   
+                                                                    CV Risk Management of High-Risk Patients with Rozetel/Rozetelpine SPCs
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ga Eun Nam</p>(Korea University, Korea)
