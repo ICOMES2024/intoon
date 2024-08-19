@@ -153,9 +153,9 @@ echo '<script type="text/javascript">
                                         </colgroup>
                                         <tbody>
                                             <tr class="skyblue_bg">
-                                                <td>16:30-18:00</td>
+                                                <td>16:20-18:00</td>
                                                 <td>
-                                                    <p class="font_20 bold">Symposium on Health Insurance Coverage for Obesity Treatment <sapn class="bold purple_txt font_20">(K)</sapn><br/><span class="kor">비만 진료 급여화를 위한 건강보험정책 심포지움</span></p>
+                                                    <p class="font_20 bold">Symposium on Health Insurance Coverage for Obesity Treatment <sapn class="bold purple_txt font_20">(K)</sapn><br/><span class="kor">비만 진료 급여화를 위한 건강보험정책 심포지엄</span></p>
                                                     <p>
                                                         <span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Korea), 
                                                         <br><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Korea)
@@ -178,28 +178,28 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:45-17:00</td>
+                                                                    <td>16:35-16:50</td>
                                                                     <td class="bold">Health Issues of Obesity and the Importance of Insurance Coverage for Obesity Treatment<br/><span class="kor">비만의 건강 문제와 비만 진료 급여화의 중요성</span></td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ga Eun Nam</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:00-17:15</td>
+                                                                    <td>16:50-17:05</td>
                                                                     <td class="bold">Pre- and Post-Operative Management of Metabolic Surgery: Importance and Strategies for Insurance Coverage<br/><span class="kor">비만대사수술 전후 관리의 중요성과 급여화 방안</span></td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yeongkeun Kwon</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:15-17:30</td>
+                                                                    <td>17:05-17:20</td>
                                                                     <td class="bold">Active Intervention Strategies for the Management of Obesity in Children and Adolescents<br/><span class="kor">소아청소년 비만 진료 및 관리를 위한 적극 개입 전략</span></td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ah-Ram Sul</p>(NECA, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:30-18:00</td>
+                                                                    <td>17:20-18:00</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
                                                                     <p class="bold">Yong Hee Hong</p>(Soonchunhyang University, Korea),<br/>
@@ -375,7 +375,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium-JKT (Clinical) : New Clinical Insights into the MASLD</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Korea), <br><span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
+                                                        <span class="bold">Chairpersons : Wen-Yuan Lin</span> (China Medical University, Taiwan)
+                                                        <!-- , <br> <span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan) -->
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -398,7 +399,7 @@ echo '<script type="text/javascript">
                                                             <tr>
                                                                     <td>15:00-15:30</td>
                                                                     <td class="bold">
-                                                                   
+                                                                    Noninvasive Approaches to Monitor Liver Fibrosis in Metabolic-Associated Steatotic Liver Disease
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jae Seung Lee</p>(Yonsei University, Korea)
@@ -744,7 +745,7 @@ echo '<script type="text/javascript">
                                                 <td>16:20-17:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium KSSO-KSoLA-KDA <sapn class="bold purple_txt font_20">(K)</sapn></p>
-                                                    <p><span class="bold">Chairpersons : Cheol-Young Park</span> (Sungkyunkwan University, Korea)
+                                                    <p><span class="bold">Chairpersons : Soo Lim</span> (Seoul National University, Korea)
                                                     , <br/><span class="bold">Woo Je Lee</span> (University of Ulsan, Korea)
                                                 </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -775,7 +776,9 @@ echo '<script type="text/javascript">
                                                                 </tr>
                                                                 <tr>
                                                                     <td>16:45-17:10</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    The Impact of Anti-Obesity Agents on Dyslipidemia
+                                                                    </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Dong-Hyuk Cho</p>(Korea University, Korea)
                                                                     </td>
@@ -4730,7 +4733,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>11:50-12:40</td>
                                                                     <td class="bold">
-                                                                    Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiometabolic Disease
+                                                                    Semaglutide, a Second-Generation Obesity Medication for the Treatment and Prevention of Cardiovascular Disease
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">W. Timothy Garvey</p>(University of Alabama at Birmingham, USA)
