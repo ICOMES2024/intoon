@@ -943,6 +943,18 @@ if ($during_yn !== "Y") {
 				return false;
 			}
 
+			if($("#radio1").is(":checked") && !$("#app1").is(":checked") && !$("input[name=licence_number]").val()){
+				alert('의사 면허번호를 작성해주세요')
+				$("#licence_number").focus();
+				return false;
+			}
+
+			if($("#radio7").is(":checked") && !$("#app6").is(":checked") && !$("input[name=licence_number2]").val()){
+				alert('의사 면허번호를 작성해주세요')
+				$("#licence_number2").focus();
+				return false;
+			}
+
              if(!$("input[name=others1]").is(":checked") | !$("input[name=others2]").is(":checked") |
                  !$("input[name=others3]").is(":checked") | !$("input[name=others4]").is(":checked") |
                  !$("input[name=others5]").is(":checked")) {
@@ -963,6 +975,8 @@ if ($during_yn !== "Y") {
 				$("#bank").focus();
 				return false;
 			}
+
+			
         });
 
 		//[240314] sujeong / category sponsor 조건 추가
