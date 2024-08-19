@@ -164,8 +164,8 @@ $info = sql_fetch($sql_info);
                         </tr>
 						<tr>
 							<td class="text_center bold">Date & Time</td>
-							<td class="text_center" colspan="2"><span class="bold">13:00 - 14:00</span><br>Sep. 6 (Fri)</td>
-							<td class="text_center" colspan="2"><span class="bold">12:50 - 13:50</span><br>Sep. 7 (Sat)</td>
+							<td class="text_center" colspan="2"><span class="bold">12:50 - 14:00</span><br>Sep. 6 (Fri)</td>
+							<td class="text_center" colspan="2"><span class="bold">12:40 – 13:50</span><br>Sep. 7 (Sat)</td>
 							
 						</tr>
 						<tr>
