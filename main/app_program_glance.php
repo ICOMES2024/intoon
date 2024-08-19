@@ -352,7 +352,12 @@
 									Oral Presentation 2
 									<input type="hidden" name="e" value="room5">
 								</td>
-								<td colspan="2" class="light_gray_bg break_time"></td>
+								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28" rowspan="2">
+									Guided Poster Presentation 1
+									<input type="hidden" name="e" value="room6">
+									<div class="guide_gray_box"></div>
+									</td>
+								<td class="light_gray_bg break_time"></td>
 								<!-- <td></td> -->
 							</tr>
 							<tr>
@@ -374,11 +379,7 @@
 									Oral Presentation 2
 									<input type="hidden" name="e" value="room5">
 								</td> -->
-								<td class="dark_orange_bg pointer" name="guided_poster_presentation_1" data-id="28">
-									Guided Poster Presentation 1
-									<input type="hidden" name="e" value="room6">
-									<div class="guide_gray_box"></div>
-									</td>
+								
 								<td></td>
 							</tr>
 							<tr>
@@ -657,7 +658,22 @@
 								<td class="break_time">
 									<div class="colons_div">12:40-12:50</div>
 								</td>
-								<td colspan="7" class="light_gray_bg break_time">Break</td>
+								<td colspan="3" class="light_gray_bg break_time">Break</td>
+								<td class="dark_orange_bg pointer" name="oral_presentation_3" data-id="54" rowspan="2">
+									Oral Presentation 3
+									<input type="hidden" name="e" value="room4">
+								</td>
+								<td class="dark_orange_bg pointer" name="oral_presentation_4" data-id="55" rowspan="2">
+									Oral Presentation 4
+									<input type="hidden" name="e" value="room5">
+								</td>
+								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56" rowspan="2">
+									Guided Poster Presentation 2
+									<input type="hidden" name="e" value="room6">
+									<div class="guide_gray_box second_gray"></div>
+								</td>
+								<td class="light_gray_bg break_time"></td>
+
 							</tr>
 							<tr>
 								<td>
@@ -670,19 +686,7 @@
 									<p>Seoul National University, Korea</p> -->
 									<input type="hidden" name="e" value="room1">
 								</td>
-								<td class="dark_orange_bg pointer" name="oral_presentation_3" data-id="54">
-									Oral Presentation 3
-									<input type="hidden" name="e" value="room4">
-								</td>
-								<td class="dark_orange_bg pointer" name="oral_presentation_4" data-id="55">
-									Oral Presentation 4
-									<input type="hidden" name="e" value="room5">
-								</td>
-								<td class="dark_orange_bg pointer" name="guided_poster_presentation_2" data-id="56">
-									Guided Poster Presentation 2
-									<input type="hidden" name="e" value="room6">
-									<div class="guide_gray_box second_gray"></div>
-									</td>
+								
 								<td></td>
 							</tr>
 							<tr>
