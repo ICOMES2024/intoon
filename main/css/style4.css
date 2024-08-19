@@ -2401,13 +2401,13 @@ section.coming img {width: 100%;}
 	padding: 0px;
 	/* border-radius: 8px; */
 	margin-bottom: 8px;
-	border: 2px solid #67338C;
+	border: 2px solid #0F9E98;
 	margin: 8px auto;
 }
  .my_event .mycomment_header{
 	height: 21px;
 	width: 100%;
-	background-color: #67338C;
+	background-color: #0F9E98;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
