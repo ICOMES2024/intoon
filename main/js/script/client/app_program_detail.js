@@ -229,7 +229,7 @@ function createHTMLList(program_list, active){
             if(cl.speaker_idx!=null){
                 //[240424] sujeong / 임시 주석 / 연자정보 버튼 숨기기
                 speaker_info_html += '<a href="/main/app_invited_speakers_detail.php?idx='+cl.speaker_idx+'" class="invited_tag">Speakers info</a>';
-                speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+', '+cl.nation+')'+'</p>';
+                speaker_html += '<p class="chairperson">'+'<span class="bold">'+cl.first_name+' '+cl.last_name+'</span>'+'('+cl.affiliation+')'+'</p>';
             } else {
                 if(cl.speaker!=null){
                     speaker_html += '<p class="chairperson">'+'<span class="">'+cl.speaker+'</span>'+'</p>';

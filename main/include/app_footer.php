@@ -15,7 +15,7 @@ $select_notice_query = "
 						SELECT idx, type, title_en
 						FROM board
 						WHERE is_deleted='N'
-						AND type=4
+						AND type=3
 					";
 
 $notice_list = get_data($select_notice_query);
@@ -68,7 +68,7 @@ if(empty($member_idx)){
 							<!-- [240702] sujeong / 기존 코드 -> 제목 앞에 [NOTICE] & app notice detail 로 이동 -->
 							<!-- <li><a href="/main/app_notice_detail.php?idx=<?=$notice['idx']?>">[NOTICE] <?=$notice['title_en']?> </a></li> -->
 							 <!-- [240702] sujeong / 현재 코드 -> 제목 앞에 [NOTICE] 제거 & app newsletter detail 로 이동 -->
-							<li><a href="/main/app_newsletter_detail.php?idx=<?=$notice['idx']?>"><?=$notice['title_en']?> </a></li>
+							<li><a href="/main/app_notice_detail.php?idx=<?=$notice['idx']?>"><?=$notice['title_en']?> </a></li>
                     <?php
 						}
                     ?>

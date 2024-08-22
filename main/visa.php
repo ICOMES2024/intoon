@@ -115,11 +115,13 @@
 					<li class="f_bold"><span class="bold">1) </span>A valid passport</li>
 					<li class="f_bold"><span class="bold">2) </span>Credit cards (for fee payment)<br>- 10,000 KRW (approximately $9-10, Additional fee excluded).</li>
 					<li class="f_bold"><span class="bold">3) </span>E-mail address</li>
-					<li class="f_bold"><span class="bold">4) </span>Recent profile photo</li>
+					<li class="f_bold"><span class="bold">4) </span>Recent profile photo
+                    </li>
 				</ul>
 			</div>
 		</div>
     </div>
+    
 </section>
 
 <?php include_once('./include/footer.php');?>

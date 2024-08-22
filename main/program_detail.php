@@ -375,8 +375,8 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium-JKT (Clinical) : New Clinical Insights into the MASLD</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Wen-Yuan Lin</span> (China Medical University, Taiwan)
-                                                        <!-- , <br> <span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan) -->
+                                                        <span class="bold">Chairpersons : Kyoung Kon Kim</span> (Gachon University, Korea)
+                                                        , <br> <span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -2149,7 +2149,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>12:00-12:50</td>
                                                                     <td class="bold">
-                                                                    DPP-IV Inhibitor and SGLT2 Inhibitor Combination Therapy for the Treatment of T2DM
+                                                                    Evogliptin : A New Era in Diabetes Treatment and Clinical Outcomes
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Joonyub Lee</p>(The Catholic University of Korea, Korea)
@@ -4971,7 +4971,7 @@ and Metabolism
                                                                     Human Adipose Tissue Metabolism: What Happens with Obesity
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Michael D. Jensen</p>(Mayo College of Medicine,USA)
+                                                                        <p class="bold">Michael D. Jensen</p>(Mayo College of Medicine, USA)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -5020,9 +5020,8 @@ and Metabolism
                                                     <p class="font_20 bold">Symposium 17 : Incretin Therapy from MARS, Bariatric Surgery from VENUS</p>
                                                     <p><span class="bold">Chairpersons : Sung Rae Kim</span>
                                                         (The Catholic University of Korea, Korea)
-                                                        <!-- , <br><span class="bold">Chang Hee Jung</span> (Univeristy of Ulsan,
-                                                        Republic of Korea)
-                                                    </p> -->
+                                                        , <br><span class="bold">Jae Hyun Kim</span> (Seoul National University, Korea)
+                                                    </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -6430,8 +6429,7 @@ and Metabolism
                                                 <td>11:50-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 7</p>
-                                                    <!-- <p><span class="bold">Chairperson : Ho-Young Son</span> (The
-                                                        Catholic University of Korea, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Korea)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -6968,7 +6966,7 @@ and Metabolism
                                                             </tbody>
                                                         </table>
                                                     </div>
-                                                </td>`
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -6987,8 +6985,7 @@ and Metabolism
                                                 <td>11:50-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 8</p>
-                                                    <!-- <p><span class="bold">Chairperson : Ho-Young Son</span> (The
-                                                        Catholic University of Korea, Republic of Korea)</p> -->
+                                                    <p><span class="bold">Chairperson : Doo-Man Kim</span> (Hallym University, Korea)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>

@@ -282,7 +282,13 @@ if ($during_yn !== "Y") {
 								<select id="category" name="category" onChange="calc_fee(this)" <?=$prev["status"] == 2 || $prev["status"] == 3 ? "readonly disabled" : ""?>>
 									<option value="" selected hidden>Choose</option>
 									<?php
+									$category_arr = [];
+									
+									if($member_data['nation_en'] != "Republic of Korea"){
 										$category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Sponsor", "Student", "Press", "Others");
+									}else{
+										$category_arr = array("Certified M.D.", "Professor", "Fellow", "Resident", "Researcher", "Nutritionist", "Exercise Specialist", "Nurse", "Pharmacist", "Military Surgeon(군의관)", "Public Health Doctor", "Sponsor", "Student", "Press", "Others", "Resident (Korean Only)");
+									}
 
 										foreach($category_arr as $a_arr) {
 											$selected = $prev["member_type"] == $a_arr ? "selected" : "";
