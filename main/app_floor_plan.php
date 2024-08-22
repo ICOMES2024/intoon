@@ -154,10 +154,10 @@
 						<a href="javascript:;"></a>
 						<ul class="pop_text">
                             <li class="floor_pop_title">[Preview Room]</li>
-                            <!-- <li class="floor_pop_title">September 6 (Fri)</li>
-                            <li>Operating Hours: 07:00-18:30</li>
+                            <li class="floor_pop_title">September 6 (Fri)</li>
+                            <li>Operating Hours: 07:30 - 18:00</li>
                             <li class="floor_pop_title">September 7 (Sat)</li>
-                            <li>Operating Hours: 07:00-18:30<br>* Closed on September 7th.</li> -->
+                            <li>Operating Hours: 07:30 - 17:00<br>* Closed on September 7th.</li>
 						</ul>
 					</div>
 					<a href="javascript:;">

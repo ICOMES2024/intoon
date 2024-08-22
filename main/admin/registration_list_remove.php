@@ -172,7 +172,7 @@
 										FROM payment
 									) AS p
 									ON p.idx = rr.payment_no
-									WHERE rr.is_deleted = 'Y' OR rr.status = 4 OR m.affiliation = 'into-on'
+									WHERE (rr.is_deleted = 'Y' OR rr.status = 4 OR m.affiliation = 'into-on')
 									{$where}
 									ORDER BY rr.idx DESC
 								";
