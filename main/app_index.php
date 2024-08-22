@@ -160,7 +160,7 @@
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="/main/app_newsletter.php">
+				<a href="/main/app_notice.php">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu08.svg" alt="">
 				<!-- <a href="/main/app_notice.php"> -->
 					<!-- <span>NOTICE</span> -->

@@ -13,7 +13,9 @@
 //     ";
 
     $program_query = "	SELECT * 
-                        FROM program";
+                        FROM program
+                        WHERE is_deleted = 'N'
+                        ORDER BY start_time";
 
 //     $program_query = "
 //         SELECT p.idx, p.program_name, p.chairpersons, p.preview, p.program_place_idx, 

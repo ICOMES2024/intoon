@@ -203,6 +203,11 @@ $price = get_data($sql_price);
 									<td class="font_19 bold">Student<!--, Surgeon (Military),<br>Public Health Doctor--></td>
 									<td colspan="6" class="font_20">USD 50 / KRW 50,000<br/><span class="font_16 bold">*Student ID cards required</span</td>
 								</tr>
+                                <tr class="text_center">
+									<td class="font_19 bold">Resident<br/>(Korean Only)</td>
+									<td colspan="6" class="font_20">KRW 50,000<br/><span class="font_16 bold">* ID cards required
+                                        <br/><span>(If you do not have an ID card, you will need to fill out a verification form on-site)</span></span></td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
