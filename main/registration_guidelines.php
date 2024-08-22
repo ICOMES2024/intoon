@@ -52,9 +52,9 @@ $price = get_data($sql_price);
 					<div class="key_date">
                         <h2>Pre-registration Deadline</h2>
 						<div>
-							<h3>22</h3>
+							<h3>26</h3>
 							<div>
-								<p>Thursday,</p>
+								<p>Monday,</p>
 								<h6>August</h6>
 							</div>
 						</div>
@@ -138,7 +138,7 @@ $price = get_data($sql_price);
 								</tr>
                                 <tr>
                                     <th class="early_reg_td font_16" colspan="2">~ Thursday, July 25, 2024</th>
-                                    <th class="pre_reg_td font_16" colspan="2">Thursday, August 8, 2024 ~ Thursday, August 22, 2024</th>
+                                    <th class="pre_reg_td font_16" colspan="2">Thursday, August 23, 2024 ~Monday, August 26, 2024</th>
                                 </tr>
 								<tr>
 									<th class="early_member font_light font_20"><?= $locale("member") ?></th>

@@ -216,8 +216,8 @@ $info = sql_fetch($sql_info);
 						</tr> -->
 						<tr>
 							<td class="text_center">Operating Hour</td>
-							<td class="text_center">07:30 - 18:00</td>
-							<td class="text_center">07:30 - 17:00</td>
+							<td class="text_center">07:00 - 18:00</td>
+							<td class="text_center">07:00 - 17:00</td>
 						</tr>
                        </table>
                    </div>
