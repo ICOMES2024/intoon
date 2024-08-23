@@ -821,24 +821,28 @@ section.container.sponsor {padding-top: 164px;}
 	.sponsor_grade .grade_wrap:nth-child(2){
 		border-color: #39B44A;
 	}
-	
+		
 	.sponsor_grade .grade_wrap:nth-child(4){
+		border-color: #0670C6;
+	}
+	
+	.sponsor_grade .grade_wrap:nth-child(6){
 		border-color: #7468ad;
 	}
 
-	.sponsor_grade .grade_wrap:nth-child(6){
+	.sponsor_grade .grade_wrap:nth-child(8){
 		border-color: #00b3c4;
 	}
 
-	.sponsor_grade .grade_wrap:nth-child(8){
+	.sponsor_grade .grade_wrap:nth-child(10){
 		border-color: #deb01f;
 	}
 
-	.sponsor_grade .grade_wrap:nth-child(10){
+	.sponsor_grade .grade_wrap:nth-child(12){
 		border-color: #cad7e1;
 	}
 
-	.sponsor_grade .grade_wrap:nth-child(12){
+	.sponsor_grade .grade_wrap:nth-child(14){
 		border-color: #c69c8d;
 	}
 	.sponsor_grade .grade_title {font-size: 18px; padding: 0.35rem 0;}
@@ -1196,6 +1200,8 @@ section.container.sponsor {padding-top: 164px;}
 .grade_title.green_bg06 {background:linear-gradient(180deg, rgba(57,180,74,1) 0%, rgba(57,180,74,1) 50%, rgba(51,159,66,1) 50%, rgba(51,159,66,1) 100%);}
 .grade_title.silver_bg {background: linear-gradient(180deg, #cad7e1 50%, #becbd4 50%) !important;}
 .grade_title.bronze_bg {background: linear-gradient(180deg, #c69c8d 50%, #b79083 50%) !important;}
+
+.grade_title.blue_bg{background:linear-gradient(180deg, #14A0DE 0%, #14A0DE 50%, #128DC4 50%, #128DC4 100%);}
 
 .deep_skyblue_bg{background-color: #0181C8;}
 .deep_blue_bg{background-color: #01408F;}

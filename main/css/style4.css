@@ -3231,9 +3231,23 @@ section.coming img {width: 100%;}
 }
 
 .app_contents_wrap .lucky_box .lucky_bottom .red_box{
+	width: 80%;
+	text-align: center;
 	border: 3px solid #FF0000;
 	padding: 4px 8px;
 	border-radius: 20px;
+}
+
+.app_contents_wrap .lucky_box .lucky_bottom .blue_box{
+	width: 80%;
+	text-align: center;
+	border: 3px solid #14A0DE;
+	padding: 4px 8px;
+	border-radius: 20px;
+}
+
+.app_contents_wrap .lucky_box .lucky_bottom .blue_box span{
+	color : #14A0DE;
 }
 
 .app_contents_wrap .lucky_box .lucky_bottom .red_box .silver_t{color:#B0C3D2;}

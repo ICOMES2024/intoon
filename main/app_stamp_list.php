@@ -43,7 +43,7 @@ if (empty($_SESSION["USER"])) {
 				SELECT idx, booth_idx FROM e_booth_log WHERE member_idx = {$loginNo}
 			)AS l
 			ON b.idx = l.booth_idx
-			WHERE b.is_deleted = 'N'
+			WHERE b.is_deleted = 'N' AND b.grade != 1
 			GROUP BY b.grade";
 
 	$boothDBList = get_data($sql);
@@ -213,6 +213,10 @@ if (empty($_SESSION["USER"])) {
 						<div>+</div>
 						<div class="red_box">
 							<span class="silver_t">Silver</span> & <span class="bronze_t">Bronze</span> more than 5
+						</div>
+						<div>+</div>
+						<div class="blue_box">
+							<span class="">Poster Zone</span>
 						</div>
 					</div>
 				</div>

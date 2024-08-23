@@ -1201,7 +1201,7 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 
 .stamp_list li div {background-position: center; background-repeat: no-repeat; background-size: cover;}
 .stamp_list li.jomes div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_jomes-2.svg');color: #FFF;}
-.stamp_list li.poster div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_diamond-2.svg');color: #FFF;}
+.stamp_list li.diamond div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_diamond-2.svg');color: #FFF;}
 .stamp_list li.platinum div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_platinum-2.svg');color: #FFF;}
 .stamp_list li.gold div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_gold-2.svg');color: #FFF;}
 .stamp_list li.silver div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_silver-4.svg');color: #FFF;}

@@ -105,7 +105,7 @@ $program_list = get_data($select_program_query);
 						<?php
 							if (!empty($invited_speaker['cv_path'])) {
 						?>
-								<a href="<?= $invited_speaker['cv_path'] ?>" class="download_btn pdf_view">CV</a>
+								<a href="<?= $url.$invited_speaker['cv_path'] ?>" class="download_btn pdf_view">CV</a>
 						<?php
 							}
 						?>
