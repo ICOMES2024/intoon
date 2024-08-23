@@ -216,10 +216,8 @@
 							}else{
 								echo "<div></div>";
 							}
-
 							echo "</li>";
 						}
-
 						echo "</ul>";
 					}
 
