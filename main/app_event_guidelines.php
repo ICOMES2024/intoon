@@ -13,7 +13,8 @@
 		<div class="app_menu_box">
 			<ul class="app_menu_tab langth_2">
 					<li class="on event"><a href="./app_event_guidelines.php">Comment Event<br/>Guidelines</a></li>
-					<li><a href="./app_event.php">Question </a></li>
+					<li><a href="" class="event_expired">Question </a></li>
+					<!-- <li><a href="./app_event.php">Question </a></li> -->
 				</ul>
 		</div>
 	</div>
@@ -26,5 +27,13 @@
 		</div>
 	</div>
 </section>
+<script>
+	const eventDrop = document.querySelector(".event_expired");
+
+	eventDrop.addEventListener("click", ()=>{
+		alert("The event period has expired.");
+		return;
+	})
+</script>
 
 <?php include_once('./include/app_footer.php');?>

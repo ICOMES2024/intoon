@@ -1210,14 +1210,14 @@ div.bg input[type=button]{background-color: #383d5b; border-color: #383d5b; colo
 .stamp_list li.open div{width: 100%;}
 /* .stamp_list li.open div h4{transform: translateY(18px);} */
 .stamp_list li.jomes.open div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_jomes-1.svg');color: #FFF;}
-.stamp_list li.poster.open div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_diamond-1.svg');color: #FFF;}
+.stamp_list li.diamond.open div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_diamond-1.svg');color: #FFF;}
 .stamp_list li.platinum.open div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_platinum-1.svg');color: #FFF;}
 .stamp_list li.gold.open div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_gold-1.svg');color: #FFF;}
 .stamp_list li.silver.open div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_silver-1.svg');color: #FFF;}
 .stamp_list li.bronze.open div{background-image: url('https://image.webeon.net/icomes2024/app_sponsor/gift_box_bronze-1.svg');color: #FFF;}
 
 .stamp_list li.jomes p{color:#39B44A; border: none;}
-.stamp_list li.poster p{color:#7468AD; border: none;}
+.stamp_list li.diamond p{color:#7468AD; border: none;}
 .stamp_list li.platinum p{color:#00B3C4; border: none;}
 .stamp_list li.gold p{color:#DEB01F; border: none;}
 .stamp_list li.silver p{color:#B0C3D2; border: none;}

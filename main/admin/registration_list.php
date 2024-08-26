@@ -47,7 +47,7 @@
 									SELECT
 										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2, CONCAT(m.last_name_kor,m.first_name_kor) AS `name_kor`, rr.first_name, rr.last_name,
 										rr.member_type, rr.member_other_type, rr.occupation_type, rr.occupation_other_type,
-										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name, c.quiz_num_list, c.is_prize_list,
+										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
 										(
 											CASE rr.registration_type
 												#WHEN '2' THEN 'Online + Offline'
@@ -97,7 +97,7 @@
 												ELSE '-'
 											END
 										) AS is_score3_text,
-										(
+										 (
 											CASE rr.is_score4
 												WHEN '1' THEN 'Applied'
 												WHEN '0' THEN 'Not applied'
@@ -116,7 +116,7 @@
 												THEN '환불대기'
 												WHEN rr.status = '4'
 												THEN '환불완료'
-												WHEN rr.status = '5'
+											    WHEN rr.status = '5'
 												THEN '현장결제'
 												ELSE '-'
 											END
@@ -132,12 +132,12 @@
 										rr.etc4, rr.welcome_reception_yn, rr.day2_breakfast_yn, rr.day2_luncheon_yn, rr.day3_breakfast_yn, rr.day3_luncheon_yn, rr.special_request_food,
 										IFNULL(rr.promotion_code, '-') AS promotion_code, IFNULL(rr.recommended_by, '-') AS recommended_by,
 										(
-													CASE
-														WHEN rr.promotion_code = 0 THEN '100%'
-														WHEN rr.promotion_code = 1 THEN '50%'
-														WHEN rr.promotion_code = 2 THEN '30%'
-													END
-												) AS discount_rate, rr.promotion_code_number,
+                                            CASE
+                                                WHEN rr.promotion_code = 0 THEN '100%'
+                                                WHEN rr.promotion_code = 1 THEN '50%'
+                                                WHEN rr.promotion_code = 2 THEN '30%'
+                                            END
+                                        ) AS discount_rate, rr.promotion_code_number,
 										n.nation_ko, n.nation_en,
 										m.idx AS member_idx,
 										m.affiliation, m.department,
@@ -151,7 +151,7 @@
 										IFNULL(rr.register_path, '-') AS register_path, 
 										IFNULL(rr.conference_info, '-') AS conference_info,
 										m.ksola_member_status,
-												rr.etc6
+                                        rr.etc6
 									FROM request_registration  rr
 									INNER JOIN (
 										SELECT
@@ -183,18 +183,7 @@
 										FROM payment
 									) AS p
 									ON p.idx = rr.payment_no
-									LEFT JOIN (
-										SELECT
-											member_idx,
-											GROUP_CONCAT(quiz_num ORDER BY quiz_num SEPARATOR ', ') AS quiz_num_list, 
-											GROUP_CONCAT(is_prize ORDER BY quiz_num SEPARATOR ', ') AS is_prize_list   
-										FROM comments
-										GROUP BY member_idx -- member_idx로 그룹화
-									) AS c
-									ON c.member_idx = rr.register
-									WHERE rr.is_deleted = 'N'
-									AND rr.status != 4
-									AND m.affiliation != 'into-on'
+									WHERE rr.is_deleted = 'N' AND rr.status != 4 AND m.affiliation != 'into-on'
 									{$where}
 									ORDER BY rr.idx DESC
 								";
@@ -208,8 +197,7 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="19">Participants Inforatmion</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="10">평점신청(Korean Only)</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="9">Payment Information</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="8">Others</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="2">Comments Event</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;" colspan="7">Others</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;"></th>';
 	$html .= '</tr>';
 	$html .= '<tr class="tr_center">';
@@ -262,9 +250,6 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Day 3 Luncheon</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Special Request for Food</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">Where did you get the information about the conference?</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">퀴즈</th>';
-	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">당첨유무</th>';
-
 	$html .= '</tr>';
 	$html .= '</thead>';
 	$html .= '<tbody>';
@@ -378,18 +363,6 @@
             $special_request_food = "-";
         }
 
-		//sujeong 댓글 이벤트 값 집어넣기
-		// $answer1 = "-";
-		// $answer2 = "-";
-		// $answer3 = "-";
-		// if($rl['quiz_num_list'] == 'q1'){
-		// 	$answer1 = $rl['is_prize']; 
-		// }else if($rl['quiz_num'] == 'q2'){
-		// 	$answer2 = $rl['is_prize']; 
-		// }else if($rl['quiz_num'] == 'q3'){
-		// 	$answer3 = $rl['is_prize']; 
-		// }
-
 		// $is_exercise = ($rl['member_type'] == "Exercise Specialist") ? 'Y' : 'N';
 		$is_score = ($rl['is_score_text'] == 'Applied') ? 'Y' : 'N';
 		$is_score1 = ($rl['is_score1_text'] == 'Applied') ? 'Y' : 'N';
@@ -448,8 +421,6 @@
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["day3_luncheon_yn"].'</td>';
 		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$special_request_food.'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$conference_info.'</td>';
-		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["quiz_num_list"].'</td>';
-		$html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$rl["is_prize_list"].'</td>';
 		$html .= '</tr>';
 	}
 }
@@ -606,6 +577,6 @@
 	</section>
 <script src="./js/common.js?v=0.2"></script>
 <script>
-	var html = '<?=$html?>';
+	var html = '<?=json_encode($html)?>';
 </script>
 <?php include_once('./include/footer.php');?>

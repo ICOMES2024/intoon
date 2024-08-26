@@ -732,10 +732,10 @@ if ($during_yn !== "Y") {
 	$(document).ready(function() {
 
 		//[240117] sujeong / 등록 마감 알럿창 주석
-        // alert("The registration has expired.\nOnline registration is not available.");
-        // window.history.back();
-        // window.location.href = "/main/index.php";
-        // return;
+        alert("The registration has expired.\nOnline registration is not available.");
+        window.history.back();
+        window.location.href = "/main/index.php";
+        return;
 
 		$('.etc1').hide();
 

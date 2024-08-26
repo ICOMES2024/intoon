@@ -595,12 +595,16 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Special Session for Publication</p>
                                                     <p><span class="bold">Chairperson : You-Cheol Hwang</span> (Kyung Hee University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)</p>
+                                                    <ul>
+                                                        <li>The Special Lecture at ICOMES 2024 will be delivered by Claire Greenhill, Chief Editor at Springer Nature, UK, focusing on the intricacies of publishing in one of the world's most prestigious scientific journals. Titled "Publishing at Nature Reviews," this lecture will provide an insider's perspective on the editorial process, from manuscript submission to final publication. Greenhill will share valuable insights into what it takes to publish groundbreaking research, including tips on manuscript preparation, peer review, and navigating the publication landscape. This session is an invaluable opportunity for researchers aiming to enhance their publishing success in high-impact journals like Nature Reviews series.
+                                                        </li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1147,39 +1151,27 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Jeong Taek Woo</span> (Kyung Hee University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        <li>Incretin-based agents are a new class of drugs for the treatment of diabetes and obesity and are considered a transformative breakthrough in the field. These novel therapeutics achieve synergistic metabolic benefits. The first such compound, reported in 2009, was based on balanced co-agonism at glucagon and glucagon-like peptide-1 (GLP-1) receptors. Today, several classes of gut hormone co-agonists are in development and advancing through clinical trials, including dual GLP-1-glucose-dependent insulinotropic polypeptide (GIP) co-agonists, and triple GIP-GLP-1-glucagon co-agonists. The GLP-1-GIP co-agonist tirzepatide was approved in 2022 by the US FDA for the treatment of type 2 diabetes, providing significant weight reduction. In this Perspective, we summarize the discovery, development, mechanisms of action and clinical efficacy of the different types of incretin-based agents, and discuss potential challenges, limitations and future developments.
                                                         </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Quast DR, Lancaster D, Xie C, Bound MJ, Grivell J, Jones KL, Horowitz M, Meier JJ, Wu T, Rayner CK, Nauck MA. Randomised comparison of intravenous and subcutaneous routes of glucagon-like peptide-1 administration for lowering plasma glucose in hyperglycaemic subjects with type 2 diabetes.  Diabetes Obes Metab. 2024 Sep;26(9):3897-3905. 
+<br />
+2. Lim S, Sohn M, Nauck MA. Cardiovascular outcome with SGLT2i and GLP1RA. Eur J Intern Med. 2024 Jun 6:S0953-6205(24)00235-8. 
+<br />
+3. Nauck MA, Müller TD. Incretin hormones and type 2 diabetes. Diabetologia. 2023 Oct;66(10):1780-1795. 
+<br />
+4. Nauck MA, Wefers J, Meier JJ. Treatment of type 2 diabetes: challenges, hopes, and anticipated successes. Lancet Diabetes Endocrinol. 2021 Aug;9(8):525-544. 
+<br />
+5. Nauck MA, Quast DR, Meier JJ. Another milestone in the evolution of GLP-1-based diabetes therapies. Nat Med. 2021 Jun;27(6):952-953
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -1315,39 +1307,20 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Jun Hwa Hong (Eulji University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        <li>Prof. Ania Jastreboff from Yale University, USA is director of the Yale Obesity Research Center (Y-Weight) and is trained in both adult endocrinology and pediatric endocrinology. Recently, she has served as lead author for clinical trials of tirzepatide and retatrutide. In this session, she will have a lecture for nutrients-stimulated hormone-based pharmacotherapy for the treatment of obesity.
                                                         </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
-                                                        <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Tirzepatide Once Weekly for the Treatment of Obesity. N Engl J Med. 2022 Jul 21;387(3):205-216
+                                                            <br />
+                                                            2. Triple-Hormone-Receptor Agonist Retatrutide for Obesity - A Phase 2 Trial. N Engl J Med. 2023 Aug 10;389(6):514-526
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -1579,23 +1552,25 @@ and Metabolism
                                                     </p>
                                                     <p><span class="bold">Chairpersons : Yoon-Sok Chung</span> (Ajou University, Korea), <br><span class="bold">Do Thi Ngoc Diep</span> (Vietnam Nutrition Association, Vietnam)
                                                     </p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Yun-Hee Lee (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Bumjo Oh (Seoul National University, Korea), Jun Hwa Hong (Eulji University, Korea)</p>
                                                     <ul>
-                                                        <li>The topic of this session is “Obesity in special
-                                                            conditions”. Beyond recognizing obesity as the same disease
-                                                            condition, we would like to have time to look at cases with
-                                                            various accompanying diseases. The first speaker, Dicky L.
-                                                            Tahapary, will discuss the diagnosis and treatment of obese
-                                                            patients with diabetes. The second speaker, Wen-Yuan Lin,
-                                                            will introduce studies related to obesity with sarcopenia.
-                                                            The last speaker, Professor Tae Nyun Kim, will discuss the
-                                                            new concept of osteoporosis-sarcopenic obesity.</li>
+                                                        <li>In this session, we will have overview from obesity metabolism to cardiovascular disease. Prof. Richard Kibbey from Yale University has developed a novel platform using stable isotopes and mass spectrometry named Mass Isotopomer MultiOrdinate Spectral Analysis (MIMOSA) that measures the flow of metabolism inside and between tissues. He investigated the pancreatic insulin secretion with mitochondrial nutrient sensing, and relation with cardiovascular disease. Prof. Kim from Incheon Sejong Hospital, reputative cardiologist, especially major on cardiac transplantation. She will introduce the benefit of bariatric surgery on patients with advanced heart failure. Lastly, Prof. Jonathan Bennett from University of Hawaii, Manoa examine the role of body composition in health and disease prevention in populations including astronauts, athletes, children and infants. He will introduce the body composition and its association with disease risk. 
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Functional foods - dietary or herbal products on obesity: application of selected bioactive compounds to target lipid metabolism. Current Opinion in Food Science 2020, 34:9–20
+
+<br />
+2. Low-Carbohydrate Diet Macronutrient Quality and Weight Change. JAMA Netw Open. 2023;6(12):e2349552
+<br />
+3. Trends in Diet Quality and Cardiometabolic Risk Factors Among Korean Adults, 2007-2018. JAMA Netw Open. 2022 Jun 1;5(6):e2218297
+
+                                                        </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1684,35 +1659,14 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">EASO Presidential Lecture</p>
                                                     <p><span class="bold">Chairperson : Sung Rae Kim</span> (The Catholic University of Korea, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
-                                                        Korea, Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Chang Hee Jung (University of Ulsan, Korea) </p>
                                                     <ul>
-                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
-                                                            the fields of physiology and pharmacology at La Trobe
-                                                            University, Australia, is pushing the boundaries of
-                                                            neuroscience and metabolism. In his upcoming lecture, he
-                                                            will discuss how his work on intermittent metabolic
-                                                            switching has enhanced our comprehension of its effect on
-                                                            brain health, paving the way for potential therapeutic
-                                                            interventions.</li>
-                                                        <li>His recent publication in Theranostics, titled
-                                                            "Time-restricted feeding modulates the DNA methylation
-                                                            landscape, attenuates hallmark neuropathology and cognitive
-                                                            impairment in a mouse model of vascular dementia," has
-                                                            presented novel insights into the therapeutic potential of
-                                                            intermittent metabolic switching, offering promising
-                                                            strategies for managing and potentially reversing cognitive
-                                                            impairment in dementia.</li>
-                                                        <li>Further expanding our understanding, Professor Arumugam's
-                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
-                                                            Adaptive and Pathological Modification by Metabolic States,"
-                                                            continues to revolutionize our perspective on the role of
-                                                            metabolism in brain aging.</li>
+                                                        <li>With over 60% of older adults in the EU classified as overweight, this lecture addresses physiological changes with aging, the impact of excess visceral and muscle fat, and cardiometabolic complications. He will discuss tailored therapies, including lifestyle changes, medications, and bariatric surgery, to help practitioners effectively manage obesity and improve the quality of life in older populations.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -2028,39 +1982,27 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Jeong Taek Woo</span> (Kyung Hee University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        <li>Incretin-based agents are a new class of drugs for the treatment of diabetes and obesity and are considered a transformative breakthrough in the field. These novel therapeutics achieve synergistic metabolic benefits. The first such compound, reported in 2009, was based on balanced co-agonism at glucagon and glucagon-like peptide-1 (GLP-1) receptors. Today, several classes of gut hormone co-agonists are in development and advancing through clinical trials, including dual GLP-1-glucose-dependent insulinotropic polypeptide (GIP) co-agonists, and triple GIP-GLP-1-glucagon co-agonists. The GLP-1-GIP co-agonist tirzepatide was approved in 2022 by the US FDA for the treatment of type 2 diabetes, providing significant weight reduction. In this Perspective, we summarize the discovery, development, mechanisms of action and clinical efficacy of the different types of incretin-based agents, and discuss potential challenges, limitations and future developments.
                                                         </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Quast DR, Lancaster D, Xie C, Bound MJ, Grivell J, Jones KL, Horowitz M, Meier JJ, Wu T, Rayner CK, Nauck MA. Randomised comparison of intravenous and subcutaneous routes of glucagon-like peptide-1 administration for lowering plasma glucose in hyperglycaemic subjects with type 2 diabetes.  Diabetes Obes Metab. 2024 Sep;26(9):3897-3905. 
+<br />
+2. Lim S, Sohn M, Nauck MA. Cardiovascular outcome with SGLT2i and GLP1RA. Eur J Intern Med. 2024 Jun 6:S0953-6205(24)00235-8. 
+<br />
+3. Nauck MA, Müller TD. Incretin hormones and type 2 diabetes. Diabetologia. 2023 Oct;66(10):1780-1795. 
+<br />
+4. Nauck MA, Wefers J, Meier JJ. Treatment of type 2 diabetes: challenges, hopes, and anticipated successes. Lancet Diabetes Endocrinol. 2021 Aug;9(8):525-544. 
+<br />
+5. Nauck MA, Quast DR, Meier JJ. Another milestone in the evolution of GLP-1-based diabetes therapies. Nat Med. 2021 Jun;27(6):952-953
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -2195,39 +2137,20 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Jun Hwa Hong (Eulji University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        <li>Prof. Ania Jastreboff from Yale University, USA is director of the Yale Obesity Research Center (Y-Weight) and is trained in both adult endocrinology and pediatric endocrinology. Recently, she has served as lead author for clinical trials of tirzepatide and retatrutide. In this session, she will have a lecture for nutrients-stimulated hormone-based pharmacotherapy for the treatment of obesity.
                                                         </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
-                                                        <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Tirzepatide Once Weekly for the Treatment of Obesity. N Engl J Med. 2022 Jul 21;387(3):205-216
+                                                            <br />
+                                                            2. Triple-Hormone-Receptor Agonist Retatrutide for Obesity - A Phase 2 Trial. N Engl J Med. 2023 Aug 10;389(6):514-526
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -2580,35 +2503,14 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">EASO Presidential Lecture</p>
                                                     <p><span class="bold">Chairperson : Sung Rae Kim</span> (The Catholic University of Korea, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
-                                                        Korea, Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Chang Hee Jung (University of Ulsan, Korea) </p>
                                                     <ul>
-                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
-                                                            the fields of physiology and pharmacology at La Trobe
-                                                            University, Australia, is pushing the boundaries of
-                                                            neuroscience and metabolism. In his upcoming lecture, he
-                                                            will discuss how his work on intermittent metabolic
-                                                            switching has enhanced our comprehension of its effect on
-                                                            brain health, paving the way for potential therapeutic
-                                                            interventions.</li>
-                                                        <li>His recent publication in Theranostics, titled
-                                                            "Time-restricted feeding modulates the DNA methylation
-                                                            landscape, attenuates hallmark neuropathology and cognitive
-                                                            impairment in a mouse model of vascular dementia," has
-                                                            presented novel insights into the therapeutic potential of
-                                                            intermittent metabolic switching, offering promising
-                                                            strategies for managing and potentially reversing cognitive
-                                                            impairment in dementia.</li>
-                                                        <li>Further expanding our understanding, Professor Arumugam's
-                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
-                                                            Adaptive and Pathological Modification by Metabolic States,"
-                                                            continues to revolutionize our perspective on the role of
-                                                            metabolism in brain aging.</li>
+                                                        <li>With over 60% of older adults in the EU classified as overweight, this lecture addresses physiological changes with aging, the impact of excess visceral and muscle fat, and cardiometabolic complications. He will discuss tailored therapies, including lifestyle changes, medications, and bariatric surgery, to help practitioners effectively manage obesity and improve the quality of life in older populations.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -2925,39 +2827,27 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Jeong Taek Woo</span> (Kyung Hee University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        <li>Incretin-based agents are a new class of drugs for the treatment of diabetes and obesity and are considered a transformative breakthrough in the field. These novel therapeutics achieve synergistic metabolic benefits. The first such compound, reported in 2009, was based on balanced co-agonism at glucagon and glucagon-like peptide-1 (GLP-1) receptors. Today, several classes of gut hormone co-agonists are in development and advancing through clinical trials, including dual GLP-1-glucose-dependent insulinotropic polypeptide (GIP) co-agonists, and triple GIP-GLP-1-glucagon co-agonists. The GLP-1-GIP co-agonist tirzepatide was approved in 2022 by the US FDA for the treatment of type 2 diabetes, providing significant weight reduction. In this Perspective, we summarize the discovery, development, mechanisms of action and clinical efficacy of the different types of incretin-based agents, and discuss potential challenges, limitations and future developments.
                                                         </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Quast DR, Lancaster D, Xie C, Bound MJ, Grivell J, Jones KL, Horowitz M, Meier JJ, Wu T, Rayner CK, Nauck MA. Randomised comparison of intravenous and subcutaneous routes of glucagon-like peptide-1 administration for lowering plasma glucose in hyperglycaemic subjects with type 2 diabetes.  Diabetes Obes Metab. 2024 Sep;26(9):3897-3905. 
+<br />
+2. Lim S, Sohn M, Nauck MA. Cardiovascular outcome with SGLT2i and GLP1RA. Eur J Intern Med. 2024 Jun 6:S0953-6205(24)00235-8. 
+<br />
+3. Nauck MA, Müller TD. Incretin hormones and type 2 diabetes. Diabetologia. 2023 Oct;66(10):1780-1795. 
+<br />
+4. Nauck MA, Wefers J, Meier JJ. Treatment of type 2 diabetes: challenges, hopes, and anticipated successes. Lancet Diabetes Endocrinol. 2021 Aug;9(8):525-544. 
+<br />
+5. Nauck MA, Quast DR, Meier JJ. Another milestone in the evolution of GLP-1-based diabetes therapies. Nat Med. 2021 Jun;27(6):952-953
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -3092,39 +2982,20 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1 </p>
                                                     <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Jun Hwa Hong (Eulji University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
+                                                        <li>Prof. Ania Jastreboff from Yale University, USA is director of the Yale Obesity Research Center (Y-Weight) and is trained in both adult endocrinology and pediatric endocrinology. Recently, she has served as lead author for clinical trials of tirzepatide and retatrutide. In this session, she will have a lecture for nutrients-stimulated hormone-based pharmacotherapy for the treatment of obesity.
                                                         </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
-                                                        <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Tirzepatide Once Weekly for the Treatment of Obesity. N Engl J Med. 2022 Jul 21;387(3):205-216
+                                                            <br />
+                                                            2. Triple-Hormone-Receptor Agonist Retatrutide for Obesity - A Phase 2 Trial. N Engl J Med. 2023 Aug 10;389(6):514-526
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -3453,35 +3324,14 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">EASO Presidential Lecture</p>
                                                     <p><span class="bold">Chairperson : Sung Rae Kim</span> (The Catholic University of Korea, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of
-                                                        Korea, Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Chang Hee Jung (University of Ulsan, Korea) </p>
                                                     <ul>
-                                                        <li>Professor Thiruma V. Arumugam, a distinguished researcher in
-                                                            the fields of physiology and pharmacology at La Trobe
-                                                            University, Australia, is pushing the boundaries of
-                                                            neuroscience and metabolism. In his upcoming lecture, he
-                                                            will discuss how his work on intermittent metabolic
-                                                            switching has enhanced our comprehension of its effect on
-                                                            brain health, paving the way for potential therapeutic
-                                                            interventions.</li>
-                                                        <li>His recent publication in Theranostics, titled
-                                                            "Time-restricted feeding modulates the DNA methylation
-                                                            landscape, attenuates hallmark neuropathology and cognitive
-                                                            impairment in a mouse model of vascular dementia," has
-                                                            presented novel insights into the therapeutic potential of
-                                                            intermittent metabolic switching, offering promising
-                                                            strategies for managing and potentially reversing cognitive
-                                                            impairment in dementia.</li>
-                                                        <li>Further expanding our understanding, Professor Arumugam's
-                                                            article in Cell Metabolism, "Hallmarks of Brain Aging:
-                                                            Adaptive and Pathological Modification by Metabolic States,"
-                                                            continues to revolutionize our perspective on the role of
-                                                            metabolism in brain aging.</li>
+                                                        <li>With over 60% of older adults in the EU classified as overweight, this lecture addresses physiological changes with aging, the impact of excess visceral and muscle fat, and cardiometabolic complications. He will discuss tailored therapies, including lifestyle changes, medications, and bariatric surgery, to help practitioners effectively manage obesity and improve the quality of life in older populations.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -3782,12 +3632,26 @@ and Metabolism
                                                     <p><span class="bold">Chairpersons : In Ju Kim</span> (Pusan National University, Korea), <br><span
                                                             class="bold">Sung Il Choi</span> (Kyung Hee University, Korea)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                    <p class="bold">Organizer : Sang-Moon Han (Seoul Medical Center, Korea)</p>
+                                                    <ul>
+                                                        <li>Bariatric and metabolic surgery is the most powerful procedure for resolving obese control. Medical condition associated with obesity is changed after bariatric and metabolic surgery. Especially, Cardiovascular disease, gastrointestinal motility and function, and cancer is significantly altered. Therefore, in this symposium, we will look at medical complex change after bariatric surgery.
+
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. The Impact of Bariatric Surgery on Cardiovascular Risk Factors and Outcomes: A Systematic Review. Cureus. 2022 Mar; 14(3): e23340
+<br />
+2. Alterations of digestive motility after bariatric surgery. J Visc Surg. 2022 Mar;159(1S):S28-S34
+<br />
+3. Impact of bariatric surgery on cancer risk reduction. Ann Transl Med. 2020 Mar; 8(Suppl 1): S13
+
+                                                        </li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -4427,31 +4291,16 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Jae Geun Kim (Incheon National
-                                                        University, Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)
+                                                    </p>
                                                     <ul>
-                                                        <li>Professor Tamas Horvath is Chair of the Department of
-                                                            Comparative Medicine at Yale University School of Medicine
-                                                            in the United States and one of the leading researchers in
-                                                            the field of study on the hypothalamic control of energy
-                                                            homeostasis. In particular, his research on the regulation
-                                                            of synaptic plasticity by AgRP neurons in hypothalamic
-                                                            neuronal circuitries is one of his most noteworthy
-                                                            accomplishments. In this session, Professor Horvath will
-                                                            introduce the role of hypothalamic AgRP neurons that can be
-                                                            applied to obesity treatment.</li>
-                                                        <li>
-                                                            <span class="font_inherit bold">• References</span><br />
-                                                            1. Hunger-promoting AgRP neurons trigger an
-                                                            astrocyte-mediated feed-forward autoactivation loop in mice.
-                                                            J Clin Invest. 2021 <br />
-                                                            2. AgRP neurons control compulsive exercise and survival in
-                                                            an activity-based anorexia model. Nature Metabolism. 2020.
+                                                        <li>Keynote Lecture 2 at ICOMES 2024 will be delivered by Jean-Pierre Després from the VITAM – Research Centre on Sustainable Health, Canada, focusing on the critical role of lifestyle factors in cardiometabolic health. Titled "Cardiometabolic Health: Importance of Lifestyle Vital Signs," this lecture will emphasize the significance of monitoring and improving lifestyle behaviors as vital signs to prevent and manage cardiometabolic diseases. Dr. Després, a renowned expert in the field, will share insights into how sustainable health practices can profoundly impact the prevention of conditions such as heart disease, diabetes, and obesity. Attendees can expect to gain valuable knowledge on integrating lifestyle interventions into clinical practice to enhance overall health outcomes.
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -4794,39 +4643,24 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
-                                                        </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>Certain sodium–glucose cotransporter-2 inhibitors (SGLT-2is) and glucagon-like peptide-1 receptor agonists (GLP-1RAs) compounds have shown not only safety, but superiority in their effects on preventing major adverse cardiovascular endpoints. Despite these advances, a comprehensive understanding of the distinct cardiovascular benefits of GLP-1RA and SGLT-2i has yet to be established. In contrast to most previous reports, we analysed and report the absolute risk reduction (ARR), which allows us to draw conclusions with more clinical consequences (e.g., numbers needed to treat). Our study aims to bridge this knowledge gap by indirectly comparing the ARR for 3P-MACE, the primary endpoint in large cardiovascular outcome trials, and for its components, between these two classes of therapeutic agents. </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Ahmad E*, Lim S* (co-first author), Lamptey R, Webb DR, Davies MJ. Type 2 diabetes. Lancet 2022 Nov 19;400(10365):1803-1820
+<br />
+2. Neeland IJ, Lim S* (co-corresponding author), Tchernof A, Gastaldelli A, Rangaswami J, Ndumele CE, Powell-Wiley TM, Després JP* (co-corresponding author). The Metabolic Syndrome. Nat Rev Dis Primers. [accepted]
+<br />
+3. Kadowaki T, Isendahl J, Khalid U, Lee SY, Nishida T, Ogawa W, Tobe K, Yamauchi T, Lim S (corresponding author). Effect of once-weekly subcutaneous semaglutide in adults with overweight or obesity, with or without type 2 diabetes, in an East Asian population. Lancet Diabetes Endocrinol 2022 Mar;10(3):193
+<br />
+4. Lim S, Bae JH, Kwon HS, Nauck MA. COVID-19 and diabetes mellitus: from pathophysiology to clinical management. Nature Rev Endocrinol. 2021 Jan;17(1):11-30
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -4935,24 +4769,25 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)
+                                                    </p>
                                                     <ul>
-                                                        <li>Obesity is not only a serious disease in itself, but also a
-                                                            health risk factor that causes various diseases, so
-                                                            governmental plan and policy cooperation are needed. Korean
-                                                            government established and announced the first national
-                                                            obesity management comprehensive plan in 2018 to provide an
-                                                            opportunity to raise public awareness of the importance of
-                                                            obesity prevention and management and to monitor the
-                                                            pregress. In this lecture, I would like to introduce the
-                                                            past, present and future of Korea's national obesity
-                                                            strategy.</li>
+                                                        <li>Keynote Lecture 3 at ICOMES 2024 will be presented by Michael D. Jensen from the Mayo College of Medicine, USA, focusing on the intricacies of human adipose tissue metabolism and its alterations in obesity. Titled "Human Adipose Tissue Metabolism: What Happens with Obesity," this lecture will delve into the metabolic changes that occur within adipose tissue as obesity develops, highlighting the implications for overall health. Jensen, a leading authority in the field, will provide insights into how these metabolic shifts contribute to obesity-related complications, offering a deeper understanding of the mechanisms driving this global health issue. Attendees will gain valuable knowledge on the potential targets for therapeutic interventions aimed at mitigating the effects of obesity on adipose tissue function.
+                                                        </li>
+                                                            <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+1. Nielsen S, Jensen MD. Insulin regulation of regional lipolysis in upper-body obese and lean humans. JCI Insight. 2024 Apr 11;9(9):e175629
+<br />2. Zhang L, Vella A, Nair KS, Jensen MD. Characteristics of Normal Weight Insulin-Resistant Adults with Unfavorable Health Outcomes. Metab Syndr Relat Disord. 2024 Jan 16
+<br />3. Lytle KA, Chung JO, Bush NC, Triay JM, Jensen MD. Ceramide concentrations in liver, plasma, and very low-density lipoproteins of humans with severe obesity. Lipids. 2023 May;58(3):107-115
+<br />4. 4. Palmer AK, Jensen MD. Metabolic changes in aging humans: current evidence and therapeutic strategies. J Clin Invest. 2022 Aug 15;132(16):e158451
+<br />5. Espinosa De Ycaza AE, Søndergaard E, Morgan-Bathke M, Lytle K, Delivanis DA, Ramos P, Carranza Leon BG, Jensen MD. Adipose Tissue Inflammation Is Not Related to Adipose Insulin Resistance in Humans. Diabetes. 2022 Mar 1;71(3):381
+<br />6. Song Y, Jensen MD. Red blood cell triglycerides-a unique pool that incorporates plasma-free fatty acids and relates to metabolic health. J Lipid Res. 2021;62:100131
+</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -5129,12 +4964,23 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Plenary Lecture 4</p>
                                                     <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                    <p class="bold">Organizer : Jun Hwa Hong (Eulji University, Korea)</p>
+                                                    <ul>
+                                                        <li>Dr. Garvey from University of Alabama at Birmingham has achieved international recognition for his research in the metabolic, molecular, and genetic pathogenesis of insulin resistance, Type 2 Diabetes, and obesity. He has investigated the  beneficial effect of semaglutide and tirzepatide in clinical researches. In this session, he will introduce the Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease, based on a nutrient regulated hormone.
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+1. Two-year effect of semaglutide 2.4 mg on control of eating in adults with overweight/obesity: STEP 5. Obesity (Silver Spring). 2023 Mar;31(3):703-715
+<br />
+2. Effect of Weekly Subcutaneous Semaglutide vs Daily Liraglutide on Body Weight in Adults With Overweight or Obesity Without Diabetes: The STEP 8 Randomized Clinical Trial. JAMA. 2022 Jan 11;327(2):138-150
+
+                                                        </li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -5272,24 +5118,15 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 2</p>
                                                     <p><span class="bold">Chairperson : Hye Soon Park</span> (University of Ulsan, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)</p>
                                                     <ul>
-                                                        <li>Obesity is not only a serious disease in itself, but also a
-                                                            health risk factor that causes various diseases, so
-                                                            governmental plan and policy cooperation are needed. Korean
-                                                            government established and announced the first national
-                                                            obesity management comprehensive plan in 2018 to provide an
-                                                            opportunity to raise public awareness of the importance of
-                                                            obesity prevention and management and to monitor the
-                                                            pregress. In this lecture, I would like to introduce the
-                                                            past, present and future of Korea's national obesity
-                                                            strategy.</li>
+                                                        <li>Keynote Lecture 2 at ICOMES 2024 will be delivered by Jean-Pierre Després from the VITAM – Research Centre on Sustainable Health, Canada, focusing on the critical role of lifestyle factors in cardiometabolic health. Titled "Cardiometabolic Health: Importance of Lifestyle Vital Signs," this lecture will emphasize the significance of monitoring and improving lifestyle behaviors as vital signs to prevent and manage cardiometabolic diseases. Dr. Després, a renowned expert in the field, will share insights into how sustainable health practices can profoundly impact the prevention of conditions such as heart disease, diabetes, and obesity. Attendees can expect to gain valuable knowledge on integrating lifestyle interventions into clinical practice to enhance overall health outcomes.
+                                                        </li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -5626,39 +5463,24 @@ and Metabolism
                                                     <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
-                                                        </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>Certain sodium–glucose cotransporter-2 inhibitors (SGLT-2is) and glucagon-like peptide-1 receptor agonists (GLP-1RAs) compounds have shown not only safety, but superiority in their effects on preventing major adverse cardiovascular endpoints. Despite these advances, a comprehensive understanding of the distinct cardiovascular benefits of GLP-1RA and SGLT-2i has yet to be established. In contrast to most previous reports, we analysed and report the absolute risk reduction (ARR), which allows us to draw conclusions with more clinical consequences (e.g., numbers needed to treat). Our study aims to bridge this knowledge gap by indirectly comparing the ARR for 3P-MACE, the primary endpoint in large cardiovascular outcome trials, and for its components, between these two classes of therapeutic agents. </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Ahmad E*, Lim S* (co-first author), Lamptey R, Webb DR, Davies MJ. Type 2 diabetes. Lancet 2022 Nov 19;400(10365):1803-1820
+<br />
+2. Neeland IJ, Lim S* (co-corresponding author), Tchernof A, Gastaldelli A, Rangaswami J, Ndumele CE, Powell-Wiley TM, Després JP* (co-corresponding author). The Metabolic Syndrome. Nat Rev Dis Primers. [accepted]
+<br />
+3. Kadowaki T, Isendahl J, Khalid U, Lee SY, Nishida T, Ogawa W, Tobe K, Yamauchi T, Lim S (corresponding author). Effect of once-weekly subcutaneous semaglutide in adults with overweight or obesity, with or without type 2 diabetes, in an East Asian population. Lancet Diabetes Endocrinol 2022 Mar;10(3):193
+<br />
+4. Lim S, Bae JH, Kwon HS, Nauck MA. COVID-19 and diabetes mellitus: from pathophysiology to clinical management. Nature Rev Endocrinol. 2021 Jan;17(1):11-30
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -5767,24 +5589,25 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)
+                                                    </p>
                                                     <ul>
-                                                        <li>Obesity is not only a serious disease in itself, but also a
-                                                            health risk factor that causes various diseases, so
-                                                            governmental plan and policy cooperation are needed. Korean
-                                                            government established and announced the first national
-                                                            obesity management comprehensive plan in 2018 to provide an
-                                                            opportunity to raise public awareness of the importance of
-                                                            obesity prevention and management and to monitor the
-                                                            pregress. In this lecture, I would like to introduce the
-                                                            past, present and future of Korea's national obesity
-                                                            strategy.</li>
+                                                        <li>Keynote Lecture 3 at ICOMES 2024 will be presented by Michael D. Jensen from the Mayo College of Medicine, USA, focusing on the intricacies of human adipose tissue metabolism and its alterations in obesity. Titled "Human Adipose Tissue Metabolism: What Happens with Obesity," this lecture will delve into the metabolic changes that occur within adipose tissue as obesity develops, highlighting the implications for overall health. Jensen, a leading authority in the field, will provide insights into how these metabolic shifts contribute to obesity-related complications, offering a deeper understanding of the mechanisms driving this global health issue. Attendees will gain valuable knowledge on the potential targets for therapeutic interventions aimed at mitigating the effects of obesity on adipose tissue function.
+                                                        </li>
+                                                            <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+1. Nielsen S, Jensen MD. Insulin regulation of regional lipolysis in upper-body obese and lean humans. JCI Insight. 2024 Apr 11;9(9):e175629
+<br />2. Zhang L, Vella A, Nair KS, Jensen MD. Characteristics of Normal Weight Insulin-Resistant Adults with Unfavorable Health Outcomes. Metab Syndr Relat Disord. 2024 Jan 16
+<br />3. Lytle KA, Chung JO, Bush NC, Triay JM, Jensen MD. Ceramide concentrations in liver, plasma, and very low-density lipoproteins of humans with severe obesity. Lipids. 2023 May;58(3):107-115
+<br />4. 4. Palmer AK, Jensen MD. Metabolic changes in aging humans: current evidence and therapeutic strategies. J Clin Invest. 2022 Aug 15;132(16):e158451
+<br />5. Espinosa De Ycaza AE, Søndergaard E, Morgan-Bathke M, Lytle K, Delivanis DA, Ramos P, Carranza Leon BG, Jensen MD. Adipose Tissue Inflammation Is Not Related to Adipose Insulin Resistance in Humans. Diabetes. 2022 Mar 1;71(3):381
+<br />6. Song Y, Jensen MD. Red blood cell triglycerides-a unique pool that incorporates plasma-free fatty acids and relates to metabolic health. J Lipid Res. 2021;62:100131
+</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -5959,12 +5782,23 @@ and Metabolism
                                                     <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                    <p class="bold">Organizer : Jun Hwa Hong (Eulji University, Korea)</p>
+                                                    <ul>
+                                                        <li>Dr. Garvey from University of Alabama at Birmingham has achieved international recognition for his research in the metabolic, molecular, and genetic pathogenesis of insulin resistance, Type 2 Diabetes, and obesity. He has investigated the  beneficial effect of semaglutide and tirzepatide in clinical researches. In this session, he will introduce the Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease, based on a nutrient regulated hormone.
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+1. Two-year effect of semaglutide 2.4 mg on control of eating in adults with overweight/obesity: STEP 5. Obesity (Silver Spring). 2023 Mar;31(3):703-715
+<br />
+2. Effect of Weekly Subcutaneous Semaglutide vs Daily Liraglutide on Body Weight in Adults With Overweight or Obesity Without Diabetes: The STEP 8 Randomized Clinical Trial. JAMA. 2022 Jan 11;327(2):138-150
+
+                                                        </li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6107,26 +5941,11 @@ and Metabolism
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Jae Geun Kim (Incheon National
-                                                        University, Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)
+                                                    </p>
                                                     <ul>
-                                                        <li>Professor Tamas Horvath is Chair of the Department of
-                                                            Comparative Medicine at Yale University School of Medicine
-                                                            in the United States and one of the leading researchers in
-                                                            the field of study on the hypothalamic control of energy
-                                                            homeostasis. In particular, his research on the regulation
-                                                            of synaptic plasticity by AgRP neurons in hypothalamic
-                                                            neuronal circuitries is one of his most noteworthy
-                                                            accomplishments. In this session, Professor Horvath will
-                                                            introduce the role of hypothalamic AgRP neurons that can be
-                                                            applied to obesity treatment.</li>
-                                                        <li>
-                                                            <span class="font_inherit bold">• References</span><br />
-                                                            1. Hunger-promoting AgRP neurons trigger an
-                                                            astrocyte-mediated feed-forward autoactivation loop in mice.
-                                                            J Clin Invest. 2021 <br />
-                                                            2. AgRP neurons control compulsive exercise and survival in
-                                                            an activity-based anorexia model. Nature Metabolism. 2020.
+                                                        <li>Keynote Lecture 2 at ICOMES 2024 will be delivered by Jean-Pierre Després from the VITAM – Research Centre on Sustainable Health, Canada, focusing on the critical role of lifestyle factors in cardiometabolic health. Titled "Cardiometabolic Health: Importance of Lifestyle Vital Signs," this lecture will emphasize the significance of monitoring and improving lifestyle behaviors as vital signs to prevent and manage cardiometabolic diseases. Dr. Després, a renowned expert in the field, will share insights into how sustainable health practices can profoundly impact the prevention of conditions such as heart disease, diabetes, and obesity. Attendees can expect to gain valuable knowledge on integrating lifestyle interventions into clinical practice to enhance overall health outcomes.
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -6499,39 +6318,24 @@ and Metabolism
                                                     <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)</p>
                                                     <ul>
-                                                        <li>Matthias Blüher is Head of the Obesity Outpatient Clinic for
-                                                            Adults at the University of Leipzig Department of Medicine
-                                                            in Leipzig, Germany. He is Professor of Molecular
-                                                            Endocrinology, with board certifications in Internal
-                                                            Medicine, Endocrinology and Diabetology. From 2006 to 2012,
-                                                            Professor Blüher served as Head of the Clinical Research
-                                                            Group ‘Atherobesity,’ and since 2013, he has been Speaker of
-                                                            the Collaborative Research Center on obesity mechanisms.
-                                                        </li>
-                                                        <li>Professor Blüher has won several awards, including the
-                                                            Obesity Research Award of the German Society for the Study
-                                                            of Obesity, the Ferdinand-Bertram-Prize of the German
-                                                            Diabetes Association, and the Rising Star Lecture at the
-                                                            44th European Association for the Study of Diabetes (EASD)
-                                                            meeting. More recently, he received the Hans Christian
-                                                            Hagedorn Award from the German Diabetes Association in 2011
-                                                            and the Minkowski Award from the EASD in 2015.</li>
+                                                        <li>Certain sodium–glucose cotransporter-2 inhibitors (SGLT-2is) and glucagon-like peptide-1 receptor agonists (GLP-1RAs) compounds have shown not only safety, but superiority in their effects on preventing major adverse cardiovascular endpoints. Despite these advances, a comprehensive understanding of the distinct cardiovascular benefits of GLP-1RA and SGLT-2i has yet to be established. In contrast to most previous reports, we analysed and report the absolute risk reduction (ARR), which allows us to draw conclusions with more clinical consequences (e.g., numbers needed to treat). Our study aims to bridge this knowledge gap by indirectly comparing the ARR for 3P-MACE, the primary endpoint in large cardiovascular outcome trials, and for its components, between these two classes of therapeutic agents. </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
-                                                            1. Blüher M, Aras M, Aronne LJ, Batterham RL, Giorgino F, Ji
-                                                            L, Pietiläinen KH, Schnell O, Tonchevska E, Wilding JPH. New
-                                                            insights into the treatment of obesity. Diabetes Obes Metab.
-                                                            2023 Apr 13. doi: 10.1111/dom.15077.<br />
-                                                            2. Blüher M. Metabolically Healthy Obesity. Endocr Rev. 2020
-                                                            May 1;41(3):bnaa004.
+                                                            1. Ahmad E*, Lim S* (co-first author), Lamptey R, Webb DR, Davies MJ. Type 2 diabetes. Lancet 2022 Nov 19;400(10365):1803-1820
+<br />
+2. Neeland IJ, Lim S* (co-corresponding author), Tchernof A, Gastaldelli A, Rangaswami J, Ndumele CE, Powell-Wiley TM, Després JP* (co-corresponding author). The Metabolic Syndrome. Nat Rev Dis Primers. [accepted]
+<br />
+3. Kadowaki T, Isendahl J, Khalid U, Lee SY, Nishida T, Ogawa W, Tobe K, Yamauchi T, Lim S (corresponding author). Effect of once-weekly subcutaneous semaglutide in adults with overweight or obesity, with or without type 2 diabetes, in an East Asian population. Lancet Diabetes Endocrinol 2022 Mar;10(3):193
+<br />
+4. Lim S, Bae JH, Kwon HS, Nauck MA. COVID-19 and diabetes mellitus: from pathophysiology to clinical management. Nature Rev Endocrinol. 2021 Jan;17(1):11-30
+
                                                         </li>
                                                     </ul>
                                                 </td>
@@ -6640,24 +6444,25 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Keynote Lecture 3</p>
                                                     <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea)</p>
+                                                    <p class="bold">Organizer : Soo Lim (Seoul National University, Korea)
+                                                    </p>
                                                     <ul>
-                                                        <li>Obesity is not only a serious disease in itself, but also a
-                                                            health risk factor that causes various diseases, so
-                                                            governmental plan and policy cooperation are needed. Korean
-                                                            government established and announced the first national
-                                                            obesity management comprehensive plan in 2018 to provide an
-                                                            opportunity to raise public awareness of the importance of
-                                                            obesity prevention and management and to monitor the
-                                                            pregress. In this lecture, I would like to introduce the
-                                                            past, present and future of Korea's national obesity
-                                                            strategy.</li>
+                                                        <li>Keynote Lecture 3 at ICOMES 2024 will be presented by Michael D. Jensen from the Mayo College of Medicine, USA, focusing on the intricacies of human adipose tissue metabolism and its alterations in obesity. Titled "Human Adipose Tissue Metabolism: What Happens with Obesity," this lecture will delve into the metabolic changes that occur within adipose tissue as obesity develops, highlighting the implications for overall health. Jensen, a leading authority in the field, will provide insights into how these metabolic shifts contribute to obesity-related complications, offering a deeper understanding of the mechanisms driving this global health issue. Attendees will gain valuable knowledge on the potential targets for therapeutic interventions aimed at mitigating the effects of obesity on adipose tissue function.
+                                                        </li>
+                                                            <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+1. Nielsen S, Jensen MD. Insulin regulation of regional lipolysis in upper-body obese and lean humans. JCI Insight. 2024 Apr 11;9(9):e175629
+<br />2. Zhang L, Vella A, Nair KS, Jensen MD. Characteristics of Normal Weight Insulin-Resistant Adults with Unfavorable Health Outcomes. Metab Syndr Relat Disord. 2024 Jan 16
+<br />3. Lytle KA, Chung JO, Bush NC, Triay JM, Jensen MD. Ceramide concentrations in liver, plasma, and very low-density lipoproteins of humans with severe obesity. Lipids. 2023 May;58(3):107-115
+<br />4. 4. Palmer AK, Jensen MD. Metabolic changes in aging humans: current evidence and therapeutic strategies. J Clin Invest. 2022 Aug 15;132(16):e158451
+<br />5. Espinosa De Ycaza AE, Søndergaard E, Morgan-Bathke M, Lytle K, Delivanis DA, Ramos P, Carranza Leon BG, Jensen MD. Adipose Tissue Inflammation Is Not Related to Adipose Insulin Resistance in Humans. Diabetes. 2022 Mar 1;71(3):381
+<br />6. Song Y, Jensen MD. Red blood cell triglycerides-a unique pool that incorporates plasma-free fatty acids and relates to metabolic health. J Lipid Res. 2021;62:100131
+</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -6830,12 +6635,23 @@ and Metabolism
                                                     <p><span class="bold">Chairperson : Kyu Rae Lee</span> (Gachon University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Moon-Kyu Lee</span> (Eulji University, Korea)</p> -->
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                    <p class="bold">Organizer : Jun Hwa Hong (Eulji University, Korea)</p>
+                                                    <ul>
+                                                        <li>Dr. Garvey from University of Alabama at Birmingham has achieved international recognition for his research in the metabolic, molecular, and genetic pathogenesis of insulin resistance, Type 2 Diabetes, and obesity. He has investigated the  beneficial effect of semaglutide and tirzepatide in clinical researches. In this session, he will introduce the Current and Future Second-Generation Medications for Adiposity-Based Chronic Disease, based on a nutrient regulated hormone.
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+1. Two-year effect of semaglutide 2.4 mg on control of eating in adults with overweight/obesity: STEP 5. Obesity (Silver Spring). 2023 Mar;31(3):703-715
+<br />
+2. Effect of Weekly Subcutaneous Semaglutide vs Daily Liraglutide on Body Weight in Adults With Overweight or Obesity Without Diabetes: The STEP 8 Randomized Clinical Trial. JAMA. 2022 Jan 11;327(2):138-150
+
+                                                        </li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -7123,12 +6939,27 @@ and Metabolism
                                                     <p><span class="bold">Chairpersons : Jong-Hee Kim</span> (Hanyang University, Korea)
                                                     , <br> <span class="bold">Sewon Lee</span> (Incheon National University, Korea)
                                                 </p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    will be updated.
+                                                    <p class="bold">Organizer : Sewon Lee (Incheon National University, Korea), Minchul Lee (CHA University, Korea)</p>
+                                                    <ul>
+                                                        <li>In this session, we will cover various aspects of the effects of exercise on cardiovascular and metabolic functions, as well as prevention and management strategies, focusing on the latest research results and clinical cases. The first speaker, Professor Oh Sung Kwon, discussed the impact of progressive dynamic resistance training on skeletal muscle and vascular function in older adults, the second speaker, Professor Jaehoon Seol, discussed the effect of physical activity on sleep in middle-aged and older individuals, and finally, Dr. Min-Hwa Suk will give a lecture on movement function improvement exercise algorithm for obese individuals.
+
+                                                        </li>
+                                                        <li>
+                                                            <span class="font_inherit bold">• References</span><br />
+                                                            1. Aging and Endothelium-mediated Vascular Dysfunction: The Role of the NADPH Oxidases
+
+<br />
+2. Bidirectional associations between physical activity and sleep in older adults: a multilevel analysis using polysomnography
+<br />
+3. The association between motor capacity and motor performance in school-aged children with cerebral palsy: An observational study
+
+                                                        </li>
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>

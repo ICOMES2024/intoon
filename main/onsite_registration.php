@@ -337,7 +337,7 @@
                                         <select id="occupation" name="occupation" class="required">
                                             <option value="" selected hidden>Choose</option>
                                             <?php
-                                            $occupation_arr = array("Medical", "Food & Nutrition", "Exercise","Sponsor","Press","Others");
+                                            $occupation_arr = array( "Medical", "Food & Nutrition", "Exercise","Sponsor","Press","Others");
 
                                             foreach($occupation_arr as $a_arr) {
                                                 $selected = $prev["occupation_type"] === $a_arr ? "selected" : "";
