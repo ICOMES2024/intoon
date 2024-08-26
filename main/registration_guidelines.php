@@ -180,8 +180,8 @@ $price = get_data($sql_price);
 									<td class="early_reg_th font_20">USD 180<br>KRW 180,000</td>
 									<td class="pre_reg_th font_20">USD 160<br>KRW 180,000</td>
 									<td class="pre_reg_th font_20">USD 210<br>KRW 210,000</td>
-									<td class="font_20">USD 200<br>KRW 220,000</td>
-									<td class="font_20">USD 250<br>KRW 250,000</td>
+									<td class="font_20 bold">USD 200<br>KRW 220,000</td>
+									<td class="font_20 bold">USD 250<br>KRW 250,000</td>
 								</tr>
 								<tr class="text_center">
 									<td class="font_19 bold">
@@ -196,8 +196,8 @@ $price = get_data($sql_price);
 									<td class="early_reg_th font_20">USD 115<br>KRW 115,000</td>
 									<td class="pre_reg_th font_20">USD 85<br>KRW 105,000</td>
 									<td class="pre_reg_th font_20">USD 135<br>KRW 135,000</td>
-									<td class="font_20">USD 120<br>KRW 140,000</td>
-									<td class="font_20">USD 170<br>KRW 170,000</td>
+									<td class="font_20 bold">USD 120<br>KRW 140,000</td>
+									<td class="font_20 bold">USD 170<br>KRW 170,000</td>
 								</tr>
 								<tr class="text_center">
 									<td class="font_19 bold">Student<!--, Surgeon (Military),<br>Public Health Doctor--></td>

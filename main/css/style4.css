@@ -20,7 +20,7 @@
 
 /* 220323 HUBDNC LJH2 수정 */
 section.container.overview {padding-bottom: 200px; /*326px;*/}
-.detail_table th, .detail_table td, .overview td {padding: 12px;/* 12px 20px;*/ /*20px 40px;*/ font-size: 18px; /*17px;*/}
+.detail_table th, .detail_table td, .overview td {padding: 8px;/* 12px 20px;*/ /*20px 40px;*/ font-size: 18px; /*17px;*/}
 .detail_table th {background-color: #F4F4F4; font-weight: bold;}
 .detail_table td b {font-weight: 900; display: block; color:#000;}
 .overview .sub_banner:nth-of-type(3) {margin: 158px 0 100px;}
@@ -2580,7 +2580,7 @@ section.coming img {width: 100%;}
 .early_reg_th{background-color: #FFF !important; color: #9150A4 !important;}
 .early_reg_td{background-color: #9150A4 !important; color: #FFF !important; font-size: 16px;}
 
-.pre_reg_th{background-color: #FFF !important; color: #9F148D !important; font-size: 21px;font-weight: 700 !important;}
+.pre_reg_th{background-color: #FFF !important; color: #9F148D !important; font-size: 21px;/*font-weight: 700 !important;*/}
 .pre_reg_td{background-color: #9F148D !important; color: #FFF !important; font-size: 16px;}
 
 .early_member{background-color: #EDE5F1 !important;}
@@ -2728,7 +2728,7 @@ section.coming img {width: 100%;}
 }
 
 .regi_key_dates > .key_date:nth-child(2){
-	background-image: url("https://image.webeon.net/icomes2024/logo/2024_regi_keydate-2.png");
+	background-image: url("https://image.webeon.net/icomes2024/logo/2024_regi_keydate-2-1.png");
 }
 
 .regi_key_dates > .key_date > div{
@@ -2737,7 +2737,7 @@ section.coming img {width: 100%;}
 	justify-content: flex-start;
 	gap: 23px;
     margin-top: -5px;
-    padding-left: 66px;
+    padding-left: 40px;
 }
 
 .regi_key_dates > .key_date > div *{
