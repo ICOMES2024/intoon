@@ -48,6 +48,19 @@ if (empty($_SESSION["USER"])) {
 
 	$boothDBList = get_data($sql);
 
+	$sql2 = "SELECT 
+				SUM(IF(l.idx IS NULL, 0, 1)) AS stamp_cnt
+			FROM e_booth AS b
+			LEFT JOIN (
+				SELECT idx, booth_idx FROM e_booth_log WHERE member_idx = 1
+			)AS l
+			ON b.idx = l.booth_idx
+			WHERE b.is_deleted = 'N' AND b.grade = 1
+			GROUP BY b.grade
+	";
+
+	$poster_count = get_data($sql2);
+
 	$myStampCnt = 0;
 	$boothList = [];
 
@@ -253,6 +266,8 @@ if (empty($_SESSION["USER"])) {
 	const sliver = document.querySelector(".Silver");
 	const bronze = document.querySelector(".Bronze");
 
+	const poster = '<?php echo isset($poster_count['stamp_cnt']) ? $poster_count['stamp_cnt'] : 0; ?>'
+
 	const luckyCountTag = document.querySelector(".lunck_count");
 
 	const modalBackground = document.querySelector('.modal_background');
@@ -264,6 +279,7 @@ if (empty($_SESSION["USER"])) {
 	}
 
 	function getLuckyNum(){
+
 		let luckyCount = 0;
 		//필수 스탬프 숫자
 		const requireNum = 11;
@@ -284,11 +300,19 @@ if (empty($_SESSION["USER"])) {
 		//선택 스탬프 숫자보다 많이 태깅한 경우
 		if(checkSilverNum >= silverNum){
 			luckyCount += 0;
-		}
-		//선택 스탬프 숫자보다 적게 태깅한 경우
+		}//선택 스탬프 숫자보다 적게 태깅한 경우
 		else if(checkSilverNum < silverNum){
 			luckyCount += silverNum - checkSilverNum;
 		}
+
+		let posterNum = 1;
+		if(Number(poster) == 1){
+			posterNum = 0;
+		}else{
+			posterNum = 1;
+		}
+		
+		luckyCount += posterNum;
 
 		luckyCountTag.innerText = luckyCount;
 	}
