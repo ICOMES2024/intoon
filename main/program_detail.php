@@ -202,10 +202,11 @@ echo '<script type="text/javascript">
                                                                     <td>17:20-18:00</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                    <p class="bold">Yong Hee Hong</p>(Soonchunhyang University, Korea),<br/>
-                                                                    <p class="bold">Hwan Beom Lee</p>(Kim & Chang, Korea),<br/>
-                                                                    <p class="bold">Chung-heon Lee</p>(KBS, Korea)<br/>
-                                                                    <p class="bold">Hyun-Young Shin</p>(The Catholic University of Korea, Korea)
+                                                                        <p class="bold">Hyun-Young Shin</p>(The Catholic University of Korea, Korea)<br/>
+                                                                        <p class="bold">Chung-heon Lee</p>(KBS, Korea)<br/>
+                                                                        <p class="bold">Hwan Beom Lee</p>(Kim & Chang, Korea),<br/>
+                                                                        <p class="bold">Ji-woong Choi</p>(Ministry of Health and Welfare, Korea),<br/>
+                                                                        <p class="bold">Yong Hee Hong</p>(Soonchunhyang University, Korea)
                                                                     
                                                                     </td>
                                                                 </tr>
@@ -1402,10 +1403,10 @@ and Metabolism
                                                                 <tr>
                                                                     <td>14:00-14:25</td>
                                                                     <td class="bold">
-                                                                    Obesity Related Health Disparities - A Specific Case of Low- and Middle-Income Countries
+                                                                    "Turning the Tide" – A Swedish Primary Care-Based Multidisciplinary Center for Primary Obesity Prevention
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Monika Chaudhary</p>(IIHMR University, India)
+                                                                        <p class="bold">Peter Bergsten</p>(Uppsala University, Sweden)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -3565,46 +3566,56 @@ and Metabolism
                                                                 <tr>
                                                                     <td>12:50-13:00</td>
                                                                     <td class="bold">
+                                                                    Relationship Between Weight-Related Self-Stigma and Eating Disorders in University Students: The Mediating Role of Psychological Distress and BMI
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Wan Ying Gan</p>(Universiti Putra Malaysia, Malaysia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:00-13:10</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Association of Lifestyle Factors with All-cause and Cause-specific Mortality among Individuals with Obesity: A Nationwide Retrospective Study in Korea
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Wonsock Kim</p>(Eulji University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:10-13:20</td>
                                                                     <td class="bold">
+                                                                    Transitioning to Sustainable Dietary Practices in Malaysia: Current Insights and Future Strategies
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Mahla Chambari</p>(UCSI University, Malaysia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:20-13:30</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Role of Bariatric Surgery in Patients with Advanced Heart Failure: Safety, Efficacy and Clinical Implications
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Darae Kim</p>(Sungkyunkwan University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:30-13:40</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                        Once-Weekly Semaglutide 2.4 mg for Weight Management in an Asian Population with Obesity Diagnosed as BMI 25 kg/m2, According to Local Guidelines: Results From The STEP 11 Trial
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Soo Lim</p>(Seoul National University)
                                                                        
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:40-13:50</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Income Status and Incident Cardiovascular Disease after Bariatric Surgery in Korea: A Population-based Cohort Study
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Sinyoung Cho</p>(Seoul National University, Korea)
                                                                        
                                                                     </td>
                                                                 </tr>
@@ -3906,49 +3917,53 @@ and Metabolism
                                                             <tbody>
                                                                 <tr>
                                                                     <td>12:50-13:00</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Unravelling The Impact of Obesity and Oxidative Stress on Reproductive Health of Infertile Women
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Saima Amjad</p>(King Georges Medical University, India)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:00-13:10</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Beyond the Scale: The Effect of Trim and Triumph (TNT) Challenge on Metabolic Parameters in Overweight and Obese Office Workers.</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Muhamad Hishamudin Mohmad Hasim</p>(University of Nottingham Malaysia, Malaysia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:10-13:20</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">The Formation of Reward Memory through a Neuropeptide Y Spotlight in Nucleus Accumbens</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Yu-Been Kim</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:20-13:30</td>
                                                                     <td class="bold">
+                                                                    Poor Sleep Quality and Gestational Weight Gain across Trimesters
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Ee Yin Kok</p>(UCSI University, Malaysia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:30-13:40</td>
                                                                     <td class="bold">
+                                                                    Different Individual Glycemic Response to Meal Composition and Type in Korean adults
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jehyun Jung</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td>13:40-13:50</td>
                                                                     <td class="bold"></td>
                                                                     <td class="text_r">
                                                                         <p class="bold"></p>
                                                                        
                                                                     </td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -4124,37 +4139,54 @@ and Metabolism
                                                             <tbody>
                                                                 <tr>
                                                                     <td>12:50-12:57</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    The Potential Role of Exercise in Osteocalcin-elicited Memory Improvement in HFHSD-Induced Obese Mice
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">YeaHyun Leem</p>(Ewha Womans University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>12:57-13:04</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>12:58-13:05</td>
+                                                                    <td class="bold">
+                                                                    Associated Factors for Metabolically Unhealthy Obesity and Its Relation to Food Insecurity in Korean Adults with Obesity
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jimin Lee</p>(Eulji University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:04-13:11</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>13:06-13:13</td>
+                                                                    <td class="bold">
+                                                                    Modelling Outcomes of Tirzepatide Versus Lifestyle Modification for Overweight and Obesity
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">HyoJin Lim</p>(Eli Lilly and Company, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:11-13:18</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>13:14-13:21</td>
+                                                                    <td class="bold">
+                                                                    Maternal Biochemical Indicators and Their Correlation with Foetal Birth Weight, India.
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Priyosmita Das</p>(PhD Research Scholar, India)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:18-13:25</td>
-                                                                    <td class="bold"></td>
+                                                                    <td>13:22-13:29</td>
+                                                                    <td class="bold">
+                                                                    Association between Muscular and Cardiorespiratory Fitness with Body Composition, Blood Pressure, and Leptin in Children and Adolescents with Obesity
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jeongeun Yun</p>(Kyung Hee University. Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>13:30-13:37</td>
+                                                                    <td class="bold">Comparison of Time Restricted Feeding and Continuous Energy Restriction on Body Composition and Multiple Metabolic Parameters in Obese Indian Adults</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Payal Garg</p>(University of Delhi, Inida)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6248,7 +6280,7 @@ and Metabolism
                                                 <td>11:50-12:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 7</p>
-                                                    <p><span class="bold">Chairperson : Chang Beom Lee</span> (Hanyang University, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Hong-Kyu Kim</span> (University of Ulsan, Korea)</p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
                                                 </td>
@@ -6823,10 +6855,10 @@ and Metabolism
                                                                 <tr>
                                                                     <td>11:50-12:40</td>
                                                                     <td class="bold">
-                                                                    
+                                                                    Why is Shingles Vaccination Recommended for Patients with Metabolic Disease?
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Sunghee Park</p>(Soonchunhyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6874,44 +6906,50 @@ and Metabolism
                                                             <tbody>
                                                                 <tr>
                                                                     <td>12:40-12:50</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Control of Feeding Behavior and Body Weight by Hypothalamic Cereblon (CRBN)
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Soojeong Kim</p>(DGIST, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>12:50-13:00</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Adenosylhomocysteinase-like 1 Regulates Nutrient-induced Insulin Sensitivity by Interacting with IP3Rs in Brown Adipose Tissue
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Soo Kyung Kang</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:00-13:10</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Chrononutrition Behaviours and Its Implications to Maternal gestational Weight Gain</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Satvinder Kaur Nachatar Singh</p>(UCSI University, Malaysia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:10-13:20</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Leptin, Adiponectin, and Insulin Resistance in Relation to Hepatic Steatosis in Pediatric Obesity</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Hyeji An</p>(Hallym University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:20-13:30</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Effect of Semaglutide on Kidney Outcomes in People with Overweight or Obesity and Established Cardiovascular Disease in The SELECT Trial
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Bumjo Oh</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:30-13:40</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Impacts of A Novel Peptide, LEAP-2, Administered Centrally on Different Models of Food Intake in Conscious Rats: The Gut-liver-brain Interactions with Acyl Ghrelin</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">HongYuan Chen</p>(Chang Gung University School of Medicine, Taiwan)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -7127,46 +7165,52 @@ and Metabolism
                                                             <tbody>
                                                                 <tr>
                                                                     <td>12:40-12:50</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Diet Quality and Obesity Indicators of Malaysian Young Female Adults</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Janice Ee Fang Tay</p>(UCSI University, Malaysia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>12:50-13:00</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">Effects of 8 Weeks of Kinect-based Mixed Reality Exercise and Deep-sea Water Consumption on Metabolic Syndrome: A Preliminary Study</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Hyejung Shin</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:00-13:10</td>
                                                                     <td class="bold">
+                                                                    Diabetes Mellitus as a Predictor of Severe Hospitalization and Death in Patients with Cardiovascular Diseases: Evidence from the Indonesian National Health Insurance Claim Database
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Fathimah Sulistyowati Sigit</p>(Universitas Indonesia, Indonesia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:10-13:20</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Nutritional Quality of Canteen Menus and Knowledge, Attitude, and Practice of School Canteen Managers towards DepEd Order No. 13, s. 2017 in Public Elementary Schools in Los Banos, Laguna, Philippines
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">D Rafaelle Marie Biola</p>(University of the Philippines Los Banos, Philippines)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:20-13:30</td>
                                                                     <td class="bold">
+                                                                    Mediating Effect of Insulin Resistance and Physical Activity on the Association between Body Mass Index and Metabolic Syndrome in Korean Children
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Seamon Kang</p>(Sungkyunkwan University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>13:30-13:40</td>
-                                                                    <td class="bold"></td>
+                                                                    <td class="bold">
+                                                                    Trends and Implications of Metabolic Syndrome in Korea, 2007-2022: A Nationwide Study
+                                                                    </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Yaelim Kim</p>(Kyung Hee University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -7291,52 +7335,55 @@ and Metabolism
                                                                 <tr>
                                                                     <td>12:40-12:47</td>
                                                                     <td class="bold">
-                                                                      
+                                                                    T-cell Receptor Repertoire Profiles in Peripheral Blood and Adipose Tissue of Patients with Severe Obesity with and without Type 2 Diabetes Mellitus
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Dongwon IM</p>(H+ Yangji Hospital, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>12:47-12:54</td>
+                                                                    <td>12:48-12:55</td>
                                                                     <td class="bold">
+                                                                    Effectiveness of GLP1-RA as A Therapy for NAFLD in Type 2 Diabetes: A Systematic Review
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Jessy Hardjo</p>(RSUD PLOSO, Indonesia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>12:54-13:01</td>
+                                                                    <td>12:56-13:03</td>
                                                                     <td class="bold">
+                                                                    Regulation of Ferroptosis in Obesity: Muscle Type-Specific Effects of Dietary Restriction and Exercise
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Fujue Ji</p>(Hanyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:01-13:08</td>
+                                                                    <td>13:04-13:11</td>
                                                                     <td class="bold">
+                                                                    Exploring Pediatric Health: Unraveling Obesity Prevalence and Activity Patterns in East Asia
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Minsoo Shin</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:08-13:15</td>
+                                                                    <td>13:12-13:19</td>
                                                                     <td class="bold">
-                                                                        
+                                                                    Relationship between Obstructive Sleep Apnea and Cardiovascular Health in Middle-aged Korean Men and Women: A Nationwide Study
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Seo Young Kang</p>(Eulji University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:15-13:22</td>
+                                                                    <td>13:20-13:27</td>
                                                                     <td class="bold">
-                                                                        
+                                                                    Long-term Weight Loss in the SELECT Trial: Semaglutide 2.4 mg vs Placebo over 208 Weeks in a Global Population of 17,604 Participants 
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold"></p>
+                                                                        <p class="bold">Hae-Jin Ko</p>(Kyungpook National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
