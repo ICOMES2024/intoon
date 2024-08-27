@@ -1,7 +1,7 @@
 <?php include_once('./include/head.php'); ?>
 <?php include_once('./include/app_header.php'); ?>
 
-<script src="./js/script/client/app_program_detail.js?v=0.11"></script>
+<script src="./js/script/client/app_program_detail.js?v=0.13"></script>
 <style>
     /*230830 안재현 로딩화면 추가 */
     .loading_list{text-align: center; padding:30%; border-bottom:none !important;}
@@ -136,7 +136,7 @@ echo '<script type="text/javascript">
 
     $select_category_sql = " SELECT idx, title FROM program_category WHERE idx!=18 ORDER BY sort_num ASC";
     $category_list = get_data($select_category_sql);
-    $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'. '21'];
+    $abstract_category_list= ['5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20', '21'];
 
     $select_program_query = "
                             SELECT @rownum := @rownum+1 AS rownum, P.*

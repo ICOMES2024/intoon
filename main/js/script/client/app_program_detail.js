@@ -254,11 +254,13 @@ function createHTMLList(program_list, active){
         }
 
         if(abstract_category_list.includes(pl.program_category_idx)){
-            if(pl.path==null){
+            if(pl.path == ""){
                 pl.path = 'javascript:void(0)';
+                abstract_html += '';
+            }else{
+                //[240424] sujeong / 임시 주석 / 초록보기 버튼 숨기기
+                abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
             }
-            //[240424] sujeong / 임시 주석 / 초록보기 버튼 숨기기
-            abstract_html += '<a href="'+pl.path+'" class="right_tag" onclick="openPDF(event)">Abstract</a>'
         }
 
         if(pl.chairpersons != ""){
