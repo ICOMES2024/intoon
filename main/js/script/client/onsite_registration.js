@@ -146,9 +146,9 @@ function calc_fee(){
     var country =  $("select[name=nation_no]").val();
 
     if(participation_type == "Participants" || participation_type =="Sponsor"){
-        if(participation_type == "Sponsor"){
-            category="Others";
-        }
+        // if(participation_type == "Sponsor"){
+        //     category="Others";
+        // }
 
         var ksso_member_type = $("input[name=ksso_member_type]").val();
         var ksso_member_status = 0;

@@ -18,7 +18,7 @@
 	<div class="inner">
 		<div class="contents_box">
 			<div class="app_contents_wrap type3">
-				<img class="guide_img" src="https://image.webeon.net/icomes2024/app/2024_app_pop_stamp_tour_event-4.png"/>
+				<img class="guide_img" src="https://image.webeon.net/icomes2024/app/2024_app_pop_stamp_tour_event-5.jpg"/>
 			</div> 
 		</div>
 	</div>
