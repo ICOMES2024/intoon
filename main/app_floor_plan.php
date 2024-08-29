@@ -11,6 +11,13 @@
 			Floor Plan
 			<button type="button" class="app_title_prev" onclick="javascript:history.back();"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button>
 		</h2>
+		<div class="app_menu_box ">
+			<ul class="app_menu_tab langth_2">
+			<li class="on"><a href="./app_floor_plan.php">Floor Plan</a></li>
+			<li><a href="" class="get_ready_alert">Exhibition</a></li>
+			<!-- <li><a href="./app_sponsor_exhibition.php">Exhibition</a></li> -->
+			</ul>
+		</div>
 	</div>
 	<div class="inner">
 		<div class="contents_box">

@@ -13,10 +13,12 @@
 
 	<div class="app_title_box">
 		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-		<ul class="app_menu_tab langth_2">
-			<li><a href="./app_sponsor.php">Sponsorship</a></li>
+		<div class="app_menu_box ">
+			<ul class="app_menu_tab langth_2">
+			<li><a href="./app_floor_plan.php">Floor Plan</a></li>
 			<li class="on"><a href="./app_sponsor_exhibition.php">Exhibition</a></li>
-		</ul>
+			</ul>
+		</div>
 	</div>
     <!-- 앱 뷰 -->
 	<div class="inner">
@@ -26,6 +28,7 @@
 				<li><a href="javascript:;">5F</a></li>
 				<li><a href="javascript:;">6F</a></li>
 			</ul>
+			
 			<div class="app_contents_wrap type2">
 				<div class="floor floor_3 on">
 					<div class="floor_map">
@@ -269,12 +272,12 @@
 	
 </section>
 
-<div class="popup app_pop" style="display:block;">
+<!-- <div class="popup app_pop" style="display:block;">
     <div class="pop_bg"></div>
     <div class="pop_contents">
 		<img src="/main/img/app_pop_stamp_tour_event.png" alt="">
     </div>
-</div>
+</div> -->
 
 <script>
 	$(document).ready(function() {

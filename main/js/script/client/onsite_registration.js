@@ -358,10 +358,20 @@ function requiredCheck(){
     // Terms
     if(!$('#terms1').is(':checked')) {
         alert("Please check the Terms section.");
+        window.scrollTo({
+            top:0,
+            behavior : "smooth"
+        })
+        $('.terms1_label').css("color", "red");
+        $('.terms1_label').css("font-weight", "bold");
         return false;
     // Country
     } else if(!$('#nation_no > option:selected').val()) {
         alert("Please check the Country section.");
+        window.scrollTo({
+            top:100,
+            behavior : "smooth"
+        })
         return false;
     // Email
     } else if(!$("input[name=email]").val()) {

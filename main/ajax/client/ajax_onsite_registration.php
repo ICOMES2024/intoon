@@ -50,6 +50,9 @@ if($_POST["flag"] === "onsite") {
         case "Press":
             $attendance_type = 6;
             break;
+        case "정책 세션":
+            $attendance_type = 7;
+            break;
     }
 
     $occupation = $data["occupation"] ?? "";
@@ -119,10 +122,15 @@ if($_POST["flag"] === "onsite") {
 
     $member_idx = $insert_member;
 
+    $status = 5;
+    if($participation_type == '정책 세션'){
+        $status = 6;
+    }
+
     $insert_registration_query =	"
                                         INSERT request_registration
                                         SET
-                                            status = 5,
+                                            status = {$status},
                                             attendance_type = '{$attendance_type}',
                                             is_score = '{$is_score}',
                                             is_score1 = '{$is_score1}',
