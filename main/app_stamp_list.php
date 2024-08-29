@@ -52,7 +52,7 @@ if (empty($_SESSION["USER"])) {
 				SUM(IF(l.idx IS NULL, 0, 1)) AS stamp_cnt
 			FROM e_booth AS b
 			LEFT JOIN (
-				SELECT idx, booth_idx FROM e_booth_log WHERE member_idx = 1
+				SELECT idx, booth_idx FROM e_booth_log WHERE member_idx = {$loginNo}
 			)AS l
 			ON b.idx = l.booth_idx
 			WHERE b.is_deleted = 'N' AND b.grade = 1
@@ -60,6 +60,7 @@ if (empty($_SESSION["USER"])) {
 	";
 
 	$poster_count = get_data($sql2);
+
 
 	$myStampCnt = 0;
 	$boothList = [];
@@ -182,6 +183,7 @@ if (empty($_SESSION["USER"])) {
                 <ul class="stamp_list">
 					<?php
 						foreach($boothList as $k => $v){
+
 							$boothType = $k;
 							$boothInfo = gradeBoothInfo($boothType);
 							
@@ -266,7 +268,8 @@ if (empty($_SESSION["USER"])) {
 	const sliver = document.querySelector(".Silver");
 	const bronze = document.querySelector(".Bronze");
 
-	const poster = '<?php echo isset($poster_count['stamp_cnt']) ? $poster_count['stamp_cnt'] : 0; ?>'
+	const poster = '<?php echo isset($poster_count[0]['stamp_cnt']) ? $poster_count[0]['stamp_cnt'] : 3; ?>'
+	console.log(poster)
 
 	const luckyCountTag = document.querySelector(".lunck_count");
 

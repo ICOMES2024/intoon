@@ -83,9 +83,9 @@
 						</tr>
 						<tr>
 							<td>대한내과학회 분과전문의 자격갱신</td>
-							<td>최대 1평점<span class="purple_txt bold">(예정)</span></td>
-							<td>최대 1평점<span class="purple_txt bold">(예정)</span></td>
-							<td>최대 1평점<span class="purple_txt bold">(예정)</span></td>
+							<td>최대 1평점</td>
+							<td>최대 1평점</td>
+							<td>최대 1평점</td>
 						</tr>
 					</tbody>
 				</table>

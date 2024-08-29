@@ -76,7 +76,7 @@
 			</div>
 			<div class="term_label text_l">
 				<input type="checkbox" class="checkbox input required" data-name="terms 1" id="terms1" name="terms1" value="Y">
-				<label for="terms1">I agree to the collection <br class="mb_only"/>and use of my personal information. </label>
+				<label for="terms1" class="terms1_label">I agree to the collection <br class="mb_only"/>and use of my personal information. </label>
 			</div>	
 		</div>
 		<div class="section_div">
@@ -318,7 +318,7 @@
 									<select id="participation_type" name="participation_type" class="required" onChange="calc_fee()">
                                         <option value="" selected hidden>Choose</option>
                                         <?php
-                                        $participation_arr = array("Committee", "Speaker", "Chairperson", "Panel", "Participants", "Sponsor", "Press");
+                                        $participation_arr = array("Participants", "Committee", "Speaker", "Chairperson", "Panel", "Sponsor", "Press", "정책 세션");
                                         foreach($participation_arr as $a_arr) {
                                             $selected = $prev["attendance_type"] == $a_arr ? "selected" : "";
 

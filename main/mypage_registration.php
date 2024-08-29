@@ -9,7 +9,7 @@
 	$during_yn = sql_fetch($sql_during)['yn'];
 
     $currentDateTime = new DateTime(); // 현재 시간을 가져옴
-    $targetDateTime = new DateTime('2023-09-09 18:00:00');
+    $targetDateTime = new DateTime('2024-09-07 18:00:00');
 
 	// [22.04.25] 미로그인시 처리
 	if($user_idx <= 0) {
@@ -117,7 +117,7 @@
         ?>
 		<div class="rightT">
 			<!-- [240123] sujeong 증명서 학회팀 요청주석 -->
-			<!-- <button class="btn green_btn long mb20 certificate_btn" type="button">Certificate of Attendance</button> -->
+			<button class="btn green_btn long mb20 certificate_btn" type="button">Certificate of Attendance</button>
 		</div>
         <?php
         }
@@ -445,7 +445,10 @@
 							<td>
 								<p>If you have any questions, <br>please contact the secretariat<a style="width:fit-content" href="mailto:icomes@into-on.com">(icomes@into-on.com)</a></p>
 							</td>
-                            <?php }else{?>
+                            <?php }else if( $list["status"] == 6){?>
+								<td>-</td>
+								<td>-</td>
+							<?php }else {?>
 								<td>canceled</td>
 								<td>-</td>
 							<?php }?>

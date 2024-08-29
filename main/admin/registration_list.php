@@ -66,6 +66,7 @@
 												WHEN '4' THEN 'Participants'
 												WHEN '5' THEN 'Sponsor'
 												WHEN '6' THEN 'Press'
+												WHEN '7' THEN '정책 세션'
 												ELSE '-'
 											END
 										) AS attendance_type_text,
@@ -118,6 +119,8 @@
 												THEN '환불완료'
 											    WHEN rr.status = '5'
 												THEN '현장결제'
+												WHEN rr.status = '6'
+												THEN '정책현장등록'
 												ELSE '-'
 											END
 										) AS payment_status,
