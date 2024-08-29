@@ -276,7 +276,8 @@ function createHTMLList(program_list, active){
 
             //[240628] sujeong / 좌장 TBD 추가
         }else if(pl.chairpersons == ""){
-            chairpersons_html += '<p class="chairperson"><span class="bold">Chairperson: </span>TBD</p>'
+            //chairpersons_html += '<p class="chairperson"><span class="bold">Chairperson: </span>TBD</p>'
+            chairpersons_html += '';
         }
 
         if(pl.preview != ""){

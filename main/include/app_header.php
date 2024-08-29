@@ -35,7 +35,11 @@
 					</ul>
 				</li>
 				<li>
-					<a href="/main/app_floor_plan.php" class="">Floor Plan</a>
+					<a href="javascript:;" class="">Floor Plan</a>
+					<ul class="app_sub">
+						<li><a href="/main/app_floor_plan.php">Floor Plan</a></li>
+						<li><a href="" class="get_ready_alert">Exhibition</a></li>
+					</ul>
 				</li>
 				<li>
 					<a href="javascript:;">Program</a>
