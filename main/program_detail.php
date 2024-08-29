@@ -376,8 +376,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium-JKT (Clinical) : New Clinical Insights into the MASLD</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Kyoung Kon Kim</span> (Gachon University, Korea)
-                                                        , <br> <span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
+                                                        <span class="bold">Chairpersons : Kyoung Kon Kim</span> (Gachon University, Korea), <br> <span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -569,7 +568,7 @@ echo '<script type="text/javascript">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>18:10-18:40</td>
-                                                                    <td class="bold">Clinical Value of EPA (Lcosapentate Ethyl)</td>
+                                                                    <td class="bold">Clinical Value of EPA (Icosapentate Ethyl)</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jung Hwan Park</p>(Hanyang University, Korea)
                                                                     </td>
@@ -653,8 +652,7 @@ echo '<script type="text/javascript">
                                                 <td>15:00-16:10</td>
                                                 <td>
                                                     <p class="font_20 bold">Best Articles in JOMES<sapn class="bold purple_txt font_20"> (K)</sapn></p>
-                                                    <p><span class="bold">Chairpersons : You-Cheol Hwang</span> (Kyung Hee University, Korea)
-                                                    , <br/><span class="bold">Yong-Ho Lee</span> (Yonsei University, Korea)
+                                                    <p><span class="bold">Chairpersons : You-Cheol Hwang</span> (Kyung Hee University, Korea), <br/><span class="bold">Yong-Ho Lee</span> (Yonsei University, Korea)
                                                 </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -750,8 +748,7 @@ echo '<script type="text/javascript">
                                                 <td>16:20-17:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium KSSO-KSoLA-KDA <sapn class="bold purple_txt font_20">(K)</sapn></p>
-                                                    <p><span class="bold">Chairpersons : Soo Lim</span> (Seoul National University, Korea)
-                                                    , <br/><span class="bold">Woo Je Lee</span> (University of Ulsan, Korea)
+                                                    <p><span class="bold">Chairpersons : Soo Lim</span> (Seoul National University, Korea), <br/><span class="bold">Woo Je Lee</span> (University of Ulsan, Korea)
                                                 </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -1304,7 +1301,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="special_bg">
-                                                <td>13:00-14:00</td>
+                                                <td>13:00-13:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
@@ -1336,7 +1333,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:50</td>
+                                                                    <td>13:00-13:30</td>
                                                                     <td class="bold">
                                                                     Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
@@ -1346,7 +1343,7 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:50-14:00</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -1484,7 +1481,7 @@ and Metabolism
                                                 <td colspan="2" class="program_detail_td">
                                                     <p class="bold">Organizer : Yong Hee Hong (Soonchunhyang University, Korea)</p>
                                                     <ul>
-                                                        <li>Prof. Silva Arslanian is one of the global leaders in research on pediatric obesity and type 2 diabetes. She is a pediatric endocrinologist and a scientific director of the Center for Pediatric Research in Obesity and Metabolism at the University of Pittsburgh. She is the recipient of several prestigious awards, the latest being the 2023 American Diabetes Association Outstanding Achievement Award. In this keynote lecture, she will introduce new pharmacotherapeutic modalities for youth-onset type 2 diabetes, which has recently been on the rise globally as well as in Korea.</li>
+                                                        <li>Prof. Silva Arslanian is one of the global leaders in research on pediatric obesity and type 2 diabetes. She is a pediatric endocrinologist and a scientific director of the Center for Pediatric Research in Obesity and Metabolism at the University of Pittsburgh. She is the recipient of several prestigious awards, the latest being the 2023 American Diabetes Association Outstanding Achievement Award. In this plenary lecture, she will introduce new pharmacotherapeutic modalities for youth-onset type 2 diabetes, which has recently been on the rise globally as well as in Korea.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -1690,7 +1687,7 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>09:00-09:10</td>
+                                                                    <td>18:35-18:40</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -2326,7 +2323,7 @@ and Metabolism
                                                 <td colspan="2" class="program_detail_td">
                                                 <p class="bold">Organizer : Yong Hee Hong (Soonchunhyang University, Korea)</p>
                                                     <ul>
-                                                        <li>Prof. Silva Arslanian is one of the global leaders in research on pediatric obesity and type 2 diabetes. She is a pediatric endocrinologist and a scientific director of the Center for Pediatric Research in Obesity and Metabolism at the University of Pittsburgh. She is the recipient of several prestigious awards, the latest being the 2023 American Diabetes Association Outstanding Achievement Award. In this keynote lecture, she will introduce new pharmacotherapeutic modalities for youth-onset type 2 diabetes, which has recently been on the rise globally as well as in Korea.</li>
+                                                        <li>Prof. Silva Arslanian is one of the global leaders in research on pediatric obesity and type 2 diabetes. She is a pediatric endocrinologist and a scientific director of the Center for Pediatric Research in Obesity and Metabolism at the University of Pittsburgh. She is the recipient of several prestigious awards, the latest being the 2023 American Diabetes Association Outstanding Achievement Award. In this plenary lecture, she will introduce new pharmacotherapeutic modalities for youth-onset type 2 diabetes, which has recently been on the rise globally as well as in Korea.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -2392,8 +2389,7 @@ and Metabolism
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 10 : Obesity and Cancer</p>
-                                                    <p><span class="bold">Chairpersons : Hyuk-Sang Kwon</span> (The Catholic University of Korea, Korea)
-                                                    , <br><span class="bold">Elaine Rush</span> (Auckland University of Technology, New Zealand)
+                                                    <p><span class="bold">Chairpersons : Hyuk-Sang Kwon</span> (The Catholic University of Korea, Korea), <br><span class="bold">Elaine Rush</span> (Auckland University of Technology, New Zealand)
                                                     </p> 
 													<button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -2711,8 +2707,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Symposium 3 : Possibilities and Prospects of Digital Therapeutics for Metabolic Diseases</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Won-Young Lee</span>(Sungkyunkwan University, Korea)
-                                                        ,<br /><span class="bold">Jung Hwan Kim</span> (Eulji University, Korea)
+                                                        <span class="bold">Chairpersons : Won-Young Lee</span>(Sungkyunkwan University, Korea),<br /><span class="bold">Jung Hwan Kim</span> (Eulji University, Korea)
                                                     </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -3046,8 +3041,7 @@ and Metabolism
                                                 <td>14:00-15:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 7 : Lipid Remodeling and Adipocyte Biology in Metabolic Health and Disease</p>
-                                                    <p><span class="bold">Chairpersons : Yun-Hee Lee</span> (Seoul National University, Korea)
-                                                        , <br><span class="bold">Dae Ho Lee</span> (Gachon University, Korea)
+                                                    <p><span class="bold">Chairpersons : Yun-Hee Lee</span> (Seoul National University, Korea), <br><span class="bold">Dae Ho Lee</span> (Gachon University, Korea)
                                                     </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -3155,7 +3149,7 @@ and Metabolism
                                                 <td colspan="2" class="program_detail_td">
                                                 <p class="bold">Organizer : Yong Hee Hong (Soonchunhyang University, Korea)</p>
                                                     <ul>
-                                                        <li>Prof. Silva Arslanian is one of the global leaders in research on pediatric obesity and type 2 diabetes. She is a pediatric endocrinologist and a scientific director of the Center for Pediatric Research in Obesity and Metabolism at the University of Pittsburgh. She is the recipient of several prestigious awards, the latest being the 2023 American Diabetes Association Outstanding Achievement Award. In this keynote lecture, she will introduce new pharmacotherapeutic modalities for youth-onset type 2 diabetes, which has recently been on the rise globally as well as in Korea.</li>
+                                                        <li>Prof. Silva Arslanian is one of the global leaders in research on pediatric obesity and type 2 diabetes. She is a pediatric endocrinologist and a scientific director of the Center for Pediatric Research in Obesity and Metabolism at the University of Pittsburgh. She is the recipient of several prestigious awards, the latest being the 2023 American Diabetes Association Outstanding Achievement Award. In this plenary lecture, she will introduce new pharmacotherapeutic modalities for youth-onset type 2 diabetes, which has recently been on the rise globally as well as in Korea.</li>
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -3221,8 +3215,7 @@ and Metabolism
                                                 <td>16:30-18:00</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 11 : Perspectives in Digital Nutrition Care for Obesity </p>
-                                                     <p><span class="bold">Chairpersons : Jeong Hyun Lim</span> (Seoul National University, Korea)
-                                                   , <br><span class="bold">Yoonju Song</span> (The Catholic University of Korea, Korea) 
+                                                     <p><span class="bold">Chairpersons : Jeong Hyun Lim</span> (Seoul National University, Korea), <br><span class="bold">Yoonju Song</span> (The Catholic University of Korea, Korea) 
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -3386,8 +3379,7 @@ and Metabolism
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 4 : International Collaboration 1</p>
-                                                    <p><span class="bold">Chairpersons : Kun-Ho Yoon</span> (The Catholic University of Korea, Korea)
-                                                    , <br><span class="bold">Michele Mae Ann Yuen</span> (Queen Mary Hospital, Hong Kong, China)
+                                                    <p><span class="bold">Chairpersons : Kun-Ho Yoon</span> (The Catholic University of Korea, Korea), <br><span class="bold">Michele Mae Ann Yuen</span> (Queen Mary Hospital, Hong Kong, China)
                                                     </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -3542,8 +3534,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 1</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Yeong Sook Yoon</span> (Inje University, Korea)
-                                                        , <br><span class="bold">Yang-Im Hur</span> (CHA University, Korea)
+                                                        <span class="bold">Chairpersons : Yeong Sook Yoon</span> (Inje University, Korea), <br><span class="bold">Yang-Im Hur</span> (CHA University, Korea)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -3894,8 +3885,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 2</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Jung Hwan Park</span> (Hanyang University, Korea)
-                                                        , <br><span class="bold">Jun Hwa Hong</span> (Eulji university, Korea)
+                                                        <span class="bold">Chairpersons : Jung Hwan Park</span> (Hanyang University, Korea), <br><span class="bold">Jun Hwa Hong</span> (Eulji university, Korea)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -4750,7 +4740,7 @@ and Metabolism
                                                 <td colspan="2" class="program_detail_td">
                                                     <p class="bold">Organizer: Il-Young Kim (Gachon University School of Medicine, Korea)</p>
                                                     <ul>
-                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this keynote lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
+                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this plenary lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
                                                         </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
@@ -4885,9 +4875,7 @@ and Metabolism
                                                 <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 17 : Incretin Therapy from MARS, Bariatric Surgery from VENUS</p>
-                                                    <p><span class="bold">Chairpersons : Sung Rae Kim</span>
-                                                        (The Catholic University of Korea, Korea)
-                                                        , <br><span class="bold">Jae Hyun Kim</span> (Seoul National University, Korea)
+                                                    <p><span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Korea), <br><span class="bold">Jae Hyun Kim</span> (Seoul National University, Korea)
                                                     </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -5570,7 +5558,7 @@ and Metabolism
                                                 <td colspan="2" class="program_detail_td">
                                                 <p class="bold">Organizer: Il-Young Kim (Gachon University School of Medicine, Korea)</p>
                                                         <ul>
-                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this keynote lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
+                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this plenary lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
                                                         </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
@@ -6048,8 +6036,7 @@ and Metabolism
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 15 : Diet Quality and Weight Regulation</p>
-                                                    <p><span class="bold">Chairpersons : Doo-Man Kim</span> (Hallym University, Korea)
-                                                         , <br><span class="bold">Eun Mi Kim</span> (Sungkyunkwan University, Korea) 
+                                                    <p><span class="bold">Chairpersons : Doo-Man Kim</span> (Hallym University, Korea), <br><span class="bold">Eun Mi Kim</span> (Sungkyunkwan University, Korea) 
                                                     </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -6425,7 +6412,7 @@ and Metabolism
                                                 <td colspan="2" class="program_detail_td">
                                                 <p class="bold">Organizer: Il-Young Kim (Gachon University School of Medicine, Korea)</p>
                                                         <ul>
-                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this keynote lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
+                                                        <li>Prof. William Evans is widely respected as the world’s foremost authority in human muscle aging research. He was the first to describe the condition called sarcopenia, the age-related loss of muscle mass and strength. Muscle plays a central role in physiological metabolism beyond its role in physical function and various clinical conditions such as cancer, diabetes, insulin resistance, and obesity. Particularly in the context of weight management, muscle plays a key role in energy metabolism as loss of muscle mass with advancing age results in a substantial decrease in basal metabolic rate. In this plenary lecture, Prof. Evans will discuss the importance of muscle mass and metabolism on energy metabolism and functional capacity. Furthermore, Prof. Evans will introduce new methods for the evaluation of muscle mass that now enable demonstration of the importance of muscle mass and its association with poor functional status, risk of disability, hip fracture, and mortality.
                                                         </li>
                                                         <li>
                                                             <span class="font_inherit bold">• References</span><br />
@@ -6560,8 +6547,7 @@ and Metabolism
                                                 <td>15:20-16:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 19 : Expanding Horizons in Pediatric Obesity</p>
-                                                    <p><span class="bold">Chairpersons : Sochung Chung</span> (Konkuk University, Korea)
-                                                    , <br><span class="bold">Junga Lee</span> (Kyung Hee University, Korea)
+                                                    <p><span class="bold">Chairpersons : Sochung Chung</span> (Konkuk University, Korea), <br><span class="bold">Junga Lee</span> (Kyung Hee University, Korea)
                                                     </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -6754,8 +6740,7 @@ and Metabolism
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Symposium 16 : International Collaboration 2</p>
-                                                    <p><span class="bold">Chairpersons : Eun-Jung Rhee</span> (Sungkyunkwan University, Korea)
-                                                        , <br><span class="bold">Chang Hee Jung</span> (University of Ulsan, Korea)
+                                                    <p><span class="bold">Chairpersons : Eun-Jung Rhee</span> (Sungkyunkwan University, Korea), <br><span class="bold">Chang Hee Jung</span> (University of Ulsan, Korea)
                                                     </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -6777,7 +6762,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>09:20-09:45</td>
                                                                     <td class="bold">
-                                                                    A New Era in Obesity Management: Emerging Anti-Obesity Medications in Asian Populations
+                                                                    The New Wave of Anti-Obesity Drugs: Advances and Challenges
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Jang Won Son</p>(The Catholic University of Korea, Korea)
@@ -6974,8 +6959,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Symposium 20 : Exercise and Cardiometabolic Dysfunction
                                                     </p>
-                                                    <p><span class="bold">Chairpersons : Jong-Hee Kim</span> (Hanyang University, Korea)
-                                                    , <br> <span class="bold">Sewon Lee</span> (Incheon National University, Korea)
+                                                    <p><span class="bold">Chairpersons : Jong-Hee Kim</span> (Hanyang University, Korea), <br> <span class="bold">Sewon Lee</span> (Incheon National University, Korea)
                                                 </p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
@@ -7073,8 +7057,7 @@ and Metabolism
                                                 <td>09:20-10:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Sponsored Session 3 : Exploring the Potential CGM Use for Wellness Beyond Glycemic Control</p>
-                                                    <p><span class="bold">Chairpersons : Young Sung Suh</span> (Keimyung University, Korea)
-                                                    , <br><span class="bold">Kyoung Kon Kim</span> (Gachon University, Korea)
+                                                    <p><span class="bold">Chairpersons : Young Sung Suh</span> (Keimyung University, Korea), <br><span class="bold">Kyoung Kon Kim</span> (Gachon University, Korea)
                                                 </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
@@ -7142,8 +7125,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 4</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Oh Yoen Kim</span> (Dong-A University, Korea)
-                                                      , <br><span class="bold">Bo-Yeon Kim</span> (Soonchunhyang University, Korea)
+                                                        <span class="bold">Chairpersons : Oh Yoen Kim</span> (Dong-A University, Korea), <br><span class="bold">Bo-Yeon Kim</span> (Soonchunhyang University, Korea)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->

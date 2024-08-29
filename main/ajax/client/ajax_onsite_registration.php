@@ -51,7 +51,7 @@ if($_POST["flag"] === "onsite") {
             $attendance_type = 6;
             break;
         case "정책 세션":
-            $attendance_type = 7;
+            $attendance_type = 8;
             break;
     }
 

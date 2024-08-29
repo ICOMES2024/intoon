@@ -58,6 +58,8 @@
 													WHEN '4' THEN 'Participants'
 													WHEN '5' THEN 'Sponsor'
 													WHEN '6' THEN 'Press'
+													WHEN '8' THEN '정책세션'
+													WHEN '10' THEN 'Sponsor(free)'
 													ELSE '-'
 												END
 											) AS attendance_type_text,
