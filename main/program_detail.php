@@ -1087,8 +1087,8 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yoon Jeong Cho</p>(Daegu Catholic University, Korea)
-                                                                        ,<br><p class="b/old">Hun Jee Choe</p>(Hallym University, Korea)
+                                                                        <p class="bold">Yoon Jeong Cho</p>(Daegu Catholic University, Korea),<br>
+                                                                        <p class="bold">Hun Jee Choe</p>(Hallym University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1612,8 +1612,7 @@ and Metabolism
                                                                     <td>17:45-18:00</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Bumjo Oh</p>(Seoul National University, Korea)
-                                                                        , <br>
+                                                                        <p class="bold">Bumjo Oh</p>(Seoul National University, Korea), <br>
                                                                         <p class="bold">Jun Hwa Hong</p>(Eulji university, Korea)
                                                                     </td>
                                                                 </tr>
@@ -3696,8 +3695,7 @@ and Metabolism
                                                                     <td>15:15-15:30</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Sungbae Lee</p>(Incheon Sejong Hospital, Korea)
-                                                                        , <br> <p class="bold">Kye-Yeung Park</p>(Hanyang University, Korea)
+                                                                        <p class="bold">Sungbae Lee</p>(Incheon Sejong Hospital, Korea), <br> <p class="bold">Kye-Yeung Park</p>(Hanyang University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3784,8 +3782,7 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Yeo-Jin Hong</p>(Korea University, Korea)
-                                                                         ,<br />
+                                                                        <p class="bold">Yeo-Jin Hong</p>(Korea University, Korea),<br />
                                                                         <p class="bold">Hwal Rim Jeong</p>(Soonchunhyang University, Korea)
                                                                     </td>
                                                                 </tr>
@@ -5275,8 +5272,7 @@ and Metabolism
                                                                     <td>10:35-10:50</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Seung-Hwan Lee</p>(The Catholic University of Korea, Korea)
-                                                                        , <br><p class="bold">Justin Y. Jeon</p>(Yonsei University, Korea)
+                                                                        <p class="bold">Seung-Hwan Lee</p>(The Catholic University of Korea, Korea), <br><p class="bold">Justin Y. Jeon</p>(Yonsei University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -6607,7 +6603,7 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jisun Park</p>(Inha University, Korea)<br />
+                                                                        <p class="bold">Jisun Park</p>(Inha University, Korea), <br />
                                                                         <p class="bold">Kyoung Huh</p>(Kium Growth Clinic, Korea)
                                                                     </td>
                                                                 </tr>
@@ -6792,8 +6788,7 @@ and Metabolism
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                      <p class="bold">Sunyoung Kim</p>(Kyung Hee University, Korea)
-                                                                           , <br><p class="bold">Ye Seul Yang</p>(Seoul National University, Korea) 
+                                                                      <p class="bold">Sunyoung Kim</p>(Kyung Hee University, Korea), <br><p class="bold">Ye Seul Yang</p>(Seoul National University, Korea) 
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

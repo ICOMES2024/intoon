@@ -12,30 +12,36 @@
 	<!-- HUBDNCLHJ : app 메뉴 탭 -->
 
 	<div class="app_title_box">
-		<h2 class="app_title">Sponsorship<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
-		<div class="app_menu_box ">
+		<h2 class="app_title">Floor Plan<button type="button" class="app_title_prev" onclick="javascript:window.location.href='./app_index.php';"><img src="https://image.webeon.net/icomes2024/app/2024_icon_arrow_prev_wh.svg" alt="이전페이지로 이동"></button></h2>
+		 <div class="app_menu_box ">
 			<ul class="app_menu_tab langth_2">
 			<li><a href="./app_floor_plan.php">Floor Plan</a></li>
 			<li class="on"><a href="./app_sponsor_exhibition.php">Exhibition</a></li>
 			</ul>
-		</div>
+		</div> 
 	</div>
+	<ul class="app_tab program center_t fix_cont">
+		<li class="on"><a href="javascript:;">3F</a></li>
+		<li><a href="javascript:;">5F</a></li>
+		<li><a href="javascript:;">6F</a></li>
+	</ul>
     <!-- 앱 뷰 -->
 	<div class="inner">
 		<div class="contents_box">
-			<ul class="app_tab min_tab fix_cont">
+			<!-- <ul class="app_tab min_tab fix_cont">
 				<li class="on"><a href="javascript:;">3F</a></li>
 				<li><a href="javascript:;">5F</a></li>
 				<li><a href="javascript:;">6F</a></li>
-			</ul>
+			</ul> -->
 			
-			<div class="app_contents_wrap type2">
+			
+			<div class="app_contents_wrap type2" style="padding: 0;">
 				<div class="floor floor_3 on">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_3f.png" alt=""> -->
-						<img src="/main/img/img_exhibition_app_floor_3.png" alt="">
+						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_3-1.png" alt="">
 					</div>
-					<div class="floor_table_wrap">
+					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
 								<col width="120px"/>
@@ -98,14 +104,14 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
+					</div> -->
 				</div>
 				<div class="floor floor_5">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_5f.png" alt=""> -->
-						<img src="/main/img/img_exhibition_app_floor_5.png" alt="">
+						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_5-1.png" alt="">
 					</div>
-					<div class="floor_table_wrap">
+					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
 								<col width="120px"/>
@@ -180,14 +186,14 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
+					</div> -->
 				</div>
 				<div class="floor floor_6">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_6f.png" alt=""> -->
-						<img src="/main/img/img_exhibition_app_floor_6.png" alt="">
+						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_6-1.png" alt="">
 					</div>
-					<div class="floor_table_wrap">
+					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">
 							<colgroup>
 								<col width="120px"/>
@@ -264,7 +270,7 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
+					</div> -->
 				</div>
 			</div> 
 		</div>
