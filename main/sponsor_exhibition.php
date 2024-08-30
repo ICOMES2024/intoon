@@ -1,15 +1,13 @@
 <?php include_once('./include/head.php'); ?>
 <?php
     $session_user = $_SESSION['USER'] ?? NULL;
-    $session_app_type = (!empty($_SESSION['APP']) ? 'Y' : 'N');
+    $session_app_type = (!empty($_SESSION['APP']) ? 'N' : 'N');
 
-    if(!empty($session_user) && $session_app_type == 'Y') {
-        include_once('./include/app_header.php');
-    } else {
-        include_once('./include/header.php');
-    }
+ 
+    include_once('./include/header.php');
+    
 
-    $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? 'app_version' : '';
+    $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : '';
 ?>
 
 <!-- app일 시 section에 app_version 클래스 추가 -->
@@ -37,9 +35,10 @@
 	
 	<div class="container_inner">
 		<div class="contents_box exhibition">
+			<img src="https://image.webeon.net/icomes2024/venue/2024_ICOMES_exhibition.png" alt="" style="width: 100%;" class="pc_only">
+			<img src="https://image.webeon.net/icomes2024/venue/2024_ICOMES_exhibition-1.png" alt="" style="width: 100%;" class="mb_only">
 			<div class="clearfix2">
-				<img src="/main/img/img_exhibition_web_floor_3.png" alt="">
-				<div class="floor_table_wrap">
+				<!-- <div class="floor_table_wrap">
 					<table class="floor_table">
 						<colgroup>
 							<col width="120px"/>
@@ -102,10 +101,10 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> -->
 			</div>
 			<div class="clearfix2">
-				<img src="/main/img/img_exhibition_web_floor_5.png" alt="">
+				<!-- <img src="/main/img/img_exhibition_web_floor_5.png" alt="">
 				<div class="floor_table_wrap">
 					<table class="floor_table">
 						<colgroup>
@@ -181,10 +180,10 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> -->
 			</div>
 			<div class="clearfix2">
-				<img src="/main/img/img_exhibition_web_floor_6.png" alt="">
+				<!-- <img src="/main/img/img_exhibition_web_floor_6.png" alt="">
 				<div class="floor_table_wrap">
 					<table class="floor_table">
 						<colgroup>
@@ -262,7 +261,7 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -567,10 +566,7 @@
 
 
 <?php 
-    if (!empty($session_app_type) && $session_app_type == 'Y') {
-        // mo일때
-        include_once('./include/app_footer.php'); 
-    }else {
+  
         include_once('./include/footer.php');
-    }
+    
 ?>
