@@ -14,8 +14,8 @@
 		<div class="app_menu_box ">
 			<ul class="app_menu_tab langth_2">
 			<li class="on"><a href="./app_floor_plan.php">Floor Plan</a></li>
-			<li><a href="" class="get_ready_alert">Exhibition</a></li>
-			<!-- <li><a href="./app_sponsor_exhibition.php">Exhibition</a></li> -->
+			<!-- <li><a href="" class="get_ready_alert">Exhibition</a></li> -->
+			<li><a href="./app_sponsor_exhibition.php">Exhibition</a></li>
 			</ul>
 		</div>
 	</div>
@@ -32,7 +32,7 @@
 			</div>
 		-->
 		<div class="floor_area">
-			<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_3f.png" alt="">
+			<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_3f-1.png" alt="">
 			<div class="a_wrap floor_3">
 				<a href="javascript:;">
 					<!-- <img src="/main/img/location.svg" style="width:100px;" class="location_pin <?=$room?>"/> -->
@@ -151,7 +151,7 @@
 				</div> -->
 			</div>
 			<div class="floor_area">
-				<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_5f.png" alt="">
+				<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_5f-1.png" alt="">
 				<div class="a_wrap floor_5">
 					<div class="inner_a_wrap">
 						<!-- <a href="javascript:;"></a>
@@ -204,7 +204,7 @@
 				</div>
 			</div>
 			<div class="floor_area">
-				<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_6f.png" alt="">
+				<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_6f-1.png" alt="">
 				<div class="a_wrap floor_6_1">
 					<a href="javascript:;">
 						<div class="map_marker <?= ($room == 'Room7') ? 'Room7' : '' ?>">
@@ -334,7 +334,7 @@
 			// const marker = document.querySelector(`.${room}`)
 			const marker = $(`.${room}`)
 
-			window.scrollTo({top: (marker.offset().top - 200), left:0, behavior:'smooth'});
+			window.scrollTo({top: (marker.offset().top - 250), left:0, behavior:'smooth'});
 		}
 
 	});
