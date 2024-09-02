@@ -37,7 +37,8 @@
 				<li>
 					<a href="javascript:;" class="">Floor Plan</a>
 					<ul class="app_sub">
-						<li><a href="/main/app_floor_plan.php">Floor Plan</a></li>
+						<li><a href="" class="get_ready_alert">Floor Plan</a></li>
+						<!-- <li><a href="/main/app_floor_plan.php">Floor Plan</a></li> -->
 						<li><a href="" class="get_ready_alert">Exhibition</a></li>
 					</ul>
 				</li>
@@ -118,6 +119,12 @@
 						<li><a href="/main/app_schedule.php">My Schedule</a></li>
 					</ul>
 				</li> 
+				<li>
+					<a href="javascript:;" class="">Survey</a>
+					<ul class="app_sub">
+						<li><a href="/main/app_survey.php" class="">Survey</a></li>
+					</ul>
+				</li>
 				<!--
                 <li>
 					<a href="http://184a8b4a1a076d93.kinxzone.com/Programbook.pdf" download class="pdf_view">Program Book <br/>Download</a>

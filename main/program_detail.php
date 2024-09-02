@@ -376,7 +376,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Joint Symposium-JKT (Clinical) : New Clinical Insights into the MASLD</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Kyoung Kon Kim</span> (Gachon University, Korea), <br> <span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
+                                                        <span class="bold">Chairpersons : Kyoung-Kon Kim</span> (Gachon University, Korea), <br> <span class="bold">Wen-Yuan Lin</span> (China Medical University, Taiwan)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -800,7 +800,7 @@ echo '<script type="text/javascript">
                                                                         Panel Discussion
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jong Chan Youn</p>(The Catholic University of Korea, Korea),<br/>
+                                                                        <p class="bold">Jong-Chan Youn</p>(The Catholic University of Korea, Korea),<br/>
                                                                         <p class="bold">Jun Sung Moon</p>(Yeungnam University, Korea),<br/>
                                                                         <p class="bold">Eun Young Lee</p>(The Catholic University of Korea, Korea)
                                                                     </td>
@@ -2067,7 +2067,7 @@ and Metabolism
                                                 <td>12:00-12:50</td>
                                                 <td>
                                                     <p class="font_20 bold">Luncheon Symposium 2</p>
-                                                    <p><span class="bold">Chairperson : Gyeong-Su Kim</span> (The Catholic University of Korea, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Kyung-Soo Kim</span> (The Catholic University of Korea, Korea)</p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
                                                 </td>
                                             </tr>
@@ -2130,7 +2130,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="special_bg">
-                                                <td>13:00-14:00</td>
+                                                <td>13:00-13:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1</p>
                                                     <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
@@ -2162,7 +2162,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:50</td>
+                                                                    <td>13:00-13:30</td>
                                                                     <td class="bold">
                                                                     Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
@@ -2172,7 +2172,7 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:50-14:00</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -2973,7 +2973,7 @@ and Metabolism
                                         </colgroup>
                                         <tbody>
                                             <tr class="special_bg">
-                                                <td>13:00-14:00</td>
+                                                <td>13:00-13:40</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 1 </p>
                                                     <p><span class="bold">Chairperson : Cheol-Young Park</span> (Sungkyunkwan University, Korea)</p>
@@ -3005,7 +3005,7 @@ and Metabolism
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>13:00-13:50</td>
+                                                                    <td>13:00-13:30</td>
                                                                     <td class="bold">
                                                                     Nutrients-Stimulated Hormone-Based Pharmacotherapy for the Treatment of Obesity: Sparks from the Pipeline!
                                                                     </td>
@@ -3015,7 +3015,7 @@ and Metabolism
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>13:50-14:00</td>
+                                                                    <td>13:30-13:40</td>
                                                                     <td class="bold">Q&A</td>
                                                                     <td class="text_r"></td>
                                                                 </tr>
@@ -4157,7 +4157,7 @@ and Metabolism
                                                                     Maternal Biochemical Indicators and Their Correlation with Foetal Birth Weight, India.
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Priyosmita Das</p>(PhD Research Scholar, India)
+                                                                        <p class="bold">Priyosmita Das</p>(University of Delhi, India)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -4661,7 +4661,7 @@ and Metabolism
                                                 <td>12:50-13:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 2</p>
-                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Seoul National University, Korea)</p>
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
@@ -5476,7 +5476,7 @@ and Metabolism
                                                 <td>12:50-13:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 2</p>
-                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Seoul National University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
@@ -6330,7 +6330,7 @@ and Metabolism
                                                 <td>12:50-13:30</td>
                                                 <td>
                                                     <p class="font_20 bold">Special Scientific Lecture 2</p>
-                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Eulji University, Korea)</p>
+                                                    <p><span class="bold">Chairperson : Hong Kyu Lee</span> (Seoul National University, Korea)</p>
                                                     <!-- <p><span class="bold">Chairperson : Sung Soo Kim</span> (Chungnam
                                                         National University, Republic of Korea)</p> -->
                                                     <button class="btn gray2_btn program_detail_btn">Preview</button>
@@ -7077,7 +7077,7 @@ and Metabolism
                                                                     The Expanding Role of CGM in Wellness: From Glycemic Control to Holistic Health
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jae Hyun Bae</p>(Korea University, Korea)
+                                                                        <p class="bold">Jae Hyun Bae</p>(Seoul National University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -7149,7 +7149,7 @@ and Metabolism
                                                                 </tr>
                                                                 <tr>
                                                                     <td>12:50-13:00</td>
-                                                                    <td class="bold">Effects of 8 Weeks of Kinect-based Mixed Reality Exercise and Deep-sea Water Consumption on Metabolic Syndrome: A Preliminary Study</td>
+                                                                    <td class="bold">Effects of 8 Weeks of Kinect-based Mixed Reality Exercise and Deep-sea Water Consumption on Metabolic Syndrome</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hyejung Shin</p>(Seoul National University, Korea)
                                                                     </td>

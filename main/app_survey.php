@@ -15,7 +15,7 @@
 		<div class="contents_box">
 			<div class="app_contents_wrap">
 				<div class="survey_box box_top">
-					<a href="https://forms.gle/qmVnFNuJqAj7L4mj6/" target="_blank">
+					<a href="https://docs.google.com/forms/d/1JuDGFzbgqBlPP3F9xCPoOtzFs1Y-9na9qh3BvWFcvMY/edit" target="_blank">
 						<img src="./img/icons/icon_survey_en.svg" alt="">
 						<p class="center_t">
 							<span class="bold">ICOMES 2024</span><br/>
@@ -24,7 +24,7 @@
 						<button href="javascript:;" class="lang">English</button>
 					</a>
 				</div>
-				<div class="survey_box box_bottom">
+				<!-- <div class="survey_box box_bottom">
 					<a href="https://forms.gle/zfJbNAyNxggE7NxX9/" target="_blank">
 						<img src="./img/icons/icon_survey_kr.svg" alt="">
 						<p class="center_t">
@@ -33,7 +33,7 @@
 						</p>
 						<button href="javascript:;" class="lang">한국어</button>
 					</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
