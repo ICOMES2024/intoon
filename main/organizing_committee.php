@@ -116,7 +116,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : 
                         </tr>
                         <tr>
                             <td>Jae Hyun Bae</td>
-                            <td>Korea University</td>
+                            <td>Seoul National University</td>
                         </tr>
                         <tr>
                             <td>Jun Hwa Hong</td>
@@ -313,7 +313,7 @@ $add_section_class = (!empty($session_user) && $session_app_type == 'Y') ? '' : 
                         </tr>
                         <tr>
                             <td>Jae Hyun Bae</td>
-                            <td>Korea University</td>
+                            <td>Seoul National University</td>
                         </tr>
                         <tr>
                             <td>Kyung Ae Lee</td>
