@@ -148,7 +148,7 @@
 				</a>
 			</li>
 			<li class="app_menu_img">
-				<a href="" class="get_ready_alert">
+				<a href="" class="">
 					<img src="https://image.webeon.net/icomes2024/app/2024_app_menu06.svg" alt="">
 				<!-- <a href="/main/app_floor_plan.php" class=""> -->
 					<!-- <span>FLOOR PLAN</span> -->

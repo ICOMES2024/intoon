@@ -37,9 +37,8 @@
 				<li>
 					<a href="javascript:;" class="">Floor Plan</a>
 					<ul class="app_sub">
-						<li><a href="" class="get_ready_alert">Floor Plan</a></li>
-						<!-- <li><a href="/main/app_floor_plan.php">Floor Plan</a></li> -->
-						<li><a href="" class="get_ready_alert">Exhibition</a></li>
+						<li><a href="/main/app_floor_plan.php">Floor Plan</a></li>
+						<li><a href="/main/app_sponsor_exhibition.php" class="">Exhibition</a></li>
 					</ul>
 				</li>
 				<li>

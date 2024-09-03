@@ -157,7 +157,7 @@ echo '<script type="text/javascript">
                                                 <td>
                                                     <p class="font_20 bold">Symposium on Health Insurance Coverage for Obesity Treatment <sapn class="bold purple_txt font_20">(K)</sapn><br/><span class="kor">비만 진료 급여화를 위한 건강보험정책 심포지엄</span></p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Sung Rae Kim</span> (The Catholic University of Korea, Korea), 
+                                                        <span class="bold">Chairpersons : Sung Rae Kim</span> (Chairman, KSSO, Korea), 
                                                         <br><span class="bold">Jae-Heon Kang</span> (Sungkyunkwan University, Korea)
                                                     </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -178,28 +178,56 @@ echo '<script type="text/javascript">
                                                             </colgroup>
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>16:35-16:50</td>
-                                                                    <td class="bold">Health Issues of Obesity and the Importance of Insurance Coverage for Obesity Treatment<br/><span class="kor">비만의 건강 문제와 비만 진료 급여화의 중요성</span></td>
+                                                                    <td>16:20-16:25</td>
+                                                                    <td class="bold">Opening Remarks</span></td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Ga Eun Nam</p>(Korea University, Korea)
+                                                                        <p class="bold">Ga Eun Nam</p> (Director, Committee of Health Insurance and Legislation, KSSO, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>16:50-17:05</td>
+                                                                    <td>16:25-16:30</td>
+                                                                    <td class="bold">Welcome Address</span></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Cheol-Young Park</p> (President, Board of Directors, KSSO, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:30-16:35</td>
+                                                                    <td class="bold">Congratulatory Speech</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">HeeSeong Park</p> (National Assembly Member, Health and Welfare Committee, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:35-16:40</td>
+                                                                    <td class="bold">Congratulatory Message</td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Ji-A Han</p> (National Assembly Member, Health and Welfare Committee, Gender Equality and Family Committee, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:40-16:55</td>
+                                                                    <td class="bold">Health Issues of Obesity and the Importance of Insurance Coverage for Obesity Treatment<br/><span class="kor">비만의 건강 문제와 비만 진료 급여화의 중요성</span></td>
+                                                                    <td class="text_r">
+                                                                        <p class="bold">Ga Eun Nam</p> (Director, Committee of Health Insurance and Legislation, KSSO, Korea)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16:55-17:10</td>
                                                                     <td class="bold">Pre- and Post-Operative Management of Metabolic Surgery: Importance and Strategies for Insurance Coverage<br/><span class="kor">비만대사수술 전후 관리의 중요성과 급여화 방안</span></td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Yeongkeun Kwon</p>(Korea University, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:05-17:20</td>
+                                                                    <td>17:10-17:25</td>
                                                                     <td class="bold">Active Intervention Strategies for the Management of Obesity in Children and Adolescents<br/><span class="kor">소아청소년 비만 진료 및 관리를 위한 적극 개입 전략</span></td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Ah-Ram Sul</p>(NECA, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>17:20-18:00</td>
+                                                                    <td>17:25-18:00</td>
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Hyun-Young Shin</p>(The Catholic University of Korea, Korea)<br/>
@@ -1613,7 +1641,7 @@ and Metabolism
                                                                     <td class="bold">Panel Discussion</td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Bumjo Oh</p>(Seoul National University, Korea), <br>
-                                                                        <p class="bold">Jun Hwa Hong</p>(Eulji university, Korea)
+                                                                        <p class="bold">Jun Hwa Hong</p>(Eulji University, Korea)
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -3882,7 +3910,7 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Oral Presentation 2</p>
                                                     <p>
-                                                        <span class="bold">Chairpersons : Jung Hwan Park</span> (Hanyang University, Korea), <br><span class="bold">Jun Hwa Hong</span> (Eulji university, Korea)
+                                                        <span class="bold">Chairpersons : Jung Hwan Park</span> (Hanyang University, Korea), <br><span class="bold">Jun Hwa Hong</span> (Eulji University, Korea)
                                                     </p>
                                                     <!-- [↓] 확정 시 까지 버튼 숨김 -->
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview </button> -->
@@ -3940,7 +3968,7 @@ and Metabolism
                                                                     Different Individual Glycemic Response to Meal Composition and Type in Korean adults
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jehyun Jung</p>(The Catholic University of Korea, Korea)
+                                                                        <p class="bold">YoonJu Song</p>(The Catholic University of Korea, Korea)
                                                                     </td>
                                                                 </tr>
                                                                 <!-- <tr>
@@ -4500,24 +4528,17 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Presidential Lecture</p>
                                                     <p><span class="bold">Chairperson : Kwang-Won Kim</span> (Gachon University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea), Jun Hwa Hong (Eulji University, Republic of
-                                                        Korea)</p>
+                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of Korea, Korea) </p>
                                                     <ul>
-                                                        <li>The interplay between adipose tissue's function as an energy
-                                                            reservoir and an endocrine organ is crucial for maintaining
-                                                            metabolic health. A key player in this dynamic balance is
-                                                            leptin, a hormone whose regulation is tightly linked to fat
-                                                            mass. Here we will discuss the multifaceted role of
-                                                            LATS1/2-YAP/TAZ signaling in regulating adipocyte plasticity
-                                                            and leptin production to maintain metabolic homeostasis.
+                                                        <li>The global prevalence of fatty liver disease has increased from 25.3% to 38.2% over the past three decades, with particularly high rates among young individuals and those with type 2 diabetes. Fatty liver disease significantly raises the risk of diabetes, cardiovascular diseases, and cancer. Obesity and fatty liver disease are closely related, as both involve excessive fat accumulation. The primary treatment for fatty liver disease is weight loss, although pharmacological options are limited and expensive. Despite its high prevalence, fatty liver disease is often overlooked in clinical practice. Therefore, it is crucial to include assessments for obesity and fatty liver disease in the care of all patients.
+
                                                         </li>
-                                                        <li>
+                                                        <!-- <li>
                                                             <span class="font_inherit bold">• References</span><br>
                                                             1. Sethi, J.K. and A.J. Vidal-Puig, Thematic review series:
                                                             adipocyte biology. Adipose tissue function and plasticity
@@ -4525,7 +4546,7 @@ and Metabolism
                                                             48(6): p. 1253-62.<br>
                                                             2. Halder, G. and R.L. Johnson, Hippo signaling: growth
                                                             control and beyond. Development, 2011. 138(1): p. 9-22.
-                                                        </li>
+                                                        </li> -->
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -5315,24 +5336,17 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Presidential Lecture</p>
                                                     <p><span class="bold">Chairperson : Kwang-Won Kim</span> (Gachon University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea), Jun Hwa Hong (Eulji University, Republic of
-                                                        Korea)</p>
+                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of Korea, Korea) </p>
                                                     <ul>
-                                                        <li>The interplay between adipose tissue's function as an energy
-                                                            reservoir and an endocrine organ is crucial for maintaining
-                                                            metabolic health. A key player in this dynamic balance is
-                                                            leptin, a hormone whose regulation is tightly linked to fat
-                                                            mass. Here we will discuss the multifaceted role of
-                                                            LATS1/2-YAP/TAZ signaling in regulating adipocyte plasticity
-                                                            and leptin production to maintain metabolic homeostasis.
+                                                        <li>The global prevalence of fatty liver disease has increased from 25.3% to 38.2% over the past three decades, with particularly high rates among young individuals and those with type 2 diabetes. Fatty liver disease significantly raises the risk of diabetes, cardiovascular diseases, and cancer. Obesity and fatty liver disease are closely related, as both involve excessive fat accumulation. The primary treatment for fatty liver disease is weight loss, although pharmacological options are limited and expensive. Despite its high prevalence, fatty liver disease is often overlooked in clinical practice. Therefore, it is crucial to include assessments for obesity and fatty liver disease in the care of all patients.
+
                                                         </li>
-                                                        <li>
+                                                        <!-- <li>
                                                             <span class="font_inherit bold">• References</span><br>
                                                             1. Sethi, J.K. and A.J. Vidal-Puig, Thematic review series:
                                                             adipocyte biology. Adipose tissue function and plasticity
@@ -5340,7 +5354,7 @@ and Metabolism
                                                             48(6): p. 1253-62.<br>
                                                             2. Halder, G. and R.L. Johnson, Hippo signaling: growth
                                                             control and beyond. Development, 2011. 138(1): p. 9-22.
-                                                        </li>
+                                                        </li> -->
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -5906,7 +5920,7 @@ and Metabolism
                                                                 <tr>
                                                                     <td>07:30-08:20</td>
                                                                     <td class="bold">
-                                                                    TRUE-BUDDY Combination Therapy: Benefits for Beta Cells, Insulin Resistance and Diabetic Complications
+                                                                    What is the Best Combination Therapy for KOREAN T2DM Patients?
                                                                     </td>
                                                                     <td class="text_r">
                                                                         <p class="bold">Seung-Hwan Lee</p>(The Catholic University of Korea, Korea)
@@ -6168,24 +6182,17 @@ and Metabolism
                                                 <td>
                                                     <p class="font_20 bold">Presidential Lecture</p>
                                                     <p><span class="bold">Chairperson : Kwang-Won Kim</span> (Gachon University, Korea)</p>
-                                                    <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
+                                                    <button class="btn gray2_btn program_detail_btn">Preview</button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="program_detail_td">
-                                                    <p class="bold">Organizer: Soo Lim (Seoul National University,
-                                                        Republic of Korea), Jun Hwa Hong (Eulji University, Republic of
-                                                        Korea)</p>
+                                                    <p class="bold">Organizer : Jang Won Son (The Catholic University of Korea, Korea) </p>
                                                     <ul>
-                                                        <li>The interplay between adipose tissue's function as an energy
-                                                            reservoir and an endocrine organ is crucial for maintaining
-                                                            metabolic health. A key player in this dynamic balance is
-                                                            leptin, a hormone whose regulation is tightly linked to fat
-                                                            mass. Here we will discuss the multifaceted role of
-                                                            LATS1/2-YAP/TAZ signaling in regulating adipocyte plasticity
-                                                            and leptin production to maintain metabolic homeostasis.
+                                                        <li>The global prevalence of fatty liver disease has increased from 25.3% to 38.2% over the past three decades, with particularly high rates among young individuals and those with type 2 diabetes. Fatty liver disease significantly raises the risk of diabetes, cardiovascular diseases, and cancer. Obesity and fatty liver disease are closely related, as both involve excessive fat accumulation. The primary treatment for fatty liver disease is weight loss, although pharmacological options are limited and expensive. Despite its high prevalence, fatty liver disease is often overlooked in clinical practice. Therefore, it is crucial to include assessments for obesity and fatty liver disease in the care of all patients.
+
                                                         </li>
-                                                        <li>
+                                                        <!-- <li>
                                                             <span class="font_inherit bold">• References</span><br>
                                                             1. Sethi, J.K. and A.J. Vidal-Puig, Thematic review series:
                                                             adipocyte biology. Adipose tissue function and plasticity
@@ -6193,7 +6200,7 @@ and Metabolism
                                                             48(6): p. 1253-62.<br>
                                                             2. Halder, G. and R.L. Johnson, Hippo signaling: growth
                                                             control and beyond. Development, 2011. 138(1): p. 9-22.
-                                                        </li>
+                                                        </li> -->
                                                     </ul>
                                                 </td>
                                             </tr>
@@ -7051,7 +7058,7 @@ and Metabolism
                                             <tr class="light_sky_bg">
                                                 <td>09:20-10:50</td>
                                                 <td>
-                                                    <p class="font_20 bold">Sponsored Session 3 : Exploring the Potential CGM Use for Wellness Beyond Glycemic Control</p>
+                                                    <p class="font_20 bold">Sponsored Session 3 : Exploring the CGM Use for Wellness Beyond Glycemic Control- Potential and Worries</p>
                                                     <p><span class="bold">Chairpersons : Young Sung Suh</span> (Keimyung University, Korea), <br><span class="bold">Kyoung Kon Kim</span> (Gachon University, Korea)
                                                 </p>
                                                     <!-- <button class="btn gray2_btn program_detail_btn">Preview</button> -->
@@ -7324,7 +7331,7 @@ and Metabolism
                                                                     Effectiveness of GLP1-RA as A Therapy for NAFLD in Type 2 Diabetes: A Systematic Review
                                                                     </td>
                                                                     <td class="text_r">
-                                                                        <p class="bold">Jessy Hardjo</p>(RSUD PLOSO, Indonesia)
+                                                                        <p class="bold">Aktaruddin Arief Santoso</p>(RSUD PLOSO, Indonesia)
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

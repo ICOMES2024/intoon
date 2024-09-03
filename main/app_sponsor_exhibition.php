@@ -39,7 +39,7 @@
 				<div class="floor floor_3 on">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_3f.png" alt=""> -->
-						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_3-1.png" alt="">
+						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_3-2.png" alt="">
 					</div>
 					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">
@@ -109,7 +109,7 @@
 				<div class="floor floor_5">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_5f.png" alt=""> -->
-						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_5-1.png" alt="">
+						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_5-2.png" alt="">
 					</div>
 					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">
@@ -191,7 +191,7 @@
 				<div class="floor floor_6">
 					<div class="floor_map">
 						<!-- <img src="/main/img/floor_map_6f.png" alt=""> -->
-						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_6-1.png" alt="">
+						<img src="https://image.webeon.net/icomes2024/venue/img_exhibition_app_floor_6-2.png" alt="">
 					</div>
 					<!-- <div class="floor_table_wrap">
 						<table class="floor_table">

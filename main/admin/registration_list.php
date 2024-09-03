@@ -47,7 +47,7 @@
 									SELECT
 										rr.idx AS registration_idx, rr.email, rr.phone, CONCAT(rr.first_name,' ',rr.last_name) AS `name`, DATE_FORMAT(rr.register_date, '%y-%m-%d') AS register_date, rr.etc2, CONCAT(m.last_name_kor,m.first_name_kor) AS `name_kor`, rr.first_name, rr.last_name,
 										rr.member_type, rr.member_other_type, rr.occupation_type, rr.occupation_other_type,
-										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name,
+										CONCAT(m.last_name_kor,'',m.first_name_kor) AS kor_name, rr.price AS reg_price,
 										(
 											CASE rr.registration_type
 												#WHEN '2' THEN 'Online + Offline'
@@ -239,6 +239,7 @@
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">내과전문의 면허번호</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제상태</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록비</th>';
+	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">등록금액</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제일</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제 방식</th>';
 	$html .= '<th style="background-color:#C5E0B4; border-style: solid; border-width:thin;">결제금액</th>';
@@ -410,6 +411,7 @@
 		// $html .= '<td style="text-align:center; border-style: solid; border-width:thin;">'.$is_exercise.'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_status"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["reg_price"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["register_date"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_methods"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';
