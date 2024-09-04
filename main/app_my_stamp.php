@@ -195,7 +195,11 @@
 						$boothInfo = gradeBoothInfo($boothType);
 			
 						echo "<p class='grade_title app ".$boothInfo["class"]."'>".$boothInfo["name"]."</p>";
-						echo "<ul class='grade_wrap app length_".count($v)."'>";
+						if(count($v) == 3){
+							echo "<ul class='grade_wrap app length_1'>";
+						}else{
+							echo "<ul class='grade_wrap app length_".count($v)."'>";
+						}
 
 						for($a = 0; $a < count($v); $a++){
 							$booth = $v[$a];
