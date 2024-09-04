@@ -32,7 +32,7 @@
 			</div>
 		-->
 		<div class="floor_area">
-			<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_3f-2.png" alt="">
+			<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_3f-3.png" alt="">
 			<div class="a_wrap floor_3">
 				<a href="javascript:;">
 					<!-- <img src="/main/img/location.svg" style="width:100px;" class="location_pin <?=$room?>"/> -->
@@ -151,7 +151,7 @@
 				</div> -->
 			</div>
 			<div class="floor_area">
-				<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_5f-2.png" alt="">
+				<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_5f-3.png" alt="">
 				<div class="a_wrap floor_5">
 					<div class="inner_a_wrap">
 						<!-- <a href="javascript:;"></a>
@@ -204,7 +204,7 @@
 				</div>
 			</div>
 			<div class="floor_area">
-				<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_6f-2.png" alt="">
+				<img src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_6f-3.png" alt="">
 				<div class="a_wrap floor_6_1">
 					<a href="javascript:;">
 						<div class="map_marker <?= ($room == 'Room7') ? 'Room7' : '' ?>">
