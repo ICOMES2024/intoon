@@ -53,6 +53,9 @@ if($_POST["flag"] === "onsite") {
         case "정책 세션":
             $attendance_type = 8;
             break;
+        case "KSSO":
+            $attendance_type = 11;
+            break;
     }
 
     $occupation = $data["occupation"] ?? "";
@@ -209,7 +212,7 @@ if($_POST["flag"] === "onsite") {
     if(!empty($registration_idx)){
         $code_number = $registration_idx;
 
-        while (strlen("" . $code_number) < 5) {
+        while (strlen("" . $code_number) < 4) {
             $code_number = "0" . $code_number;
         }
 

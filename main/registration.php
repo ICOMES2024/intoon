@@ -235,6 +235,15 @@ if ($during_yn !== "Y") {
 											case 6:
 												$attendance_type = "Press";
 												break;
+											case 8:
+												$attendance_type = "On-site 정책세션";
+												break;
+											case 10:
+												$attendance_type = "Sponsor(free)";
+												break;
+											case 11:
+												$attendance_type = "KSSO";
+												break;
 											default:
 												$attendance_type = "";
 										}

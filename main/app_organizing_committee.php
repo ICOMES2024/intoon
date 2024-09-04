@@ -104,7 +104,7 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
                         </tr>
                         <tr>
                             <td>Jae Hyun Bae</td>
-                            <td>Korea University</td>
+                            <td>Seoul National University</td>
                         </tr>
                         <tr>
                             <td>Jun Hwa Hong</td>
@@ -301,7 +301,7 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
                         </tr>
                         <tr>
                             <td>Jae Hyun Bae</td>
-                            <td>Korea University</td>
+                            <td>Seoul National University</td>
                         </tr>
                         <tr>
                             <td>Kyung Ae Lee</td>
