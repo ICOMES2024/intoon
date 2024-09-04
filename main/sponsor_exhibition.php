@@ -35,8 +35,8 @@
 	
 	<div class="container_inner">
 		<div class="contents_box exhibition">
-			<img src="https://image.webeon.net/icomes2024/venue/2024_ICOMES_exhibition.png" alt="" style="width: 100%;" class="pc_only">
-			<img src="https://image.webeon.net/icomes2024/venue/2024_ICOMES_exhibition-1.png" alt="" style="width: 100%;" class="mb_only">
+			<!-- <img src="https://image.webeon.net/icomes2024/venue/2024_ICOMES_exhibition.png" alt="" style="width: 100%;" class="pc_only"> -->
+			<img src="https://image.webeon.net/icomes2024/venue/2024_ICOMES_exhibition-3.png" alt="" style="width: 100%;" class="">
 			<div class="clearfix2">
 				<!-- <div class="floor_table_wrap">
 					<table class="floor_table">
