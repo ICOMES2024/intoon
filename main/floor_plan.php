@@ -16,9 +16,9 @@
         </div> -->
         <div class="section section1">
             <div class="img_wrap">
-                <img class="floor_map" src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_3f.png"/>            
-                <img class="floor_map" src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_5f.png"/>            
-                <img class="floor_map" src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_6f.png"/>            
+                <img class="floor_map" src="https://image.webeon.net/icomes2024/venue/2024_floor_plan.png"/>            
+                <!-- <img class="floor_map" src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_5f.png"/>            
+                <img class="floor_map" src="https://image.webeon.net/icomes2024/venue/2024_floor_plan_6f.png"/>             -->
             </div>
         </div>
     </div>
