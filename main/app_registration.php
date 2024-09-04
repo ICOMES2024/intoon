@@ -115,14 +115,14 @@
             case 7:
                 $attendance_type = "Abstract Presenter";
                 break;
-            case 4:
-                $attendance_type = "Participants";
+            case 8:
+                $attendance_type = "On-site 정책세션";
                 break;
-            case 5:
-                $attendance_type = "Sponsor";
+            case 10:
+                $attendance_type = "Sponsor(free)";
                 break;
-            case 6:
-                $attendance_type = "Press";
+            case 11:
+                $attendance_type = "KSSO";
                 break;
             default:
                 $attendance_type = "";
