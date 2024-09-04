@@ -12,7 +12,7 @@
             if ($_SESSION["USER"]["regi_status"] == 2 || $_SESSION["USER"]["regi_status"] == 5) {
             ?>
 
-             <li>
+             <!-- <li>
                 <button type="button" onClick="location.href='/main/registration_guidelines.php'">
                     <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist-2.svg" alt="">
                 </button>
@@ -21,16 +21,16 @@
                 <button type="button" onClick="location.href='/main/abstract_submission_guideline.php'">
                     <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract-2.svg" alt="">
                 </button>
-            </li>
+            </li> -->
             <!-- [240205] sujeong / 프로그램북, 초록집 다운로드 주석 -->
             <!--[230824] 다운로드 버튼 추가 / 파일 전달X-->
-            <!-- <li>
-                <a class="type2 pink not_yet">
+             <li>
+                <a href="https://184a8b4a1a076d93.kinxzone.com/Abstract.pdf" class="type2 pink" target="_blank">
                     <i><img src="https://image.webeon.net/icomes2024/logo/icon_download_abstract.svg" alt=""></i>
                     Abstract Book <br />Download
                 </a>
             </li>
-            <li>
+           <!-- <li>
                 <a class="type2 violet not_yet">
                     <i><img src="https://image.webeon.net/icomes2024/logo/icon_download_program.svg" alt=""></i>
                     Program Book <br />Download
@@ -51,7 +51,23 @@
             <?php
             } else {
             ?>
+            <!-- <li>
+                <button type="button" onClick="location.href='/main/registration_guidelines.php'">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist-2.svg" alt="">
+                </button>
+            </li>
             <li>
+                <button type="button" onClick="location.href='/main/abstract_submission_guideline.php'">
+                    <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract-2.svg" alt="">
+                </button>
+            </li> -->
+            <?php
+            }
+            ?>
+            <?php
+            if ($_SESSION["USER"]["idx"] == "") {
+            ?>
+               <li>
                 <button type="button" onClick="location.href='/main/registration_guidelines.php'">
                     <img src="https://image.webeon.net/icomes2024/logo/2024_tool_regist-2.svg" alt="">
                 </button>
@@ -61,12 +77,6 @@
                     <img src="https://image.webeon.net/icomes2024/logo/2024_tool_abstract-2.svg" alt="">
                 </button>
             </li>
-            <?php
-            }
-            ?>
-            <?php
-            if ($_SESSION["USER"]["idx"] == "") {
-            ?>
             <li><button type="button" onClick="alert('Need to login.')"><img src="https://image.webeon.net/icomes2024/logo/2024_tool_mypage-2.svg"
                             alt=""></button></li>
             <?php
