@@ -152,6 +152,7 @@
 										total_price_kr,
 										total_price_us,
 										member_status,
+										p.payment_date,
 										IFNULL(rr.register_path, '-') AS register_path, 
 										IFNULL(rr.conference_info, '-') AS conference_info,
 										m.ksola_member_status,
@@ -182,6 +183,7 @@
 									LEFT JOIN(
 										SELECT
 											idx,
+											payment_date,
 											total_price_kr,
 											total_price_us
 										FROM payment
@@ -412,7 +414,7 @@
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_status"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["reg_price"].'</td>';
-		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["register_date"].'</td>';
+		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_date"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["payment_methods"].'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$price.'</td>';
 		$html .= '<td style="border-style: solid; border-width:thin;">'.$rl["discount_rate"].'</td>';

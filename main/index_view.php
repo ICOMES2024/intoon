@@ -263,14 +263,14 @@
 			<button type="button" class="pop_close bold">Close</button>
         </div>
     </div>
-</div>
--->
+</div>-->
+
 
 <!-- 2023/08/16 팝업 -->
  <div class="popup notification_pop" style="display:block;">
     <div class="pop_bg"></div>
     <div class="pop_contents">
-		<!-- <div class="top">Notification of Acceptance</div>
+		 <!-- <div class="top">Notification of Acceptance</div>
 		<div class="inner">
 			<ul>
 				<li>
@@ -283,8 +283,8 @@
 					<button type="button" onClick="javascript:window.open('/main/download/Poster Exhibition_0824.pdf')">Poster Exhibition List<img src="/main/img/icons/download_w2.svg" /></button>
 				</li>
 			</ul>
-		</div> -->
-		<a href="https://forms.gle/8avYXpcEH9ABMZCj8" target="_blank"><img src="https://image.webeon.net/icomes2024/program/ICOMES%202024_pop_up_240812.jpg" alt="" style="width: 500px;"></a>
+		</div>  -->
+		<img src="https://image.webeon.net/icomes2024/main/2024_main_popup-1.png" alt="" style="width: 500px;">
 		<div class="close_area">
 			<div>
 				<input type="checkbox" id="today_check" name="hidden" class="checkbox input required">
@@ -294,7 +294,6 @@
 		</div>	
     </div>
 </div> 
-
 <!-- 230831 팝업 1/2 -->
 <!-- <div class="popup main_pop application_pop" style="display:block;">
     <div class="pop_bg"></div>

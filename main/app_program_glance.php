@@ -85,7 +85,7 @@
 								</td>
 								<td class="skyblue_bg pointer" name="jomes_session" data-id="1">
 									Best Articles in JOMES (K)
-									<input type="hidden" name="e" value="room1">
+									<input type="hidden" name="e" value="room3">
 								</td>
 								<td class="light_gray_bg"></td>
 								<td class="light_gray_bg"></td>

@@ -2,7 +2,7 @@
 include_once('./include/head.php');
 include_once('./include/header.php');
 
-$current_year = $_GET["year"] ? $_GET["year"] : "2023";
+$current_year = $_GET["year"] ? $_GET["year"] : "2024";
 
 $total_count = 0;
 $current_page = $_GET["page"] ? @(int) $_GET["page"] : 0;
@@ -194,7 +194,7 @@ $years = explode(',', sql_fetch($sql_years)['years']);
 		$(".photo_list li .img_wrap").height(width);
 	}
 	//[240130]sujeong / photo gallery years 화살표 추가
-	const yearsList = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015]; 
+	const yearsList = [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015]; 
 	const yearList = document.querySelectorAll(".year_wrap");
 	const arrowsList = document.querySelectorAll(".arrow");
 	const year = <?php echo $current_year; ?>;

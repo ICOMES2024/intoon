@@ -407,7 +407,7 @@ $titles = explode(',', sql_fetch($sql_title)['title_concat']);
                         </tr>
                         <tr>
                             <td>Japan</td>
-                            <td>Geeta Appannah</td>
+                            <td>Koutaro Yokote</td>
                             <td>JASSO<br/>(Japan Society for the Study of Obesity)</td>
                         </tr>
                         <tr>

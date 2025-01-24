@@ -496,7 +496,7 @@ if(!$email_data["payment_no"] && $total_price < 1){
 							<th>Others</th>
 							<td colspan="3">
 								<div>
-								Satellite Symposium : <?=$registration_detail["etc4"] == "Y" ? "Yes" : "No"?><br/>
+									Satellite Symposium : <?=$registration_detail["etc4"] == "Y" ? "Yes" : "No"?><br/>
 									Welcome Reception : <?=$registration_detail["welcome_reception_yn"] == "Y" ? "Yes" : "No"?><br/>
 									Day 2 Breakfast Symposium : <?=$registration_detail["day2_breakfast_yn"] == "Y" ? "Yes" : "No"?><br/>
 									Day 2 Luncheon Symposium : <?=$registration_detail["day2_luncheon_yn"] == "Y" ? "Yes" : "No"?><br/>

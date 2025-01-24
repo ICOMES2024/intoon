@@ -9,7 +9,7 @@ $locale = locale($language);
         <div class="container">
             <div class="dday_box">
                 <div class="dday_left">TODAY<p><?= $today; ?></p></div>
-                <div class="dday_right">D-<?= number_format($d_days); ?></div>
+                <div class="dday_right">D+<?= number_format($d_days); ?></div>
             </div>
             <!-- <div class="dday_wrap">
                 <div class="dday_top"><span>D-<?= number_format($d_days); ?></span></div>
@@ -28,7 +28,7 @@ $locale = locale($language);
                 <?php
                 } else {
                 ?>
-                <li><a href="/main/mypage.php">My page</a></li>
+                <li><a href="/main/mypage_registration.php">My page</a></li>
                 <li><a class="logout_btn" href="javascript:;">Logout</a></li>
                 <?php
                 }

@@ -82,7 +82,7 @@
             <?php
             } else {
             ?>
-            <li><button type="button" onClick="location.href='/main/mypage.php'"><img
+            <li><button type="button" onClick="location.href='/main/mypage_registration.php'"><img
                             src="https://image.webeon.net/icomes2024/logo/2024_tool_mypage-2.svg" alt=""></button></li>
             <?php
             }

@@ -52,6 +52,10 @@
 					<a href="javascript:;" class="">Abstract</a>
 					<!-- <a href="javascript:;" class="get_ready_alert">Abstract</a> -->
 					<ul class="app_sub">
+					<li>
+					<a href="https://184a8b4a1a076d93.kinxzone.com/Abstract.pdf" download class="pdf_view">Abstract Book <br/>Download</a>
+				</li>
+                
 						<li><a href="/main/app_abstract.php?category_idx=5">Plenary Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=6">Keynote Lecture</a></li>
 						<li><a href="/main/app_abstract.php?category_idx=20">Presidential Lecture</a></li>

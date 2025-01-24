@@ -117,7 +117,7 @@
         ?>
 		<div class="rightT">
 			<!-- [240123] sujeong 증명서 학회팀 요청주석 -->
-			<button class="btn green_btn long mb20 certificate_btn" type="button">Certificate of Attendance</button>
+			<button class="btn green_btn long mb20 certificate_btn" type="button">Attendance Certificate</button>
 		</div>
         <?php
         }
